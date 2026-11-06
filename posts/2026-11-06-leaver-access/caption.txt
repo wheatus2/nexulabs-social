@@ -1,0 +1,17 @@
+When someone leaves your business, does their access leave with them?
+
+A survey published this week suggests it often doesn't:
+
+→ 64% of people who'd left a job could still get into sensitive company information
+→ 82% of people from firms with under 250 staff kept at least one working account, against 70% at firms with over 1,000
+→ A third said nobody clearly owned the job of switching their access off
+
+(Source: Sagiss survey of 1,000 US adults by Pollfish, September 2026. It's US data, but the same gaps show up in small businesses everywhere.)
+
+The fix isn't expensive. Keep one list of every system, give one person the job, switch access off on the last day, change any shared passwords, and check a week later. The full checklist is in the slides.
+
+It's also why every CRM we build controls who sees what, so a leaver's access comes off in one place.
+
+Want a system that's set up properly from day one? Send us a message or visit nexulabs.co.uk.
+
+#CyberSecurity #DataProtection #SmallBusinessUK #CRM #BusinessTips #NorthEastBusiness #SME #Nexulabs

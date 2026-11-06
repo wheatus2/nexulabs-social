@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-06-leaver-access",
+ "series": "In the news",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "ink",
+   "kicker": "Data security · This week",
+   "headline": "When staff leave,\ndoes their *access*\nleave too?",
+   "sub": "A survey published this week says, for most firms, it doesn't."
+  },
+  {
+   "type": "stat",
+   "theme": "paper",
+   "kicker": "The headline finding",
+   "value": "64%",
+   "statement": "of people who left a job could *still* get into sensitive company information afterwards.",
+   "source": "Sagiss survey of 1,000 US adults via Pollfish, Sept 2026 (published 4 Nov 2026)"
+  },
+  {
+   "type": "hbars",
+   "theme": "ink",
+   "glow": false,
+   "kicker": "Size doesn't protect you",
+   "title": "Smaller firms are\n*more* likely to\nleave doors open",
+   "data": [
+    [
+     "Firms under 250 staff",
+     82
+    ],
+    [
+     "All respondents",
+     79
+    ],
+    [
+     "Firms over 1,000 staff",
+     70
+    ]
+   ],
+   "unit": "%",
+   "max": 100,
+   "highlight": "Firms under 250 staff",
+   "source": "Share who kept at least one working account after leaving. Sagiss, Sept 2026"
+  },
+  {
+   "type": "stat",
+   "theme": "paper",
+   "kicker": "Why it happens",
+   "value": "33%",
+   "statement": "said nobody clearly owned the job of *switching off* their access.",
+   "source": "Sagiss survey of 1,000 US adults via Pollfish, Sept 2026"
+  },
+  {
+   "type": "list",
+   "theme": "paper",
+   "kicker": "Fix it this week",
+   "title": "A simple leaver\nchecklist",
+   "items": [
+    [
+     "Keep one list of every system",
+     "Email, CRM, accounting, cloud storage, social accounts, Wi-Fi."
+    ],
+    [
+     "Give one person the job",
+     "Switching off access is a named task, not everyone's."
+    ],
+    [
+     "Do it on their last day",
+     "Not when someone next remembers."
+    ],
+    [
+     "Change shared passwords",
+     "Any login more than one person knew."
+    ],
+    [
+     "Check a week later",
+     "Try the old logins and make sure they're dead."
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "glow_low": true,
+   "kicker": "The Nexulabs view",
+   "headline": "Access should be\n*one switch*, not a\nscavenger hunt.",
+   "body": "In every CRM we build, each person sees only what they need, and a leaver's access comes off in one place.",
+   "cta_label": "Start a project",
+   "cta": "nexulabs.co.uk"
+  }
+ ]
+}
