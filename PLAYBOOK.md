@@ -37,3 +37,13 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta. `*
 ## Quality check before publishing
 - Render, then build a contact sheet and look at every slide: no text overflow, clipping, orphaned single words, overlapping elements, or awkward line breaks; numbers match the sources; the accent is used sparingly.
 - Fix and re-render until every slide is clean.
+
+## Daily routine (what the scheduled run does)
+1. Read this file and `log.json`. Pick today's pillar (different from yesterday's) and a topic not used in the last 30 days.
+2. Research with web search; fetch and read the primary source for every figure you'll use.
+3. Create `posts/YYYY-MM-DD-<slug>/post.json` and `caption.txt`. Render: `python3 render.py posts/<id>/post.json`.
+4. Build a contact sheet, look at every slide, fix and re-render until clean.
+5. Commit and push to `main`. Confirm each image URL loads: `https://raw.githubusercontent.com/wheatus2/nexulabs-social/main/posts/<id>/slide-NN.jpg`.
+6. Publish via Zapier MCP: app Instagram for Business, action `publish_media_v2` (tool `instagram_for_business_publish_photo_s`), `instagramPageId` = `17841471856846758` (Nexulabs), `media` = list of the raw URLs in order, `caption` = caption.txt.
+7. Fetch the permalink via the Make API GET Request action (`https://graph.facebook.com/v21.0/<media_id>?fields=permalink`), append an entry to `log.json`, commit and push.
+8. If publishing fails: retry once after 2 minutes. If it's an auth/token error, tell Lee to reconnect Instagram at https://mcp.zapier.com/api/v1/connect-auth/InstagramBusinessCLIAPI?accountId=8724593.

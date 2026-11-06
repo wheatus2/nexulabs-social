@@ -1,1 +1,21 @@
-[]
+[
+ {
+  "date": "2026-11-06",
+  "id": "2026-11-06-ai-adoption-gap",
+  "pillar": "Data",
+  "topic": "AI adoption gap in UK SMEs (adoption vs embedding, North East lag, skills barrier)",
+  "key_stats": [
+   "BCC 54% SMEs using AI 2026 (23/25/35/54 2023-26)",
+   "Enterprise Nation 6% embedded, 21% regular, NE 10% vs London 30%",
+   "DSIT 67% adopters cite skills"
+  ],
+  "sources": [
+   "British Chambers of Commerce / Atos Business Outlook Survey 2026",
+   "Enterprise Nation UK SME Digital & AI Adoption 2026",
+   "DSIT AI Adoption Survey 2026"
+  ],
+  "slides": 6,
+  "instagram_media_id": "18101526857542547",
+  "permalink": "https://www.instagram.com/p/DfaqAJBl1P8/"
+ }
+]
