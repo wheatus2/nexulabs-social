@@ -13,12 +13,18 @@ Followed by the daily scheduled run. One post per day to the Nexulabs Instagram 
   - Format: 1080×1350 (4:5). Carousels of 4–7 slides are the default; a single-slide post is fine for a strong quote or stat.
   - Alternate ink and paper slides. Cover and closing CTA are ink.
 
-## Content pillars (rotate; don't repeat a pillar two days running)
-1. Data — a fresh UK small-business / tech statistic with a Nexulabs angle (bars, hbars, stat slides).
-2. How-to — practical tips: e.g. "5 signs you've outgrown spreadsheets", "What a CRM should do for a trades business" (list slides).
-3. Point of view — a short, confident opinion on websites, CRMs, automation or AI for small firms (quote slide + supporting slides).
-4. News explained — a recent, relevant development (AI tools, Google/Meta changes, UK rules like GDPR/Making Tax Digital) and what it means for a small business.
-5. Behind the build — what a custom CRM/website does for a type of business (anonymised; never invent clients, results or testimonials).
+## What to post (Lee's direction, 6 Nov 2026)
+Nexulabs posts are about **websites and CRM systems** first. Every post must be useful to a small business owner thinking about their website or their CRM.
+
+**Step 1: check the news first.** Search for tech news from the last 48 hours. Only use a story if it's directly about websites, web design, search/Google changes that affect small business websites, CRMs, online enquiries/bookings, or business software small firms use. If it qualifies, make a "news explained" post: what happened, what it means for a small business website or CRM, what to do. General tech, finance, security or AI stories that don't come back to websites/CRMs don't qualify.
+
+**Step 2: if there's no qualifying news, rotate these** (don't repeat the same one two days running):
+1. **Web design (main topic, at least every other day).** Homepage structure, what to put above the fold, mobile layout, calls to action, page speed, website copy, contact forms, booking pages, trust signals, before/after layouts. Use the `browser` mockup and `compare` slides so posts look designed and visual, not text-heavy.
+2. **CRM.** Enquiry → quote → booking → job flows, follow-ups, getting off spreadsheets, what a CRM should do for a trades/service business. Use `flow`, `compare` and `list` slides.
+3. **Websites + CRM together.** Enquiries going straight from the site into the CRM, one system from first click to finished job.
+4. **Logos and branding.** What makes a logo work small, building a simple palette, consistency across van/website/socials. Use `palette` and `compare` slides.
+
+**Look and feel:** posts must look sharp and visual. Prefer mockups, comparisons, flows and big bold statements over walls of text. Max ~30 words of body copy per slide. Statistics are optional; a strong practical point beats a weak number.
 
 ## Accuracy rules (non-negotiable)
 - Every number on a slide must come from a source fetched during the run, published within the last ~24 months, preferably UK. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
@@ -34,14 +40,14 @@ Followed by the daily scheduled run. One post per day to the Nexulabs Instagram 
 5. 6–9 hashtags, mixing broad (#SmallBusinessUK #SME #CRM) and local (#NorthEastBusiness #Sunderland #Newcastle) and topical. Max 2,200 characters.
 
 ## Slide spec (post.json)
-See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta. `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
+See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, compare (instead/try), browser (website mockup with numbered pins), palette (colour swatches), flow (numbered steps). `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
 
 ## Quality check before publishing
 - Render, then build a contact sheet and look at every slide: no text overflow, clipping, orphaned single words, overlapping elements, or awkward line breaks; numbers match the sources; the accent is used sparingly.
 - Fix and re-render until every slide is clean.
 
 ## Daily routine (what the scheduled run does)
-1. Read this file and `log.json`. Pick today's pillar (different from yesterday's) and a topic not used in the last 30 days.
+1. Read this file and `log.json`. Check the news (see 'What to post'), otherwise pick today's topic from the rotation; nothing used in the last 30 days.
 2. Research with web search; fetch and read the primary source for every figure you'll use.
 3. Create `posts/YYYY-MM-DD-<slug>/post.json` and `caption.txt`. Render: `python3 render.py posts/<id>/post.json`.
 4. Build a contact sheet, look at every slide, fix and re-render until clean.

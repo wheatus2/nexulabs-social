@@ -4,7 +4,7 @@
 Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
-Slide types: cover, stat, bars, hbars, list, quote, cta
+Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark) or "paper" (light).
 """
@@ -115,6 +115,55 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .ctabox .l{{font-family:Mono;font-size:19px;letter-spacing:.08em;text-transform:uppercase;opacity:.6}}
 .ctabox .r{{font-family:Disp;font-weight:600;font-size:40px;letter-spacing:-.03em;margin-top:6px}}
 .ctabox .btn{{width:84px;height:84px;border-radius:50%;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:36px}}
+/* compare */
+.compare h2{{margin-top:40px}}
+.cmp{{margin-top:auto;display:flex;flex-direction:column;gap:26px}}
+.card{{border-radius:24px;padding:38px 42px;border:1.5px solid rgba(127,127,127,.28)}}
+.card .lb{{font-family:Mono;font-size:19px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;display:flex;align-items:center;gap:12px}}
+.card .tx{{font-family:Disp;font-weight:600;font-size:40px;letter-spacing:-.03em;line-height:1.15;margin-top:14px}}
+.card .sm{{font-size:24px;line-height:1.45;opacity:.7;margin-top:12px}}
+.card.bad .tx{{opacity:.55}}
+.card.good{{border-color:var(--acc);background:rgba(102,125,255,.08)}}
+.card.good .lb{{color:var(--acc);opacity:1}}
+.ico{{width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px;border:1.5px solid currentColor}}
+/* browser mockup */
+.browser h2{{margin-top:40px}}
+.bw{{margin-top:auto;border-radius:22px;overflow:hidden;border:1.5px solid rgba(127,127,127,.3);background:#fff;color:#0B0B0C;box-shadow:0 40px 80px -30px rgba(0,0,0,.45);position:relative}}
+.bw .bar{{height:58px;background:#ECECEF;display:flex;align-items:center;gap:10px;padding:0 22px}}
+.bw .bar i{{width:13px;height:13px;border-radius:50%;background:#C9C9CF}}
+.bw .url{{margin-left:18px;flex:1;height:34px;border-radius:17px;background:#fff;font-family:Mono;font-size:17px;display:flex;align-items:center;padding:0 18px;color:#6b6b73}}
+.bw .pg{{padding:34px 44px 44px;position:relative}}
+.bw .nav{{display:flex;justify-content:space-between;align-items:center}}
+.bw .nav b{{font-family:Disp;font-weight:700;font-size:26px;letter-spacing:-.03em}}
+.bw .nav span{{display:flex;gap:22px;margin-right:64px}}
+.bw .nav span u{{width:64px;height:10px;border-radius:5px;background:#DADADF;text-decoration:none}}
+.bw .hero{{margin-top:56px;font-family:Disp;font-weight:600;font-size:52px;letter-spacing:-.04em;line-height:1.02;max-width:640px}}
+.bw .lede{{margin-top:18px;font-size:22px;color:#55555c;max-width:560px;line-height:1.4}}
+.bw .btn{{margin-top:28px;display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:14px;background:{ACCENT};color:#fff;font-weight:600;font-size:22px}}
+.bw .tiles{{display:flex;gap:16px;margin-top:38px}}
+.bw .tiles div{{flex:1;height:74px;border-radius:12px;background:#F0F0F3}}
+.pin{{position:absolute;width:42px;height:42px;border-radius:50%;background:{ACCENT_DARK};color:#fff;font-family:Mono;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px rgba(102,125,255,.25)}}
+.legend{{display:flex;flex-direction:column;gap:14px;margin-top:34px}}
+.legend div{{display:flex;gap:18px;font-size:25px;line-height:1.35;align-items:baseline}}
+.legend b{{font-family:Mono;font-weight:500;color:var(--acc);font-size:20px;min-width:34px}}
+/* palette */
+.palette h2{{margin-top:40px}}
+.sw{{margin-top:auto;display:flex;flex-direction:column;gap:18px}}
+.sw .row{{display:flex;gap:18px;height:150px}}
+.sw .c{{flex:1;border-radius:20px;padding:22px 24px;display:flex;flex-direction:column;justify-content:flex-end;border:1.5px solid rgba(127,127,127,.25)}}
+.sw .c b{{font-family:Disp;font-weight:600;font-size:27px;letter-spacing:-.02em}}
+.sw .c span{{font-family:Mono;font-size:17px;opacity:.75;margin-top:4px}}
+/* flow */
+.flow h2{{margin-top:40px}}
+.fl{{margin-top:auto;display:flex;flex-direction:column;position:relative}}
+.fl:before{{content:"";position:absolute;left:35px;top:40px;bottom:40px;width:2px;background:linear-gradient(var(--acc),rgba(127,127,127,.25))}}
+.st{{display:flex;gap:34px;align-items:center;padding:26px 0;position:relative}}
+.st .dot{{width:72px;height:72px;flex:none;border-radius:18px;border:1.5px solid rgba(127,127,127,.35);display:flex;align-items:center;justify-content:center;font-family:Mono;font-size:20px;background:inherit}}
+.ink .st .dot{{background:#161618}}
+.paper .st .dot{{background:#fff}}
+.st.hl .dot{{background:var(--acc);border-color:var(--acc);color:#fff}}
+.st h3{{font-family:Disp;font-weight:600;font-size:46px;letter-spacing:-.03em}}
+.st p{{font-size:25px;opacity:.65;margin-top:6px}}
 """
 
 
@@ -200,6 +249,41 @@ def build(slide, idx, total, series):
 {f'<p class="lead">{md(slide["body"])}</p>' if slide.get('body') else ''}
 <div class="ctabox"><div><div class="l">{md(slide.get('cta_label','Talk to us'))}</div>
 <div class="r">{md(slide.get('cta','nexulabs.co.uk'))}</div></div><div class="btn">→</div></div><div style="height:40px"></div>"""
+    elif t == "compare":
+        bad, good = slide["instead"], slide["try"]
+        def card(c, cls, label, ic):
+            sm = f'<div class="sm">{md(c[1])}</div>' if len(c) > 1 and c[1] else ""
+            return f'<div class="card {cls}"><div class="lb"><span class="ico">{ic}</span>{label}</div><div class="tx">{md(c[0])}</div>{sm}</div>'
+        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+<h2>{md(slide['title'])}</h2><div class="cmp">{card(bad,'bad',slide.get('instead_label','Instead of'),'×')}{card(good,'good',slide.get('try_label','Try'),'✓')}</div><div style="height:48px"></div>"""
+    elif t == "browser":
+        site = slide["site"]
+        pins = slide.get("pins", [])
+        pos = [("top:20px;right:24px", 0), ("top:118px;right:24px", 1), ("top:300px;right:24px", 2), ("bottom:24px;right:24px", 3)]
+        pin_html = "".join(f'<div class="pin" style="{pos[i][0]}">{i+1:02d}</div>' for i in range(min(len(pins), 4)))
+        legend = "".join(f'<div><b>{i+1:02d}</b><span>{md(x)}</span></div>' for i, x in enumerate(pins))
+        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+<h2>{md(slide['title'])}</h2>
+<div class="bw"><div class="bar"><i></i><i></i><i></i><div class="url">{html.escape(site.get('url','yourbusiness.co.uk'))}</div></div>
+<div class="pg"><div class="nav"><b>{html.escape(site.get('brand','Your Business'))}</b><span><u></u><u></u></span></div>
+<div class="hero">{md(site['headline'])}</div><div class="lede">{md(site.get('lede',''))}</div>
+<div class="btn">{html.escape(site.get('button','Get a quote'))} →</div><div class="tiles"><div></div><div></div><div></div></div>{pin_html}</div></div>
+{f'<div class="legend">{legend}</div>' if pins else ''}<div style="height:40px"></div>"""
+    elif t == "flow":
+        hl = slide.get("highlight", [])
+        steps = "".join(
+            f'<div class="st{" hl" if i in hl else ""}"><div class="dot">{i+1:02d}</div><div><h3>{md(a)}</h3>{f"<p>{md(b)}</p>" if b else ""}</div></div>'
+            for i, (a, b) in enumerate(slide["steps"]))
+        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+<h2>{md(slide['title'])}</h2><div class="fl">{steps}</div><div style="height:40px"></div>"""
+    elif t == "palette":
+        rows = ""
+        for row in slide["rows"]:
+            cells = "".join(
+                f'<div class="c" style="background:{c[1]};color:{c[2] if len(c)>2 else "#fff"}"><b>{html.escape(c[0])}</b><span>{html.escape(c[1].upper())}</span></div>' for c in row)
+            rows += f'<div class="row">{cells}</div>'
+        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+<h2>{md(slide['title'])}</h2>{f'<p class="lead" style="margin-top:24px">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div class="sw">{rows}</div><div style="height:48px"></div>"""
     else:
         raise ValueError(f"unknown slide type {t}")
     return frame(slide, idx, total, series, inner, src(slide), fr)

@@ -1,0 +1,109 @@
+{
+ "id": "2026-11-06-website-to-crm",
+ "series": "Websites + CRM",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "ink",
+   "kicker": "Websites + CRM",
+   "headline": "Your website\ntakes the enquiry.\nWhat happens *next*?",
+   "sub": "Where small firms quietly lose work, and how to stop it.",
+   "size": 94
+  },
+  {
+   "type": "browser",
+   "theme": "ink",
+   "glow": false,
+   "kicker": "Step one: the website",
+   "title": "Make the next step\n*impossible to miss*",
+   "site": {
+    "url": "harbourplumbing.co.uk",
+    "brand": "Harbour Plumbing",
+    "headline": "Boilers fixed today\nacross Sunderland.",
+    "lede": "Gas Safe engineers. Fixed prices before we start.",
+    "button": "Get a quote"
+   },
+   "pins": [
+    "Your name and a simple menu",
+    "What you do and where, in one line",
+    "One clear action"
+   ]
+  },
+  {
+   "type": "compare",
+   "theme": "paper",
+   "kicker": "Step two: where it lands",
+   "title": "Where do your\nenquiries *go*?",
+   "instead": [
+    "Into someone's inbox",
+    "Read late, forwarded on, sometimes forgotten."
+   ],
+   "try": [
+    "Straight into your CRM",
+    "Logged as a record the moment it's sent, with nothing to retype."
+   ]
+  },
+  {
+   "type": "flow",
+   "theme": "ink",
+   "glow": false,
+   "kicker": "Step three: one system",
+   "title": "From first click\nto *finished job*",
+   "steps": [
+    [
+     "Enquiry",
+     "Sent from your website, saved as a record"
+    ],
+    [
+     "Quote",
+     "Built from the same record, no copying"
+    ],
+    [
+     "Booking",
+     "Date agreed, team told, customer reminded"
+    ],
+    [
+     "Job",
+     "Tracked to done, with everything in one place"
+    ]
+   ],
+   "highlight": [
+    0
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "paper",
+   "kicker": "Worth checking",
+   "title": "Is your setup\nleaking work?",
+   "items": [
+    [
+     "Do enquiries arrive in more than one place?",
+     "Inbox, phone, Facebook, a form plug-in."
+    ],
+    [
+     "Does anyone retype customer details?",
+     "Every copy is a chance for a mistake."
+    ],
+    [
+     "Could you say who's following up each lead?",
+     "If not, some aren't being followed up."
+    ],
+    [
+     "Can you see which pages bring in real work?",
+     "Not just visits. Enquiries that became jobs."
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "glow_low": true,
+   "kicker": "What we build",
+   "headline": "One system, from\n*first click* to\nfinished job.",
+   "body": "Websites and CRM systems that work together, set up around how your team already works.",
+   "cta_label": "Start a project",
+   "cta": "nexulabs.co.uk"
+  }
+ ]
+}
