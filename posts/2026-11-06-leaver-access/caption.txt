@@ -6,7 +6,7 @@ A survey published this week suggests it often doesn't:
 → 82% of people from firms with under 250 staff kept at least one working account, against 70% at firms with over 1,000
 → A third said nobody clearly owned the job of switching their access off
 
-(Source: Sagiss survey of 1,000 US adults by Pollfish, September 2026. It's US data, but the same gaps show up in small businesses everywhere.)
+(Source: Sagiss survey of 1,000 US adults by Pollfish, September 2026. It's US data, but the lesson applies to any business.)
 
 The fix isn't expensive. Keep one list of every system, give one person the job, switch access off on the last day, change any shared passwords, and check a week later. The full checklist is in the slides.
 
