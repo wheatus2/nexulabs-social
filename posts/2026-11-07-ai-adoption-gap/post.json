@@ -1,0 +1,99 @@
+{
+ "id": "2026-11-07-ai-adoption-gap",
+ "series": "AI · UK SMEs",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "ink",
+   "kicker": "UK small business · 2026 data",
+   "headline": "Most small firms\nnow use AI.\n*Very few* have\nbuilt it in.",
+   "sub": "What this year's numbers say, and where the real gap is."
+  },
+  {
+   "type": "bars",
+   "theme": "paper",
+   "kicker": "Adoption is climbing fast",
+   "title": "UK SMEs actively\nusing AI",
+   "data": [
+    [
+     "2023",
+     23
+    ],
+    [
+     "2024",
+     25
+    ],
+    [
+     "2025",
+     35
+    ],
+    [
+     "2026",
+     54
+    ]
+   ],
+   "unit": "%",
+   "source": "British Chambers of Commerce / Atos, Business Outlook Survey, 2026"
+  },
+  {
+   "type": "stat",
+   "theme": "paper",
+   "kicker": "But depth is another story",
+   "value": "6%",
+   "statement": "of small firms have embedded AI into daily work across the business.",
+   "detail": "Only 21% use it regularly at all.",
+   "source": "Enterprise Nation, UK SME Digital & AI Adoption 2026 (1,320 firms)"
+  },
+  {
+   "type": "hbars",
+   "theme": "ink",
+   "glow": false,
+   "kicker": "Closer to home",
+   "title": "Regular AI use:\nthe *North East* is\nfalling behind",
+   "data": [
+    [
+     "London",
+     30
+    ],
+    [
+     "Scotland",
+     27
+    ],
+    [
+     "UK average",
+     21
+    ],
+    [
+     "North East",
+     10
+    ],
+    [
+     "Northern Ireland",
+     6
+    ]
+   ],
+   "unit": "%",
+   "max": 34,
+   "highlight": "North East",
+   "source": "Enterprise Nation, UK SME Digital & AI Adoption 2026"
+  },
+  {
+   "type": "stat",
+   "theme": "paper",
+   "kicker": "What's holding firms back",
+   "value": "67%",
+   "statement": "of businesses already using AI say a lack of *skills and know‑how* holds them back.",
+   "source": "DSIT, AI Adoption Survey 2026 (3,503 UK businesses)"
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "glow_low": true,
+   "kicker": "The Nexulabs view",
+   "headline": "The gap isn't\nthe tool. It's the\n*system* around it.",
+   "body": "AI pays off when it's built into how your team already works: enquiries, quotes, jobs and bookings. That's what we build.",
+   "cta_label": "Start a project",
+   "cta": "nexulabs.co.uk"
+  }
+ ]
+}

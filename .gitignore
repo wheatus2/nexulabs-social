@@ -1,0 +1,5 @@
+first-post-preview.jpg
+first-post-slides.zip
+*.png
+.slide-*
+__pycache__/
