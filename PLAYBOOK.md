@@ -61,6 +61,7 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, co
 - Fix and re-render until every slide is clean.
 
 ## Daily routine (what the scheduled run does)
+0. **Check `queue.json` first.** If it lists any posts, publish the first one exactly as it is (its images and caption are already in `posts/<id>/`), log it, remove it from `queue.json`, commit and push, and stop there. Don't create a new post that day.
 1. Read this file and `log.json`. Check the news (see 'What to post'), otherwise pick today's topic from the rotation; nothing used in the last 30 days.
 2. Research with web search; fetch and read the primary source for every figure you'll use.
 3. Create `posts/YYYY-MM-DD-<slug>/post.json` and `caption.txt`. Render: `python3 render.py posts/<id>/post.json`.
