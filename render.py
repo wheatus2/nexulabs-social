@@ -4,7 +4,7 @@
 Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
-Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow
+Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
 Post-level "style": studio | editorial | bold | minimal | poster (rotate; never the same two posts running).
@@ -222,9 +222,22 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .st-poster h2{{font-weight:700}}
 .st-poster .top{{border:1.5px solid rgba(127,127,127,.35);border-radius:999px;padding:16px 26px}}
 .st-poster .mark svg{{height:30px}}
+/* photo */
+.photo{{color:#fff}}
+.photo .bgimg{{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}}
+.photo .shade{{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,11,12,.55) 0%,rgba(11,11,12,.05) 30%,rgba(11,11,12,.15) 52%,rgba(11,11,12,.88) 100%)}}
+.photo.shade-full .shade{{background:rgba(11,11,12,.55)}}
+.photo.shade-blue .shade{{background:linear-gradient(180deg,rgba(59,43,255,.15) 0%,rgba(59,43,255,.0) 35%,rgba(59,43,255,.92) 100%)}}
+.photo h1{{margin-top:auto;font-size:100px;text-shadow:0 2px 30px rgba(0,0,0,.25)}}
+.photo p.lead{{margin-top:30px;opacity:.9}}
+.photo .credit{{position:absolute;z-index:3;right:88px;bottom:40px;font-family:Mono;font-size:15px;opacity:.65;letter-spacing:.02em}}
+.photo .grid,.photo .glow{{display:none}}
+.photo .acc{{color:#9AA8FF}}
+.photo.shade-blue .acc{{color:#0B0B0C}}
 """
 
 
+_POST_DIR = "."
 LOGO_SVG = (ROOT / "brand" / "nexulabs-logo-white.svg").read_text()
 
 
@@ -245,8 +258,15 @@ def frame(slide, idx, total, series, inner, foot_left="", foot_right="", style="
         d = html.escape(str(slide.get("deco", f"{idx:02d}")))
         size = slide.get("deco_size", 880 if len(d) <= 2 else 520)
         deco = f'<div class="deco" style="font-size:{size}px;right:-40px;bottom:-60px">{d}</div>'
-    return f"""<section class="s {theme} {slide['type']} st-{style}">
-{glow}<div class="grid"></div>{deco}
+    photo = ""
+    if slide["type"] == "photo":
+        img = (Path(_POST_DIR) / slide["image"]).resolve().as_uri()
+        photo = f'<div class="bgimg" style="background-image:url({img});background-position:{slide.get("focus","center")}"></div><div class="shade"></div>'
+        if slide.get("credit"):
+            photo += f'<div class="credit">{html.escape(slide["credit"])}</div>'
+    shade = f" shade-{slide['shade']}" if slide.get("shade") else ""
+    return f"""<section class="s {theme} {slide['type']} st-{style}{shade}">
+{photo}{glow}<div class="grid"></div>{deco}
 <div class="top"><div class="mark">{logo(theme)}</div>
 <div class="meta">{html.escape(series)}{f" &nbsp;·&nbsp; {idx:02d}/{total:02d}" if total > 1 else ""}</div></div>
 <div class="body">{inner}</div>
@@ -337,6 +357,11 @@ def build(slide, idx, total, series, style="studio"):
 <div class="hero">{md(site['headline'])}</div><div class="lede">{md(site.get('lede',''))}</div>
 <div class="btn">{html.escape(site.get('button','Get a quote'))} →</div><div class="tiles"><div></div><div></div><div></div></div>{pin_html}</div></div>
 {f'<div class="legend">{legend}</div>' if pins else ''}<div style="height:40px"></div>"""
+    elif t == "photo":
+        inner = f"""{kick(slide) if slide.get('kicker') else ''}
+<h1 style="font-size:{slide.get('size',100)}px">{md(slide['headline'])}</h1>
+{f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div style="height:60px"></div>"""
+        fr = '<div class="swipe">Swipe <b>→</b></div>' if total > 1 and idx == 1 else ""
     elif t == "flow":
         hl = slide.get("highlight", [])
         steps = "".join(
@@ -363,6 +388,8 @@ def render(spec_path):
     spec_path = Path(spec_path).resolve()
     spec = json.loads(spec_path.read_text())
     out = spec_path.parent
+    global _POST_DIR
+    _POST_DIR = str(out)
     slides = spec["slides"]
     files = []
     with sync_playwright() as p:
