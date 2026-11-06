@@ -1,6 +1,6 @@
 # Nexulabs Instagram — daily posting playbook
 
-Followed by the daily scheduled run. One post per day to the Nexulabs Instagram Business account.
+Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm UK time) to the Nexulabs Instagram account and Facebook Page.
 
 ## Brand
 - Business: Nexulabs, "Websites and CRM systems for small businesses" (nexulabs.co.uk). Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding. Based in the North East of England.
@@ -46,6 +46,13 @@ Posts must read as if Lee wrote them himself. If a line sounds like marketing co
 - Vary the format: some days a single image, some days 3–5 slides, occasionally 6–7. Only end with the CTA slide about every other post.
 - Rotate layouts so posts don't all look the same: change which slide types you use, and swap ink/paper order.
 
+## Three posts a day (Lee's rule, 6 Nov 2026)
+- Each run makes one post. Name the folder `posts/YYYY-MM-DD-HHMM-<slug>` (time of the run) so same-day posts don't clash.
+- Each post must differ from the **previous post** (not just yesterday's) in category, style and cover theme. Over a day, try to cover three different categories.
+- Rough shape for the day: **morning** a meatier carousel (web design or CRM), **afternoon** something quick and visual (a single image or 3 slides: a before/after, a tip, a mockup), **evening** a lighter or more conversational one (a point of view, branding, a question to the audience). Mix it up; this is a guide, not a template.
+- News: at most one news post per day, and never the same story twice.
+- No topic, headline or stat repeated within 30 days (that's about 90 posts, so keep ideas fresh).
+
 ## Make every post look different (Lee's rule, 6 Nov 2026)
 Lee noticed the first posts all looked the same. Every post must look clearly different from the one before it.
 - Set a post-level `"style"` in post.json. Five styles exist in render.py:
@@ -54,7 +61,7 @@ Lee noticed the first posts all looked the same. Every post must look clearly di
   - `bold`: heavy type, logo moved to the bottom, works best with a `blue` cover
   - `minimal`: centred, no decoration, small centred logo
   - `poster`: big outlined numbers or a character in the background (`"deco"` per slide; `"deco": ""` to hide), pill-shaped header
-- Never use the same style as the previous post (check `log.json`, which records `style`). Cycle through all five before repeating one.
+- Never use the same style as the previous post (check the last entries in `log.json`, which record `style`). Cycle through all five before repeating one.
 - Mix the three themes: `ink` (dark), `paper` (light) and `blue` (brand blue background). Change the cover theme from post to post, and don't always alternate dark/light in the same order.
 - Vary the structure too: single image vs carousel, slide count, which slide types are used.
 
