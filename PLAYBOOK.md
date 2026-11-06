@@ -6,8 +6,10 @@ Followed by the daily scheduled run. One post per day to the Nexulabs Instagram 
 - Business: Nexulabs, "Websites and CRM systems for small businesses" (nexulabs.co.uk). Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding. Based in the North East of England.
 - Voice: UK English. Plain, direct, practical, quietly confident. Short sentences. Address the reader as "you". No hype, no jargon, no emoji in the body (→ arrows are fine), no exclamation marks.
 - Visuals: rendered by `render.py` only. Never use stock photos, scraped images, logos of other companies, or images of real people.
-  - Colours: ink #0B0B0C, paper #F3F1EC, single accent #FF5A1F. Accent is for one or two words or one data point per slide, never more.
-  - Type: Inter Display (headlines/numbers), Inter (body), JetBrains Mono (labels/sources).
+  - Logo: the real Nexulabs wordmark from `brand/nexulabs-logo-white.svg` (render.py recolours it per theme). Never retype the logo as text.
+  - Colours (from nexulabs.co.uk): ink #0B0B0C, paper #F5F5F7, accent blue #3B2BFF on light / #667DFF on dark (the logo's full stop). Accent is for one or two words or one data point per slide, never more. No other accent colours.
+  - Type: Geist (headlines, numbers, body) and Geist Mono (labels, sources), the same as the website.
+  - Note: the very first post (2026-11-06) used an earlier orange/Inter style; everything after it uses this brand.
   - Format: 1080×1350 (4:5). Carousels of 4–7 slides are the default; a single-slide post is fine for a strong quote or stat.
   - Alternate ink and paper slides. Cover and closing CTA are ink.
 
