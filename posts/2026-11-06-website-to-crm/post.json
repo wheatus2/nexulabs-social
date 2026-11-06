@@ -4,15 +4,14 @@
  "slides": [
   {
    "type": "cover",
-   "theme": "ink",
+   "theme": "blue",
    "kicker": "",
-   "size": 104,
-   "headline": "Someone fills in\nyour contact form.\nThen *what*?"
+   "size": 124,
+   "headline": "Someone fills in\nyour form.\nThen *what*?"
   },
   {
    "type": "browser",
    "theme": "ink",
-   "glow": false,
    "title": "Make the button\n*obvious*",
    "site": {
     "url": "harbourplumbing.co.uk",
@@ -45,7 +44,6 @@
   {
    "type": "flow",
    "theme": "ink",
-   "glow": false,
    "title": "One record,\n*start to finish*",
    "steps": [
     [
@@ -95,12 +93,12 @@
   },
   {
    "type": "cta",
-   "theme": "ink",
-   "glow_low": true,
+   "theme": "blue",
    "headline": "This is the bit\nwe *build*.",
    "body": "Websites and CRMs for small businesses in the North East, set up around how you already work.",
    "cta_label": "Get in touch",
    "cta": "nexulabs.co.uk"
   }
- ]
+ ],
+ "style": "bold"
 }

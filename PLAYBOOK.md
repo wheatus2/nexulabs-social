@@ -44,6 +44,18 @@ Posts must read as if Lee wrote them himself. If a line sounds like marketing co
 - Vary the format: some days a single image, some days 3–5 slides, occasionally 6–7. Only end with the CTA slide about every other post.
 - Rotate layouts so posts don't all look the same: change which slide types you use, and swap ink/paper order.
 
+## Make every post look different (Lee's rule, 6 Nov 2026)
+Lee noticed the first posts all looked the same. Every post must look clearly different from the one before it.
+- Set a post-level `"style"` in post.json. Five styles exist in render.py:
+  - `studio`: grid, soft blue glow, logo top-left
+  - `editorial`: magazine feel, thin rules above and below, lighter headline weight, square corners
+  - `bold`: heavy type, logo moved to the bottom, works best with a `blue` cover
+  - `minimal`: centred, no decoration, small centred logo
+  - `poster`: big outlined numbers or a character in the background (`"deco"` per slide; `"deco": ""` to hide), pill-shaped header
+- Never use the same style as the previous post (check `log.json`, which records `style`). Cycle through all five before repeating one.
+- Mix the three themes: `ink` (dark), `paper` (light) and `blue` (brand blue background). Change the cover theme from post to post, and don't always alternate dark/light in the same order.
+- Vary the structure too: single image vs carousel, slide count, which slide types are used.
+
 ## Accuracy rules (non-negotiable)
 - Every number on a slide must come from a source fetched during the run, published within the last ~24 months, preferably UK. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
 - Put the source on the slide (`source` field) and name it in the caption.
@@ -67,6 +79,7 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, co
 3. Create `posts/YYYY-MM-DD-<slug>/post.json` and `caption.txt`. Render: `python3 render.py posts/<id>/post.json`.
 4. Build a contact sheet, look at every slide, fix and re-render until clean.
 5. Commit and push to `main`. Confirm each image URL loads: `https://raw.githubusercontent.com/wheatus2/nexulabs-social/main/posts/<id>/slide-NN.jpg`.
-6. Publish via Zapier MCP: app Instagram for Business, action `publish_media_v2` (tool `instagram_for_business_publish_photo_s`), `instagramPageId` = `17841471856846758` (Nexulabs), `media` = list of the raw URLs in order, `caption` = caption.txt.
-7. Fetch the permalink via the Make API GET Request action (`https://graph.facebook.com/v21.0/<media_id>?fields=permalink`), append an entry to `log.json`, commit and push.
+6. Publish to Instagram via Zapier MCP: app Instagram for Business, action `publish_media_v2` (tool `instagram_for_business_publish_photo_s`), `instagramPageId` = `17841471856846758` (Nexulabs), `media` = list of the raw URLs in order, `caption` = caption.txt.
+6b. Also publish to the Nexulabs Facebook Page via Zapier MCP: app Facebook Pages, action `page_stream` (tool `facebook_pages_create_page_post`), `page` = the Nexulabs Page (resolve the dynamic `page` value with inspect_zapier_actions), `source` = the same raw image URLs in order (up to 10), `message` = caption.txt. If Facebook Pages has no connection yet, skip this step and mention it in the summary. A Facebook failure must not stop or undo the Instagram post.
+7. Fetch the permalink via the Make API GET Request action (`https://graph.facebook.com/v21.0/<media_id>?fields=permalink`), append an entry to `log.json` (include `style`, `cover_theme` and `facebook_post_id` if posted), commit and push.
 8. If publishing fails: retry once after 2 minutes. If it's an auth/token error, tell Lee to reconnect Instagram at https://mcp.zapier.com/api/v1/connect-auth/InstagramBusinessCLIAPI?accountId=8724593.

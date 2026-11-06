@@ -6,7 +6,8 @@ Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
 Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow
 Text markup: *word* -> accent colour. Line breaks with \n.
-Themes: "ink" (dark) or "paper" (light).
+Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
+Post-level "style": studio | editorial | bold | minimal | poster (rotate; never the same two posts running).
 """
 import html, json, re, sys
 from pathlib import Path
@@ -41,8 +42,8 @@ CSS = f"""
 html,body{{width:1080px;height:1350px;overflow:hidden}}
 body{{font-family:Text;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum"}}
 .s{{position:relative;width:1080px;height:1350px;padding:84px 88px;display:flex;flex-direction:column;overflow:hidden}}
-.ink{{background:{INK};color:{PAPER};--acc:{ACCENT_DARK}}}
-.paper{{background:{PAPER};color:{INK};--acc:{ACCENT}}}
+.ink{{background:{INK};color:{PAPER};--acc:{ACCENT_DARK};--fg:{PAPER}}}
+.paper{{background:{PAPER};color:{INK};--acc:{ACCENT};--fg:{INK}}}
 .acc{{color:var(--acc)}}
 .grid{{position:absolute;inset:0;pointer-events:none;opacity:.07;
  background-image:linear-gradient(currentColor 1px,transparent 1px),linear-gradient(90deg,currentColor 1px,transparent 1px);
@@ -164,6 +165,63 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .st.hl .dot{{background:var(--acc);border-color:var(--acc);color:#fff}}
 .st h3{{font-family:Disp;font-weight:600;font-size:46px;letter-spacing:-.03em}}
 .st p{{font-size:25px;opacity:.65;margin-top:6px}}
+/* ===== blue theme ===== */
+.blue{{background:{ACCENT};color:#FFFFFF;--acc:#0B0B0C;--fg:#FFFFFF}}
+.blue .grid{{opacity:.12}}
+.blue .row .track{{background:rgba(255,255,255,.22)}}
+.blue .row.hl .fill{{background:#0B0B0C}}
+.blue .col .bar{{background:#fff;opacity:.35}}
+.blue .col.hl .bar{{background:#0B0B0C;opacity:1}}
+.blue .card.good{{background:rgba(255,255,255,.12);border-color:#fff}}
+.blue .card.good .lb{{color:#fff}}
+.blue .ctabox .btn{{background:#0B0B0C}}
+.blue .st .dot{{background:rgba(255,255,255,.12)}}
+.blue .st.hl .dot{{background:#0B0B0C;border-color:#0B0B0C}}
+/* ===== style: editorial ===== */
+.st-editorial .grid,.st-editorial .glow{{display:none}}
+.st-editorial .top{{padding-bottom:26px;border-bottom:2px solid currentColor}}
+.st-editorial .foot{{border-top:2px solid currentColor;padding-top:22px;opacity:.75}}
+.st-editorial h1{{font-weight:500;letter-spacing:-.055em}}
+.st-editorial h2{{font-weight:500;letter-spacing:-.045em;font-size:72px}}
+.st-editorial .kicker:before{{display:none}}
+.st-editorial .kicker{{font-size:20px;opacity:.7}}
+.st-editorial .big{{font-weight:500}}
+.st-editorial .card,.st-editorial .ctabox,.st-editorial .bw{{border-radius:4px}}
+.st-editorial .ctabox .btn{{border-radius:4px}}
+.st-editorial .row .track,.st-editorial .row .fill{{border-radius:0;height:14px}}
+.st-editorial .col .bar{{border-radius:0}}
+/* ===== style: bold ===== */
+.st-bold .grid,.st-bold .glow{{display:none}}
+.st-bold .body{{order:1}}
+.st-bold .top{{order:2;margin-top:34px}}
+.st-bold .foot{{order:3;margin-top:18px}}
+.st-bold .mark svg{{height:46px}}
+.st-bold h1{{font-weight:700;letter-spacing:-.06em;line-height:.9}}
+.st-bold h2{{font-weight:700;letter-spacing:-.05em;font-size:76px;line-height:.98}}
+.st-bold .big{{font-weight:700;letter-spacing:-.075em}}
+.st-bold .kicker{{opacity:.85}}
+/* ===== style: minimal ===== */
+.st-minimal .grid,.st-minimal .glow,.st-minimal .grain{{display:none}}
+.st-minimal .top{{justify-content:center}}
+.st-minimal .meta{{display:none}}
+.st-minimal .mark svg{{height:30px}}
+.st-minimal .body{{text-align:center;align-items:center}}
+.st-minimal .kicker{{justify-content:center}}
+.st-minimal .kicker:before{{display:none}}
+.st-minimal h1{{font-weight:500;letter-spacing:-.05em}}
+.st-minimal h2{{font-weight:500}}
+.st-minimal p.lead{{margin-left:auto;margin-right:auto}}
+.st-minimal .big{{margin-left:0}}
+.st-minimal .items,.st-minimal .hb,.st-minimal .cmp,.st-minimal .fl,.st-minimal .bw,.st-minimal .sw,.st-minimal .chart,.st-minimal .xl,.st-minimal .ctabox,.st-minimal .legend{{text-align:left;align-self:stretch}}
+.st-minimal .foot{{justify-content:center;text-align:center}}
+/* ===== style: poster ===== */
+.st-poster .grid{{display:none}}
+.deco{{position:absolute;z-index:1;font-family:Disp;font-weight:700;line-height:.78;letter-spacing:-.07em;white-space:nowrap;
+ color:transparent;-webkit-text-stroke:4px var(--fg);opacity:.2;pointer-events:none}}
+.st-poster h1{{font-weight:700;letter-spacing:-.06em}}
+.st-poster h2{{font-weight:700}}
+.st-poster .top{{border:1.5px solid rgba(127,127,127,.35);border-radius:999px;padding:16px 26px}}
+.st-poster .mark svg{{height:30px}}
 """
 
 
@@ -171,19 +229,24 @@ LOGO_SVG = (ROOT / "brand" / "nexulabs-logo-white.svg").read_text()
 
 
 def logo(theme):
-    fg = PAPER if theme == "ink" else INK
-    dot = ACCENT_DARK if theme == "ink" else ACCENT
+    fg = INK if theme == "paper" else "#FFFFFF"
+    dot = {"ink": ACCENT_DARK, "paper": ACCENT, "blue": INK}.get(theme, ACCENT)
     return (LOGO_SVG.replace('fill="#FFFFFF"', f'fill="{fg}"').replace('fill="#667DFF"', f'fill="{dot}"')
             .replace('<title>nexulabs</title>', ''))
 
 
-def frame(slide, idx, total, series, inner, foot_left="", foot_right=""):
+def frame(slide, idx, total, series, inner, foot_left="", foot_right="", style="studio"):
     theme = slide.get("theme", "paper")
     glow = ""
     if slide.get("glow", theme == "ink"):
         glow = f'<div class="glow{" low" if slide.get("glow_low") else ""}"></div>'
-    return f"""<section class="s {theme} {slide['type']}">
-{glow}<div class="grid"></div>
+    deco = ""
+    if style == "poster" and slide.get("deco", None) != "":
+        d = html.escape(str(slide.get("deco", f"{idx:02d}")))
+        size = slide.get("deco_size", 880 if len(d) <= 2 else 520)
+        deco = f'<div class="deco" style="font-size:{size}px;right:-40px;bottom:-60px">{d}</div>'
+    return f"""<section class="s {theme} {slide['type']} st-{style}">
+{glow}<div class="grid"></div>{deco}
 <div class="top"><div class="mark">{logo(theme)}</div>
 <div class="meta">{html.escape(series)}{f" &nbsp;·&nbsp; {idx:02d}/{total:02d}" if total > 1 else ""}</div></div>
 <div class="body">{inner}</div>
@@ -201,7 +264,7 @@ def src(slide):
     return f"Source: {html.escape(s)}" if s else ""
 
 
-def build(slide, idx, total, series):
+def build(slide, idx, total, series, style="studio"):
     t = slide["type"]
     fr = ""
     if t == "cover":
@@ -291,7 +354,7 @@ def build(slide, idx, total, series):
 <h2>{md(slide['title'])}</h2>{f'<p class="lead" style="margin-top:24px">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div class="sw">{rows}</div><div style="height:48px"></div>"""
     else:
         raise ValueError(f"unknown slide type {t}")
-    return frame(slide, idx, total, series, inner, src(slide), fr)
+    return frame(slide, idx, total, series, inner, src(slide), fr, style)
 
 
 def render(spec_path):
@@ -306,7 +369,7 @@ def render(spec_path):
         b = p.chromium.launch(executable_path="/usr/bin/google-chrome") if Path("/usr/bin/google-chrome").exists() else p.chromium.launch()
         pg = b.new_page(viewport={"width": 1080, "height": 1350}, device_scale_factor=2)
         for i, s in enumerate(slides, 1):
-            doc = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{build(s, i, len(slides), spec.get('series',''))}</body></html>"
+            doc = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{build(s, i, len(slides), spec.get('series',''), spec.get('style','studio'))}</body></html>"
             tmp = out / f".slide-{i:02d}.html"
             tmp.write_text(doc)
             pg.goto(tmp.as_uri())
