@@ -5,17 +5,15 @@
   {
    "type": "cover",
    "theme": "ink",
-   "kicker": "Websites + CRM",
-   "headline": "Your website\ntakes the enquiry.\nWhat happens *next*?",
-   "sub": "Where small firms quietly lose work, and how to stop it.",
-   "size": 94
+   "kicker": "",
+   "size": 104,
+   "headline": "Someone fills in\nyour contact form.\nThen *what*?"
   },
   {
    "type": "browser",
    "theme": "ink",
    "glow": false,
-   "kicker": "Step one: the website",
-   "title": "Make the next step\n*impossible to miss*",
+   "title": "Make the button\n*obvious*",
    "site": {
     "url": "harbourplumbing.co.uk",
     "brand": "Harbour Plumbing",
@@ -24,47 +22,47 @@
     "button": "Get a quote"
    },
    "pins": [
-    "Your name and a simple menu",
-    "What you do and where, in one line",
-    "One clear action"
+    "Your name. Keep the menu short",
+    "Say what you do and where",
+    "One button, not five"
    ]
   },
   {
    "type": "compare",
    "theme": "paper",
-   "kicker": "Step two: where it lands",
-   "title": "Where do your\nenquiries *go*?",
+   "title": "Where do your\nenquiries *end up*?",
+   "instead_label": "Usually",
+   "try_label": "Better",
    "instead": [
-    "Into someone's inbox",
-    "Read late, forwarded on, sometimes forgotten."
+    "An inbox",
+    "Someone reads it, means to reply, and it slips."
    ],
    "try": [
-    "Straight into your CRM",
-    "Logged as a record the moment it's sent, with nothing to retype."
+    "Your CRM",
+    "Logged the second it arrives, with a name next to it and a reminder if nobody's replied."
    ]
   },
   {
    "type": "flow",
    "theme": "ink",
    "glow": false,
-   "kicker": "Step three: one system",
-   "title": "From first click\nto *finished job*",
+   "title": "One record,\n*start to finish*",
    "steps": [
     [
      "Enquiry",
-     "Sent from your website, saved as a record"
+     "Comes in from the website"
     ],
     [
      "Quote",
-     "Built from the same record, no copying"
+     "Built from the same details"
     ],
     [
      "Booking",
-     "Date agreed, team told, customer reminded"
+     "Customer gets a reminder"
     ],
     [
      "Job",
-     "Tracked to done, with everything in one place"
+     "Ticked off when it's done"
     ]
    ],
    "highlight": [
@@ -74,24 +72,24 @@
   {
    "type": "list",
    "theme": "paper",
-   "kicker": "Worth checking",
-   "title": "Is your setup\nleaking work?",
+   "kicker": "Quick check",
+   "title": "Is work slipping\nthrough the gaps?",
    "items": [
     [
-     "Do enquiries arrive in more than one place?",
-     "Inbox, phone, Facebook, a form plug-in."
+     "Do enquiries come in four different ways?",
+     "Email, phone, Facebook, that old form plug-in."
     ],
     [
-     "Does anyone retype customer details?",
-     "Every copy is a chance for a mistake."
+     "Is anyone typing the same details twice?",
+     ""
     ],
     [
-     "Could you say who's following up each lead?",
-     "If not, some aren't being followed up."
+     "Who's chasing yesterday's enquiries?",
+     "If nobody's sure, nobody is."
     ],
     [
-     "Can you see which pages bring in real work?",
-     "Not just visits. Enquiries that became jobs."
+     "Do you know which pages bring in work?",
+     "Not visits. Actual jobs."
     ]
    ]
   },
@@ -99,10 +97,9 @@
    "type": "cta",
    "theme": "ink",
    "glow_low": true,
-   "kicker": "What we build",
-   "headline": "One system, from\n*first click* to\nfinished job.",
-   "body": "Websites and CRM systems that work together, set up around how your team already works.",
-   "cta_label": "Start a project",
+   "headline": "This is the bit\nwe *build*.",
+   "body": "Websites and CRMs for small businesses in the North East, set up around how you already work.",
+   "cta_label": "Get in touch",
    "cta": "nexulabs.co.uk"
   }
  ]

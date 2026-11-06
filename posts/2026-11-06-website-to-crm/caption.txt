@@ -1,17 +1,9 @@
-Your website takes the enquiry. What happens next?
+Most websites are decent at getting the enquiry. It's what happens after that loses the job.
 
-For a lot of small businesses, that's where work quietly slips away. The website does its job, then the enquiry lands in an inbox, gets read late, forwarded on, and sometimes forgotten.
+It lands in someone's inbox, they mean to reply, and by Thursday the customer's booked someone else.
 
-A joined-up setup works differently:
+The fix is pretty boring, to be honest. The form on your site should drop straight into your CRM, so every enquiry has a record, a name next to it and a reminder if nobody's got back to them.
 
-→ Your website makes the next step obvious: one clear button, one short form
-→ Every enquiry goes straight into your CRM as a record, with nothing retyped
-→ The quote, the booking and the job all build on that same record
+That's the sort of thing we set up. If your enquiries are all over the place at the minute, drop us a message.
 
-Four quick questions to check whether your setup is leaking work are in the slides.
-
-That's what we build at Nexulabs: websites and CRM systems that work together, set up around how your team already works.
-
-Send us a message or visit nexulabs.co.uk.
-
-#WebDesign #CRM #SmallBusinessUK #WebsiteDesign #BusinessSystems #NorthEastBusiness #Sunderland #Nexulabs
+#webdesign #crm #smallbusinessuk #northeastbusiness

@@ -185,10 +185,15 @@ def frame(slide, idx, total, series, inner, foot_left="", foot_right=""):
     return f"""<section class="s {theme} {slide['type']}">
 {glow}<div class="grid"></div>
 <div class="top"><div class="mark">{logo(theme)}</div>
-<div class="meta">{html.escape(series)} &nbsp;·&nbsp; {idx:02d}/{total:02d}</div></div>
+<div class="meta">{html.escape(series)}{f" &nbsp;·&nbsp; {idx:02d}/{total:02d}" if total > 1 else ""}</div></div>
 <div class="body">{inner}</div>
 <div class="foot"><div class="src">{foot_left}</div><div>{foot_right}</div></div>
 <div class="grain"></div></section>"""
+
+
+def kick(slide):
+    k = slide.get("kicker")
+    return f'<div class="kicker" style="margin-top:96px">{md(k)}</div>' if k else '<div style="height:96px"></div>'
 
 
 def src(slide):
@@ -200,7 +205,7 @@ def build(slide, idx, total, series):
     t = slide["type"]
     fr = ""
     if t == "cover":
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h1 style="font-size:{slide.get('size',112)}px">{md(slide['headline'])}</h1>
 {f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div style="height:70px"></div>"""
         fr = '<div class="swipe">Swipe <b>→</b></div>' if total > 1 else ""
@@ -208,7 +213,7 @@ def build(slide, idx, total, series):
         v = html.escape(slide["value"])
         m = re.match(r"^([^%x+£$]*)([%x+]?)$", v)
         num, suf = (m.group(1), m.group(2)) if m else (v, "")
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <div class="big" style="font-size:{slide.get('size',400)}px">{num}{f'<small class="acc">{suf}</small>' if suf else ''}</div>
 <h2>{md(slide['statement'])}</h2>
 {f'<p class="lead">{md(slide["detail"])}</p>' if slide.get('detail') else ''}<div style="height:56px"></div>"""
@@ -221,7 +226,7 @@ def build(slide, idx, total, series):
             f'<div class="col{" hl" if str(k)==str(hl) else ""}"><div class="v">{v}{unit}</div>'
             f'<div class="bar" style="height:{v/mx*82:.1f}%"></div></div>' for k, v in data)
         xl = "".join(f"<div>{html.escape(str(k))}</div>" for k, _ in data)
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2>
 <div class="chart">{cols}</div><div class="xl">{xl}</div><div style="height:56px"></div>"""
     elif t == "hbars":
@@ -232,19 +237,19 @@ def build(slide, idx, total, series):
         rows = "".join(
             f'<div class="row{" hl" if k==hl else ""}"><div class="lab"><span>{html.escape(k)}</span><b>{v}{unit}</b></div>'
             f'<div class="track"><div class="fill" style="width:{v/mx*100:.1f}%"></div></div></div>' for k, v in data)
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2><div class="hb">{rows}</div><div style="height:56px"></div>"""
     elif t == "list":
         items = "".join(
             f'<div class="it"><div class="n">{i+1:02d}</div><div><h3>{md(a)}</h3>'
             f'{f"<p>{md(b)}</p>" if b else ""}</div></div>' for i, (a, b) in enumerate(slide["items"]))
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2><div class="items">{items}</div><div style="height:40px"></div>"""
     elif t == "quote":
         inner = f"""<div class="qm" style="margin-top:auto">“</div><h1>{md(slide['text'])}</h1>
 {f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div style="height:70px"></div>"""
     elif t == "cta":
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h1 style="font-size:{slide.get('size',100)}px">{md(slide['headline'])}</h1>
 {f'<p class="lead">{md(slide["body"])}</p>' if slide.get('body') else ''}
 <div class="ctabox"><div><div class="l">{md(slide.get('cta_label','Talk to us'))}</div>
@@ -254,7 +259,7 @@ def build(slide, idx, total, series):
         def card(c, cls, label, ic):
             sm = f'<div class="sm">{md(c[1])}</div>' if len(c) > 1 and c[1] else ""
             return f'<div class="card {cls}"><div class="lb"><span class="ico">{ic}</span>{label}</div><div class="tx">{md(c[0])}</div>{sm}</div>'
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2><div class="cmp">{card(bad,'bad',slide.get('instead_label','Instead of'),'×')}{card(good,'good',slide.get('try_label','Try'),'✓')}</div><div style="height:48px"></div>"""
     elif t == "browser":
         site = slide["site"]
@@ -262,7 +267,7 @@ def build(slide, idx, total, series):
         pos = [("top:20px;right:24px", 0), ("top:118px;right:24px", 1), ("top:300px;right:24px", 2), ("bottom:24px;right:24px", 3)]
         pin_html = "".join(f'<div class="pin" style="{pos[i][0]}">{i+1:02d}</div>' for i in range(min(len(pins), 4)))
         legend = "".join(f'<div><b>{i+1:02d}</b><span>{md(x)}</span></div>' for i, x in enumerate(pins))
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2>
 <div class="bw"><div class="bar"><i></i><i></i><i></i><div class="url">{html.escape(site.get('url','yourbusiness.co.uk'))}</div></div>
 <div class="pg"><div class="nav"><b>{html.escape(site.get('brand','Your Business'))}</b><span><u></u><u></u></span></div>
@@ -274,7 +279,7 @@ def build(slide, idx, total, series):
         steps = "".join(
             f'<div class="st{" hl" if i in hl else ""}"><div class="dot">{i+1:02d}</div><div><h3>{md(a)}</h3>{f"<p>{md(b)}</p>" if b else ""}</div></div>'
             for i, (a, b) in enumerate(slide["steps"]))
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2><div class="fl">{steps}</div><div style="height:40px"></div>"""
     elif t == "palette":
         rows = ""
@@ -282,7 +287,7 @@ def build(slide, idx, total, series):
             cells = "".join(
                 f'<div class="c" style="background:{c[1]};color:{c[2] if len(c)>2 else "#fff"}"><b>{html.escape(c[0])}</b><span>{html.escape(c[1].upper())}</span></div>' for c in row)
             rows += f'<div class="row">{cells}</div>'
-        inner = f"""<div class="kicker" style="margin-top:96px">{md(slide.get('kicker',''))}</div>
+        inner = f"""{kick(slide)}
 <h2>{md(slide['title'])}</h2>{f'<p class="lead" style="margin-top:24px">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div class="sw">{rows}</div><div style="height:48px"></div>"""
     else:
         raise ValueError(f"unknown slide type {t}")

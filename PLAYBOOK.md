@@ -4,7 +4,7 @@ Followed by the daily scheduled run. One post per day to the Nexulabs Instagram 
 
 ## Brand
 - Business: Nexulabs, "Websites and CRM systems for small businesses" (nexulabs.co.uk). Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding. Based in the North East of England.
-- Voice: UK English. Plain, direct, practical, quietly confident. Short sentences. Address the reader as "you". No hype, no jargon, no emoji in the body (→ arrows are fine), no exclamation marks.
+- Voice: UK English. Plain, direct, practical, like Lee talking to a customer. Short sentences. Address the reader as "you". No hype, no jargon, no emoji, no exclamation marks. See "Sound like a person".
 - Visuals: rendered by `render.py` only. Never use stock photos, scraped images, logos of other companies, or images of real people.
   - Logo: the real Nexulabs wordmark from `brand/nexulabs-logo-white.svg` (render.py recolours it per theme). Never retype the logo as text.
   - Colours (from nexulabs.co.uk): ink #0B0B0C, paper #F5F5F7, accent blue #3B2BFF on light / #667DFF on dark (the logo's full stop). Accent is for one or two words or one data point per slide, never more. No other accent colours.
@@ -26,6 +26,24 @@ Nexulabs posts are about **websites and CRM systems** first. Every post must be 
 
 **Look and feel:** posts must look sharp and visual. Prefer mockups, comparisons, flows and big bold statements over walls of text. Max ~30 words of body copy per slide. Statistics are optional; a strong practical point beats a weak number.
 
+## Sound like a person, not AI (Lee's rule, 6 Nov 2026)
+Posts must read as if Lee wrote them himself. If a line sounds like marketing copy or a chatbot, rewrite it.
+
+**Captions**
+- 40–120 words. Short paragraphs, the way you'd write a message to a customer. Contractions (it's, you'll, don't). Plain words.
+- No bullet lists with arrows or emoji. No bold claims. At most one question, and don't open with a question every time. Vary the first line from post to post.
+- 3–5 hashtags at the very end, lowercase is fine. Never more than 5.
+- Name sources in normal words ("a survey from X this week found…"), not in brackets with full citations.
+- No invented anecdotes, clients or "a customer told us".
+
+**Never use** (captions or slides): unlock, elevate, seamless, game-changer, leverage, streamline, robust, empower, supercharge, transform, journey, landscape, delve, harness, "in today's…", "here's what/how/the thing", "let's dive in", "the truth is", "it's not X, it's Y" / "not just X", "from X to Y" slogans, "ready to…?", "quietly", "impossible to miss", "level up", "next level", "say goodbye to", "the secret", "ever wondered", groups of three adjectives, em dashes (—), "→" bullets, exclamation marks.
+
+**Slides**
+- Write slide text the way people talk: short, specific, a bit dry. One idea per slide.
+- Kicker labels are optional. Use them on one or two slides at most, not every slide.
+- Vary the format: some days a single image, some days 3–5 slides, occasionally 6–7. Only end with the CTA slide about every other post.
+- Rotate layouts so posts don't all look the same: change which slide types you use, and swap ink/paper order.
+
 ## Accuracy rules (non-negotiable)
 - Every number on a slide must come from a source fetched during the run, published within the last ~24 months, preferably UK. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
 - Put the source on the slide (`source` field) and name it in the caption.
@@ -33,11 +51,7 @@ Nexulabs posts are about **websites and CRM systems** first. Every post must be 
 - Check `log.json` and don't repeat a topic, headline stat or source used in the last 30 days.
 
 ## Caption format
-1. Hook line (the cover's idea in one sentence).
-2. Blank line, 3–5 lines of substance (→ bullets fine), sources named.
-3. One or two lines tying it to what Nexulabs does.
-4. Soft CTA ("Send us a message or visit nexulabs.co.uk").
-5. 6–9 hashtags, mixing broad (#SmallBusinessUK #SME #CRM) and local (#NorthEastBusiness #Sunderland #Newcastle) and topical. Max 2,200 characters.
+Follow "Sound like a person" above. Roughly: an opening line that isn't a cliché, a couple of short paragraphs with the actual point, a light mention of what Nexulabs does (not every time), then 3–5 hashtags. Keep it under 120 words.
 
 ## Slide spec (post.json)
 See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, compare (instead/try), browser (website mockup with numbered pins), palette (colour swatches), flow (numbered steps). `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
