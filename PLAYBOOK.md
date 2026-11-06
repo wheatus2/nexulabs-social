@@ -16,6 +16,8 @@ Followed by the daily scheduled run. One post per day to the Nexulabs Instagram 
 ## What to post (Lee's direction, 6 Nov 2026)
 Nexulabs posts are about **websites and CRM systems** first. Every post must be useful to a small business owner thinking about their website or their CRM.
 
+**Research the UK first (Lee's rule).** Search UK sources and UK news first: BBC, gov.uk, ICO, HMRC, ONS, FSB, British Chambers of Commerce, Enterprise Nation, Ofcom, UK trade press (Computer Weekly, Startups.co.uk, Small Business UK, The Drum). Prefer UK stories, UK statistics and UK rules (GDPR/ICO, cookie rules, accessibility, Making Tax Digital, Companies House). Use US or global sources only when there's no UK equivalent, and say clearly in the caption that it's US/global data. North East angles are a bonus.
+
 **Step 1: check the news first.** Search for tech news from the last 48 hours. Only use a story if it's directly about websites, web design, search/Google changes that affect small business websites, CRMs, online enquiries/bookings, or business software small firms use. If it qualifies, make a "news explained" post: what happened, what it means for a small business website or CRM, what to do. General tech, finance, security or AI stories that don't come back to websites/CRMs don't qualify.
 
 **Step 2: if there's no qualifying news, rotate these** (don't repeat the same one two days running):
@@ -57,7 +59,7 @@ Lee noticed the first posts all looked the same. Every post must look clearly di
 - Vary the structure too: single image vs carousel, slide count, which slide types are used.
 
 ## Accuracy rules (non-negotiable)
-- Every number on a slide must come from a source fetched during the run, published within the last ~24 months, preferably UK. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
+- Every number on a slide must come from a source fetched during the run, published within the last ~24 months. UK sources first; non-UK only when there's no UK equivalent, and say so. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
 - Put the source on the slide (`source` field) and name it in the caption.
 - Never invent statistics, quotes, clients, case studies or results. If a figure can't be verified, use a how-to or point-of-view post instead.
 - Check `log.json` and don't repeat a topic, headline stat or source used in the last 30 days.
