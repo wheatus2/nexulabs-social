@@ -5,6 +5,7 @@ Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
 Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
+browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
 Post-level "style": studio | editorial | bold | minimal | poster (rotate; never the same two posts running).
@@ -128,7 +129,7 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .card.good .lb{{color:var(--acc);opacity:1}}
 .ico{{width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px;border:1.5px solid currentColor}}
 /* browser mockup */
-.browser h2{{margin-top:40px}}
+.browser h2{{margin-top:40px;margin-bottom:44px}}
 .bw{{margin-top:auto;border-radius:22px;overflow:hidden;border:1.5px solid rgba(127,127,127,.3);background:#fff;color:#0B0B0C;box-shadow:0 40px 80px -30px rgba(0,0,0,.45);position:relative}}
 .bw .bar{{height:58px;background:#ECECEF;display:flex;align-items:center;gap:10px;padding:0 22px}}
 .bw .bar i{{width:13px;height:13px;border-radius:50%;background:#C9C9CF}}
@@ -137,11 +138,12 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .bw .nav{{display:flex;justify-content:space-between;align-items:center}}
 .bw .nav b{{font-family:Disp;font-weight:700;font-size:26px;letter-spacing:-.03em}}
 .bw .nav span{{display:flex;gap:22px;margin-right:64px}}
+.bw .nav .navtx{{font-style:normal;font-family:Text;font-weight:600;font-size:21px;color:#0B0B0C}}
 .bw .nav span u{{width:64px;height:10px;border-radius:5px;background:#DADADF;text-decoration:none}}
 .bw .hero{{margin-top:56px;font-family:Disp;font-weight:600;font-size:52px;letter-spacing:-.04em;line-height:1.02;max-width:640px}}
 .bw .lede{{margin-top:18px;font-size:22px;color:#55555c;max-width:560px;line-height:1.4}}
 .bw .btn{{margin-top:28px;display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:14px;background:{ACCENT};color:#fff;font-weight:600;font-size:22px}}
-.bw .tiles{{display:flex;gap:16px;margin-top:38px}}
+.bw .tiles{{display:flex;gap:16px;margin-top:38px;margin-right:40px}}
 .bw .tiles div{{flex:1;height:74px;border-radius:12px;background:#F0F0F3}}
 .pin{{position:absolute;width:42px;height:42px;border-radius:50%;background:{ACCENT_DARK};color:#fff;font-family:Mono;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px rgba(102,125,255,.25)}}
 .legend{{display:flex;flex-direction:column;gap:14px;margin-top:34px}}
@@ -343,17 +345,17 @@ def build(slide, idx, total, series, style="studio"):
             sm = f'<div class="sm">{md(c[1])}</div>' if len(c) > 1 and c[1] else ""
             return f'<div class="card {cls}"><div class="lb"><span class="ico">{ic}</span>{label}</div><div class="tx">{md(c[0])}</div>{sm}</div>'
         inner = f"""{kick(slide)}
-<h2>{md(slide['title'])}</h2><div class="cmp">{card(bad,'bad',slide.get('instead_label','Instead of'),'×')}{card(good,'good',slide.get('try_label','Try'),'✓')}</div><div style="height:48px"></div>"""
+<h2{f' style="font-size:{slide["title_size"]}px"' if slide.get('title_size') else ''}>{md(slide['title'])}</h2><div class="cmp">{card(bad,'bad',slide.get('instead_label','Instead of'),'×')}{card(good,'good',slide.get('try_label','Try'),'✓')}</div><div style="height:48px"></div>"""
     elif t == "browser":
         site = slide["site"]
         pins = slide.get("pins", [])
         pos = [("top:20px;right:24px", 0), ("top:118px;right:24px", 1), ("top:300px;right:24px", 2), ("bottom:24px;right:24px", 3)]
         pin_html = "".join(f'<div class="pin" style="{pos[i][0]}">{i+1:02d}</div>' for i in range(min(len(pins), 4)))
         legend = "".join(f'<div><b>{i+1:02d}</b><span>{md(x)}</span></div>' for i, x in enumerate(pins))
-        inner = f"""{kick(slide)}
+        inner = f"""{kick(slide) if slide.get('kicker') else '<div style="height:40px"></div>'}
 <h2>{md(slide['title'])}</h2>
 <div class="bw"><div class="bar"><i></i><i></i><i></i><div class="url">{html.escape(site.get('url','yourbusiness.co.uk'))}</div></div>
-<div class="pg"><div class="nav"><b>{html.escape(site.get('brand','Your Business'))}</b><span><u></u><u></u></span></div>
+<div class="pg"><div class="nav"><b>{html.escape(site.get('brand','Your Business'))}</b><span>{f'<em class="navtx">{html.escape(site["nav_text"])}</em>' if site.get('nav_text') else '<u></u><u></u>'}</span></div>
 <div class="hero">{md(site['headline'])}</div><div class="lede">{md(site.get('lede',''))}</div>
 <div class="btn">{html.escape(site.get('button','Get a quote'))} →</div><div class="tiles"><div></div><div></div><div></div></div>{pin_html}</div></div>
 {f'<div class="legend">{legend}</div>' if pins else ''}<div style="height:40px"></div>"""

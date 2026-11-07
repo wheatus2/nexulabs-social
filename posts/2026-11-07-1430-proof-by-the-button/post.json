@@ -1,0 +1,49 @@
+{
+ "id": "2026-11-07-1430-proof-by-the-button",
+ "series": "Web design",
+ "style": "editorial",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "paper",
+   "size": 118,
+   "headline": "People check\nyou out before\nthey *ring*.",
+   "sub": "So put the proof where they're already looking."
+  },
+  {
+   "type": "browser",
+   "theme": "ink",
+   "title": "Proof goes next\nto the *button*",
+   "site": {
+    "url": "fernbankroofing.co.uk",
+    "brand": "Fernbank Roofing",
+    "headline": "Roof leaking?\nWe can be there today.",
+    "lede": "★★★★★ on Google · Fully insured",
+    "button": "Get a free quote",
+    "nav_text": "0191 498 0123"
+   },
+   "pins": [
+    "Your number, top right",
+    "Say the job and how fast",
+    "Reviews and insurance by the button",
+    "Photos of your own jobs, not stock"
+   ]
+  },
+  {
+   "type": "compare",
+   "theme": "paper",
+   "title": "Don't make\nthem *hunt*\nfor it",
+   "instead_label": "Usually",
+   "try_label": "Better",
+   "instead": [
+    "Reviews on a page called Testimonials",
+    "Insurance in the footer. Stock photos of someone else's van."
+   ],
+   "try": [
+    "A line of reviews by the button",
+    "And three or four photos of jobs you've actually done."
+   ],
+   "title_size": 104
+  }
+ ]
+}
