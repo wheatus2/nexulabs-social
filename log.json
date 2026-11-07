@@ -33,5 +33,21 @@
   "permalink": "https://www.instagram.com/p/Dfart8dF4t4/",
   "status": "published; Lee didn't like it (wants website/CRM topics)",
   "style": "studio"
+ },
+ {
+  "date": "2026-11-07",
+  "time_slot": "morning",
+  "id": "2026-11-06-website-to-crm",
+  "category": "Websites + CRM",
+  "pillar": "Websites + CRM",
+  "topic": "Website enquiries getting lost after the form is filled in; send the form straight into the CRM with reminders",
+  "style": "bold",
+  "cover_theme": "blue",
+  "slides": 6,
+  "source": "queue.json (approved by Lee)",
+  "instagram_media_id": "17895784704457768",
+  "permalink": "https://www.instagram.com/p/Dfbw6SijJH3/",
+  "facebook_post_id": "1484176674771345_122098535373544005",
+  "status": "published"
  }
 ]
