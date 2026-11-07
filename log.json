@@ -71,5 +71,28 @@
   "permalink": "https://www.instagram.com/p/DfcaVfFF-T2/",
   "facebook_post_id": "1484176674771345_122098769067544005",
   "status": "published"
+ },
+ {
+  "date": "2026-11-07",
+  "time_slot": "evening",
+  "id": "2026-11-07-1935-logo-works-small",
+  "category": "Logos and branding",
+  "pillar": "Logos and branding",
+  "topic": "Logos have to work small: test yours in a profile circle, a browser tab and in one colour; keep a simplified version for small spaces",
+  "style": "poster",
+  "cover_theme": "ink",
+  "slides": 4,
+  "slide_types": [
+   "cover",
+   "list",
+   "compare",
+   "cta"
+  ],
+  "unsplash_photo_id": null,
+  "unsplash_note": "api.unsplash.com still blocked by the session's network allowlist (403 from proxy), so designed post",
+  "instagram_media_id": "18093153851236353",
+  "permalink": "https://www.instagram.com/p/Dfc8mrWF_8a/",
+  "facebook_post_id": "1484176674771345_122098948293544005",
+  "status": "published"
  }
 ]
