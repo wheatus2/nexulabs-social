@@ -49,5 +49,27 @@
   "permalink": "https://www.instagram.com/p/Dfbw6SijJH3/",
   "facebook_post_id": "1484176674771345_122098535373544005",
   "status": "published"
+ },
+ {
+  "date": "2026-11-07",
+  "time_slot": "afternoon",
+  "id": "2026-11-07-1430-proof-by-the-button",
+  "category": "Web design",
+  "pillar": "Web design",
+  "topic": "Trust signals: put reviews, insurance, phone number and real job photos next to the button instead of on separate pages",
+  "style": "editorial",
+  "cover_theme": "paper",
+  "slides": 3,
+  "slide_types": [
+   "cover",
+   "browser",
+   "compare"
+  ],
+  "unsplash_photo_id": null,
+  "unsplash_note": "api.unsplash.com blocked by the session's network allowlist, so designed post",
+  "instagram_media_id": "18502056793102388",
+  "permalink": "https://www.instagram.com/p/DfcaVfFF-T2/",
+  "facebook_post_id": "1484176674771345_122098769067544005",
+  "status": "published"
  }
 ]
