@@ -1,0 +1,63 @@
+{
+ "id": "2026-11-07-1935-logo-works-small",
+ "series": "Branding",
+ "style": "poster",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "ink",
+   "size": 116,
+   "deco": "16px",
+   "deco_size": 360,
+   "headline": "Your logo\nspends most\nof its life *tiny*.",
+   "sub": "Profile pictures. Browser tabs. The corner of an invoice."
+  },
+  {
+   "type": "list",
+   "theme": "paper",
+   "deco": "",
+   "title": "Test it in\nthree places",
+   "items": [
+    [
+     "Inside a small circle",
+     "That's how it shows up on Instagram, Facebook and WhatsApp."
+    ],
+    [
+     "In a browser tab",
+     "The little icon next to your page title. It's tiny."
+    ],
+    [
+     "In one colour",
+     "Vinyl on a van, stitching on a polo, a rubber stamp."
+    ]
+   ],
+   "title_size": 116
+  },
+  {
+   "type": "compare",
+   "theme": "blue",
+   "deco": "",
+   "title": "Detail doesn't\n*shrink*",
+   "instead_label": "Hard to shrink",
+   "try_label": "Shrinks well",
+   "instead": [
+    "A long name, a tagline and a little drawing",
+    "Fine on a sign. A smudge in a profile circle."
+   ],
+   "try": [
+    "A short mark or initials you'd spot at a glance",
+    "Keep the full version for your website header and the van."
+   ],
+   "title_size": 116
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "size": 96,
+   "headline": "We can make\na *small* version\nof yours.",
+   "body": "Same logo, cut down for profile pictures, tabs and stitching.",
+   "cta_label": "Talk to us",
+   "cta": "nexulabs.co.uk"
+  }
+ ]
+}

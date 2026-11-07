@@ -5,7 +5,7 @@ Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
 Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
-browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare may include "title_size".
+browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare and list may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
 Post-level "style": studio | editorial | bold | minimal | poster (rotate; never the same two posts running).
@@ -176,6 +176,8 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .blue .col.hl .bar{{background:#0B0B0C;opacity:1}}
 .blue .card.good{{background:rgba(255,255,255,.12);border-color:#fff}}
 .blue .card.good .lb{{color:#fff}}
+.blue .card.bad .tx{{opacity:.78}}
+.blue .card.bad .sm{{opacity:.8}}
 .blue .ctabox .btn{{background:#0B0B0C}}
 .blue .st .dot{{background:rgba(255,255,255,.12)}}
 .blue .st.hl .dot{{background:#0B0B0C;border-color:#0B0B0C}}
@@ -329,7 +331,7 @@ def build(slide, idx, total, series, style="studio"):
             f'<div class="it"><div class="n">{i+1:02d}</div><div><h3>{md(a)}</h3>'
             f'{f"<p>{md(b)}</p>" if b else ""}</div></div>' for i, (a, b) in enumerate(slide["items"]))
         inner = f"""{kick(slide)}
-<h2>{md(slide['title'])}</h2><div class="items">{items}</div><div style="height:40px"></div>"""
+<h2{f' style="font-size:{slide["title_size"]}px"' if slide.get('title_size') else ''}>{md(slide['title'])}</h2><div class="items">{items}</div><div style="height:40px"></div>"""
     elif t == "quote":
         inner = f"""<div class="qm" style="margin-top:auto">“</div><h1>{md(slide['text'])}</h1>
 {f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div style="height:70px"></div>"""
