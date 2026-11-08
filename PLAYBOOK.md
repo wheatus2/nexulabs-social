@@ -1,5 +1,7 @@
 # Nexulabs Instagram — daily posting playbook
 
+> **Design update (Lee, 8 Nov 2026):** Lee said the posts looked "very AI generated" and chose the flat **product** style, built around real UI screens (see "Design direction" below). This replaces any instruction elsewhere, including in the scheduled task prompts, to use colourful gradient styles (aurora, neon, spectrum, glass), palettes or patterns. Use `"style": "product"` for every feed post, Reel, Story and LinkedIn image. In the logs, record `theme` and `screen` instead of `palette` and `pattern`.
+
 Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm UK time) to the Nexulabs Instagram account and Facebook Page.
 
 ## Brand
