@@ -277,6 +277,7 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, co
 8. If publishing fails: retry once after 2 minutes. If it's an auth/token error, tell Lee to reconnect Instagram at https://mcp.zapier.com/api/v1/connect-auth/InstagramBusinessCLIAPI?accountId=8724593.
 
 ## LinkedIn company page (Lee, 8 Nov 2026)
+- **Always post as Nexulabs, never as Lee Wheatley (Lee, 8 Nov 2026).** The only allowed LinkedIn action is `create_company_update` with `company_id` = `146939776` (Nexulabs). Lee's personal profile is never used: the personal "share" and raw API actions have been removed from Zapier on purpose; never re-enable them. Never name Lee in LinkedIn posts.
 - Page: linkedin.com/company/nexulabs (organisation ID 146939776). Posted by the "Nexulabs LinkedIn" scheduled task, Tue/Wed/Thu mornings. 3 posts a week maximum.
 - Audience: business owners and managers deciding who to hire. Tone: same plain UK voice, slightly more businesslike than Instagram, no emoji. Never "small business(es)".
 - What to post: pick the strongest recent Instagram/Facebook post (from `log.json`, last 7 days, not yet used on LinkedIn), or a verified news item from `newsdesk.json`, and make a LinkedIn version:
