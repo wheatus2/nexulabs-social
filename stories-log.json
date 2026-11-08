@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "date": "2026-11-08",
+    "slot": "11:45",
+    "published_at": "about 12:25 UK (run started 12:14)",
+    "id": "stories/2026-11-08-1214-who-owns-your-domain",
+    "type": "myth vs fact",
+    "category": "Domain names",
+    "topic": "Who owns your .uk domain (registrant = owner, designer-registered domains) and Nominet reminders going to the registrant's email; day 30 suspension / day 90 release; checklist",
+    "news_story_id": null,
+    "style": "neon",
+    "palette": "ultraviolet",
+    "pattern": "contours",
+    "frames": 4,
+    "slide_types": [
+      "cover",
+      "compare",
+      "compare",
+      "flow"
+    ],
+    "sources": [
+      "https://theukdomain.uk/uk-standardisation/",
+      "https://registrars.nominet.uk/uk-namespace/registration-and-domain-management/renewals/uk-renewal-reminder/",
+      "https://theukdomain.uk/wp-content/uploads/2022/05/UKD04001_.UK-Domain-Lifecycle_UKD2-2.pdf"
+    ],
+    "fact_check": "self-check pass",
+    "media_ids": [
+      "18114659936585524",
+      "18646356670053257",
+      "17897094996615013",
+      "18188496037419732"
+    ],
+    "status": "published"
+  }
+]
