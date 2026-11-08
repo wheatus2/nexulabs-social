@@ -46,10 +46,21 @@ Posts must read as if Lee wrote them himself. If a line sounds like marketing co
 - Vary the format: some days a single image, some days 3–5 slides, occasionally 6–7. Only end with the CTA slide about every other post.
 - Rotate layouts so posts don't all look the same: change which slide types you use, and swap ink/paper order.
 
-## Three posts a day (Lee's rule, 6 Nov 2026)
+## What the big players do, and what we copy (research 8 Nov 2026)
+Lee asked us to post like the big web design and CRM companies (HubSpot, Salesforce, Webflow, Shopify, Pipedrive, top design studios). Their pattern:
+- **Format jobs:** Reels for reach (shown to non-followers), carousels for saves and engagement, Stories for daily connection. UK B2B service accounts do best with roughly **45–50% Reels, 35–40% carousels, 10–15% single images**, plus Stories most days.
+- **Content mix (roughly 70/20/10):** 60% educational (tips, mistakes to avoid, how-tos, myth vs fact, checklists, step-by-step breakdowns), 15% proof/inspiration (before/after redesigns, design breakdowns, process), 15% entertaining/relatable (small-business website moments everyone recognises, this-or-that, hot takes), 10% promotional (what Nexulabs builds, how a project works, CTA).
+- **Hooks:** the first slide or first 2 seconds of a Reel must stop the scroll: a bold claim, a number, a mistake, a question. On-screen text on every Reel (most people watch on mute).
+- **Before/after:** the most-used format in web design. We have no client work to show yet, so use **clearly labelled concept redesigns** of fictional UK businesses ("Concept: how we'd redesign a café homepage"). Never present a concept as a real client.
+- **Searchable, saveable:** write captions with the words people search (web design, small business website, CRM, Sunderland/Newcastle/North East) and give people a reason to save or send.
+
+## Feed schedule: three a day (Lee's rule, 6 Nov 2026; formats updated 8 Nov)
+- **8:33am:** carousel (educational: tips, checklist, breakdown, myth vs fact).
+- **2:33pm:** **Reel** (`reel.py`): a hook, 3–5 quick scenes, ending on a payoff or CTA. 12–25 seconds.
+- **7:33pm:** **Reel on Mon, Wed, Fri, Sun**; on Tue, Thu, Sat a single image or short carousel (relatable, hot take, branding, before/after concept).
+
 - Each run makes one post. Name the folder `posts/YYYY-MM-DD-HHMM-<slug>` (time of the run) so same-day posts don't clash.
 - Each post must differ from the **previous post** (not just yesterday's) in category, style and cover theme. Over a day, try to cover three different categories.
-- Rough shape for the day: **morning** a meatier carousel (web design or CRM), **afternoon** something quick and visual (a single image or 3 slides: a before/after, a tip, a mockup), **evening** a lighter or more conversational one (a point of view, branding, a question to the audience). Mix it up; this is a guide, not a template.
 - News: at most one news post per day, and never the same story twice.
 - No topic, headline or stat repeated within 30 days (that's about 90 posts, so keep ideas fresh).
 
@@ -63,6 +74,21 @@ Lee wants cool, colourful graphic design: gradients, colour and all kinds of pat
 - Mix themes on the clean styles: `ink`, `paper`, `blue`. Vary the cover theme, slide count, slide types and order.
 - Colour stays in the blue, violet, cyan and pink family. No orange (Lee removed an orange post as off-brand).
 - Always check readability: text must never sit on a busy pattern or a bright blob. Lower `pattern_opacity` or change the layout if it does.
+
+## Reels (Lee's request, 8 Nov 2026)
+- Build `posts/<id>/reel.json` and run `python3 reel.py posts/<id>/reel.json`, which gives `reel.mp4`, `cover.jpg` and `.reel-sheet.jpg`. Every slide type works as a scene; set `dur` per scene (2.5–4s). It takes 3–5 minutes to render.
+- Scene 1 is the hook: big text, under 10 words. Then 2–5 scenes that each make one point. The last scene is a payoff or CTA. On-screen text must be large and readable without sound.
+- Same variety rules as posts (style, palette, pattern never the same as the previous post). Photo scenes from the library are allowed (the no-reuse rule still applies).
+- Look at `.reel-sheet.jpg` before publishing. Fix anything cramped, clipped or hard to read.
+- The video has a silent audio track (trending audio can't be added through the API).
+- Publish: Instagram via Zapier `publish_video` (tool `instagram_for_business_publish_video`, `video` = raw URL of reel.mp4, `caption`, `instagramPageId` 17841471856846758). Facebook via `page_video` (tool `facebook_pages_create_page_video`, `page` 1484176674771345, `source` = raw URL, `description` = caption).
+
+## Stories (Lee's request, 8 Nov 2026)
+- Twice a day at 11:47am and 5:47pm, made by the separate "Nexulabs stories" scheduled task. Instagram only (the Facebook connection can't post stories).
+- 1–3 frames, made with `render.py` and `"format": "story"` (1080×1920). Keep it casual and quick: a one-line tip, this-or-that, a myth vs fact, a "did you know" with a UK source, a peek at how we design (palette, wireframe, before/after concept), or a "new post" teaser for that day's feed post (say "see our latest post"; link stickers can't be added via the API).
+- Same brand, variety and "sound like a person" rules. Keep the top 250px and bottom 300px clear of important text.
+- Publish each frame in order: POST `https://graph.facebook.com/v21.0/17841471856846758/media` with `media_type=STORIES` and `image_url=<raw URL>` (Zapier Instagram "Make API Mutating Request", querystring), wait until the container's `status_code` is FINISHED, then POST `.../17841471856846758/media_publish` with `creation_id=<id>`.
+- Log stories in `stories-log.json` (date, slot, theme, frames, media ids).
 
 ## Photos from the library (Lee's rules, 8 Nov 2026)
 Claude curates free Unsplash photos for Lee (interactively, through Lee's browser) into `photos/`, named `<photographer>--<description>.<unsplash-id>.jpg`. Unsplash Licence: free commercial use, editing allowed. Never Unsplash+ (paid) photos. Do **not** use the Unsplash API or any other image source.
