@@ -1,0 +1,102 @@
+{
+ "id": "2026-11-08-1933-first-screen-on-a-phone",
+ "series": "Web design",
+ "style": "product",
+ "scenes": [
+  {
+   "type": "cover",
+   "theme": "paper",
+   "headline": "Open your website\non your phone.\nWhat do you *see*?",
+   "dur": 3.4,
+   "size": 104
+  },
+  {
+   "type": "compare",
+   "theme": "ink",
+   "title": "The first screen\nhas one job",
+   "instead": [
+    "A photo slider and \"Welcome to our website\"",
+    "Phone number tucked in the footer."
+   ],
+   "try": [
+    "What you do and where you do it",
+    "With a button to call, right there."
+   ],
+   "dur": 4.6
+  },
+  {
+   "type": "screen",
+   "theme": "blue",
+   "title": "Before\nthe first scroll",
+   "notes": [
+    [
+     "What you do",
+     "In plain words."
+    ],
+    [
+     "Where",
+     "The towns you cover."
+    ],
+    [
+     "One tap to call",
+     "Not hidden at the bottom."
+    ]
+   ],
+   "screen": {
+    "kind": "phone",
+    "brand": "Wearside Roofing",
+    "headline": "Roof repairs across Sunderland and Durham.",
+    "lede": "Slipped tiles, leaks and gutters. Photos of every job.",
+    "button": "Call 0191 000 0000",
+    "button2": "Get a quote",
+    "items": [
+     [
+      "Slipped tiles",
+      "from £120"
+     ],
+     [
+      "Gutter clear",
+      "from £80"
+     ]
+    ]
+   },
+   "caption": "Concept for a made-up business.",
+   "dur": 4.8
+  },
+  {
+   "type": "flow",
+   "theme": "lilac",
+   "title": "Check yours\nin two minutes",
+   "steps": [
+    [
+     "Use your phone, not the laptop",
+     ""
+    ],
+    [
+     "Read only the first screen",
+     "Could a stranger say what you do?"
+    ],
+    [
+     "Tap your phone number",
+     "Does it start a call?"
+    ],
+    [
+     "Send your own form",
+     "Did it actually arrive?"
+    ]
+   ],
+   "highlight": [
+    1
+   ],
+   "dur": 4.8
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "headline": "Get the first\nscreen *right*.",
+   "cta_label": "Websites and CRMs",
+   "cta": "nexulabs.co.uk",
+   "dur": 3.2
+  }
+ ]
+}
