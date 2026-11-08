@@ -1,0 +1,31 @@
+{
+  "_about": "Running news watch for Nexulabs. Every feed run scans the news desk sources, adds candidates here, and marks what it used or rejected and why. Used to avoid repeats, follow developing stories and keep the fact trail. Keep the last 60 days; delete older items.",
+  "items": [
+    {
+      "id": "2026-11-04-microsoft-clarity-agentic-analytics",
+      "found": "2026-11-08",
+      "event_date": "2026-11-04",
+      "headline": "Microsoft Clarity (free website analytics) adds Agentic Analytics, Ask Clarity and wider Brand Agents",
+      "status": "verified-unused",
+      "relevance": "Websites: shows small business owners which AI agents (Google, OpenAI, Anthropic operators) visit their site and what they do (searches, form submissions, bookings, checkout). Ask Clarity answers plain-English questions about visitor behaviour. Clarity is free.",
+      "angle": "AI assistants are starting to visit websites on people's behalf. A free tool now shows you if they're on yours and whether they can finish a booking or enquiry.",
+      "facts": [
+        {"claim": "Announced 4 November 2026: Agentic Analytics, Ask Clarity, Brand Agents expansion", "source": "https://clarity.microsoft.com/blog/?p=10568", "check": "ppc.land and SERoundtable both date it 4 Nov 2026"},
+        {"claim": "Supported agents for Agentic Analytics are Google, OpenAI and Anthropic agent operators (not every AI agent)", "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 2)"},
+        {"claim": "Dashboard shows agent activity: searches, form submissions, logins, downloads, appointment bookings, checkout", "source": "https://clarity.microsoft.com/blog/?p=10568"},
+        {"claim": "Microsoft's figures come from its own analysis of 5.23 million agentic sessions across 230,511 projects, 13 Aug to 9 Sep 2026", "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 1)", "note": "Vendor's own data, global not UK. Say so if used."},
+        {"claim": "Brand Agents: eligible Shopify and WooCommerce merchants' products can appear in Copilot, Bing and MSN AI recommendations", "source": "https://clarity.microsoft.com/blog/?p=10568"}
+      ],
+      "second_sources": ["https://ppc.land/microsoft-clarity-puts-shopify-and-woocommerce-products-in-copilot-and-bing/", "https://www.seroundtable.com/microsoft-clarity-gains-agentic-analytics-and-ask-clarity-42449.html", "https://www.mediapost.com/publications/article/419216/microsoft-clarity-analytics-connects-agents-recom.html"],
+      "caveats": "Global rollout per Microsoft, but coverage limited to supported agents. Treat stats as Microsoft's own. Re-open the blog post before publishing to confirm nothing changed. Clarity needs disclosing in a privacy policy and cookie consent in the UK, so mention that if recommending people install it (check ICO cookie guidance)."
+    },
+    {
+      "id": "2026-11-04-search-console-multi-device-filter",
+      "found": "2026-11-08",
+      "event_date": "2026-11-04",
+      "headline": "Search Console performance report lets you select several devices at once",
+      "status": "rejected",
+      "reason": "Too minor for a post, and reports disagree on exactly what changed on the device side (ppc.land says unconfirmed). Could be a one-line Story tip later if Google's help page confirms it."
+    }
+  ]
+}

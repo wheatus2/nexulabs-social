@@ -14,19 +14,149 @@ Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm U
   - Alternate ink and paper slides. Cover and closing CTA are ink.
 
 ## What to post (Lee's direction, 6 Nov 2026)
-Nexulabs posts are about **websites and CRM systems** first. Every post must be useful to a small business owner thinking about their website or their CRM.
+Nexulabs posts are about **websites and CRM systems** first, plus branding, hosting, domain names, AI and automation, and verified tech news. Every post must be useful to a small business owner thinking about their website, CRM or online presence.
 
 **Research the UK first (Lee's rule).** Search UK sources and UK news first: BBC, gov.uk, ICO, HMRC, ONS, FSB, British Chambers of Commerce, Enterprise Nation, Ofcom, UK trade press (Computer Weekly, Startups.co.uk, Small Business UK, The Drum). Prefer UK stories, UK statistics and UK rules (GDPR/ICO, cookie rules, accessibility, Making Tax Digital, Companies House). Use US or global sources only when there's no UK equivalent, and say clearly in the caption that it's US/global data. North East angles are a bonus.
 
-**Step 1: check the news first.** Search for tech news from the last 48 hours. Only use a story if it's directly about websites, web design, search/Google changes that affect small business websites, CRMs, online enquiries/bookings, or business software small firms use. If it qualifies, make a "news explained" post: what happened, what it means for a small business website or CRM, what to do. General tech, finance, security or AI stories that don't come back to websites/CRMs don't qualify.
+**Step 1: check the news desk first (every run).** See "News desk" below. If there's a verified, relevant tech story we haven't covered, make a "news explained" post. **If there's nothing relevant, that's fine (Lee, 8 Nov 2026): carry on with step 2 as normal.** Never force a weak story.
 
 **Step 2: if there's no qualifying news, rotate these** (don't repeat the same one two days running):
 1. **Web design (main topic, at least every other day).** Homepage structure, what to put above the fold, mobile layout, calls to action, page speed, website copy, contact forms, booking pages, trust signals, before/after layouts. Use the `browser` mockup and `compare` slides so posts look designed and visual, not text-heavy.
 2. **CRM.** Enquiry → quote → booking → job flows, follow-ups, getting off spreadsheets, what a CRM should do for a trades/service business. Use `flow`, `compare` and `list` slides.
-3. **Websites + CRM together.** Enquiries going straight from the site into the CRM, one system from first click to finished job.
-4. **Logos and branding.** What makes a logo work small, building a simple palette, consistency across van/website/socials. Use `palette` and `compare` slides.
+3. **Websites + CRM together, and the types of each (Lee, 8 Nov 2026).** Enquiries going straight from the site into the CRM, one system from first click to finished job. Also explainer series on:
+   - **Types of website:**
+     - Brochure or info site
+     - Landing page
+     - E-commerce shop
+     - Booking site
+     - Portfolio
+     - Membership or customer-login site
+     - Web app or customer portal
+     - Directory
+   - **Types of CRM:**
+     - Off-the-shelf all-rounders, e.g. HubSpot, Zoho, Pipedrive
+     - Industry-specific: trades, salons, travel
+     - Spreadsheet "CRMs" and their limits
+     - Custom-built CRMs (what Nexulabs does)
+     - For each type: who it suits, what it costs in time and effort, and when to move up
+   - **How websites and CRMs link:**
+     - Web forms posting into the CRM
+     - Embedded booking widgets
+     - Integrations and APIs explained simply
+     - Webhooks
+     - Zapier/Make-style connectors
+     - Customer portals that log in to CRM data
+     - Two-way sync (stock, availability, prices)
+     - What breaks when they aren't linked
+   Good formats are "Which website does your business actually need?" and "3 ways to connect your website to a CRM". Use `flow`, `compare`, `list` and `browser` slides. Any claim about what a named product can do needs a fetched source.
+4. **Logos and branding.** What makes a logo work small, building a simple palette, consistency across van/website/socials, brand voice, a brand kit. Use `palette` and `compare` slides.
+5. **AI and automation in websites and CRMs (Lee, 8 Nov 2026).** Real, available things only:
+   - Chat and booking assistants on websites.
+   - Automatic enquiry replies and follow-ups.
+   - Lead scoring.
+   - AI-drafted quotes.
+   - Auto-reminders and review requests.
+   - Connecting forms to a CRM, and Zapier-style automations.
+   - What AI assistants visiting your site means for you.
+   - Where AI goes wrong: hallucinated answers, and data and privacy under UK GDPR.
+   Name real tools only when a fetched source confirms the feature. Practical, not hype. Use `flow` and `compare` slides.
+6. **Hosting (Lee, 8 Nov 2026).** Topics:
+   - What hosting actually is.
+   - Shared vs managed vs VPS in plain words.
+   - Uptime, backups, SSL certificates and speed.
+   - What happens when hosting lapses.
+   - UK and EU data location, and email deliverability.
+   - Why cheap hosting costs more.
+   Facts from host or Google/web.dev documentation.
+7. **Domain names (Lee, 8 Nov 2026).** Topics:
+   - Choosing a name.
+   - .co.uk vs .uk vs .com.
+   - Registering it in the business's own name and keeping control of it.
+   - Renewals, and expired domains being snapped up.
+   - Business email on your own domain, not Gmail.
+   - DNS basics, domain scams and fake renewal invoices.
+   UK facts from Nominet.
+
+Spread these across the week: web design stays the most frequent (at least every other day). Each of the other six (CRM, websites + CRM and types of each, branding, AI and automation, hosting, domains) should appear at least once a week. Tech news posts often land in category 5. Log the category in `log.json` so the mix can be checked.
 
 **Look and feel:** posts must look sharp and visual. Prefer mockups, comparisons, flows and big bold statements over walls of text. Max ~30 words of body copy per slide. Statistics are optional; a strong practical point beats a weak number.
+
+## News desk: keep up with real tech news (Lee's rule, 8 Nov 2026)
+Lee: "the content should be relevant and factual, monitoring real world events around technology so we keep up to date with the latest tech." We follow the tech world properly and only report what's real.
+
+**Scan (every feed run, about 10 minutes, all searches in one go).** Look at the last 7 days, newest first:
+- UK news: BBC Technology, The Register, Computer Weekly, TechRadar UK, Wired UK, Sky News tech, The Guardian technology, Startups.co.uk, Small Business UK, Prolific North (North East and North angle).
+- Web, search and SEO: Google Search Central blog, Google Search Status Dashboard, Search Engine Land, Search Engine Roundtable, Search Engine Journal, web.dev and Chrome releases, WordPress news, Shopify, Wix and Squarespace news.
+- Platforms small businesses use: Meta newsroom (Instagram, Facebook, WhatsApp Business), Microsoft (365, Copilot, Clarity, Bing), Google (Workspace, Business Profile, Gemini), Apple newsroom, OpenAI, Anthropic, HubSpot, Salesforce, Zoho, Xero, Square, Stripe.
+- UK rules and safety: ICO, NCSC, gov.uk (DSIT), Ofcom, CMA, HMRC (Making Tax Digital).
+Also read `newsdesk.json` so nothing is reported twice. Follow up developing stories, e.g. when a US-only feature reaches the UK.
+
+**Relevance test.** All three must be yes:
+1. It really happened. It was announced, launched, published or ruled on. Not a rumour, leak, "reportedly", "could", patent, analyst prediction or single-source scoop.
+2. It affects how a UK small business gets found, wins customers, runs its website or CRM, or keeps customer data safe. Examples:
+   - Google Search and AI Overviews changes, and Google Business Profile.
+   - AI assistants that now browse, book or recommend.
+   - Website platforms (WordPress, Shopify, Wix).
+   - Browser changes.
+   - Instagram, Facebook and WhatsApp Business features.
+   - Big outages, breaches and scams hitting small firms, with NCSC advice.
+   - UK rules: cookies, accessibility, data law, Online Safety Act, MTD.
+   - CRM, booking, payment and AI tools that small firms use.
+3. We can say clearly what a business owner should do, check or know because of it.
+
+These don't qualify: gadgets and phone launches, games, funding rounds, share prices, celebrity tech, US politics, and anything only big companies care about.
+
+**Two sources, one primary.** Every news fact needs:
+- The primary source: the company's own announcement, help page or changelog, the regulator's notice, or gov.uk.
+- At least one independent reputable outlet confirming it.
+Before writing, fetch and read both in full (not just search snippets). Then check three things:
+- The publish date, so you're not reporting an old story recycled with a new date. Search results often mix years, so check the year.
+- What's live versus "coming soon".
+- Whether it's available in the UK. Never say "now in the UK" unless the source says so.
+
+**Record it.** Add every candidate to `newsdesk.json` with its status:
+- `verified-unused`, `used` (with the post id) or `rejected` (with the reason).
+- Its facts, each with a source URL, and any caveats.
+Keep 60 days of items.
+
+**Cadence.**
+- Aim for one news post a day when a story passes. It takes whichever feed slot comes next: a Reel if it's a Reel slot, otherwise a carousel.
+- At most two news posts a day, and the second only for a genuinely big story.
+- **Fridays at 8:33am:** "This week in tech" carousel, made only if at least 3 verified stories from that week pass the relevance test. Use one slide per story, with one line on what happened and one on what it means for you. Otherwise do a normal post.
+- News posts still follow every brand, design and "sound like a person" rule. Kicker for news: `NEWS` or the date.
+
+## Facts and fact-checking (non-negotiable, Lee's rule 8 Nov 2026)
+Lee: "I don't want to post rubbish." One wrong fact damages a web agency's credibility more than missing a day. When in doubt, cut it.
+- **Every factual claim** (slides and caption, including tips presented as fact) goes in `posts/<id>/sources.md`. For each claim, record the exact claim, the URL it came from, a short excerpt or the number as the source states it, the source's publish date, and the date you checked it.
+- **Numbers:**
+  - Use the exact figure from the source. Only round in a way that keeps the meaning, and keep the units.
+  - Say whose data it is ("Microsoft's own figures") and whether it's UK or global.
+  - The source must be from the last 24 months, or 7 days for news.
+- **Advice and best practice** must match an authoritative source. Examples: Google Search Central, web.dev, WCAG/W3C, gov.uk accessibility, ICO for cookies and data, NCSC for security, Nielsen Norman Group for usability. No legal advice: point people to the ICO or a professional.
+- **Never** invent statistics, quotes, clients, testimonials, results or product features, or "studies show" claims. Never describe something as live when it's in beta or "rolling out".
+- **Independent check before publishing.** Once the post is rendered, give a fresh subagent (Agent tool, general-purpose) only three things: the slide text, the caption and `sources.md`. Not your reasoning.
+  - Ask it to open every source URL and confirm three things for each claim:
+    - The claim says what the source says, with nothing overstated.
+    - The date and UK availability are right.
+    - The source is still live.
+  - Ask it to reply PASS, or a list of problems.
+  - Fix every problem and check again.
+  - If a claim can't be verified, remove it.
+  - If the post can't pass after two rounds, scrap it and publish an evergreen post with no claims that need checking.
+- Stories also follow these rules. For stories, a self-check against `sources.md` is enough, with no subagent.
+
+## Quality bar (every post, before it's published)
+Make each post the way an award-winning studio would. Before publishing, score it honestly from 1 to 5 on each of these:
+- **Relevant:** a UK small business owner would care about it this week.
+- **True:** the fact-check passed.
+- **Useful:** there's one clear takeaway they can act on.
+- **Specific:** it's concrete, not generic. "Compress your homepage hero image to under 200KB" is specific; "Make your site faster" isn't.
+- **Hook:** the first slide or the first 2 seconds of a Reel stops the scroll. Write 3 hook options and pick the best.
+- **Design:**
+  - One focal point per slide and a clear hierarchy.
+  - Readable on a phone.
+  - On-brand, and different from the last post.
+Anything under 4 gets reworked. Never publish something just to fill a slot if it's weak. Rework it, or switch to a stronger evergreen idea.
 
 ## Sound like a person, not AI (Lee's rule, 6 Nov 2026)
 Posts must read as if Lee wrote them himself. If a line sounds like marketing copy or a chatbot, rewrite it.
@@ -60,8 +190,8 @@ Lee asked us to post like the big web design and CRM companies (HubSpot, Salesfo
 - **7:33pm:** **Reel on Mon, Wed, Fri, Sun**; on Tue, Thu, Sat a single image or short carousel (relatable, hot take, branding, before/after concept).
 
 - Each run makes one post. Name the folder `posts/YYYY-MM-DD-HHMM-<slug>` (time of the run) so same-day posts don't clash.
-- Each post must differ from the **previous post** (not just yesterday's) in category, style and cover theme. Over a day, try to cover three different categories.
-- News: at most one news post per day, and never the same story twice.
+- Each post must differ from the **previous post** (not just yesterday's) in category, style and cover theme. Over a day, cover three different categories from the seven in "What to post".
+- News: see "News desk" cadence (aim for one a day when a verified story passes, max two), never the same story twice.
 - No topic, headline or stat repeated within 30 days (that's about 90 posts, so keep ideas fresh).
 
 ## Make every post look different (Lee's rules, 6 and 8 Nov 2026)
@@ -99,11 +229,10 @@ Claude curates free Unsplash photos for Lee (interactively, through Lee's browse
 - `shade`: default (dark fade at the bottom), `full` (overall darken) or `blue` (brand blue fade). Check the text is easy to read at phone size.
 - If fewer than 5 unused photos are left, say so in the summary ("photo library running low") so Lee can ask Claude to top it up.
 
-## Accuracy rules (non-negotiable)
-- Every number on a slide must come from a source fetched during the run, published within the last ~24 months. UK sources first; non-UK only when there's no UK equivalent, and say so. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
+## Accuracy rules (see also "Facts and fact-checking")
+- Every number on a slide must come from a source fetched during the run. UK sources first; non-UK only when there's no UK equivalent, and say so. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
 - Put the source on the slide (`source` field) and name it in the caption.
-- Never invent statistics, quotes, clients, case studies or results. If a figure can't be verified, use a how-to or point-of-view post instead.
-- Check `log.json` and don't repeat a topic, headline stat or source used in the last 30 days.
+- Check `log.json` and `newsdesk.json` and don't repeat a topic, story, headline stat or source used in the last 30 days.
 
 ## Caption format
 Follow "Sound like a person" above. Roughly: an opening line that isn't a cliché, a couple of short paragraphs with the actual point, a light mention of what Nexulabs does (not every time), then 3–5 hashtags. Keep it under 120 words.
@@ -117,10 +246,10 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, co
 
 ## Daily routine (what the scheduled run does)
 0. **Check `queue.json` first.** If it lists any posts, publish the first one exactly as it is (its images and caption are already in `posts/<id>/`), log it, remove it from `queue.json`, commit and push, and stop there. Don't create a new post that day.
-1. Read this file and `log.json`. Check the news (see 'What to post'), otherwise pick today's topic from the rotation; nothing used in the last 30 days.
-2. Research with web search; fetch and read the primary source for every figure you'll use.
-3. Create `posts/YYYY-MM-DD-<slug>/post.json` and `caption.txt`. Render: `python3 render.py posts/<id>/post.json`.
-4. Build a contact sheet, look at every slide, fix and re-render until clean.
+1. Read this file, `log.json` and `newsdesk.json`. Run the news desk scan and update `newsdesk.json`. Use a verified, unused, relevant story if there is one (respecting the news cadence); otherwise pick from the rotation. Nothing used in the last 30 days.
+2. Research: fetch and read the primary source for every fact you'll use. Write `posts/<id>/sources.md` as you go.
+3. Create `posts/<id>/post.json` (or `reel.json`) and `caption.txt`. Render.
+4. Build a contact sheet, look at every slide, fix and re-render until clean. Then run the independent fact-check subagent and the quality bar scorecard. Fix until it passes. In the log entry, mark the story as `used` in `newsdesk.json` and record `fact_check: "pass"`.
 5. Commit and push to `main`. Confirm each image URL loads: `https://raw.githubusercontent.com/wheatus2/nexulabs-social/main/posts/<id>/slide-NN.jpg`.
 6. Publish to Instagram via Zapier MCP: app Instagram for Business, action `publish_media_v2` (tool `instagram_for_business_publish_photo_s`), `instagramPageId` = `17841471856846758` (Nexulabs), `media` = list of the raw URLs in order, `caption` = caption.txt.
 6b. Also publish to the Nexulabs Facebook Page via Zapier MCP: app Facebook Pages, action `page_stream` (tool `facebook_pages_create_page_post`), `page` = `1484176674771345` (the Nexulabs Page; confirm with inspect_zapier_actions if it ever fails), `source` = the same raw image URLs in order (up to 10), `message` = caption.txt. If Facebook Pages has no connection yet, skip this step and mention it in the summary. A Facebook failure must not stop or undo the Instagram post.
