@@ -5,7 +5,7 @@ Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm U
 ## Brand
 - Business: Nexulabs, "Websites and CRM systems for small businesses" (nexulabs.co.uk). Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding. Based in the North East of England.
 - Voice: UK English. Plain, direct, practical, like Lee talking to a customer. Short sentences. Address the reader as "you". No hype, no jargon, no emoji, no exclamation marks. See "Sound like a person".
-- Visuals: rendered by `render.py`. Photos only from Unsplash via `unsplash.py` (see "Unsplash photos"). Never scraped images, logos of other companies, or other stock sites.
+- Visuals: rendered by `render.py`. Photos only from Lee's library in `photos/` (see "Photos from Lee's library"). Never the Unsplash API, scraped images, logos of other companies, or other stock sites.
   - Logo: the real Nexulabs wordmark from `brand/nexulabs-logo-white.svg` (render.py recolours it per theme). Never retype the logo as text.
   - Colours (from nexulabs.co.uk): ink #0B0B0C, paper #F5F5F7, accent blue #3B2BFF on light / #667DFF on dark (the logo's full stop). Accent is for one or two words or one data point per slide, never more. No other accent colours.
   - Type: Geist (headlines, numbers, body) and Geist Mono (labels, sources), the same as the website.
@@ -65,14 +65,14 @@ Lee noticed the first posts all looked the same. Every post must look clearly di
 - Mix the three themes: `ink` (dark), `paper` (light) and `blue` (brand blue background). Change the cover theme from post to post, and don't always alternate dark/light in the same order.
 - Vary the structure too: single image vs carousel, slide count, which slide types are used.
 
-## Unsplash photos (Lee's idea, 6 Nov 2026)
-Use a real photo as the background **sometimes**: roughly one post in three, usually as the cover (`photo` slide type), with our type and logo over it. The rest stay as designed graphics so the feed stays varied.
-- Get photos only with `python3 unsplash.py search "<query>"` then `python3 unsplash.py get <id> posts/<id>/photo.jpg`. Look at the preview before choosing. Never take images from anywhere else.
-- Pick photos that fit the topic and feel premium: workspaces, laptops/phones showing nothing identifiable, shopfronts and trades in the UK, tools, textures, architecture, North East scenery. Calm, uncluttered, room for text.
-- Avoid: recognisable faces as the main subject, visible brand logos or trademarks (Apple logos, shop signs), screens showing real websites, anything that implies the person or business is a Nexulabs client.
-- Credit the photographer: the slide's `credit` field ("Photo: Name on Unsplash") and the last line of the caption. Log the photo id in `log.json` and never reuse a photo.
-- `shade`: default (dark fade at the bottom), `full` (overall darken for busy photos) or `blue` (brand blue fade). Use `focus` (e.g. "center top") to keep the subject visible. Check the text is easy to read at phone size.
-- If Unsplash can't be reached (network blocked, no API key), skip the photo and make a designed post instead. Never let it stop a post going out.
+## Photos from Lee's library (Lee's idea, 8 Nov 2026)
+Lee downloads photos he likes from unsplash.com (Unsplash Licence: free commercial use, editing allowed) and uploads them to `photos/` in this repo, named after the photographer (`jane-smith.jpg`, optionally `jane-smith--short-description.jpg`). Do **not** use the Unsplash API or any other image source: its API terms forbid editing/re-hosting and automated use.
+- Use a photo **roughly one post in three**, usually as the cover (`photo` slide type), with our type and logo over it. The rest stay as designed graphics.
+- `python3 photo.py list` shows unused photos. Look at the photo before choosing it and only use one that genuinely suits the topic. If none fits, or the folder is empty, make a designed post instead. Never let it stop a post going out.
+- `python3 photo.py prepare photos/<file> posts/<id>/photo.jpg [--focus x,y]` crops it to 4:5 and gives the credit line. Put that in the slide's `credit` field and as the last line of the caption.
+- `shade`: default (dark fade at the bottom), `full` (overall darken for busy photos) or `blue` (brand blue fade). Check the text is easy to read at phone size.
+- After publishing, `python3 photo.py retire photos/<file>` (moves it to `photos/used/`) and record the file in `log.json`, so it's never reused.
+- If the library has fewer than 3 unused photos, say so in the summary so Lee can add more.
 
 ## Accuracy rules (non-negotiable)
 - Every number on a slide must come from a source fetched during the run, published within the last ~24 months. UK sources first; non-UK only when there's no UK equivalent, and say so. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
