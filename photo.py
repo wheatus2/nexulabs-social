@@ -4,7 +4,10 @@
 File names: <photographer-name>--<short-description>.<unsplash-id>.jpg
   e.g. jane-smith--laptop-on-desk.-8-2YWKt8Ag.jpg  (ids can contain - and _)
 
-  python3 photo.py list                         # unused photos (credit, description, id)
+  python3 photo.py list [--topic <topic>]       # unused photos (credit, description, id, topics)
+  python3 photo.py topics                       # how many unused photos per topic
+      topics: web-design, crm, websites-crm, branding, ai-automation, hosting, domains,
+              tech-news, business-types (trades, shops, hospitality...), north-east
   python3 photo.py prepare photos/<file> posts/<id>/photo.jpg [--focus 0.5,0.4]
       -> refuses if the photo was used before; crops to 4:5, 2160x2700; prints the credit
   python3 photo.py retire photos/<file>         # after publishing: move to photos/used/ and
@@ -65,13 +68,33 @@ def library():
     return [p for p in sorted(LIB.iterdir()) if p.is_file() and p.suffix.lower() in EXT]
 
 
-def list_photos():
+TOPICS = LIB / "topics.json"
+
+
+def topics():
+    return json.loads(TOPICS.read_text()) if TOPICS.exists() else {}
+
+
+def list_photos(topic=None):
     used = used_ids()
+    tags = topics()
     for p in library():
         ph, desc, pid = parts(p)
         if pid in used:
             continue
-        print(json.dumps({"file": f"photos/{p.name}", "credit": credit_for(p), "description": desc, "id": pid}))
+        t = tags.get(p.name, [])
+        if topic and topic not in t:
+            continue
+        print(json.dumps({"file": f"photos/{p.name}", "credit": credit_for(p), "description": desc, "id": pid, "topics": t}))
+
+
+def summary():
+    used = used_ids()
+    tags = topics()
+    from collections import Counter
+    c = Counter(t for p in library() if parts(p)[2] not in used for t in tags.get(p.name, ["untagged"]))
+    for k, v in sorted(c.items(), key=lambda x: -x[1]):
+        print(f"{k:16} {v}")
 
 
 def prepare(src, dest, focus=(0.5, 0.5)):
@@ -92,6 +115,10 @@ def retire(src):
     pid = parts(p)[2]
     USED_DIR.mkdir(exist_ok=True)
     shutil.move(str(p), str(USED_DIR / p.name))
+    tags = topics()
+    if p.name in tags:
+        tags.pop(p.name)
+        TOPICS.write_text(json.dumps(tags, indent=1))
     with open(USED_IDS, "a") as f:
         f.write(pid + "\n")
     print(f"retired {pid}: moved to photos/used/{p.name}")
@@ -108,7 +135,9 @@ def check():
 if __name__ == "__main__":
     a = sys.argv[1:]
     if a[:1] == ["list"]:
-        list_photos()
+        list_photos(a[a.index("--topic") + 1] if "--topic" in a else None)
+    elif a[:1] == ["topics"]:
+        summary()
     elif a[:1] == ["check"]:
         check()
     elif a[:1] == ["prepare"] and len(a) >= 3:

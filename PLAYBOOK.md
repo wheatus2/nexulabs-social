@@ -284,10 +284,12 @@ Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't rep
 Claude curates free Unsplash photos for Lee (interactively, through Lee's browser) into `photos/`, named `<photographer>--<description>.<unsplash-id>.jpg`. Unsplash Licence: free commercial use, editing allowed. Never Unsplash+ (paid) photos. Do **not** use the Unsplash API or any other image source.
 - **A photo is never used twice (Lee's rule).** `photo.py` enforces it: `prepare` refuses any photo whose id is in `photos/used-ids.txt`, `photos/used/` or `log.json`. Always `retire` a photo straight after publishing. Never edit `used-ids.txt` except through `retire`.
 - Use a photo **roughly one post in three**, usually as the cover (`photo` slide type), with our type and logo over it. The rest stay as designed graphics.
-- `python3 photo.py list` shows unused photos. Look at the photo before choosing it and only use one that genuinely suits the topic. If none fits or the folder is empty, make a designed post instead. Never let it stop a post going out.
+- The library covers every topic (139 photos on 8 Nov 2026). `photos/topics.json` tags each one: web-design, crm, websites-crm, branding, ai-automation, hosting, domains, tech-news, business-types (trades, salons, cafés, pubs, shops, garages, gyms) and north-east. Run `python3 photo.py list --topic <topic>` for the post's category, and also check `business-types` (a real trade or shop is often the most engaging way into a topic) and `north-east` (local landmarks). `python3 photo.py topics` shows what's left per topic.
+- Open the photo and look at it before choosing it. Only use one that genuinely suits the post and is engaging at phone size. If none fits or the folder is empty, make a designed post instead. Never let it stop a post going out.
+- Never use a photo that shows another company's logo or brand prominently, and never an AI-generated image.
 - `python3 photo.py prepare photos/<file> posts/<id>/photo.jpg [--focus x,y]` crops to 4:5 and gives the credit line. Put it in the slide's `credit` field and as the last line of the caption.
 - `shade`: default (dark fade at the bottom), `full` (overall darken) or `blue` (brand blue fade). Check the text is easy to read at phone size.
-- If fewer than 5 unused photos are left, say so in the summary ("photo library running low") so Lee can ask Claude to top it up.
+- If fewer than 5 unused photos are left in the post's topic, or fewer than 20 overall, say so in the summary ("photo library running low: <topic>") so Lee can ask Claude to top it up.
 
 ## Accuracy rules (see also "Facts and fact-checking")
 - Every number on a slide must come from a source fetched during the run. UK sources first; non-UK only when there's no UK equivalent, and say so. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).
