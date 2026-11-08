@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Pick and prepare a photo from the photos/ library for a post. Photos are NEVER reused.
 
-File names: <photographer-name>--<short-description>--<unsplash-id>.jpg
-  e.g. jane-smith--laptop-on-desk--AbC123xYz.jpg
+File names: <photographer-name>--<short-description>.<unsplash-id>.jpg
+  e.g. jane-smith--laptop-on-desk.-8-2YWKt8Ag.jpg  (ids can contain - and _)
 
   python3 photo.py list                         # unused photos (credit, description, id)
   python3 photo.py prepare photos/<file> posts/<id>/photo.jpg [--focus 0.5,0.4]
@@ -26,10 +26,16 @@ EXT = {".jpg", ".jpeg", ".png", ".webp"}
 
 
 def parts(path):
-    bits = Path(path).stem.split("--")
+    """<photographer>--<description>.<unsplash-id>.jpg -> (photographer, description, id)"""
+    stem = Path(str(path)).name
+    stem = stem[: stem.rfind(".")] if "." in stem else stem      # drop extension
+    if "." in stem:
+        head, pid = stem.split(".", 1)
+    else:
+        head, pid = stem, stem
+    bits = head.split("--", 1)
     photographer = bits[0]
-    desc = bits[1].replace("-", " ") if len(bits) > 2 else (bits[1].replace("-", " ") if len(bits) == 2 else "")
-    pid = bits[2] if len(bits) > 2 else Path(path).stem
+    desc = bits[1].replace("-", " ") if len(bits) > 1 else ""
     return photographer, desc, pid
 
 
@@ -50,7 +56,8 @@ def used_ids():
             for k in ("photo", "photo_file", "photo_id", "unsplash_photo_id"):
                 v = e.get(k)
                 if v:
-                    ids.add(parts(v)[2] if "/" in str(v) or "." in str(v) else str(v))
+                    v = str(v)
+                    ids.add(parts(v)[2] if v.lower().endswith(tuple(EXT)) else v)
     return ids
 
 

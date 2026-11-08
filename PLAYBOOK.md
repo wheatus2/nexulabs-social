@@ -53,20 +53,19 @@ Posts must read as if Lee wrote them himself. If a line sounds like marketing co
 - News: at most one news post per day, and never the same story twice.
 - No topic, headline or stat repeated within 30 days (that's about 90 posts, so keep ideas fresh).
 
-## Make every post look different (Lee's rule, 6 Nov 2026)
-Lee noticed the first posts all looked the same. Every post must look clearly different from the one before it.
-- Set a post-level `"style"` in post.json. Five styles exist in render.py:
-  - `studio`: grid, soft blue glow, logo top-left
-  - `editorial`: magazine feel, thin rules above and below, lighter headline weight, square corners
-  - `bold`: heavy type, logo moved to the bottom, works best with a `blue` cover
-  - `minimal`: centred, no decoration, small centred logo
-  - `poster`: big outlined numbers or a character in the background (`"deco"` per slide; `"deco": ""` to hide), pill-shaped header
-- Never use the same style as the previous post (check the last entries in `log.json`, which record `style`). Cycle through all five before repeating one.
-- Mix the three themes: `ink` (dark), `paper` (light) and `blue` (brand blue background). Change the cover theme from post to post, and don't always alternate dark/light in the same order.
-- Vary the structure too: single image vs carousel, slide count, which slide types are used.
+## Make every post look different (Lee's rules, 6 and 8 Nov 2026)
+Lee wants cool, colourful graphic design: gradients, colour and all kinds of patterns, never repetitive.
+- **Styles (post-level `"style"`), nine in total:**
+  - Colourful (Lee's favourites, use these most, roughly 2 posts in 3): `aurora` (soft mesh gradient), `neon` (dark with glowing rings and orbs), `spectrum` (bold full-bleed gradient with discs and rings), `glass` (frosted panel over colour). Pick a `"palette"`: `electric` (blue/cyan/lilac), `ultraviolet` (blue/violet/pink), `ocean` (navy/cyan), `dusk` (indigo/pink/lilac).
+  - Clean: `studio`, `editorial`, `bold`, `minimal`, `poster`.
+- **Patterns (post- or slide-level `"pattern"`):** `dots`, `stripes`, `waves`, `contours`, `halftone`, `isometric`, `rings`, `bauhaus`, `chevrons`, `plus`, `diagonal-grid`. Use one on most posts, and change it on different slides of a carousel sometimes.
+- **Never repeat** the previous post's style, palette or pattern. Check the last 6 entries in `log.json` (which record `style`, `palette`, `pattern`) and don't reuse a style+palette+pattern combination within the last 15 posts.
+- Mix themes on the clean styles: `ink`, `paper`, `blue`. Vary the cover theme, slide count, slide types and order.
+- Colour stays in the blue, violet, cyan and pink family. No orange (Lee removed an orange post as off-brand).
+- Always check readability: text must never sit on a busy pattern or a bright blob. Lower `pattern_opacity` or change the layout if it does.
 
 ## Photos from the library (Lee's rules, 8 Nov 2026)
-Claude curates free Unsplash photos for Lee (interactively, through Lee's browser) into `photos/`, named `<photographer>--<description>--<unsplash-id>.jpg`. Unsplash Licence: free commercial use, editing allowed. Never Unsplash+ (paid) photos. Do **not** use the Unsplash API or any other image source.
+Claude curates free Unsplash photos for Lee (interactively, through Lee's browser) into `photos/`, named `<photographer>--<description>.<unsplash-id>.jpg`. Unsplash Licence: free commercial use, editing allowed. Never Unsplash+ (paid) photos. Do **not** use the Unsplash API or any other image source.
 - **A photo is never used twice (Lee's rule).** `photo.py` enforces it: `prepare` refuses any photo whose id is in `photos/used-ids.txt`, `photos/used/` or `log.json`. Always `retire` a photo straight after publishing. Never edit `used-ids.txt` except through `retire`.
 - Use a photo **roughly one post in three**, usually as the cover (`photo` slide type), with our type and logo over it. The rest stay as designed graphics.
 - `python3 photo.py list` shows unused photos. Look at the photo before choosing it and only use one that genuinely suits the topic. If none fits or the folder is empty, make a designed post instead. Never let it stop a post going out.

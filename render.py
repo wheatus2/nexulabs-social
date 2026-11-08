@@ -8,7 +8,9 @@ Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palet
 browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare, list and flow may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
-Post-level "style": studio | editorial | bold | minimal | poster (rotate; never the same two posts running).
+Post-level "style": studio | editorial | bold | minimal | poster | aurora | neon | spectrum | glass (rotate; never the same two posts running).
+Gradient styles (aurora, neon, spectrum, glass) take a post-level "palette": electric | ultraviolet | ocean | dusk.
+Any post/slide can add "pattern": dots | stripes | waves | contours | halftone | isometric | rings | bauhaus | chevrons | plus | diagonal-grid (optional "pattern_opacity").
 """
 import html, json, re, sys
 from pathlib import Path
@@ -24,7 +26,7 @@ PAPER = "#F5F5F7"
 
 def md(text):
     t = html.escape(text or "")
-    t = re.sub(r"\*(.+?)\*", r'<span class="acc">\1</span>', t)
+    t = re.sub(r"\*(.+?)\*", r'<span class="acc">\1</span>', t, flags=re.S)
     t = re.sub(r"(?<=\w)-(?=\w)", "\u2011", t)
     return t.replace("\n", "<br>")
 
@@ -227,6 +229,47 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .st-poster h2{{font-weight:700}}
 .st-poster .top{{border:1.5px solid rgba(127,127,127,.35);border-radius:999px;padding:16px 26px}}
 .st-poster .mark svg{{height:30px}}
+/* ===== colour / gradient styles: aurora, neon, spectrum, glass ===== */
+.gx{{color:#fff;--fg:#fff}}
+.gx .grid{{opacity:.06}}
+.gx .glow{{display:none}}
+.gx .fx{{position:absolute;inset:0;z-index:0;overflow:hidden}}
+.gx .fx i{{position:absolute;display:block;border-radius:50%}}
+.gx .acc{{background:linear-gradient(95deg,var(--c3),var(--c4));-webkit-background-clip:text;background-clip:text;color:transparent}}
+.gx .kicker:before{{background:linear-gradient(90deg,var(--c3),var(--c4))}}
+.gx .grain{{opacity:.14}}
+.gx .card,.gx .ctabox,.gx .it,.gx .sw .c{{border-color:rgba(255,255,255,.22)}}
+.gx .card.good{{border-color:var(--c3);background:rgba(255,255,255,.08)}}
+.gx .card.good .lb,.gx .legend b,.gx .it .n{{color:var(--c3)}}
+.gx .ctabox .btn{{background:linear-gradient(135deg,var(--c3),var(--c4))}}
+.gx .col.hl .bar,.gx .row.hl .fill,.gx .st.hl .dot{{background:linear-gradient(135deg,var(--c3),var(--c4));border-color:transparent;opacity:1}}
+.gx .col.hl .v,.gx .row.hl .lab{{color:var(--c3)}}
+.gx .col .bar,.gx .row .fill{{background:#fff;opacity:.3}}
+.gx .row .track{{background:rgba(255,255,255,.14)}}
+.gx .st .dot{{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25)}}
+.gx .big small{{background:linear-gradient(95deg,var(--c3),var(--c4));-webkit-background-clip:text;background-clip:text;color:transparent}}
+.st-aurora.gx{{background:var(--c1)}}
+.st-aurora .fx i{{filter:blur(90px);opacity:.9}}
+.st-aurora .fx:after,.st-glass .fx:after{{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 25%,var(--c1) 88%)}}
+.st-neon.gx{{background:#07070A}}
+.st-neon .fx i.ring{{border:3px solid transparent;background:linear-gradient(#07070A,#07070A) padding-box,conic-gradient(from 0deg,var(--c2),var(--c3),var(--c4),var(--c2)) border-box;box-shadow:0 0 80px -10px var(--c3)}}
+.st-neon .fx i.orb{{background:radial-gradient(circle at 35% 30%,#fff 0%,var(--c3) 18%,var(--c2) 55%,transparent 72%);filter:blur(2px);opacity:.9}}
+.st-neon .fx i.haze{{filter:blur(120px);opacity:.55}}
+.st-spectrum.gx{{background:var(--c2)}}
+.st-spectrum .fx{{background:linear-gradient(215deg,var(--c3) -10%,var(--c4) 22%,var(--c2) 55%,var(--c1) 100%)}}
+.st-spectrum .fx i.disc{{background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.55),rgba(255,255,255,.05) 60%,transparent 70%);mix-blend-mode:soft-light}}
+.st-spectrum .fx i.line{{border:2px solid rgba(255,255,255,.35);background:none}}
+.st-spectrum h1,.st-spectrum h2{{font-weight:700;letter-spacing:-.055em}}
+.st-spectrum .acc,.st-spectrum .big small{{background:none;-webkit-background-clip:initial;background-clip:initial;color:var(--c3)}}
+.st-glass.gx{{background:var(--c1)}}
+.st-glass .fx i{{filter:blur(50px);opacity:.75}}
+.st-glass .body{{background:rgba(12,10,40,.38);border:1.5px solid rgba(255,255,255,.28);border-radius:40px;padding:0 54px 40px;margin:36px -20px 0;
+ -webkit-backdrop-filter:blur(28px) saturate(140%);backdrop-filter:blur(28px) saturate(140%);box-shadow:0 30px 80px -30px rgba(0,0,0,.45)}}
+.st-glass .foot{{margin-top:26px}}
+/* ===== patterns ===== */
+.pat{{position:absolute;inset:0;z-index:1;pointer-events:none;color:var(--pc,currentColor)}}
+.pat svg{{position:absolute;inset:0;width:100%;height:100%}}
+.has-pat .grid{{display:none}}
 /* photo */
 .photo{{color:#fff}}
 .photo .bgimg{{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}}
@@ -242,13 +285,148 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 """
 
 
+
+PALETTES = {
+    # c1 = base, c2 = brand blue family, c3/c4 = highlight pair (used for gradient text & accents)
+    "electric":    ("#0A0A2E", "#3B2BFF", "#00D1FF", "#A78BFA"),
+    "ultraviolet": ("#14082E", "#3B2BFF", "#C084FC", "#F472B6"),
+    "ocean":       ("#03122E", "#0C23A8", "#22D3EE", "#667DFF"),
+    "dusk":        ("#120A2A", "#4F46E5", "#F0ABFC", "#818CF8"),
+}
+GRADIENT_STYLES = {"aurora", "neon", "spectrum", "glass"}
+
+
+def fx_layer(style, idx, pal):
+    """Decorative gradient shapes; positions shift per slide so each slide looks different."""
+    import random
+    rnd = random.Random(idx * 7919 + len(style))
+    c1, c2, c3, c4 = PALETTES.get(pal, PALETTES["electric"])
+    out = []
+    if style in ("aurora", "glass"):
+        for k, (col, size) in enumerate(((c2, 900), (c3, 700), (c4, 760), (c2, 600))):
+            x = rnd.randint(-350, 650)
+            y = rnd.randint(-400, 300) if k % 2 else rnd.randint(-200, 900)
+            out.append(f'<i style="width:{size}px;height:{size}px;left:{x}px;top:{y}px;background:{col}"></i>')
+    elif style == "neon":
+        out.append(f'<i class="haze" style="width:900px;height:900px;left:{rnd.randint(-300,500)}px;top:{rnd.randint(-300,700)}px;background:{c2}"></i>')
+        out.append(f'<i class="haze" style="width:600px;height:600px;left:{rnd.randint(200,700)}px;top:{rnd.randint(500,1100)}px;background:{c4}"></i>')
+        r = rnd.choice([520, 640, 760])
+        out.append(f'<i class="ring" style="width:{r}px;height:{r}px;right:{rnd.randint(-260,-60)}px;top:{rnd.randint(-160,260)}px"></i>')
+        out.append(f'<i class="ring" style="width:{r-180}px;height:{r-180}px;right:{rnd.randint(-120,40)}px;top:{rnd.randint(-60,360)}px;opacity:.6"></i>')
+        o = rnd.choice([150, 190, 230])
+        out.append(f'<i class="orb" style="width:{o}px;height:{o}px;left:{rnd.randint(600,860)}px;top:{rnd.randint(420,700)}px"></i>')
+    elif style == "spectrum":
+        for _ in range(2):
+            d = rnd.randint(500, 900)
+            out.append(f'<i class="disc" style="width:{d}px;height:{d}px;left:{rnd.randint(-300,600)}px;top:{rnd.randint(-300,900)}px"></i>')
+        for k in range(3):
+            d = 420 + k * 170
+            out.append(f'<i class="line" style="width:{d}px;height:{d}px;right:{-d//2}px;top:{-d//3}px;border-color:rgba(11,11,12,.25)"></i>')
+    return f'<div class="fx">{"".join(out)}</div>'
+
+
+PATTERNS = ["dots", "stripes", "waves", "contours", "halftone", "isometric", "rings", "bauhaus", "chevrons", "plus", "diagonal-grid"]
+
+
+def pattern_layer(name, idx, colors, opacity=None):
+    """Inline SVG background patterns (1080x1350). colors = (main, accent1, accent2)."""
+    import math, random
+    rnd = random.Random(idx * 104729 + sum(map(ord, name)))
+    main, a1, a2 = colors
+    W, H = 1080, 1350
+    op = opacity if opacity is not None else {"bauhaus": 1, "halftone": .5, "dots": .4}.get(name, .22)
+    els = []
+    if name == "dots":
+        g = rnd.choice([30, 36, 44]); r = rnd.choice([2.2, 3, 3.6])
+        els.append(f'<defs><pattern id="p" width="{g}" height="{g}" patternUnits="userSpaceOnUse"><circle cx="{g/2}" cy="{g/2}" r="{r}" fill="{main}"/></pattern>'
+                   f'<radialGradient id="m"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>'
+                   f'<mask id="k"><rect width="{W}" height="{H}" fill="url(#m)"/></mask></defs>'
+                   f'<rect width="{W}" height="{H}" fill="url(#p)" mask="url(#k)"/>')
+    elif name == "stripes":
+        ang = rnd.choice([30, 45, -35, 60]); w = rnd.choice([14, 22, 34])
+        els.append(f'<defs><pattern id="p" width="{w*2}" height="{w*2}" patternUnits="userSpaceOnUse" patternTransform="rotate({ang})"><rect width="{w}" height="{w*2}" fill="{main}"/></pattern></defs><rect width="{W}" height="{H}" fill="url(#p)"/>')
+    elif name == "waves":
+        n = rnd.choice([14, 18, 24]); amp = rnd.randint(30, 70); fr = rnd.uniform(1.2, 2.6); ph = rnd.uniform(0, 6)
+        for k in range(n):
+            y0 = H * (k + .5) / n
+            pts = " ".join(f"{x},{y0 + amp*math.sin(fr*2*math.pi*x/W + ph + k*.35):.1f}" for x in range(0, W + 20, 20))
+            col = a1 if k % 5 == 0 else main
+            els.append(f'<polyline points="{pts}" fill="none" stroke="{col}" stroke-width="2"/>')
+    elif name == "contours":
+        cx, cy = rnd.randint(200, 880), rnd.randint(200, 1150)
+        seeds = [rnd.uniform(0, 6.28) for _ in range(4)]
+        for k in range(1, 26):
+            R = k * 46
+            pts = []
+            for t in range(0, 361, 6):
+                a = math.radians(t)
+                rr = R * (1 + .12*math.sin(3*a + seeds[0]) + .08*math.sin(5*a + seeds[1]) + .05*math.sin(2*a + seeds[2] + k*.2))
+                pts.append(f"{cx + rr*math.cos(a):.1f},{cy + rr*math.sin(a):.1f}")
+            col = a1 if k % 6 == 0 else main
+            els.append(f'<polygon points="{" ".join(pts)}" fill="none" stroke="{col}" stroke-width="1.8"/>')
+    elif name == "halftone":
+        g = 34; cx, cy = rnd.choice([(W + 40, -40), (W*.95, -120)])
+        D = math.hypot(W, H)
+        for y in range(0, H + g, g):
+            for x in range(0, W + g, g):
+                d = math.hypot(x - cx, y - cy) / D
+                r = max(0, (1 - d*2.2)) * g * .48
+                if r > .6:
+                    els.append(f'<circle cx="{x}" cy="{y}" r="{r:.1f}" fill="{main}"/>')
+    elif name == "isometric":
+        g = rnd.choice([60, 80])
+        for a in (30, 150, 90):
+            els.append(f'<defs><pattern id="p{a}" width="{g}" height="{g}" patternUnits="userSpaceOnUse" patternTransform="rotate({a})"><line x1="0" y1="0" x2="{g}" y2="0" stroke="{main}" stroke-width="1.6"/></pattern></defs><rect width="{W}" height="{H}" fill="url(#p{a})"/>')
+    elif name == "checker-unused":
+        g = rnd.choice([90, 135])
+        els.append(f'<defs><pattern id="p" width="{g*2}" height="{g*2}" patternUnits="userSpaceOnUse"><rect width="{g}" height="{g}" fill="{main}"/><rect x="{g}" y="{g}" width="{g}" height="{g}" fill="{main}"/></pattern></defs><rect width="{W}" height="{H}" fill="url(#p)"/>')
+    elif name == "rings":
+        cx, cy = rnd.choice([(W, 0), (0, H*.3), (W*.9, H), (W*.5, H*1.05)])
+        for k in range(1, 30):
+            els.append(f'<circle cx="{cx}" cy="{cy}" r="{k*42}" fill="none" stroke="{a1 if k%7==0 else main}" stroke-width="2"/>')
+    elif name == "bauhaus":
+        # bold geometric blocks in the top area, leaving the lower half for text
+        cell = 230
+        cols = [a1, a2, main]
+        for gy in range(2):
+            for gx in range(4):
+                if (gx, gy) in ((0, 0), (1, 0)) or rnd.random() < .3:
+                    continue
+                x, y = 160 + gx * cell, 150 + gy * cell
+                c = rnd.choice(cols); shape = rnd.choice(["q", "c", "h", "s", "t"])
+                if shape == "q":
+                    corner = rnd.choice([(x, y), (x + cell, y), (x, y + cell), (x + cell, y + cell)])
+                    els.append(f'<clipPath id="c{gx}{gy}"><rect x="{x}" y="{y}" width="{cell}" height="{cell}"/></clipPath><circle cx="{corner[0]}" cy="{corner[1]}" r="{cell}" fill="{c}" clip-path="url(#c{gx}{gy})"/>')
+                elif shape == "c":
+                    els.append(f'<circle cx="{x+cell/2}" cy="{y+cell/2}" r="{cell*.42}" fill="{c}"/>')
+                elif shape == "h":
+                    els.append(f'<clipPath id="c{gx}{gy}"><rect x="{x}" y="{y}" width="{cell}" height="{cell/2}"/></clipPath><circle cx="{x+cell/2}" cy="{y+cell/2}" r="{cell/2}" fill="{c}" clip-path="url(#c{gx}{gy})"/>')
+                elif shape == "s":
+                    els.append(f'<rect x="{x+cell*.12}" y="{y+cell*.12}" width="{cell*.76}" height="{cell*.76}" fill="none" stroke="{c}" stroke-width="16"/>')
+                else:
+                    els.append(f'<polygon points="{x},{y+cell} {x+cell},{y+cell} {x+cell},{y}" fill="{c}"/>')
+    elif name == "chevrons":
+        g = rnd.choice([60, 80]); h2 = g/2
+        els.append(f'<defs><pattern id="p" width="{g}" height="{g}" patternUnits="userSpaceOnUse"><polyline points="0,{h2+10} {h2},{10} {g},{h2+10}" fill="none" stroke="{main}" stroke-width="3"/></pattern></defs><rect width="{W}" height="{H}" fill="url(#p)"/>')
+    elif name == "plus":
+        g = rnd.choice([54, 72]); a = 7
+        els.append(f'<defs><pattern id="p" width="{g}" height="{g}" patternUnits="userSpaceOnUse"><path d="M{g/2-a} {g/2}H{g/2+a}M{g/2} {g/2-a}V{g/2+a}" stroke="{main}" stroke-width="2.4"/></pattern></defs><rect width="{W}" height="{H}" fill="url(#p)"/>')
+    elif name == "diagonal-grid":
+        g = rnd.choice([70, 100])
+        els.append(f'<defs><pattern id="p" width="{g}" height="{g}" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0H{g}M0 0V{g}" stroke="{main}" stroke-width="1.6" fill="none"/></pattern></defs><rect width="{W}" height="{H}" fill="url(#p)"/>')
+    else:
+        return ""
+    return f'<div class="pat" style="opacity:{op}"><svg viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">{"".join(els)}</svg></div>'
+
 _POST_DIR = "."
+_PALETTE = "electric"
+_PATTERN = None
 LOGO_SVG = (ROOT / "brand" / "nexulabs-logo-white.svg").read_text()
 
 
-def logo(theme):
+def logo(theme, dot_override=None):
     fg = INK if theme == "paper" else "#FFFFFF"
-    dot = {"ink": ACCENT_DARK, "paper": ACCENT, "blue": INK}.get(theme, ACCENT)
+    dot = dot_override or {"ink": ACCENT_DARK, "paper": ACCENT, "blue": INK}.get(theme, ACCENT)
     return (LOGO_SVG.replace('fill="#FFFFFF"', f'fill="{fg}"').replace('fill="#667DFF"', f'fill="{dot}"')
             .replace('<title>nexulabs</title>', ''))
 
@@ -270,9 +448,31 @@ def frame(slide, idx, total, series, inner, foot_left="", foot_right="", style="
         if slide.get("credit"):
             photo += f'<div class="credit">{html.escape(slide["credit"])}</div>'
     shade = f" shade-{slide['shade']}" if slide.get("shade") else ""
-    return f"""<section class="s {theme} {slide['type']} st-{style}{shade}">
+    gx = ""
+    dot = None
+    if style in GRADIENT_STYLES and slide["type"] != "photo":
+        pal = slide.get("palette", _PALETTE)
+        c1, c2, c3, c4 = PALETTES.get(pal, PALETTES["electric"])
+        gx = f' gx" style="--c1:{c1};--c2:{c2};--c3:{c3};--c4:{c4}'
+        photo = fx_layer(style, idx, pal) + photo
+        theme = "ink"
+        dot = c3
+    patname = slide.get("pattern", _PATTERN)
+    if patname and patname != "none" and slide["type"] != "photo":
+        if gx:
+            c1, c2, c3, c4 = PALETTES.get(slide.get("palette", _PALETTE), PALETTES["electric"])
+            cols = ("#FFFFFF", c3, c4)
+        elif theme == "paper":
+            cols = (INK, ACCENT, ACCENT_DARK)
+        elif theme == "blue":
+            cols = ("#FFFFFF", INK, "#9AA8FF")
+        else:
+            cols = (PAPER, ACCENT_DARK, ACCENT)
+        photo = photo + pattern_layer(patname, idx, cols, slide.get("pattern_opacity"))
+        shade += " has-pat"
+    return f"""<section class="s {theme} {slide['type']} st-{style}{shade}{gx}">
 {photo}{glow}<div class="grid"></div>{deco}
-<div class="top"><div class="mark">{logo(theme)}</div>
+<div class="top"><div class="mark">{logo(theme, dot)}</div>
 <div class="meta">{html.escape(series)}{f" &nbsp;·&nbsp; {idx:02d}/{total:02d}" if total > 1 else ""}</div></div>
 <div class="body">{inner}</div>
 <div class="foot"><div class="src">{foot_left}</div><div>{foot_right}</div></div>
@@ -393,8 +593,10 @@ def render(spec_path):
     spec_path = Path(spec_path).resolve()
     spec = json.loads(spec_path.read_text())
     out = spec_path.parent
-    global _POST_DIR
+    global _POST_DIR, _PALETTE, _PATTERN
     _POST_DIR = str(out)
+    _PALETTE = spec.get("palette", "electric")
+    _PATTERN = spec.get("pattern")
     slides = spec["slides"]
     files = []
     with sync_playwright() as p:
