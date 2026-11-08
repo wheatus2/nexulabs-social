@@ -11,6 +11,7 @@ Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
 Post-level "style": studio | editorial | bold | minimal | poster | aurora | neon | spectrum | glass (rotate; never the same two posts running).
 Gradient styles (aurora, neon, spectrum, glass) take a post-level "palette": electric | ultraviolet | ocean | dusk.
+Any slide can add "orb_shift": [x, y] to move the neon orb off text.
 Any post/slide can add "pattern": dots | stripes | waves | contours | halftone | isometric | rings | bauhaus | chevrons | plus | diagonal-grid (optional "pattern_opacity").
 """
 import html, json, re, sys
@@ -471,6 +472,9 @@ def frame(slide, idx, total, series, inner, foot_left="", foot_right="", style="
             cols = (PAPER, ACCENT_DARK, ACCENT)
         photo = photo + pattern_layer(patname, idx, cols, slide.get("pattern_opacity"))
         shade += " has-pat"
+    if slide.get("orb_shift"):
+        ox, oy = slide["orb_shift"]
+        photo += f'<style>.orb{{transform:translate({int(ox)}px,{int(oy)}px)}}</style>'
     return f"""<section class="s {theme} {slide['type']} st-{style}{shade}{gx}">
 {photo}{glow}<div class="grid"></div>{deco}
 <div class="top"><div class="mark">{logo(theme, dot)}</div>
