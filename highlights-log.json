@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-11-08",
+    "run": "weekly highlights housekeeping",
+    "highlights": [
+      {
+        "name": "CRM",
+        "action": "created",
+        "cover": "first frame of stories/2026-11-08-1747-one-page-per-enquiry",
+        "stories_added": [
+          {
+            "story_id": "stories/2026-11-08-1747-one-page-per-enquiry",
+            "media_ids": [
+              "17995404405059281",
+              "18649989922047819",
+              "18133772404768388",
+              "18402688477205327"
+            ]
+          }
+        ]
+      }
+    ],
+    "skipped": [
+      {
+        "story_id": "stories/2026-11-08-1214-who-owns-your-domain",
+        "category": "Domain names",
+        "intended_highlight": "Domains",
+        "reason": "Not in the Instagram story archive (archive held only the 4 CRM frames); logged media_ids 18114659936585524, 18646356670053257, 17897094996615013, 18188496037419732 not found. Highlight not created."
+      }
+    ]
+  }
+]
