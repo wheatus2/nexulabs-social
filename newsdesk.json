@@ -10,14 +10,39 @@
       "relevance": "Websites: shows business owners which AI agents (Google, OpenAI, Anthropic operators) visit their site and what they do (searches, form submissions, bookings, checkout). Ask Clarity answers plain-English questions about visitor behaviour. Clarity is free.",
       "angle": "AI assistants are starting to visit websites on people's behalf. A free tool now shows you if they're on yours and whether they can finish a booking or enquiry.",
       "facts": [
-        {"claim": "Announced 4 November 2026: Agentic Analytics, Ask Clarity, Brand Agents expansion", "source": "https://clarity.microsoft.com/blog/?p=10568", "check": "ppc.land and SERoundtable both date it 4 Nov 2026"},
-        {"claim": "Supported agents for Agentic Analytics are Google, OpenAI and Anthropic agent operators (not every AI agent)", "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 2)"},
-        {"claim": "Dashboard shows agent activity: searches, form submissions, logins, downloads, appointment bookings, checkout", "source": "https://clarity.microsoft.com/blog/?p=10568"},
-        {"claim": "Microsoft's figures come from its own analysis of 5.23 million agentic sessions across 230,511 projects, 13 Aug to 9 Sep 2026", "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 1)", "note": "Vendor's own data, global not UK. Say so if used."},
-        {"claim": "Brand Agents: eligible Shopify and WooCommerce merchants' products can appear in Copilot, Bing and MSN AI recommendations", "source": "https://clarity.microsoft.com/blog/?p=10568"}
+        {
+          "claim": "Announced 4 November 2026: Agentic Analytics, Ask Clarity, Brand Agents expansion",
+          "source": "https://clarity.microsoft.com/blog/?p=10568",
+          "check": "ppc.land and SERoundtable both date it 4 Nov 2026"
+        },
+        {
+          "claim": "Supported agents for Agentic Analytics are Google, OpenAI and Anthropic agent operators (not every AI agent)",
+          "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 2)"
+        },
+        {
+          "claim": "Dashboard shows agent activity: searches, form submissions, logins, downloads, appointment bookings, checkout",
+          "source": "https://clarity.microsoft.com/blog/?p=10568"
+        },
+        {
+          "claim": "Microsoft's figures come from its own analysis of 5.23 million agentic sessions across 230,511 projects, 13 Aug to 9 Sep 2026",
+          "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 1)",
+          "note": "Vendor's own data, global not UK. Say so if used."
+        },
+        {
+          "claim": "Brand Agents: eligible Shopify and WooCommerce merchants' products can appear in Copilot, Bing and MSN AI recommendations",
+          "source": "https://clarity.microsoft.com/blog/?p=10568"
+        }
       ],
-      "second_sources": ["https://ppc.land/microsoft-clarity-puts-shopify-and-woocommerce-products-in-copilot-and-bing/", "https://www.seroundtable.com/microsoft-clarity-gains-agentic-analytics-and-ask-clarity-42449.html", "https://www.mediapost.com/publications/article/419216/microsoft-clarity-analytics-connects-agents-recom.html"],
-      "caveats": "Global rollout per Microsoft, but coverage limited to supported agents. Treat stats as Microsoft's own. Re-open the blog post before publishing to confirm nothing changed. Clarity needs disclosing in a privacy policy and cookie consent in the UK, so mention that if recommending people install it (check ICO cookie guidance)."
+      "second_sources": [
+        "https://ppc.land/microsoft-clarity-puts-shopify-and-woocommerce-products-in-copilot-and-bing/",
+        "https://www.seroundtable.com/microsoft-clarity-gains-agentic-analytics-and-ask-clarity-42449.html",
+        "https://www.mediapost.com/publications/article/419216/microsoft-clarity-analytics-connects-agents-recom.html"
+      ],
+      "caveats": "Global rollout per Microsoft, but coverage limited to supported agents. Treat stats as Microsoft's own. Re-open the blog post before publishing to confirm nothing changed. Clarity needs disclosing in a privacy policy and cookie consent in the UK, so mention that if recommending people install it (check ICO cookie guidance).",
+      "used_on": [
+        "linkedin:2026-11-08 urn:li:share:7525189478924132352"
+      ],
+      "note_2026-11-08": "Used on LinkedIn only; still unused on Instagram/Facebook. Primary source re-checked 8 Nov: canonical URL https://clarity.microsoft.com/blog/clarity-connects-agents-LLMs-people/ (the ?p=10568 link errored). Ask Clarity is closed beta for retailers. Cookie consent: Clarity waits for a consent signal for UK/EEA/CH visitors since 31 Oct 2025 (learn.microsoft.com clarity consent-mode)."
     },
     {
       "id": "2026-11-04-search-console-multi-device-filter",

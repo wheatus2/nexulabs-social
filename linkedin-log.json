@@ -1,1 +1,15 @@
-[]
+[
+ {
+  "date": "2026-11-08",
+  "source": "newsdesk:2026-11-04-microsoft-clarity-agentic-analytics",
+  "topic": "AI agents now use websites; Microsoft Clarity's free Agentic Analytics shows which supported agents visit and what they do; sort cookie consent for UK visitors first",
+  "image": "posts/linkedin/2026-11-08-ai-agents-on-your-website/slide-01.jpg",
+  "style": "aurora",
+  "palette": "ocean",
+  "pattern": "contours",
+  "fact_check": "pass",
+  "author": "urn:li:organization:146939776",
+  "response_id": "urn:li:share:7525189478924132352",
+  "url": "https://www.linkedin.com/feed/update/urn:li:share:7525189478924132352/"
+ }
+]
