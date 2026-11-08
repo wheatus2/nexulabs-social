@@ -1,0 +1,37 @@
+{
+ "id": "linkedin-2026-11-08-quote-follow-up",
+ "series": "CRM",
+ "style": "glass",
+ "palette": "ultraviolet",
+ "pattern": "plus",
+ "slides": [
+  {
+   "type": "flow",
+   "theme": "ink",
+   "title": "Sent the quote.\nThen *nothing*.",
+   "title_size": 96,
+   "highlight": [
+    1
+   ],
+   "steps": [
+    [
+     "Sent",
+     "Logged on the day, with a reminder set."
+    ],
+    [
+     "Chased",
+     "Day three, then a week. Note every call."
+    ],
+    [
+     "Won",
+     "Turns into a job. No retyping."
+    ],
+    [
+     "Lost",
+     "Closed at two weeks, with the reason."
+    ]
+   ],
+   "pattern_opacity": 0.12
+  }
+ ]
+}

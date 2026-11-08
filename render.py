@@ -248,7 +248,7 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .gx .col.hl .v,.gx .row.hl .lab{{color:var(--c3)}}
 .gx .col .bar,.gx .row .fill{{background:#fff;opacity:.3}}
 .gx .row .track{{background:rgba(255,255,255,.14)}}
-.gx .st .dot{{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25)}}
+.gx .st .dot{{background:linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1)),rgba(16,12,44,.94);border-color:rgba(255,255,255,.25);position:relative;z-index:1}}
 .gx .big small{{background:linear-gradient(95deg,var(--c3),var(--c4));-webkit-background-clip:text;background-clip:text;color:transparent}}
 .st-aurora.gx{{background:var(--c1)}}
 .st-aurora .fx i{{filter:blur(90px);opacity:.9}}
