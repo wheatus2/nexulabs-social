@@ -250,7 +250,14 @@ Lee: the posts were "looking very AI generated". He chose **direction B, real pr
 
 Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't repeat the same theme and screen kind two posts running.
 - Colour stays in the brand family: ink, paper, blue, lilac, plus the pill colours in the UI (blue, green, grey). No orange.
-- **Photos are a firm rule, not optional (Lee, 8 Nov 2026: "I haven't seen a post using an image yet").** Before building any feed post, check the last two feed posts in `log.json`. If neither used a library photo, **this post must use one**: a `photo` cover slide for a carousel or single image, or a photo scene in a Reel. That makes it at least one feed post in three. Pick the photo that best suits the topic from `python3 photo.py list`. If genuinely none fits, use the closest workspace, shopfront or desk photo rather than skipping. Prepare it with `photo.py prepare`, credit it on the slide and in the caption, and `retire` it after publishing. Log `"photo": "<file>"`.
+- **Photos: regular, but only engaging ones (Lee, 8 Nov 2026: "I haven't seen a post using an image yet", then "You don't need to use a photo every time" and "Only use engaging photos").**
+  - Before building a feed post, check the last two feed posts in `log.json`.
+  - If neither used a library photo, this post should use one: a `photo` cover slide, or a photo scene in a Reel.
+  - The photo must be genuinely engaging and fit the topic. That means a strong subject, colour or story: North East landmarks, tools and trades, colour swatches, real shopfronts and counters, hands using a phone, planning walls.
+  - Never use a bland one just to tick the box. That rules out empty white rooms, blank walls, plain notepads and generic laptop-on-a-table shots.
+  - If no engaging photo fits, make a designed post instead and say so in the summary ("no engaging photo fitted").
+  - Prepare it with `photo.py prepare`, credit it on the slide and in the caption, and `retire` it after publishing. Log `"photo": "<file>"`.
+  - `photos/not-engaging/` holds photos judged too dull. `photo.py` won't list them and refuses to prepare them. When topping up the library, only add photos that pass this test.
 - Photo slides in the product style come in three looks:
   - The default dark fade at the bottom.
   - `"shade": "blue"`, which adds a flat brand-blue band.

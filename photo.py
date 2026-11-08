@@ -75,6 +75,8 @@ def list_photos():
 
 
 def prepare(src, dest, focus=(0.5, 0.5)):
+    if "not-engaging" in str(src):
+        sys.exit("REFUSED: photos in photos/not-engaging/ were judged too dull to post (Lee: only engaging photos).")
     pid = parts(src)[2]
     if pid in used_ids():
         sys.exit(f"REFUSED: photo {pid} has already been used. Photos are never reused (Lee's rule).")
