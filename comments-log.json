@@ -1,1 +1,7 @@
-{"seen": []}
+{
+  "seen": [
+    {"id": "18110822795158116", "platform": "instagram", "media": "18646001023051340", "username": "etsy_explorer", "timestamp": "2026-11-06T16:58:48+0000", "flag": "spam", "reported": "2026-11-08"},
+    {"id": "18119890334000243", "platform": "instagram", "media": "17895784704457768", "username": "smallbusinessexplore", "timestamp": "2026-11-07T09:36:26+0000", "flag": "spam", "reported": "2026-11-08"},
+    {"id": "18118730309016589", "platform": "instagram", "media": "17895784704457768", "username": "christmasfame", "timestamp": "2026-11-07T10:18:51+0000", "flag": "spam", "reported": "2026-11-08"}
+  ]
+}
