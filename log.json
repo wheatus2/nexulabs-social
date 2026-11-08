@@ -94,5 +94,30 @@
   "permalink": "https://www.instagram.com/p/Dfc8mrWF_8a/",
   "facebook_post_id": "1484176674771345_122098948293544005",
   "status": "published"
+ },
+ {
+  "date": "2026-11-08",
+  "time_slot": "morning",
+  "id": "2026-11-08-0835-quote-follow-up",
+  "category": "CRM",
+  "pillar": "CRM",
+  "topic": "Chasing quotes nobody replied to: give every quote a status (sent/chased/won/lost) with reminders, a rough chase timetable, and record why quotes are lost",
+  "style": "minimal",
+  "cover_theme": "blue",
+  "slides": 5,
+  "slide_types": [
+   "cover",
+   "flow",
+   "list",
+   "compare",
+   "quote"
+  ],
+  "unsplash_photo_id": null,
+  "unsplash_note": "api.unsplash.com still blocked by the session's network allowlist (403 from proxy), so designed post",
+  "news_check": "No qualifying UK website/CRM story in the last 48 hours",
+  "instagram_media_id": "18022690991939290",
+  "permalink": "https://www.instagram.com/p/DfeV4jgF18G/",
+  "facebook_post_id": "1484176674771345_122099379063544005",
+  "status": "published"
  }
 ]
