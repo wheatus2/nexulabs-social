@@ -5,11 +5,11 @@ Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
 Post-level "format": "story" renders 1080x1920 Instagram Stories (one image per slide).
-Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
+Slide types: screen (product UI: table | board | record | phone), cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
 browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare, list and flow may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
-Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
-Post-level "style": studio | editorial | bold | minimal | poster | aurora | neon | spectrum | glass (rotate; never the same two posts running).
+Themes: "ink" (dark), "paper" (light), "blue" (brand blue) or "lilac" (#E9E7FF).
+Post-level "style": product (default since 8 Nov 2026: flat colour, real UI screens) | studio | editorial | bold | minimal | poster | aurora | neon | spectrum | glass (rotate; never the same two posts running).
 Gradient styles (aurora, neon, spectrum, glass) take a post-level "palette": electric | ultraviolet | ocean | dusk.
 Any slide can add "orb_shift": [x, y] to move the neon orb off text.
 Any post/slide can add "pattern": dots | stripes | waves | contours | halftone | isometric | rings | bauhaus | chevrons | plus | diagonal-grid (optional "pattern_opacity").
@@ -288,6 +288,8 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 
 
 
+CSS += '\n/* ===== style: product (Lee, 8 Nov 2026): flat colour + real product screens. No gradients, glows, grain, grids or patterns. ===== */\n.st-product .grid,.st-product .glow,.st-product .grain,.st-product .deco{display:none}\n.lilac{background:#E9E7FF;color:#0B0B0C;--acc:#3B2BFF;--fg:#0B0B0C}\n.st-product .meta{font-family:Text;font-size:20px;letter-spacing:0;text-transform:none;opacity:.7}\n.st-product .kicker{font-family:Text;font-size:22px;letter-spacing:0;text-transform:none;opacity:.75}\n.st-product .kicker:before{display:none}\n.st-product h1{letter-spacing:-.045em}\n.st-product .swipe b{border:none;width:auto;height:auto}\n.st-product .foot{font-family:Text;font-size:18px;opacity:.65}\n.st-product .card.good{background:rgba(59,43,255,.06)}\n.st-product.blue .card.good{background:rgba(255,255,255,.1)}\n.st-product .bw{border-radius:18px;border:none;box-shadow:0 30px 60px -32px rgba(0,0,0,.45)}\n.st-product .pin{box-shadow:none}\n/* screen slide: headline + a believable UI window */\n.screen h2{font-size:92px;letter-spacing:-.045em;line-height:.98}\n.screen p.lead{margin-top:24px;font-size:30px}\n.win{margin-top:auto;background:#fff;color:#0B0B0C;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -32px rgba(0,0,0,.45);font-family:Text}\n.paper .win,.lilac .win{box-shadow:0 0 0 1.5px rgba(11,11,12,.08),0 30px 60px -36px rgba(0,0,0,.35)}\n.win .wbar{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;border-bottom:1px solid #E8E8EC}\n.win .wbar b{font-family:Disp;font-size:26px;font-weight:600;letter-spacing:-.02em}\n.win .tabs{display:flex;gap:8px;font-size:19px;color:#6b6b72}\n.win .tabs span{padding:6px 14px;border-radius:8px}.win .tabs .a{background:#F1F1F4;color:#0B0B0C}\n.win table{width:100%;border-collapse:collapse;font-size:25px}\n.win th{text-align:left;font-weight:500;color:#8a8a92;font-size:18px;padding:18px 26px 12px;border-bottom:1px solid #EEE}\n.win td{padding:24px 26px;border-bottom:1px solid #F0F0F3;white-space:nowrap}\n.win tr:last-child td{border-bottom:none}\n.win td.mono{font-family:Mono;font-size:18px;color:#6b6b72}.win td.dim{color:#55555c}\n.win tr.hl td{background:#F5F4FF}\n.pill{display:inline-block;padding:5px 14px;border-radius:999px;font-size:18px;font-weight:500;line-height:1.3}\n.pill.blue{background:#EEF0FF;color:#3B2BFF}.pill.solid{background:#3B2BFF;color:#fff}\n.pill.green{background:#E6F4EA;color:#1F7A3A}.pill.grey{background:#F2F2F4;color:#6b6b72}.pill.ink{background:#0B0B0C;color:#fff}\n.win .board{display:flex;gap:14px;padding:22px 18px 30px;background:#F6F6F8}\n.win .lane{flex:1;min-width:0}\n.win .lane h4{font-size:21px;font-weight:600;color:#55555c;display:flex;justify-content:space-between;padding:4px 6px 14px}\n.win .lane h4 span{color:#9a9aa2;font-weight:500}\n.win .kc{background:#fff;border-radius:12px;padding:22px 20px 20px;margin-bottom:12px;box-shadow:0 0 0 1px #E8E8EC}\n.win .kc b{display:block;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-.01em}\n.win .kc small{display:block;font-size:21px;color:#6b6b72;margin-top:6px}\n.win .kc.hl{box-shadow:0 0 0 2px #3B2BFF}\n.win .kc .pill{margin-top:14px;font-size:18px}\n.win .rec{display:flex}\n.win .rec .fields{flex:1;padding:26px 30px;border-right:1px solid #EEE}\n.win .rec .f{padding:14px 0;border-bottom:1px solid #F2F2F4}.win .rec .f:last-child{border:none}\n.win .rec .f small{display:block;font-size:19px;color:#8a8a92}\n.win .rec .f span{display:block;font-size:28px;margin-top:4px}\n.win .rec .f span .pill{display:inline-block;font-size:20px;margin-top:4px}\n.win .rec .tl{flex:1.2;padding:26px 30px}\n.win .rec .tl h5{font-size:17px;font-weight:500;color:#8a8a92;margin-bottom:8px}\n.win .rec .ev{display:flex;gap:16px;padding:16px 0;font-size:25px;line-height:1.35;align-items:baseline}\n.win .rec .ev i{font-style:normal;font-family:Mono;font-size:17px;color:#8a8a92;min-width:64px}\n.win .rec .ev.hl span{color:#3B2BFF;font-weight:500}\n.phonewrap{margin-top:auto;display:flex;gap:56px;align-items:flex-end}\n.phone{width:420px;flex:none;border-radius:54px;background:#0B0B0C;padding:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}\n.phone .scr{background:#fff;color:#0B0B0C;border-radius:42px;overflow:hidden;height:760px;padding:58px 30px 30px;position:relative}\n.phone .scr:before{content:"";position:absolute;top:16px;left:50%;width:110px;height:30px;margin-left:-55px;border-radius:15px;background:#0B0B0C}\n.phone .pnav{display:flex;justify-content:space-between;align-items:center;font-family:Disp;font-weight:700;font-size:22px;letter-spacing:-.02em}\n.phone .pnav u{width:30px;height:3px;background:#0B0B0C;box-shadow:0 8px 0 #0B0B0C,0 -8px 0 #0B0B0C;text-decoration:none}\n.phone .ph{font-family:Disp;font-weight:600;font-size:40px;letter-spacing:-.035em;line-height:1.04;margin-top:44px}\n.phone .pl{font-size:19px;color:#55555c;margin-top:14px;line-height:1.4}\n.phone .pb{margin-top:24px;background:#3B2BFF;color:#fff;border-radius:12px;padding:18px;text-align:center;font-weight:600;font-size:20px}\n.phone .pb2{margin-top:10px;border:1.5px solid #D8D8DE;border-radius:12px;padding:16px;text-align:center;font-weight:600;font-size:20px}\n.phone .pi{margin-top:22px;border-top:1px solid #EEE}\n.phone .pi div{padding:14px 0;border-bottom:1px solid #EEE;font-size:19px;display:flex;justify-content:space-between}\n.phone .pi div span{color:#8a8a92}\n.phonewrap .notes{flex:1;padding-bottom:20px}\n.phonewrap .notes div{padding:22px 0;border-top:1.5px solid currentColor;font-size:27px;line-height:1.35}\n.phonewrap .notes div b{display:block;font-family:Disp;font-weight:600;font-size:34px;letter-spacing:-.025em;margin-bottom:4px}\n.excap{font-size:18px;opacity:.65;margin-top:20px}\n'
+
 PALETTES = {
     # c1 = base, c2 = brand blue family, c3/c4 = highlight pair (used for gradient text & accents)
     "electric":    ("#0A0A2E", "#3B2BFF", "#00D1FF", "#A78BFA"),
@@ -427,8 +429,8 @@ LOGO_SVG = (ROOT / "brand" / "nexulabs-logo-white.svg").read_text()
 
 
 def logo(theme, dot_override=None):
-    fg = INK if theme == "paper" else "#FFFFFF"
-    dot = dot_override or {"ink": ACCENT_DARK, "paper": ACCENT, "blue": INK}.get(theme, ACCENT)
+    fg = INK if theme in ("paper", "lilac") else "#FFFFFF"
+    dot = dot_override or {"ink": ACCENT_DARK, "paper": ACCENT, "lilac": ACCENT, "blue": INK}.get(theme, ACCENT)
     return (LOGO_SVG.replace('fill="#FFFFFF"', f'fill="{fg}"').replace('fill="#667DFF"', f'fill="{dot}"')
             .replace('<title>nexulabs</title>', ''))
 
@@ -436,7 +438,7 @@ def logo(theme, dot_override=None):
 def frame(slide, idx, total, series, inner, foot_left="", foot_right="", style="studio"):
     theme = slide.get("theme", "paper")
     glow = ""
-    if slide.get("glow", theme == "ink"):
+    if slide.get("glow", theme == "ink") and style != "product":
         glow = f'<div class="glow{" low" if slide.get("glow_low") else ""}"></div>'
     deco = ""
     if style == "poster" and slide.get("deco", None) != "":
@@ -460,6 +462,8 @@ def frame(slide, idx, total, series, inner, foot_left="", foot_right="", style="
         theme = "ink"
         dot = c3
     patname = slide.get("pattern", _PATTERN)
+    if style == "product":
+        patname = None
     if patname and patname != "none" and slide["type"] != "photo":
         if gx:
             c1, c2, c3, c4 = PALETTES.get(slide.get("palette", _PALETTE), PALETTES["electric"])
@@ -579,6 +583,53 @@ def build(slide, idx, total, series, style="studio"):
             for i, (a, b) in enumerate(slide["steps"]))
         inner = f"""{kick(slide)}
 <h2{f' style="font-size:{slide["title_size"]}px"' if slide.get('title_size') else ''}>{md(slide['title'])}</h2><div class="fl">{steps}</div><div style="height:40px"></div>"""
+    elif t == "screen":
+        sc = slide["screen"]
+        kind = sc.get("kind", "table")
+        tones = sc.get("pills", {})
+        def pill(v):
+            v = str(v)
+            return f'<span class="pill {tones.get(v, "grey")}">{html.escape(v)}</span>' if v in tones else html.escape(v)
+        tabs = "".join(f'<span class="{"a" if i == 0 else ""}">{html.escape(x)}</span>' for i, x in enumerate(sc.get("tabs", [])))
+        head = f'<div class="wbar"><b>{html.escape(sc.get("title", ""))}</b><div class="tabs">{tabs}</div></div>'
+        if kind == "table":
+            cls = sc.get("col_class", [])
+            th = "".join(f"<th>{html.escape(c)}</th>" for c in sc["columns"])
+            hl = sc.get("highlight", [])
+            trs = ""
+            for i, r in enumerate(sc["rows"]):
+                tds = "".join(f'<td class="{cls[j] if j < len(cls) else ""}">{pill(v)}</td>' for j, v in enumerate(r))
+                trcls = ' class="hl"' if i in hl else ""
+                trs += f'<tr{trcls}>{tds}</tr>'
+            win = f'<div class="win">{head}<table><tr>{th}</tr>{trs}</table></div>'
+        elif kind == "board":
+            lanes = ""
+            for lane in sc["lanes"]:
+                cards = "".join(
+                    f'<div class="kc{" hl" if len(c) > 3 and c[3] else ""}"><b>{html.escape(c[0])}</b>'
+                    f'{f"<small>{html.escape(c[1])}</small>" if len(c) > 1 and c[1] else ""}'
+                    f'{pill(c[2]) if len(c) > 2 and c[2] else ""}</div>' for c in lane["cards"])
+                lanes += f'<div class="lane"><h4>{html.escape(lane["name"])}<span>{lane.get("count", len(lane["cards"]))}</span></h4>{cards}</div>'
+            win = f'<div class="win">{head}<div class="board">{lanes}</div></div>'
+        elif kind == "record":
+            fields = "".join(f'<div class="f"><small>{html.escape(a)}</small><span>{pill(b)}</span></div>' for a, b in sc["fields"])
+            hl = sc.get("highlight", [])
+            evs = "".join(f'<div class="ev{" hl" if i in hl else ""}"><i>{html.escape(a)}</i><span>{html.escape(b)}</span></div>' for i, (a, b) in enumerate(sc["timeline"]))
+            win = f'<div class="win">{head}<div class="rec"><div class="fields">{fields}</div><div class="tl"><h5>{html.escape(sc.get("timeline_title", "Activity"))}</h5>{evs}</div></div></div>'
+        elif kind == "phone":
+            items = "".join(f'<div>{html.escape(a)}<span>{html.escape(b)}</span></div>' for a, b in sc.get("items", []))
+            notes = "".join(f'<div><b>{md(a)}</b>{md(b)}</div>' for a, b in slide.get("notes", []))
+            win = f"""<div class="phonewrap"><div class="phone"><div class="scr"><div class="pnav">{html.escape(sc.get("brand", "Your Business"))}<u></u></div>
+<div class="ph">{md(sc["headline"])}</div><div class="pl">{md(sc.get("lede", ""))}</div>
+{f'<div class="pb">{html.escape(sc["button"])}</div>' if sc.get("button") else ''}{f'<div class="pb2">{html.escape(sc["button2"])}</div>' if sc.get("button2") else ''}
+{f'<div class="pi">{items}</div>' if items else ''}</div></div><div class="notes">{notes}</div></div>"""
+        else:
+            raise ValueError(f"unknown screen kind {kind}")
+        cap = slide.get("caption", "Example screen")
+        inner = f"""{kick(slide) if slide.get('kicker') else '<div style="height:64px"></div>'}
+<h2{f' style="font-size:{slide["title_size"]}px"' if slide.get('title_size') else ''}>{md(slide['title'])}</h2>
+{f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}{win}
+{f'<p class="excap">{md(cap)}</p>' if cap else ''}<div style="height:24px"></div>"""
     elif t == "palette":
         rows = ""
         for row in slide["rows"]:
@@ -599,6 +650,7 @@ html,body{height:1920px}
 .s .big{font-size:440px}.swipe{display:none}
 .it h3{font-size:50px}.it p{font-size:30px}.card .tx{font-size:50px}.card .sm{font-size:30px}
 .st h3{font-size:54px}.st p{font-size:30px}.legend div{font-size:32px}
+.s.screen h2{font-size:100px}.s.screen p.lead{font-size:38px}.win table{font-size:28px}.phone{width:460px}
 """
 
 

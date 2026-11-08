@@ -79,7 +79,7 @@ def scene_html(i, scene, total_scenes, spec, t0, dur, total):
 
 STAGGER_JS = """
 (() => {
-  const sel = '.kicker, h1, h2, p.lead, .big, .card, .it, .st, .row, .col, .bw, .legend > div, .sw .row, .qm, .ctabox, .chart, .xl';
+  const sel = '.kicker, h1, h2, p.lead, .win, .phonewrap, .excap, .big, .card, .it, .st, .row, .col, .bw, .legend > div, .sw .row, .qm, .ctabox, .chart, .xl';
   document.querySelectorAll('.scene').forEach(sc => {
     const t0 = parseFloat(sc.dataset.t0);
     let k = 0;

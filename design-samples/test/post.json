@@ -1,0 +1,27 @@
+{
+ "id": "test-product",
+ "series": "CRM",
+ "style": "product",
+ "slides": [
+  {"type":"screen","theme":"blue","title":"Sent the quote.\nThen nothing.","sub":"Give every quote a status and a reminder, so nothing sits in your sent folder.",
+   "screen":{"kind":"table","title":"Open quotes","tabs":["All","Needs a chase","Won"],
+     "columns":["Ref","Job","Status","Sent","Next"],"col_class":["mono","","","dim","dim"],
+     "pills":{"Sent":"blue","Chased":"solid","Won":"green","Lost":"grey"},
+     "rows":[["Q-1048","Kitchen refit","Sent","4 Nov","Chase today"],["Q-1046","Boiler swap","Chased","31 Oct","Call Fri"],["Q-1045","Loft insulation","Won","29 Oct","Job booked"],["Q-1043","Garden wall","Lost","24 Oct","Price"],["Q-1041","Bathroom tiling","Chased","22 Oct","Close Mon"]],
+     "highlight":[0]},
+   "caption":"Example screen, made-up jobs."},
+  {"type":"screen","theme":"paper","title":"Every enquiry,\none board","sub":"From the website form to the finished job.",
+   "screen":{"kind":"board","title":"Jobs","tabs":["This week","All"],"pills":{"Today":"solid","Quote sent":"blue","Booked":"green"},
+     "lanes":[{"name":"New","cards":[["Kitchen refit","Website form","Today",true],["Fence repair","Phone call"]]},
+              {"name":"Quoted","cards":[["Boiler swap","£2,450","Quote sent"],["Loft boarding","£980"]]},
+              {"name":"Booked","cards":[["Bathroom tiling","Mon 16 Nov","Booked"]]},
+              {"name":"Done","cards":[["Garden wall","Invoiced"]]}]}},
+  {"type":"screen","theme":"lilac","title":"What a good\nenquiry record shows","kicker":"Websites + CRM",
+   "screen":{"kind":"record","title":"Enquiry 2041","tabs":["Details","Notes"],"pills":{"New":"solid"},
+     "fields":[["Name","Sam Carter"],["Job","Kitchen refit"],["Came from","Website form"],["Status","New"]],
+     "timeline_title":"Activity","timeline":[["09:12","Form sent from the website"],["09:12","Auto-reply sent to Sam"],["09:13","Assigned to the office"],["11:40","Called back, site visit booked"]],"highlight":[3]}},
+  {"type":"screen","theme":"ink","title":"Built for the phone first","notes":[["Call button","At the top, one tap."],["One clear headline","What you do and where."],["Prices up front","Saves a phone call."]],
+   "screen":{"kind":"phone","brand":"Harbour Plumbing","headline":"Boilers fixed today across Sunderland.","lede":"Gas Safe engineers. Fixed prices before we start.","button":"Call 0191 000 0000","button2":"Get a quote","items":[["Boiler service","£85"],["Boiler repair","from £95"]]},
+   "caption":"Concept for a made-up business."}
+ ]
+}

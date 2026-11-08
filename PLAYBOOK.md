@@ -11,7 +11,7 @@ Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm U
   - Type: Geist (headlines, numbers, body) and Geist Mono (labels, sources), the same as the website.
   - Note: the very first post (2026-11-06) used an earlier orange/Inter style; everything after it uses this brand.
   - Format: 1080×1350 (4:5). Carousels of 4–7 slides are the default; a single-slide post is fine for a strong quote or stat.
-  - Alternate ink and paper slides. Cover and closing CTA are ink.
+  - Flat colour only: vary the `blue`, `ink`, `paper` and `lilac` themes across slides. See "Design direction".
 
 ## What to post (Lee's direction, 6 Nov 2026)
 Nexulabs posts are about **websites and CRM systems** first, plus branding, hosting, domain names, AI and automation, and verified tech news. Every post must be useful to a UK business owner or manager thinking about their website, CRM or online presence.
@@ -25,7 +25,7 @@ Nexulabs posts are about **websites and CRM systems** first, plus branding, host
 **Step 1: check the news desk first (every run).** See "News desk" below. If there's a verified, relevant tech story we haven't covered, make a "news explained" post. **If there's nothing relevant, that's fine (Lee, 8 Nov 2026): carry on with step 2 as normal.** Never force a weak story.
 
 **Step 2: if there's no qualifying news, rotate these** (don't repeat the same one two days running):
-1. **Web design (main topic, at least every other day).** Homepage structure, what to put above the fold, mobile layout, calls to action, page speed, website copy, contact forms, booking pages, trust signals, before/after layouts. Use the `browser` mockup and `compare` slides so posts look designed and visual, not text-heavy.
+1. **Web design (main topic, at least every other day).** Homepage structure, what to put above the fold, mobile layout, calls to action, page speed, website copy, contact forms, booking pages, trust signals, before/after layouts. Use `browser` and `screen` (`phone`) mockups and `compare` slides so posts look designed and visual, not text-heavy.
 2. **CRM.** Enquiry → quote → booking → job flows, follow-ups, getting off spreadsheets, what a CRM should do for a trades/service business. Use `flow`, `compare` and `list` slides.
 3. **Websites + CRM together, and the types of each (Lee, 8 Nov 2026).** Enquiries going straight from the site into the CRM, one system from first click to finished job. Also explainer series on:
    - **Types of website:**
@@ -216,21 +216,43 @@ Lee asked us to post like the big web design and CRM companies (HubSpot, Salesfo
 - News: see "News desk" cadence (aim for one a day when a verified story passes, max two), never the same story twice.
 - No topic, headline or stat repeated within 30 days (that's about 90 posts, so keep ideas fresh).
 
-## Make every post look different (Lee's rules, 6 and 8 Nov 2026)
-Lee wants cool, colourful graphic design: gradients, colour and all kinds of patterns, never repetitive.
-- **Styles (post-level `"style"`), nine in total:**
-  - Colourful (Lee's favourites, use these most, roughly 2 posts in 3): `aurora` (soft mesh gradient), `neon` (dark with glowing rings and orbs), `spectrum` (bold full-bleed gradient with discs and rings), `glass` (frosted panel over colour). Pick a `"palette"`: `electric` (blue/cyan/lilac), `ultraviolet` (blue/violet/pink), `ocean` (navy/cyan), `dusk` (indigo/pink/lilac).
-  - Clean: `studio`, `editorial`, `bold`, `minimal`, `poster`.
-- **Patterns (post- or slide-level `"pattern"`):** `dots`, `stripes`, `waves`, `contours`, `halftone`, `isometric`, `rings`, `bauhaus`, `chevrons`, `plus`, `diagonal-grid`. Use one on most posts, and change it on different slides of a carousel sometimes.
-- **Never repeat** the previous post's style, palette or pattern. Check the last 6 entries in `log.json` (which record `style`, `palette`, `pattern`) and don't reuse a style+palette+pattern combination within the last 15 posts.
-- Mix themes on the clean styles: `ink`, `paper`, `blue`. Vary the cover theme, slide count, slide types and order.
-- Colour stays in the blue, violet, cyan and pink family. No orange (Lee removed an orange post as off-brand).
-- Always check readability: text must never sit on a busy pattern or a bright blob. Lower `pattern_opacity` or change the layout if it does.
+## Design direction: real product screens, no AI look (Lee, 8 Nov 2026)
+Lee: the posts were "looking very AI generated". He chose **direction B, real product screens**, from three samples (`design-samples/compare.jpg`). This replaces the colourful gradient styles from 6 Nov.
+
+**Never use (they read as AI-generated):**
+- The gradient styles `aurora`, `neon`, `spectrum` and `glass`.
+- Mesh gradients, glowing orbs, rings, haze, frosted-glass panels and gradient-filled text.
+- Background patterns (contours, waves, dots, plus and the rest), grain and grid overlays.
+- Purple-to-pink colour blends.
+
+`render.py` still has the old styles so older posts can be re-rendered. Don't use them for new posts.
+
+**Use `"style": "product"` for every new post, Story, Reel and LinkedIn image:**
+- **Flat colour backgrounds only.** Themes: `blue` (#3B2BFF), `ink`, `paper` and `lilac` (#E9E7FF). Colour comes from these flat fields and the UI itself, never from gradients.
+- **Show the thing we build.** The hero of most posts (the cover, or the single LinkedIn image) is a believable product screen, using the `screen` slide type:
+  - `table`: a CRM list, e.g. open quotes, enquiries or bookings, with status pills.
+  - `board`: a pipeline, from new to quoted to booked to done.
+  - `record`: a single enquiry or job, with an activity timeline.
+  - `phone`: a mobile website, with notes alongside.
+  - The existing `browser` slide gives a desktop website mockup.
+- **Mockups must be honest.** Use made-up UK businesses, people and jobs only. Use round, plausible prices, and fake phone numbers such as 0191 000 0000. The screen always carries a small caption such as "Example screen" or "Concept for a made-up business". Never show a real company, client, review count or result.
+- **Typography does the rest:** Geist, a big tight headline, plain-sentence labels (not uppercase mono kickers), one short sub-line, and lots of space. The accent colour goes on one word at most, and often none.
+- **Inside carousels:** after the screen cover, use the plain types (`list`, `compare`, `flow`, `stat`, `quote`, `cta`) in the product style. They render flat, with no glow, grain or pattern.
+
+**Variety without decoration.** Each post differs from the previous one in:
+- Background theme (blue, ink, paper, lilac).
+- Screen kind (table, board, record, phone, browser).
+- Layout: screen with headline, screen with notes, or a text-only stat or quote.
+
+Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't repeat the same theme and screen kind two posts running.
+- Colour stays in the brand family: ink, paper, blue, lilac, plus the pill colours in the UI (blue, green, grey). No orange.
+- Use a photo from the library about one post in three, as before.
+- Readability check: phone-size text in the mockups must still be legible. If it isn't, cut rows or cards rather than shrinking the type.
 
 ## Reels (Lee's request, 8 Nov 2026)
 - Build `posts/<id>/reel.json` and run `python3 reel.py posts/<id>/reel.json`, which gives `reel.mp4`, `cover.jpg` and `.reel-sheet.jpg`. Every slide type works as a scene; set `dur` per scene (2.5–4s). It takes 3–5 minutes to render.
 - Scene 1 is the hook: big text, under 10 words. Then 2–5 scenes that each make one point. The last scene is a payoff or CTA. On-screen text must be large and readable without sound.
-- Same variety rules as posts (style, palette, pattern never the same as the previous post). Photo scenes from the library are allowed (the no-reuse rule still applies).
+- Same design rules as posts: `"style": "product"`, flat themes, product screens; never the same theme and screen kind as the previous post. Photo scenes from the library are allowed (the no-reuse rule still applies).
 - Look at `.reel-sheet.jpg` before publishing. Fix anything cramped, clipped or hard to read.
 - The video has a silent audio track (trending audio can't be added through the API).
 - Publish: Instagram via Zapier `publish_video` (tool `instagram_for_business_publish_video`, `video` = raw URL of reel.mp4, `caption`, `instagramPageId` 17841471856846758). Facebook via `page_video` (tool `facebook_pages_create_page_video`, `page` 1484176674771345, `source` = raw URL, `description` = caption).
@@ -260,7 +282,7 @@ Claude curates free Unsplash photos for Lee (interactively, through Lee's browse
 Follow "Sound like a person" above. Roughly: an opening line that isn't a cliché, a couple of short paragraphs with the actual point, a light mention of what Nexulabs does (not every time), then 3–5 hashtags. Keep it under 120 words.
 
 ## Slide spec (post.json)
-See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, compare (instead/try), browser (website mockup with numbered pins), palette (colour swatches), flow (numbered steps). `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
+See `render.py` docstring. Post-level `"style": "product"`. **`screen`** (the default hero): `title`, optional `sub`/`kicker`/`caption` (defaults to "Example screen"), and `screen` = `{kind: table, title, tabs, columns, col_class (mono/dim), rows, pills {label: blue|solid|green|grey|ink}, highlight [row idx]}` or `{kind: board, title, tabs, pills, lanes: [{name, cards: [[title, sub, pill, highlight?]]}]}` or `{kind: record, title, tabs, pills, fields: [[label, value]], timeline_title, timeline: [[time, text]], highlight}` or `{kind: phone, brand, headline, lede, button, button2, items: [[label, price]]}` with slide-level `notes: [[title, text]]`. Working example: `design-samples/test/post.json`. Other types: cover, stat, bars, hbars, list, quote, cta, compare (instead/try), browser (website mockup with numbered pins), palette (colour swatches), flow (numbered steps). `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
 
 ## Quality check before publishing
 - Render, then build a contact sheet and look at every slide: no text overflow, clipping, orphaned single words, overlapping elements, or awkward line breaks; numbers match the sources; the accent is used sparingly.
@@ -283,10 +305,10 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, co
 - Page: linkedin.com/company/nexulabs (organisation ID 146939776). Posted by the "Nexulabs LinkedIn" scheduled task, Tue/Wed/Thu mornings. 3 posts a week maximum.
 - Audience: business owners and managers deciding who to hire. Tone: same plain UK voice, slightly more businesslike than Instagram, no emoji. Never "small business(es)".
 - What to post: pick the strongest recent Instagram/Facebook post (from `log.json`, last 7 days, not yet used on LinkedIn), or a verified news item from `newsdesk.json`, and make a LinkedIn version:
-  - One image, 1080×1350, made with `render.py` as a single-slide post in `posts/linkedin/<YYYY-MM-DD>-<slug>/` that sums up the idea on its own (headline + 2–4 short points, or a stat with its source). Same brand and variety rules.
+  - One image, 1080×1350, made with `render.py` as a single-slide post in `posts/linkedin/<YYYY-MM-DD>-<slug>/` that sums up the idea on its own (headline + 2–4 short points, or a stat with its source). Same brand and design rules: `"style": "product"`, usually a `screen` slide with the headline, the screen and a short sub-line.
   - Caption 80–200 words: a first line that earns the "see more" click, the practical point, what to do, one light line about Nexulabs at most, then 3 hashtags at most (e.g. #webdesign #crm #northeastbusiness). Fact rules and `sources.md` apply exactly as for feed posts, including the independent fact-check.
   - LinkedIn's API treats some characters as formatting: escape parentheses as `\(` `\)` and avoid `@`, `[`, `]`, `{`, `}`, `<`, `>`, `#` except in the hashtags at the end.
-- Publish: Zapier LinkedIn `create_company_update` (tool `linkedin_create_company_update`), `company_id` = the Nexulabs page (resolve with inspect_zapier_actions if needed), `comment` = caption, `image_type` = `post_media`, `image` = raw URL of the image. If it fails with "Could not find entity", the Zapier connection is the problem: run `list_zapier_connections` for LinkedIn and pass the connection's numeric id (from `enable_zapier_action`'s `connection_id`, e.g. 67232197 for "Lee Wheatley #2", reconnected 8 Nov 2026) as `connection_id`. Log to `linkedin-log.json` (date, source post id, topic, image, style, palette, pattern, response id).
+- Publish: Zapier LinkedIn `create_company_update` (tool `linkedin_create_company_update`), `company_id` = the Nexulabs page (resolve with inspect_zapier_actions if needed), `comment` = caption, `image_type` = `post_media`, `image` = raw URL of the image. If it fails with "Could not find entity", the Zapier connection is the problem: run `list_zapier_connections` for LinkedIn and pass the connection's numeric id (from `enable_zapier_action`'s `connection_id`, e.g. 67232197 for "Lee Wheatley #2", reconnected 8 Nov 2026) as `connection_id`. Log to `linkedin-log.json` (date, source post id, topic, image, style, theme, screen, response id).
 - If LinkedIn isn't connected in Zapier, don't fail silently: say so in the summary with the link https://mcp.zapier.com/api/v1/connect-auth/LinkedInCLIAPI?accountId=8724593.
 
 ## Comments and messages (Lee, 8 Nov 2026)
