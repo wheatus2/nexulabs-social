@@ -651,6 +651,7 @@ html,body{height:1920px}
 .it h3{font-size:50px}.it p{font-size:30px}.card .tx{font-size:50px}.card .sm{font-size:30px}
 .st h3{font-size:54px}.st p{font-size:30px}.legend div{font-size:32px}
 .s.screen h2{font-size:100px}.s.screen p.lead{font-size:38px}.win table{font-size:28px}.phone{width:460px}
+.win .wbar b{font-size:32px}.win .tabs{font-size:22px}.win .rec .f small{font-size:22px}.win .rec .f span{font-size:34px}.win .rec .f span .pill{font-size:24px}.win .rec .tl h5{font-size:21px}.win .rec .ev{font-size:30px;padding:20px 0}.win .rec .ev i{font-size:20px;min-width:64px;white-space:nowrap}
 """
 
 

@@ -1,0 +1,102 @@
+{
+  "format": "story",
+  "series": "How we build",
+  "style": "product",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "blue",
+      "headline": "Where does an enquiry actually live?",
+      "sub": "A look at how we lay one out in a CRM."
+    },
+    {
+      "type": "screen",
+      "theme": "paper",
+      "title": "One job,\none record",
+      "screen": {
+        "kind": "record",
+        "title": "Enquiry 1187",
+        "tabs": [
+          "Details",
+          "Photos",
+          "Notes"
+        ],
+        "pills": {
+          "Quote due": "solid"
+        },
+        "fields": [
+          [
+            "Name",
+            "Jo Hartley"
+          ],
+          [
+            "Phone",
+            "0191 000 0000"
+          ],
+          [
+            "Job",
+            "Fitted wardrobes"
+          ],
+          [
+            "Came from",
+            "Website form"
+          ],
+          [
+            "Status",
+            "Quote due"
+          ]
+        ],
+        "timeline_title": "Activity",
+        "timeline": [
+          [
+            "Mon",
+            "Website form came in"
+          ],
+          [
+            "Mon",
+            "Auto-reply sent to Jo"
+          ],
+          [
+            "Tue",
+            "Measured up on site"
+          ],
+          [
+            "Thu",
+            "Reminder: send quote"
+          ]
+        ],
+        "highlight": [
+          3
+        ]
+      },
+      "caption": "Example screen for a made-up business.",
+      "sub": "Everything about the job, and what's next."
+    },
+    {
+      "type": "list",
+      "theme": "ink",
+      "title": "It should answer\nthree things",
+      "items": [
+        [
+          "Who is it?",
+          "Name, number, and how they found you."
+        ],
+        [
+          "What do they want?",
+          "The job, the address, any photos they sent."
+        ],
+        [
+          "What happens next?",
+          "One next step, with a date on it."
+        ]
+      ],
+      "title_size": 96
+    },
+    {
+      "type": "quote",
+      "theme": "lilac",
+      "text": "If that's spread across your inbox, a notebook and your head, one will slip.",
+      "sub": "That one page is what a good CRM gives you."
+    }
+  ]
+}
