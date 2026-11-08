@@ -5,7 +5,7 @@ Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
 Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
-browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare and list may include "title_size".
+browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare, list and flow may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light) or "blue" (brand blue background).
 Post-level "style": studio | editorial | bold | minimal | poster (rotate; never the same two posts running).
@@ -107,6 +107,7 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .it p{{font-size:25px;line-height:1.42;opacity:.68;margin-top:8px}}
 /* quote */
 .quote h1{{font-size:88px;margin-top:auto;line-height:1.02}}
+.quote .qm+h1{{margin-top:36px}}
 .qm{{font-family:Disp;font-size:220px;line-height:.6;color:var(--acc);height:110px}}
 .quote p.lead{{margin-top:44px}}
 /* cta */
@@ -372,7 +373,7 @@ def build(slide, idx, total, series, style="studio"):
             f'<div class="st{" hl" if i in hl else ""}"><div class="dot">{i+1:02d}</div><div><h3>{md(a)}</h3>{f"<p>{md(b)}</p>" if b else ""}</div></div>'
             for i, (a, b) in enumerate(slide["steps"]))
         inner = f"""{kick(slide)}
-<h2>{md(slide['title'])}</h2><div class="fl">{steps}</div><div style="height:40px"></div>"""
+<h2{f' style="font-size:{slide["title_size"]}px"' if slide.get('title_size') else ''}>{md(slide['title'])}</h2><div class="fl">{steps}</div><div style="height:40px"></div>"""
     elif t == "palette":
         rows = ""
         for row in slide["rows"]:

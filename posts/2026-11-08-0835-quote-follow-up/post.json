@@ -1,0 +1,81 @@
+{
+ "id": "2026-11-08-0835-quote-follow-up",
+ "series": "CRM",
+ "style": "minimal",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "blue",
+   "size": 124,
+   "headline": "Sent the quote.\nThen *nothing*.",
+   "sub": "What your CRM should do with\nthe quotes nobody's replied to."
+  },
+  {
+   "type": "flow",
+   "theme": "paper",
+   "title": "Give every quote\na status",
+   "highlight": [
+    1
+   ],
+   "steps": [
+    [
+     "Sent",
+     "Date logged, reminder set."
+    ],
+    [
+     "Chased",
+     "A quick call or email, noted on the job."
+    ],
+    [
+     "Won",
+     "Becomes a booking. No retyping."
+    ],
+    [
+     "Lost",
+     "Write down why."
+    ]
+   ],
+   "title_size": 104
+  },
+  {
+   "type": "list",
+   "theme": "ink",
+   "title": "When to\n*chase*",
+   "items": [
+    [
+     "After three days",
+     "Check it arrived and ask if anything's unclear."
+    ],
+    [
+     "After a week",
+     "Offer to talk it through or change the spec."
+    ],
+    [
+     "After two weeks",
+     "Ask if it's still going ahead, then close it off."
+    ]
+   ],
+   "title_size": 150
+  },
+  {
+   "type": "compare",
+   "theme": "paper",
+   "title": "Where do\nyour open\nquotes live?",
+   "instead": [
+    "Somewhere in your sent folder",
+    "You only remember them when the customer rings."
+   ],
+   "try": [
+    "One list, oldest at the top",
+    "Each with a reminder date and a name next to it."
+   ],
+   "title_size": 110
+  },
+  {
+   "type": "quote",
+   "theme": "ink",
+   "text": "A no with a reason\nis worth *keeping*.",
+   "sub": "After a few months you'll see whether it's price, timing or something else losing you work."
+  }
+ ]
+}
