@@ -1,0 +1,9 @@
+On 4 November Microsoft announced Agentic Analytics for Clarity, its free website analytics tool. Its Agent Activity report shows which AI agents visit your site and what they do there: searches, form submissions, bookings, checkout.
+
+Microsoft's own data says weekly sessions from AI agents nearly doubled in three weeks, to almost 2 million, between August and September. Those are its figures from 230,511 Clarity projects, not UK-only.
+
+Worth a look if people book or enquire through your site. You'll see whether the agents get as far as your form.
+
+One UK catch: Clarity needs cookie consent from UK visitors to work fully, so link it to your banner.
+
+#webdesign #businesswebsite #ai #northeastbusiness

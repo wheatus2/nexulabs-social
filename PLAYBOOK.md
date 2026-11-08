@@ -18,6 +18,8 @@ Nexulabs posts are about **websites and CRM systems** first, plus branding, host
 
 **Never say "small business" or "small businesses" (Lee, 8 Nov 2026).** Not on slides, captions, Reels, Stories, hashtags (#smallbusiness etc.) or alt text. Nexulabs works with all types of businesses. Say "businesses", "business owners", "your business", or name the trade (cafés, trades, salons). The audience is still mostly owner-run UK firms, so keep the advice practical.
 
+**Never mention Lee Wheatley in any post (Lee, 8 Nov 2026).** Not by name, initials or "our founder" on slides, captions, Reels, Stories, alt text, LinkedIn, Facebook or anywhere else that's published. Posts speak as Nexulabs ("we"), never as Lee personally.
+
 **Research the UK first (Lee's rule).** Search UK sources and UK news first: BBC, gov.uk, ICO, HMRC, ONS, FSB, British Chambers of Commerce, Enterprise Nation, Ofcom, UK trade press (Computer Weekly, Startups.co.uk, Small Business UK, The Drum). Prefer UK stories, UK statistics and UK rules (GDPR/ICO, cookie rules, accessibility, Making Tax Digital, Companies House). Use US or global sources only when there's no UK equivalent, and say clearly in the caption that it's US/global data. North East angles are a bonus.
 
 **Step 1: check the news desk first (every run).** See "News desk" below. If there's a verified, relevant tech story we haven't covered, make a "news explained" post. **If there's nothing relevant, that's fine (Lee, 8 Nov 2026): carry on with step 2 as normal.** Never force a weak story.

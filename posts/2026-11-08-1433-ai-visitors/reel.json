@@ -1,0 +1,103 @@
+{
+ "id": "2026-11-08-1433-ai-visitors",
+ "series": "AI and automation",
+ "style": "neon",
+ "palette": "ultraviolet",
+ "pattern": "contours",
+ "pattern_opacity": 0.35,
+ "scenes": [
+  {
+   "type": "cover",
+   "theme": "ink",
+   "kicker": "NEWS · 4 NOV 2026",
+   "headline": "Some of your\nwebsite visitors\naren't *people*.",
+   "dur": 3.4
+  },
+  {
+   "type": "stat",
+   "theme": "ink",
+   "value": "~2m",
+   "size": 380,
+   "statement": "AI-agent sessions a week,\n*nearly double* what it\nwas three weeks before",
+   "source": "Microsoft Clarity's own data, 230,511 projects, Aug–Sep 2026",
+   "dur": 3.8
+  },
+  {
+   "type": "list",
+   "theme": "ink",
+   "title": "Microsoft Clarity\nnow shows *what they do*",
+   "items": [
+    [
+     "Searches",
+     ""
+    ],
+    [
+     "Form submissions",
+     ""
+    ],
+    [
+     "Bookings",
+     ""
+    ],
+    [
+     "Checkout",
+     ""
+    ]
+   ],
+   "source": "Microsoft Clarity blog, 4 Nov 2026",
+   "dur": 4,
+   "orb_shift": [
+    180,
+    0
+   ]
+  },
+  {
+   "type": "flow",
+   "theme": "ink",
+   "title": "Check yours",
+   "highlight": [
+    2
+   ],
+   "steps": [
+    [
+     "Add Clarity",
+     "It's free."
+    ],
+    [
+     "Open Agent Activity",
+     "Google, OpenAI and Anthropic agents, if they've visited."
+    ],
+    [
+     "Look at your form",
+     "Do they get to the booking or enquiry?"
+    ]
+   ],
+   "dur": 4.2
+  },
+  {
+   "type": "compare",
+   "theme": "ink",
+   "title": "UK visitors",
+   "instead_label": "Don't",
+   "try_label": "Do",
+   "instead": [
+    "Paste it in and forget",
+    "It needs consent from UK visitors to work fully."
+   ],
+   "try": [
+    "Link it to your cookie banner",
+    "So it gets that consent signal."
+   ],
+   "source": "Microsoft Learn, Clarity consent mode",
+   "dur": 4
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "headline": "Can an AI\nbook with *you*?",
+   "cta_label": "Websites that work for every visitor",
+   "cta": "nexulabs.co.uk",
+   "dur": 3.2
+  }
+ ]
+}
