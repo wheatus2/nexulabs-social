@@ -1,0 +1,13 @@
+AI assistants have started using websites for people: searching, filling in forms, booking appointments and getting to checkout.
+
+On 4 November Microsoft added Agentic Analytics to Clarity, its free website analytics tool. It shows which supported AI agents visit your site and what they do once they're there. For now that means agents from Google, OpenAI and Anthropic, and Microsoft says it's available to all Clarity users worldwide.
+
+Microsoft's own figures, which aren't UK-specific, show weekly sessions from AI agents nearly doubled in three weeks to almost 2 million.
+
+It's a good prompt to look at your own enquiry form and booking page. Can someone get from the homepage to a confirmed booking without guessing what to press next?
+
+One thing to sort before installing Clarity: it sets non-essential cookies, and for visitors from the UK it waits for a consent signal before setting them. Make sure your cookie banner passes that consent on.
+
+We build websites, enquiry forms and booking pages for businesses across the North East.
+
+#webdesign #ai #northeastbusiness

@@ -1,0 +1,32 @@
+{
+ "id": "linkedin-2026-11-08-ai-agents-on-your-website",
+ "series": "News",
+ "style": "aurora",
+ "palette": "ocean",
+ "pattern": "contours",
+ "slides": [
+  {
+   "type": "list",
+   "theme": "ink",
+   "kicker": "NEWS · 4 NOV 2026",
+   "title": "AI agents are using\nwebsites now. Can they\nbook with *you*?",
+   "title_size": 84,
+   "items": [
+    [
+     "Microsoft Clarity now shows them",
+     "Which agents visit, and what they do there: searches, forms, bookings and checkout."
+    ],
+    [
+     "Free, and live for all users",
+     "It covers agents from Google, OpenAI and Anthropic for now."
+    ],
+    [
+     "Sort your cookie consent first",
+     "For UK visitors, it waits for consent before setting cookies."
+    ]
+   ],
+   "source": "Microsoft Clarity blog, 4 Nov 2026, and Clarity docs",
+   "pattern_opacity": 0.14
+  }
+ ]
+}
