@@ -119,5 +119,36 @@
   "permalink": "https://www.instagram.com/p/DfeV4jgF18G/",
   "facebook_post_id": "1484176674771345_122099379063544005",
   "status": "published"
+ },
+ {
+  "date": "2026-11-08",
+  "time_slot": "afternoon",
+  "id": "2026-11-08-1433-ai-visitors",
+  "format": "reel",
+  "category": "AI and automation",
+  "pillar": "News explained",
+  "topic": "AI agents visiting websites: Microsoft Clarity's new Agent Activity report (Agentic Analytics) shows which agents visit and what they do; check they reach your booking/enquiry form; UK consent caveat",
+  "news_story_id": "2026-11-04-microsoft-clarity-agentic-analytics",
+  "style": "neon",
+  "palette": "ultraviolet",
+  "pattern": "contours",
+  "cover_theme": "ink",
+  "scenes": 6,
+  "seconds": 22.6,
+  "slide_types": [
+   "cover",
+   "stat",
+   "list",
+   "flow",
+   "compare",
+   "cta"
+  ],
+  "photo": null,
+  "fact_check": "pass",
+  "instagram_media_id": "18240587419318055",
+  "permalink": "https://www.instagram.com/reel/DffBvysHPtB/",
+  "instagram_note": "Zapier publish_video timed out ('still processing', nothing published); retried via Graph API container (REELS) + media_publish",
+  "facebook_post_id": "2223271751586280",
+  "status": "published"
  }
 ]

@@ -6,7 +6,7 @@
       "found": "2026-11-08",
       "event_date": "2026-11-04",
       "headline": "Microsoft Clarity (free website analytics) adds Agentic Analytics, Ask Clarity and wider Brand Agents",
-      "status": "verified-unused",
+      "status": "used",
       "relevance": "Websites: shows business owners which AI agents (Google, OpenAI, Anthropic operators) visit their site and what they do (searches, form submissions, bookings, checkout). Ask Clarity answers plain-English questions about visitor behaviour. Clarity is free.",
       "angle": "AI assistants are starting to visit websites on people's behalf. A free tool now shows you if they're on yours and whether they can finish a booking or enquiry.",
       "facts": [
@@ -40,7 +40,8 @@
       ],
       "caveats": "Global rollout per Microsoft, but coverage limited to supported agents. Treat stats as Microsoft's own. Re-open the blog post before publishing to confirm nothing changed. Clarity needs disclosing in a privacy policy and cookie consent in the UK, so mention that if recommending people install it (check ICO cookie guidance).",
       "used_on": [
-        "linkedin:2026-11-08 urn:li:share:7525189478924132352"
+        "linkedin:2026-11-08 urn:li:share:7525189478924132352",
+        "instagram+facebook:2026-11-08-1433-ai-visitors"
       ],
       "note_2026-11-08": "Used on LinkedIn only; still unused on Instagram/Facebook. Primary source re-checked 8 Nov: canonical URL https://clarity.microsoft.com/blog/clarity-connects-agents-LLMs-people/ (the ?p=10568 link errored). Ask Clarity is closed beta for retailers. Cookie consent: Clarity waits for a consent signal for UK/EEA/CH visitors since 31 Oct 2025 (learn.microsoft.com clarity consent-mode)."
     },
@@ -51,6 +52,90 @@
       "headline": "Search Console performance report lets you select several devices at once",
       "status": "rejected",
       "reason": "Too minor for a post, and reports disagree on exactly what changed on the device side (ppc.land says unconfirmed). Could be a one-line Story tip later if Google's help page confirms it."
+    },
+    {
+      "id": "2026-11-03-ncsc-annual-review-2026",
+      "found": "2026-11-08",
+      "event_date": "2026-11-03",
+      "headline": "NCSC Annual Review 2026: 80 nationally significant incidents; basics (patching, passkeys/MFA, supplier checks) urged",
+      "status": "verified-unused",
+      "facts": [
+        {
+          "claim": "1,831 attack reports, 337 needed incident support, 80 nationally significant (1 Sep 2025 to 31 Aug 2026)",
+          "source": "https://www.ncsc.gov.uk/collection/annual-review-2026",
+          "check": "figures confirmed by intelligentciso.com and ITV; on ncsc.gov.uk they are in the PDF, so open the PDF before using"
+        },
+        {
+          "claim": "Passkeys chapter: 'The majority of cyber attacks against individuals begin with the theft, compromise or abuse of passwords.'",
+          "source": "https://www.ncsc.gov.uk/collection/annual-review-2026/building-strong-foundations/passkeys-beyond-passwords"
+        }
+      ],
+      "second_sources": [
+        "https://www.intelligentciso.com/2026/11/03/ncsc-warns-uk-cyber-resilience-is-falling-behind-as-80-nationally-significant-incidents-recorded/",
+        "https://www.itv.com/news/2026-11-03/uk-meat-suppliers-fridges-heat-up-after-cyber-attacks-hit-europe"
+      ],
+      "angle": "Turn on passkeys or MFA for email, website admin and CRM logins; patch anything internet-facing.",
+      "caveats": "Verify the figures in the NCSC PDF itself before posting."
+    },
+    {
+      "id": "2026-11-02-uk-food-firms-fridge-hacks",
+      "found": "2026-11-08",
+      "event_date": "2026-11-02",
+      "headline": "Hackers accessed internet-connected fridges at UK meat suppliers",
+      "status": "rejected",
+      "reason": "No primary source (no NCSC statement); possible sidebar to the NCSC review only."
+    },
+    {
+      "id": "2026-11-06-google-maps-message-button",
+      "found": "2026-11-08",
+      "event_date": "2026-11-06",
+      "headline": "Google Maps adds a Message button next to Call (WhatsApp/SMS) for Business Profiles",
+      "status": "rejected",
+      "reason": "UK availability unconfirmed (help page says 'select regions'); re-check later.",
+      "sources": [
+        "https://support.google.com/business/answer/15013580",
+        "https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html"
+      ]
+    },
+    {
+      "id": "2026-11-04-ai-mode-home-services-booking",
+      "found": "2026-11-08",
+      "event_date": "2026-11-04",
+      "headline": "Google AI Mode books home services",
+      "status": "rejected",
+      "reason": "US only ('available now in the U.S.'). Follow up if it reaches the UK."
+    },
+    {
+      "id": "2026-11-06-gbp-offers-help-doc",
+      "found": "2026-11-08",
+      "event_date": "2026-11-06",
+      "headline": "Google Business Profile offers help document",
+      "status": "rejected",
+      "reason": "Help doc, not a launch; 'select regions and languages'."
+    },
+    {
+      "id": "2026-11-04-site-reputation-abuse-eea-emails",
+      "found": "2026-11-08",
+      "event_date": "2026-11-04",
+      "headline": "Google site reputation abuse emails to EEA sites",
+      "status": "rejected",
+      "reason": "EEA only; UK not included."
+    },
+    {
+      "id": "2026-10-28-ads-in-ai-mode-uk",
+      "found": "2026-11-08",
+      "event_date": "2026-10-28",
+      "headline": "Ads in Google AI Mode expanding (UK sightings from 29 Oct)",
+      "status": "rejected",
+      "reason": "Outside 7-day window; UK sightings are third-party monitoring, not a Google UK launch."
+    },
+    {
+      "id": "2026-10-30-google-ai-training-robots-control",
+      "found": "2026-11-08",
+      "event_date": "2026-10-30",
+      "headline": "Google shared AI-training control in robots.txt",
+      "status": "rejected",
+      "reason": "Outside 7-day window; possible evergreen topic later."
     }
   ]
 }
