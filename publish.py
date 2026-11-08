@@ -103,8 +103,12 @@ def ig_publish(container):
         except GraphError as e:
             if attempt == 2:
                 raise
-            print(f"media_publish retry after: {e}", flush=True)
             time.sleep(15)
+            # Never double-post: if the container was published despite the error, stop here.
+            st = call("GET", container, {"fields": "status_code"}).get("status_code")
+            if st == "PUBLISHED":
+                raise GraphError(f"container {container} was published but Meta returned an error ({e}); check the account before re-running")
+            print(f"media_publish retry after: {e}", flush=True)
     link = None
     try:
         link = call("GET", media_id, {"fields": "permalink"}).get("permalink")
@@ -153,17 +157,24 @@ def instagram_post(folder):
     return {"format": "carousel", "slides": len(urls), **ig_publish(c)}
 
 
-def instagram_story(folder):
+def instagram_story(folder, done=None, on_frame=None):
+    """Publish frames in order. `done` lists frames already published by an earlier run (skipped)."""
     imgs = slides(folder)
     if not imgs:
         raise GraphError("no slide-NN.jpg frames in folder")
-    out = []
+    out = list(done or [])
+    have = {f["frame"] for f in out}
     for n in imgs:
+        if n in have:
+            print(f"story frame {n} already published, skipping", flush=True)
+            continue
         u = raw(folder, n)
         check_url(u)
         c = call("POST", f"{IG_USER}/media", {"media_type": "STORIES", "image_url": u})["id"]
         r = ig_publish(c)
         out.append({"frame": n, "media_id": r["media_id"]})
+        if on_frame:
+            on_frame(out)
         print(f"story frame {n} -> {r['media_id']}", flush=True)
     return {"format": "story", "frames": out, "media_ids": [f["media_id"] for f in out]}
 
@@ -233,15 +244,22 @@ def main():
             print(f"{p}: already published ({rec[p].get('media_id') or rec[p].get('id')}), skipping")
             continue
         try:
-            if p == "instagram":
-                res = instagram_story(folder) if a.mode == "story" else instagram_post(folder)
+            if p == "instagram" and a.mode == "story":
+                prev = [] if a.force else rec.get(p, {}).get("frames", [])
+                def save_partial(frames):
+                    rec[p] = {"ok": False, "at": now(), "partial": True, "frames": list(frames)}
+                    rec_path.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
+                res = instagram_story(folder, prev, save_partial)
+            elif p == "instagram":
+                res = instagram_post(folder)
             elif p == "facebook":
                 res = facebook_post(folder)
             else:
                 raise GraphError(f"unknown platform {p}")
             rec[p] = {"ok": True, "at": now(), **res}
         except GraphError as e:
-            rec[p] = {"ok": False, "at": now(), "error": str(e)}
+            keep = {"frames": rec[p]["frames"]} if rec.get(p, {}).get("frames") else {}
+            rec[p] = {"ok": False, "at": now(), "error": str(e), **keep}
             failed.append(p)
         print(f"{p}: {json.dumps(rec[p])}", flush=True)
         rec_path.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
