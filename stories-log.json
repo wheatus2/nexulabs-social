@@ -1,8 +1,8 @@
 [
   {
     "date": "2026-11-08",
-    "slot": "11:45",
-    "published_at": "about 12:25 UK (run started 12:14)",
+    "slot": "11:47 (catch-up)",
+    "published_at": "about 12:18 UK",
     "id": "stories/2026-11-08-1214-who-owns-your-domain",
     "type": "myth vs fact",
     "category": "Domain names",
@@ -30,6 +30,7 @@
       "17897094996615013",
       "18188496037419732"
     ],
-    "status": "published"
+    "status": "published",
+    "note": "A second catch-up fire for the 11:47 slot arrived at 12:19 after this story was live; no duplicate story was published."
   }
 ]
