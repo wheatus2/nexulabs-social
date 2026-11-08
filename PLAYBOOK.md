@@ -3,7 +3,7 @@
 Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm UK time) to the Nexulabs Instagram account and Facebook Page.
 
 ## Brand
-- Business: Nexulabs, "Websites and CRM systems for small businesses" (nexulabs.co.uk). Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding. Based in the North East of England.
+- Business: Nexulabs, "Websites and CRM systems for all types of businesses" (nexulabs.co.uk; the site says "businesses of every kind"). Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding. Based in the North East of England.
 - Voice: UK English. Plain, direct, practical, like Lee talking to a customer. Short sentences. Address the reader as "you". No hype, no jargon, no emoji, no exclamation marks. See "Sound like a person".
 - Visuals: rendered by `render.py`. Photos only from the library in `photos/` (see "Photos from the library"). Never the Unsplash API, scraped images, logos of other companies, or other stock sites.
   - Logo: the real Nexulabs wordmark from `brand/nexulabs-logo-white.svg` (render.py recolours it per theme). Never retype the logo as text.
@@ -14,7 +14,9 @@ Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm U
   - Alternate ink and paper slides. Cover and closing CTA are ink.
 
 ## What to post (Lee's direction, 6 Nov 2026)
-Nexulabs posts are about **websites and CRM systems** first, plus branding, hosting, domain names, AI and automation, and verified tech news. Every post must be useful to a small business owner thinking about their website, CRM or online presence.
+Nexulabs posts are about **websites and CRM systems** first, plus branding, hosting, domain names, AI and automation, and verified tech news. Every post must be useful to a UK business owner or manager thinking about their website, CRM or online presence.
+
+**Never say "small business" or "small businesses" (Lee, 8 Nov 2026).** Not on slides, captions, Reels, Stories, hashtags (#smallbusiness etc.) or alt text. Nexulabs works with all types of businesses. Say "businesses", "business owners", "your business", or name the trade (cafés, trades, salons). The audience is still mostly owner-run UK firms, so keep the advice practical.
 
 **Research the UK first (Lee's rule).** Search UK sources and UK news first: BBC, gov.uk, ICO, HMRC, ONS, FSB, British Chambers of Commerce, Enterprise Nation, Ofcom, UK trade press (Computer Weekly, Startups.co.uk, Small Business UK, The Drum). Prefer UK stories, UK statistics and UK rules (GDPR/ICO, cookie rules, accessibility, Making Tax Digital, Companies House). Use US or global sources only when there's no UK equivalent, and say clearly in the caption that it's US/global data. North East angles are a bonus.
 
@@ -105,21 +107,21 @@ Lee: "the content should be relevant and factual, monitoring real world events a
 **Scan (every feed run, about 10 minutes, all searches in one go).** Look at the last 7 days, newest first:
 - UK news: BBC Technology, The Register, Computer Weekly, TechRadar UK, Wired UK, Sky News tech, The Guardian technology, Startups.co.uk, Small Business UK, Prolific North (North East and North angle).
 - Web, search and SEO: Google Search Central blog, Google Search Status Dashboard, Search Engine Land, Search Engine Roundtable, Search Engine Journal, web.dev and Chrome releases, WordPress news, Shopify, Wix and Squarespace news.
-- Platforms small businesses use: Meta newsroom (Instagram, Facebook, WhatsApp Business), Microsoft (365, Copilot, Clarity, Bing), Google (Workspace, Business Profile, Gemini), Apple newsroom, OpenAI, Anthropic, HubSpot, Salesforce, Zoho, Xero, Square, Stripe.
+- Platforms UK businesses use: Meta newsroom (Instagram, Facebook, WhatsApp Business), Microsoft (365, Copilot, Clarity, Bing), Google (Workspace, Business Profile, Gemini), Apple newsroom, OpenAI, Anthropic, HubSpot, Salesforce, Zoho, Xero, Square, Stripe.
 - UK rules and safety: ICO, NCSC, gov.uk (DSIT), Ofcom, CMA, HMRC (Making Tax Digital).
 Also read `newsdesk.json` so nothing is reported twice. Follow up developing stories, e.g. when a US-only feature reaches the UK.
 
 **Relevance test.** All three must be yes:
 1. It really happened. It was announced, launched, published or ruled on. Not a rumour, leak, "reportedly", "could", patent, analyst prediction or single-source scoop.
-2. It affects how a UK small business gets found, wins customers, runs its website or CRM, or keeps customer data safe. Examples:
+2. It affects how a UK business gets found, wins customers, runs its website or CRM, or keeps customer data safe. Examples:
    - Google Search and AI Overviews changes, and Google Business Profile.
    - AI assistants that now browse, book or recommend.
    - Website platforms (WordPress, Shopify, Wix).
    - Browser changes.
    - Instagram, Facebook and WhatsApp Business features.
-   - Big outages, breaches and scams hitting small firms, with NCSC advice.
+   - Big outages, breaches and scams hitting UK firms, with NCSC advice.
    - UK rules: cookies, accessibility, data law, Online Safety Act, MTD.
-   - CRM, booking, payment and AI tools that small firms use.
+   - CRM, booking, payment and AI tools that UK businesses use.
 3. We can say clearly what a business owner should do, check or know because of it.
 
 These don't qualify: gadgets and phone launches, games, funding rounds, share prices, celebrity tech, US politics, and anything only big companies care about.
@@ -165,7 +167,7 @@ Lee: "I don't want to post rubbish." One wrong fact damages a web agency's credi
 
 ## Quality bar (every post, before it's published)
 Make each post the way an award-winning studio would. Before publishing, score it honestly from 1 to 5 on each of these:
-- **Relevant:** a UK small business owner would care about it this week.
+- **Relevant:** a UK business owner would care about it this week.
 - **True:** the fact-check passed.
 - **Useful:** there's one clear takeaway they can act on.
 - **Specific:** it's concrete, not generic. "Compress your homepage hero image to under 200KB" is specific; "Make your site faster" isn't.
@@ -200,7 +202,7 @@ Lee asked us to post like the big web design and CRM companies (HubSpot, Salesfo
 - **Content mix (roughly 70/20/10):** 60% educational (tips, mistakes to avoid, how-tos, myth vs fact, checklists, step-by-step breakdowns), 15% proof/inspiration (before/after redesigns, design breakdowns, process), 15% entertaining/relatable (small-business website moments everyone recognises, this-or-that, hot takes), 10% promotional (what Nexulabs builds, how a project works, CTA).
 - **Hooks:** the first slide or first 2 seconds of a Reel must stop the scroll: a bold claim, a number, a mistake, a question. On-screen text on every Reel (most people watch on mute).
 - **Before/after:** the most-used format in web design. We have no client work to show yet, so use **clearly labelled concept redesigns** of fictional UK businesses ("Concept: how we'd redesign a café homepage"). Never present a concept as a real client.
-- **Searchable, saveable:** write captions with the words people search (web design, small business website, CRM, Sunderland/Newcastle/North East) and give people a reason to save or send.
+- **Searchable, saveable:** write captions with the words people search (web design, business website, CRM, Sunderland/Newcastle/North East) and give people a reason to save or send.
 
 ## Feed schedule: three a day (Lee's rule, 6 Nov 2026; formats updated 8 Nov)
 - **8:33am:** carousel (educational: tips, checklist, breakdown, myth vs fact).

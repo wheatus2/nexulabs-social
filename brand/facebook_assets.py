@@ -31,7 +31,7 @@ COVER = f"""<style>{BASE}
 .sub b{{color:#667DFF;font-weight:400}}
 </style><div class="c"><div class="glow" style="width:1300px;height:1300px;left:170px;top:-340px"></div><div class="grid"></div>
 <div class="logo" style="position:relative">{LOGO}</div>
-<div class="tag" style="position:relative">Websites and CRM systems for small businesses</div>
+<div class="tag" style="position:relative">Websites and CRM systems for all types of businesses</div>
 <div class="sub" style="position:relative">Websites <b>·</b> CRM systems <b>·</b> Hosting <b>·</b> Branding</div>
 <div class="grain"></div></div>"""
 
