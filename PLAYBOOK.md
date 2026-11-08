@@ -69,6 +69,15 @@ Nexulabs posts are about **websites and CRM systems** first, plus branding, host
    - Why cheap hosting costs more.
    Facts from host or Google/web.dev documentation.
 7. **Domain names (Lee, 8 Nov 2026).** Topics:
+   - Why a good domain name matters: trust, being remembered, word of mouth, and email addresses customers type in.
+   - What not to do:
+     - Hyphens and numbers.
+     - Names that are hard to spell or say out loud.
+     - Names that are too long.
+     - Odd endings customers won't guess.
+     - Names that clash with someone else's trademark (check the UK IPO and Companies House).
+     - Letting your web designer register it in their name.
+     - Forgetting renewals.
    - Choosing a name.
    - .co.uk vs .uk vs .com.
    - Registering it in the business's own name and keeping control of it.
@@ -76,6 +85,15 @@ Nexulabs posts are about **websites and CRM systems** first, plus branding, host
    - Business email on your own domain, not Gmail.
    - DNS basics, domain scams and fake renewal invoices.
    UK facts from Nominet.
+
+**Angles that work for every category (Lee, 8 Nov 2026):**
+- Why it matters
+- What not to do (mistakes)
+- How to get it right (steps)
+- This vs that
+- Myth vs fact
+- A labelled concept example
+Rotate the angle as well as the topic.
 
 Spread these across the week: web design stays the most frequent (at least every other day). Each of the other six (CRM, websites + CRM and types of each, branding, AI and automation, hosting, domains) should appear at least once a week. Tech news posts often land in category 5. Log the category in `log.json` so the mix can be checked.
 
