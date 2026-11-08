@@ -2,6 +2,8 @@
 
 > **Design update (Lee, 8 Nov 2026):** Lee said the posts looked "very AI generated" and chose the flat **product** style, built around real UI screens (see "Design direction" below). This replaces any instruction elsewhere, including in the scheduled task prompts, to use colourful gradient styles (aurora, neon, spectrum, glass), palettes or patterns. Use `"style": "product"` for every feed post, Reel, Story and LinkedIn image. In the logs, record `theme` and `screen` instead of `palette` and `pattern`.
 
+> **Publishing update (Lee, 8 Nov 2026):** Zapier's task allowance ran out, so publishing moves to **GitHub Actions** (free, no task limits). See "Publishing via GitHub Actions" below. This replaces the Zapier publishing steps in the scheduled task prompts (Instagram `publish_media_v2` / `publish_video`, Facebook `page_stream` / `page_video`, Stories via "Make API Mutating Request", permalink lookups via "Make API GET Request"). Use Zapier only as the fallback described there. LinkedIn still uses Zapier.
+
 Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm UK time) to the Nexulabs Instagram account and Facebook Page.
 
 ## Brand
@@ -301,6 +303,21 @@ See `render.py` docstring. Post-level `"style": "product"`. **`screen`** (the de
 6b. Also publish to the Nexulabs Facebook Page via Zapier MCP: app Facebook Pages, action `page_stream` (tool `facebook_pages_create_page_post`), `page` = `1484176674771345` (the Nexulabs Page; confirm with inspect_zapier_actions if it ever fails), `source` = the same raw image URLs in order (up to 10), `message` = caption.txt. If Facebook Pages has no connection yet, skip this step and mention it in the summary. A Facebook failure must not stop or undo the Instagram post.
 7. Fetch the permalink via the Make API GET Request action (`https://graph.facebook.com/v21.0/<media_id>?fields=permalink`), append an entry to `log.json` (include `style`, `cover_theme` and `facebook_post_id` if posted), commit and push.
 8. If publishing fails: retry once after 2 minutes. If it's an auth/token error, tell Lee to reconnect Instagram at https://mcp.zapier.com/api/v1/connect-auth/InstagramBusinessCLIAPI?accountId=8724593.
+
+## Publishing via GitHub Actions (Lee, 8 Nov 2026)
+Workflow `.github/workflows/publish.yml` runs `publish.py`, which posts straight to Meta's Graph API with the `META_PAGE_TOKEN` repository secret (setup: `SETUP-META.md`). No Zapier tasks are used. The cloud session itself can't reach graph.facebook.com, so always go through the workflow.
+1. Commit and push the post folder first (pull --rebase), and confirm the raw.githubusercontent.com URLs load.
+2. Start the workflow with the GitHub MCP tool `actions_run_trigger`: method `run_workflow`, owner `wheatus2`, repo `nexulabs-social`, workflow_id `publish.yml`, ref `main`, inputs:
+   - Feed post or Reel: `{"mode": "post", "folder": "posts/<id>"}` (posts to Instagram and the Facebook Page; `platforms` can narrow it).
+   - Story: `{"mode": "story", "folder": "posts/stories/<id>"}` (Instagram only, frames in order).
+   - Token test: `{"mode": "check"}`.
+3. Find the run: `actions_list` → `list_workflow_runs` for `publish.yml` (event `workflow_dispatch`), the newest one created after you started it. Poll `actions_get` → `get_workflow_run` about every 30–60 seconds until `status` is `completed` (Reels take a few minutes).
+4. `git pull --rebase`, then read `posts/<id>/published.json`: `instagram.media_id`, `instagram.permalink`, `facebook.id` (Stories: `instagram.media_ids`), or the `error` for each platform. Log from that file. It never double-posts: anything already marked `"ok": true` is skipped unless `force` is set.
+5. **If it fails:**
+   - `META_PAGE_TOKEN secret is not set`, or a check/token error (OAuthException, code 190): fall back to the old Zapier steps for this run, and tell Lee to follow `SETUP-META.md`.
+   - Instagram failed for another reason: retry the workflow once after 2 minutes; if it fails again, stop and report the error from `published.json`.
+   - Facebook failed but Instagram worked: carry on and mention it in the summary.
+   - If Zapier is also out of tasks, leave the post committed, log it as not published, and notify Lee with the fix (`SETUP-META.md`, or top up Zapier at https://zapier.com/app/settings/billing).
 
 ## LinkedIn company page (Lee, 8 Nov 2026)
 - **Always post as Nexulabs, never as Lee Wheatley (Lee, 8 Nov 2026).** The only allowed LinkedIn action is `create_company_update` with `company_id` = `146939776` (Nexulabs). Lee's personal profile is never used: the personal "share" and raw API actions have been removed from Zapier on purpose; never re-enable them. Never name Lee in LinkedIn posts.

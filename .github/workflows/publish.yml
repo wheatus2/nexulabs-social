@@ -1,0 +1,85 @@
+name: Publish to Instagram and Facebook
+
+# Started by the Claude scheduled runs (GitHub "run workflow"), or by hand from the Actions tab.
+# Talks to Meta's Graph API directly, so no Zapier tasks are used.
+# Needs the repository secret META_PAGE_TOKEN (see SETUP-META.md). Never put the token in a file.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames"
+        required: true
+        default: check
+        type: choice
+        options: [check, post, story]
+      folder:
+        description: "Post folder, e.g. posts/2026-11-08-1933-first-screen-on-a-phone (not needed for check)"
+        required: false
+        default: ""
+      platforms:
+        description: "For post mode: instagram,facebook (default), instagram or facebook"
+        required: false
+        default: "instagram,facebook"
+      force:
+        description: "Publish again even if published.json says it's already out"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-${{ inputs.folder || 'check' }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish
+        id: pub
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          FOLDER: ${{ inputs.folder }}
+          PLATFORMS: ${{ inputs.platforms }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          set +e
+          args=("$MODE")
+          if [ "$MODE" != "check" ]; then args+=("$FOLDER" --platforms "$PLATFORMS"); fi
+          if [ "$FORCE" = "true" ]; then args+=(--force); fi
+          python3 publish.py "${args[@]}"
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Save published.json to the repo
+        if: inputs.mode != 'check'
+        env:
+          FOLDER: ${{ inputs.folder }}
+        run: |
+          f="${FOLDER%/}/published.json"
+          [ -f "$f" ] || exit 0
+          git config user.name "nexulabs-publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$f"
+          git diff --cached --quiet && exit 0
+          git commit -m "Published: ${FOLDER%/}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          echo "Could not push published.json"; exit 1
+
+      - name: Result
+        run: |
+          code="${{ steps.pub.outputs.code }}"
+          if [ "$code" = "0" ]; then echo "All done."; exit 0; fi
+          if [ "$code" = "2" ]; then echo "::warning::Instagram OK, Facebook failed (see published.json)"; exit 0; fi
+          echo "::error::Publishing failed (see log above / published.json)"; exit 1
