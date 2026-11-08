@@ -275,3 +275,26 @@ See `render.py` docstring. Types: cover, stat, bars, hbars, list, quote, cta, co
 6b. Also publish to the Nexulabs Facebook Page via Zapier MCP: app Facebook Pages, action `page_stream` (tool `facebook_pages_create_page_post`), `page` = `1484176674771345` (the Nexulabs Page; confirm with inspect_zapier_actions if it ever fails), `source` = the same raw image URLs in order (up to 10), `message` = caption.txt. If Facebook Pages has no connection yet, skip this step and mention it in the summary. A Facebook failure must not stop or undo the Instagram post.
 7. Fetch the permalink via the Make API GET Request action (`https://graph.facebook.com/v21.0/<media_id>?fields=permalink`), append an entry to `log.json` (include `style`, `cover_theme` and `facebook_post_id` if posted), commit and push.
 8. If publishing fails: retry once after 2 minutes. If it's an auth/token error, tell Lee to reconnect Instagram at https://mcp.zapier.com/api/v1/connect-auth/InstagramBusinessCLIAPI?accountId=8724593.
+
+## LinkedIn company page (Lee, 8 Nov 2026)
+- Page: linkedin.com/company/nexulabs (organisation ID 146939776). Posted by the "Nexulabs LinkedIn" scheduled task, Tue/Wed/Thu mornings. 3 posts a week maximum.
+- Audience: business owners and managers deciding who to hire. Tone: same plain UK voice, slightly more businesslike than Instagram, no emoji. Never "small business(es)".
+- What to post: pick the strongest recent Instagram/Facebook post (from `log.json`, last 7 days, not yet used on LinkedIn), or a verified news item from `newsdesk.json`, and make a LinkedIn version:
+  - One image, 1080×1350, made with `render.py` as a single-slide post in `posts/linkedin/<YYYY-MM-DD>-<slug>/` that sums up the idea on its own (headline + 2–4 short points, or a stat with its source). Same brand and variety rules.
+  - Caption 80–200 words: a first line that earns the "see more" click, the practical point, what to do, one light line about Nexulabs at most, then 3 hashtags at most (e.g. #webdesign #crm #northeastbusiness). Fact rules and `sources.md` apply exactly as for feed posts, including the independent fact-check.
+  - LinkedIn's API treats some characters as formatting: escape parentheses as `\(` `\)` and avoid `@`, `[`, `]`, `{`, `}`, `<`, `>`, `#` except in the hashtags at the end.
+- Publish: Zapier LinkedIn `create_company_update` (tool `linkedin_create_company_update`), `company_id` = the Nexulabs page (resolve with inspect_zapier_actions if needed), `comment` = caption, `image_type` = `post_media`, `image` = raw URL of the image. Log to `linkedin-log.json` (date, source post id, topic, image, style, palette, pattern, response id).
+- If LinkedIn isn't connected in Zapier, don't fail silently: say so in the summary with the link https://mcp.zapier.com/api/v1/connect-auth/LinkedInCLIAPI?accountId=8724593.
+
+## Comments and messages (Lee, 8 Nov 2026)
+The "Nexulabs comments summary" task runs daily at about 6:20pm. It never replies on Lee's behalf. It reads new comments from the last 24 hours on Instagram (Graph API via the Zapier Instagram "Make API GET Request": `/{ig-id}/media?fields=id,caption,permalink,timestamp,comments_count`, then `/{media-id}/comments?fields=id,text,username,timestamp,replies{text,username}`) and, where the Facebook Pages app allows it, Facebook Page comments; plus LinkedIn comments if that's connected. For each new comment it drafts a short reply in Lee's voice (helpful, specific, no sales push, no emoji spam), flags anything that needs Lee personally (a sales enquiry, a complaint, spam to delete), and records what it has seen in `comments-log.json` so nothing is reported twice. If there's nothing new, the summary is one line.
+
+## Monthly review (Lee, 8 Nov 2026)
+On the 1st of each month the "Nexulabs monthly review" task pulls the last month's results and writes `reports/YYYY-MM.md`:
+- Instagram account insights (reach, profile views, follower change, website taps) and per-post insights (reach, saves, shares, likes, comments; plays and average watch time for Reels), Facebook Page insights where available, LinkedIn page stats if connected.
+- What worked and what didn't, by format (carousel / Reel / single / Story), category, angle, style, time slot and news vs evergreen, with the actual numbers.
+- Changes: it may adjust the weighting of formats, categories, angles and styles in this playbook, and move a slot by up to an hour, when the numbers clearly support it. It must not change Lee's own rules (posting volume, topics, wording, brand, fact-checking, no-reuse) without asking him. Every change is listed in the report and committed with a clear message.
+- Summary for Lee: three findings, the changes made, and one question if a bigger decision is needed.
+
+## TikTok (Lee, 8 Nov 2026)
+TikTok has no posting connection we can use, so TikTok is set up separately once Lee has a TikTok Business account (he has to create it himself). Reels for TikTok need sound: `music.py` makes an original, royalty-free background track to put under a Reel (`python3 music.py posts/<id>/reel.mp4` → `reel-tiktok.mp4`). Never use copyrighted music.

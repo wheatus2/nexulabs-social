@@ -1,0 +1,148 @@
+"""Original, royalty-free background music for Nexulabs Reels (for TikTok, which rewards sound).
+
+Every track is synthesised here from scratch (no samples, no copyrighted material):
+a soft chord pad, a bass line, a light kick/hat groove. The seed comes from the
+Reel's folder name, so each Reel gets its own key, tempo and chord order.
+
+Usage:
+  python3 music.py posts/<id>/reel.mp4            -> posts/<id>/reel-tiktok.mp4 (+ music.wav)
+  python3 music.py posts/<id>/reel.mp4 --seed 7   -> force a variation
+"""
+import hashlib
+import json
+import subprocess
+import sys
+import wave
+from pathlib import Path
+
+import numpy as np
+
+SR = 44100
+
+# chord progressions as semitone offsets from the key root (minor-ish, calm, "tech" mood)
+PROGRESSIONS = [
+    [[0, 3, 7, 10], [-4, 0, 3, 7], [-9, -5, 0, 3], [-2, 2, 5, 9]],   # i7 VI III VII
+    [[0, 3, 7, 14], [5, 8, 12, 15], [-2, 2, 5, 9], [-4, 0, 3, 7]],   # i iv VII VI
+    [[0, 4, 7, 11], [-3, 0, 4, 7], [5, 9, 12, 16], [2, 5, 9, 12]],   # Imaj7 vi IV ii
+    [[0, 3, 7, 10], [-2, 2, 5, 9], [-4, 0, 3, 7], [-5, -1, 2, 5]],   # i VII VI v
+]
+
+
+def midi_hz(m):
+    return 440.0 * 2 ** ((m - 69) / 12)
+
+
+def env(n, a=0.02, r=0.3):
+    e = np.ones(n)
+    ai, ri = int(a * SR), int(r * SR)
+    if ai:
+        e[:ai] = np.linspace(0, 1, ai)
+    if ri:
+        e[-ri:] *= np.linspace(1, 0, ri)
+    return e
+
+
+def pad(freqs, dur, rng):
+    t = np.arange(int(dur * SR)) / SR
+    out = np.zeros_like(t)
+    for f in freqs:
+        for det in (-0.12, 0.0, 0.11):           # gentle detune = warmth
+            ph = rng.uniform(0, 2 * np.pi)
+            out += np.sin(2 * np.pi * f * (1 + det / 100) * t + ph)
+            out += 0.25 * np.sin(2 * np.pi * 2 * f * t + ph)
+    lfo = 0.85 + 0.15 * np.sin(2 * np.pi * 0.25 * t)
+    return out * lfo * env(len(t), 0.6, 0.8) / (len(freqs) * 3)
+
+
+def bass(f, dur):
+    t = np.arange(int(dur * SR)) / SR
+    s = np.sin(2 * np.pi * f * t) + 0.3 * np.sin(2 * np.pi * 2 * f * t)
+    return s * env(len(t), 0.01, 0.15) * 0.6
+
+
+def kick():
+    n = int(0.35 * SR)
+    t = np.arange(n) / SR
+    f = 110 * np.exp(-t * 18) + 42
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return np.sin(ph) * np.exp(-t * 9) * 0.9
+
+
+def hat(rng):
+    n = int(0.06 * SR)
+    noise = rng.standard_normal(n)
+    hp = np.diff(np.concatenate([[0], noise]))       # crude high-pass
+    return hp * np.exp(-np.arange(n) / SR * 70) * 0.12
+
+
+def make_track(seconds, seed):
+    rng = np.random.default_rng(seed)
+    bpm = int(rng.choice([84, 88, 92, 96, 100]))
+    root = int(rng.choice([45, 47, 48, 50, 52]))      # A2..E3
+    prog = PROGRESSIONS[seed % len(PROGRESSIONS)]
+    beat = 60 / bpm
+    bar = 4 * beat
+    total = int((seconds + 1.5) * SR)
+    mix = np.zeros(total)
+
+    def add(sig, at):
+        i = int(at * SR)
+        j = min(total, i + len(sig))
+        if i < total:
+            mix[i:j] += sig[: j - i]
+
+    k, t = kick(), 0.0
+    bar_i = 0
+    while t < seconds + 1:
+        chord = prog[bar_i % len(prog)]
+        add(pad([midi_hz(root + 12 + c) for c in chord], bar + 0.6, rng), t)
+        for b in range(4):
+            bt = t + b * beat
+            if bar_i > 0 or b >= 2:                   # let the intro breathe
+                if b in (0, 2):
+                    add(k, bt)
+                add(hat(rng), bt + beat / 2)
+            add(bass(midi_hz(root + chord[0] - 12 * (chord[0] > 6)), beat * 0.9), bt)
+        t += bar
+        bar_i += 1
+
+    mix = mix[: int(seconds * SR)]
+    fade = int(1.2 * SR)
+    mix[-fade:] *= np.linspace(1, 0, fade)
+    mix[: int(0.3 * SR)] *= np.linspace(0, 1, int(0.3 * SR))
+    mix /= max(1e-9, np.max(np.abs(mix)))
+    return (mix * 0.7 * 32767).astype(np.int16), {"bpm": bpm, "root_midi": root, "progression": seed % len(PROGRESSIONS)}
+
+
+def duration(path):
+    out = subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                   "-of", "default=nw=1:nk=1", str(path)])
+    return float(out.strip())
+
+
+def main():
+    if len(sys.argv) < 2:
+        print(__doc__)
+        sys.exit(1)
+    video = Path(sys.argv[1])
+    seed = int(sys.argv[sys.argv.index("--seed") + 1]) if "--seed" in sys.argv else \
+        int(hashlib.sha1(video.parent.name.encode()).hexdigest(), 16) % 10_000
+    secs = duration(video)
+    pcm, meta = make_track(secs, seed)
+    wav = video.parent / "music.wav"
+    with wave.open(str(wav), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(SR)
+        w.writeframes(pcm.tobytes())
+    out = video.parent / "reel-tiktok.mp4"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(wav),
+                    "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
+                    "-shortest", str(out)], check=True)
+    (video.parent / "music.json").write_text(json.dumps({"seed": seed, **meta, "seconds": round(secs, 2),
+                                                         "note": "original track generated by music.py"}, indent=2))
+    print(out, meta)
+
+
+if __name__ == "__main__":
+    main()
