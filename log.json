@@ -150,5 +150,36 @@
   "instagram_note": "Zapier publish_video timed out ('still processing', nothing published); retried via Graph API container (REELS) + media_publish",
   "facebook_post_id": "2223271751586280",
   "status": "published"
+ },
+ {
+  "date": "2026-11-08",
+  "slot": "19:33",
+  "time_slot": "evening",
+  "id": "2026-11-08-1933-first-screen-on-a-phone",
+  "format": "reel",
+  "category": "Web design",
+  "angle": "how to get it right (labelled concept)",
+  "topic": "The first screen of your website on a phone: say what you do and where, with a one-tap call button; a two-minute self-check (phone, first screen, tap the number, send your own form)",
+  "news_story_id": null,
+  "style": "product",
+  "theme": "paper (cover); ink, blue, lilac, ink",
+  "screen": "phone",
+  "scenes": 5,
+  "seconds": 20.8,
+  "slide_types": [
+   "cover",
+   "compare",
+   "screen",
+   "flow",
+   "cta"
+  ],
+  "photo": null,
+  "fact_check": "pass",
+  "news_check": "No qualifying UK story beyond today's Clarity post; NCSC Annual Review held for 9 Nov (PDF not openable this run)",
+  "instagram_media_id": null,
+  "permalink": null,
+  "facebook_post_id": null,
+  "facebook_skip_reason": "Not attempted: Zapier account task limit reached (same limit blocks Facebook Pages)",
+  "status": "NOT PUBLISHED: Zapier task limit reached for the billing period (publish_video failed twice, 2 minutes apart). Rendered and committed, ready to publish."
  }
 ]
