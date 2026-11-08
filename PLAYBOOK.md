@@ -250,7 +250,12 @@ Lee: the posts were "looking very AI generated". He chose **direction B, real pr
 
 Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't repeat the same theme and screen kind two posts running.
 - Colour stays in the brand family: ink, paper, blue, lilac, plus the pill colours in the UI (blue, green, grey). No orange.
-- Use a photo from the library about one post in three, as before.
+- **Photos are a firm rule, not optional (Lee, 8 Nov 2026: "I haven't seen a post using an image yet").** Before building any feed post, check the last two feed posts in `log.json`. If neither used a library photo, **this post must use one**: a `photo` cover slide for a carousel or single image, or a photo scene in a Reel. That makes it at least one feed post in three. Pick the photo that best suits the topic from `python3 photo.py list`. If genuinely none fits, use the closest workspace, shopfront or desk photo rather than skipping. Prepare it with `photo.py prepare`, credit it on the slide and in the caption, and `retire` it after publishing. Log `"photo": "<file>"`.
+- Photo slides in the product style come in three looks:
+  - The default dark fade at the bottom.
+  - `"shade": "blue"`, which adds a flat brand-blue band.
+  - `"shade": "band"`, which adds a flat ink band.
+  Headline text sits in the bottom area. Stories can use photos too.
 - Readability check: phone-size text in the mockups must still be legible. If it isn't, cut rows or cards rather than shrinking the type.
 
 ## Reels (Lee's request, 8 Nov 2026)

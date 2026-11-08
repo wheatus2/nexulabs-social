@@ -692,5 +692,17 @@ def render(spec_path):
         print(f)
 
 
+# photo slides in the product style (8 Nov 2026): no "Swipe" button, and the blue option is a flat
+# colour band at the bottom instead of a gradient wash, so photo posts match the flat product look.
+CSS += """
+.st-product .swipe{display:none}
+.st-product.photo .shade{background:linear-gradient(180deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,0) 22%,rgba(11,11,12,0) 48%,rgba(11,11,12,.82) 78%,rgba(11,11,12,.9) 100%)}
+.st-product.photo.shade-blue .shade{background:none}
+.st-product.photo.shade-blue .shade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:#3B2BFF}
+.st-product.photo.shade-band .shade{background:none}
+.st-product.photo.shade-blue h1,.st-product.photo.shade-band h1{text-shadow:none}
+.st-product.photo.shade-band .shade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:#0B0B0C}
+"""
+
 if __name__ == "__main__":
     render(sys.argv[1])
