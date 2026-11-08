@@ -4,6 +4,7 @@
 Usage:  python3 render.py posts/<id>/post.json
 Writes  posts/<id>/slide-01.jpg ... (1080x1350, 4:5 portrait)
 
+Post-level "format": "story" renders 1080x1920 Instagram Stories (one image per slide).
 Slide types: cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
 browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare, list and flow may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
@@ -587,6 +588,16 @@ def build(slide, idx, total, series, style="studio"):
     return frame(slide, idx, total, series, inner, src(slide), fr, style)
 
 
+STORY_CSS = """
+html,body{height:1920px}
+.s{height:1920px;padding:250px 88px 300px}
+.s h1{font-size:120px}.s h2{font-size:72px}.s p.lead{font-size:38px}
+.s .big{font-size:440px}.swipe{display:none}
+.it h3{font-size:50px}.it p{font-size:30px}.card .tx{font-size:50px}.card .sm{font-size:30px}
+.st h3{font-size:54px}.st p{font-size:30px}.legend div{font-size:32px}
+"""
+
+
 def render(spec_path):
     from playwright.sync_api import sync_playwright
     from PIL import Image
@@ -601,9 +612,12 @@ def render(spec_path):
     files = []
     with sync_playwright() as p:
         b = p.chromium.launch(executable_path="/usr/bin/google-chrome") if Path("/usr/bin/google-chrome").exists() else p.chromium.launch()
-        pg = b.new_page(viewport={"width": 1080, "height": 1350}, device_scale_factor=2)
+        story = spec.get("format") == "story"
+        HH = 1920 if story else 1350
+        pg = b.new_page(viewport={"width": 1080, "height": HH}, device_scale_factor=2)
         for i, s in enumerate(slides, 1):
-            doc = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{build(s, i, len(slides), spec.get('series',''), spec.get('style','studio'))}</body></html>"
+            extra = STORY_CSS if story else ""
+            doc = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}{extra}</style></head><body>{build(s, i, len(slides), spec.get('series',''), spec.get('style','studio'))}</body></html>"
             tmp = out / f".slide-{i:02d}.html"
             tmp.write_text(doc)
             pg.goto(tmp.as_uri())
@@ -611,7 +625,7 @@ def render(spec_path):
             pg.wait_for_timeout(150)
             png = out / f".slide-{i:02d}.png"
             pg.screenshot(path=str(png))
-            im = Image.open(png).convert("RGB").resize((1080, 1350), Image.LANCZOS)
+            im = Image.open(png).convert("RGB").resize((1080, HH), Image.LANCZOS)
             dst = out / f"slide-{i:02d}.jpg"
             im.save(dst, "JPEG", quality=93, optimize=True, progressive=True, subsampling=0)
             png.unlink(); tmp.unlink()
