@@ -32,5 +32,40 @@
     ],
     "status": "published",
     "note": "A second catch-up fire for the 11:47 slot arrived at 12:19 after this story was live; no duplicate story was published."
+  },
+  {
+    "date": "2026-11-08",
+    "slot": "17:47",
+    "published_at": "about 17:58 UK",
+    "id": "stories/2026-11-08-1747-one-page-per-enquiry",
+    "type": "peek at how we build",
+    "category": "CRM",
+    "topic": "Every enquiry on one page: an example CRM enquiry record (who, what they want, next step with a date); scattered inbox/notebook means things slip",
+    "news_story_id": null,
+    "style": "product",
+    "theme": [
+      "blue",
+      "paper",
+      "ink",
+      "lilac"
+    ],
+    "screen": "record",
+    "frames": 4,
+    "slide_types": [
+      "cover",
+      "screen",
+      "list",
+      "quote"
+    ],
+    "sources": [],
+    "fact_check": "self-check pass (no factual claims)",
+    "media_ids": [
+      "17995404405059281",
+      "18649989922047819",
+      "18133772404768388",
+      "18402688477205327"
+    ],
+    "status": "published",
+    "note": "Planned 'tech news in 15 seconds' on the NCSC Annual Review 2026 was dropped because web fetching wasn't available this run; story stays verified-unused."
   }
 ]
