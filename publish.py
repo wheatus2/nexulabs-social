@@ -353,7 +353,7 @@ def insights(month=None):
     try:
         out["facebook"]["page"] = call("GET", FB_PAGE, {"fields": "name,followers_count,fan_count"})
         vals, errs = _metrics(f"{FB_PAGE}/insights",
-                              ["page_impressions_unique", "page_post_engagements", "page_views_total",
+                              ["page_total_media_view_unique", "page_post_engagements", "page_views_total",
                                "page_follows", "page_daily_follows_unique", "page_media_view"],
                               {"period": "day", "since": since, "until": until})
         out["facebook"]["insights_daily"] = vals
