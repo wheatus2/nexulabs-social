@@ -307,5 +307,33 @@
   "facebook_post_id": "1393467619533648",
   "published_via": "github-actions",
   "status": "published"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "21:48",
+  "time_slot": "evening",
+  "id": "2026-11-10-0845-book-a-call",
+  "format": "carousel",
+  "category": "Web design",
+  "angle": "new on our site",
+  "topic": "Book a call on nexulabs.co.uk: pick a time, phone or video (Teams, Meet, Zoom), confirmation with calendar invite, questions before the call",
+  "news_story_id": null,
+  "style": "product",
+  "themes": [
+   "blue",
+   "paper",
+   "ink",
+   "lilac"
+  ],
+  "cover": "headline",
+  "screen": "shot (real screens from nexulabs.co.uk and the booking admin, made-up booking)",
+  "slides": 7,
+  "fact_check": "pass",
+  "instagram_media_id": "18094223069233957",
+  "permalink": "https://www.instagram.com/p/DfiVRFrF_oY/",
+  "facebook_post_id": "1484176674771345_122100755895544005",
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "posted on request, out of the queue"
  }
 ]
