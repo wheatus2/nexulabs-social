@@ -280,16 +280,45 @@ Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't rep
 - Publish each frame in order: POST `https://graph.facebook.com/v21.0/17841471856846758/media` with `media_type=STORIES` and `image_url=<raw URL>` (Zapier Instagram "Make API Mutating Request", querystring), wait until the container's `status_code` is FINISHED, then POST `.../17841471856846758/media_publish` with `creation_id=<id>`.
 - Log stories in `stories-log.json` (date, slot, theme, frames, media ids).
 
-## Photos from the library (Lee's rules, 8 Nov 2026)
-Claude curates free Unsplash photos for Lee (interactively, through Lee's browser) into `photos/`, named `<photographer>--<description>.<unsplash-id>.jpg`. Unsplash Licence: free commercial use, editing allowed. Never Unsplash+ (paid) photos. Do **not** use the Unsplash API or any other image source.
-- **A photo is never used twice (Lee's rule).** `photo.py` enforces it: `prepare` refuses any photo whose id is in `photos/used-ids.txt`, `photos/used/` or `log.json`. Always `retire` a photo straight after publishing. Never edit `used-ids.txt` except through `retire`.
-- Use a photo **roughly one post in three**, usually as the cover (`photo` slide type), with our type and logo over it. The rest stay as designed graphics.
-- The library covers every topic (139 photos on 8 Nov 2026). `photos/topics.json` tags each one: web-design, crm, websites-crm, branding, ai-automation, hosting, domains, tech-news, business-types (trades, salons, cafés, pubs, shops, garages, gyms) and north-east. Run `python3 photo.py list --topic <topic>` for the post's category, and also check `business-types` (a real trade or shop is often the most engaging way into a topic) and `north-east` (local landmarks). `python3 photo.py topics` shows what's left per topic.
-- Open the photo and look at it before choosing it. Only use one that genuinely suits the post and is engaging at phone size. If none fits or the folder is empty, make a designed post instead. Never let it stop a post going out.
-- Never use a photo that shows another company's logo or brand prominently, and never an AI-generated image.
-- `python3 photo.py prepare photos/<file> posts/<id>/photo.jpg [--focus x,y]` crops to 4:5 and gives the credit line. Put it in the slide's `credit` field and as the last line of the caption.
-- `shade`: default (dark fade at the bottom), `full` (overall darken) or `blue` (brand blue fade). Check the text is easy to read at phone size.
-- If fewer than 5 unused photos are left in the post's topic, or fewer than 20 overall, say so in the summary ("photo library running low: <topic>") so Lee can ask Claude to top it up.
+## Photos from the library (Lee's rules, updated 9 Nov 2026)
+Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names... the images you choose must be relevant to what you are posting about"* and *"we are a design company, so the images we choose have to be on point."*
+
+- **The photo must literally show what the post is about.** Some examples:
+  - a hosting post shows servers or a data centre
+  - a post on booking sites for barbers shows a barbershop
+  - a logo post shows logo sketches
+  - a post on card payments shows a card payment
+
+  If someone seeing only the photo and the headline would not instantly get the connection, don't use it.
+- **No metaphors and no clichés, ever.** That rules out:
+  - door numbers or street signs for domains
+  - padlocks for security
+  - robots or glowing lines for AI
+  - stars for reviews
+  - keys or model houses for ownership
+  - handshakes, high-fives, or people smiling at phones and laptops
+- **Domain names, AI and automation, and tech-news posts are designed, not photo posts.** Use the layouts in "Looks" instead.
+- **The library is curated, with 71 photos as of 9 Nov 2026.** `photos/topics.json` lists, for every cleared photo:
+  - what it `shows`
+  - what it may be used for (`use_only_for`)
+- **Only use a photo if this post's subject matches its `use_only_for`.**
+  - `python3 photo.py list --topic <topic>` lists cleared photos. Topics: web-design, branding, crm, websites-crm, hosting, business-types, north-east.
+  - North East landmarks only go on posts that are explicitly local.
+  - Open the photo and look at it before using it.
+- **Rejected photos are never used.** They are in `photos/not-engaging/`, and `photo.py` refuses them, plus anything not in `topics.json`.
+- **A photo is never used twice.** `photo.py` enforces this.
+  - `prepare` refuses any id in `photos/used-ids.txt`, `photos/used/` or `log.json`.
+  - `retire` the photo straight after publishing.
+- **Photos are optional.** Use one only when it fits the post as well as a designed slide would. Most posts will be designed. Never let a missing photo stop a post going out.
+- **Preparing and crediting:**
+  - `python3 photo.py prepare photos/<file> posts/<id>/photo.jpg [--focus x,y]` crops to 4:5 and gives the credit line.
+  - Put the credit in the slide's `credit` field and as the last line of the caption.
+  - How the photo sits on the slide depends on the post's look (see "Looks").
+- **Topping up the library.** Only Claude in a chat with Lee adds photos, to the same standard:
+  - editorial-quality light and composition
+  - real places and people working, not posed stock
+  - no other companies' logos
+  - no AI images
 
 ## Accuracy rules (see also "Facts and fact-checking")
 - Every number on a slide must come from a source fetched during the run. UK sources first; non-UK only when there's no UK equivalent, and say so. Prefer primary sources (gov.uk, ONS, BCC, FSB, Ofcom, Enterprise Nation, vendor research with stated methodology).

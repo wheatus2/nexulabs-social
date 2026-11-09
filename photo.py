@@ -4,7 +4,7 @@
 File names: <photographer-name>--<short-description>.<unsplash-id>.jpg
   e.g. jane-smith--laptop-on-desk.-8-2YWKt8Ag.jpg  (ids can contain - and _)
 
-  python3 photo.py list [--topic <topic>]       # unused photos (credit, description, id, topics)
+  python3 photo.py list [--topic <topic>]       # unused, cleared photos: credit, what it shows, what it may be used for
   python3 photo.py topics                       # how many unused photos per topic
       topics: web-design, crm, websites-crm, branding, ai-automation, hosting, domains,
               tech-news, business-types (trades, shops, hospitality...), north-east
@@ -82,24 +82,29 @@ def list_photos(topic=None):
         ph, desc, pid = parts(p)
         if pid in used:
             continue
-        t = tags.get(p.name, [])
-        if topic and topic not in t:
+        info = tags.get(p.name)
+        if not info:
+            continue  # untagged photos are not cleared for use
+        if topic and topic not in info["topics"]:
             continue
-        print(json.dumps({"file": f"photos/{p.name}", "credit": credit_for(p), "description": desc, "id": pid, "topics": t}))
+        print(json.dumps({"file": f"photos/{p.name}", "credit": credit_for(p), "shows": info["shows"],
+                          "use_only_for": info["use_only_for"], "topics": info["topics"], "id": pid}))
 
 
 def summary():
     used = used_ids()
     tags = topics()
     from collections import Counter
-    c = Counter(t for p in library() if parts(p)[2] not in used for t in tags.get(p.name, ["untagged"]))
+    c = Counter(t for p in library() if parts(p)[2] not in used for t in tags.get(p.name, {"topics": ["untagged"]})["topics"])
     for k, v in sorted(c.items(), key=lambda x: -x[1]):
         print(f"{k:16} {v}")
 
 
 def prepare(src, dest, focus=(0.5, 0.5)):
     if "not-engaging" in str(src):
-        sys.exit("REFUSED: photos in photos/not-engaging/ were judged too dull to post (Lee: only engaging photos).")
+        sys.exit("REFUSED: photos in photos/not-engaging/ were rejected (Lee: only engaging, on-point photos).")
+    if Path(str(src)).name not in topics():
+        sys.exit("REFUSED: this photo isn't in photos/topics.json, so it hasn't been cleared for use.")
     pid = parts(src)[2]
     if pid in used_ids():
         sys.exit(f"REFUSED: photo {pid} has already been used. Photos are never reused (Lee's rule).")
