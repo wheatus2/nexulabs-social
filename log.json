@@ -181,5 +181,43 @@
   "facebook_post_id": "1870814780599419",
   "status": "published",
   "published_via": "github-actions"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "08:33",
+  "time_slot": "morning",
+  "id": "2026-11-09-0837-passkeys-ncsc",
+  "format": "carousel",
+  "category": "Tech news (website, email and CRM logins)",
+  "pillar": "News explained",
+  "angle": "why it matters + how to get it right",
+  "topic": "NCSC Annual Review 2026 (1,831 reports, 337 needing support, 80 nationally significant) and its passkeys chapter; list your business logins and move them to passkeys, or password manager + 2SV; offer customers passkeys",
+  "news_story_id": "2026-11-03-ncsc-annual-review-2026",
+  "style": "product",
+  "theme": "photo cover (ink band); ink, paper, lilac, blue",
+  "screen": "table",
+  "slides": 5,
+  "slide_types": [
+   "photo",
+   "stat",
+   "quote",
+   "screen",
+   "flow"
+  ],
+  "photo": "flyd--red-padlock-keyboard.mT7lXZPjk7U.jpg",
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 5,
+   "true": 5,
+   "useful": 4,
+   "specific": 4,
+   "hook": 4,
+   "design": 4
+  },
+  "instagram_media_id": "18159652210465936",
+  "permalink": "https://www.instagram.com/p/Dfg8OWXm5K6/",
+  "facebook_post_id": "1484176674771345_122100166083544005",
+  "published_via": "github-actions",
+  "status": "published"
  }
 ]

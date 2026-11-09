@@ -58,7 +58,7 @@
       "found": "2026-11-08",
       "event_date": "2026-11-03",
       "headline": "NCSC Annual Review 2026: 80 nationally significant incidents; basics (patching, passkeys/MFA, supplier checks) urged",
-      "status": "verified-unused",
+      "status": "used",
       "facts": [
         {
           "claim": "1,831 attack reports, 337 needed incident support, 80 nationally significant (1 Sep 2025 to 31 Aug 2026)",
@@ -76,7 +76,11 @@
       ],
       "angle": "Turn on passkeys or MFA for email, website admin and CRM logins; patch anything internet-facing.",
       "caveats": "Verify the figures in the NCSC PDF itself before posting.",
-      "note_2026-11-08_1933": "Not used at 19:33: one news post already published today (Clarity), and the NCSC PDF couldn't be opened this run (web fetching unavailable). Candidate for 9 Nov."
+      "note_2026-11-08_1933": "Not used at 19:33: one news post already published today (Clarity), and the NCSC PDF couldn't be opened this run (web fetching unavailable). Candidate for 9 Nov.",
+      "used_on": [
+        "instagram+facebook:2026-11-09-0837-passkeys-ncsc"
+      ],
+      "note_2026-11-09": "Verified 9 Nov from ncsc.gov.uk chapter pages (incident management: 1,831 reports, 337 needing support, 80 nationally significant, 1 Sep 2025-31 Aug 2026; passkeys chapter quote) + techUK 4 Nov 2026. Advice from NCSC 23 Apr 2026 passkeys release (+ The Register). Independent fact-check PASS (round 2)."
     },
     {
       "id": "2026-11-02-uk-food-firms-fridge-hacks",
@@ -170,6 +174,13 @@
       "headline": "Google turning off Search for K-12 school accounts",
       "status": "rejected",
       "reason": "Not relevant to UK businesses' websites or CRMs."
+    },
+    {
+      "id": "2026-11-09-scan",
+      "found": "2026-11-09",
+      "headline": "9 Nov 08:33 scan: no other new qualifying UK website/CRM story found in the last 7 days beyond NCSC Annual Review (searches of NCSC, Google Search Central, ICO, Meta/WhatsApp, Shopify/WordPress returned nothing new and dated)",
+      "status": "rejected",
+      "reason": "Scan note, not a story."
     }
   ]
 }
