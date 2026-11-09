@@ -258,5 +258,54 @@
   "facebook_post_id": "4469992759964304",
   "published_via": "github-actions",
   "status": "published"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "19:33",
+  "time_slot": "evening",
+  "id": "2026-11-09-1933-short-contact-form",
+  "format": "reel",
+  "category": "Web design",
+  "angle": "what not to do + how to get it right",
+  "topic": "Contact forms that ask for too much: cut to name, a way to reply and what they need; labels above boxes (placeholders vanish), type=tel phone field, autocomplete; test your own form on your phone",
+  "news_story_id": null,
+  "style": "signal",
+  "themes": [
+   "lemon",
+   "black",
+   "sky"
+  ],
+  "cover": "headline",
+  "screen": "phone (contact form, Example Plumbing Co.)",
+  "scenes": 5,
+  "seconds": 20.0,
+  "slide_types": [
+   "cover",
+   "compare",
+   "screen",
+   "flow",
+   "cta"
+  ],
+  "photo": null,
+  "hooks_considered": [
+   "Your contact form asks for too much.",
+   "Fill in your own form tonight.",
+   "Three boxes is enough for a first enquiry."
+  ],
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 4,
+   "true": 5,
+   "useful": 5,
+   "specific": 5,
+   "hook": 4,
+   "design": 4
+  },
+  "news_check": "No new qualifying story in the last 7 days; one news post already today (NCSC)",
+  "instagram_media_id": "18095078555189217",
+  "permalink": "https://www.instagram.com/reel/DfiHRPwjyqf/",
+  "facebook_post_id": "1393467619533648",
+  "published_via": "github-actions",
+  "status": "published"
  }
 ]
