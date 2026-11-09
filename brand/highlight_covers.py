@@ -4,7 +4,8 @@
 Instagram shows a highlight cover as a small circle cropped from the CENTRE of a 1080x1920 frame.
 Sources disagree on the exact crop (640-880px), so these covers are built to survive any of them:
   - the whole frame is the flat brand colour, so the circle is always fully filled;
-  - the icon sits inside a 380px box at the exact centre (540, 960), well inside the smallest crop;
+  - the icon sits inside a 520px box at the exact centre (540, 960), inside even the tightest quoted crop (640px).
+    On the profile Instagram actually showed the full 1080px width as the circle (checked 9 Nov 2026), so 520px reads well;
   - the highlight's name sits low in the frame, outside the circle, so it only shows when someone opens the highlight.
 Outputs brand/highlight-covers/<slug>.jpg (1080x1920, for a Story / web cover picker)
     and brand/highlight-covers/<slug>-square.jpg (1080x1080, for uploading from a phone's camera roll),
@@ -34,7 +35,7 @@ def page(label, svg, square=False):
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{{font-family:G;src:url({FONTS}/Geist-SemiBold.woff2);font-weight:600}}
 html,body{{margin:0;width:1080px;height:{h}px;background:#0B0B0C;overflow:hidden}}
-.ic{{position:absolute;left:350px;top:{h//2-190}px;width:380px;height:380px}}
+.ic{{position:absolute;left:280px;top:{h//2-260}px;width:520px;height:520px}}
 .nm{{position:absolute;left:0;right:0;top:1540px;text-align:center;color:#fff;font:600 72px G;letter-spacing:-.03em}}
 .lg{{position:absolute;left:0;right:0;top:1650px;text-align:center;color:#fff;opacity:.6;font:600 34px G;letter-spacing:-.03em}}
 .lg span{{color:{B}}}

@@ -305,6 +305,7 @@ Lee: *"the highlight cover doesn't fit the circle, please can you choose somethi
 
 - **Why covers go out as a Story.** Instagram on the web can only pick a cover from Stories already in the highlight. So the first time a highlight is needed, its cover is published once as a one-frame Story from `posts/stories/<date>-highlight-cover-<slug>/slide-01.jpg`. The weekly Highlights run then adds that frame to the front of the highlight and picks it as the cover.
 - **Never use a content frame as a cover.** Text gets cropped in the circle.
+- **If "Select cover" shows no thumbnails.** On a short browser window, Instagram's web dialog collapses the thumbnail strip to 0px high. Run JavaScript in the dialog to hide the preview and give the second child of the scrolling div a height of 300px. Then click the icon frame, put the preview back, and click Done. That's how the CRM cover was set on 9 Nov 2026.
 - **Phone alternative.** The `-square.jpg` versions are for uploading from a phone's camera roll ("Edit highlight" → "Edit cover").
 
 ## Photos from the library (Lee's rules, updated 9 Nov 2026)

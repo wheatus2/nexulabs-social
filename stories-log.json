@@ -135,5 +135,19 @@
    "18022734077729216"
   ],
   "published_via": "github-actions"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "18:33",
+  "type": "highlight-cover",
+  "category": "CRM",
+  "topic": "CRM highlight cover (circle icon)",
+  "style": "cover",
+  "frames": 1,
+  "media_ids": [
+   "18126126736718820"
+  ],
+  "published_via": "github-actions",
+  "note": "added to the CRM highlight and set as its cover"
  }
 ]
