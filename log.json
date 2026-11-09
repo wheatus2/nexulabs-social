@@ -219,5 +219,44 @@
   "facebook_post_id": "1484176674771345_122100166083544005",
   "published_via": "github-actions",
   "status": "published"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "14:33",
+  "time_slot": "afternoon",
+  "id": "2026-11-09-1433-domain-in-your-name",
+  "format": "reel",
+  "category": "Domain names",
+  "angle": "what not to do + how to get it right",
+  "topic": "Is your domain registered in your business's name or your web designer's? Who gets the renewal reminders, who starts a transfer; check via Nominet lookup -> registrar login -> registrant name; ask for a registrant transfer if it isn't you",
+  "news_story_id": null,
+  "style": "product",
+  "theme": "photo cover (blue band); lilac, paper, blue, ink",
+  "screen": "record",
+  "scenes": 5,
+  "seconds": 20.8,
+  "slide_types": [
+   "photo",
+   "screen",
+   "compare",
+   "flow",
+   "cta"
+  ],
+  "photo": "phil-hearing--111-blue-door.ceUvJBlEuO4.jpg",
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 4,
+   "true": 5,
+   "useful": 5,
+   "specific": 4,
+   "hook": 4,
+   "design": 4
+  },
+  "news_check": "No new qualifying story; one news post already today (NCSC)",
+  "instagram_media_id": "18406527823201044",
+  "permalink": "https://www.instagram.com/reel/DfhmIJeAdXE/",
+  "facebook_post_id": "4469992759964304",
+  "published_via": "github-actions",
+  "status": "published"
  }
 ]
