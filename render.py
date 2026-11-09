@@ -9,7 +9,7 @@ Slide types: screen (product UI: table | board | record | phone), cover, stat, b
 browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare, list and flow may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
 Themes: "ink" (dark), "paper" (light), "blue" (brand blue) or "lilac" (#E9E7FF).
-Post-level "style": product (default since 8 Nov 2026: flat colour, real UI screens) | studio | editorial | bold | minimal | poster | aurora | neon | spectrum | glass (rotate; never the same two posts running).
+Post-level "style" = the look: product | journal | signal | soft | press (see PLAYBOOK "Design direction: five looks"). Each slide "theme" must belong to the look: product: blue ink paper lilac; journal: cream forest stone; signal: lemon black sky; soft: mint navy blush; press: newsprint night red. Retired: studio editorial bold minimal poster aurora neon spectrum glass.
 Gradient styles (aurora, neon, spectrum, glass) take a post-level "palette": electric | ultraviolet | ocean | dusk.
 Any slide can add "orb_shift": [x, y] to move the neon orb off text.
 Any post/slide can add "pattern": dots | stripes | waves | contours | halftone | isometric | rings | bauhaus | chevrons | plus | diagonal-grid (optional "pattern_opacity").
@@ -573,7 +573,7 @@ def build(slide, idx, total, series, style="studio"):
 {f'<div class="legend">{legend}</div>' if pins else ''}<div style="height:40px"></div>"""
     elif t == "photo":
         inner = f"""{kick(slide) if slide.get('kicker') else ''}
-<h1 style="font-size:{slide.get('size',100)}px">{md(slide['headline'])}</h1>
+<h1 style="font-size:{slide.get('size',100)}px"><span class="hl">{md(slide['headline'])}</span></h1>
 {f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div style="height:60px"></div>"""
         fr = '<div class="swipe">Swipe <b>→</b></div>' if total > 1 and idx == 1 else ""
     elif t == "flow":
@@ -702,6 +702,211 @@ CSS += """
 .st-product.photo.shade-band .shade{background:none}
 .st-product.photo.shade-blue h1,.st-product.photo.shade-band h1{text-shadow:none}
 .st-product.photo.shade-band .shade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:#0B0B0C}
+"""
+
+
+# ======================================================================================
+# LOOKS (Lee, 9 Nov 2026: "you seem to use the same layout and design for every post...
+# please mix this up, even the colours"). Each look is its own design system: typefaces,
+# colour themes, layout grammar and photo treatment. Post-level "style" picks the look;
+# each slide's "theme" must be one of that look's themes (see LOOKS below).
+# ======================================================================================
+LOOKS = {
+    # look: {theme: (background, text, accent, dark?)}
+    "product": {"ink": ("#0B0B0C", "#F5F5F7", "#667DFF", 1), "paper": ("#F5F5F7", "#0B0B0C", "#3B2BFF", 0),
+                "blue": ("#3B2BFF", "#FFFFFF", "#0B0B0C", 1), "lilac": ("#E9E7FF", "#0B0B0C", "#3B2BFF", 0)},
+    "journal": {"cream": ("#F3EEE3", "#1D1B17", "#2E5E4E", 0), "forest": ("#1F3B32", "#F3EEE3", "#BFD9B8", 1),
+                "stone": ("#E3DDD0", "#1D1B17", "#7A2E52", 0)},
+    "signal": {"lemon": ("#F4E53C", "#111111", "#111111", 0), "black": ("#111111", "#F4F1E8", "#F4E53C", 1),
+               "sky": ("#BDE0FF", "#0B1F3A", "#0B1F3A", 0)},
+    "soft": {"mint": ("#CDEBDA", "#14263F", "#1F7A5A", 0), "blush": ("#FFDCE5", "#3A1530", "#B0245A", 0),
+             "navy": ("#14263F", "#F7F3EA", "#9FE2C0", 1)},
+    "press": {"newsprint": ("#F1EFE8", "#141414", "#C8102E", 0), "night": ("#161616", "#F1EFE8", "#FF5A67", 1),
+              "red": ("#C8102E", "#FFFFFF", "#141414", 1)},
+}
+THEME_INFO = {t: v for look in LOOKS.values() for t, v in look.items()}
+
+_logo_orig = logo
+def logo(theme, dot_override=None):
+    if theme in ("ink", "paper", "blue", "lilac") or theme not in THEME_INFO:
+        return _logo_orig(theme, dot_override)
+    bg, fg, acc, dark = THEME_INFO[theme]
+    return (LOGO_SVG.replace('fill="#FFFFFF"', f'fill="{fg}"').replace('fill="#667DFF"', f'fill="{dot_override or acc}"')
+            .replace('<title>nexulabs</title>', ''))
+
+CSS += f"""
+@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-400-italic.woff2);font-weight:400;font-style:italic}}
+@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-600-normal.woff2);font-weight:600}}
+@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-600-italic.woff2);font-weight:600;font-style:italic}}
+@font-face{{font-family:Cond;src:url({FONTS}/anton-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Brico;src:url({FONTS}/bricolage-grotesque-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Brico;src:url({FONTS}/bricolage-grotesque-latin-600-normal.woff2);font-weight:600}}
+@font-face{{font-family:Brico;src:url({FONTS}/bricolage-grotesque-latin-800-normal.woff2);font-weight:800}}
+@font-face{{font-family:News;src:url({FONTS}/newsreader-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:News;src:url({FONTS}/newsreader-latin-400-italic.woff2);font-weight:400;font-style:italic}}
+@font-face{{font-family:News;src:url({FONTS}/newsreader-latin-700-normal.woff2);font-weight:700}}
+@font-face{{font-family:News;src:url({FONTS}/newsreader-latin-700-italic.woff2);font-weight:700;font-style:italic}}
+@font-face{{font-family:Arch;src:url({FONTS}/archivo-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Arch;src:url({FONTS}/archivo-latin-500-normal.woff2);font-weight:500}}
+@font-face{{font-family:Arch;src:url({FONTS}/archivo-latin-700-normal.woff2);font-weight:700}}
+@font-face{{font-family:Arch;src:url({FONTS}/archivo-latin-800-normal.woff2);font-weight:800}}
+"""
+for _t, (_bg, _fg, _acc, _dark) in THEME_INFO.items():
+    if _t in ("ink", "paper", "blue", "lilac"):
+        continue
+    CSS += f".{_t}{{background:{_bg};color:{_fg};--acc:{_acc};--fg:{_fg};--bg:{_bg}}}\n"
+CSS += ".ink{--bg:#0B0B0C}.paper{--bg:#F5F5F7}.blue{--bg:#3B2BFF}.lilac{--bg:#E9E7FF}\n"
+
+# shared: new looks are flat, no grids/glows/grain/patterns
+CSS += """
+.st-journal .grid,.st-journal .glow,.st-journal .grain,.st-journal .deco,
+.st-signal .grid,.st-signal .glow,.st-signal .grain,.st-signal .deco,
+.st-soft .grid,.st-soft .glow,.st-soft .grain,.st-soft .deco,
+.st-press .grid,.st-press .glow,.st-press .grain,.st-press .deco{display:none}
+.st-journal .swipe,.st-signal .swipe,.st-soft .swipe,.st-press .swipe{display:none}
+.s{--ph-top:170px;--ph-h:660px}
+.st-journal.photo,.st-soft.photo,.st-press.photo{color:var(--fg)}
+.st-journal.photo .shade,.st-soft.photo .shade,.st-press.photo .shade,.st-signal.photo .shade{display:none}
+.st-journal.photo h1,.st-soft.photo h1,.st-press.photo h1,.st-signal.photo h1{text-shadow:none}
+.st-journal.photo .acc,.st-soft.photo .acc,.st-press.photo .acc{color:var(--acc)}
+.st-journal .card.good,.st-signal .card.good,.st-soft .card.good,.st-press .card.good{background:transparent;border-color:var(--acc)}
+.st-journal .ctabox .btn,.st-soft .ctabox .btn,.st-press .ctabox .btn{background:var(--acc);color:var(--bg)}
+.st-journal .col.hl .bar,.st-journal .row.hl .fill,.st-soft .col.hl .bar,.st-soft .row.hl .fill,.st-press .col.hl .bar,.st-press .row.hl .fill,.st-signal .col.hl .bar,.st-signal .row.hl .fill{background:var(--acc);opacity:1}
+.st-journal .st.hl .dot,.st-soft .st.hl .dot,.st-press .st.hl .dot,.st-signal .st.hl .dot{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+.st-journal .st .dot,.st-soft .st .dot,.st-press .st .dot,.st-signal .st .dot{background:var(--bg)}
+
+/* ---------- JOURNAL: editorial magazine. Fraunces serif, cream / forest / stone, hairlines, headline at the top ---------- */
+.st-journal{font-family:Arch}
+.st-journal h1,.st-journal h2,.st-journal .big,.st-journal .it h3,.st-journal .card .tx,.st-journal .st h3,.st-journal .ctabox .r,.st-journal .qm,.st-journal .row .lab b,.st-journal .col .v{font-family:Serif;font-weight:400;letter-spacing:-.03em}
+.st-journal h1{line-height:1.0}
+.st-journal .acc{font-style:italic;color:var(--acc)}
+.st-journal .top{border-bottom:1.5px solid currentColor;padding-bottom:26px}
+.st-journal .meta{font-family:Serif;font-style:italic;text-transform:none;letter-spacing:0;font-size:25px;opacity:.85}
+.st-journal .kicker{font-family:Arch;font-weight:700;font-size:19px;letter-spacing:.16em;text-transform:uppercase;opacity:.8;margin-top:64px!important}
+.st-journal .kicker:before{display:none}
+.st-journal .foot{border-top:1.5px solid currentColor;padding-top:20px;font-family:Arch;font-size:17px;opacity:.75}
+.st-journal p.lead{font-family:Arch;font-size:29px;opacity:.85}
+.st-journal.cover h1,.st-journal.cta h1,.st-journal.quote h1{margin-top:70px!important}
+.st-journal.cover p.lead{margin-top:auto;padding-top:28px;border-top:1.5px solid currentColor;max-width:none}
+.st-journal h2{margin-top:56px;font-size:80px;line-height:1.02}
+.st-journal .card,.st-journal .ctabox{border-radius:0;border:none;border-top:1.5px solid currentColor;padding:28px 0}
+.st-journal .card.good{border-top:3px solid var(--acc)}
+.st-journal .card .lb{font-family:Arch;font-weight:700}
+.st-journal .ico{border:none;width:auto}
+.st-journal .it{border-top:1.5px solid currentColor}
+.st-journal .it .n{font-family:Serif;font-style:italic;font-size:46px;line-height:1;color:var(--acc);padding-top:0;min-width:70px}
+.st-journal .big{font-weight:400;letter-spacing:-.06em}
+.st-journal .qm{font-style:italic}
+.st-journal .win,.st-journal .bw,.st-journal .phone{border-radius:6px}
+.st-journal .phone .scr{border-radius:2px}
+.st-journal .ctabox .btn{border-radius:0}
+.st-journal .row .track,.st-journal .row .fill{border-radius:0;height:12px}
+.st-journal .col .bar{border-radius:0}
+.st-journal.photo .bgimg{inset:auto;left:88px;right:88px;top:var(--ph-top);height:var(--ph-h)}
+.st-journal.photo .credit{left:88px;right:auto;bottom:auto;top:calc(var(--ph-top) + var(--ph-h) + 14px);font-family:Serif;font-style:italic;font-size:19px;opacity:.75}
+.st-journal.photo .body{justify-content:flex-end}
+.st-journal.photo h1{margin-top:auto}
+
+/* ---------- SIGNAL: loud poster. Anton condensed caps, lemon / black / sky, heavy frame, inverted highlights ---------- */
+.st-signal{font-family:Arch;padding:96px 100px}
+.st-signal:after{content:"";position:absolute;inset:30px;border:7px solid currentColor;pointer-events:none;z-index:4}
+.st-signal.photo:after{border-color:#fff}
+.st-signal h1,.st-signal h2,.st-signal .big,.st-signal .it h3,.st-signal .card .tx,.st-signal .st h3,.st-signal .ctabox .r,.st-signal .row .lab b,.st-signal .col .v{font-family:Cond;font-weight:400;text-transform:uppercase;letter-spacing:0;line-height:.94}
+.st-signal h1{font-size:140px!important;line-height:1.13}
+.st-signal h2{font-size:96px}
+.st-signal .acc{background:var(--fg);color:var(--bg);padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.st-signal.black .acc{background:var(--acc);color:#111}
+.st-signal .meta{font-family:Arch;font-weight:800;font-size:19px;letter-spacing:.12em;text-transform:uppercase;opacity:1;border:3px solid currentColor;padding:8px 14px}
+.st-signal .kicker{font-family:Arch;font-weight:800;font-size:22px;letter-spacing:.1em;text-transform:uppercase;align-self:flex-start;background:var(--fg);color:var(--bg);padding:10px 18px}
+.st-signal .kicker:before{display:none}
+.st-signal p.lead{font-family:Arch;font-weight:500;font-size:32px;opacity:1}
+.st-signal .foot{font-family:Arch;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:16px;opacity:.85}
+.st-signal .card,.st-signal .ctabox{border-radius:0;border:5px solid currentColor}
+.st-signal .card.good{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.st-signal .card.good .lb{color:var(--bg)}
+.st-signal .it{border-top:5px solid currentColor}
+.st-signal .it .n{font-family:Cond;font-size:56px;line-height:1;color:currentColor;padding-top:0;min-width:80px}
+.st-signal .it p,.st-signal .card .sm{font-family:Arch;opacity:.85}
+.st-signal .ctabox .btn{border-radius:0;background:var(--fg);color:var(--bg)}
+.st-signal .win,.st-signal .bw,.st-signal .phone{border-radius:0;box-shadow:16px 16px 0 currentColor}
+.st-signal .phone .scr{border-radius:0}
+.st-signal .big{font-size:520px!important;line-height:.8}
+.st-signal.photo{color:#fff}
+.st-signal.photo .body{justify-content:flex-end}
+.st-signal.photo h1{margin-top:auto;font-size:118px!important;line-height:1.12}
+.st-signal.photo h1 .hl{background:var(--bg);color:var(--fg);padding:.02em .14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.st-signal.photo h1 .acc{background:var(--fg);color:var(--bg)}
+.st-signal.photo .credit{font-family:Arch;font-weight:700;background:#111;color:#fff;padding:6px 12px;opacity:1;right:56px;bottom:56px}
+.st-signal.photo .mark{filter:brightness(0) invert(1)}
+.st-signal.photo .top .meta{background:var(--bg);color:var(--fg);border-color:var(--bg)}
+
+/* ---------- SOFT: friendly, centred. Bricolage Grotesque, mint / blush / navy, rounded cards with hard offset shadows ---------- */
+.st-soft{font-family:Brico}
+.st-soft h1,.st-soft h2,.st-soft .big,.st-soft .it h3,.st-soft .card .tx,.st-soft .st h3,.st-soft .ctabox .r,.st-soft .row .lab b,.st-soft .col .v{font-family:Brico;font-weight:800;letter-spacing:-.045em}
+.st-soft h1{line-height:.96}
+.st-soft h2{font-size:76px;line-height:1}
+.st-soft .body{text-align:center;align-items:center}
+.st-soft p.lead{margin-left:auto;margin-right:auto;font-family:Brico;font-size:31px;opacity:.85}
+.st-soft .kicker{font-family:Brico;font-weight:600;font-size:22px;letter-spacing:0;text-transform:none;border:2.5px solid currentColor;border-radius:999px;padding:10px 24px;justify-content:center}
+.st-soft .kicker:before{display:none}
+.st-soft .meta{font-family:Brico;font-weight:600;font-size:20px;letter-spacing:0;text-transform:none;opacity:1;background:var(--fg);color:var(--bg);border-radius:999px;padding:8px 18px}
+.st-soft .foot{font-family:Brico;font-size:18px;justify-content:center;text-align:center}
+.st-soft .items,.st-soft .hb,.st-soft .cmp,.st-soft .fl,.st-soft .bw,.st-soft .sw,.st-soft .chart,.st-soft .xl,.st-soft .ctabox,.st-soft .legend,.st-soft .win,.st-soft .phonewrap{text-align:left;align-self:stretch}
+.st-soft .card,.st-soft .ctabox{border-radius:34px;border:3px solid var(--fg);box-shadow:9px 9px 0 var(--fg);background:var(--bg)}
+.st-soft .card.good{background:var(--fg);color:var(--bg)}
+.st-soft .card.good .lb{color:var(--bg)}
+.st-soft .ico{border-color:currentColor}
+.st-soft .it{border:none;background:rgba(255,255,255,.45);border-radius:28px;padding:24px 30px;margin-bottom:14px;align-items:center}
+.st-soft.navy .it{background:rgba(255,255,255,.08)}
+.st-soft .it .n{width:56px;height:56px;min-width:56px;border-radius:50%;background:var(--fg);color:var(--bg);display:flex;align-items:center;justify-content:center;padding:0;font-family:Brico;font-weight:800;font-size:22px}
+.st-soft .win,.st-soft .bw{border-radius:30px;border:3px solid var(--fg);box-shadow:12px 12px 0 var(--fg)}
+.st-soft .phone{box-shadow:12px 12px 0 var(--fg)}
+.st-soft .ctabox .btn{background:var(--fg);color:var(--bg)}
+.st-soft .row .track{background:rgba(127,127,127,.2)}
+.st-soft.photo .bgimg{inset:auto;left:130px;right:130px;top:var(--ph-top);height:var(--ph-h);border-radius:40px;border:4px solid var(--fg);box-shadow:16px 16px 0 var(--fg);transform:rotate(-2deg)}
+.st-soft.photo .credit{right:0;left:0;text-align:center;bottom:auto;top:calc(var(--ph-top) + var(--ph-h) + 34px);font-family:Brico;font-size:18px;opacity:.7}
+.st-soft.photo .body{justify-content:flex-end}
+.st-soft.photo h1{margin-top:auto}
+
+/* ---------- PRESS: newspaper. Newsreader serif, newsprint / night / red, double rules, red kicker ---------- */
+.st-press{font-family:Arch}
+.st-press h1,.st-press h2,.st-press .big,.st-press .it h3,.st-press .card .tx,.st-press .st h3,.st-press .ctabox .r,.st-press .qm,.st-press .row .lab b,.st-press .col .v{font-family:News;font-weight:700;letter-spacing:-.025em}
+.st-press h1{line-height:1.0}
+.st-press .acc{color:var(--acc)}
+.st-press.red .acc{color:#fff;text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:.08em}
+.st-press .top{border-bottom:6px double currentColor;padding-bottom:22px}
+.st-press .meta{font-family:Arch;font-weight:800;font-size:18px;letter-spacing:.16em;text-transform:uppercase;opacity:1}
+.st-press .kicker{font-family:Arch;font-weight:800;font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:56px!important}
+.st-press.red .kicker{color:#fff}
+.st-press .kicker:before{content:"";width:16px;height:16px;background:var(--acc)}
+.st-press.red .kicker:before{background:#fff}
+.st-press p.lead{font-family:News;font-style:italic;font-size:33px;line-height:1.35;opacity:.9;border-left:4px solid var(--acc);padding-left:24px}
+.st-press.red p.lead{border-color:#fff}
+.st-press.cover h1,.st-press.cta h1,.st-press.quote h1{margin-top:60px!important}
+.st-press.cover p.lead{margin-top:auto}
+.st-press h2{margin-top:44px;font-size:80px;line-height:1.02}
+.st-press .foot{border-top:1.5px solid currentColor;padding-top:18px;font-family:Arch;font-size:16px;opacity:.8}
+.st-press .card,.st-press .ctabox{border-radius:0;border:none;border-top:3px solid currentColor;padding:24px 0}
+.st-press .card.good{border-top-color:var(--acc)}
+.st-press .ico{border-radius:0}
+.st-press .it{border-top:1.5px solid currentColor}
+.st-press .it .n{font-family:News;font-weight:700;font-size:40px;line-height:1;color:var(--acc);padding-top:0;min-width:64px}
+.st-press .big{letter-spacing:-.05em}
+.st-press .win,.st-press .bw,.st-press .phone{border-radius:0}
+.st-press .phone .scr{border-radius:0}
+.st-press .ctabox .btn{border-radius:0}
+.st-press .row .track,.st-press .row .fill{border-radius:0}
+.st-press .col .bar{border-radius:0}
+.st-press.photo .bgimg{inset:auto;left:0;right:0;top:var(--ph-top);height:var(--ph-h)}
+.st-press.photo .credit{left:88px;right:auto;bottom:auto;top:calc(var(--ph-top) + var(--ph-h) + 12px);font-family:Arch;font-size:16px;letter-spacing:.04em;opacity:.75}
+.st-press.photo .body{justify-content:flex-end}
+.st-press.photo h1{margin-top:auto}
+"""
+STORY_CSS += """
+.s{--ph-top:330px;--ph-h:900px}
+.st-signal h1{font-size:150px!important}.st-signal.photo h1{font-size:126px!important}
+.st-journal h2,.st-press h2{font-size:96px}.st-soft h2{font-size:88px}.st-journal h1,.st-press h1{font-size:124px}
 """
 
 if __name__ == "__main__":

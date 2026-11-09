@@ -1,6 +1,6 @@
 # Nexulabs Instagram — daily posting playbook
 
-> **Design update (Lee, 8 Nov 2026):** Lee said the posts looked "very AI generated" and chose the flat **product** style, built around real UI screens (see "Design direction" below). This replaces any instruction elsewhere, including in the scheduled task prompts, to use colourful gradient styles (aurora, neon, spectrum, glass), palettes or patterns. Use `"style": "product"` for every feed post, Reel, Story and LinkedIn image. In the logs, record `theme` and `screen` instead of `palette` and `pattern`.
+> **Design update (Lee, 9 Nov 2026):** No gradient styles (Lee, 8 Nov: posts looked "very AI generated"). Everything also looked the same (Lee, 9 Nov), so posts, Reels, Stories and LinkedIn now rotate through **five looks**: `product`, `journal`, `signal`, `soft` and `press`, each with its own fonts, colours and layout. See "Design direction: five looks" for the rotation rules. Photos must literally show the post's subject; see "Photos from the library". This replaces any older instruction, including in the scheduled tasks, to use only `"style": "product"`.
 
 > **Publishing update (Lee, 8 Nov 2026):** Zapier's task allowance ran out, so publishing moves to **GitHub Actions** (free, no task limits). See "Publishing via GitHub Actions" below. This replaces the Zapier publishing steps in the scheduled task prompts (Instagram `publish_media_v2` / `publish_video`, Facebook `page_stream` / `page_video`, Stories via "Make API Mutating Request", permalink lookups via "Make API GET Request"). Use Zapier only as the fallback described there. LinkedIn still uses Zapier.
 
@@ -220,55 +220,63 @@ Lee asked us to post like the big web design and CRM companies (HubSpot, Salesfo
 - News: see "News desk" cadence (aim for one a day when a verified story passes, max two), never the same story twice.
 - No topic, headline or stat repeated within 30 days (that's about 90 posts, so keep ideas fresh).
 
-## Design direction: real product screens, no AI look (Lee, 8 Nov 2026)
-Lee: the posts were "looking very AI generated". He chose **direction B, real product screens**, from three samples (`design-samples/compare.jpg`). This replaces the colourful gradient styles from 6 Nov.
+## Design direction: five looks, real screens, no AI look (Lee, 8 and 9 Nov 2026)
+Lee, 8 Nov: the posts were "looking very AI generated". Lee, 9 Nov: *"you seem to use the same layout and design for every post. Normal posts, reels, stories all look the same, can you please mix this up, even the colours."*
 
 **Never use (they read as AI-generated):**
 - The gradient styles `aurora`, `neon`, `spectrum` and `glass`.
-- Mesh gradients, glowing orbs, rings, haze, frosted-glass panels and gradient-filled text.
-- Background patterns (contours, waves, dots, plus and the rest), grain and grid overlays.
-- Purple-to-pink colour blends.
+- Mesh gradients, glowing orbs, haze, frosted glass and gradient text.
+- Background patterns, grain and grid overlays.
+- Purple-to-pink blends.
+- Orange.
 
-`render.py` still has the old styles so older posts can be re-rendered. Don't use them for new posts.
+### The five looks
+Post-level `"style"` picks the look. Each look is its own design system, with its own typefaces, colours, layout and photo treatment. Every slide's `"theme"` must be one of that look's themes. See `design-samples/looks.jpg`.
 
-**Use `"style": "product"` for every new post, Story, Reel and LinkedIn image:**
-- **Flat colour backgrounds only.** Themes: `blue` (#3B2BFF), `ink`, `paper` and `lilac` (#E9E7FF). Colour comes from these flat fields and the UI itself, never from gradients.
-- **Show the thing we build.** The hero of most posts (the cover, or the single LinkedIn image) is a believable product screen, using the `screen` slide type:
-  - `table`: a CRM list, e.g. open quotes, enquiries or bookings, with status pills.
-  - `board`: a pipeline, from new to quoted to booked to done.
-  - `record`: a single enquiry or job, with an activity timeline.
-  - `phone`: a mobile website, with notes alongside.
-  - The existing `browser` slide gives a desktop website mockup.
-- **Mockups must be honest.** Use made-up UK businesses, people and jobs only. Use round, plausible prices, and fake phone numbers such as 0191 000 0000. The screen always carries a small caption such as "Example screen" or "Concept for a made-up business". Never show a real company, client, review count or result.
-- **Typography does the rest:** Geist, a big tight headline, plain-sentence labels (not uppercase mono kickers), one short sub-line, and lots of space. The accent colour goes on one word at most, and often none.
-- **Inside carousels:** after the screen cover, use the plain types (`list`, `compare`, `flow`, `stat`, `quote`, `cta`) in the product style. They render flat, with no glow, grain or pattern.
+| Look (`style`) | Character | Themes (use 2–3 per post) | Photo treatment | Best for |
+|---|---|---|---|---|
+| `product` | Geist, brand blue, real UI screens | `blue`, `ink`, `paper`, `lilac` | full bleed with a flat band (`shade`: blue / band) | CRM and web screens, how we build |
+| `journal` | editorial magazine: Fraunces serif, italic accent word, hairline rules, headline at the top | `cream`, `forest`, `stone` | inset photo with an italic caption underneath | guides, explainers, branding, design process |
+| `signal` | loud poster: Anton condensed capitals, thick frame, highlighted word, hard-shadow screens | `lemon`, `black`, `sky` | full bleed, headline set as yellow or black blocks | myths, "what not to do", this vs that, strong opinions |
+| `soft` | friendly, centred: Bricolage Grotesque, rounded cards, chunky offset shadows | `mint`, `navy`, `blush` | rounded, slightly tilted photo card | tips, checklists, quick wins, Stories |
+| `press` | newspaper: Newsreader serif, double rule masthead, red kicker, italic standfirst | `newsprint`, `night`, `red` | edge-to-edge photo with a caption line | tech news, "this week in tech", data and stats |
 
-**Variety without decoration.** Each post differs from the previous one in:
-- Background theme (blue, ink, paper, lilac).
-- Screen kind (table, board, record, phone, browser).
-- Layout: screen with headline, screen with notes, or a text-only stat or quote.
+### Rotation rules (enforced every run)
+- **No back-to-back looks.**
+  - A feed post never uses the same look as the previous feed post.
+  - A Story never uses the same look as the previous Story.
+  - The LinkedIn post never uses the same look as the previous LinkedIn post.
+- **Daily spread.** Across a day's 3 feed posts and 2 Stories, use at least 4 different looks, and no look more than twice.
+- **Mix the cover layout too.** Rotate between:
+  - headline cover
+  - photo cover
+  - screen cover
+  - big-number stat cover
+  - quote cover
+  - this-vs-that compare cover
 
-Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't repeat the same theme and screen kind two posts running.
-- Colour stays in the brand family: ink, paper, blue, lilac, plus the pill colours in the UI (blue, green, grey). No orange.
-- **Photos: regular, but only engaging ones (Lee, 8 Nov 2026: "I haven't seen a post using an image yet", then "You don't need to use a photo every time" and "Only use engaging photos").**
-  - Before building a feed post, check the last two feed posts in `log.json`.
-  - If neither used a library photo, this post should use one: a `photo` cover slide, or a photo scene in a Reel.
-  - The photo must be genuinely engaging and fit the topic. That means a strong subject, colour or story: North East landmarks, tools and trades, colour swatches, real shopfronts and counters, hands using a phone, planning walls.
-  - Never use a bland one just to tick the box. That rules out empty white rooms, blank walls, plain notepads and generic laptop-on-a-table shots.
-  - If no engaging photo fits, make a designed post instead and say so in the summary ("no engaging photo fitted").
-  - Prepare it with `photo.py prepare`, credit it on the slide and in the caption, and `retire` it after publishing. Log `"photo": "<file>"`.
-  - `photos/not-engaging/` holds photos judged too dull. `photo.py` won't list them and refuses to prepare them. When topping up the library, only add photos that pass this test.
-- Photo slides in the product style come in three looks:
-  - The default dark fade at the bottom.
-  - `"shade": "blue"`, which adds a flat brand-blue band.
-  - `"shade": "band"`, which adds a flat ink band.
-  Headline text sits in the bottom area. Stories can use photos too.
-- Readability check: phone-size text in the mockups must still be legible. If it isn't, cut rows or cards rather than shrinking the type.
+  Never use the same cover layout two posts running.
+- **Stay inside the look.** Within a post, alternate between that look's themes. Never mix another look's themes in.
+- **Log it.** Add `style`, `themes` and `cover` to `log.json`, `stories-log.json` and `linkedin-log.json`. Check the last 5 entries of each before choosing.
+
+### Content rules that apply in every look
+- **Show the thing we build.** Product screens (`screen` slide: table, board, record, phone; `browser` slide) work in every look. In `signal` they get a hard shadow, in `soft` rounded corners, and in `journal` and `press` square corners.
+- **Mockups must be honest.**
+  - Use made-up UK businesses, people and jobs only.
+  - Use round prices and fake phone numbers such as 0191 000 0000.
+  - Always add a caption such as "Example screen".
+  - Never show a real company, client, review count or result.
+- **One accent word at most per headline, often none.**
+  - In `journal` it turns italic.
+  - In `signal` it becomes a highlighted block.
+  - In `press` it turns red.
+- **Readability.** Phone-size text must stay legible. Cut rows or words rather than shrinking type.
+- **Photos follow "Photos from the library":** literal, on-point, and optional.
 
 ## Reels (Lee's request, 8 Nov 2026)
 - Build `posts/<id>/reel.json` and run `python3 reel.py posts/<id>/reel.json`, which gives `reel.mp4`, `cover.jpg` and `.reel-sheet.jpg`. Every slide type works as a scene; set `dur` per scene (2.5–4s). It takes 3–5 minutes to render.
 - Scene 1 is the hook: big text, under 10 words. Then 2–5 scenes that each make one point. The last scene is a payoff or CTA. On-screen text must be large and readable without sound.
-- Same design rules as posts: `"style": "product"`, flat themes, product screens; never the same theme and screen kind as the previous post. Photo scenes from the library are allowed (the no-reuse rule still applies).
+- Same design rules as posts: pick one of the five looks (never the previous feed post's look), and use that look's themes for every scene. Photo scenes only when a cleared photo literally shows the subject; no reuse.
 - Look at `.reel-sheet.jpg` before publishing. Fix anything cramped, clipped or hard to read.
 - The video has a silent audio track (trending audio can't be added through the API).
 - Publish: Instagram via Zapier `publish_video` (tool `instagram_for_business_publish_video`, `video` = raw URL of reel.mp4, `caption`, `instagramPageId` 17841471856846758). Facebook via `page_video` (tool `facebook_pages_create_page_video`, `page` 1484176674771345, `source` = raw URL, `description` = caption).
@@ -276,9 +284,9 @@ Log `style`, `theme` and `screen` in `log.json` / `linkedin-log.json`. Don't rep
 ## Stories (Lee's request, 8 Nov 2026)
 - Twice a day at 11:47am and 5:47pm, made by the separate "Nexulabs stories" scheduled task. Instagram only (the Facebook connection can't post stories).
 - **3–4 frames per Story run** (Lee, 8 Nov 2026, following the guidance: Dash Social's 2026 data found Stories do best at 30+ frames a week, about 4 a day; two runs of 3–4 frames gives roughly 6–8 a day). Build each run as a short sequence: frame 1 hooks, frames 2–3 make the point, the last frame lands it (answer, takeaway, or "see our latest post"). Made with `render.py` and `"format": "story"` (1080×1920). Every frame must earn its place: no filler frames to hit the count. Keep it casual and quick: a one-line tip, this-or-that, a myth vs fact, a "did you know" with a UK source, a peek at how we design (palette, wireframe, before/after concept), or a "new post" teaser for that day's feed post (say "see our latest post"; link stickers can't be added via the API).
-- Same brand, variety and "sound like a person" rules. Keep the top 250px and bottom 300px clear of important text.
+- Same brand, variety and "sound like a person" rules. Stories rotate the five looks too: never the same look as the previous Story or the feed post just before it (`soft` and `signal` suit Stories well). Keep the top 250px and bottom 300px clear of important text.
 - Publish each frame in order: POST `https://graph.facebook.com/v21.0/17841471856846758/media` with `media_type=STORIES` and `image_url=<raw URL>` (Zapier Instagram "Make API Mutating Request", querystring), wait until the container's `status_code` is FINISHED, then POST `.../17841471856846758/media_publish` with `creation_id=<id>`.
-- Log stories in `stories-log.json` (date, slot, theme, frames, media ids).
+- Log stories in `stories-log.json` (date, slot, style, themes, frames, media ids).
 
 ## Photos from the library (Lee's rules, updated 9 Nov 2026)
 Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names... the images you choose must be relevant to what you are posting about"* and *"we are a design company, so the images we choose have to be on point."*
@@ -329,7 +337,7 @@ Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names...
 Follow "Sound like a person" above. Roughly: an opening line that isn't a cliché, a couple of short paragraphs with the actual point, a light mention of what Nexulabs does (not every time), then 3–5 hashtags. Keep it under 120 words.
 
 ## Slide spec (post.json)
-See `render.py` docstring. Post-level `"style": "product"`. **`screen`** (the default hero): `title`, optional `sub`/`kicker`/`caption` (defaults to "Example screen"), and `screen` = `{kind: table, title, tabs, columns, col_class (mono/dim), rows, pills {label: blue|solid|green|grey|ink}, highlight [row idx]}` or `{kind: board, title, tabs, pills, lanes: [{name, cards: [[title, sub, pill, highlight?]]}]}` or `{kind: record, title, tabs, pills, fields: [[label, value]], timeline_title, timeline: [[time, text]], highlight}` or `{kind: phone, brand, headline, lede, button, button2, items: [[label, price]]}` with slide-level `notes: [[title, text]]`. Working example: `design-samples/test/post.json`. Other types: cover, stat, bars, hbars, list, quote, cta, compare (instead/try), browser (website mockup with numbered pins), palette (colour swatches), flow (numbered steps). `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
+See `render.py` docstring. Post-level `"style"` = one of the five looks, and slide `theme`s from that look. **`screen`** (the default hero): `title`, optional `sub`/`kicker`/`caption` (defaults to "Example screen"), and `screen` = `{kind: table, title, tabs, columns, col_class (mono/dim), rows, pills {label: blue|solid|green|grey|ink}, highlight [row idx]}` or `{kind: board, title, tabs, pills, lanes: [{name, cards: [[title, sub, pill, highlight?]]}]}` or `{kind: record, title, tabs, pills, fields: [[label, value]], timeline_title, timeline: [[time, text]], highlight}` or `{kind: phone, brand, headline, lede, button, button2, items: [[label, price]]}` with slide-level `notes: [[title, text]]`. Working example: `design-samples/test/post.json`. Other types: cover, stat, bars, hbars, list, quote, cta, compare (instead/try), browser (website mockup with numbered pins), palette (colour swatches), flow (numbered steps). `*word*` = accent. `\n` = line break. Optional: `size` for headline/number size, `glow`, `glow_low`, `highlight`, `unit`, `max`.
 
 ## Quality check before publishing
 - Render, then build a contact sheet and look at every slide: no text overflow, clipping, orphaned single words, overlapping elements, or awkward line breaks; numbers match the sources; the accent is used sparingly.
@@ -367,7 +375,7 @@ Workflow `.github/workflows/publish.yml` runs `publish.py`, which posts straight
 - Page: linkedin.com/company/nexulabs (organisation ID 146939776). Posted by the "Nexulabs LinkedIn" scheduled task, Tue/Wed/Thu mornings. 3 posts a week maximum.
 - Audience: business owners and managers deciding who to hire. Tone: same plain UK voice, slightly more businesslike than Instagram, no emoji. Never "small business(es)".
 - What to post: pick the strongest recent Instagram/Facebook post (from `log.json`, last 7 days, not yet used on LinkedIn), or a verified news item from `newsdesk.json`, and make a LinkedIn version:
-  - One image, 1080×1350, made with `render.py` as a single-slide post in `posts/linkedin/<YYYY-MM-DD>-<slug>/` that sums up the idea on its own (headline + 2–4 short points, or a stat with its source). Same brand and design rules: `"style": "product"`, usually a `screen` slide with the headline, the screen and a short sub-line.
+  - One image, 1080×1350, made with `render.py` as a single-slide post in `posts/linkedin/<YYYY-MM-DD>-<slug>/` that sums up the idea on its own (headline + 2–4 short points, or a stat with its source). Same brand and design rules: rotate the five looks (never the same as the previous LinkedIn post), often a `screen` slide with the headline, the screen and a short sub-line.
   - Caption 80–200 words: a first line that earns the "see more" click, the practical point, what to do, one light line about Nexulabs at most, then 3 hashtags at most (e.g. #webdesign #crm #northeastbusiness). Fact rules and `sources.md` apply exactly as for feed posts, including the independent fact-check.
   - LinkedIn's API treats some characters as formatting: escape parentheses as `\(` `\)` and avoid `@`, `[`, `]`, `{`, `}`, `<`, `>`, `#` except in the hashtags at the end.
 - Publish: Zapier LinkedIn `create_company_update` (tool `linkedin_create_company_update`), `company_id` = the Nexulabs page (resolve with inspect_zapier_actions if needed), `comment` = caption, `image_type` = `post_media`, `image` = raw URL of the image. If it fails with "Could not find entity", the Zapier connection is the problem: run `list_zapier_connections` for LinkedIn and pass the connection's numeric id (from `enable_zapier_action`'s `connection_id`, e.g. 67232197 for "Lee Wheatley #2", reconnected 8 Nov 2026) as `connection_id`. Log to `linkedin-log.json` (date, source post id, topic, image, style, theme, screen, response id).

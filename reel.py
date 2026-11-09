@@ -31,7 +31,9 @@ W, H = 1080, 1920
 REEL_CSS = """
 html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .scene{position:absolute;inset:0;opacity:0}
-.scene .s{width:1080px;height:1920px;padding:230px 88px 300px}
+.scene .s{width:1080px;height:1920px;padding:230px 88px 300px;--ph-top:330px;--ph-h:900px}
+.scene .st-signal h1{font-size:140px!important}.scene .st-signal.photo h1{font-size:120px!important}
+.scene .st-journal h2,.scene .st-press h2{font-size:92px}.scene .st-soft h2{font-size:86px}
 .scene .s .body{justify-content:flex-end}
 .scene h1{font-size:118px}
 .scene .cover h1,.scene .cta h1{font-size:122px}
@@ -60,7 +62,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 @keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 @keyframes growx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-.progress{position:absolute;left:88px;right:88px;top:150px;height:5px;border-radius:3px;background:rgba(255,255,255,.18);z-index:50;overflow:hidden}
+.progress{display:none}
 .progress i{position:absolute;inset:0;background:linear-gradient(90deg,#667DFF,#00D1FF);transform-origin:left;animation:bar VAR_TOTALs linear both}
 """
 
