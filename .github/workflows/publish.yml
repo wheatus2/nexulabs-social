@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames; comments = read recent comments (read-only)"
+        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames; comments = read recent comments (read-only); insights = last month's stats to reports/data (read-only)"
         required: true
         default: check
         type: choice
-        options: [check, post, story, comments]
+        options: [check, post, story, comments, insights]
       folder:
         description: "Post folder, e.g. posts/2026-11-08-1933-first-screen-on-a-phone (not needed for check)"
         required: false
@@ -21,6 +21,10 @@ on:
         description: "For post mode: instagram,facebook (default), instagram or facebook"
         required: false
         default: "instagram,facebook"
+      month:
+        description: "For insights mode: YYYY-MM (default: last calendar month)"
+        required: false
+        default: ""
       force:
         description: "Publish again even if published.json says it's already out"
         required: false
@@ -49,9 +53,11 @@ jobs:
           FOLDER: ${{ inputs.folder }}
           PLATFORMS: ${{ inputs.platforms }}
           FORCE: ${{ inputs.force }}
+          MONTH: ${{ inputs.month }}
         run: |
           set +e
           args=("$MODE")
+          if [ "$MODE" = "insights" ] && [ -n "$MONTH" ]; then args+=(--month "$MONTH"); fi
           if [ "$MODE" = "post" ] || [ "$MODE" = "story" ]; then args+=("$FOLDER" --platforms "$PLATFORMS"); fi
           if [ "$FORCE" = "true" ]; then args+=(--force); fi
           python3 publish.py "${args[@]}"
@@ -76,6 +82,21 @@ jobs:
             sleep 5
           done
           echo "Could not push published.json"; exit 1
+
+      - name: Save insights to the repo
+        if: inputs.mode == 'insights'
+        run: |
+          ls reports/data/*-insights.json >/dev/null 2>&1 || exit 0
+          git config user.name "nexulabs-publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports/data/
+          git diff --cached --quiet && exit 0
+          git commit -m "Monthly insights data"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          echo "Could not push insights"; exit 1
 
       - name: Result
         run: |
