@@ -17,7 +17,8 @@
    "title": "Pick a day\nand a time",
    "screen": {
     "kind": "shot",
-    "image": "shots/1-pick.jpg"
+    "image": "shots/1-pick.jpg",
+    "crop": 16.5
    },
    "notes": [
     [
@@ -38,7 +39,7 @@
    "screen": {
     "kind": "shot",
     "image": "shots/2-form.jpg",
-    "top": "80%"
+    "crop": 16.5
    },
    "notes": [
     [
@@ -55,10 +56,13 @@
   {
    "type": "screen",
    "theme": "lilac",
-   "title": "Booked, with\nan invite",
+   "title": "Booked,\nwith an\ninvite",
    "screen": {
     "kind": "shot",
-    "image": "shots/4-email.jpg"
+    "image": "shots/4-email.jpg",
+    "crop": 0,
+    "bar": "light",
+    "bar_bg": "#F2F2F2"
    },
    "notes": [
     [
@@ -78,7 +82,8 @@
    "title": "A few questions\nfirst",
    "screen": {
     "kind": "shot",
-    "image": "shots/5-questions.jpg"
+    "image": "shots/5-questions.jpg",
+    "crop": 16.5
    },
    "notes": [
     [
@@ -98,7 +103,8 @@
    "title": "And it lands\nwith *us*",
    "screen": {
     "kind": "shot",
-    "image": "shots/6-admin.jpg"
+    "image": "shots/6-admin.jpg",
+    "crop": 0
    },
    "notes": [
     [
