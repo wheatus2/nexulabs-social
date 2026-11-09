@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames"
+        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames; comments = read recent comments (read-only)"
         required: true
         default: check
         type: choice
-        options: [check, post, story]
+        options: [check, post, story, comments]
       folder:
         description: "Post folder, e.g. posts/2026-11-08-1933-first-screen-on-a-phone (not needed for check)"
         required: false
@@ -31,7 +31,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: publish-${{ inputs.folder || 'check' }}
+  group: publish-${{ inputs.folder || inputs.mode }}
   cancel-in-progress: false
 
 jobs:
@@ -52,7 +52,7 @@ jobs:
         run: |
           set +e
           args=("$MODE")
-          if [ "$MODE" != "check" ]; then args+=("$FOLDER" --platforms "$PLATFORMS"); fi
+          if [ "$MODE" = "post" ] || [ "$MODE" = "story" ]; then args+=("$FOLDER" --platforms "$PLATFORMS"); fi
           if [ "$FORCE" = "true" ]; then args+=(--force); fi
           python3 publish.py "${args[@]}"
           code=$?
@@ -60,7 +60,7 @@ jobs:
           exit 0
 
       - name: Save published.json to the repo
-        if: inputs.mode != 'check'
+        if: inputs.mode == 'post' || inputs.mode == 'story'
         env:
           FOLDER: ${{ inputs.folder }}
         run: |

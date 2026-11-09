@@ -8,10 +8,13 @@ Usage:
   python3 publish.py check
   python3 publish.py post  posts/<id>  [--platforms instagram,facebook] [--force]
   python3 publish.py story posts/stories/<id>  [--force]
+  python3 publish.py comments [--days 7]
 
 post   folder with reel.mp4      -> Instagram Reel + Facebook Page video
        folder with slide-NN.jpg  -> Instagram single image or carousel + Facebook Page photo post
 story  folder with slide-NN.jpg  -> one Instagram Story per frame, in order (Instagram only)
+comments  read-only: prints recent Instagram and Facebook Page comments as JSON between
+          ===COMMENTS-JSON=== markers, for the daily comments summary. Never replies or changes anything.
 
 Writes <folder>/published.json with media ids, permalinks and any errors. Already-published
 platforms are skipped unless --force, so a re-run never double-posts.
@@ -212,13 +215,58 @@ def check():
     return out
 
 
+def comments(days=7):
+    """Read-only. Recent comments on Nexulabs' Instagram posts and Facebook Page posts."""
+    since = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)
+    out = {"since": since.isoformat(timespec="seconds"), "instagram": [], "facebook": [], "errors": {}}
+    try:
+        media = call("GET", f"{IG_USER}/media", {"fields": "id,caption,permalink,timestamp,comments_count", "limit": 30})
+        for m in media.get("data", []):
+            if not m.get("comments_count"):
+                continue
+            cs = call("GET", f"{m['id']}/comments",
+                      {"fields": "id,text,username,timestamp,replies{text,username}", "limit": 50})
+            out["instagram"].append({"media": m["id"], "permalink": m.get("permalink"),
+                                     "caption": (m.get("caption") or "")[:120], "timestamp": m.get("timestamp"),
+                                     "comments": cs.get("data", [])})
+    except GraphError as e:
+        out["errors"]["instagram"] = str(e)
+    try:
+        posts = call("GET", f"{FB_PAGE}/posts", {
+            "fields": "id,message,permalink_url,created_time,"
+                      "comments.limit(50){id,message,from,created_time,comments{message,from}}",
+            "since": int(since.timestamp()), "limit": 50})
+        for po in posts.get("data", []):
+            cs = (po.get("comments") or {}).get("data", [])
+            if cs:
+                out["facebook"].append({"post": po["id"], "permalink": po.get("permalink_url"),
+                                        "message": (po.get("message") or "")[:120],
+                                        "created_time": po.get("created_time"), "comments": cs})
+    except GraphError as e:
+        out["errors"]["facebook"] = str(e)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["check", "post", "story"])
+    ap.add_argument("mode", choices=["check", "post", "story", "comments"])
     ap.add_argument("folder", nargs="?")
     ap.add_argument("--platforms", default="instagram,facebook")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--days", type=int, default=7)
     a = ap.parse_args()
+
+    if a.mode == "comments":
+        try:
+            token()
+        except GraphError as e:
+            print(json.dumps({"ok": False, "error": str(e)}))
+            return 1
+        res = comments(a.days)
+        print("===COMMENTS-JSON===")
+        print(json.dumps(res, ensure_ascii=False))
+        print("===END-COMMENTS-JSON===", flush=True)
+        return 1 if len(res["errors"]) == 2 else 0
 
     if a.mode == "check":
         try:
