@@ -48,6 +48,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .scene .st h3{font-size:56px}.scene .st p{font-size:30px}
 .scene .row .lab{font-size:34px}.scene .row .lab b{font-size:42px}
 .scene .legend div{font-size:32px}.scene .ctabox .r{font-size:48px}
+.scene .screen h2{font-size:100px}.scene .screen p.lead{font-size:38px}.scene .win table{font-size:28px}
+.scene .win .wbar b{font-size:32px}.scene .win .tabs{font-size:22px}.scene .win .rec .f small{font-size:22px}.scene .win .rec .f span{font-size:34px}.scene .win .rec .f span .pill{font-size:24px}.scene .win .rec .tl h5{font-size:21px}.scene .win .rec .ev{font-size:30px;padding:20px 0}.scene .win .rec .ev i{font-size:20px;min-width:118px;white-space:nowrap}
 .scene .fx{animation:drift VAR_TOTALs linear both}
 .scene .pat svg{animation:patdrift VAR_TOTALs linear both}
 @keyframes drift{from{transform:scale(1.08) translate(-20px,10px)}to{transform:scale(1.18) translate(30px,-40px)}}

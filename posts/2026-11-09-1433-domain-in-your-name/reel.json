@@ -1,0 +1,79 @@
+{
+ "id": "2026-11-09-1433-domain-in-your-name",
+ "series": "Domain names",
+ "style": "product",
+ "scenes": [
+  {
+   "type": "photo",
+   "image": "photo.jpg",
+   "credit": "Photo: Phil Hearing on Unsplash",
+   "shade": "blue",
+   "theme": "blue",
+   "focus": "50% 40%",
+   "headline": "Your domain name\nmight not be in\n*your* name.",
+   "size": 112,
+   "dur": 3.4
+  },
+  {
+   "type": "screen",
+   "theme": "lilac",
+   "title": "Whose name is\non the record?",
+   "sub": "If a web designer or IT firm set it up for you, it's worth a look.",
+   "screen": {
+    "kind": "record",
+    "title": "yourbusiness.co.uk",
+    "tabs": ["Details", "History"],
+    "pills": {"Not you": "solid"},
+    "fields": [
+     ["Registrant", "Your web designer"],
+     ["Contact email", "Theirs, not yours"],
+     ["Owner check", "Not you"]
+    ],
+    "timeline_title": "What that means",
+    "timeline": [
+     ["Renewals", "Go to their inbox"],
+     ["Transfer", "Usually needs them"],
+     ["Email", "Not in your control"]
+    ],
+    "highlight": [1]
+   },
+   "caption": "Example screen.",
+   "dur": 5.0
+  },
+  {
+   "type": "compare",
+   "theme": "paper",
+   "title": "How it should\nbe set up",
+   "instead": [
+    "In your designer's name",
+    "With their email on it."
+   ],
+   "try": [
+    "In your business's name",
+    "With an email you'll always have."
+   ],
+   "dur": 4.4
+  },
+  {
+   "type": "flow",
+   "theme": "blue",
+   "title": "Check yours\nin five minutes",
+   "steps": [
+    ["Look up your .uk domain", "Nominet's lookup shows the registrar."],
+    ["Log in to that registrar", "Or ask whoever set it up."],
+    ["Check the registrant name", "Your business, spelled right."],
+    ["Not you?", "Ask for a registrant transfer."]
+   ],
+   "highlight": [2],
+   "dur": 5.0
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "headline": "Your business.\nYour *domain*.",
+   "cta_label": "Websites, domains and CRMs",
+   "cta": "nexulabs.co.uk",
+   "dur": 3.0
+  }
+ ]
+}
