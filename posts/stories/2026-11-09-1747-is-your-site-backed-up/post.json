@@ -1,0 +1,98 @@
+{
+  "format": "story",
+  "series": "Hosting tips",
+  "style": "product",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "ink",
+      "headline": "Is your website *backed up*?",
+      "sub": "You probably think your host has it covered. Worth checking before the day you need it."
+    },
+    {
+      "type": "list",
+      "theme": "paper",
+      "title": "Ask your host three things",
+      "items": [
+        [
+          "How often?",
+          "Every day, or once a week?"
+        ],
+        [
+          "How far back?",
+          "If something broke a fortnight ago, can you still go back to before it?"
+        ],
+        [
+          "Who puts it back?",
+          "Can you restore it yourself, or do you raise a ticket and wait?"
+        ]
+      ]
+    },
+    {
+      "type": "screen",
+      "theme": "lilac",
+      "title": "What good looks like",
+      "sub": "A copy every night, kept for weeks, and easy to put back.",
+      "screen": {
+        "kind": "table",
+        "title": "Backups",
+        "tabs": [
+          "Daily",
+          "Weekly",
+          "Restore"
+        ],
+        "columns": [
+          "Taken",
+          "Includes",
+          "Kept",
+          "Status"
+        ],
+        "col_class": [
+          "",
+          "",
+          "dim",
+          ""
+        ],
+        "rows": [
+          [
+            "Mon 9 Nov",
+            "Files + database",
+            "30 days",
+            "Complete"
+          ],
+          [
+            "Sun 8 Nov",
+            "Files + database",
+            "30 days",
+            "Complete"
+          ],
+          [
+            "Sat 7 Nov",
+            "Files + database",
+            "30 days",
+            "Complete"
+          ],
+          [
+            "Fri 6 Nov",
+            "Files + database",
+            "30 days",
+            "Complete"
+          ]
+        ],
+        "pills": {
+          "Complete": "green"
+        },
+        "highlight": [
+          0
+        ]
+      },
+      "caption": "Example screen"
+    },
+    {
+      "type": "cover",
+      "theme": "blue",
+      "headline": "Keep one copy *somewhere else* too.",
+      "sub": "If the only backup sits on the same server as your website, one problem can take out both."
+    }
+  ]
+}
