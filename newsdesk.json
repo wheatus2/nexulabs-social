@@ -188,6 +188,13 @@
       "headline": "9 Nov 14:33 scan: searches of Google Search Central, ICO, UK tech news, Nominet and Meta/WhatsApp Business returned nothing new, dated in the last 7 days and qualifying. One news post already published today (NCSC), so evergreen post from the rotation (domain names).",
       "status": "rejected",
       "reason": "Scan note, not a story. Watch: The UK Domain says Nominet Online Services stops managing .uk domains directly from 9 Feb 2027 (theukdomain.uk/uk-standardisation); announcement date not confirmed, so not used as news."
+    },
+    {
+      "id": "2026-11-09-1933-scan",
+      "found": "2026-11-09",
+      "headline": "9 Nov 19:33 scan: searches of Google Search Central blog, ICO/UK cookie news, Meta/WhatsApp Business and Search Engine Roundtable (Google Business Profile) returned nothing new, dated in the last 7 days and qualifying. One news post already today (NCSC), so evergreen web design Reel (contact forms).",
+      "status": "rejected",
+      "reason": "Scan note, not a story."
     }
   ]
 }

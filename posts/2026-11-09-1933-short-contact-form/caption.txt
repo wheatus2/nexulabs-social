@@ -1,0 +1,11 @@
+Plenty of contact forms ask for more than they need.
+
+Company name, budget, full address, how did you find us. Google's web.dev guide to address and payment forms is blunt: don't ask for data you don't need. For a first enquiry, a name, a way to reply and what they're after is usually enough.
+
+Then make it easy on a phone. Put a label above each box, as grey hint text vanishes once you type. Set the phone field as a phone number so the keypad comes up, and switch autocomplete on.
+
+Tonight, try your own form on your phone.
+
+The form in the video is an example screen for a made-up business.
+
+#webdesign #contactform #businesswebsite #northeastbusiness

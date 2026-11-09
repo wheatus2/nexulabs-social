@@ -1,0 +1,105 @@
+{
+ "id": "2026-11-09-1933-short-contact-form",
+ "series": "Web design",
+ "style": "signal",
+ "scenes": [
+  {
+   "type": "cover",
+   "theme": "lemon",
+   "headline": "Your contact\nform asks for\n*too much*.",
+   "sub": "Three quick fixes.",
+   "dur": 3.2
+  },
+  {
+   "type": "compare",
+   "theme": "black",
+   "title": "Cut it back",
+   "instead": [
+    "Ten boxes before they can say hello",
+    "Company, budget, address, how did you find us."
+   ],
+   "try": [
+    "Three boxes",
+    "Name, phone or email, what you need."
+   ],
+   "dur": 4.4,
+   "title_size": 130
+  },
+  {
+   "type": "screen",
+   "theme": "sky",
+   "title": "Then make it\neasy on a phone",
+   "screen": {
+    "kind": "phone",
+    "brand": "Example Plumbing Co.",
+    "headline": "Get a quote",
+    "lede": "We'll reply the same day.",
+    "items": [
+     [
+      "Name",
+      "Jo Smith"
+     ],
+     [
+      "Phone",
+      "0191 498 0000"
+     ],
+     [
+      "What do you need?",
+      "Leaking tap"
+     ]
+    ],
+    "button": "Send",
+    "button_after": true,
+    "form": true
+   },
+   "notes": [
+    [
+     "Labels above the boxes",
+     "Grey hint text vanishes once you type."
+    ],
+    [
+     "A proper phone field",
+     "It opens the number keypad."
+    ],
+    [
+     "Autocomplete on",
+     "The browser can fill in saved details."
+    ]
+   ],
+   "caption": "Example screen for a made-up business.",
+   "dur": 5.0
+  },
+  {
+   "type": "flow",
+   "theme": "lemon",
+   "title": "Test yours\ntonight",
+   "steps": [
+    [
+     "Open your site on your phone",
+     "Not on the office computer."
+    ],
+    [
+     "Fill in your own form",
+     "Count the boxes. Watch the keyboard."
+    ],
+    [
+     "Send it",
+     "Check where it lands, and how fast."
+    ]
+   ],
+   "highlight": [
+    1
+   ],
+   "dur": 4.4,
+   "title_size": 130
+  },
+  {
+   "type": "cta",
+   "theme": "black",
+   "headline": "Make it easy\nto get in *touch*.",
+   "cta_label": "Websites and CRMs",
+   "cta": "nexulabs.co.uk",
+   "dur": 3.0
+  }
+ ]
+}
