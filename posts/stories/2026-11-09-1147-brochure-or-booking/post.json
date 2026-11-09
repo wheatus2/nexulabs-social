@@ -1,0 +1,96 @@
+{
+  "format": "story",
+  "series": "This or that",
+  "style": "product",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "ink",
+      "headline": "Brochure site or *booking* site?",
+      "sub": "They do different jobs. Which one fits your business?"
+    },
+    {
+      "type": "screen",
+      "theme": "paper",
+      "title": "The brochure site",
+      "sub": "Shows what you do and gets people to call or ask for a quote.",
+      "screen": {
+        "kind": "phone",
+        "brand": "Ridley Joinery",
+        "headline": "Fitted wardrobes and kitchens in Durham",
+        "lede": "Made to measure, fitted by us.",
+        "button": "Call 0191 000 0000",
+        "button2": "Ask for a quote",
+        "items": [
+          [
+            "Our work",
+            "Photos"
+          ],
+          [
+            "Areas we cover",
+            "Durham"
+          ],
+          [
+            "About us",
+            ""
+          ]
+        ]
+      },
+      "notes": [
+        [
+          "Suits",
+          "Jobs that need a chat, a visit or a quote before anyone agrees a price."
+        ],
+        [
+          "The goal",
+          "A phone call or an enquiry form."
+        ]
+      ],
+      "caption": "Example screen for a made-up business."
+    },
+    {
+      "type": "screen",
+      "theme": "lilac",
+      "title": "The booking site",
+      "sub": "Customers pick a service and a time slot themselves.",
+      "screen": {
+        "kind": "phone",
+        "brand": "Fern Hair Studio",
+        "headline": "Book your next appointment",
+        "lede": "Choose a service, then a time.",
+        "items": [
+          [
+            "Cut and finish",
+            "45 min"
+          ],
+          [
+            "Colour",
+            "2 hrs"
+          ],
+          [
+            "Beard trim",
+            "20 min"
+          ]
+        ],
+        "button": "Pick a time"
+      },
+      "notes": [
+        [
+          "Suits",
+          "Set services with a set length and price."
+        ],
+        [
+          "The goal",
+          "A booking in the diary, without a phone call."
+        ]
+      ],
+      "caption": "Example screen for a made-up business."
+    },
+    {
+      "type": "quote",
+      "theme": "blue",
+      "text": "Think about how customers book you now.",
+      "sub": "If it starts with a phone call, go brochure. If they ask what times you've got, go booking."
+    }
+  ]
+}
