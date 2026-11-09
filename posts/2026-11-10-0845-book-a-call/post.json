@@ -1,0 +1,125 @@
+{
+ "id": "2026-11-10-0845-book-a-call",
+ "series": "New on our site",
+ "style": "product",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "blue",
+   "kicker": "New on nexulabs.co.uk",
+   "headline": "You can now book\na call *on our site*.",
+   "sub": "Pick a time, choose phone or video, and answer a few questions before we talk.",
+   "size": 104
+  },
+  {
+   "type": "screen",
+   "theme": "paper",
+   "title": "Pick a day\nand a time",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/1-pick.jpg"
+   },
+   "notes": [
+    [
+     "Free times only",
+     "Days with space, then the times left that day."
+    ],
+    [
+     "30 minutes",
+     "Weekday evenings, UK time."
+    ]
+   ],
+   "caption": "Real screen from nexulabs.co.uk, with a made-up booking"
+  },
+  {
+   "type": "screen",
+   "theme": "ink",
+   "title": "Phone or\n*video*",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/2-form.jpg",
+    "top": "80%"
+   },
+   "notes": [
+    [
+     "Your choice",
+     "We ring you, or you pick Teams, Google Meet or Zoom."
+    ],
+    [
+     "A few details",
+     "Name, email and what it's about."
+    ]
+   ],
+   "caption": "Real screen from nexulabs.co.uk, with a made-up booking"
+  },
+  {
+   "type": "screen",
+   "theme": "lilac",
+   "title": "Booked, with\nan invite",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/4-email.jpg"
+   },
+   "notes": [
+    [
+     "In your inbox",
+     "A confirmation with a calendar invite."
+    ],
+    [
+     "Plans change",
+     "Cancel from the email and pick another time."
+    ]
+   ],
+   "caption": "Real email, with a made-up booking"
+  },
+  {
+   "type": "screen",
+   "theme": "paper",
+   "title": "A few questions\nfirst",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/5-questions.jpg"
+   },
+   "notes": [
+    [
+     "Before the call",
+     "What your business does and what you need."
+    ],
+    [
+     "Rough is fine",
+     "We go through your answers together."
+    ]
+   ],
+   "caption": "Real screen from nexulabs.co.uk, with a made-up booking"
+  },
+  {
+   "type": "screen",
+   "theme": "ink",
+   "title": "And it lands\nwith *us*",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/6-admin.jpg"
+   },
+   "notes": [
+    [
+     "Our calls",
+     "Each booking with its answers, ready for the call."
+    ],
+    [
+     "On our phones",
+     "A notification for every new call."
+    ]
+   ],
+   "caption": "Our real booking admin, with a made-up booking"
+  },
+  {
+   "type": "cta",
+   "theme": "blue",
+   "headline": "Book a call",
+   "body": "About a website, a CRM system or your brand. 30 minutes, by phone or video.",
+   "cta_label": "Pick a time",
+   "cta": "nexulabs.co.uk/book",
+   "size": 120
+  }
+ ]
+}
