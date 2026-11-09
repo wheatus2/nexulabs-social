@@ -10,7 +10,7 @@ The token is a password. Never paste it into a file, a commit, a chat or a post.
 2. **Open the Graph API Explorer**: https://developers.facebook.com/tools/explorer/
    - **Meta App**: `Nexulabs Publisher`.
    - **User or Page**: `Get User Access Token`.
-   - **Permissions**: add `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`, `instagram_basic`, `instagram_content_publish`, `business_management`, plus `instagram_manage_comments` and `pages_read_user_content` so the daily comments summary can read comments.
+   - **Permissions**: add `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`, `instagram_basic`, `instagram_content_publish`, `business_management`, plus `instagram_manage_comments` and `pages_read_user_content` (so the daily comments summary can read comments) and `instagram_manage_insights` and `read_insights` (so the monthly review can read reach, views, saves and shares).
    - Click **Generate Access Token**. In the pop-up, choose the **Nexulabs** Page and the **Nexulabs Instagram** account and allow everything listed.
 3. **Make it long-lived.** Click the blue **i** next to the token, then **Open in Access Token Tool**. At the bottom, click **Extend Access Token** and copy the new (long-lived) user token.
 4. **Get the Page token.** Back in the Explorer, paste the long-lived token into the Access Token box, then run `GET me/accounts`. Find the entry with id `1484176674771345` (Nexulabs) and copy its `access_token`.

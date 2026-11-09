@@ -341,6 +341,7 @@ def insights(month=None):
                 ig["posts"].append({"media_id": m["id"], "type": m.get("media_product_type") or m.get("media_type"),
                                     "media_type": m.get("media_type"), "permalink": m.get("permalink"),
                                     "timestamp": m["timestamp"], "caption": (m.get("caption") or "")[:100],
+                                    "like_count": m.get("like_count"), "comments_count": m.get("comments_count"),
                                     "insights": vals, **({"insight_errors": errs} if errs else {})})
             nxt = (r.get("paging") or {}).get("next")
             if nxt:  # the next URL already has every parameter; strip host + token, keep the rest

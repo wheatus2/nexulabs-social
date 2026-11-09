@@ -406,6 +406,7 @@ The "Nexulabs comments summary" task runs daily at about 6:20pm. It never replie
 
 ## Monthly review (Lee, 8 Nov 2026)
 On the 1st of each month the "Nexulabs monthly review" task pulls the last month's results and writes `reports/YYYY-MM.md`:
+- Numbers come from GitHub Actions, not Zapier (Lee, 9 Nov 2026): run `publish.yml` with `mode: insights` (optional `month: YYYY-MM`). It runs `publish.py insights` (read-only) and commits `reports/data/YYYY-MM-insights.json` with the Instagram account totals, every post's insights (plus like and comment counts) and Facebook Page stats, and an `errors` block for anything Meta refused. Reach/views/saves/shares need the token permissions `instagram_manage_insights` and `read_insights` (SETUP-META.md step 2).
 - Instagram account insights (reach, profile views, follower change, website taps) and per-post insights (reach, saves, shares, likes, comments; plays and average watch time for Reels), Facebook Page insights where available, LinkedIn page stats if connected.
 - What worked and what didn't, by format (carousel / Reel / single / Story), category, angle, style, time slot and news vs evergreen, with the actual numbers.
 - Changes: it may adjust the weighting of formats, categories, angles and styles in this playbook, and move a slot by up to an hour, when the numbers clearly support it. It must not change Lee's own rules (posting volume, topics, wording, brand, fact-checking, no-reuse) without asking him. Every change is listed in the report and committed with a clear message.
