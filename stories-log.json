@@ -1,105 +1,139 @@
 [
-  {
-    "date": "2026-11-08",
-    "slot": "11:47 (catch-up)",
-    "published_at": "about 12:18 UK",
-    "id": "stories/2026-11-08-1214-who-owns-your-domain",
-    "type": "myth vs fact",
-    "category": "Domain names",
-    "topic": "Who owns your .uk domain (registrant = owner, designer-registered domains) and Nominet reminders going to the registrant's email; day 30 suspension / day 90 release; checklist",
-    "news_story_id": null,
-    "style": "neon",
-    "palette": "ultraviolet",
-    "pattern": "contours",
-    "frames": 4,
-    "slide_types": [
-      "cover",
-      "compare",
-      "compare",
-      "flow"
-    ],
-    "sources": [
-      "https://theukdomain.uk/uk-standardisation/",
-      "https://registrars.nominet.uk/uk-namespace/registration-and-domain-management/renewals/uk-renewal-reminder/",
-      "https://theukdomain.uk/wp-content/uploads/2022/05/UKD04001_.UK-Domain-Lifecycle_UKD2-2.pdf"
-    ],
-    "fact_check": "self-check pass",
-    "media_ids": [
-      "18114659936585524",
-      "18646356670053257",
-      "17897094996615013",
-      "18188496037419732"
-    ],
-    "status": "published",
-    "note": "A second catch-up fire for the 11:47 slot arrived at 12:19 after this story was live; no duplicate story was published."
-  },
-  {
-    "date": "2026-11-08",
-    "slot": "17:47",
-    "published_at": "about 17:58 UK",
-    "id": "stories/2026-11-08-1747-one-page-per-enquiry",
-    "type": "peek at how we build",
-    "category": "CRM",
-    "topic": "Every enquiry on one page: an example CRM enquiry record (who, what they want, next step with a date); scattered inbox/notebook means things slip",
-    "news_story_id": null,
-    "style": "product",
-    "theme": [
-      "blue",
-      "paper",
-      "ink",
-      "lilac"
-    ],
-    "screen": "record",
-    "frames": 4,
-    "slide_types": [
-      "cover",
-      "screen",
-      "list",
-      "quote"
-    ],
-    "sources": [],
-    "fact_check": "self-check pass (no factual claims)",
-    "media_ids": [
-      "17995404405059281",
-      "18649989922047819",
-      "18133772404768388",
-      "18402688477205327"
-    ],
-    "status": "published",
-    "note": "Planned 'tech news in 15 seconds' on the NCSC Annual Review 2026 was dropped because web fetching wasn't available this run; story stays verified-unused."
-  },
-  {
-    "date": "2026-11-09",
-    "slot": "11:47",
-    "published_at": "about 11:50 UK",
-    "id": "stories/2026-11-09-1147-brochure-or-booking",
-    "type": "this or that",
-    "category": "Websites + CRM (types of website)",
-    "topic": "Brochure site or booking site: brochure suits jobs needing a chat/visit/quote (goal: call or enquiry), booking suits set services with set length and price (goal: booking without a call); decide by how customers book you now",
-    "news_story_id": null,
-    "style": "product",
-    "theme": [
-      "ink",
-      "paper",
-      "lilac",
-      "blue"
-    ],
-    "screen": "phone",
-    "frames": 4,
-    "slide_types": [
-      "cover",
-      "screen",
-      "screen",
-      "quote"
-    ],
-    "sources": [],
-    "fact_check": "self-check pass (no factual claims)",
-    "media_ids": [
-      "18076184129495438",
-      "18126474128303273",
-      "18121594369758182",
-      "17889859059486592"
-    ],
-    "published_via": "github-actions"
-  }
+ {
+  "date": "2026-11-08",
+  "slot": "11:47 (catch-up)",
+  "published_at": "about 12:18 UK",
+  "id": "stories/2026-11-08-1214-who-owns-your-domain",
+  "type": "myth vs fact",
+  "category": "Domain names",
+  "topic": "Who owns your .uk domain (registrant = owner, designer-registered domains) and Nominet reminders going to the registrant's email; day 30 suspension / day 90 release; checklist",
+  "news_story_id": null,
+  "style": "neon",
+  "palette": "ultraviolet",
+  "pattern": "contours",
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "compare",
+   "compare",
+   "flow"
+  ],
+  "sources": [
+   "https://theukdomain.uk/uk-standardisation/",
+   "https://registrars.nominet.uk/uk-namespace/registration-and-domain-management/renewals/uk-renewal-reminder/",
+   "https://theukdomain.uk/wp-content/uploads/2022/05/UKD04001_.UK-Domain-Lifecycle_UKD2-2.pdf"
+  ],
+  "fact_check": "self-check pass",
+  "media_ids": [
+   "18114659936585524",
+   "18646356670053257",
+   "17897094996615013",
+   "18188496037419732"
+  ],
+  "status": "published",
+  "note": "A second catch-up fire for the 11:47 slot arrived at 12:19 after this story was live; no duplicate story was published."
+ },
+ {
+  "date": "2026-11-08",
+  "slot": "17:47",
+  "published_at": "about 17:58 UK",
+  "id": "stories/2026-11-08-1747-one-page-per-enquiry",
+  "type": "peek at how we build",
+  "category": "CRM",
+  "topic": "Every enquiry on one page: an example CRM enquiry record (who, what they want, next step with a date); scattered inbox/notebook means things slip",
+  "news_story_id": null,
+  "style": "product",
+  "theme": [
+   "blue",
+   "paper",
+   "ink",
+   "lilac"
+  ],
+  "screen": "record",
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "screen",
+   "list",
+   "quote"
+  ],
+  "sources": [],
+  "fact_check": "self-check pass (no factual claims)",
+  "media_ids": [
+   "17995404405059281",
+   "18649989922047819",
+   "18133772404768388",
+   "18402688477205327"
+  ],
+  "status": "published",
+  "note": "Planned 'tech news in 15 seconds' on the NCSC Annual Review 2026 was dropped because web fetching wasn't available this run; story stays verified-unused."
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "11:47",
+  "published_at": "about 11:50 UK",
+  "id": "stories/2026-11-09-1147-brochure-or-booking",
+  "type": "this or that",
+  "category": "Websites + CRM (types of website)",
+  "topic": "Brochure site or booking site: brochure suits jobs needing a chat/visit/quote (goal: call or enquiry), booking suits set services with set length and price (goal: booking without a call); decide by how customers book you now",
+  "news_story_id": null,
+  "style": "product",
+  "theme": [
+   "ink",
+   "paper",
+   "lilac",
+   "blue"
+  ],
+  "screen": "phone",
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "screen",
+   "screen",
+   "quote"
+  ],
+  "sources": [],
+  "fact_check": "self-check pass (no factual claims)",
+  "media_ids": [
+   "18076184129495438",
+   "18126474128303273",
+   "18121594369758182",
+   "17889859059486592"
+  ],
+  "published_via": "github-actions"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "17:47",
+  "published_at": "about 17:56 UK",
+  "id": "stories/2026-11-09-1747-is-your-site-backed-up",
+  "type": "quick tip series",
+  "category": "Hosting",
+  "topic": "Is your website backed up: ask your host how often, how far back and who restores it; example backups screen; keep one copy away from the server",
+  "news_story_id": null,
+  "style": "product",
+  "theme": [
+   "ink",
+   "paper",
+   "lilac",
+   "blue"
+  ],
+  "screen": "table",
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "list",
+   "screen",
+   "cover"
+  ],
+  "sources": [],
+  "fact_check": "self-check pass (no factual claims; NCSC page could not be fetched, so nothing attributed)",
+  "media_ids": [
+   "18355240798269307",
+   "18120467363084325",
+   "17985520022906305",
+   "18022734077729216"
+  ],
+  "published_via": "github-actions"
+ }
 ]
