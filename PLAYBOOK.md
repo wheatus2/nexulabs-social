@@ -288,6 +288,25 @@ Post-level `"style"` picks the look. Each look is its own design system, with it
 - Publish each frame in order: POST `https://graph.facebook.com/v21.0/17841471856846758/media` with `media_type=STORIES` and `image_url=<raw URL>` (Zapier Instagram "Make API Mutating Request", querystring), wait until the container's `status_code` is FINISHED, then POST `.../17841471856846758/media_publish` with `creation_id=<id>`.
 - Log stories in `stories-log.json` (date, slot, style, themes, frames, media ids).
 
+## Highlight covers (Lee, 9 Nov 2026)
+Lee: *"the highlight cover doesn't fit the circle, please can you choose something circle."*
+- **The covers.** `brand/highlight-covers/` holds one cover per highlight, made by `brand/highlight_covers.py`. Each is a flat ink background with a white line icon and a blue accent, matching the profile picture. The icon sits inside the centre 380px of a 1080×1920 frame, so it survives Instagram's circle crop. The highlight name sits low in the frame, outside the circle. `preview.jpg` shows them as profile circles.
+
+  | Highlight | Cover file |
+  |---|---|
+  | Websites | `websites` |
+  | CRM | `crm` |
+  | Web + CRM | `web-crm` |
+  | Branding | `branding` |
+  | Domains | `domains` |
+  | Hosting | `hosting` |
+  | AI & automation | `ai-automation` |
+  | Tech news | `tech-news` |
+
+- **Why covers go out as a Story.** Instagram on the web can only pick a cover from Stories already in the highlight. So the first time a highlight is needed, its cover is published once as a one-frame Story from `posts/stories/<date>-highlight-cover-<slug>/slide-01.jpg`. The weekly Highlights run then adds that frame to the front of the highlight and picks it as the cover.
+- **Never use a content frame as a cover.** Text gets cropped in the circle.
+- **Phone alternative.** The `-square.jpg` versions are for uploading from a phone's camera roll ("Edit highlight" → "Edit cover").
+
 ## Photos from the library (Lee's rules, updated 9 Nov 2026)
 Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names... the images you choose must be relevant to what you are posting about"* and *"we are a design company, so the images we choose have to be on point."*
 
