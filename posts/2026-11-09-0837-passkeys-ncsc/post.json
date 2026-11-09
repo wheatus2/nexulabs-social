@@ -1,0 +1,128 @@
+{
+ "id": "2026-11-09-0837-passkeys-ncsc",
+ "series": "News",
+ "style": "product",
+ "slides": [
+  {
+   "type": "photo",
+   "image": "photo.jpg",
+   "credit": "Photo: Flyd on Unsplash",
+   "shade": "band",
+   "headline": "Still logging in\nwith just a *password*?",
+   "sub": "The UK's National Cyber Security Centre wants that to change. Its annual review came out last week.",
+   "size": 92,
+   "theme": "ink"
+  },
+  {
+   "type": "stat",
+   "theme": "ink",
+   "value": "1,831",
+   "statement": "reports of cyber attacks reached the NCSC in a year.",
+   "detail": "337 needed its support. 80 were nationally significant.",
+   "size": 300,
+   "source": "NCSC Annual Review 2026. UK, 1 Sep 2025 to 31 Aug 2026."
+  },
+  {
+   "type": "quote",
+   "theme": "paper",
+   "text": "The majority of cyber attacks against individuals begin with the theft, compromise or abuse of *passwords*.",
+   "sub": "NCSC Annual Review 2026, passkeys chapter",
+   "source": "ncsc.gov.uk, published 3 Nov 2026"
+  },
+  {
+   "type": "screen",
+   "theme": "lilac",
+   "title": "List the logins\nyour business runs on",
+   "sub": "Then check how each one signs in.",
+   "screen": {
+    "kind": "table",
+    "title": "Logins to check",
+    "tabs": [
+     "All",
+     "Password only"
+    ],
+    "columns": [
+     "Login",
+     "Used by",
+     "Sign-in",
+     "Next"
+    ],
+    "col_class": [
+     "",
+     "dim",
+     "",
+     "dim"
+    ],
+    "pills": {
+     "Passkey": "green",
+     "2-step": "blue",
+     "Password only": "solid"
+    },
+    "rows": [
+     [
+      "Business email",
+      "Everyone",
+      "Passkey",
+      "Done"
+     ],
+     [
+      "Website admin",
+      "Office",
+      "2-step",
+      "Check for passkeys"
+     ],
+     [
+      "CRM",
+      "Everyone",
+      "Password only",
+      "Turn on 2-step"
+     ],
+     [
+      "Domain and hosting",
+      "Owner",
+      "Password only",
+      "Turn on 2-step"
+     ],
+     [
+      "Accounts software",
+      "Owner",
+      "2-step",
+      "Check for passkeys"
+     ]
+    ],
+    "highlight": [
+     2,
+     3
+    ]
+   },
+   "caption": "Example screen, made-up business."
+  },
+  {
+   "type": "flow",
+   "theme": "blue",
+   "title": "What the NCSC\nadvises",
+   "steps": [
+    [
+     "Use passkeys where they're offered",
+     "Its first choice of login."
+    ],
+    [
+     "No passkeys? Use a password manager",
+     "Let it create stronger passwords for you."
+    ],
+    [
+     "Keep two-step verification on",
+     "For anything that still uses a password."
+    ],
+    [
+     "Customers log in to your site?",
+     "Offer passkeys as the default."
+    ]
+   ],
+   "highlight": [
+    0
+   ],
+   "source": "NCSC, 23 Apr 2026: passkeys guidance."
+  }
+ ]
+}

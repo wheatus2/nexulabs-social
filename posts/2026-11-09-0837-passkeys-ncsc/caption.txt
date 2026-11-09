@@ -1,0 +1,8 @@
+The National Cyber Security Centre published its annual review last week. Between September 2025 and August 2026 it received 1,831 reports of cyber attacks. 337 needed its support and 80 were nationally significant.
+
+The review has a chapter on passkeys, and it backs the advice the NCSC gave in April: passkeys should be your first choice of login wherever a service offers them. Where one doesn't, use a password manager and keep two-step verification turned on.
+
+So list the logins your business can't run without: email, website admin, CRM, domain and hosting. Check how each one signs you in, and fix the weakest first.
+
+#cybersecurity #passkeys #businesswebsite #crm #northeastbusiness
+Photo: Flyd on Unsplash

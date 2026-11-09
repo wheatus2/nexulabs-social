@@ -176,10 +176,10 @@
   "photo": null,
   "fact_check": "pass",
   "news_check": "No qualifying UK story beyond today's Clarity post; NCSC Annual Review held for 9 Nov (PDF not openable this run)",
-  "instagram_media_id": null,
-  "permalink": null,
-  "facebook_post_id": null,
-  "facebook_skip_reason": "Not attempted: Zapier account task limit reached (same limit blocks Facebook Pages)",
-  "status": "NOT PUBLISHED: Zapier task limit reached for the billing period (publish_video failed twice, 2 minutes apart). Rendered and committed, ready to publish."
+  "instagram_media_id": "18134927461670615",
+  "permalink": "https://www.instagram.com/reel/DffnCg0GeUl/",
+  "facebook_post_id": "1870814780599419",
+  "status": "published",
+  "published_via": "github-actions"
  }
 ]
