@@ -8,7 +8,7 @@ Post-level "format": "story" renders 1080x1920 Instagram Stories (one image per 
 Slide types: screen (product UI: table | board | record | phone | shot: a real screenshot "image" in a full-size realistic phone, optional "crop", "bar", "bar_bg"), cover, stat, bars, hbars, list, quote, cta, compare, browser, palette, flow, photo (Unsplash background: "image", "credit", optional "shade": full|blue, "focus")
 browser "site" may include "nav_text" (e.g. a phone number shown in the mock header); compare, list and flow may include "title_size".
 Text markup: *word* -> accent colour. Line breaks with \n.
-Themes: "ink" (dark), "paper" (light), "blue" (brand blue) or "lilac" (#E9E7FF).
+Themes: "ink" (dark), "paper" (light), "blue" (brand blue) or "lilac" (#E6E9F7).
 Post-level "style" = the look: product | journal | signal | soft | press (see PLAYBOOK "Design direction: five looks"). Each slide "theme" must belong to the look: product: blue ink paper lilac; journal: cream forest stone; signal: lemon black sky; soft: mint navy blush; press: newsprint night red. Retired: studio editorial bold minimal poster aurora neon spectrum glass.
 Gradient styles (aurora, neon, spectrum, glass) take a post-level "palette": electric | ultraviolet | ocean | dusk.
 Any slide can add "orb_shift": [x, y] to move the neon orb off text.
@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 FONTS = (ROOT / "fonts").as_uri()
 
-ACCENT = "#3B2BFF"      # on light backgrounds (brand blue)
+ACCENT = "#0C23A8"      # on light backgrounds (brand blue)
 ACCENT_DARK = "#667DFF" # on dark backgrounds (logo full stop)
 INK = "#0B0B0C"
 PAPER = "#F5F5F7"
@@ -173,19 +173,19 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .st h3{{font-family:Disp;font-weight:600;font-size:46px;letter-spacing:-.03em}}
 .st p{{font-size:25px;opacity:.65;margin-top:6px}}
 /* ===== blue theme ===== */
-.blue{{background:{ACCENT};color:#FFFFFF;--acc:#0B0B0C;--fg:#FFFFFF}}
+.blue{{background:{ACCENT};color:#FFFFFF;--acc:#B3BEFF;--fg:#FFFFFF}}
 .blue .grid{{opacity:.12}}
 .blue .row .track{{background:rgba(255,255,255,.22)}}
-.blue .row.hl .fill{{background:#0B0B0C}}
+.blue .row.hl .fill{{background:#B3BEFF}}
 .blue .col .bar{{background:#fff;opacity:.35}}
-.blue .col.hl .bar{{background:#0B0B0C;opacity:1}}
+.blue .col.hl .bar{{background:#B3BEFF;opacity:1}}
 .blue .card.good{{background:rgba(255,255,255,.12);border-color:#fff}}
 .blue .card.good .lb{{color:#fff}}
 .blue .card.bad .tx{{opacity:.78}}
 .blue .card.bad .sm{{opacity:.8}}
 .blue .ctabox .btn{{background:#0B0B0C}}
 .blue .st .dot{{background:rgba(255,255,255,.12)}}
-.blue .st.hl .dot{{background:#0B0B0C;border-color:#0B0B0C}}
+.blue .st.hl .dot{{background:#B3BEFF;border-color:#B3BEFF;color:#0B0B0C}}
 /* ===== style: editorial ===== */
 .st-editorial .grid,.st-editorial .glow{{display:none}}
 .st-editorial .top{{padding-bottom:26px;border-bottom:2px solid currentColor}}
@@ -277,7 +277,7 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 .photo .bgimg{{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}}
 .photo .shade{{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,11,12,.55) 0%,rgba(11,11,12,.05) 30%,rgba(11,11,12,.15) 52%,rgba(11,11,12,.88) 100%)}}
 .photo.shade-full .shade{{background:rgba(11,11,12,.55)}}
-.photo.shade-blue .shade{{background:linear-gradient(180deg,rgba(59,43,255,.15) 0%,rgba(59,43,255,.0) 35%,rgba(59,43,255,.92) 100%)}}
+.photo.shade-blue .shade{{background:linear-gradient(180deg,rgba(12,35,168,.15) 0%,rgba(12,35,168,.0) 35%,rgba(12,35,168,.92) 100%)}}
 .photo h1{{margin-top:auto;font-size:100px;text-shadow:0 2px 30px rgba(0,0,0,.25)}}
 .photo p.lead{{margin-top:30px;opacity:.9}}
 .photo .credit{{position:absolute;z-index:3;right:88px;bottom:40px;font-family:Mono;font-size:15px;opacity:.65;letter-spacing:.02em}}
@@ -288,7 +288,7 @@ p.lead{{font-size:31px;line-height:1.42;letter-spacing:-.01em;opacity:.78;max-wi
 
 
 
-CSS += '\n/* ===== style: product (Lee, 8 Nov 2026): flat colour + real product screens. No gradients, glows, grain, grids or patterns. ===== */\n.st-product .grid,.st-product .glow,.st-product .grain,.st-product .deco{display:none}\n.lilac{background:#E9E7FF;color:#0B0B0C;--acc:#3B2BFF;--fg:#0B0B0C}\n.st-product .meta{font-family:Text;font-size:20px;letter-spacing:0;text-transform:none;opacity:.7}\n.st-product .kicker{font-family:Text;font-size:22px;letter-spacing:0;text-transform:none;opacity:.75}\n.st-product .kicker:before{display:none}\n.st-product h1{letter-spacing:-.045em}\n.st-product .swipe b{border:none;width:auto;height:auto}\n.st-product .foot{font-family:Text;font-size:18px;opacity:.65}\n.st-product .card.good{background:rgba(59,43,255,.06)}\n.st-product.blue .card.good{background:rgba(255,255,255,.1)}\n.st-product .bw{border-radius:18px;border:none;box-shadow:0 30px 60px -32px rgba(0,0,0,.45)}\n.st-product .pin{box-shadow:none}\n/* screen slide: headline + a believable UI window */\n.screen h2{font-size:92px;letter-spacing:-.045em;line-height:.98}\n.screen p.lead{margin-top:24px;font-size:30px}\n.win{margin-top:auto;background:#fff;color:#0B0B0C;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -32px rgba(0,0,0,.45);font-family:Text}\n.paper .win,.lilac .win{box-shadow:0 0 0 1.5px rgba(11,11,12,.08),0 30px 60px -36px rgba(0,0,0,.35)}\n.win .wbar{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;border-bottom:1px solid #E8E8EC}\n.win .wbar b{font-family:Disp;font-size:26px;font-weight:600;letter-spacing:-.02em}\n.win .tabs{display:flex;gap:8px;font-size:19px;color:#6b6b72}\n.win .tabs span{padding:6px 14px;border-radius:8px}.win .tabs .a{background:#F1F1F4;color:#0B0B0C}\n.win table{width:100%;border-collapse:collapse;font-size:25px}\n.win th{text-align:left;font-weight:500;color:#8a8a92;font-size:18px;padding:18px 26px 12px;border-bottom:1px solid #EEE}\n.win td{padding:24px 26px;border-bottom:1px solid #F0F0F3;white-space:nowrap}\n.win tr:last-child td{border-bottom:none}\n.win td.mono{font-family:Mono;font-size:18px;color:#6b6b72}.win td.dim{color:#55555c}\n.win tr.hl td{background:#F5F4FF}\n.pill{display:inline-block;padding:5px 14px;border-radius:999px;font-size:18px;font-weight:500;line-height:1.3}\n.pill.blue{background:#EEF0FF;color:#3B2BFF}.pill.solid{background:#3B2BFF;color:#fff}\n.pill.green{background:#E6F4EA;color:#1F7A3A}.pill.grey{background:#F2F2F4;color:#6b6b72}.pill.ink{background:#0B0B0C;color:#fff}\n.win .board{display:flex;gap:14px;padding:22px 18px 30px;background:#F6F6F8}\n.win .lane{flex:1;min-width:0}\n.win .lane h4{font-size:21px;font-weight:600;color:#55555c;display:flex;justify-content:space-between;padding:4px 6px 14px}\n.win .lane h4 span{color:#9a9aa2;font-weight:500}\n.win .kc{background:#fff;border-radius:12px;padding:22px 20px 20px;margin-bottom:12px;box-shadow:0 0 0 1px #E8E8EC}\n.win .kc b{display:block;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-.01em}\n.win .kc small{display:block;font-size:21px;color:#6b6b72;margin-top:6px}\n.win .kc.hl{box-shadow:0 0 0 2px #3B2BFF}\n.win .kc .pill{margin-top:14px;font-size:18px}\n.win .rec{display:flex}\n.win .rec .fields{flex:1;padding:26px 30px;border-right:1px solid #EEE}\n.win .rec .f{padding:14px 0;border-bottom:1px solid #F2F2F4}.win .rec .f:last-child{border:none}\n.win .rec .f small{display:block;font-size:19px;color:#8a8a92}\n.win .rec .f span{display:block;font-size:28px;margin-top:4px}\n.win .rec .f span .pill{display:inline-block;font-size:20px;margin-top:4px}\n.win .rec .tl{flex:1.2;padding:26px 30px}\n.win .rec .tl h5{font-size:17px;font-weight:500;color:#8a8a92;margin-bottom:8px}\n.win .rec .ev{display:flex;gap:16px;padding:16px 0;font-size:25px;line-height:1.35;align-items:baseline}\n.win .rec .ev i{font-style:normal;font-family:Mono;font-size:17px;color:#8a8a92;min-width:64px}\n.win .rec .ev.hl span{color:#3B2BFF;font-weight:500}\n.phonewrap{margin-top:auto;display:flex;gap:56px;align-items:flex-end}\n.phone{width:420px;flex:none;border-radius:54px;background:#0B0B0C;padding:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}\n.phone .scr{background:#fff;color:#0B0B0C;border-radius:42px;overflow:hidden;height:760px;padding:58px 30px 30px;position:relative}\n.phone .scr.shot:before{display:none}\n.phone .scr:before{content:"";position:absolute;top:16px;left:50%;width:110px;height:30px;margin-left:-55px;border-radius:15px;background:#0B0B0C}\n.phone .pnav{display:flex;justify-content:space-between;align-items:center;font-family:Disp;font-weight:700;font-size:22px;letter-spacing:-.02em}\n.phone .pnav u{width:30px;height:3px;background:#0B0B0C;box-shadow:0 8px 0 #0B0B0C,0 -8px 0 #0B0B0C;text-decoration:none}\n.phone .ph{font-family:Disp;font-weight:600;font-size:40px;letter-spacing:-.035em;line-height:1.04;margin-top:44px}\n.phone .pl{font-size:19px;color:#55555c;margin-top:14px;line-height:1.4}\n.phone .pb{margin-top:24px;background:#3B2BFF;color:#fff;border-radius:12px;padding:18px;text-align:center;font-weight:600;font-size:20px}\n.phone .pb2{margin-top:10px;border:1.5px solid #D8D8DE;border-radius:12px;padding:16px;text-align:center;font-weight:600;font-size:20px}\n.phone .pi{margin-top:22px;border-top:1px solid #EEE}\n.phone .pi div{padding:14px 0;border-bottom:1px solid #EEE;font-size:19px;display:flex;justify-content:space-between}\n.phone .pi div span{color:#8a8a92}\n.phone .pf{margin-top:26px}\n.phone .pf div{margin-bottom:18px}\n.phone .pf small{display:block;font-size:17px;font-weight:600;color:#0B0B0C;margin-bottom:8px}\n.phone .pf span{display:block;border:1.5px solid #C9C9D1;border-radius:10px;padding:14px 16px;font-size:19px;color:#55555c}\n.phonewrap .notes{flex:1;padding-bottom:20px}\n.phonewrap .notes div{padding:22px 0;border-top:1.5px solid currentColor;font-size:27px;line-height:1.35}\n.phonewrap .notes div b{display:block;font-family:Disp;font-weight:600;font-size:34px;letter-spacing:-.025em;margin-bottom:4px}\n.excap{font-size:18px;opacity:.65;margin-top:20px}\n'
+CSS += '\n/* ===== style: product (Lee, 8 Nov 2026): flat colour + real product screens. No gradients, glows, grain, grids or patterns. ===== */\n.st-product .grid,.st-product .glow,.st-product .grain,.st-product .deco{display:none}\n.lilac{background:#E6E9F7;color:#0B0B0C;--acc:#0C23A8;--fg:#0B0B0C}\n.st-product .meta{font-family:Text;font-size:20px;letter-spacing:0;text-transform:none;opacity:.7}\n.st-product .kicker{font-family:Text;font-size:22px;letter-spacing:0;text-transform:none;opacity:.75}\n.st-product .kicker:before{display:none}\n.st-product h1{letter-spacing:-.045em}\n.st-product .swipe b{border:none;width:auto;height:auto}\n.st-product .foot{font-family:Text;font-size:18px;opacity:.65}\n.st-product .card.good{background:rgba(12,35,168,.06)}\n.st-product.blue .card.good{background:rgba(255,255,255,.1)}\n.st-product .bw{border-radius:18px;border:none;box-shadow:0 30px 60px -32px rgba(0,0,0,.45)}\n.st-product .pin{box-shadow:none}\n/* screen slide: headline + a believable UI window */\n.screen h2{font-size:92px;letter-spacing:-.045em;line-height:.98}\n.screen p.lead{margin-top:24px;font-size:30px}\n.win{margin-top:auto;background:#fff;color:#0B0B0C;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -32px rgba(0,0,0,.45);font-family:Text}\n.paper .win,.lilac .win{box-shadow:0 0 0 1.5px rgba(11,11,12,.08),0 30px 60px -36px rgba(0,0,0,.35)}\n.win .wbar{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;border-bottom:1px solid #E8E8EC}\n.win .wbar b{font-family:Disp;font-size:26px;font-weight:600;letter-spacing:-.02em}\n.win .tabs{display:flex;gap:8px;font-size:19px;color:#6b6b72}\n.win .tabs span{padding:6px 14px;border-radius:8px}.win .tabs .a{background:#F1F1F4;color:#0B0B0C}\n.win table{width:100%;border-collapse:collapse;font-size:25px}\n.win th{text-align:left;font-weight:500;color:#8a8a92;font-size:18px;padding:18px 26px 12px;border-bottom:1px solid #EEE}\n.win td{padding:24px 26px;border-bottom:1px solid #F0F0F3;white-space:nowrap}\n.win tr:last-child td{border-bottom:none}\n.win td.mono{font-family:Mono;font-size:18px;color:#6b6b72}.win td.dim{color:#55555c}\n.win tr.hl td{background:#F2F4FC}\n.pill{display:inline-block;padding:5px 14px;border-radius:999px;font-size:18px;font-weight:500;line-height:1.3}\n.pill.blue{background:#EEF0FF;color:#0C23A8}.pill.solid{background:#0C23A8;color:#fff}\n.pill.green{background:#E6F4EA;color:#1F7A3A}.pill.grey{background:#F2F2F4;color:#6b6b72}.pill.ink{background:#0B0B0C;color:#fff}\n.win .board{display:flex;gap:14px;padding:22px 18px 30px;background:#F6F6F8}\n.win .lane{flex:1;min-width:0}\n.win .lane h4{font-size:21px;font-weight:600;color:#55555c;display:flex;justify-content:space-between;padding:4px 6px 14px}\n.win .lane h4 span{color:#9a9aa2;font-weight:500}\n.win .kc{background:#fff;border-radius:12px;padding:22px 20px 20px;margin-bottom:12px;box-shadow:0 0 0 1px #E8E8EC}\n.win .kc b{display:block;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-.01em}\n.win .kc small{display:block;font-size:21px;color:#6b6b72;margin-top:6px}\n.win .kc.hl{box-shadow:0 0 0 2px #0C23A8}\n.win .kc .pill{margin-top:14px;font-size:18px}\n.win .rec{display:flex}\n.win .rec .fields{flex:1;padding:26px 30px;border-right:1px solid #EEE}\n.win .rec .f{padding:14px 0;border-bottom:1px solid #F2F2F4}.win .rec .f:last-child{border:none}\n.win .rec .f small{display:block;font-size:19px;color:#8a8a92}\n.win .rec .f span{display:block;font-size:28px;margin-top:4px}\n.win .rec .f span .pill{display:inline-block;font-size:20px;margin-top:4px}\n.win .rec .tl{flex:1.2;padding:26px 30px}\n.win .rec .tl h5{font-size:17px;font-weight:500;color:#8a8a92;margin-bottom:8px}\n.win .rec .ev{display:flex;gap:16px;padding:16px 0;font-size:25px;line-height:1.35;align-items:baseline}\n.win .rec .ev i{font-style:normal;font-family:Mono;font-size:17px;color:#8a8a92;min-width:64px}\n.win .rec .ev.hl span{color:#0C23A8;font-weight:500}\n.phonewrap{margin-top:auto;display:flex;gap:56px;align-items:flex-end}\n.phone{width:420px;flex:none;border-radius:54px;background:#0B0B0C;padding:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}\n.phone .scr{background:#fff;color:#0B0B0C;border-radius:42px;overflow:hidden;height:760px;padding:58px 30px 30px;position:relative}\n.phone .scr.shot:before{display:none}\n.phone .scr:before{content:"";position:absolute;top:16px;left:50%;width:110px;height:30px;margin-left:-55px;border-radius:15px;background:#0B0B0C}\n.phone .pnav{display:flex;justify-content:space-between;align-items:center;font-family:Disp;font-weight:700;font-size:22px;letter-spacing:-.02em}\n.phone .pnav u{width:30px;height:3px;background:#0B0B0C;box-shadow:0 8px 0 #0B0B0C,0 -8px 0 #0B0B0C;text-decoration:none}\n.phone .ph{font-family:Disp;font-weight:600;font-size:40px;letter-spacing:-.035em;line-height:1.04;margin-top:44px}\n.phone .pl{font-size:19px;color:#55555c;margin-top:14px;line-height:1.4}\n.phone .pb{margin-top:24px;background:#0C23A8;color:#fff;border-radius:12px;padding:18px;text-align:center;font-weight:600;font-size:20px}\n.phone .pb2{margin-top:10px;border:1.5px solid #D8D8DE;border-radius:12px;padding:16px;text-align:center;font-weight:600;font-size:20px}\n.phone .pi{margin-top:22px;border-top:1px solid #EEE}\n.phone .pi div{padding:14px 0;border-bottom:1px solid #EEE;font-size:19px;display:flex;justify-content:space-between}\n.phone .pi div span{color:#8a8a92}\n.phone .pf{margin-top:26px}\n.phone .pf div{margin-bottom:18px}\n.phone .pf small{display:block;font-size:17px;font-weight:600;color:#0B0B0C;margin-bottom:8px}\n.phone .pf span{display:block;border:1.5px solid #C9C9D1;border-radius:10px;padding:14px 16px;font-size:19px;color:#55555c}\n.phonewrap .notes{flex:1;padding-bottom:20px}\n.phonewrap .notes div{padding:22px 0;border-top:1.5px solid currentColor;font-size:27px;line-height:1.35}\n.phonewrap .notes div b{display:block;font-family:Disp;font-weight:600;font-size:34px;letter-spacing:-.025em;margin-bottom:4px}\n.excap{font-size:18px;opacity:.65;margin-top:20px}\n'
 CSS += """
 /* shot: a real phone, full size: the phone on the right, the headline and notes beside it */
 .dv{flex:1;display:flex;gap:44px;min-height:0}
@@ -311,8 +311,8 @@ CSS += """
 
 PALETTES = {
     # c1 = base, c2 = brand blue family, c3/c4 = highlight pair (used for gradient text & accents)
-    "electric":    ("#0A0A2E", "#3B2BFF", "#00D1FF", "#A78BFA"),
-    "ultraviolet": ("#14082E", "#3B2BFF", "#C084FC", "#F472B6"),
+    "electric":    ("#0A0A2E", "#0C23A8", "#00D1FF", "#A78BFA"),
+    "ultraviolet": ("#14082E", "#0C23A8", "#C084FC", "#F472B6"),
     "ocean":       ("#03122E", "#0C23A8", "#22D3EE", "#667DFF"),
     "dusk":        ("#120A2A", "#4F46E5", "#F0ABFC", "#818CF8"),
 }
@@ -449,7 +449,7 @@ LOGO_SVG = (ROOT / "brand" / "nexulabs-logo-white.svg").read_text()
 
 def logo(theme, dot_override=None):
     fg = INK if theme in ("paper", "lilac") else "#FFFFFF"
-    dot = dot_override or {"ink": ACCENT_DARK, "paper": ACCENT, "lilac": ACCENT, "blue": INK}.get(theme, ACCENT)
+    dot = dot_override or {"ink": ACCENT_DARK, "paper": ACCENT, "lilac": ACCENT, "blue": "#B3BEFF"}.get(theme, ACCENT)
     return (LOGO_SVG.replace('fill="#FFFFFF"', f'fill="{fg}"').replace('fill="#667DFF"', f'fill="{dot}"')
             .replace('<title>nexulabs</title>', ''))
 
@@ -735,7 +735,7 @@ CSS += """
 .st-product .swipe{display:none}
 .st-product.photo .shade{background:linear-gradient(180deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,0) 22%,rgba(11,11,12,0) 48%,rgba(11,11,12,.82) 78%,rgba(11,11,12,.9) 100%)}
 .st-product.photo.shade-blue .shade{background:none}
-.st-product.photo.shade-blue .shade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:#3B2BFF}
+.st-product.photo.shade-blue .shade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:#0C23A8}
 .st-product.photo.shade-band .shade{background:none}
 .st-product.photo.shade-blue h1,.st-product.photo.shade-band h1{text-shadow:none}
 .st-product.photo.shade-band .shade:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:#0B0B0C}
@@ -750,8 +750,8 @@ CSS += """
 # ======================================================================================
 LOOKS = {
     # look: {theme: (background, text, accent, dark?)}
-    "product": {"ink": ("#0B0B0C", "#F5F5F7", "#667DFF", 1), "paper": ("#F5F5F7", "#0B0B0C", "#3B2BFF", 0),
-                "blue": ("#3B2BFF", "#FFFFFF", "#0B0B0C", 1), "lilac": ("#E9E7FF", "#0B0B0C", "#3B2BFF", 0)},
+    "product": {"ink": ("#0B0B0C", "#F5F5F7", "#667DFF", 1), "paper": ("#F5F5F7", "#0B0B0C", "#0C23A8", 0),
+                "blue": ("#0C23A8", "#FFFFFF", "#B3BEFF", 1), "lilac": ("#E6E9F7", "#0B0B0C", "#0C23A8", 0)},
     "journal": {"cream": ("#F3EEE3", "#1D1B17", "#2E5E4E", 0), "forest": ("#1F3B32", "#F3EEE3", "#BFD9B8", 1),
                 "stone": ("#E3DDD0", "#1D1B17", "#7A2E52", 0)},
     "signal": {"lemon": ("#F4E53C", "#111111", "#111111", 0), "black": ("#111111", "#F4F1E8", "#F4E53C", 1),
@@ -793,7 +793,7 @@ for _t, (_bg, _fg, _acc, _dark) in THEME_INFO.items():
     if _t in ("ink", "paper", "blue", "lilac"):
         continue
     CSS += f".{_t}{{background:{_bg};color:{_fg};--acc:{_acc};--fg:{_fg};--bg:{_bg}}}\n"
-CSS += ".ink{--bg:#0B0B0C}.paper{--bg:#F5F5F7}.blue{--bg:#3B2BFF}.lilac{--bg:#E9E7FF}\n"
+CSS += ".ink{--bg:#0B0B0C}.paper{--bg:#F5F5F7}.blue{--bg:#0C23A8}.lilac{--bg:#E6E9F7}\n"
 
 # shared: new looks are flat, no grids/glows/grain/patterns
 CSS += """

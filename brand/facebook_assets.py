@@ -17,7 +17,7 @@ BASE = f"""
 body{{background:#0B0B0C;color:#F5F5F7;font-family:G;-webkit-font-smoothing:antialiased;overflow:hidden}}
 .grid{{position:absolute;inset:0;opacity:.07;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);
  background-size:82px 82px;-webkit-mask-image:radial-gradient(ellipse at 50% 50%,#000 0%,transparent 70%)}}
-.glow{{position:absolute;border-radius:50%;background:radial-gradient(circle,#667DFF55 0%,#3B2BFF22 38%,transparent 68%)}}
+.glow{{position:absolute;border-radius:50%;background:radial-gradient(circle,#667DFF55 0%,#0C23A822 38%,transparent 68%)}}
 .grain{{position:absolute;inset:0;opacity:.08;mix-blend-mode:overlay;
  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}}
 """

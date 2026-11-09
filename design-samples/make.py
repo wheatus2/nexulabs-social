@@ -26,14 +26,14 @@ body{{background:#F3F2EE;color:#0B0B0C}}
 .hd{{display:flex;justify-content:space-between;align-items:center;padding-bottom:26px;border-bottom:2px solid #0B0B0C}}
 .hd span{{font-size:22px;font-weight:500}}
 h1{{font-size:118px;font-weight:600;letter-spacing:-.05em;line-height:.95;margin-top:70px}}
-h1 em{{font-style:normal;color:#3B2BFF}}
+h1 em{{font-style:normal;color:#0C23A8}}
 .intro{{font-size:30px;line-height:1.35;max-width:640px;margin-top:34px;color:#3a3a3e}}
 .rows{{margin-top:auto}}
 .r{{display:grid;grid-template-columns:120px 260px 1fr;align-items:baseline;border-top:1.5px solid #0B0B0C;padding:26px 0 24px}}
 .r .n{{font-size:26px;font-weight:500}}
 .r .k{{font-size:44px;font-weight:600;letter-spacing:-.03em}}
 .r .d{{font-size:27px;line-height:1.3;color:#3a3a3e}}
-.r.on .k{{color:#3B2BFF}}
+.r.on .k{{color:#0C23A8}}
 .ft{{display:flex;justify-content:space-between;border-top:2px solid #0B0B0C;padding-top:22px;font-size:20px;color:#55555a}}
 </style><div class="p">
 <div class="hd">{logo('paper')}<span>CRM / Quotes</span></div>
@@ -57,7 +57,7 @@ rows = [("Q-1048","Kitchen refit","Sent","4 Nov","Chase today","s"),
 tr = "".join(f'<tr><td class="id">{a}</td><td>{b}</td><td><span class="pill {e}">{c}</span></td><td class="m">{d}</td><td class="m">{f}</td></tr>' for a,b,c,d,f,e in rows)
 LOGO_B = R.logo('ink','#FFFFFF')
 B = f"""<style>{BASE}
-body{{background:#3B2BFF;color:#fff}}
+body{{background:#0C23A8;color:#fff}}
 .p{{position:absolute;inset:0;padding:80px 84px;display:flex;flex-direction:column}}
 h1{{font-size:96px;font-weight:600;letter-spacing:-.045em;line-height:.98;margin-top:64px}}
 .sub{{font-size:30px;line-height:1.35;margin-top:26px;opacity:.85;max-width:780px}}
@@ -71,7 +71,7 @@ th{{text-align:left;font-weight:500;color:#8a8a92;font-size:18px;padding:18px 26
 td{{padding:25px 26px;border-bottom:1px solid #F0F0F3}}
 td.id{{font-family:M;font-size:18px;color:#6b6b72}} td.m{{color:#55555c}}
 .pill{{display:inline-block;padding:5px 14px;border-radius:999px;font-size:18px;font-weight:500}}
-.pill.s{{background:#EEF0FF;color:#3B2BFF}} .pill.c{{background:#3B2BFF;color:#fff}}
+.pill.s{{background:#EEF0FF;color:#0C23A8}} .pill.c{{background:#0C23A8;color:#fff}}
 .pill.w{{background:#E6F4EA;color:#1F7A3A}} .pill.l{{background:#F2F2F4;color:#6b6b72}}
 .cap{{font-size:18px;opacity:.7;margin-top:22px}}
 </style><div class="p">
@@ -86,8 +86,8 @@ td.id{{font-family:M;font-size:18px;color:#6b6b72}} td.m{{color:#55555c}}
 # C: Colour block — flat fields, one geometric shape, no gradients
 C = f"""<style>{BASE}
 body{{background:#0B0B0C;color:#fff}}
-.top{{position:absolute;left:0;right:0;top:0;height:690px;background:#E9E7FF;color:#0B0B0C;padding:80px 84px;overflow:hidden}}
-.disc{{position:absolute;width:420px;height:420px;border-radius:50%;background:#3B2BFF;right:-140px;top:-150px}}
+.top{{position:absolute;left:0;right:0;top:0;height:690px;background:#E6E9F7;color:#0B0B0C;padding:80px 84px;overflow:hidden}}
+.disc{{position:absolute;width:420px;height:420px;border-radius:50%;background:#0C23A8;right:-140px;top:-150px}}
 .disc2{{position:absolute;width:260px;height:520px;border-radius:0 260px 260px 0;background:#0B0B0C;right:150px;top:120px;display:none}}
 h1{{position:relative;font-size:112px;font-weight:600;letter-spacing:-.05em;line-height:.95;margin-top:300px;max-width:860px}}
 .bot{{position:absolute;left:0;right:0;bottom:0;top:690px;padding:64px 84px 120px;display:grid;grid-template-columns:1fr 1fr;gap:56px 56px;align-content:start}}

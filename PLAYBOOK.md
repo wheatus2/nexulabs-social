@@ -11,7 +11,7 @@ Followed by the scheduled runs. **Three posts a day** (around 9am, 3pm and 8pm U
 - Voice: UK English. Plain, direct, practical, like Lee talking to a customer. Short sentences. Address the reader as "you". No hype, no jargon, no emoji, no exclamation marks. See "Sound like a person".
 - Visuals: rendered by `render.py`. Photos only from the library in `photos/` (see "Photos from the library"). Never the Unsplash API, scraped images, logos of other companies, or other stock sites.
   - Logo: the real Nexulabs wordmark from `brand/nexulabs-logo-white.svg` (render.py recolours it per theme). Never retype the logo as text.
-  - Colours (from nexulabs.co.uk): ink #0B0B0C, paper #F5F5F7, accent blue #3B2BFF on light / #667DFF on dark (the logo's full stop). Accent is for one or two words or one data point per slide, never more. No other accent colours.
+  - Colours (from nexulabs.co.uk): ink #0B0B0C, paper #F5F5F7, accent Pigment blue #0C23A8 on light (the website's brand blue since November 2026; it replaced Indigo #3B2BFF) / #667DFF on ink (the logo's full stop) / light blue #B3BEFF on Pigment blue slides (6.4:1; ink on Pigment blue fails contrast). Accent is for one or two words or one data point per slide, never more. No other accent colours.
   - Type: Geist (headlines, numbers, body) and Geist Mono (labels, sources), the same as the website.
   - Note: the very first post (2026-11-06) used an earlier orange/Inter style; everything after it uses this brand.
   - Format: 1080×1350 (4:5). Carousels of 4–7 slides are the default; a single-slide post is fine for a strong quote or stat.

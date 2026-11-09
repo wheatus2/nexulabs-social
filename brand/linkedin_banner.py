@@ -28,10 +28,10 @@ HTML = f"""<!doctype html><html><head><meta charset="utf-8"><style>
 html,body{{width:1128px;height:191px;overflow:hidden;background:#0A0A2E}}
 .wrap{{position:relative;width:1128px;height:191px;overflow:hidden;background:#0A0A2E}}
 .blob{{position:absolute;border-radius:50%;filter:blur(46px)}}
-.b1{{width:520px;height:300px;left:-120px;top:20px;background:#3B2BFF;opacity:.95}}
+.b1{{width:520px;height:300px;left:-120px;top:20px;background:#0C23A8;opacity:.95}}
 .b2{{width:360px;height:220px;left:230px;top:-120px;background:#00D1FF;opacity:.55}}
 .b3{{width:420px;height:260px;left:880px;top:40px;background:#A78BFA;opacity:.55}}
-.b4{{width:300px;height:200px;left:640px;top:120px;background:#3B2BFF;opacity:.5}}
+.b4{{width:300px;height:200px;left:640px;top:120px;background:#0C23A8;opacity:.5}}
 .fade{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,46,0) 0%,rgba(10,10,46,.55) 42%,rgba(10,10,46,.78) 62%,rgba(10,10,46,.35) 100%)}}
 svg.pat{{position:absolute;inset:0}}
 svg.pat ellipse{{fill:none;stroke:#fff;stroke-width:.8;opacity:.16}}
