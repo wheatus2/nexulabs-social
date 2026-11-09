@@ -149,5 +149,42 @@
   ],
   "published_via": "github-actions",
   "note": "added to the CRM highlight and set as its cover"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "21:59",
+  "type": "story",
+  "category": "Web design",
+  "topic": "Book a call on nexulabs.co.uk (real screens, made-up booking); for the new Book a call highlight",
+  "style": "product",
+  "themes": [
+   "blue",
+   "paper",
+   "ink",
+   "blue"
+  ],
+  "frames": 4,
+  "media_ids": [
+   "18113561444339938",
+   "18171057226469522",
+   "18096458798267346",
+   "18118028807631003"
+  ],
+  "published_via": "github-actions",
+  "note": "posted on request; add to the Book a call highlight"
+ },
+ {
+  "date": "2026-11-09",
+  "slot": "21:58",
+  "type": "highlight-cover",
+  "category": "Book a call",
+  "topic": "Book a call highlight cover (calendar icon)",
+  "style": "cover",
+  "frames": 1,
+  "media_ids": [
+   "18121823906049602"
+  ],
+  "published_via": "github-actions",
+  "note": "to be the Book a call highlight's cover"
  }
 ]
