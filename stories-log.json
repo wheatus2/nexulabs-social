@@ -67,5 +67,39 @@
     ],
     "status": "published",
     "note": "Planned 'tech news in 15 seconds' on the NCSC Annual Review 2026 was dropped because web fetching wasn't available this run; story stays verified-unused."
+  },
+  {
+    "date": "2026-11-09",
+    "slot": "11:47",
+    "published_at": "about 11:50 UK",
+    "id": "stories/2026-11-09-1147-brochure-or-booking",
+    "type": "this or that",
+    "category": "Websites + CRM (types of website)",
+    "topic": "Brochure site or booking site: brochure suits jobs needing a chat/visit/quote (goal: call or enquiry), booking suits set services with set length and price (goal: booking without a call); decide by how customers book you now",
+    "news_story_id": null,
+    "style": "product",
+    "theme": [
+      "ink",
+      "paper",
+      "lilac",
+      "blue"
+    ],
+    "screen": "phone",
+    "frames": 4,
+    "slide_types": [
+      "cover",
+      "screen",
+      "screen",
+      "quote"
+    ],
+    "sources": [],
+    "fact_check": "self-check pass (no factual claims)",
+    "media_ids": [
+      "18076184129495438",
+      "18126474128303273",
+      "18121594369758182",
+      "17889859059486592"
+    ],
+    "published_via": "github-actions"
   }
 ]
