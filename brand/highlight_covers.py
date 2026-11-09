@@ -26,6 +26,7 @@ ICONS = {
     "domains": ("Domains", f'<circle cx="190" cy="190" r="150" {S}/><path d="M40 190H340" {S}/><ellipse cx="190" cy="190" rx="66" ry="150" {SB}/><path d="M66 115H314M66 265H314" {S}/>'),
     "hosting": ("Hosting", f'<rect x="40" y="40" width="300" height="90" rx="20" {S}/><rect x="40" y="150" width="300" height="90" rx="20" {S}/><rect x="40" y="260" width="300" height="90" rx="20" {S}/><circle cx="90" cy="85" r="12" fill="{B}"/><circle cx="90" cy="195" r="12" fill="{B}"/><circle cx="90" cy="305" r="12" fill="#fff"/><path d="M200 85H290M200 195H290M200 305H290" {S}/>'),
     "ai-automation": ("AI & automation", f'<path d="M318 160a130 130 0 0 0-236-60" {S}/><path d="M70 50v58h58" {S}/><path d="M62 220a130 130 0 0 0 236 60" {S}/><path d="M310 330v-58h-58" {S}/><path d="M190 130l16 44 44 16-44 16-16 44-16-44-44-16 44-16z" fill="{B}" stroke="{B}" stroke-width="8" stroke-linejoin="round"/>'),
+    "book-call": ("Book a call", f'<rect x="40" y="70" width="300" height="270" rx="28" {S}/><path d="M40 145H340" {S}/><path d="M120 40v60M260 40v60" {S}/><circle cx="110" cy="205" r="12" fill="#fff"/><circle cx="190" cy="205" r="12" fill="#fff"/><circle cx="270" cy="205" r="12" fill="#fff"/><circle cx="110" cy="275" r="12" fill="#fff"/><rect x="160" y="245" width="60" height="60" rx="14" fill="{B}"/><circle cx="270" cy="275" r="12" fill="#fff"/>'),
     "tech-news": ("Tech news", f'<path d="M60 60H280V300a40 40 0 0 0 40 40H90a30 30 0 0 1-30-30Z" {S}/><path d="M280 140h50v160a40 40 0 0 1-40 40" {S}/><path d="M110 120H230" {SB}/><path d="M110 185H230M110 240H230M110 290H180" {S}/>'),
 }
 
@@ -46,7 +47,7 @@ def main():
     from PIL import Image, ImageDraw
     OUT.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
-        b = p.chromium.launch()
+        b = p.chromium.launch(executable_path="/usr/bin/google-chrome") if Path("/usr/bin/google-chrome").exists() else p.chromium.launch()
         for slug, (label, svg) in ICONS.items():
             for sq in (False, True):
                 pg = b.new_page(viewport={"width": 1080, "height": 1080 if sq else 1920})

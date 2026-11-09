@@ -302,6 +302,7 @@ Lee: *"the highlight cover doesn't fit the circle, please can you choose somethi
   | Hosting | `hosting` |
   | AI & automation | `ai-automation` |
   | Tech news | `tech-news` |
+  | Book a call | `book-call` |
 
 - **Why covers go out as a Story.** Instagram on the web can only pick a cover from Stories already in the highlight. So the first time a highlight is needed, its cover is published once as a one-frame Story from `posts/stories/<date>-highlight-cover-<slug>/slide-01.jpg`. The weekly Highlights run then adds that frame to the front of the highlight and picks it as the cover.
 - **Never use a content frame as a cover.** Text gets cropped in the circle.

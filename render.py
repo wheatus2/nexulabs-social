@@ -293,7 +293,7 @@ CSS += """
 /* shot: a real phone, full size: the phone on the right, the headline and notes beside it */
 .dv{flex:1;display:flex;gap:44px;min-height:0}
 .dv-txt{flex:1;display:flex;flex-direction:column;padding-top:56px;min-width:0}
-.screen .dv-txt h2{font-size:60px;line-height:1.02;letter-spacing:-.045em}
+.s.screen .dv-txt h2{font-size:60px;line-height:1.02;letter-spacing:-.045em}
 .dv-notes{margin-top:auto}
 .dv-notes div{padding:20px 0 22px;border-top:1.5px solid currentColor;font-size:25px;line-height:1.35}
 .dv-notes div b{display:block;font-family:Disp;font-weight:600;font-size:31px;letter-spacing:-.025em;margin-bottom:4px}

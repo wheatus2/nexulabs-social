@@ -1,0 +1,56 @@
+{
+ "format": "story",
+ "series": "New on our site",
+ "style": "product",
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "blue",
+   "kicker": "New on nexulabs.co.uk",
+   "headline": "Book a call\n*with us*.",
+   "sub": "Pick a time on our website. Phone or video, 30 minutes."
+  },
+  {
+   "type": "screen",
+   "theme": "paper",
+   "title": "Pick a day\nand a time",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/1-pick.jpg",
+    "crop": 16.5
+   },
+   "notes": [
+    [
+     "Free times only",
+     "Weekday evenings, UK time."
+    ]
+   ],
+   "caption": "Real screen, made-up booking"
+  },
+  {
+   "type": "screen",
+   "theme": "ink",
+   "title": "Phone or\n*video*",
+   "screen": {
+    "kind": "shot",
+    "image": "shots/2-form.jpg",
+    "crop": 16.5
+   },
+   "notes": [
+    [
+     "Your choice",
+     "We ring you, or you pick Teams, Google Meet or Zoom."
+    ]
+   ],
+   "caption": "Real screen, made-up booking"
+  },
+  {
+   "type": "cta",
+   "theme": "blue",
+   "headline": "Book a call",
+   "body": "About a website, a CRM system or your brand.",
+   "cta_label": "Pick a time",
+   "cta": "nexulabs.co.uk/book"
+  }
+ ]
+}
