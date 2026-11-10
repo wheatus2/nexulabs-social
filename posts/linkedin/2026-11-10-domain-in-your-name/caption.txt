@@ -1,0 +1,11 @@
+The domain your customers type in might not be registered to you.
+
+It usually happens without anyone meaning it to. A web designer or IT firm registers the domain while building the site, and the record ends up in their name, with their email address on it, so the renewal reminders go to them. Moving the domain over to you usually means they have to start the transfer. That's fine until you want to move on, or can't get hold of them.
+
+Checking takes a few minutes. For a .uk or .co.uk name, Nominet's domain lookup shows which registrar it's with. Log in to that registrar's account, or ask whoever set it up, and check the registrant is your business's full legal name, spelled properly, with an email address you'll always have. If it's registered to someone else, ask for a registrant transfer. If only the details are wrong, ask for them to be updated.
+
+We build websites and CRMs, and look after domains too, for businesses across the North East.
+
+The screen in the image is an example for a made-up business.
+
+#domainname #businesswebsite #northeastbusiness

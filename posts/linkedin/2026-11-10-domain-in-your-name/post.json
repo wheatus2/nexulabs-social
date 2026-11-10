@@ -1,0 +1,59 @@
+{
+ "id": "linkedin-2026-11-10-domain-in-your-name",
+ "series": "Domain names",
+ "style": "journal",
+ "slides": [
+  {
+   "type": "screen",
+   "theme": "cream",
+   "title": "Whose name is on\nyour *domain*?",
+   "sub": "If a web designer or IT firm registered it for you, it's worth checking.",
+   "screen": {
+    "kind": "table",
+    "title": "yourbusiness.co.uk",
+    "tabs": [
+     "Domain record"
+    ],
+    "columns": [
+     "Detail",
+     "Right now",
+     "Should be"
+    ],
+    "col_class": [
+     "dim",
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "Registrant",
+      "Your web designer",
+      "Your business"
+     ],
+     [
+      "Contact email",
+      "Theirs",
+      "One you'll keep"
+     ],
+     [
+      "Renewal reminders",
+      "Their inbox",
+      "Your inbox"
+     ],
+     [
+      "Transfers",
+      "Usually need them",
+      "Your call"
+     ]
+    ],
+    "pills": {
+     "Your business": "green",
+     "One you'll keep": "green",
+     "Your inbox": "green",
+     "Your call": "green"
+    }
+   },
+   "caption": "Example screen for a made-up business."
+  }
+ ]
+}
