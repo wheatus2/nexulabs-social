@@ -238,5 +238,57 @@
   ],
   "published_via": "github-actions",
   "note": "to be added to the Branding highlight and set as its cover by the weekly Highlights run"
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "17:47",
+  "published_at": "about 17:57 UK",
+  "id": "stories/2026-11-10-1747-automate-or-do-it-yourself",
+  "type": "this or that",
+  "category": "AI and automation",
+  "topic": "Automate it or do it yourself: hand over the repeat customer messages (booking confirmation, reminder, review request, service-due reminder; example booking record) and keep complaints, awkward quotes and bad news for a person; rule of thumb: same message every time, automate it",
+  "news_story_id": null,
+  "style": "signal",
+  "themes": [
+   "lemon",
+   "sky",
+   "black",
+   "lemon"
+  ],
+  "cover": "headline",
+  "screen": "record",
+  "photo": null,
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "screen",
+   "list",
+   "cover"
+  ],
+  "sources": [],
+  "fact_check": "self-check pass (no factual claims)",
+  "media_ids": [
+   "18650920840045352",
+   "17955853272289885",
+   "18104170139548621",
+   "17978950557130021"
+  ],
+  "published_via": "github-actions",
+  "note": "A sourced 'myth vs fact' on page speed (web.dev, Google Search Central) was planned first but dropped: web pages couldn't be fetched in this unattended run (fetch permission prompt unanswered), so a no-claim Story went out instead."
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "18:00",
+  "id": "stories/2026-11-10-highlight-cover-ai-automation",
+  "type": "highlight-cover",
+  "category": "AI and automation",
+  "topic": "AI & automation highlight cover (loop arrows and spark icon)",
+  "style": "cover",
+  "frames": 1,
+  "media_ids": [
+   "17918478126524399"
+  ],
+  "published_via": "github-actions",
+  "note": "to be added to the AI & automation highlight and set as its cover by the weekly Highlights run"
  }
 ]
