@@ -309,6 +309,20 @@ Lee: *"the highlight cover doesn't fit the circle, please can you choose somethi
 - **If "Select cover" shows no thumbnails.** On a short browser window, Instagram's web dialog collapses the thumbnail strip to 0px high. Run JavaScript in the dialog to hide the preview and give the second child of the scrolling div a height of 300px. Then click the icon frame, put the preview back, and click Done. That's how the CRM cover was set on 9 Nov 2026.
 - **Phone alternative.** The `-square.jpg` versions are for uploading from a phone's camera roll ("Edit highlight" → "Edit cover").
 
+## Opening web pages in unattended runs (10 Nov 2026)
+On 9 and 10 Nov most scheduled runs could not open source pages: a permission prompt appeared and nobody was there to answer it. The news desk found nothing it could verify, sourced Stories were dropped, and the LinkedIn post was held.
+- **Search first, then open.** A page opens without a prompt when its exact URL came back from a web search in the same run. Run the web search (extended mode for news), then open the URL exactly as the search returned it.
+- **Never type a URL from memory, from `sources.md`, from `newsdesk.json` or from this file and open it directly.** Search for the page title or the site name plus the topic, and open the result.
+- **The fact-check subagent has the same limit.** Tell it to search for each source by title and site, then open the URL its own search returned.
+- **If a page still won't open after a search, try once more with a different search, then move on.** Don't wait on a prompt. Say in the summary which sources could not be opened.
+- **A run where nothing can be opened still posts**, using advice that needs no outside facts, as it did on 10 Nov. It must say "web pages could not be opened" in its summary so Lee knows.
+
+## Publishing errors are not always failures (10 Nov 2026)
+Meta can publish a post and still return an error. On 10 Nov the 19:33 carousel was reported as "refused" twice and went live both times.
+- `publish.py` now looks at the account before publishing and after any error. If a post with the same caption is live, it records that post and does not publish again.
+- **Never re-run a failed publish by hand before checking the Instagram profile.** If `published.json` says failed, run the workflow again once: it will find the live copy or publish safely.
+- Report "published, Meta returned an error" as published, with the permalink.
+
 ## Photos from the library (Lee's rules, updated 9 Nov 2026)
 Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names... the images you choose must be relevant to what you are posting about"* and *"we are a design company, so the images we choose have to be on point."*
 
