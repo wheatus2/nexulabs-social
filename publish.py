@@ -99,7 +99,7 @@ def wait_ready(container, max_wait=900):
     raise GraphError(f"container {container} not ready after {max_wait}s")
 
 
-def ig_publish(container):
+def ig_publish(container, cap=""):
     wait_ready(container)
     media_id = None
     for attempt in range(3):
@@ -107,13 +107,17 @@ def ig_publish(container):
             media_id = call("POST", f"{IG_USER}/media_publish", {"creation_id": container})["id"]
             break
         except GraphError as e:
-            if attempt == 2:
-                raise
-            time.sleep(15)
-            # Never double-post: if the container was published despite the error, stop here.
+            time.sleep(20)
+            # Never double-post: Meta sometimes publishes and still returns an error. Check the account first.
+            live = _find_posted(cap, strict=True) if cap else None
+            if live:
+                print(f"media_publish returned an error ({e}) but the post is live: {live['permalink']}", flush=True)
+                return {**live, "note": f"Meta returned an error but the post went live: {e}"}
             st = call("GET", container, {"fields": "status_code"}).get("status_code")
             if st == "PUBLISHED":
                 raise GraphError(f"container {container} was published but Meta returned an error ({e}); check the account before re-running")
+            if attempt == 2:
+                raise
             print(f"media_publish retry after: {e}", flush=True)
     link = None
     try:
@@ -135,6 +139,10 @@ def caption(folder):
 # ---------- Instagram ----------
 def instagram_post(folder):
     cap = caption(folder)
+    live = _find_posted(cap, strict=True)
+    if live:
+        print(f"instagram: a post with this caption is already live ({live['permalink']}); not publishing again", flush=True)
+        return {"format": "existing", **live, "note": "already live on the account; not published again"}
     if (folder / "reel.mp4").exists():
         video = raw(folder, "reel.mp4")
         check_url(video)
@@ -142,7 +150,7 @@ def instagram_post(folder):
         if (folder / "cover.jpg").exists():
             params["cover_url"] = raw(folder, "cover.jpg")
         c = call("POST", f"{IG_USER}/media", params, timeout=300)["id"]
-        return {"format": "reel", **ig_publish(c)}
+        return {"format": "reel", **ig_publish(c, cap)}
     imgs = slides(folder)
     if not imgs:
         raise GraphError("no reel.mp4 or slide-NN.jpg in folder")
@@ -153,7 +161,7 @@ def instagram_post(folder):
         check_url(u)
     if len(urls) == 1:
         c = call("POST", f"{IG_USER}/media", {"image_url": urls[0], "caption": cap})["id"]
-        return {"format": "single", **ig_publish(c)}
+        return {"format": "single", **ig_publish(c, cap)}
     def build():
         children = []
         for u in urls:
@@ -161,26 +169,27 @@ def instagram_post(folder):
             wait_ready(ch, max_wait=300)
             children.append(ch)
         return call("POST", f"{IG_USER}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": cap})["id"]
-    try:
-        return {"format": "carousel", "slides": len(urls), **ig_publish(build())}
-    except GraphError as e:
-        # Meta sometimes answers media_publish with a bare "Fatal" (subcode 2207085, seen 10 Nov 2026) for a
-        # container that will never publish. Retrying the same container doesn't help; a fresh one usually does.
-        if "was published" in str(e) or _already_posted(cap):
-            raise
-        print(f"carousel publish failed ({e}); rebuilding the containers once after 60s", flush=True)
-        time.sleep(60)
-        return {"format": "carousel", "slides": len(urls), "rebuilt": True, **ig_publish(build())}
+    return {"format": "carousel", "slides": len(urls), **ig_publish(build(), cap)}
 
 
-def _already_posted(cap):
-    """True if the newest Instagram post already carries this caption (guards against double-posting)."""
-    try:
-        latest = call("GET", f"{IG_USER}/media", {"fields": "caption,timestamp", "limit": 3}).get("data", [])
-    except GraphError:
-        return True  # can't tell, so don't risk a duplicate
+def _find_posted(cap, strict=False):
+    """The live Instagram post that already carries this caption, or None.
+    Meta can publish a post and still answer media_publish with an error (10 Nov 2026: "Application request
+    limit reached" then "Fatal", while the carousel went live each time, three times over). So we always look
+    at the account itself before publishing and after any publish error."""
     head = cap.strip()[:80]
-    return any((m.get("caption") or "").strip()[:80] == head for m in latest) if head else False
+    if not head:
+        return None
+    try:
+        latest = call("GET", f"{IG_USER}/media", {"fields": "id,caption,permalink,timestamp", "limit": 10}).get("data", [])
+    except GraphError as e:
+        if strict:
+            raise GraphError(f"could not check the account for an existing copy ({e}); not publishing, to avoid a duplicate")
+        return None
+    for m in latest:
+        if (m.get("caption") or "").strip()[:80] == head:
+            return {"media_id": m["id"], "permalink": m.get("permalink")}
+    return None
 
 
 def instagram_story(folder, done=None, on_frame=None):
@@ -208,6 +217,10 @@ def instagram_story(folder, done=None, on_frame=None):
 # ---------- Facebook Page ----------
 def facebook_post(folder):
     cap = caption(folder)
+    live = _find_posted(cap, strict=True)
+    if live:
+        print(f"instagram: a post with this caption is already live ({live['permalink']}); not publishing again", flush=True)
+        return {"format": "existing", **live, "note": "already live on the account; not published again"}
     if (folder / "reel.mp4").exists():
         r = call("POST", f"{FB_PAGE}/videos", {"file_url": raw(folder, "reel.mp4"), "description": cap}, timeout=600)
         return {"format": "video", "id": r.get("id")}
