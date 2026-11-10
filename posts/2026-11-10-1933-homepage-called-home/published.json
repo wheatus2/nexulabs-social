@@ -1,7 +1,7 @@
 {
  "instagram": {
   "ok": false,
-  "at": "2026-11-10T19:57:50+00:00",
+  "at": "2026-11-10T20:19:19+00:00",
   "error": "POST 17841471856846758/media_publish -> HTTP 400 OAuthException -1/2207085: Fatal"
  },
  "facebook": {
