@@ -520,7 +520,7 @@
   "status": "published",
   "permalink": "https://www.instagram.com/p/DfkxqZuD2I-/",
   "instagram_media_id": "18483756877113338",
-  "facebook_id": "1484176674771345_122101744815544005",
+  "facebook_post_id": "1484176674771345_122101744815544005", "published_via": "github-actions",
   "note": "Posted on Lee's request. Meta returned 'Application request limit reached' but the post went live once; Facebook published on a second run after the Facebook check was fixed."
  }
 ]
