@@ -154,13 +154,33 @@ def instagram_post(folder):
     if len(urls) == 1:
         c = call("POST", f"{IG_USER}/media", {"image_url": urls[0], "caption": cap})["id"]
         return {"format": "single", **ig_publish(c)}
-    children = []
-    for u in urls:
-        ch = call("POST", f"{IG_USER}/media", {"image_url": u, "is_carousel_item": "true"})["id"]
-        wait_ready(ch, max_wait=300)
-        children.append(ch)
-    c = call("POST", f"{IG_USER}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": cap})["id"]
-    return {"format": "carousel", "slides": len(urls), **ig_publish(c)}
+    def build():
+        children = []
+        for u in urls:
+            ch = call("POST", f"{IG_USER}/media", {"image_url": u, "is_carousel_item": "true"})["id"]
+            wait_ready(ch, max_wait=300)
+            children.append(ch)
+        return call("POST", f"{IG_USER}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": cap})["id"]
+    try:
+        return {"format": "carousel", "slides": len(urls), **ig_publish(build())}
+    except GraphError as e:
+        # Meta sometimes answers media_publish with a bare "Fatal" (subcode 2207085, seen 10 Nov 2026) for a
+        # container that will never publish. Retrying the same container doesn't help; a fresh one usually does.
+        if "was published" in str(e) or _already_posted(cap):
+            raise
+        print(f"carousel publish failed ({e}); rebuilding the containers once after 60s", flush=True)
+        time.sleep(60)
+        return {"format": "carousel", "slides": len(urls), "rebuilt": True, **ig_publish(build())}
+
+
+def _already_posted(cap):
+    """True if the newest Instagram post already carries this caption (guards against double-posting)."""
+    try:
+        latest = call("GET", f"{IG_USER}/media", {"fields": "caption,timestamp", "limit": 3}).get("data", [])
+    except GraphError:
+        return True  # can't tell, so don't risk a duplicate
+    head = cap.strip()[:80]
+    return any((m.get("caption") or "").strip()[:80] == head for m in latest) if head else False
 
 
 def instagram_story(folder, done=None, on_frame=None):
