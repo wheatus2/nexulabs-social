@@ -435,5 +435,54 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "First feed post in the press look."
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "19:33",
+  "time_slot": "evening",
+  "id": "2026-11-10-1933-homepage-called-home",
+  "format": "carousel",
+  "category": "Web design",
+  "angle": "what not to do + how to get it right (this vs that)",
+  "topic": "Page titles: is your homepage called 'Home'? Google's guidance on page titles (every page has one, descriptive and short, different on each page, site name at the start or end with a hyphen, colon or pipe); check yours by searching for your business and asking what your page titles are; Google can show its own wording",
+  "news_story_id": null,
+  "style": "soft",
+  "themes": [
+   "mint",
+   "navy",
+   "blush"
+  ],
+  "cover": "compare",
+  "screen": null,
+  "slides": 3,
+  "slide_types": [
+   "compare",
+   "list",
+   "flow"
+  ],
+  "photo": null,
+  "hooks_considered": [
+   "Is your homepage called Home?",
+   "Your homepage has a name. Is it 'Home'?",
+   "The line of your website Google shows first (dropped: can't be supported)"
+  ],
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 4,
+   "true": 5,
+   "useful": 5,
+   "specific": 5,
+   "hook": 4,
+   "design": 4
+  },
+  "news_check": "Eight searches run; most source pages still could not be opened in the unattended run, and nothing passed with a primary source plus an independent outlet (see newsdesk.json 2026-11-10-1933-scan). Evergreen post sourced from Google Search Central's title links page (developers.google.com, which does load).",
+  "instagram_media_id": null,
+  "permalink": null,
+  "facebook_post_id": "1484176674771345_122101717671544005",
+  "published_via": "github-actions",
+  "status": "NOT PUBLISHED on Instagram; published on Facebook",
+  "instagram_error": "Workflow runs 42889160259 (19:49 UTC) and 42890287615 (19:56 UTC) both failed at media_publish. First attempt: HTTP 403 OAuthException 4/2207051 'Application request limit reached'; every retry after that: HTTP 400 OAuthException -1/2207085 'Fatal'. Not a token error (Facebook published with the same token), so no Zapier fallback. Stopped after the second run, per the rules.",
+  "to_publish": "Re-run publish.yml with mode post and folder posts/2026-11-10-1933-homepage-called-home once Instagram allows publishing again (Facebook is skipped automatically). Check the Instagram grid first in case the post did land.",
+  "note": "First feed post in the soft look. Today's looks: journal, press (feed), soft, signal (Stories), soft (this post)."
  }
 ]
