@@ -688,6 +688,8 @@ html,body{height:1920px}
 .it h3{font-size:50px}.it p{font-size:30px}.card .tx{font-size:50px}.card .sm{font-size:30px}
 .st h3{font-size:54px}.st p{font-size:30px}.legend div{font-size:32px}
 .s.screen h2{font-size:100px}.s.screen p.lead{font-size:38px}.win table{font-size:28px}.phone{width:460px}
+.sw{gap:28px}.sw .row{gap:28px;height:290px}.sw .c{padding:30px 34px;border-radius:32px}.sw .c b{font-size:46px}.sw .c span{font-size:28px;opacity:.85;margin-top:8px}
+.st-soft .sw .c{border:3px solid var(--fg);box-shadow:9px 9px 0 var(--fg)}.st-soft .sw .c b{font-family:Brico;font-weight:800;letter-spacing:-.03em}
 .win .wbar b{font-size:32px}.win .tabs{font-size:22px}.win .rec .f small{font-size:22px}.win .rec .f span{font-size:34px}.win .rec .f span .pill{font-size:24px}.win .rec .tl h5{font-size:21px}.win .rec .ev{font-size:30px;padding:20px 0}.win .rec .ev i{font-size:20px;min-width:64px;white-space:nowrap}
 """
 

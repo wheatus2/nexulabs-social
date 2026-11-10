@@ -1,0 +1,40 @@
+{
+  "format": "story",
+  "series": "Branding tip",
+  "style": "soft",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "mint",
+      "headline": "Is the blue on your van the *same* blue as your website?",
+      "sub": "If you had to go and check, this one's for you."
+    },
+    {
+      "type": "palette",
+      "theme": "blush",
+      "kicker": "Example palette",
+      "title": "Pick a small set of colours",
+      "sub": "One main colour, one accent, a light and a dark. That's plenty.",
+      "rows": [
+        [["Main", "#173A5E"], ["Accent", "#18B7A0", "#0B1F1C"]],
+        [["Light", "#F5F3EE", "#23272B"], ["Dark", "#23272B"]]
+      ]
+    },
+    {
+      "type": "list",
+      "theme": "navy",
+      "title": "Then use the exact codes everywhere",
+      "items": [
+        ["Website", "Give your web designer the code, like #173A5E, so nobody picks a blue by eye."],
+        ["Van, signs and print", "Ask your printer which version of the code they need."],
+        ["Socials and paperwork", "Same colours on your posts, quotes and invoices."]
+      ]
+    },
+    {
+      "type": "cover",
+      "theme": "mint",
+      "headline": "Save the codes where *everyone* can find them.",
+      "sub": "A note on your phone is fine. Then nobody has to guess the blue again."
+    }
+  ]
+}
