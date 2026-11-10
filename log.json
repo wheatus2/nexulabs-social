@@ -384,5 +384,56 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "First post in the journal look. render.py fix: the journal serif (Fraunces) was never loading because the font family was named 'Serif'; renamed to 'Fraun'."
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "14:33",
+  "time_slot": "afternoon",
+  "id": "2026-11-10-1433-website-down-who-to-ring",
+  "format": "reel",
+  "category": "Hosting",
+  "angle": "why it matters (relatable) + how to get it right",
+  "topic": "Know who hosts your website before it goes down: write down who hosts it, who holds the login, when it renews and which card pays, and who to ring; example 'Our website' table blank then filled in; note who has the login, not the password",
+  "news_story_id": null,
+  "style": "press",
+  "themes": [
+   "newsprint",
+   "night",
+   "red"
+  ],
+  "cover": "screen",
+  "screen": "table (Our website: four questions, 'Not sure' answers; then filled in with made-up details)",
+  "scenes": 5,
+  "seconds": 19.8,
+  "slide_types": [
+   "screen",
+   "photo",
+   "list",
+   "screen",
+   "cta"
+  ],
+  "photo": "scott-rodgerson--blue-network-cables-plugged-into.PSpf_XgOM5w.jpg",
+  "photo_shows": "blue network cables plugged into a server rack (scene 2: 'It lives on a server somewhere. Whose?')",
+  "hooks_considered": [
+   "Your website's down. Who do you ring?",
+   "Do you know who hosts your website?",
+   "Four things to write down before your website breaks."
+  ],
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 4,
+   "true": 5,
+   "useful": 5,
+   "specific": 4,
+   "hook": 5,
+   "design": 4
+  },
+  "news_check": "Searches run, but source pages could not be opened again (web fetching refused in the unattended run), so no story could be verified with two sources. Evergreen post with no claims that need a source.",
+  "instagram_media_id": "17894021061621706",
+  "permalink": "https://www.instagram.com/reel/DfkKpSzoEOq/",
+  "facebook_post_id": "1509915177624397",
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "First feed post in the press look."
  }
 ]
