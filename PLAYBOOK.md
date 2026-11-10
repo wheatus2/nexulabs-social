@@ -1,5 +1,7 @@
 # Nexulabs Instagram — daily posting playbook
 
+> **Mockups (Lee, 10 Nov 2026):** posts must look like a marketing agency made them. Use the `mockup` slide type (a designed website for a made-up business on a laptop and phone) as described in "Mockups: post like an agency". This applies to every scheduled run from now on.
+>
 > **Design update (Lee, 9 Nov 2026):** No gradient styles (Lee, 8 Nov: posts looked "very AI generated"). Everything also looked the same (Lee, 9 Nov), so posts, Reels, Stories and LinkedIn now rotate through **five looks**: `product`, `journal`, `signal`, `soft` and `press`, each with its own fonts, colours and layout. See "Design direction: five looks" for the rotation rules. Photos must literally show the post's subject; see "Photos from the library". This replaces any older instruction, including in the scheduled tasks, to use only `"style": "product"`.
 
 > **Publishing update (Lee, 8 Nov 2026):** Zapier's task allowance ran out, so publishing moves to **GitHub Actions** (free, no task limits). See "Publishing via GitHub Actions" below. This replaces the Zapier publishing steps in the scheduled task prompts (Instagram `publish_media_v2` / `publish_video`, Facebook `page_stream` / `page_video`, Stories via "Make API Mutating Request", permalink lookups via "Make API GET Request"). Use Zapier only as the fallback described there. LinkedIn still uses Zapier.
@@ -322,6 +324,26 @@ Meta can publish a post and still return an error. On 10 Nov the 19:33 carousel 
 - `publish.py` now looks at the account before publishing and after any error. If a post with the same caption is live, it records that post and does not publish again.
 - **Never re-run a failed publish by hand before checking the Instagram profile.** If `published.json` says failed, run the workflow again once: it will find the live copy or publish safely.
 - Report "published, Meta returned an error" as published, with the permalink.
+
+## Mockups: post like an agency (Lee, 10 Nov 2026)
+Lee: *"these posts need to look way more professional"* and *"you need to be creating mockups, and making things look like a full marketing agency has posted them."*
+
+- **Show finished-looking work.** The slide type `mockup` puts a designed website for a made-up business on a laptop, a phone, or both (`"device": "duo" | "laptop" | "phone"`). See `design-samples/mockups.jpg` and the `render.py` comment above `_site` for the fields.
+- **How often.**
+  - Every web design, branding, and websites + CRM post has at least one `mockup` slide, usually the cover.
+  - At least one feed post a day opens with a mockup cover.
+  - Stories use `"device": "phone"`.
+  - CRM posts keep using `screen` slides (table, board, record).
+- **Design each made-up site properly.** Treat it as a real client pitch:
+  - a believable local business name and trade (North East towns, no real companies)
+  - its own colours (`accent`, `bg`, `ink`) and headline font (`font`: Fraun, Brico, Disp, News or Cond) that suit the trade
+  - a short, confident headline, one line of supporting copy, one clear button
+  - three real-sounding services or prices, and a trust strip
+  - a different business, palette and font from the last three mockups in `log.json`
+- **Photo inside the site.** Use a prepared library photo that literally shows that trade (`photo.py list --topic business-types`), credit it in the caption, and retire it after publishing. If none fits, leave `image` out and the hero uses the site's accent colour.
+- **Keep the slide simple.** One headline, at most one supporting line, the device, and the caption "Concept for a made-up business." Let the mockup carry the slide. No lists or extra boxes on a mockup slide.
+- **Honesty.** Always label it a concept. Never present a mockup as a real client or real results. "(example)" after any rating or review count.
+- **Log it.** Add `"cover": "mockup"` and `"mockup": "<business name>"` to `log.json`.
 
 ## Photos from the library (Lee's rules, updated 9 Nov 2026)
 Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names... the images you choose must be relevant to what you are posting about"* and *"we are a design company, so the images we choose have to be on point."*

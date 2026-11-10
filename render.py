@@ -950,6 +950,149 @@ STORY_CSS += """
 .st-journal h2,.st-press h2{font-size:96px}.st-soft h2{font-size:88px}.st-journal h1,.st-press h1{font-size:124px}
 """
 
+# ======================================================================================
+# MOCKUPS (Lee, 10 Nov 2026: "you need to be creating mockups, and making things look like a
+# full marketing agency has posted them"). Slide type "mockup": a designed website for a
+# made-up business, shown on a laptop, a phone or both, as an agency would present its work.
+#   {"type":"mockup","theme":..., "kicker":..., "title":..., "sub":..., "device":"duo|laptop|phone",
+#    "caption":"Concept for a made-up business.",
+#    "site":{"brand":"Harbour Barbers","nav":["Cuts","Prices","Find us"],"cta":"Book a chair",
+#            "eyebrow":"Sunderland · Est. 2014","headline":"Sharp cuts,\nno waiting.","sub":"...",
+#            "image":"photo.jpg" (optional, prepared library photo), "focus":"center",
+#            "accent":"#B4532A","bg":"#F6F1EA","ink":"#1B1A18","font":"Fraun|Brico|Disp|News|Cond",
+#            "cards":[["Skin fade","from £18"],...], "strip":["Open 7 days","Walk-ins welcome",...],
+#            "dark":false}}
+# ======================================================================================
+def _site(site, mobile=False):
+    e = html.escape
+    acc, bg, ink = site.get("accent", "#0C23A8"), site.get("bg", "#FFFFFF"), site.get("ink", "#0B0B0C")
+    if site.get("dark"):
+        bg, ink = site.get("bg", "#111214"), site.get("ink", "#F4F2EC")
+    font = site.get("font", "Disp")
+    caps = "text-transform:uppercase;letter-spacing:.01em;line-height:1.0;" if font == "Cond" else "letter-spacing:-.035em;line-height:1.02;"
+    weight = {"Fraun": 400, "News": 700, "Brico": 800, "Cond": 400}.get(font, 600)
+    img = ""
+    if site.get("image"):
+        uri = (Path(_POST_DIR) / site["image"]).resolve().as_uri()
+        img = f"background-image:url({uri});background-size:cover;background-position:{site.get('focus','center')};"
+    else:
+        img = f"background:{acc};"
+    nav = "".join(f"<span>{e(n)}</span>" for n in site.get("nav", []))
+    cards = "".join(f'<div class="ms-card"><b>{e(a)}</b><span>{e(b)}</span></div>' for a, b in site.get("cards", []))
+    strip = "".join(f"<span>{e(x)}</span>" for x in site.get("strip", []))
+    head = md(site["headline"])
+    style = f"--a:{acc};--b:{bg};--i:{ink};--hf:{font};--hw:{weight};"
+    if mobile:
+        return f"""<div class="ms ms-m" style="{style}"><div class="ms-nav"><b>{e(site['brand'])}</b><i></i></div>
+<div class="ms-ph" style="{img}"></div>
+<div class="ms-pad">{f'<small>{e(site["eyebrow"])}</small>' if site.get('eyebrow') else ''}<h3 style="{caps}">{head}</h3>
+<p>{e(site.get('sub',''))}</p><div class="ms-btn">{e(site.get('cta','Get in touch'))}</div>
+<div class="ms-cards">{cards}</div></div></div>"""
+    return f"""<div class="ms ms-d" style="{style}"><div class="ms-nav"><b>{e(site['brand'])}</b><div>{nav}<em>{e(site.get('cta','Get in touch'))}</em></div></div>
+<div class="ms-hero"><div class="ms-txt">{f'<small>{e(site["eyebrow"])}</small>' if site.get('eyebrow') else ''}<h3 style="{caps}">{head}</h3>
+<p>{e(site.get('sub',''))}</p><div class="ms-row"><div class="ms-btn">{e(site.get('cta','Get in touch'))}</div>{f'<u>{e(site["cta2"])}</u>' if site.get('cta2') else ''}</div></div>
+<div class="ms-ph" style="{img}"></div></div>
+<div class="ms-cards">{cards}</div>{f'<div class="ms-strip">{strip}</div>' if strip else ''}</div>"""
+
+
+def _laptop(site):
+    return f"""<div class="lap"><div class="lap-lid"><i class="lap-cam"></i><div class="lap-scr"><div class="lap-in">{_site(site)}</div></div></div>
+<div class="lap-base"><i></i></div><div class="lap-foot"></div></div>"""
+
+
+def _handset(site):
+    return f"""<div class="hs"><div class="hs-scr"><i class="hs-isl"></i><div class="hs-in">{_site(site, True)}</div><i class="hs-home"></i></div></div>"""
+
+
+_build_base = build
+def build(slide, idx, total, series, style="studio"):
+    if slide["type"] != "mockup":
+        return _build_base(slide, idx, total, series, style)
+    dev = slide.get("device", "duo")
+    site = slide["site"]
+    stage = {"laptop": _laptop(site), "phone": _handset(site)}.get(dev, _laptop(site) + _handset(site))
+    cap = slide.get("caption", "Concept for a made-up business.")
+    title = f'<h2{f" style=font-size:{slide["title_size"]}px" if slide.get("title_size") else ""}>{md(slide["title"])}</h2>' if slide.get("title") else ""
+    inner = f"""{kick(slide) if slide.get('kicker') else '<div style="height:56px"></div>'}{title}
+{f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}
+<div class="stage stage-{dev}">{stage}</div>{f'<p class="excap">{md(cap)}</p>' if cap else ''}"""
+    return frame(slide, idx, total, series, inner, src(slide), "", style)
+
+
+CSS += """
+.s.mockup h2{font-size:84px;line-height:1.0}
+.s.mockup p.lead{margin-top:22px;font-size:29px;max-width:820px}
+.s.mockup .excap{margin-top:26px}
+.stage{margin-top:auto;position:relative;display:flex;justify-content:center;align-items:flex-end}
+.st-soft .stage{align-self:stretch}
+/* laptop */
+.lap{width:940px;flex:none;position:relative;filter:drop-shadow(0 46px 38px rgba(0,0,0,.28))}
+.lap-lid{background:#111214;border-radius:26px 26px 0 0;padding:20px 20px 22px;position:relative;margin:0 46px}
+.lap-cam{position:absolute;top:8px;left:50%;width:7px;height:7px;margin-left:-3px;border-radius:50%;background:#2c2d31}
+.lap-scr{border-radius:6px;overflow:hidden;width:808px;height:505px;background:#fff}
+.lap-in{width:1280px;height:800px;transform:scale(.63125);transform-origin:0 0}
+.lap-base{height:24px;background:linear-gradient(#e3e4e8,#b9bbc2);border-radius:3px 3px 16px 16px;position:relative}
+.lap-base i{position:absolute;left:50%;top:0;width:150px;height:9px;margin-left:-75px;background:#a4a6ad;border-radius:0 0 9px 9px}
+.lap-foot{height:5px;margin:0 70px;background:#8d8f96;border-radius:0 0 8px 8px;opacity:.7}
+/* handset */
+.hs{width:300px;flex:none;border-radius:50px;background:#111214;padding:11px;box-shadow:0 0 0 2px #2b2c30 inset,0 40px 50px -24px rgba(0,0,0,.5)}
+.hs-scr{border-radius:40px;overflow:hidden;width:278px;height:602px;position:relative;background:#fff}
+.hs-in{width:390px;height:844px;transform:scale(.7128);transform-origin:0 0}
+.hs-isl{position:absolute;top:10px;left:50%;width:80px;height:23px;margin-left:-40px;border-radius:12px;background:#111214;z-index:3}
+.hs-home{position:absolute;bottom:7px;left:50%;width:100px;height:4px;margin-left:-50px;border-radius:2px;background:#111214;opacity:.55;z-index:3}
+.stage-duo .lap{zoom:.9;margin-left:-70px}
+.st-signal .stage-laptop .lap{zoom:.85}.st-signal .stage-duo .lap{zoom:.84;margin-left:-60px}.st-signal .stage-duo .hs{right:0}
+.stage-duo .hs{position:absolute;right:-18px;bottom:-6px;width:262px;padding:10px;border-radius:44px}
+.stage-duo .hs-scr{width:242px;height:524px;border-radius:35px}
+.stage-duo .hs-in{transform:scale(.6205)}
+.stage-phone .hs{width:400px;padding:14px;border-radius:64px}
+.stage-phone .hs-scr{width:372px;height:805px;border-radius:51px}
+.stage-phone .hs-in{transform:scale(.9538)}
+.stage-phone .hs-isl{width:104px;height:30px;margin-left:-52px;top:13px;border-radius:15px}
+.stage-phone{margin-bottom:-150px}
+.stage-laptop .lap{width:1010px;margin:0 -53px}
+.stage-laptop .lap-scr{width:878px;height:549px}.stage-laptop .lap-in{transform:scale(.686)}
+/* the made-up website inside */
+.ms{width:100%;height:100%;background:var(--b);color:var(--i);font-family:Text;text-align:left;overflow:hidden}
+.ms h3{font-family:var(--hf);font-weight:var(--hw)}
+.ms-d .ms-nav{display:flex;justify-content:space-between;align-items:center;padding:30px 64px}
+.ms-d .ms-nav b{font-family:var(--hf);font-weight:var(--hw);font-size:30px;letter-spacing:-.02em}
+.ms-d .ms-nav div{display:flex;gap:38px;align-items:center;font-size:18px}
+.ms-d .ms-nav span{opacity:.75}
+.ms-d .ms-nav em{font-style:normal;background:var(--i);color:var(--b);padding:13px 24px;border-radius:999px;font-weight:600;font-size:17px}
+.ms-hero{display:flex;gap:56px;padding:26px 64px 0;align-items:stretch;height:476px}
+.ms-txt{flex:1.02;display:flex;flex-direction:column;justify-content:center}
+.ms small{font-size:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--a)}
+.ms-d h3{font-size:86px;margin-top:20px}
+.ms-d p{font-size:22px;line-height:1.45;opacity:.72;margin-top:24px;max-width:470px}
+.ms-row{display:flex;gap:26px;align-items:center;margin-top:34px}
+.ms-btn{background:var(--a);color:#fff;padding:19px 34px;border-radius:999px;font-weight:600;font-size:20px;display:inline-block}
+.ms-row u{text-decoration:none;font-weight:600;font-size:19px;border-bottom:2px solid currentColor;padding-bottom:3px}
+.ms-d .ms-ph{flex:1;border-radius:26px}
+.ms-d .ms-cards{display:flex;gap:22px;padding:34px 64px 0}
+.ms-card{flex:1;border:1.5px solid color-mix(in srgb,var(--i) 16%,transparent);border-radius:18px;padding:22px 24px}
+.ms-card b{display:block;font-size:22px;font-weight:600;letter-spacing:-.01em}
+.ms-card span{display:block;font-size:17px;opacity:.65;margin-top:5px}
+.ms-strip{display:flex;justify-content:space-between;margin:30px 64px 0;padding-top:22px;border-top:1.5px solid color-mix(in srgb,var(--i) 14%,transparent);font-size:16px;opacity:.7}
+.ms-m .ms-nav{display:flex;justify-content:space-between;align-items:center;padding:62px 24px 16px}
+.ms-m .ms-nav b{font-family:var(--hf);font-weight:var(--hw);font-size:23px;letter-spacing:-.02em}
+.ms-m .ms-nav i{width:26px;height:2.5px;background:var(--i);box-shadow:0 8px 0 var(--i)}
+.ms-m .ms-ph{height:250px;margin:0 16px;border-radius:22px}
+.ms-pad{padding:26px 24px}
+.ms-m small{font-size:12px}
+.ms-m h3{font-size:47px;margin-top:12px}
+.ms-m p{font-size:17px;line-height:1.45;opacity:.72;margin-top:14px}
+.ms-m .ms-btn{display:block;text-align:center;margin-top:22px;font-size:18px;padding:18px}
+.ms-m .ms-cards{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.ms-m .ms-card{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-radius:14px}
+.ms-m .ms-card b{font-size:17px}.ms-m .ms-card span{margin:0;font-size:15px}
+"""
+STORY_CSS += """
+.s.mockup h2{font-size:104px}.s.mockup p.lead{font-size:38px}
+.stage-phone{margin-bottom:0}.stage-phone .hs{transform:scale(1.25);transform-origin:50% 100%}
+.stage-duo,.stage-laptop{margin-bottom:60px}
+"""
+
 if __name__ == "__main__":
     render(sys.argv[1])
 
