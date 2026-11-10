@@ -1,8 +1,11 @@
 {
  "instagram": {
-  "ok": false,
-  "at": "2026-11-10T20:19:19+00:00",
-  "error": "POST 17841471856846758/media_publish -> HTTP 400 OAuthException -1/2207085: Fatal"
+  "ok": true,
+  "at": "2026-11-10T20:21:13+00:00",
+  "format": "existing",
+  "media_id": "18651589180038961",
+  "permalink": "https://www.instagram.com/p/DfktZOYlytM/",
+  "note": "already live on the account; not published again"
  },
  "facebook": {
   "ok": true,
