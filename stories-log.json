@@ -186,5 +186,57 @@
   ],
   "published_via": "github-actions",
   "note": "to be the Book a call highlight's cover"
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "11:47",
+  "published_at": "about 11:57 UK",
+  "id": "stories/2026-11-10-1147-same-blue-everywhere",
+  "type": "quick tip series",
+  "category": "Branding",
+  "topic": "Brand colours: is the blue on your van the same blue as your website; pick a small set (main, accent, light, dark), use the exact colour codes on the website, print and socials, and save the codes where everyone can find them",
+  "news_story_id": null,
+  "style": "soft",
+  "themes": [
+   "mint",
+   "blush",
+   "navy",
+   "mint"
+  ],
+  "cover": "headline",
+  "screen": null,
+  "photo": null,
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "palette",
+   "list",
+   "cover"
+  ],
+  "sources": [],
+  "fact_check": "self-check pass (no factual claims)",
+  "media_ids": [
+   "17911850445483051",
+   "18138204109786484",
+   "17944293702370110",
+   "18119826383327954"
+  ],
+  "published_via": "github-actions",
+  "note": "Planned 'tech news in 15 seconds' on the NCSC Annual Review 2026 was dropped: ncsc.gov.uk couldn't be re-opened this run (web fetching unavailable to the unattended session)."
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "12:00",
+  "id": "stories/2026-11-10-highlight-cover-branding",
+  "type": "highlight-cover",
+  "category": "Branding",
+  "topic": "Branding highlight cover (pen nib icon)",
+  "style": "cover",
+  "frames": 1,
+  "media_ids": [
+   "17965551210231771"
+  ],
+  "published_via": "github-actions",
+  "note": "to be added to the Branding highlight and set as its cover by the weekly Highlights run"
  }
 ]
