@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-10-1433-website-down-who-to-ring",
+ "series": "Hosting",
+ "style": "press",
+ "scenes": [
+  {
+   "type": "screen",
+   "theme": "newsprint",
+   "kicker": "Hosting",
+   "title": "Your website's\n*down*. Who do\nyou ring?",
+   "screen": {
+    "kind": "table",
+    "title": "Our website",
+    "columns": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "Who hosts it?",
+      "Not sure"
+     ],
+     [
+      "Who has the login?",
+      "Whoever built it?"
+     ],
+     [
+      "When does it renew?",
+      "No idea"
+     ],
+     [
+      "Who do we ring?",
+      "Good question"
+     ]
+    ]
+   },
+   "caption": "Example screen.",
+   "dur": 3.8
+  },
+  {
+   "type": "photo",
+   "theme": "night",
+   "image": "photo.jpg",
+   "credit": "Photo: Scott Rodgerson on Unsplash",
+   "headline": "It lives on a server\nsomewhere. *Whose?*",
+   "dur": 3.4
+  },
+  {
+   "type": "list",
+   "theme": "newsprint",
+   "title": "Four things to\nwrite down",
+   "items": [
+    [
+     "Who hosts it",
+     "The company your website sits with."
+    ],
+    [
+     "Who holds the login",
+     "You, and not only whoever built it."
+    ],
+    [
+     "When it renews",
+     "And which card pays."
+    ],
+    [
+     "Who to ring",
+     "A support number or email."
+    ]
+   ],
+   "dur": 5.0
+  },
+  {
+   "type": "screen",
+   "theme": "red",
+   "title": "One page.\nAll four *answers*.",
+   "screen": {
+    "kind": "table",
+    "title": "Our website",
+    "columns": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "Who hosts it?",
+      "Example Host Ltd"
+     ],
+     [
+      "Who has the login?",
+      "Owner and office manager"
+     ],
+     [
+      "When does it renew?",
+      "14 March, yearly"
+     ],
+     [
+      "Who do we ring?",
+      "0191 000 0000"
+     ]
+    ]
+   },
+   "caption": "Example screen. Made-up details.",
+   "dur": 4.6
+  },
+  {
+   "type": "cta",
+   "theme": "night",
+   "headline": "Find out *before*\nit goes down.",
+   "cta_label": "Websites, hosting and CRMs",
+   "cta": "nexulabs.co.uk",
+   "dur": 3.0
+  }
+ ]
+}

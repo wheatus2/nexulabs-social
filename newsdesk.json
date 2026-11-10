@@ -202,6 +202,13 @@
       "headline": "10 Nov 08:33 scan: searches run (Google Search Central, ICO, UK tech news, Search Engine Roundtable, Meta/WhatsApp Business, WordPress/Shopify/Wix, NCSC) but source pages could not be opened this run (web fetching refused for ICO, NCSC, gov.uk, Nominet, Ofcom, BBC, The Register, Computer Weekly, Meta, WordPress, Shopify, Search Engine Roundtable, Search Engine Land, web.dev). Only the Google Search Central blog loaded: newest post is 'Search Central Live in Zurich is back!' (4 Nov 2026), an event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen CRM carousel instead.",
       "status": "rejected",
       "reason": "Scan note, not a story. Re-scan at the next run; the 3-10 Nov window has not been properly checked for ICO, NCSC, Meta and the UK press."
+    },
+    {
+      "id": "2026-11-10-1433-scan",
+      "found": "2026-11-10",
+      "headline": "10 Nov 14:33 scan: eight searches run (Google Search Central, ICO cookies/data protection, Search Engine Roundtable/Google Business Profile, Meta/WhatsApp Business, UK tech press, NCSC, WordPress/Shopify/Wix/Squarespace, Chrome/core update/AI Overviews). Source pages could not be opened again (web fetching needs a permission nobody is there to give in an unattended run: ICO, NCSC, The Register, BBC, Meta newsroom, WordPress, Search Engine Land, Search Engine Roundtable, Search Status Dashboard, legal500 all refused). Only the Google Search Central blog index loaded: nothing in November except the Zurich event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen hosting Reel instead.",
+      "status": "rejected",
+      "reason": "Scan note, not a story. To follow up when pages can be opened: (1) ICO storage and access technologies (cookies) guidance, including new exceptions for low-risk cookies, seen in law-firm headlines on mondaq/legal500; publish date and what is in force not confirmed. (2) CMA requirements on Google Search (publisher opt-out, choice screens); date not confirmed. The 3-10 Nov window has still not been properly checked for ICO, NCSC, Meta and the UK press."
     }
   ]
 }
