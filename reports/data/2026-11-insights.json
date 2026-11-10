@@ -1,61 +1,139 @@
 {
  "month": "2026-11",
- "fetched": "2026-11-09T18:58:10+00:00",
+ "fetched": "2026-11-10T20:23:39+00:00",
  "instagram": {
   "account": {
    "id": "17841471856846758",
    "followers_count": 6,
-   "follows_count": 7,
-   "media_count": 8,
+   "follows_count": 86,
+   "media_count": 10,
    "username": "nexulabs_",
    "month_totals": {
-    "views": 223,
-    "profile_views": 7,
+    "views": 320,
+    "profile_views": 12,
     "website_clicks": 0,
-    "total_interactions": 10,
-    "likes": 7,
+    "total_interactions": 15,
+    "likes": 11,
     "comments": 3,
     "shares": 0,
-    "saves": 0
+    "saves": 1
    },
    "windows": [
     {
      "since": "2026-11-01",
-     "until": "2026-11-09",
-     "reach": 111,
-     "views": 223,
-     "profile_views": 7,
+     "until": "2026-11-10",
+     "reach": 134,
+     "views": 320,
+     "profile_views": 12,
      "website_clicks": 0,
-     "accounts_engaged": 5,
-     "total_interactions": 10,
-     "likes": 7,
+     "accounts_engaged": 8,
+     "total_interactions": 15,
+     "likes": 11,
      "comments": 3,
      "shares": 0,
-     "saves": 0
+     "saves": 1
     }
    ],
    "note": ""
   },
   "posts": [
    {
-    "media_id": "18406527823201044",
-    "type": "REELS",
-    "media_type": "VIDEO",
-    "permalink": "https://www.instagram.com/reel/DfhmIJeAdXE/",
-    "timestamp": "2026-11-09T14:56:31+0000",
-    "caption": "Whose name is on your domain?\n\nIt's worth checking. When a web designer or IT firm registers a domai",
+    "media_id": "18651589180038961",
+    "type": "FEED",
+    "media_type": "CAROUSEL_ALBUM",
+    "permalink": "https://www.instagram.com/p/DfktZOYlytM/",
+    "timestamp": "2026-11-10T19:57:17+0000",
+    "caption": "Every page of your website can have a page title: a short line of text that says what the page is. I",
     "like_count": 0,
     "comments_count": 0,
     "insights": {
-     "reach": 83,
-     "views": 97,
+     "reach": 1,
+     "views": 2,
+     "saved": 0,
+     "shares": 0,
+     "likes": 0,
+     "comments": 0,
+     "total_interactions": 0
+    }
+   },
+   {
+    "media_id": "17894021061621706",
+    "type": "REELS",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/reel/DfkKpSzoEOq/",
+    "timestamp": "2026-11-10T14:54:07+0000",
+    "caption": "The worst time to find out who hosts your website is when it's down.\n\nIt's easy to lose track of. Ma",
+    "like_count": 0,
+    "comments_count": 0,
+    "insights": {
+     "reach": 5,
+     "views": 6,
      "saved": 0,
      "shares": 0,
      "likes": 0,
      "comments": 0,
      "total_interactions": 0,
-     "ig_reels_avg_watch_time": 3303,
-     "ig_reels_video_view_total_time": 293989
+     "ig_reels_avg_watch_time": 9594,
+     "ig_reels_video_view_total_time": 57564
+    }
+   },
+   {
+    "media_id": "17880328686567155",
+    "type": "FEED",
+    "media_type": "CAROUSEL_ALBUM",
+    "permalink": "https://www.instagram.com/p/Dfjg1DclxpZ/",
+    "timestamp": "2026-11-10T08:48:21+0000",
+    "caption": "\"Did anyone ring that customer back?\"\n\nIf that gets asked in your office most weeks, the spreadsheet",
+    "like_count": 0,
+    "comments_count": 0,
+    "insights": {
+     "reach": 2,
+     "views": 6,
+     "saved": 0,
+     "shares": 0,
+     "likes": 0,
+     "comments": 0,
+     "total_interactions": 0
+    }
+   },
+   {
+    "media_id": "18094223069233957",
+    "type": "FEED",
+    "media_type": "CAROUSEL_ALBUM",
+    "permalink": "https://www.instagram.com/p/DfiVRFrF_oY/",
+    "timestamp": "2026-11-09T21:48:03+0000",
+    "caption": "You can now book a call with us straight from our website.\n\nPick a day and a time, then choose a pho",
+    "like_count": 0,
+    "comments_count": 0,
+    "insights": {
+     "reach": 3,
+     "views": 10,
+     "saved": 1,
+     "shares": 0,
+     "likes": 0,
+     "comments": 0,
+     "total_interactions": 1
+    }
+   },
+   {
+    "media_id": "18095078555189217",
+    "type": "REELS",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/reel/DfiHRPwjyqf/",
+    "timestamp": "2026-11-09T19:46:09+0000",
+    "caption": "Plenty of contact forms ask for more than they need.\n\nCompany name, budget, full address, how did yo",
+    "like_count": 0,
+    "comments_count": 0,
+    "insights": {
+     "reach": 7,
+     "views": 12,
+     "saved": 0,
+     "shares": 0,
+     "likes": 0,
+     "comments": 0,
+     "total_interactions": 1,
+     "ig_reels_avg_watch_time": 14116,
+     "ig_reels_video_view_total_time": 169396
     }
    },
    {
@@ -87,34 +165,15 @@
     "like_count": 1,
     "comments_count": 0,
     "insights": {
-     "reach": 27,
-     "views": 31,
+     "reach": 29,
+     "views": 32,
      "saved": 0,
      "shares": 0,
      "likes": 1,
      "comments": 0,
      "total_interactions": 1,
-     "ig_reels_avg_watch_time": 4667,
-     "ig_reels_video_view_total_time": 154042
-    }
-   },
-   {
-    "media_id": "18022690991939290",
-    "type": "FEED",
-    "media_type": "CAROUSEL_ALBUM",
-    "permalink": "https://www.instagram.com/p/DfeV4jgF18G/",
-    "timestamp": "2026-11-08T08:36:30+0000",
-    "caption": "Sending a quote is the easy bit. The hard part is what happens after, when the customer goes quiet a",
-    "like_count": 1,
-    "comments_count": 0,
-    "insights": {
-     "reach": 4,
-     "views": 6,
-     "saved": 0,
-     "shares": 0,
-     "likes": 1,
-     "comments": 0,
-     "total_interactions": 1
+     "ig_reels_avg_watch_time": 5016,
+     "ig_reels_video_view_total_time": 180592
     }
    },
    {
@@ -156,25 +215,6 @@
     }
    },
    {
-    "media_id": "17895784704457768",
-    "type": "FEED",
-    "media_type": "CAROUSEL_ALBUM",
-    "permalink": "https://www.instagram.com/p/Dfbw6SijJH3/",
-    "timestamp": "2026-11-07T08:34:56+0000",
-    "caption": "Most websites are decent at getting the enquiry. It's what happens after that loses the job.\n\nIt lan",
-    "like_count": 1,
-    "comments_count": 2,
-    "insights": {
-     "reach": 5,
-     "views": 13,
-     "saved": 0,
-     "shares": 0,
-     "likes": 1,
-     "comments": 2,
-     "total_interactions": 3
-    }
-   },
-   {
     "media_id": "18646001023051340",
     "type": "FEED",
     "media_type": "CAROUSEL_ALBUM",
@@ -203,6 +243,48 @@
    "id": "1484176674771345"
   },
   "insights_daily": {
+   "page_total_media_view_unique": [
+    {
+     "end_time": "2026-11-02T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-03T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-04T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-05T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-06T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-07T08:00:00+0000",
+     "value": 2
+    },
+    {
+     "end_time": "2026-11-08T08:00:00+0000",
+     "value": 1
+    },
+    {
+     "end_time": "2026-11-09T08:00:00+0000",
+     "value": 2
+    },
+    {
+     "end_time": "2026-11-10T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-11T08:00:00+0000",
+     "value": 0
+    }
+   ],
    "page_post_engagements": [
     {
      "end_time": "2026-11-02T08:00:00+0000",
@@ -238,6 +320,10 @@
     },
     {
      "end_time": "2026-11-10T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-11T08:00:00+0000",
      "value": 0
     }
    ],
@@ -277,6 +363,10 @@
     {
      "end_time": "2026-11-10T08:00:00+0000",
      "value": 0
+    },
+    {
+     "end_time": "2026-11-11T08:00:00+0000",
+     "value": 0
     }
    ],
    "page_follows": [
@@ -314,6 +404,10 @@
     },
     {
      "end_time": "2026-11-10T08:00:00+0000",
+     "value": 0
+    },
+    {
+     "end_time": "2026-11-11T08:00:00+0000",
      "value": 0
     }
    ],
@@ -353,6 +447,10 @@
     {
      "end_time": "2026-11-10T08:00:00+0000",
      "value": 0
+    },
+    {
+     "end_time": "2026-11-11T08:00:00+0000",
+     "value": 0
     }
    ],
    "page_media_view": [
@@ -391,10 +489,15 @@
     {
      "end_time": "2026-11-10T08:00:00+0000",
      "value": 0
+    },
+    {
+     "end_time": "2026-11-11T08:00:00+0000",
+     "value": 0
     }
    ]
   },
   "month_totals": {
+   "page_total_media_view_unique": 5,
    "page_post_engagements": 0,
    "page_views_total": 0,
    "page_follows": 0,
@@ -402,9 +505,5 @@
    "page_media_view": 52
   }
  },
- "errors": {
-  "facebook_insights": {
-   "page_impressions_unique": "GET 1484176674771345/insights -> HTTP 400 OAuthException 100/: (#100) The value must be a valid insights metric"
-  }
- }
+ "errors": {}
 }
