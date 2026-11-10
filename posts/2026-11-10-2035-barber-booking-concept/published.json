@@ -7,13 +7,5 @@
   "media_id": "18483756877113338",
   "permalink": "https://www.instagram.com/p/DfkxqZuD2I-/",
   "note": "Meta returned an error but the post went live: POST 17841471856846758/media_publish -> HTTP 403 OAuthException 4/2207051: Application request limit reached"
- },
- "facebook": {
-  "ok": true,
-  "at": "2026-11-10T20:35:04+00:00",
-  "format": "existing",
-  "media_id": "18483756877113338",
-  "permalink": "https://www.instagram.com/p/DfkxqZuD2I-/",
-  "note": "already live on the account; not published again"
  }
 }

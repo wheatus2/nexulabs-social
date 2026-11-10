@@ -322,7 +322,8 @@ On 9 and 10 Nov most scheduled runs could not open source pages: a permission pr
 ## Publishing errors are not always failures (10 Nov 2026)
 Meta can publish a post and still return an error. On 10 Nov the 19:33 carousel was reported as "refused" twice and went live both times.
 - `publish.py` now looks at the account before publishing and after any error. If a post with the same caption is live, it records that post and does not publish again.
-- **Never re-run a failed publish by hand before checking the Instagram profile.** If `published.json` says failed, run the workflow again once: it will find the live copy or publish safely.
+- **Never re-run a failed publish by hand before checking the Instagram profile.** You should not need to: the workflow retries on its own until the post is out (see "If it fails" below), and the hourly `retry.yml` sweep picks up anything left. Only a dead token (code 190) or missing files stop it, and those need Lee.
+- Facebook has its own check against the Page, and Story frames are checked against the live Stories, so retries are safe there too.
 - Report "published, Meta returned an error" as published, with the permalink.
 
 ## Mockups: post like an agency (Lee, 10 Nov 2026)
@@ -451,8 +452,8 @@ Workflow `.github/workflows/publish.yml` runs `publish.py`, which posts straight
 4. `git pull --rebase`, then read `posts/<id>/published.json`: `instagram.media_id`, `instagram.permalink`, `facebook.id` (Stories: `instagram.media_ids`), or the `error` for each platform. Log from that file. It never double-posts: anything already marked `"ok": true` is skipped unless `force` is set.
 5. **If it fails:**
    - `META_PAGE_TOKEN secret is not set`, or a check/token error (OAuthException, code 190): fall back to the old Zapier steps for this run, and tell Lee to follow `SETUP-META.md`.
-   - Instagram failed for another reason: retry the workflow once after 2 minutes; if it fails again, stop and report the error from `published.json`.
-   - Facebook failed but Instagram worked: carry on and mention it in the summary.
+   - Instagram failed for another reason: **it keeps trying on its own (Lee, 10 Nov 2026: "try again until it posts").** The run retries after 1, 2, 5 and 10 minutes, then every 15 minutes for up to 5 hours, checking the account before each try so nothing posts twice. After that, `.github/workflows/retry.yml` tries again every hour for two days. So a run can take a long time: keep polling for up to 20 minutes, and if it is still going, log the post as `"status": "retrying"`, tell Lee it is still being retried, and stop. Do not start a second run for the same folder and do not use `force`. The next scheduled run reads `published.json` for any `retrying` entry and fills in the log.
+   - Facebook failed but Instagram worked: carry on and mention it in the summary. It is retried the same way.
    - If Zapier is also out of tasks, leave the post committed, log it as not published, and notify Lee with the fix (`SETUP-META.md`, or top up Zapier at https://zapier.com/app/settings/billing).
 
 ## LinkedIn company page (Lee, 8 Nov 2026)

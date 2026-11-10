@@ -21,6 +21,9 @@ insights  read-only: last calendar month's Instagram account + per-post insights
 
 Writes <folder>/published.json with media ids, permalinks and any errors. Already-published
 platforms are skipped unless --force, so a re-run never double-posts.
+A failed post or Story is retried inside the same run (1, 2, 5, 10, then every 15 minutes) for
+RETRY_BUDGET_SECONDS, checking the account before each try so nothing is ever posted twice.
+`pending` lists folders from the last 48 hours that still show a failure, for the hourly sweep.
 Exit code 0 = everything requested succeeded; 1 = Instagram (or check) failed; 2 = only Facebook failed.
 """
 import argparse, datetime, json, os, sys, time, urllib.error, urllib.parse, urllib.request
@@ -35,6 +38,11 @@ REF = os.environ.get("RAW_REF") or os.environ.get("GITHUB_SHA") or "main"
 
 class GraphError(Exception):
     pass
+
+
+# Errors that trying again cannot fix. Everything else is retried until it posts.
+PERMANENT = ("META_PAGE_TOKEN secret is not set", " 190/", "no reel.mp4 or slide", "no slide-NN.jpg",
+             "carousels take at most 10", "unknown platform")
 
 
 def token():
@@ -99,7 +107,11 @@ def wait_ready(container, max_wait=900):
     raise GraphError(f"container {container} not ready after {max_wait}s")
 
 
-def ig_publish(container, cap=""):
+def _story_ids():
+    return {m["id"] for m in call("GET", f"{IG_USER}/stories", {"fields": "id", "limit": 50}).get("data", [])}
+
+
+def ig_publish(container, cap="", stories_before=None):
     wait_ready(container)
     media_id = None
     for attempt in range(3):
@@ -110,6 +122,12 @@ def ig_publish(container, cap=""):
             time.sleep(20)
             # Never double-post: Meta sometimes publishes and still returns an error. Check the account first.
             live = _find_posted(cap, strict=True) if cap else None
+            if stories_before is not None:
+                new = _story_ids() - stories_before
+                if new:
+                    mid = sorted(new)[-1]
+                    print(f"media_publish returned an error ({e}) but the Story frame is live: {mid}", flush=True)
+                    return {"media_id": mid, "permalink": None, "note": f"Meta returned an error but the frame went live: {e}"}
             if live:
                 print(f"media_publish returned an error ({e}) but the post is live: {live['permalink']}", flush=True)
                 return {**live, "note": f"Meta returned an error but the post went live: {e}"}
@@ -206,7 +224,7 @@ def instagram_story(folder, done=None, on_frame=None):
         u = raw(folder, n)
         check_url(u)
         c = call("POST", f"{IG_USER}/media", {"media_type": "STORIES", "image_url": u})["id"]
-        r = ig_publish(c)
+        r = ig_publish(c, stories_before=_story_ids())
         out.append({"frame": n, "media_id": r["media_id"]})
         if on_frame:
             on_frame(out)
@@ -215,12 +233,27 @@ def instagram_story(folder, done=None, on_frame=None):
 
 
 # ---------- Facebook Page ----------
+def _find_fb_posted(cap):
+    """The live Facebook Page post that already carries this caption, or None."""
+    head = cap.strip()[:80]
+    if not head:
+        return None
+    try:
+        latest = call("GET", f"{FB_PAGE}/posts", {"fields": "id,message,permalink_url", "limit": 10}).get("data", [])
+    except GraphError as e:
+        raise GraphError(f"could not check the Page for an existing copy ({e}); not publishing, to avoid a duplicate")
+    for m in latest:
+        if (m.get("message") or "").strip()[:80] == head:
+            return {"id": m["id"], "permalink": m.get("permalink_url")}
+    return None
+
+
 def facebook_post(folder):
     cap = caption(folder)
-    live = _find_posted(cap, strict=True)
+    live = _find_fb_posted(cap)
     if live:
-        print(f"instagram: a post with this caption is already live ({live['permalink']}); not publishing again", flush=True)
-        return {"format": "existing", **live, "note": "already live on the account; not published again"}
+        print(f"facebook: a post with this caption is already live ({live['permalink']}); not publishing again", flush=True)
+        return {"format": "existing", **live, "note": "already live on the Page; not published again"}
     if (folder / "reel.mp4").exists():
         r = call("POST", f"{FB_PAGE}/videos", {"file_url": raw(folder, "reel.mp4"), "description": cap}, timeout=600)
         return {"format": "video", "id": r.get("id")}
@@ -401,13 +434,16 @@ def insights(month=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["check", "post", "story", "comments", "insights"])
+    ap.add_argument("mode", choices=["check", "post", "story", "comments", "insights", "pending"])
     ap.add_argument("folder", nargs="?")
     ap.add_argument("--platforms", default="instagram,facebook")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--days", type=int, default=7)
     ap.add_argument("--month", default="")
     a = ap.parse_args()
+
+    if a.mode == "pending":
+        return pending()
 
     if a.mode == "insights":
         if a.month and not (len(a.month) == 7 and a.month[4] == "-" and a.month.replace("-", "").isdigit()):
@@ -455,14 +491,15 @@ def main():
     rec = json.loads(rec_path.read_text()) if rec_path.exists() else {}
     plats = ["instagram"] if a.mode == "story" else [p.strip() for p in a.platforms.split(",") if p.strip()]
     now = lambda: datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
-    failed = []
-    for p in plats:
+    def attempt(p):
+        """One try at one platform. Returns the error text, or None when it's out."""
         if rec.get(p, {}).get("ok") and not a.force:
             print(f"{p}: already published ({rec[p].get('media_id') or rec[p].get('id')}), skipping")
-            continue
+            return None
+        err = None
         try:
             if p == "instagram" and a.mode == "story":
-                prev = [] if a.force else rec.get(p, {}).get("frames", [])
+                prev = rec.get(p, {}).get("frames", [])
                 def save_partial(frames):
                     rec[p] = {"ok": False, "at": now(), "partial": True, "frames": list(frames)}
                     rec_path.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
@@ -473,16 +510,59 @@ def main():
                 res = facebook_post(folder)
             else:
                 raise GraphError(f"unknown platform {p}")
-            rec[p] = {"ok": True, "at": now(), **res}
+            tries = rec.get(p, {}).get("attempts", 0) + 1
+            rec[p] = {"ok": True, "at": now(), **res, **({"attempts": tries} if tries > 1 else {})}
         except GraphError as e:
+            err = str(e)
             keep = {"frames": rec[p]["frames"]} if rec.get(p, {}).get("frames") else {}
-            rec[p] = {"ok": False, "at": now(), "error": str(e), **keep}
-            failed.append(p)
+            rec[p] = {"ok": False, "at": now(), "error": err, "attempts": rec.get(p, {}).get("attempts", 0) + 1, **keep}
         print(f"{p}: {json.dumps(rec[p])}", flush=True)
         rec_path.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
+        return err
+
+    if a.force and a.mode == "story":
+        rec.pop("instagram", None)
+    # Keep trying until it's out. Every try checks the account first, so a retry can never double-post.
+    # Only stop early for things waiting can't fix (dead token, missing files): those need a person.
+    deadline = time.time() + int(os.environ.get("RETRY_BUDGET_SECONDS", "0"))
+    waits = [60, 120, 300, 600]
+    failed, round_no = list(plats), 0
+    while True:
+        errors = {p: attempt(p) for p in failed}
+        a.force = False
+        failed = [p for p, e in errors.items() if e]
+        fixable = [p for p in failed if not any(k in errors[p] for k in PERMANENT)]
+        wait = waits[round_no] if round_no < len(waits) else 900
+        if not fixable or time.time() + wait > deadline:
+            break
+        print(f"retrying {', '.join(fixable)} in {wait}s (round {round_no + 2})", flush=True)
+        time.sleep(wait)
+        failed, round_no = fixable, round_no + 1
+    failed = [p for p in plats if not rec.get(p, {}).get("ok")]
     if "instagram" in failed:
         return 1
     return 2 if failed else 0
+
+
+def pending(hours=48):
+    """Post folders from the last `hours` whose published.json still shows a failure. One per line: mode folder platforms."""
+    import re
+    cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=hours)).date().isoformat()
+    for f in sorted(Path("posts").glob("**/published.json")):
+        m = re.match(r"\d{4}-\d{2}-\d{2}", f.parent.name)
+        if not m or m.group(0) < cutoff:
+            continue
+        try:
+            rec = json.loads(f.read_text())
+        except ValueError:
+            continue
+        bad = [p for p, v in rec.items() if isinstance(v, dict) and not v.get("ok")
+               and not any(k in v.get("error", "") for k in PERMANENT)]
+        if not bad:
+            continue
+        mode = "story" if f.parent.parent.name == "stories" else "post"
+        print(mode, f.parent.as_posix(), ",".join(bad))
+    return 0
 
 
 if __name__ == "__main__":

@@ -41,7 +41,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
 
@@ -54,6 +54,8 @@ jobs:
           PLATFORMS: ${{ inputs.platforms }}
           FORCE: ${{ inputs.force }}
           MONTH: ${{ inputs.month }}
+          # Keep retrying a failed post or Story for up to 5 hours (Lee, 10 Nov 2026). Safe: the account is checked before every try.
+          RETRY_BUDGET_SECONDS: "18000"
         run: |
           set +e
           args=("$MODE")

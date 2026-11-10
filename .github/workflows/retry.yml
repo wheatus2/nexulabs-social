@@ -1,0 +1,59 @@
+name: Retry failed posts
+
+# Safety net (Lee, 10 Nov 2026): "if a post ever fails, try again until it posts".
+# publish.yml already retries inside its own run for up to 5 hours. This sweep runs every hour and
+# tries again anything from the last two days that still shows a failure in its published.json.
+# It can never double-post: publish.py checks the account before every try.
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retry-sweep
+  cancel-in-progress: false
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Retry anything that failed
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          RETRY_BUDGET_SECONDS: "1500"
+        run: |
+          set +e
+          python3 publish.py pending > /tmp/pending.txt
+          if [ ! -s /tmp/pending.txt ]; then echo "Nothing to retry."; exit 0; fi
+          cat /tmp/pending.txt
+          while read -r mode folder platforms; do
+            echo "::group::$folder ($platforms)"
+            python3 publish.py "$mode" "$folder" --platforms "$platforms"
+            echo "::endgroup::"
+          done < /tmp/pending.txt
+          exit 0
+
+      - name: Save results to the repo
+        run: |
+          git config user.name "nexulabs-publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add posts
+          git diff --cached --quiet && exit 0
+          git commit -m "Retry sweep: results"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          echo "Could not push results"; exit 1
+
+      - name: Report anything still failing
+        run: |
+          left=$(python3 publish.py pending)
+          if [ -n "$left" ]; then echo "::warning::Still failing, will try again next hour:"; echo "$left"; fi
