@@ -1,0 +1,68 @@
+{
+ "id": "2026-11-10-1933-homepage-called-home",
+ "series": "Web design",
+ "style": "soft",
+ "slides": [
+  {
+   "type": "compare",
+   "theme": "mint",
+   "title": "Is your homepage\ncalled *Home*?",
+   "instead_label": "Page title",
+   "try_label": "Better",
+   "instead": [
+    "Home",
+    "It could be anyone's website."
+   ],
+   "try": [
+    "Boiler repairs in Sunderland |\nExample Heating Co.",
+    "What the page is about, then who you are."
+   ],
+   "title_size": 124
+  },
+  {
+   "type": "list",
+   "theme": "navy",
+   "kicker": "Google's own advice",
+   "title": "What makes a good\npage title",
+   "items": [
+    [
+     "Every page has one",
+     "Don't leave any page without a title."
+    ],
+    [
+     "It says what the page is",
+     "Descriptive and short. Skip vague ones like Home."
+    ],
+    [
+     "It's different on each page",
+     "Not the same title repeated across the site."
+    ],
+    [
+     "Site name at the start or end",
+     "Usually your business name. Use a hyphen, colon or pipe."
+    ]
+   ],
+   "source": "Google Search Central guidance on title links, updated December 2025"
+  },
+  {
+   "type": "flow",
+   "theme": "blush",
+   "title": "Now check\n*yours*",
+   "steps": [
+    [
+     "Search for your own business",
+     "Read the title of your result. That's the line people click."
+    ],
+    [
+     "Ask what your page titles are",
+     "Google can show its own wording, so check the real ones."
+    ],
+    [
+     "Rewrite the vague ones",
+     "Start with the homepage, then your main service pages."
+    ]
+   ],
+   "title_size": 140
+  }
+ ]
+}
