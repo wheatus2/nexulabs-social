@@ -335,5 +335,54 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "posted on request, out of the queue"
+ },
+ {
+  "date": "2026-11-10",
+  "slot": "08:33",
+  "time_slot": "morning",
+  "id": "2026-11-10-0850-outgrown-the-spreadsheet",
+  "format": "carousel",
+  "category": "CRM",
+  "angle": "why it matters (relatable) + this vs that",
+  "topic": "Signs the spreadsheet has stopped coping as a CRM: two copies, nothing nudges you, the history is somewhere else, hard to use on a phone; same customer as a spreadsheet row vs one CRM record; example jobs board; honest close: with only a few jobs a month, keep the spreadsheet",
+  "news_story_id": null,
+  "style": "journal",
+  "themes": [
+   "forest",
+   "cream",
+   "stone"
+  ],
+  "cover": "quote",
+  "screen": "board (Jobs: New / Quoted / Booked, made-up customers)",
+  "slides": 5,
+  "slide_types": [
+   "quote",
+   "list",
+   "compare",
+   "screen",
+   "cover"
+  ],
+  "photo": null,
+  "hooks_considered": [
+   "Did anyone ring that customer back?",
+   "The spreadsheet worked. Then you got busy.",
+   "Five signs you've outgrown the spreadsheet."
+  ],
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 4,
+   "true": 5,
+   "useful": 4,
+   "specific": 4,
+   "hook": 5,
+   "design": 5
+  },
+  "news_check": "Searches run, but source pages could not be opened this run (web fetching refused), so no story could be verified with two sources. Evergreen post with no claims that need a source.",
+  "instagram_media_id": "17880328686567155",
+  "permalink": "https://www.instagram.com/p/Dfjg1DclxpZ/",
+  "facebook_post_id": "1484176674771345_122101131519544005",
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "First post in the journal look. render.py fix: the journal serif (Fraunces) was never loading because the font family was named 'Serif'; renamed to 'Fraun'."
  }
 ]
