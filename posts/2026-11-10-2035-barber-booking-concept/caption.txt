@@ -1,0 +1,9 @@
+If your website makes people ring to book, some of them won't.
+
+This is a concept we put together for a barbershop. The booking box is the first thing on the page: pick a service, pick a time, confirm. Prices sit right there too, so nobody has to call to ask. And it's designed for a phone first, because that's where most people will open it.
+
+Harbour Barbers is a made-up business. The thinking works for any trade that runs on appointments.
+
+Would your site pass the same test?
+
+#webdesign #barbershop #onlinebooking #northeastbusiness

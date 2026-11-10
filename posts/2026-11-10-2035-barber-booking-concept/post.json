@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-10-2035-barber-booking-concept",
+ "series": "Web design",
+ "style": "product",
+ "slides": [
+  {
+   "type": "mockup",
+   "theme": "ink",
+   "device": "duo",
+   "kicker": "Concept · Barbershop",
+   "title": "Booked before they've\nput the phone down.",
+   "title_size": 78,
+   "sub": "A barber's website built around one job: filling the chairs.",
+   "site": {
+    "layout": "booking",
+    "brand": "Harbour Barbers",
+    "nav": [
+     "Cuts",
+     "Barbers",
+     "Find us"
+    ],
+    "cta": "Book a chair",
+    "eyebrow": "Sunderland · Open 7 days",
+    "headline": "Sharp cuts.\nNo waiting.",
+    "sub": "Pick your barber and your time. Booked in under a minute.",
+    "accent": "#7A1F2B",
+    "bg": "#F4EEE6",
+    "ink": "#1D1A18",
+    "font": "DMSerif",
+    "buttons": "soft",
+    "cards": [
+     [
+      "Skin fade",
+      "£18"
+     ],
+     [
+      "Cut and beard",
+      "£26"
+     ],
+     [
+      "Kids cut",
+      "£12"
+     ]
+    ],
+    "strip": [
+     "Walk-ins welcome",
+     "Card and cash",
+     "Free parking behind the shop"
+    ],
+    "booking": {
+     "title": "Book a chair",
+     "day": "Saturday 14 November",
+     "button": "Confirm 9:45"
+    }
+   }
+  },
+  {
+   "type": "mockup",
+   "theme": "paper",
+   "device": "phone",
+   "kicker": "On a phone",
+   "title": "Service. Time.\nConfirm.",
+   "sub": "Prices on the page, so nobody has to ring to ask.",
+   "site": {
+    "layout": "booking",
+    "brand": "Harbour Barbers",
+    "nav": [
+     "Cuts",
+     "Barbers",
+     "Find us"
+    ],
+    "cta": "Book a chair",
+    "eyebrow": "Sunderland · Open 7 days",
+    "headline": "Sharp cuts.\nNo waiting.",
+    "sub": "Pick your barber and your time. Booked in under a minute.",
+    "accent": "#7A1F2B",
+    "bg": "#F4EEE6",
+    "ink": "#1D1A18",
+    "font": "DMSerif",
+    "buttons": "soft",
+    "cards": [
+     [
+      "Skin fade",
+      "£18"
+     ],
+     [
+      "Cut and beard",
+      "£26"
+     ],
+     [
+      "Kids cut",
+      "£12"
+     ]
+    ],
+    "strip": [
+     "Walk-ins welcome",
+     "Card and cash",
+     "Free parking behind the shop"
+    ],
+    "booking": {
+     "title": "Book a chair",
+     "day": "Saturday 14 November",
+     "button": "Confirm 9:45"
+    }
+   }
+  },
+  {
+   "type": "cta",
+   "theme": "blue",
+   "headline": "Want a site that\n*takes the bookings*?",
+   "body": "We design websites and booking systems for barbers, salons and studios across the North East.",
+   "cta": "nexulabs.co.uk"
+  }
+ ]
+}
