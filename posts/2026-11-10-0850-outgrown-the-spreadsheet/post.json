@@ -1,0 +1,133 @@
+{
+ "id": "2026-11-10-0850-outgrown-the-spreadsheet",
+ "series": "CRM",
+ "style": "journal",
+ "slides": [
+  {
+   "type": "quote",
+   "theme": "forest",
+   "text": "Did anyone\nring that\ncustomer *back*?",
+   "sub": "Four signs the spreadsheet has stopped coping.",
+   "size": 118
+  },
+  {
+   "type": "list",
+   "theme": "cream",
+   "title": "Sound familiar?",
+   "items": [
+    [
+     "There are two copies",
+     "One on the office PC, one emailed round last week."
+    ],
+    [
+     "Nothing nudges you",
+     "A row sits there until somebody remembers to look."
+    ],
+    [
+     "The history is somewhere else",
+     "Calls, emails and texts live in three other places."
+    ],
+    [
+     "It's a squint on a phone",
+     "Try finding one number in 300 rows from the van."
+    ]
+   ]
+  },
+  {
+   "type": "compare",
+   "theme": "stone",
+   "title": "Same customer,\ntwo ways",
+   "instead_label": "In the spreadsheet",
+   "try_label": "In a CRM",
+   "instead": [
+    "Row 212",
+    "Carter. Boiler. Quoted? Ring back??"
+   ],
+   "try": [
+    "One record",
+    "Who they are, what was said, and what happens next."
+   ]
+  },
+  {
+   "type": "screen",
+   "theme": "cream",
+   "title": "Where every job is,\nat a glance",
+   "screen": {
+    "kind": "board",
+    "title": "Jobs",
+    "tabs": [
+     "Board",
+     "List"
+    ],
+    "pills": {
+     "Call back today": "blue",
+     "Chase Fri": "grey",
+     "Thu 9am": "green",
+     "Mon 2pm": "green",
+     "Chase Mon": "grey"
+    },
+    "lanes": [
+     {
+      "name": "New",
+      "cards": [
+       [
+        "A. Carter",
+        "Boiler service",
+        "Call back today",
+        true
+       ],
+       [
+        "S. Hughes",
+        "New radiator",
+        ""
+       ],
+       [
+        "R. Bell",
+        "Radiator leak",
+        ""
+       ]
+      ]
+     },
+     {
+      "name": "Quoted",
+      "cards": [
+       [
+        "M. Khan",
+        "Bathroom refit",
+        "Chase Fri"
+       ],
+       [
+        "D. Walker",
+        "Leaking tap",
+        "Chase Mon"
+       ]
+      ]
+     },
+     {
+      "name": "Booked",
+      "cards": [
+       [
+        "P. Okafor",
+        "Boiler swap",
+        "Thu 9am"
+       ],
+       [
+        "J. Reed",
+        "Annual service",
+        "Mon 2pm"
+       ]
+      ]
+     }
+    ]
+   },
+   "caption": "Example screen. Made-up customers and jobs."
+  },
+  {
+   "type": "cover",
+   "theme": "forest",
+   "headline": "Only a few jobs\na month? *Keep*\nthe spreadsheet.",
+   "sub": "Move when things start slipping, not before.",
+   "size": 116
+  }
+ ]
+}

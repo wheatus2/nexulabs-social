@@ -195,6 +195,13 @@
       "headline": "9 Nov 19:33 scan: searches of Google Search Central blog, ICO/UK cookie news, Meta/WhatsApp Business and Search Engine Roundtable (Google Business Profile) returned nothing new, dated in the last 7 days and qualifying. One news post already today (NCSC), so evergreen web design Reel (contact forms).",
       "status": "rejected",
       "reason": "Scan note, not a story."
+    },
+    {
+      "id": "2026-11-10-0833-scan",
+      "found": "2026-11-10",
+      "headline": "10 Nov 08:33 scan: searches run (Google Search Central, ICO, UK tech news, Search Engine Roundtable, Meta/WhatsApp Business, WordPress/Shopify/Wix, NCSC) but source pages could not be opened this run (web fetching refused for ICO, NCSC, gov.uk, Nominet, Ofcom, BBC, The Register, Computer Weekly, Meta, WordPress, Shopify, Search Engine Roundtable, Search Engine Land, web.dev). Only the Google Search Central blog loaded: newest post is 'Search Central Live in Zurich is back!' (4 Nov 2026), an event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen CRM carousel instead.",
+      "status": "rejected",
+      "reason": "Scan note, not a story. Re-scan at the next run; the 3-10 Nov window has not been properly checked for ICO, NCSC, Meta and the UK press."
     }
   ]
 }

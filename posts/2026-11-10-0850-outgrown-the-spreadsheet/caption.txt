@@ -1,0 +1,11 @@
+"Did anyone ring that customer back?"
+
+If that gets asked in your office most weeks, the spreadsheet has probably stopped coping. It was fine when it was one person and a few jobs. Then there are two copies, half the notes are in someone's texts, and a quote can go quiet without anybody noticing.
+
+A CRM is built around one record per customer: who they are, what was said, and what happens next. Everyone works from the same record.
+
+If it's only a few jobs a month, keep the spreadsheet. Move when things start slipping.
+
+The board in the post is an example screen with made-up customers and jobs.
+
+#crm #crmsystem #businessadmin #northeastbusiness

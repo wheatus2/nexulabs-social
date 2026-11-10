@@ -562,7 +562,7 @@ def build(slide, idx, total, series, style="studio"):
         inner = f"""{kick(slide)}
 <h2{f' style="font-size:{slide["title_size"]}px"' if slide.get('title_size') else ''}>{md(slide['title'])}</h2><div class="items">{items}</div><div style="height:40px"></div>"""
     elif t == "quote":
-        inner = f"""<div class="qm" style="margin-top:auto">“</div><h1>{md(slide['text'])}</h1>
+        inner = f"""<div class="qm" style="margin-top:auto">“</div><h1{f' style="font-size:{slide["size"]}px"' if slide.get('size') else ''}>{md(slide['text'])}</h1>
 {f'<p class="lead">{md(slide["sub"])}</p>' if slide.get('sub') else ''}<div style="height:70px"></div>"""
     elif t == "cta":
         inner = f"""{kick(slide)}
@@ -772,10 +772,10 @@ def logo(theme, dot_override=None):
             .replace('<title>nexulabs</title>', ''))
 
 CSS += f"""
-@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-400-normal.woff2);font-weight:400}}
-@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-400-italic.woff2);font-weight:400;font-style:italic}}
-@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-600-normal.woff2);font-weight:600}}
-@font-face{{font-family:Serif;src:url({FONTS}/fraunces-latin-600-italic.woff2);font-weight:600;font-style:italic}}
+@font-face{{font-family:Fraun;src:url({FONTS}/fraunces-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Fraun;src:url({FONTS}/fraunces-latin-400-italic.woff2);font-weight:400;font-style:italic}}
+@font-face{{font-family:Fraun;src:url({FONTS}/fraunces-latin-600-normal.woff2);font-weight:600}}
+@font-face{{font-family:Fraun;src:url({FONTS}/fraunces-latin-600-italic.woff2);font-weight:600;font-style:italic}}
 @font-face{{font-family:Cond;src:url({FONTS}/anton-latin-400-normal.woff2);font-weight:400}}
 @font-face{{font-family:Brico;src:url({FONTS}/bricolage-grotesque-latin-400-normal.woff2);font-weight:400}}
 @font-face{{font-family:Brico;src:url({FONTS}/bricolage-grotesque-latin-600-normal.woff2);font-weight:600}}
@@ -815,11 +815,11 @@ CSS += """
 
 /* ---------- JOURNAL: editorial magazine. Fraunces serif, cream / forest / stone, hairlines, headline at the top ---------- */
 .st-journal{font-family:Arch}
-.st-journal h1,.st-journal h2,.st-journal .big,.st-journal .it h3,.st-journal .card .tx,.st-journal .st h3,.st-journal .ctabox .r,.st-journal .qm,.st-journal .row .lab b,.st-journal .col .v{font-family:Serif;font-weight:400;letter-spacing:-.03em}
+.st-journal h1,.st-journal h2,.st-journal .big,.st-journal .it h3,.st-journal .card .tx,.st-journal .st h3,.st-journal .ctabox .r,.st-journal .qm,.st-journal .row .lab b,.st-journal .col .v{font-family:Fraun;font-weight:400;letter-spacing:-.03em}
 .st-journal h1{line-height:1.0}
 .st-journal .acc{font-style:italic;color:var(--acc)}
 .st-journal .top{border-bottom:1.5px solid currentColor;padding-bottom:26px}
-.st-journal .meta{font-family:Serif;font-style:italic;text-transform:none;letter-spacing:0;font-size:25px;opacity:.85}
+.st-journal .meta{font-family:Fraun;font-style:italic;text-transform:none;letter-spacing:0;font-size:25px;opacity:.85}
 .st-journal .kicker{font-family:Arch;font-weight:700;font-size:19px;letter-spacing:.16em;text-transform:uppercase;opacity:.8;margin-top:64px!important}
 .st-journal .kicker:before{display:none}
 .st-journal .foot{border-top:1.5px solid currentColor;padding-top:20px;font-family:Arch;font-size:17px;opacity:.75}
@@ -832,7 +832,7 @@ CSS += """
 .st-journal .card .lb{font-family:Arch;font-weight:700}
 .st-journal .ico{border:none;width:auto}
 .st-journal .it{border-top:1.5px solid currentColor}
-.st-journal .it .n{font-family:Serif;font-style:italic;font-size:46px;line-height:1;color:var(--acc);padding-top:0;min-width:70px}
+.st-journal .it .n{font-family:Fraun;font-style:italic;font-size:46px;line-height:1;color:var(--acc);padding-top:0;min-width:70px}
 .st-journal .big{font-weight:400;letter-spacing:-.06em}
 .st-journal .qm{font-style:italic}
 .st-journal .win,.st-journal .bw,.st-journal .phone{border-radius:6px}
@@ -841,7 +841,7 @@ CSS += """
 .st-journal .row .track,.st-journal .row .fill{border-radius:0;height:12px}
 .st-journal .col .bar{border-radius:0}
 .st-journal.photo .bgimg{inset:auto;left:88px;right:88px;top:var(--ph-top);height:var(--ph-h)}
-.st-journal.photo .credit{left:88px;right:auto;bottom:auto;top:calc(var(--ph-top) + var(--ph-h) + 14px);font-family:Serif;font-style:italic;font-size:19px;opacity:.75}
+.st-journal.photo .credit{left:88px;right:auto;bottom:auto;top:calc(var(--ph-top) + var(--ph-h) + 14px);font-family:Fraun;font-style:italic;font-size:19px;opacity:.75}
 .st-journal.photo .body{justify-content:flex-end}
 .st-journal.photo h1{margin-top:auto}
 
