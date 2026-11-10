@@ -963,36 +963,81 @@ STORY_CSS += """
 #            "cards":[["Skin fade","from £18"],...], "strip":["Open 7 days","Walk-ins welcome",...],
 #            "dark":false}}
 # ======================================================================================
+SITE_FONTS = {  # headline font for the made-up site: (css family, weight, extra css)
+    "Fraun": ("Fraun", 400, "letter-spacing:-.035em;line-height:1.02"),
+    "News": ("News", 700, "letter-spacing:-.03em;line-height:1.02"),
+    "Playfair": ("Playfair", 500, "letter-spacing:-.025em;line-height:1.04"),
+    "DMSerif": ("DMSerif", 400, "letter-spacing:-.015em;line-height:1.04"),
+    "Brico": ("Brico", 800, "letter-spacing:-.045em;line-height:.98"),
+    "Disp": ("Disp", 600, "letter-spacing:-.045em;line-height:1.0"),
+    "Grotesk": ("Grotesk", 700, "letter-spacing:-.045em;line-height:1.0"),
+    "Outfit": ("Outfit", 700, "letter-spacing:-.035em;line-height:1.02"),
+    "Syne": ("Syne", 800, "letter-spacing:-.04em;line-height:1.0"),
+    "Cond": ("Cond", 400, "text-transform:uppercase;letter-spacing:.01em;line-height:1.0"),
+    "Oswald": ("Oswald", 700, "text-transform:uppercase;letter-spacing:0;line-height:1.05"),
+}
+SITE_LAYOUTS = ("split", "full", "center", "booking", "shop")
+
+
 def _site(site, mobile=False):
     e = html.escape
     acc, bg, ink = site.get("accent", "#0C23A8"), site.get("bg", "#FFFFFF"), site.get("ink", "#0B0B0C")
-    if site.get("dark"):
-        bg, ink = site.get("bg", "#111214"), site.get("ink", "#F4F2EC")
-    font = site.get("font", "Disp")
-    caps = "text-transform:uppercase;letter-spacing:.01em;line-height:1.0;" if font == "Cond" else "letter-spacing:-.035em;line-height:1.02;"
-    weight = {"Fraun": 400, "News": 700, "Brico": 800, "Cond": 400}.get(font, 600)
-    img = ""
+    fam, weight, hcss = SITE_FONTS.get(site.get("font", "Disp"), SITE_FONTS["Disp"])
+    lay = site.get("layout", "split")
+    if lay not in SITE_LAYOUTS:
+        raise ValueError(f"unknown site layout {lay}")
     if site.get("image"):
         uri = (Path(_POST_DIR) / site["image"]).resolve().as_uri()
         img = f"background-image:url({uri});background-size:cover;background-position:{site.get('focus','center')};"
     else:
-        img = f"background:{acc};"
+        img = f"background:{site.get('block', acc)};"
     nav = "".join(f"<span>{e(n)}</span>" for n in site.get("nav", []))
     cards = "".join(f'<div class="ms-card"><b>{e(a)}</b><span>{e(b)}</span></div>' for a, b in site.get("cards", []))
     strip = "".join(f"<span>{e(x)}</span>" for x in site.get("strip", []))
-    head = md(site["headline"])
-    style = f"--a:{acc};--b:{bg};--i:{ink};--hf:{font};--hw:{weight};"
+    head, sub, cta = md(site["headline"]), e(site.get("sub", "")), e(site.get("cta", "Get in touch"))
+    eye = f'<small>{e(site["eyebrow"])}</small>' if site.get("eyebrow") else ""
+    btn = f'<div class="ms-btn">{cta}</div>'
+    cta2 = f'<u>{e(site["cta2"])}</u>' if site.get("cta2") else ""
+    radius = {"round": "999px", "soft": "12px", "square": "0"}.get(site.get("buttons", "round"), "999px")
+    style = f"--a:{acc};--b:{bg};--i:{ink};--hf:{fam};--hw:{weight};--r:{radius};--on:{site.get('on_accent', '#fff')};"
+    h3 = f'<h3 style="{hcss}">{head}</h3>'
+    # booking widget and product tiles (used by the booking and shop layouts)
+    bk = site.get("booking", {})
+    rows = "".join(f'<div class="bk-row{" on" if i == 0 else ""}"><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(bk.get("services", site.get("cards", []))[:3]))
+    slots = "".join(f'<i class="{"on" if i == 1 else ""}">{e(t)}</i>' for i, t in enumerate(bk.get("slots", ["9:00", "9:45", "10:30", "11:15", "1:00", "2:30"])))
+    widget = f'<div class="bk"><h5>{e(bk.get("title", "Book online"))}</h5>{rows}<h6>{e(bk.get("day", "Saturday"))}</h6><div class="bk-slots">{slots}</div><div class="ms-btn">{e(bk.get("button", cta))}</div></div>'
+    tints = site.get("tints", [acc, ink, acc, ink])
+    tiles = ""
+    for i, (a, b) in enumerate(site.get("products", site.get("cards", []))[:4]):
+        bgc = img if (i == 0 and site.get("image")) else f"background:{tints[i % len(tints)]};"
+        tiles += f'<div class="tile"><div class="tile-ph" style="{bgc}"></div><b>{e(a)}</b><span>{e(b)}</span></div>'
     if mobile:
-        return f"""<div class="ms ms-m" style="{style}"><div class="ms-nav"><b>{e(site['brand'])}</b><i></i></div>
-<div class="ms-ph" style="{img}"></div>
-<div class="ms-pad">{f'<small>{e(site["eyebrow"])}</small>' if site.get('eyebrow') else ''}<h3 style="{caps}">{head}</h3>
-<p>{e(site.get('sub',''))}</p><div class="ms-btn">{e(site.get('cta','Get in touch'))}</div>
-<div class="ms-cards">{cards}</div></div></div>"""
-    return f"""<div class="ms ms-d" style="{style}"><div class="ms-nav"><b>{e(site['brand'])}</b><div>{nav}<em>{e(site.get('cta','Get in touch'))}</em></div></div>
-<div class="ms-hero"><div class="ms-txt">{f'<small>{e(site["eyebrow"])}</small>' if site.get('eyebrow') else ''}<h3 style="{caps}">{head}</h3>
-<p>{e(site.get('sub',''))}</p><div class="ms-row"><div class="ms-btn">{e(site.get('cta','Get in touch'))}</div>{f'<u>{e(site["cta2"])}</u>' if site.get('cta2') else ''}</div></div>
-<div class="ms-ph" style="{img}"></div></div>
-<div class="ms-cards">{cards}</div>{f'<div class="ms-strip">{strip}</div>' if strip else ''}</div>"""
+        top = f'<div class="ms-nav"><b>{e(site["brand"])}</b><i></i></div>'
+        if lay == "full":
+            body = f'<div class="mf" style="{img}"><div class="mf-sh"></div>{top}<div class="mf-t">{eye}{h3}<p>{sub}</p>{btn}</div></div>'
+            return f'<div class="ms ms-m ms-full" style="{style}">{body}</div>'
+        if lay == "booking":
+            body = f'{top}<div class="ms-pad">{eye}{h3}<p>{sub}</p>{widget}</div>'
+        elif lay == "shop":
+            body = f'{top}<div class="ms-pad">{eye}{h3}{btn}<div class="tiles">{tiles}</div></div>'
+        elif lay == "center":
+            body = f'{top}<div class="ms-pad" style="text-align:center">{eye}{h3}<p>{sub}</p>{btn}</div><div class="ms-ph" style="{img}height:330px"></div>'
+        else:
+            body = f'{top}<div class="ms-ph" style="{img}"></div><div class="ms-pad">{eye}{h3}<p>{sub}</p>{btn}<div class="ms-cards">{cards}</div></div>'
+        return f'<div class="ms ms-m ms-{lay}" style="{style}">{body}</div>'
+    navbar = f'<div class="ms-nav"><b>{e(site["brand"])}</b><div>{nav}<em>{cta}</em></div></div>'
+    foot = f'<div class="ms-strip">{strip}</div>' if strip else ""
+    if lay == "full":
+        body = f'<div class="df" style="{img}"><div class="df-sh"></div>{navbar}<div class="df-t">{eye}{h3}<p>{sub}</p><div class="ms-row">{btn}{cta2}</div></div><div class="df-cards">{cards}</div></div>'
+    elif lay == "center":
+        body = f'{navbar}<div class="dc">{eye}{h3}<p>{sub}</p><div class="ms-row">{btn}{cta2}</div></div><div class="dc-ph" style="{img}"><div class="dc-cards">{cards}</div></div>'
+    elif lay == "booking":
+        body = f'{navbar}<div class="ms-hero"><div class="ms-txt">{eye}{h3}<p>{sub}</p><div class="db-list">{strip}</div></div>{widget}</div>'
+    elif lay == "shop":
+        body = f'{navbar}<div class="dsh">{eye}<div class="dsh-h">{h3}<div><p>{sub}</p><div class="ms-row">{btn}{cta2}</div></div></div></div><div class="tiles">{tiles}</div>'
+    else:
+        body = f'{navbar}<div class="ms-hero"><div class="ms-txt">{eye}{h3}<p>{sub}</p><div class="ms-row">{btn}{cta2}</div></div><div class="ms-ph" style="{img}"></div></div><div class="ms-cards">{cards}</div>{foot}'
+    return f'<div class="ms ms-d ms-{lay}" style="{style}">{body}</div>'
 
 
 def _laptop(site):
@@ -1024,7 +1069,7 @@ CSS += """
 .s.mockup p.lead{margin-top:22px;font-size:29px;max-width:820px}
 .s.mockup .excap{margin-top:26px}
 .stage{margin-top:auto;position:relative;display:flex;justify-content:center;align-items:flex-end}
-.st-soft .stage{align-self:stretch}
+.st-soft .stage{align-self:stretch}.st-soft .stage-duo .hs{right:0}
 /* laptop */
 .lap{width:940px;flex:none;position:relative;filter:drop-shadow(0 46px 38px rgba(0,0,0,.28))}
 .lap-lid{background:#111214;border-radius:26px 26px 0 0;padding:20px 20px 22px;position:relative;margin:0 46px}
@@ -1049,7 +1094,7 @@ CSS += """
 .stage-phone .hs-scr{width:372px;height:805px;border-radius:51px}
 .stage-phone .hs-in{transform:scale(.9538)}
 .stage-phone .hs-isl{width:104px;height:30px;margin-left:-52px;top:13px;border-radius:15px}
-.stage-phone{margin-bottom:-150px}
+.stage-phone{margin-bottom:-40px}
 .stage-laptop .lap{width:1010px;margin:0 -53px}
 .stage-laptop .lap-scr{width:878px;height:549px}.stage-laptop .lap-in{transform:scale(.686)}
 /* the made-up website inside */
@@ -1080,7 +1125,7 @@ CSS += """
 .ms-m .ms-ph{height:250px;margin:0 16px;border-radius:22px}
 .ms-pad{padding:26px 24px}
 .ms-m small{font-size:12px}
-.ms-m h3{font-size:47px;margin-top:12px}
+.ms-m h3{font-size:44px;margin-top:12px;overflow-wrap:break-word}
 .ms-m p{font-size:17px;line-height:1.45;opacity:.72;margin-top:14px}
 .ms-m .ms-btn{display:block;text-align:center;margin-top:22px;font-size:18px;padding:18px}
 .ms-m .ms-cards{display:flex;flex-direction:column;gap:10px;margin-top:20px}
@@ -1091,6 +1136,79 @@ STORY_CSS += """
 .s.mockup h2{font-size:104px}.s.mockup p.lead{font-size:38px}
 .stage-phone{margin-bottom:0}.stage-phone .hs{transform:scale(1.25);transform-origin:50% 100%}
 .stage-duo,.stage-laptop{margin-bottom:60px}
+"""
+
+CSS += f"""
+@font-face{{font-family:Playfair;src:url({FONTS}/playfair-display-latin-500-normal.woff2);font-weight:500}}
+@font-face{{font-family:Playfair;src:url({FONTS}/playfair-display-latin-500-italic.woff2);font-weight:500;font-style:italic}}
+@font-face{{font-family:DMSerif;src:url({FONTS}/dm-serif-display-latin-400-normal.woff2);font-weight:400}}
+@font-face{{font-family:Grotesk;src:url({FONTS}/space-grotesk-latin-700-normal.woff2);font-weight:700}}
+@font-face{{font-family:Outfit;src:url({FONTS}/outfit-latin-700-normal.woff2);font-weight:700}}
+@font-face{{font-family:Syne;src:url({FONTS}/syne-latin-800-normal.woff2);font-weight:800}}
+@font-face{{font-family:Oswald;src:url({FONTS}/oswald-latin-700-normal.woff2);font-weight:700}}
+"""
+
+CSS += """
+.ms-btn{border-radius:var(--r);color:var(--on)}
+.ms-d .ms-nav em{border-radius:var(--r)}
+/* full-bleed photo hero */
+.df{position:relative;width:100%;height:100%;color:#fff}
+.df-sh,.mf-sh{position:absolute;inset:0;background:rgba(10,10,12,.5)}
+.df .ms-nav,.df-t,.df-cards,.mf .ms-nav,.mf-t{position:relative}
+.df .ms-nav em{background:#fff;color:#111}
+.df-t{padding:56px 64px 0;max-width:880px}
+.df-t small,.mf-t small{color:#fff;opacity:.85}
+.df-t h3{font-size:92px;margin-top:16px}
+.df-t p{font-size:24px;opacity:.9;max-width:560px}
+.df-cards{position:absolute;left:64px;right:64px;bottom:44px;display:flex;gap:0;background:var(--b);color:var(--i);border-radius:20px;overflow:hidden}
+.df-cards .ms-card{border:none;border-right:1.5px solid color-mix(in srgb,var(--i) 12%,transparent);border-radius:0;padding:26px 30px}
+.df-cards .ms-card:last-child{border-right:none}
+/* centred editorial */
+.dc{text-align:center;padding:14px 64px 0}
+.dc h3{font-size:96px;margin-top:16px}
+.dc p{margin:20px auto 0;max-width:620px}
+.dc .ms-row{justify-content:center;margin-top:26px}
+.dc-ph{position:absolute;left:64px;right:64px;top:468px;height:400px;border-radius:28px 28px 0 0}
+.ms-center{position:relative}
+.dc-cards{position:absolute;left:28px;right:28px;top:200px;display:flex;gap:16px}
+.dc-cards .ms-card{background:var(--b);border:none}
+/* booking widget */
+.bk{flex:none;width:470px;background:#fff;color:#141416;border-radius:26px;padding:30px 30px 32px;box-shadow:0 0 0 1.5px rgba(0,0,0,.07),0 30px 50px -30px rgba(0,0,0,.35);align-self:center}
+.bk h5{font-size:24px;font-weight:600;letter-spacing:-.01em;margin-bottom:16px}
+.bk h6{font-size:15px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.55;margin:20px 0 12px}
+.bk-row{display:flex;justify-content:space-between;padding:15px 18px;border:1.5px solid #E6E6EA;border-radius:14px;margin-bottom:9px;font-size:18px}
+.bk-row span{opacity:.6}
+.bk-row.on{border-color:var(--a);box-shadow:0 0 0 1.5px var(--a)}
+.bk-slots{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.bk-slots i{font-style:normal;text-align:center;padding:12px 0;border:1.5px solid #E6E6EA;border-radius:12px;font-size:17px}
+.bk-slots i.on{background:var(--a);border-color:var(--a);color:var(--on)}
+.bk .ms-btn{display:block;text-align:center;margin-top:20px}
+.ms-booking .ms-hero{height:600px;padding-top:10px}
+.db-list{display:flex;flex-direction:column;gap:12px;margin-top:34px;font-size:19px}
+.db-list span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--a);margin-right:14px}
+/* shop / menu tiles */
+.dsh{padding:8px 64px 0}
+.dsh-h{display:flex;gap:60px;align-items:flex-end;justify-content:space-between;margin-top:14px}
+.dsh-h h3{font-size:74px;flex:1.5}
+.dsh-h>div{flex:1;padding-bottom:8px}
+.dsh-h p{margin-top:0}
+.dsh-h .ms-row{margin-top:22px}
+.ms-d .tiles{display:flex;gap:22px;padding:38px 64px 0}
+.tile{flex:1}
+.tile-ph{height:300px;border-radius:20px}
+.tile b{display:block;font-size:21px;font-weight:600;margin-top:14px}
+.tile span{display:block;font-size:17px;opacity:.65;margin-top:3px}
+/* mobile variants */
+.mf{position:relative;width:100%;height:100%;color:#fff}
+.mf .ms-nav i{background:#fff;box-shadow:0 8px 0 #fff}
+.mf-t{position:absolute;left:24px;right:24px;bottom:56px}
+.mf-t h3{font-size:58px;margin-top:12px}
+.mf-t p{opacity:.9}
+.ms-m .bk{width:auto;padding:20px;margin-top:22px;border-radius:20px}
+.ms-m .bk h5{font-size:19px;margin-bottom:12px}.ms-m .bk-row{font-size:15px;padding:12px 14px}.ms-m .bk-slots i{font-size:14px;padding:10px 0}.ms-m .bk h6{font-size:12px;margin:14px 0 10px}
+.ms-m .tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.ms-m .tile-ph{height:150px;border-radius:14px}.ms-m .tile b{font-size:15px;margin-top:8px}.ms-m .tile span{font-size:13px}
+.ms-m.ms-center .ms-ph{margin-top:6px}
 """
 
 if __name__ == "__main__":

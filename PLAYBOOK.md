@@ -326,24 +326,52 @@ Meta can publish a post and still return an error. On 10 Nov the 19:33 carousel 
 - Report "published, Meta returned an error" as published, with the permalink.
 
 ## Mockups: post like an agency (Lee, 10 Nov 2026)
-Lee: *"these posts need to look way more professional"* and *"you need to be creating mockups, and making things look like a full marketing agency has posted them."*
+Lee: *"these posts need to look way more professional"*, *"you need to be creating mockups, and making things look like a full marketing agency has posted them"*, and *"you need to create a different mockup each time, it has to look world class with all the correct colours and fonts to suit the post."*
 
-- **Show finished-looking work.** The slide type `mockup` puts a designed website for a made-up business on a laptop, a phone, or both (`"device": "duo" | "laptop" | "phone"`). See `design-samples/mockups.jpg` and the `render.py` comment above `_site` for the fields.
+- **Show finished-looking work.** The slide type `mockup` puts a designed website for a made-up business on a laptop, a phone, or both (`"device": "duo" | "laptop" | "phone"`). See `design-samples/mockups.jpg`.
 - **How often.**
   - Every web design, branding, and websites + CRM post has at least one `mockup` slide, usually the cover.
   - At least one feed post a day opens with a mockup cover.
   - Stories use `"device": "phone"`.
   - CRM posts keep using `screen` slides (table, board, record).
-- **Design each made-up site properly.** Treat it as a real client pitch:
+
+### Every mockup is a new design
+Never reuse a mockup. Before designing one, read the last 10 entries with a `mockup` field in `log.json` and `stories-log.json`. The new one must differ from **all** of them in business, and from the last **three** in every one of these:
+
+| Choice | Options |
+|---|---|
+| Site layout (`layout`) | `split` (text left, photo right), `full` (full-bleed photo hero), `center` (centred headline over a wide photo), `booking` (headline plus a booking widget, needs no photo), `shop` (headline plus four product or menu tiles) |
+| Headline font (`font`) | serif: `Fraun`, `News`, `Playfair`, `DMSerif`; sans: `Disp`, `Brico`, `Grotesk`, `Outfit`, `Syne`; condensed capitals: `Cond`, `Oswald` |
+| Colours | `bg`, `ink`, `accent`, and `on_accent` (text colour on buttons) |
+| Buttons (`buttons`) | `round`, `soft`, `square` |
+| Device | `duo`, `laptop`, `phone` |
+| Trade | a different kind of business each time |
+
+### Colours and fonts must suit the trade and the post
+Design the made-up site the way an agency would for that client, then pick the Nexulabs look and theme for the slide so the two sit well together (a light site on a dark slide, or a dark site on a light slide; never the same background colour on both).
+
+| Trade | Fonts that suit | Colour direction |
+|---|---|---|
+| Barbers, tattoo studios | `DMSerif`, `Playfair`, `Oswald` | cream or charcoal with oxblood, bottle green or brass |
+| Pubs, restaurants | `Playfair`, `Fraun`, `News` | dark wood tones, deep green, cream, gold buttons with dark text |
+| Bakeries, cafés, gift shops | `Syne`, `Brico`, `Outfit` | blush, butter, berry, warm brown |
+| Florists, salons, beauty | `Fraun`, `Outfit`, `Playfair` | soft greens, off-white, plum, sage |
+| Builders, joiners, roofers | `Cond`, `Oswald`, `Grotesk` | near-black or white with a strong blue or yellow |
+| Electricians, plumbers, garages | `Grotesk`, `Disp`, `Oswald` | charcoal with signal yellow, or white with a clear blue or red |
+| Accountants, solicitors, clinics, dentists | `News`, `Disp`, `Outfit` | white, navy, calm teal or green |
+| Gyms, coaches | `Oswald`, `Cond`, `Syne` | black with one loud colour |
+
+- **No orange** in any made-up site either. Use oxblood, brick red or brass where a warm colour is needed.
+- **Check contrast.** Button text must be easy to read on the accent colour: set `on_accent` to a dark colour on yellow, gold or pale accents.
+- **Write it like a real client pitch:**
   - a believable local business name and trade (North East towns, no real companies)
-  - its own colours (`accent`, `bg`, `ink`) and headline font (`font`: Fraun, Brico, Disp, News or Cond) that suit the trade
   - a short, confident headline, one line of supporting copy, one clear button
-  - three real-sounding services or prices, and a trust strip
-  - a different business, palette and font from the last three mockups in `log.json`
-- **Photo inside the site.** Use a prepared library photo that literally shows that trade (`photo.py list --topic business-types`), credit it in the caption, and retire it after publishing. If none fits, leave `image` out and the hero uses the site's accent colour.
-- **Keep the slide simple.** One headline, at most one supporting line, the device, and the caption "Concept for a made-up business." Let the mockup carry the slide. No lists or extra boxes on a mockup slide.
-- **Honesty.** Always label it a concept. Never present a mockup as a real client or real results. "(example)" after any rating or review count.
-- **Log it.** Add `"cover": "mockup"` and `"mockup": "<business name>"` to `log.json`.
+  - real-sounding services or prices, and a short trust strip
+  - fake phone numbers such as 0191 000 0000, and "(example)" after any rating
+- **Photo inside the site.** Use a prepared library photo that literally shows that trade (`photo.py list --topic business-types`), credit it in the caption, and retire it after publishing. If none fits, use the `booking` layout, which needs no photo.
+- **Keep the slide simple.** One headline, at most one supporting line, the device, and the caption "Concept for a made-up business." No lists or extra boxes on a mockup slide.
+- **Look at it before publishing.** Open the rendered slide. Reject and redo it if text is clipped, a button is hidden, the phone covers the headline of the site, or it looks like a template.
+- **Log it.** Add `"cover": "mockup"` and `"mockup": {"business", "trade", "layout", "font", "accent", "bg", "device"}` to the log entry.
 
 ## Photos from the library (Lee's rules, updated 9 Nov 2026)
 Lee, 9 Nov 2026: *"I have no idea what this image has to do with domain names... the images you choose must be relevant to what you are posting about"* and *"we are a design company, so the images we choose have to be on point."*
