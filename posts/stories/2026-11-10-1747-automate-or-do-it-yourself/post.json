@@ -1,0 +1,94 @@
+{
+  "format": "story",
+  "series": "This or that",
+  "style": "signal",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "lemon",
+      "headline": "Automate it,\nor do it\n*yourself*?",
+      "sub": "A quick way to tell which customer\nmessages to hand over."
+    },
+    {
+      "type": "screen",
+      "theme": "sky",
+      "title": "Hand over\nthe repeats",
+      "sub": "Same words every time,\nso let the system send them.",
+      "screen": {
+        "kind": "record",
+        "title": "Booking 2041",
+        "tabs": [
+          "Details",
+          "Messages"
+        ],
+        "pills": {
+          "Booked": "solid"
+        },
+        "fields": [
+          [
+            "Customer",
+            "Sam Carter"
+          ],
+          [
+            "Job",
+            "Boiler service"
+          ],
+          [
+            "When",
+            "Thu 19 Nov, 9am"
+          ],
+          [
+            "Status",
+            "Booked"
+          ]
+        ],
+        "timeline_title": "Sent automatically",
+        "timeline": [
+          [
+            "On booking",
+            "Confirmation email"
+          ],
+          [
+            "Day before",
+            "Reminder text"
+          ],
+          [
+            "3 days after",
+            "Review request"
+          ],
+          [
+            "A year on",
+            "Service due reminder"
+          ]
+        ]
+      },
+      "caption": "Example screen for a made-up business."
+    },
+    {
+      "type": "list",
+      "theme": "black",
+      "title": "Keep these\nfor yourself",
+      "items": [
+        [
+          "Complaints",
+          "Pick up the phone. A person should say sorry."
+        ],
+        [
+          "Awkward quotes",
+          "Anything that needs a look or a chat first."
+        ],
+        [
+          "Bad news",
+          "A delay or a price change should come from you."
+        ]
+      ],
+      "title_size": 120
+    },
+    {
+      "type": "cover",
+      "theme": "lemon",
+      "headline": "Same message\nevery time?\n*Automate* it.",
+      "sub": "If it needs judgement, that one's still yours."
+    }
+  ]
+}
