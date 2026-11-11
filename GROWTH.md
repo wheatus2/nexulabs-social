@@ -12,7 +12,7 @@ The followers that count are people who could become customers or send them: bus
 ## Hard rules
 These protect the account. Breaking them gets accounts restricted or banned, and the followers they bring are worthless.
 - **Never** buy followers, likes or engagement. No giveaways-for-follows schemes, engagement pods or follow-for-follow.
-- **Never** automate following, unfollowing, liking, commenting, DMs or Story views, from the API, a browser or any tool. Instagram's terms forbid it and it is spam.
+- **Never** automate following, unfollowing, liking, commenting, DMs or Story views, from the API, a browser or any tool. Instagram's terms forbid it and it is spam. Opening pages in Lee's Chrome to read them and line them up for him (the Chrome pass, below) is preparing, not acting.
 - **Never** follow, like, comment, reply or message as Lee or as Nexulabs. The agent prepares; Lee taps. (Standing rule: nothing is sent on Lee's behalf.)
 - Never change the profile, bio, name, links or any account setting. Propose the exact wording and let Lee change it.
 - **No paid growth (Lee, 11 Nov 2026: "I don't want to spend money just yet").** Never spend money, and do not propose ads, boosts or any paid option, in the daily list, the weekly review or anywhere else, until Lee says he is ready. Free methods only.
@@ -37,6 +37,14 @@ These protect the account. Breaking them gets accounts restricted or banned, and
    - **One bigger move** when there is one: a collaboration or shared post to propose (with the message drafted), a local event to post from, a customer to ask for a tag, a profile change (exact wording).
    - Any comment or message on our own posts that needs a reply, with the reply drafted.
 6. **Tell Lee.** Finish with a short summary: followers now and the change, the one thing that worked, and today's list from `growth/today.md` in full so he can act from the notification.
+
+### The Chrome pass (Lee, 11 Nov 2026)
+A separate scheduled task, "Nexulabs growth: Chrome pass", runs on Lee's computer with Claude in Chrome, because Instagram can't be read from the cloud. It only reads and prepares:
+- Opens each account in `growth/today.md` in Lee's Chrome, reads the bio and the latest post, and rewrites that account's comment in `growth/today.md` for the actual post.
+- Leaves one tab open per account, on the post, so Lee sees the post and the drafted comment side by side. Lee types or pastes the comment and taps Post himself.
+- May check up to 3 `check_bio_first` accounts in `growth/accounts.json` and set them to `local` or `not_local`.
+- It never clicks Follow, Like, Post, Send or Save, never types into Instagram, and opens at most 10 Instagram pages a run. If Instagram shows a login page, a CAPTCHA or a warning, it stops and tells Lee.
+- `growth/today.md` keeps one `### N. @handle` block per account with `Link`, `Who`, `Post to look for` (or `Post`) and `Comment` lines, so the Chrome pass can find them.
 
 ### Every evening (about 20:12)
 1. Read the day's numbers again (`mode: growth`) and update today's line in `growth/log.json`.
@@ -69,7 +77,7 @@ These protect the account. Breaking them gets accounts restricted or banned, and
 - `growth/data/<date>.json`: raw numbers (written by the workflow)
 - `growth/log.json`: one line per day
 - `growth/brief.md`: this week's steer for the feed and Stories runs
-- `growth/today.md`: Lee's list for today
+- `growth/today.md`: Lee's list for today (sharpened by the Chrome pass)
 - `growth/accounts.json`: local accounts found, with dates suggested
 - `growth/notes.md`: research notes
 - `growth/weekly/`: Monday reviews
