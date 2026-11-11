@@ -299,6 +299,8 @@ Post-level `"style"` picks the look. Each look is its own design system, with it
 - Log stories in `stories-log.json` (date, slot, style, themes, frames, media ids).
 
 ## Highlight covers (Lee, 9 Nov 2026)
+
+**New covers (11 Nov 2026).** The covers were redrawn to the new design standard: cobalt, one thick mark in white and butter yellow (`brand/highlight_covers_v2.py`, files in `brand/highlight-covers/`). They are a matching set on purpose, so the no-repeat rule does not apply to them. Where a category has two cover folders, the newest one (`…-highlight-cover-<slug>-v2`) is the cover; the older black frame should not be in the highlight.
 Lee: *"the highlight cover doesn't fit the circle, please can you choose something circle."*
 - **The covers.** `brand/highlight-covers/` holds one cover per highlight, made by `brand/highlight_covers.py`. Each is a flat ink background with a white line icon and a blue accent, matching the profile picture. The icon sits inside the centre 380px of a 1080×1920 frame, so it survives Instagram's circle crop. The highlight name sits low in the frame, outside the circle. `preview.jpg` shows them as profile circles.
 
