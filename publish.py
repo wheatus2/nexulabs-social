@@ -10,6 +10,7 @@ Usage:
   python3 publish.py story posts/stories/<id>  [--force]
   python3 publish.py comments [--days 7]
   python3 publish.py insights [--month YYYY-MM]
+  python3 publish.py growth      (read-only: today's followers and recent post numbers -> growth/data/<date>.json)
 
 post   folder with reel.mp4      -> Instagram Reel + Facebook Page video
        folder with slide-NN.jpg  -> Instagram single image or carousel + Facebook Page photo post
@@ -432,9 +433,48 @@ def insights(month=None):
     return out
 
 
+def growth():
+    """Read-only. Today's follower count, the last 7 days of account activity and every post from the last
+    21 days with its numbers, for the daily growth run. Saved to growth/data/<date>.json."""
+    now = int(time.time()) - 60
+    out = {"date": datetime.date.today().isoformat(), "fetched": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+           "account": {}, "last_7_days": {}, "posts": [], "facebook": {}, "errors": {}}
+    try:
+        out["account"] = call("GET", IG_USER, {"fields": "username,followers_count,follows_count,media_count"})
+        vals, errs = _metrics(f"{IG_USER}/insights",
+                              ["reach", "views", "profile_views", "website_clicks", "accounts_engaged", "total_interactions",
+                               "likes", "comments", "shares", "saves", "follows_and_unfollows", "profile_links_taps"],
+                              {"period": "day", "metric_type": "total_value", "since": now - 7 * 86400, "until": now})
+        out["last_7_days"] = vals
+        if errs:
+            out["errors"]["account_metrics"] = errs
+    except GraphError as e:
+        out["errors"]["account"] = str(e)
+    try:
+        cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=21)
+        r = call("GET", f"{IG_USER}/media", {"fields": "id,caption,media_type,media_product_type,permalink,timestamp,like_count,comments_count", "limit": 60})
+        for m in r.get("data", []):
+            if datetime.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z") < cutoff:
+                break
+            base = ["reach", "views", "saved", "shares", "total_interactions", "follows", "profile_visits"]
+            if m.get("media_product_type") == "REELS":
+                base = ["reach", "views", "saved", "shares", "total_interactions", "ig_reels_avg_watch_time"]
+            vals, errs = _metrics(f"{m['id']}/insights", base)
+            out["posts"].append({"media_id": m["id"], "type": m.get("media_product_type") or m.get("media_type"),
+                                 "permalink": m.get("permalink"), "timestamp": m["timestamp"], "caption": (m.get("caption") or "")[:90],
+                                 "likes": m.get("like_count"), "comments": m.get("comments_count"), **vals})
+    except GraphError as e:
+        out["errors"]["posts"] = str(e)
+    try:
+        out["facebook"] = call("GET", FB_PAGE, {"fields": "followers_count,fan_count"})
+    except GraphError as e:
+        out["errors"]["facebook"] = str(e)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["check", "post", "story", "comments", "insights", "pending"])
+    ap.add_argument("mode", choices=["check", "post", "story", "comments", "insights", "pending", "growth"])
     ap.add_argument("folder", nargs="?")
     ap.add_argument("--platforms", default="instagram,facebook")
     ap.add_argument("--force", action="store_true")
@@ -444,6 +484,19 @@ def main():
 
     if a.mode == "pending":
         return pending()
+
+    if a.mode == "growth":
+        try:
+            token()
+        except GraphError as e:
+            print(json.dumps({"ok": False, "error": str(e)}))
+            return 1
+        res = growth()
+        path = Path("growth/data") / f"{res['date']}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(res, indent=1, ensure_ascii=False) + "\n")
+        print(json.dumps({"saved": str(path), "followers": res["account"].get("followers_count"), "posts": len(res["posts"]), "errors": res["errors"]}, indent=1))
+        return 1 if "account" in res["errors"] else 0
 
     if a.mode == "insights":
         if a.month and not (len(a.month) == 7 and a.month[4] == "-" and a.month.replace("-", "").isdigit()):

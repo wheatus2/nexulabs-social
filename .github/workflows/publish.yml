@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames; comments = read recent comments (read-only); insights = last month's stats to reports/data (read-only)"
+        description: "check = test the token only; post = feed post or Reel; story = Instagram Story frames; comments = read recent comments (read-only); insights = last month's stats to reports/data (read-only); growth = today's followers and recent post numbers to growth/data (read-only)"
         required: true
         default: check
         type: choice
-        options: [check, post, story, comments, insights]
+        options: [check, post, story, comments, insights, growth]
       folder:
         description: "Post folder, e.g. posts/2026-11-08-1933-first-screen-on-a-phone (not needed for check)"
         required: false
@@ -86,14 +86,14 @@ jobs:
           echo "Could not push published.json"; exit 1
 
       - name: Save insights to the repo
-        if: inputs.mode == 'insights'
+        if: inputs.mode == 'insights' || inputs.mode == 'growth'
         run: |
-          ls reports/data/*-insights.json >/dev/null 2>&1 || exit 0
+          mkdir -p reports/data growth/data
           git config user.name "nexulabs-publisher"
           git config user.email "actions@users.noreply.github.com"
-          git add reports/data/
+          git add reports/data/ growth/data/
           git diff --cached --quiet && exit 0
-          git commit -m "Monthly insights data"
+          git commit -m "Stats data (${{ inputs.mode }})"
           for i in 1 2 3 4 5; do
             git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
             sleep 5
