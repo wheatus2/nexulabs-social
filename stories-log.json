@@ -345,5 +345,59 @@
   ],
   "published_via": "github-actions",
   "note": "to be added to the Tech news highlight and set as its cover by the weekly Highlights run"
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "17:47",
+  "published_at": "about 17:51 UK",
+  "id": "stories/2026-11-11-1747-number-one-on-google",
+  "type": "myth vs fact",
+  "category": "Web design (getting found on Google)",
+  "topic": "Promised number one on Google: myth 1, you can pay Google to rank higher (Google doesn't accept payment to rank a site higher; ads have no effect on the normal results); myth 2, an SEO company can guarantee first place (Google: no one can guarantee a #1 ranking); three questions to ask instead (previous work, what results and by when, will you tell me every change)",
+  "news_story_id": null,
+  "style": "signal",
+  "themes": [
+   "lemon",
+   "black",
+   "sky",
+   "lemon"
+  ],
+  "cover": "headline",
+  "screen": null,
+  "photo": null,
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "compare",
+   "compare",
+   "list"
+  ],
+  "sources": [
+   "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+   "https://developers.google.com/search/docs/fundamentals/how-search-works"
+  ],
+  "fact_check": "self-check pass (both Google Search Central pages opened this run)",
+  "media_ids": [
+   "17946058308091048",
+   "18116492879520618",
+   "18470355541188044",
+   "18038345165663522"
+  ],
+  "published_via": "github-actions"
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "17:52",
+  "id": "stories/2026-11-11-highlight-cover-websites",
+  "type": "highlight-cover",
+  "category": "Websites",
+  "topic": "Websites highlight cover (browser window icon)",
+  "style": "cover",
+  "frames": 1,
+  "media_ids": [
+   "18150093394565212"
+  ],
+  "published_via": "github-actions",
+  "note": "to be added to the Websites highlight and set as its cover by the weekly Highlights run"
  }
 ]
