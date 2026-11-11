@@ -1,5 +1,13 @@
 # Nexulabs Instagram — daily posting playbook
 
+> **DESIGN STANDARD (Lee, 11 Nov 2026): read `DESIGN.md` before making any post, Reel or Story. It overrides every design instruction in this file.**
+> - Lee: the posts looked "very repetitive, very basic". The bar is what Google, Apple or Nvidia would post.
+> - Every post is now designed from scratch with `studio.py` (bespoke HTML and CSS per frame). `render.py`, `reel.py`, the five looks, the slide types and the `mockup` slide type are **retired**: do not use them for new posts. Where this file says to render with them, use `studio.py` instead.
+> - No repeats: layouts, colours and typefaces must differ from recent posts. `python3 studio.py check` enforces this and must pass.
+> - A post that can't reach the standard does not go out. Skip the slot and report it. This replaces "switch to an evergreen post" when the problem is the design.
+> - After publishing: `python3 studio.py log posts/<id>` and commit `design-log.json`. In `log.json` record `"renderer": "studio"`.
+
+
 > **Mockups (Lee, 10 Nov 2026):** posts must look like a marketing agency made them. Use the `mockup` slide type (a designed website for a made-up business on a laptop and phone) as described in "Mockups: post like an agency". This applies to every scheduled run from now on.
 >
 > **Design update (Lee, 9 Nov 2026):** No gradient styles (Lee, 8 Nov: posts looked "very AI generated"). Everything also looked the same (Lee, 9 Nov), so posts, Reels, Stories and LinkedIn now rotate through **five looks**: `product`, `journal`, `signal`, `soft` and `press`, each with its own fonts, colours and layout. See "Design direction: five looks" for the rotation rules. Photos must literally show the post's subject; see "Photos from the library". This replaces any older instruction, including in the scheduled tasks, to use only `"style": "product"`.

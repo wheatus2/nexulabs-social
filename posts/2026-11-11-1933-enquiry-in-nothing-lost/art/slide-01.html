@@ -1,0 +1,40 @@
+<style>
+.frame{background:#08080A}
+.top{position:absolute;left:64px;right:64px;top:64px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.top .nx-logo{height:34px}
+.top em{font:500 26px/1 GeistMono;font-style:normal;color:#8E8E96;letter-spacing:.02em}
+h1{position:absolute;left:60px;top:170px;font:800 176px/.88 InterTight;letter-spacing:-.055em;z-index:5}
+h1 span{color:#C8F542}
+.glow{position:absolute;left:180px;top:560px;width:900px;height:700px;background:radial-gradient(closest-side,rgba(200,245,66,.20),rgba(200,245,66,0));filter:blur(20px)}
+.world{position:absolute;left:0;top:0;width:1080px;height:1350px;perspective:2400px;perspective-origin:50% 30%}
+.board{position:absolute;left:150px;top:640px;width:1180px;height:900px;transform:rotateX(52deg) rotateZ(-30deg);transform-style:preserve-3d;background:#131316;border-radius:36px;border:1.5px solid #2A2A30;padding:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;box-shadow:-60px 90px 120px rgba(0,0,0,.7)}
+.col{background:#1A1A1E;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:18px;transform-style:preserve-3d}
+.col h4{font:600 24px/1 Geist;color:#9A9AA3;display:flex;justify-content:space-between;margin-bottom:6px}
+.col h4 b{font:500 20px GeistMono;color:#5E5E67}
+.c{background:#25252B;border:1.5px solid #33333A;border-radius:18px;padding:22px;height:132px}
+.c i{display:block;height:14px;border-radius:7px;background:#3C3C45;margin-bottom:14px;width:70%}
+.c i+i{width:44%;background:#303038}
+.c u{display:block;width:34px;height:34px;border-radius:50%;background:#3C3C45;margin-top:6px}
+.c.hot{background:#C8F542;border-color:#C8F542;height:176px;transform:translateZ(46px);box-shadow:-50px 70px 60px rgba(0,0,0,.55),0 0 90px rgba(200,245,66,.35)}
+.c.hot b{display:block;font:700 30px/1.05 InterTight;color:#0A0A0A;letter-spacing:-.02em}
+.c.hot s{display:block;text-decoration:none;font:500 21px/1.2 Geist;color:#35400F;margin-top:10px}
+.c.hot q{display:inline-block;quotes:none;margin-top:14px;font:600 17px/1 GeistMono;background:#0A0A0A;color:#C8F542;padding:8px 12px;border-radius:20px}
+.fade{position:absolute;left:0;right:0;bottom:0;height:260px;background:linear-gradient(rgba(8,8,10,0),#08080A 85%);z-index:4}
+.cap{position:absolute;left:64px;bottom:64px;z-index:6;font:500 30px/1.25 Geist;color:#B9B9C2;width:560px}
+.cap b{color:#fff;font-weight:600}
+</style>
+<div class="top"><!--logo:#FFFFFF,#C8F542--><em>Websites + CRM</em></div>
+<h1>Enquiry in.<br><span>Nothing lost.</span></h1>
+<div class="glow"></div>
+<div class="world"><div class="board" data-ui>
+  <div class="col"><h4>New <b>4</b></h4>
+    <div class="c hot"><b>Kitchen refit</b><s>Came in from the website</s><q>09:14 today</q></div>
+    <div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div></div>
+  <div class="col"><h4>Quoted <b>6</b></h4>
+    <div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div></div>
+  <div class="col"><h4>Won <b>3</b></h4>
+    <div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div><div class="c"><i></i><i></i><u></u></div></div>
+</div></div>
+<div class="fade"></div>
+<p class="cap"><b>Your website and your CRM,</b> built as one system.</p>
+<!--grain:0.07-->
