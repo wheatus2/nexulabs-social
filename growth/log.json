@@ -1,1 +1,58 @@
-[]
+[
+ {
+  "date": "2026-11-11",
+  "updated": "evening, 20:02 UK",
+  "followers": 8,
+  "following": 89,
+  "change_since_yesterday": null,
+  "change_since_7_days_ago": null,
+  "change_note": "First day of the log (baseline), so no earlier figure to compare with.",
+  "reach_7d": 138,
+  "views_7d": 379,
+  "profile_views_7d": 18,
+  "website_taps_7d": 0,
+  "accounts_engaged_7d": 10,
+  "interactions_7d": {
+   "likes": 14,
+   "comments": 3,
+   "saves": 1,
+   "shares": 0
+  },
+  "facebook_followers": 0,
+  "posts_today": [
+   {
+    "time": "08:49",
+    "format": "carousel",
+    "topic": "Google November 2026 core update",
+    "reach": 1,
+    "views": 3
+   },
+   {
+    "time": "14:42",
+    "format": "reel",
+    "topic": "One price list",
+    "reach": 2,
+    "views": 2
+   },
+   {
+    "time": "19:33",
+    "format": "carousel",
+    "topic": "Enquiry in, nothing lost",
+    "reach": 0,
+    "views": 0,
+    "note": "29 minutes old when read"
+   }
+  ],
+  "best_post_last_3_days": {
+   "permalink": "https://www.instagram.com/reel/DffnCg0GeUl/",
+   "format": "reel",
+   "posted": "2026-11-08 20:26",
+   "topic": "First screen of your website on a phone",
+   "reach": 29,
+   "views": 32,
+   "why": "Early sign only. A Reel that opens with a question the viewer can test on their own phone straight away. Next best since then: the contact form Reel (9 Nov, reach 7) and the hosting Reel (10 Nov, reach 6). Feed posts reached 0 to 5."
+  },
+  "missing": [],
+  "evening_research": "Hashtags and search phrases (see growth/notes.md, 11 Nov)"
+ }
+]
