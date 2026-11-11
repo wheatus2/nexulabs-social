@@ -445,5 +445,75 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "New-standard cover (cobalt, two linked rings). The other highlight covers are still the old black ones."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "20:00",
+  "id": "stories/2026-11-11-highlight-cover-crm-v2",
+  "type": "highlight-cover",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "17882804157632192"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cover, set on the highlight the same evening."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "20:00",
+  "id": "stories/2026-11-11-highlight-cover-book-call-v2",
+  "type": "highlight-cover",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "18205297273334604"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cover, set on the highlight the same evening."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "20:00",
+  "id": "stories/2026-11-11-highlight-cover-branding-v2",
+  "type": "highlight-cover",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "18181605085442878"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cover, set on the highlight the same evening."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "20:00",
+  "id": "stories/2026-11-11-highlight-cover-ai-automation-v2",
+  "type": "highlight-cover",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "18184085107377882"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cover, set on the highlight the same evening."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "20:00",
+  "id": "stories/2026-11-11-highlight-cover-tech-news-v2",
+  "type": "highlight-cover",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "18130514008933665"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cover, set on the highlight the same evening."
  }
 ]

@@ -56,5 +56,51 @@
         ]
       }
     ]
+  },
+  {
+    "date": "2026-11-11",
+    "run": "main session: new-standard covers applied in Lee's Chrome",
+    "highlights": [
+      {
+        "name": "Tech News",
+        "action": "cover replaced",
+        "cover": "stories/2026-11-11-highlight-cover-tech-news-v2 (set as cover; old black cover frame removed from the highlight)",
+        "cover_media_ids": [
+          "18130514008933665"
+        ]
+      },
+      {
+        "name": "AI",
+        "action": "cover replaced",
+        "cover": "stories/2026-11-11-highlight-cover-ai-automation-v2 (set as cover; old black cover frame removed from the highlight)",
+        "cover_media_ids": [
+          "18184085107377882"
+        ]
+      },
+      {
+        "name": "Branding",
+        "action": "cover replaced",
+        "cover": "stories/2026-11-11-highlight-cover-branding-v2 (set as cover; old black cover frame removed from the highlight)",
+        "cover_media_ids": [
+          "18181605085442878"
+        ]
+      },
+      {
+        "name": "Book a call",
+        "action": "cover replaced",
+        "cover": "stories/2026-11-11-highlight-cover-book-call-v2 (set as cover; old black cover frame removed from the highlight)",
+        "cover_media_ids": [
+          "18205297273334604"
+        ]
+      },
+      {
+        "name": "CRM",
+        "action": "cover replaced",
+        "cover": "stories/2026-11-11-highlight-cover-crm-v2 (set as cover; old black cover frame removed from the highlight)",
+        "cover_media_ids": [
+          "17882804157632192"
+        ]
+      }
+    ]
   }
 ]
