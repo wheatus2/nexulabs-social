@@ -17,5 +17,37 @@
   "display_font": "InterTight",
   "accent": "#C8F542",
   "concept": "One lime signal on black: the enquiry is the only lit thing in the picture, from the form to the CRM."
+ },
+ {
+  "id": "2026-11-11-1950-after-they-press-send",
+  "format": "story",
+  "composition": [
+   "one-giant-button-with-tap",
+   "vertical-timeline-huge-times",
+   "lock-screen-notification",
+   "type-on-rising-disc"
+  ],
+  "background": [
+   "#1437FF",
+   "#FFF36B",
+   "#0B1033",
+   "#1437FF"
+  ],
+  "display_font": "Unbounded",
+  "accent": "#FFF36B",
+  "concept": "One minute told as three moments: the tap, the clock, the buzz in a pocket. Cobalt and butter yellow."
+ },
+ {
+  "id": "2026-11-11-highlight-cover-web-crm",
+  "format": "story",
+  "composition": [
+   "two-linked-rings-mark"
+  ],
+  "background": [
+   "#1437FF"
+  ],
+  "display_font": "none",
+  "accent": "#FFF36B",
+  "concept": "Highlight cover for Web + CRM: two rings linked, website and CRM joined. Sits inside the circle crop."
  }
 ]

@@ -28,5 +28,33 @@
         "reason": "Not in the Instagram story archive (archive held only the 4 CRM frames); logged media_ids 18114659936585524, 18646356670053257, 17897094996615013, 18188496037419732 not found. Highlight not created."
       }
     ]
+  },
+  {
+    "date": "2026-11-11",
+    "run": "main session, at Lee's request",
+    "highlights": [
+      {
+        "name": "Web + CRM",
+        "action": "created",
+        "cover": "stories/2026-11-11-highlight-cover-web-crm (set as cover)",
+        "stories_added": [
+          {
+            "story_id": "stories/2026-11-11-1950-after-they-press-send",
+            "media_ids": [
+              "17898888063611052",
+              "18194442223407976",
+              "18077929748772338",
+              "18129740701894705"
+            ]
+          },
+          {
+            "story_id": "stories/2026-11-11-highlight-cover-web-crm",
+            "media_ids": [
+              "17910503940603888"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

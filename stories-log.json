@@ -399,5 +399,51 @@
   ],
   "published_via": "github-actions",
   "note": "to be added to the Websites highlight and set as its cover by the weekly Highlights run"
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "19:50",
+  "id": "stories/2026-11-11-1950-after-they-press-send",
+  "type": "teaser for today's feed post",
+  "category": "Websites + CRM",
+  "topic": "What happens after they press send: enquiry to CRM lead to a phone notification in one minute",
+  "renderer": "studio",
+  "composition": [
+   "one-giant-button-with-tap",
+   "vertical-timeline-huge-times",
+   "lock-screen-notification",
+   "type-on-rising-disc"
+  ],
+  "palette": [
+   "#1437FF",
+   "#FFF36B",
+   "#0B1033"
+  ],
+  "display_font": "Unbounded",
+  "frames": 4,
+  "media_ids": [
+   "17898888063611052",
+   "18194442223407976",
+   "18077929748772338",
+   "18129740701894705"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "First Story at the new design standard; made in the main session at Lee's request."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "19:52",
+  "id": "stories/2026-11-11-highlight-cover-web-crm",
+  "type": "highlight-cover",
+  "category": "Websites + CRM",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "17910503940603888"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cover (cobalt, two linked rings). The other highlight covers are still the old black ones."
  }
 ]
