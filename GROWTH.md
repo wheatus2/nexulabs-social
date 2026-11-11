@@ -7,7 +7,7 @@ The followers that count are people who could become customers or send them: bus
 - 8 followers, following 89. Facebook Page: 0 followers.
 - Last 7 days: 138 accounts reached, 18 profile views, 0 website taps.
 - Feed posts reach 1 to 7 accounts each. The best Reel reached 29.
-- So the problem is **distribution, not volume**. Three posts a day to eight followers reaches almost nobody. Growth has to come from getting in front of new people: Reels, search, other accounts, Lee's own network and paid reach.
+- So the problem is **distribution, not volume**. Three posts a day to eight followers reaches almost nobody. Growth has to come from getting in front of new people: Reels, search, other accounts, and Lee's own network.
 
 ## Hard rules
 These protect the account. Breaking them gets accounts restricted or banned, and the followers they bring are worthless.
@@ -15,7 +15,7 @@ These protect the account. Breaking them gets accounts restricted or banned, and
 - **Never** automate following, unfollowing, liking, commenting, DMs or Story views, from the API, a browser or any tool. Instagram's terms forbid it and it is spam.
 - **Never** follow, like, comment, reply or message as Lee or as Nexulabs. The agent prepares; Lee taps. (Standing rule: nothing is sent on Lee's behalf.)
 - Never change the profile, bio, name, links or any account setting. Propose the exact wording and let Lee change it.
-- Never spend money. Propose ads with a budget, audience and the post to use; Lee places them.
+- **No paid growth (Lee, 11 Nov 2026: "I don't want to spend money just yet").** Never spend money, and do not propose ads, boosts or any paid option, in the daily list, the weekly review or anywhere else, until Lee says he is ready. Free methods only.
 - Never name Lee in anything published. Never write "small business". No orange. Everything published still has to pass `DESIGN.md` and the fact-checking rules in `PLAYBOOK.md`.
 - Don't publish anything in this run. The feed and Stories runs publish.
 
@@ -34,7 +34,7 @@ These protect the account. Breaking them gets accounts restricted or banned, and
    The brief can steer topics, hooks, captions, hashtags and calls to action. It cannot lower the design standard, change the posting times or volume, or break any of Lee's rules.
 5. **Lee's ten minutes.** Write `growth/today.md`: the few things only Lee can do today that will move followers most. Keep it to what fits in ten minutes on his phone:
    - **5 to 8 real local accounts worth engaging with today**, found by searching (North East business groups, chambers, networking events, local trades, cafés, venues, creatives, local news and "what's on" pages). For each: the handle, who they are, one recent post, and a comment written for that post. Comments must be specific and useful, never "Great post!", never a pitch. Don't repeat an account within 14 days (`growth/accounts.json`).
-   - **One bigger move** when there is one: a collaboration or shared post to propose (with the message drafted), a local event to post from, a customer to ask for a tag, a post worth boosting (budget, audience, duration), a profile change (exact wording).
+   - **One bigger move** when there is one: a collaboration or shared post to propose (with the message drafted), a local event to post from, a customer to ask for a tag, a profile change (exact wording).
    - Any comment or message on our own posts that needs a reply, with the reply drafted.
 6. **Tell Lee.** Finish with a short summary: followers now and the change, the one thing that worked, and today's list from `growth/today.md` in full so he can act from the notification.
 
@@ -50,7 +50,7 @@ These protect the account. Breaking them gets accounts restricted or banned, and
 
 ### Every Monday morning, as well
 - A one-page week review in `growth/weekly/<date>.md`: followers gained, what drove it, what didn't, the plan for the week, and whether the targets below are on track.
-- Propose anything bigger: a paid test, a profile rewrite, a series, a lead magnet, adding the Instagram link to nexulabs.co.uk, the Google Business Profile and email signatures.
+- Propose anything bigger (free only): a profile rewrite, a series, a lead magnet, adding the Instagram link to nexulabs.co.uk, the Google Business Profile and email signatures.
 
 ## Targets
 - First 30 days: 100 followers (the point where Instagram unlocks audience insights).
@@ -63,7 +63,7 @@ These protect the account. Breaking them gets accounts restricted or banned, and
 - **Local.** Location tags and posts about recognisable local things travel further in the North East than generic tips.
 - **Other people's audiences.** A shared post with a client or local business, a tag from a customer, a feature on a local page.
 - **Lee's own engagement.** Ten real comments a day on local business posts, from the Nexulabs account, is the most reliable free growth there is at this size. Only Lee can do it.
-- **Paid.** A small boost on the best Reel, aimed at business owners within about 25 miles, is the fastest lever. Only Lee can place it.
+- **Paid reach is ruled out for now** (see the hard rules). Everything has to come from the free levers above.
 
 ## Files
 - `growth/data/<date>.json`: raw numbers (written by the workflow)
