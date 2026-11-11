@@ -1,0 +1,146 @@
+{
+ "id": "2026-11-11-1433-one-price-list",
+ "series": "Websites + CRM",
+ "style": "product",
+ "scenes": [
+  {
+   "type": "mockup",
+   "theme": "lilac",
+   "device": "phone",
+   "title": "You put your prices up.\nDid your *website*?",
+   "caption": "Concept for a made-up business.",
+   "site": {
+    "layout": "shop",
+    "brand": "Coble & Co.",
+    "cta": "Shop the colours",
+    "eyebrow": "Paint makers · North Shields",
+    "headline": "Paint the colour\nof the coast.",
+    "accent": "#E7D7A4",
+    "on_accent": "#17272A",
+    "bg": "#17272A",
+    "ink": "#F3EFE4",
+    "font": "Fraun",
+    "buttons": "round",
+    "tints": [
+     "#A9B8A6",
+     "#DDBFB3",
+     "#6E8FA6",
+     "#C9A64E"
+    ],
+    "products": [
+     [
+      "Sea Fret · £34",
+      "2.5L matt emulsion"
+     ],
+     [
+      "Shell Pink · £34",
+      "2.5L matt emulsion"
+     ],
+     [
+      "Pier Blue · £36",
+      "2.5L matt emulsion"
+     ],
+     [
+      "Old Brass · £36",
+      "2.5L matt emulsion"
+     ]
+    ]
+   },
+   "dur": 3.8
+  },
+  {
+   "type": "compare",
+   "theme": "ink",
+   "title": "A price lives in\ntoo many places",
+   "instead": [
+    "Changing it on the website, the order form and the invoice",
+    "Miss one and a customer finds it."
+   ],
+   "try": [
+    "One price list.\nEverything reads from it.",
+    "Change it once."
+   ],
+   "dur": 4.4,
+   "title_size": 84
+  },
+  {
+   "type": "screen",
+   "theme": "blue",
+   "title": "Change it\n*once*, here.",
+   "screen": {
+    "kind": "table",
+    "title": "Price list",
+    "tabs": [
+     "Paint",
+     "Testers"
+    ],
+    "columns": [
+     "Colour",
+     "2.5L",
+     "Website"
+    ],
+    "rows": [
+     [
+      "Sea Fret",
+      "£34",
+      "Live"
+     ],
+     [
+      "Shell Pink",
+      "£34",
+      "Live"
+     ],
+     [
+      "Pier Blue",
+      "£36",
+      "Updated today"
+     ],
+     [
+      "Old Brass",
+      "£36",
+      "Updated today"
+     ]
+    ],
+    "pills": {
+     "Live": "green",
+     "Updated today": "blue"
+    },
+    "highlight": [
+     2,
+     3
+    ]
+   },
+   "caption": "Example screen. Made-up business.",
+   "dur": 4.2
+  },
+  {
+   "type": "flow",
+   "theme": "lilac",
+   "title": "Then everything\n*follows*.",
+   "steps": [
+    [
+     "The website shows it",
+     "No second edit."
+    ],
+    [
+     "The order form charges it",
+     "Same figure the customer saw."
+    ],
+    [
+     "The invoice matches",
+     "No awkward phone call."
+    ]
+   ],
+   "dur": 4.4,
+   "title_size": 84
+  },
+  {
+   "type": "cta",
+   "theme": "ink",
+   "headline": "Check three prices\non your site *tonight*.",
+   "cta_label": "Websites and CRMs, linked",
+   "cta": "nexulabs.co.uk",
+   "dur": 3.2
+  }
+ ]
+}

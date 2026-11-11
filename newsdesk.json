@@ -249,7 +249,7 @@
       "event_date": "2026-11-10",
       "headline": "OpenAI launches 'Businesses in ChatGPT' in beta: a Business Hub where a business can claim its profile and see mentions and website clicks",
       "status": "rejected",
-      "reason": "Not yet verified: OpenAI's own page (openai.com/index/introducing-businesses-chatgpt/) could not be opened this run, so there is no primary source read in full, and UK availability and cost are unconfirmed. Strong candidate, re-check at the next run.",
+      "reason": "Still not verified to the playbook standard on 11 Nov 14:33: OpenAI's own announcement (openai.com/index/introducing-businesses-chatgpt/) and help article (help.openai.com 'Setting up your business on ChatGPT') both refused to open again (client error). Also only partly relevant to UK firms yet: Business Agents are US only, and one UK outlet says local shop and restaurant claims are limited to existing US listings for now. One news post already went out today (Google core update). Re-check at the next run; if OpenAI's page still won't open, treat the OpenAI Developer Community announcement as the nearest primary text and say plainly what a UK business can and cannot do.",
       "facts": [
         {
           "claim": "Search Engine Roundtable (10 Nov 2026): claim by text or call to the main business number or DNS verification; analytics show mentions, profile views and clicks; OpenAI calls it beta; Business Agents start with eligible ecommerce and online service businesses in the U.S.",
@@ -258,9 +258,21 @@
         {
           "claim": "IT Brief UK (11 Nov 2026): 'Business Hub is launching globally for eligible businesses wherever ChatGPT is available'; Business Agents US only; insights only above volume thresholds",
           "source": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies"
+        },
+        {
+          "claim": "OpenAI Developer Community, Announcements, 'Introducing Businesses in ChatGPT in beta' (posted 10 Nov 2026, opened and read 11 Nov): 'Claim your business, manage your information, and get insights on how people engage with you.' 'Eligible businesses located wherever ChatGPT is available can get started by claiming their business in Business Hub.' Business Agents: 'Available to eligible ecommerce and online service businesses in the U.S.' 'We don't share people's conversations or Business Agent chats with businesses.' UK not named. No price stated. Replies from users mention a waitlist outside the US and a UK sole trader stuck on a VAT number field in the Persona identity check (user comments, not official).",
+          "source": "https://community.openai.com/t/introducing-businesses-in-chatgpt-in-beta/1414865"
+        },
+        {
+          "claim": "PPC Land (11 Nov 2026, opened and read): 'OpenAI on November 10, 2026 opened Businesses in ChatGPT, a beta program'; reporting sits in Business Hub; claim a profile, correct details, add product feeds, see mention counts and click-throughs; Business Agents limited to eligible ecommerce and online service businesses in the United States; no fee mentioned for claiming; government ID needed before editing; one non-US owner reported being put on a waitlist.",
+          "source": "https://ppc.land/businesses-gain-chatgpt-click-and-mention-counts-in-openais-business-hub/"
+        },
+        {
+          "claim": "Tilio (UK agency, published 8 Nov, updated 10 Nov 2026, opened and read; sells setup services so treat as interested): says eligible UK online businesses can claim now, the 'service' claim option was marked coming soon in its UK test, and claims for local shops and restaurants are limited to existing US listings for now; verification by code to business email or phone, DNS TXT record or Shopify, plus Persona ID check.",
+          "source": "https://www.tilio.co.uk/learn/claim-your-business-in-chatgpt"
         }
       ],
-      "caveats": "UK not named anywhere. Try the OpenAI Developer Community announcement or OpenAI help centre as the primary source next time. Do not say 'now in the UK' unless OpenAI says so."
+      "caveats": "UK not named by OpenAI in anything opened so far. Beta. Local shops and restaurants may not be able to claim in the UK yet (per Tilio, citing OpenAI's help centre, not read first-hand). Do not say 'now in the UK' unless OpenAI says so."
     },
     {
       "id": "2026-11-11-0833-scan",
@@ -268,6 +280,13 @@
       "headline": "11 Nov 08:33 scan: eleven searches run (Google Search Central and Search Status Dashboard, ICO, NCSC, Meta/WhatsApp Business, Search Engine Roundtable/Google Business Profile, UK tech press, WordPress/Shopify/Wix/Squarespace, core update/AI Overviews/Chrome, OpenAI). Pages opened fine this run after searching first (Google Search Status Dashboard, Google Search Central, Search Engine Roundtable, IT Brief UK). Could not open: searchengineland.com and openai.com (client errors). Used: Google November 2026 core update. Held: Businesses in ChatGPT (primary not opened).",
       "status": "rejected",
       "reason": "Scan note, not a story. Other results: ICO cookie guidance results are the same February to May 2026 guidance (not new); NCSC results were the Annual Review coverage already used and a critical-infrastructure AI ransomware warning (not relevant to most businesses; date not checked); Meta Business Agent dates from June 2026 (outside the window)."
+    },
+    {
+      "id": "2026-11-11-1433-scan",
+      "found": "2026-11-11",
+      "headline": "11 Nov 14:33 scan: eight searches run (OpenAI Businesses in ChatGPT, Google Search Central, ICO, NCSC, Search Engine Roundtable/Google Business Profile, Meta/WhatsApp Business/Instagram, UK tech press, WordPress/Shopify/Wix/Squarespace). Pages opened after searching first: OpenAI Developer Community announcement, PPC Land, Tilio. Could not open: openai.com announcement and help.openai.com article (client errors, two attempts via different searches). No new story passed; one news post already published today (Google core update), so evergreen Websites + CRM Reel instead.",
+      "status": "rejected",
+      "reason": "Scan note, not a story. Other results: NCSC results were Annual Review coverage (already used) and the AI ransomware warning for critical infrastructure (not relevant to most businesses); ICO results were the storage and access technologies guidance from earlier in 2026 (not new); technology.org 10 Nov piece on the EU Digital Omnibus and GDPR is EU law, not UK; The Register 11 Nov 'buy British' public sector tech spend is not relevant to business websites or CRMs; Search Engine Roundtable items on Google Business Profile 'Business Home' and AI-powered messaging were not opened and their dates and UK scope are unchecked; Meta/WhatsApp results were round-up blogs with no dated primary announcement; no WordPress, Shopify, Wix or Squarespace announcement in the last 7 days surfaced."
     }
   ]
 }

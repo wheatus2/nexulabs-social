@@ -62,6 +62,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 @keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 @keyframes growx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.scene .stage-phone{margin-bottom:0}.scene .stage-phone .hs{transform:scale(1.2);transform-origin:50% 100%}
 .progress{display:none}
 .progress i{position:absolute;inset:0;background:linear-gradient(90deg,#667DFF,#00D1FF);transform-origin:left;animation:bar VAR_TOTALs linear both}
 """
