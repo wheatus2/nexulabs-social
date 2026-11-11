@@ -1,0 +1,11 @@
+If your website has moved up or down in Google this week, don't rush to change it.
+
+Google started rolling out its November 2026 core update on Tuesday 10 November. It's a broad change to how search results are ranked, it applies worldwide and in every language, and Google says it may take up to two weeks to finish.
+
+Google's own advice to site owners is to wait. Let the update finish, give it at least another full week, then use Search Console to compare a week after it ended with a week before it started. Look at your top pages and the searches they show up for.
+
+Google gives two examples. A page slipping from position 2 to 4 needs no drastic action, and Google recommends leaving content that's already doing well alone. A drop from 4 to 29 calls for a deeper look at the whole site and the pages most affected. It also warns against quick fixes, and says deleting content is a last resort.
+
+The table in the image uses made-up pages.
+
+#seo #webdesign #northeastbusiness

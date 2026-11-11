@@ -1,0 +1,68 @@
+{
+ "id": "linkedin-2026-11-11-core-update-wait",
+ "series": "News",
+ "style": "signal",
+ "slides": [
+  {
+   "type": "screen",
+   "theme": "sky",
+   "title": "Moved in Google?\n*Wait* before\nyou change anything.",
+   "sub": "Google's core update began on 10 November and may take up to two weeks.",
+   "screen": {
+    "kind": "table",
+    "title": "Top pages: before and after",
+    "tabs": [
+     "Positions",
+     "Clicks"
+    ],
+    "columns": [
+     "Page",
+     "Before",
+     "After",
+     "Next step"
+    ],
+    "col_class": [
+     "",
+     "mono",
+     "mono",
+     ""
+    ],
+    "rows": [
+     [
+      "Home",
+      "1",
+      "1",
+      "Leave it"
+     ],
+     [
+      "Roofs",
+      "2",
+      "4",
+      "No drastic action"
+     ],
+     [
+      "Extensions",
+      "4",
+      "29",
+      "Look deeper"
+     ],
+     [
+      "Contact",
+      "3",
+      "3",
+      "Leave it"
+     ]
+    ],
+    "pills": {
+     "No drastic action": "grey",
+     "Look deeper": "solid",
+     "Leave it": "green"
+    },
+    "highlight": [
+     2
+    ]
+   },
+   "caption": "Example screen, made-up pages. The 2 to 4 and 4 to 29 drops are Google's own examples."
+  }
+ ]
+}

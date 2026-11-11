@@ -6,4 +6,4 @@ From round 2 (WebSearch): sources 2, 3, 4, 6 are live; quoted wording not confir
 
 Same claims passed an independent check on 9 Nov 2026 for the Instagram Reel 2026-11-09-1433-domain-in-your-name.
 
-Next LinkedIn run: re-run the independent fact-check on this folder; if PASS, publish it as-is (image slide-01.jpg, caption.txt), log it to linkedin-log.json, and delete this file. Not yet in linkedin-log.json on purpose.
+Next LinkedIn run (the 11 Nov run posted the Google core update instead, as more timely news; this one is next in line): re-run the independent fact-check on this folder; if PASS, publish it as-is (image slide-01.jpg, caption.txt), log it to linkedin-log.json, and delete this file. Not yet in linkedin-log.json on purpose.
