@@ -584,5 +584,66 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "Meta returned 'Application request limit reached' (403, 4/2207051) on media_publish again, but the carousel went live once; publish.py found the live copy and recorded it. Workflow run 42989943941."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "14:33",
+  "time_slot": "afternoon",
+  "id": "2026-11-11-1433-one-price-list",
+  "format": "reel",
+  "category": "Websites + CRM",
+  "angle": "what breaks when they aren't linked + how to get it right",
+  "content_type": "educational",
+  "topic": "One price list: you put your prices up but the website, order form and invoice each hold their own copy; keep one price list in the CRM that the website, order form and invoice read from, so a change is made once; check three prices on your website tonight",
+  "news_story_id": null,
+  "style": "product",
+  "themes": [
+   "lilac",
+   "ink",
+   "blue"
+  ],
+  "cover": "mockup",
+  "mockup": {
+   "business": "Coble & Co.",
+   "trade": "paint makers (online paint shop)",
+   "layout": "shop",
+   "font": "Fraun",
+   "accent": "#E7D7A4",
+   "bg": "#17272A",
+   "device": "phone",
+   "buttons": "round"
+  },
+  "screen": "table (Price list: four made-up paint colours, two marked 'Updated today')",
+  "scenes": 5,
+  "seconds": 20.0,
+  "slide_types": [
+   "mockup",
+   "compare",
+   "screen",
+   "flow",
+   "cta"
+  ],
+  "photo": null,
+  "hooks_considered": [
+   "You put your prices up. Did your website?",
+   "Your website still has last year's prices.",
+   "How many places do you change a price?"
+  ],
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 4,
+   "true": 5,
+   "useful": 5,
+   "specific": 4,
+   "hook": 5,
+   "design": 5
+  },
+  "news_check": "Eight searches. Businesses in ChatGPT re-checked: openai.com and help.openai.com still would not open (client error, two tries); OpenAI Developer Community post, PPC Land and Tilio opened and read. Still held: no OpenAI page read first-hand, UK not named, Business Agents US only. One news post already today (core update), so evergreen Reel with no claims that need a source.",
+  "instagram_media_id": "18026237792947342",
+  "permalink": "https://www.instagram.com/reel/DfmuKIrjavm/",
+  "facebook_post_id": "1622561146335126",
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "Workflow run 43041016858. reel.py: phone mockups are now 20% larger in Reels and no longer overlap the caption line."
  }
 ]
