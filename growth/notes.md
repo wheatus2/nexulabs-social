@@ -69,3 +69,30 @@ Sources
 4. https://northeastexpo.co.uk/speakers-schedule
 5. https://www.necc.co.uk/events
 6. Instagram search results for the handles above (titles only), 11 Nov 2026
+
+## 11 Nov 2026 (evening, third run): what comparable studios post, and what earns sends
+
+Rotation: 3 of 5 (next evening: Instagram's own guidance on reach, Reels and search). Written by the scheduled 20:12 run, which could not push; moved here from the project by a later session without re-checking its sources.
+
+**What could and could not be seen**
+- Instagram can't be read from the cloud, so no studio's posts were seen. Nothing here describes what a named studio posts. That part of the question is still open.
+- Two North East peers confirmed from their own websites (handle linked on the site): **@urbanriver** (Urban River; web design, branding and SEO; says Newcastle upon Tyne since 2002, footer address Boldon) [1] and **@unionroom** (Union Room; websites, systems and customer portals; St Peters Wharf, Newcastle) [2]. Peers, not prospects: watch, don't put in Lee's comment list.
+- A round-up of ten Newcastle social media agencies gave no handles and nothing on what works locally. Not useful. [3]
+
+**What decides whether a post travels (secondary sources quoting Adam Mosseri)**
+- The three signals said to carry most weight: watch time, likes per reach and sends per reach. Likes count a little more with followers; sends count a little more with non-followers. [4][5]
+- Instagram tries posts from small public accounts on non-followers and keeps pushing the ones that do well. Original work is favoured over reposts. More of each day's views go to posts under 24 hours old. [4]
+- Buffer's own data (4 million posts): Reels get 36% more reach than carousels; carousels get 12% more engagement. Matches our early sign. [4]
+- Neither source had data on which agency posts earn saves or shares. "Checklists and how-tos get saved" is their advice, not a finding. [4][5]
+
+**For the morning brief**
+- With 8 followers, almost everyone who could see a Reel is a non-follower, so the number to design for is **sends**: would a business owner forward this to their partner or their web person? "Check this on your phone" posts fit; national news explainers don't.
+- Add shares per Reel to the daily comparison. Every post so far has 0 shares, so the first Reel to earn one is worth studying.
+- End Reels with a reason to send, not only to follow: "Send this to whoever looks after your website."
+
+Sources
+1. https://urbanriver.com/
+2. https://www.unionroom.com/about/
+3. https://www.webtonic.io/blog/best-social-media-management-agencies-newcastle (updated 9 Oct 2026)
+4. Buffer, published 23 Oct 2026: https://buffer.com/resources//instagram-algorithms/
+5. Sprout Social, modified 19 Oct 2026: https://sproutsocial.com/insights/Instagram-algorithm/

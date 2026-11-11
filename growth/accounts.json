@@ -236,5 +236,29 @@
   "recent_post_seen": false,
   "found": "2026-11-11",
   "suggested": []
+ },
+ {
+  "handle": "@urbanriver",
+  "url": "https://www.instagram.com/urbanriver/",
+  "name": "Urban River",
+  "what": "Web design and branding agency, Newcastle/Boldon",
+  "why": "A peer, not a prospect: watch what they post. Not for the comment list.",
+  "status": "local_peer",
+  "evidence": "Linked from the urbanriver.com footer (found by the 20:12 run)",
+  "recent_post_seen": false,
+  "found": "2026-11-11",
+  "suggested": []
+ },
+ {
+  "handle": "@unionroom",
+  "url": "https://www.instagram.com/unionroom/",
+  "name": "Union Room",
+  "what": "Digital agency, Newcastle upon Tyne",
+  "why": "A peer, not a prospect: watch what they post. Not for the comment list.",
+  "status": "local_peer",
+  "evidence": "Linked from unionroom.com/about (found by the 20:12 run)",
+  "recent_post_seen": false,
+  "found": "2026-11-11",
+  "suggested": []
  }
 ]
