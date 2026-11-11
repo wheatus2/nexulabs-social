@@ -60,6 +60,13 @@ A separate scheduled task, "Nexulabs growth: Chrome pass", runs on Lee's compute
 - A one-page week review in `growth/weekly/<date>.md`: followers gained, what drove it, what didn't, the plan for the week, and whether the targets below are on track.
 - Propose anything bigger (free only): a profile rewrite, a series, a lead magnet, adding the Instagram link to nexulabs.co.uk, the Google Business Profile and email signatures.
 
+## When a run can't reach GitHub (added 11 Nov 2026)
+On 11 Nov the scheduled 20:12 run and the Chrome pass both started without GitHub (no repo tools, push refused), while runs started by hand had it. Until that is fixed at the task level, no run may lose its work:
+- **Check twice before giving up.** GitHub tools can take a minute to connect. Search for the repo and GitHub tools again after a minute, and try the push once more.
+- **If there is still no GitHub:** write everything that would have been committed to the project doc `claude/growth-pending.md` (add a dated section; say which file under `growth/` each part belongs in). Say in the summary to Lee that GitHub was not reachable and which numbers are missing. A morning run still sends the ten-minute list, built from the files it can read.
+- **Every run that can push starts by folding in.** Read `claude/growth-pending.md` and any other `claude/growth-*` doc a run left behind, move the content into the right files under `growth/`, commit, then delete the doc.
+- **The Chrome pass** runs on Lee's computer and may never have GitHub. It can always read the list at https://raw.githubusercontent.com/wheatus2/nexulabs-social/main/growth/today.md. If it can't push, it writes the checked list to `claude/growth-pending.md` and puts it in full in its summary.
+
 ## Targets
 - First 30 days: 100 followers (the point where Instagram unlocks audience insights).
 - 90 days: 500.
