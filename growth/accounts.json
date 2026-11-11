@@ -7,25 +7,29 @@
   "why": "Its followers are local founders and digital firms: the people who share good web work and refer it.",
   "status": "local",
   "evidence": "Linked from the footer of sunderlandsoftwarecity.com; Instagram search result title, 11 Nov 2026",
-  "recent_post_seen": false,
+  "recent_post_seen": true,
   "found": "2026-11-11",
   "suggested": [
    "2026-11-11"
-  ]
+  ],
+  "last_post": "2026-11-11",
+  "checked_in_chrome": "2026-11-11"
  },
  {
   "handle": "@entforum",
   "url": "https://www.instagram.com/entforum/",
   "name": "Entrepreneurs' Forum",
   "what": "North East founders' membership group; runs North East Entrepreneurship Week (11 to 20 Nov 2026)",
-  "why": "Business owners across the region follow and comment during event weeks. Comment on event posts this week.",
-  "status": "local",
+  "why": "Quiet on Instagram since 17 Sep 2025, so not worth a comment. Still worth tagging in a Story from one of its events.",
+  "status": "local_quiet",
   "evidence": "Linked from the footer of entrepreneursforum.net",
   "recent_post_seen": false,
   "found": "2026-11-11",
   "suggested": [
    "2026-11-11"
-  ]
+  ],
+  "last_post": "2025-09-17",
+  "checked_in_chrome": "2026-11-11"
  },
  {
   "handle": "@sheepfoldsstables",
@@ -35,11 +39,13 @@
   "why": "Busy Sunderland venue that hosts business events (ScaleUp Summit, 12 Nov 2026). Local owners and their customers are in the comments.",
   "status": "local",
   "evidence": "Instagram search result title, 11 Nov 2026; address on the Entrepreneurs' Forum event page",
-  "recent_post_seen": false,
+  "recent_post_seen": true,
   "found": "2026-11-11",
   "suggested": [
    "2026-11-11"
-  ]
+  ],
+  "last_post": "2026-11-10",
+  "checked_in_chrome": "2026-11-11"
  },
  {
   "handle": "@nechamberuk",
@@ -61,11 +67,13 @@
   "why": "Posts about Durham city independents; a route to Durham shop, café and salon owners.",
   "status": "local",
   "evidence": "Instagram search result title, 11 Nov 2026; 'Life in Durham' matches the UK Durham BID's magazine",
-  "recent_post_seen": false,
+  "recent_post_seen": true,
   "found": "2026-11-11",
   "suggested": [
    "2026-11-11"
-  ]
+  ],
+  "last_post": "2026-11-11",
+  "checked_in_chrome": "2026-11-11"
  },
  {
   "handle": "@northerninsightmagazine",
@@ -99,11 +107,13 @@
   "why": "Recognisable seafront independent. Comment as a local, not as a supplier.",
   "status": "local",
   "evidence": "Instagram search result title, 11 Nov 2026 (title names Sunderland)",
-  "recent_post_seen": false,
+  "recent_post_seen": true,
   "found": "2026-11-11",
   "suggested": [
    "2026-11-11"
-  ]
+  ],
+  "last_post": "2026-11-10",
+  "checked_in_chrome": "2026-11-11"
  },
  {
   "handle": "@flowercafesunderland",
