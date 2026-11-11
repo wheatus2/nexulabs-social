@@ -1,0 +1,69 @@
+{
+  "format": "story",
+  "series": "Myth vs fact",
+  "style": "signal",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "lemon",
+      "kicker": "Myth vs fact",
+      "headline": "Promised\n*number one*\non Google?",
+      "sub": "Two myths, and what Google\nitself says about them."
+    },
+    {
+      "type": "compare",
+      "theme": "black",
+      "kicker": "Myth 1",
+      "title": "Pay Google,\nrank higher?",
+      "instead_label": "Myth",
+      "try_label": "Fact",
+      "instead": [
+        "You can pay Google\nto move up the results."
+      ],
+      "try": [
+        "Google doesn't accept payment\nto rank a site higher.",
+        "Ads are separate. Google says advertising has no effect on where your site shows in the normal results."
+      ],
+      "source": "Google Search Central",
+      "title_size": 120
+    },
+    {
+      "type": "compare",
+      "theme": "sky",
+      "kicker": "Myth 2",
+      "title": "Top spot,\nguaranteed?",
+      "instead_label": "Myth",
+      "try_label": "Fact",
+      "instead": [
+        "A good SEO company can\nguarantee first place."
+      ],
+      "try": [
+        "\"No one can guarantee\na #1 ranking on Google.\"",
+        "Google's own words. If someone guarantees first place, its advice is to find someone else."
+      ],
+      "source": "Google Search Central, \"Do you need an SEO?\"",
+      "title_size": 120
+    },
+    {
+      "type": "list",
+      "theme": "lemon",
+      "title": "Ask these\ninstead",
+      "title_size": 120,
+      "items": [
+        [
+          "Can you show me previous work?",
+          "Real examples, not promises."
+        ],
+        [
+          "What results, and by when?",
+          "And how will you measure them."
+        ],
+        [
+          "Will you tell me every change?",
+          "It's your website. You should know what's been done to it."
+        ]
+      ],
+      "source": "Google Search Central, questions shortened."
+    }
+  ]
+}
