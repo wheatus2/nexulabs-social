@@ -1,0 +1,18 @@
+{
+ "instagram": {
+  "ok": true,
+  "at": "2026-11-11T19:33:35+00:00",
+  "format": "carousel",
+  "slides": 4,
+  "media_id": "17882388864553401",
+  "permalink": "https://www.instagram.com/p/DfnPbsumgm8/",
+  "note": "Meta returned an error but the post went live: POST 17841471856846758/media_publish -> HTTP 403 OAuthException 4/2207051: Application request limit reached"
+ },
+ "facebook": {
+  "ok": true,
+  "at": "2026-11-11T19:33:47+00:00",
+  "format": "photos",
+  "photos": 4,
+  "id": "1484176674771345_122102645367544005"
+ }
+}
