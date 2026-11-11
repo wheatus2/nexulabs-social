@@ -1,0 +1,49 @@
+{
+  "format": "story",
+  "series": "Tech news",
+  "style": "journal",
+  "slides": [
+    {
+      "type": "cover",
+      "theme": "forest",
+      "kicker": "Tech news in 15 seconds",
+      "headline": "Google started a big update to Search on *Tuesday*.",
+      "sub": "If your website moves up or down in Google, this could be why."
+    },
+    {
+      "type": "stat",
+      "theme": "cream",
+      "value": "2 weeks",
+      "size": 250,
+      "statement": "It may take\n*up to* two weeks.",
+      "detail": "Google's own figure. It began on 10 November\nand applies worldwide, in every language.",
+      "source": "Google Search Status Dashboard, 10 Nov 2026."
+    },
+    {
+      "type": "list",
+      "theme": "stone",
+      "title": "What Google\nsays to do",
+      "items": [
+        [
+          "Wait for it to finish",
+          "Google's Search Status Dashboard shows the end date."
+        ],
+        [
+          "Then wait a full week",
+          "Google recommends at least a week before you check."
+        ],
+        [
+          "No quick fixes",
+          "A small drop needs no drastic action."
+        ]
+      ],
+      "source": "Google Search Central, core updates guidance."
+    },
+    {
+      "type": "cover",
+      "theme": "forest",
+      "headline": "The full steps are on *our page*.",
+      "sub": "Look for the Google update post from 11 November."
+    }
+  ]
+}
