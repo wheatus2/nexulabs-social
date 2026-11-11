@@ -96,3 +96,52 @@ Sources
 3. https://www.webtonic.io/blog/best-social-media-management-agencies-newcastle (updated 9 Oct 2026)
 4. Buffer, published 23 Oct 2026: https://buffer.com/resources//instagram-algorithms/
 5. Sprout Social, modified 19 Oct 2026: https://sproutsocial.com/insights/Instagram-algorithm/
+
+## 11 Nov 2026 (evening, fourth run): Instagram's own guidance on reach, Reels and search
+
+Rotation: 4 of 5 (next evening: collaboration and feature opportunities). Written by a test run at about 22:17 that could not reach GitHub; moved here from the project by a later session without re-checking its sources.
+
+**What was read.** Five of Instagram's own pages opened and were read in full [1] to [5]. The help page on recommendation eligibility opened but returned no text [6]. The pages are dated 2021 to 2024, so they are the stable rules, not this year's changes. None gives a hashtag count, a posting frequency or a follower threshold.
+
+**How a post reaches people who don't follow us**
+- Every eligible post is first shown to a small audience "regardless of whether they follow the account". The ones that do well are then shown more widely in stages. Instagram describes this as a change made to give smaller accounts more distribution (30 Apr 2024). [3] So 8 followers is not a ceiling; the first small test audience is the thing to win.
+- "Eligible" means: original, no visible watermarks, within the Community Guidelines and the Recommendation Guidelines, from a public account. Business accounts are public automatically. [2][3]
+- The signals Instagram names: how many people like, comment, share and save, and how quickly. [1]
+
+**Reels: Instagram's own checklist**
+- 3 minutes or less to be recommended at all. [1][2]
+- Vertical 9:16, high resolution, no borders, and **text should not cover most of the screen**. [2]
+- Pull people in "within the first 3 seconds". [2]
+- No watermarks, nothing blurry or low quality. [2]
+
+**Things that quietly remove a post from recommendations** (it still reaches followers)
+- "Clickbait or engagement bait", exaggerated health claims, false or misleading content, political content, and a list of regulated products. [3] The one that could touch us is engagement bait: "comment YES if..." style endings are out. "Send this to whoever looks after your website" is a reason to share, not bait, but keep it plain.
+- Originality is judged over a rolling 30 days: if most recent posts are not original, the account drops out of recommendations to new audiences. Screenshots of other people's work do not count as original, even with credit. [4] Our posts are designed in-house, so this is fine; it matters if a post ever leans on a screenshot of someone else's site or a news page.
+
+**Search**
+- The words typed are "by far the most important signal", then the searcher's own activity, then how popular a result is. [5]
+- Instagram's advice: a handle and profile name related to what you do; keywords **and locations** in the bio ("location helps local businesses"); keywords and hashtags in the caption, "not the comments". [2][5]
+- Accounts that look like spam can be pushed so far down that people "have to search their full username" to find them. [5] One more reason for the hard rules on automation.
+
+**Account Status**
+- Instagram has a screen showing whether the account and its posts are eligible to be recommended to non-followers, and since Apr 2023 whether it can appear in Search and Suggested Accounts. Path given on the page: Settings, Account, Account Status (the menu may have moved since). Problems can be fixed by editing or deleting the post, or by asking for a review. [1][2]
+- Nobody has checked this for @nexulabs_. Feed posts reaching 0 to 7 accounts is most likely just an 8-follower account, but it takes Lee thirty seconds to rule out a flag. **Put it at the top of the next morning list.**
+
+**What I could not check**
+- Whether any of this has changed in 2026 in Instagram's own words. The official pages found are older; newer claims come from the secondary sources in earlier notes.
+- Whether our Reels' text covers "most of the screen". I can't see the published Reels from here. The feed run should check its Reel layouts against that line.
+- What the name field and bio currently say (Instagram can't be read from the cloud).
+
+**For the morning brief**
+- Reels: keep text to a part of the frame, not all of it; the point of the Reel readable in the first 3 seconds; no borders.
+- End on a plain reason to send or follow. Never ask for a comment as a trick.
+- Captions carry the search phrase and the place in the first line; hashtags stay in the caption.
+- Bigger move to propose to Lee (he changes it, exact wording to be drafted once the Chrome pass has read the current profile): a name field and bio that say what we do and where, since Instagram says location in the bio helps local businesses be found.
+
+Sources
+1. Instagram, "Tips for Improving Your Reach", 31 May 2023: https://creators.instagram.com/blog/tips-for-improving-your-reach
+2. Instagram, "What Creators Need To Know About Instagram Recommendations", 30 Aug 2022, updated 25 Apr 2023: https://creators.instagram.com/blog/instagram-recommendations-eligibility-tips-creators
+3. Instagram, "Helping Creators Find New Audiences", 30 Apr 2024: https://creators.instagram.com/recommendations-and-originality
+4. Instagram, "Original Content Guidelines" (undated): https://creators.instagram.com/original-content-guidelines/
+5. Adam Mosseri, "Breaking Down How Instagram Search Works", 25 Aug 2021: https://about.instagram.com/blog/announcements/break-down-how-instagram-search-works/
+6. Instagram Help, "Recommendation eligibility on Instagram" (opened, no text returned): https://help.instagram.com/653964212890722
