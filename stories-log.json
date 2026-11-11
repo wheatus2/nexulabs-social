@@ -290,5 +290,60 @@
   ],
   "published_via": "github-actions",
   "note": "to be added to the AI & automation highlight and set as its cover by the weekly Highlights run"
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "11:47",
+  "published_at": "about 11:52 UK",
+  "id": "stories/2026-11-11-1147-core-update-in-15-seconds",
+  "type": "tech news in 15 seconds",
+  "category": "Tech news (Google Search)",
+  "topic": "Google's November 2026 core update in four frames: started Tuesday 10 Nov; may take up to two weeks, worldwide and in every language; Google's advice (wait for it to finish, then wait a full week, no quick fixes); full steps in the 11 Nov feed post",
+  "news_story_id": "2026-11-10-google-november-2026-core-update",
+  "style": "journal",
+  "themes": [
+   "forest",
+   "cream",
+   "stone",
+   "forest"
+  ],
+  "cover": "headline",
+  "screen": null,
+  "photo": null,
+  "frames": 4,
+  "slide_types": [
+   "cover",
+   "stat",
+   "list",
+   "cover"
+  ],
+  "sources": [
+   "https://status.search.google.com/incidents/WLxcJyC6jMWMfryxsKMc",
+   "https://developers.google.com/search/updates/core-updates"
+  ],
+  "fact_check": "self-check pass (both Google pages re-opened this run)",
+  "media_ids": [
+   "18110434571101077",
+   "18191954548405541",
+   "18339277672302348",
+   "18177348787455762"
+  ],
+  "published_via": "github-actions",
+  "note": "Dashboard showed no end date at 11:50 on 11 Nov, so the rollout was still running. A short 'it's finished, now check' follow-up is fair once Google marks it complete."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "11:53",
+  "id": "stories/2026-11-11-highlight-cover-tech-news",
+  "type": "highlight-cover",
+  "category": "Tech news",
+  "topic": "Tech news highlight cover (newspaper icon)",
+  "style": "cover",
+  "frames": 1,
+  "media_ids": [
+   "17876132034638942"
+  ],
+  "published_via": "github-actions",
+  "note": "to be added to the Tech news highlight and set as its cover by the weekly Highlights run"
  }
 ]

@@ -1,272 +1,273 @@
 {
-  "_about": "Running news watch for Nexulabs. Every feed run scans the news desk sources, adds candidates here, and marks what it used or rejected and why. Used to avoid repeats, follow developing stories and keep the fact trail. Keep the last 60 days; delete older items.",
-  "items": [
+ "_about": "Running news watch for Nexulabs. Every feed run scans the news desk sources, adds candidates here, and marks what it used or rejected and why. Used to avoid repeats, follow developing stories and keep the fact trail. Keep the last 60 days; delete older items.",
+ "items": [
+  {
+   "id": "2026-11-04-microsoft-clarity-agentic-analytics",
+   "found": "2026-11-08",
+   "event_date": "2026-11-04",
+   "headline": "Microsoft Clarity (free website analytics) adds Agentic Analytics, Ask Clarity and wider Brand Agents",
+   "status": "used",
+   "relevance": "Websites: shows business owners which AI agents (Google, OpenAI, Anthropic operators) visit their site and what they do (searches, form submissions, bookings, checkout). Ask Clarity answers plain-English questions about visitor behaviour. Clarity is free.",
+   "angle": "AI assistants are starting to visit websites on people's behalf. A free tool now shows you if they're on yours and whether they can finish a booking or enquiry.",
+   "facts": [
     {
-      "id": "2026-11-04-microsoft-clarity-agentic-analytics",
-      "found": "2026-11-08",
-      "event_date": "2026-11-04",
-      "headline": "Microsoft Clarity (free website analytics) adds Agentic Analytics, Ask Clarity and wider Brand Agents",
-      "status": "used",
-      "relevance": "Websites: shows business owners which AI agents (Google, OpenAI, Anthropic operators) visit their site and what they do (searches, form submissions, bookings, checkout). Ask Clarity answers plain-English questions about visitor behaviour. Clarity is free.",
-      "angle": "AI assistants are starting to visit websites on people's behalf. A free tool now shows you if they're on yours and whether they can finish a booking or enquiry.",
-      "facts": [
-        {
-          "claim": "Announced 4 November 2026: Agentic Analytics, Ask Clarity, Brand Agents expansion",
-          "source": "https://clarity.microsoft.com/blog/?p=10568",
-          "check": "ppc.land and SERoundtable both date it 4 Nov 2026"
-        },
-        {
-          "claim": "Supported agents for Agentic Analytics are Google, OpenAI and Anthropic agent operators (not every AI agent)",
-          "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 2)"
-        },
-        {
-          "claim": "Dashboard shows agent activity: searches, form submissions, logins, downloads, appointment bookings, checkout",
-          "source": "https://clarity.microsoft.com/blog/?p=10568"
-        },
-        {
-          "claim": "Microsoft's figures come from its own analysis of 5.23 million agentic sessions across 230,511 projects, 13 Aug to 9 Sep 2026",
-          "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 1)",
-          "note": "Vendor's own data, global not UK. Say so if used."
-        },
-        {
-          "claim": "Brand Agents: eligible Shopify and WooCommerce merchants' products can appear in Copilot, Bing and MSN AI recommendations",
-          "source": "https://clarity.microsoft.com/blog/?p=10568"
-        }
-      ],
-      "second_sources": [
-        "https://ppc.land/microsoft-clarity-puts-shopify-and-woocommerce-products-in-copilot-and-bing/",
-        "https://www.seroundtable.com/microsoft-clarity-gains-agentic-analytics-and-ask-clarity-42449.html",
-        "https://www.mediapost.com/publications/article/419216/microsoft-clarity-analytics-connects-agents-recom.html"
-      ],
-      "caveats": "Global rollout per Microsoft, but coverage limited to supported agents. Treat stats as Microsoft's own. Re-open the blog post before publishing to confirm nothing changed. Clarity needs disclosing in a privacy policy and cookie consent in the UK, so mention that if recommending people install it (check ICO cookie guidance).",
-      "used_on": [
-        "linkedin:2026-11-08 urn:li:share:7525189478924132352",
-        "instagram+facebook:2026-11-08-1433-ai-visitors"
-      ],
-      "note_2026-11-08": "Used on LinkedIn only; still unused on Instagram/Facebook. Primary source re-checked 8 Nov: canonical URL https://clarity.microsoft.com/blog/clarity-connects-agents-LLMs-people/ (the ?p=10568 link errored). Ask Clarity is closed beta for retailers. Cookie consent: Clarity waits for a consent signal for UK/EEA/CH visitors since 31 Oct 2025 (learn.microsoft.com clarity consent-mode)."
+     "claim": "Announced 4 November 2026: Agentic Analytics, Ask Clarity, Brand Agents expansion",
+     "source": "https://clarity.microsoft.com/blog/?p=10568",
+     "check": "ppc.land and SERoundtable both date it 4 Nov 2026"
     },
     {
-      "id": "2026-11-04-search-console-multi-device-filter",
-      "found": "2026-11-08",
-      "event_date": "2026-11-04",
-      "headline": "Search Console performance report lets you select several devices at once",
-      "status": "rejected",
-      "reason": "Too minor for a post, and reports disagree on exactly what changed on the device side (ppc.land says unconfirmed). Could be a one-line Story tip later if Google's help page confirms it."
+     "claim": "Supported agents for Agentic Analytics are Google, OpenAI and Anthropic agent operators (not every AI agent)",
+     "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 2)"
     },
     {
-      "id": "2026-11-03-ncsc-annual-review-2026",
-      "found": "2026-11-08",
-      "event_date": "2026-11-03",
-      "headline": "NCSC Annual Review 2026: 80 nationally significant incidents; basics (patching, passkeys/MFA, supplier checks) urged",
-      "status": "used",
-      "facts": [
-        {
-          "claim": "1,831 attack reports, 337 needed incident support, 80 nationally significant (1 Sep 2025 to 31 Aug 2026)",
-          "source": "https://www.ncsc.gov.uk/collection/annual-review-2026",
-          "check": "figures confirmed by intelligentciso.com and ITV; on ncsc.gov.uk they are in the PDF, so open the PDF before using"
-        },
-        {
-          "claim": "Passkeys chapter: 'The majority of cyber attacks against individuals begin with the theft, compromise or abuse of passwords.'",
-          "source": "https://www.ncsc.gov.uk/collection/annual-review-2026/building-strong-foundations/passkeys-beyond-passwords"
-        }
-      ],
-      "second_sources": [
-        "https://www.intelligentciso.com/2026/11/03/ncsc-warns-uk-cyber-resilience-is-falling-behind-as-80-nationally-significant-incidents-recorded/",
-        "https://www.itv.com/news/2026-11-03/uk-meat-suppliers-fridges-heat-up-after-cyber-attacks-hit-europe"
-      ],
-      "angle": "Turn on passkeys or MFA for email, website admin and CRM logins; patch anything internet-facing.",
-      "caveats": "Verify the figures in the NCSC PDF itself before posting.",
-      "note_2026-11-08_1933": "Not used at 19:33: one news post already published today (Clarity), and the NCSC PDF couldn't be opened this run (web fetching unavailable). Candidate for 9 Nov.",
-      "used_on": [
-        "instagram+facebook:2026-11-09-0837-passkeys-ncsc"
-      ],
-      "note_2026-11-09": "Verified 9 Nov from ncsc.gov.uk chapter pages (incident management: 1,831 reports, 337 needing support, 80 nationally significant, 1 Sep 2025-31 Aug 2026; passkeys chapter quote) + techUK 4 Nov 2026. Advice from NCSC 23 Apr 2026 passkeys release (+ The Register). Independent fact-check PASS (round 2)."
+     "claim": "Dashboard shows agent activity: searches, form submissions, logins, downloads, appointment bookings, checkout",
+     "source": "https://clarity.microsoft.com/blog/?p=10568"
     },
     {
-      "id": "2026-11-02-uk-food-firms-fridge-hacks",
-      "found": "2026-11-08",
-      "event_date": "2026-11-02",
-      "headline": "Hackers accessed internet-connected fridges at UK meat suppliers",
-      "status": "rejected",
-      "reason": "No primary source (no NCSC statement); possible sidebar to the NCSC review only."
+     "claim": "Microsoft's figures come from its own analysis of 5.23 million agentic sessions across 230,511 projects, 13 Aug to 9 Sep 2026",
+     "source": "https://clarity.microsoft.com/blog/?p=10568 (footnote 1)",
+     "note": "Vendor's own data, global not UK. Say so if used."
     },
     {
-      "id": "2026-11-06-google-maps-message-button",
-      "found": "2026-11-08",
-      "event_date": "2026-11-06",
-      "headline": "Google Maps adds a Message button next to Call (WhatsApp/SMS) for Business Profiles",
-      "status": "rejected",
-      "reason": "UK availability unconfirmed (help page says 'select regions'); re-check later.",
-      "sources": [
-        "https://support.google.com/business/answer/15013580",
-        "https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html"
-      ],
-      "note_2026-11-08_1933": "Re-checked via SERoundtable Nov 6 recap: still no stated UK scope. Stays rejected until Google confirms UK."
-    },
-    {
-      "id": "2026-11-04-ai-mode-home-services-booking",
-      "found": "2026-11-08",
-      "event_date": "2026-11-04",
-      "headline": "Google AI Mode books home services",
-      "status": "rejected",
-      "reason": "US only ('available now in the U.S.'). Follow up if it reaches the UK."
-    },
-    {
-      "id": "2026-11-06-gbp-offers-help-doc",
-      "found": "2026-11-08",
-      "event_date": "2026-11-06",
-      "headline": "Google Business Profile offers help document",
-      "status": "rejected",
-      "reason": "Help doc, not a launch; 'select regions and languages'."
-    },
-    {
-      "id": "2026-11-04-site-reputation-abuse-eea-emails",
-      "found": "2026-11-08",
-      "event_date": "2026-11-04",
-      "headline": "Google site reputation abuse emails to EEA sites",
-      "status": "rejected",
-      "reason": "EEA only; UK not included."
-    },
-    {
-      "id": "2026-10-28-ads-in-ai-mode-uk",
-      "found": "2026-11-08",
-      "event_date": "2026-10-28",
-      "headline": "Ads in Google AI Mode expanding (UK sightings from 29 Oct)",
-      "status": "rejected",
-      "reason": "Outside 7-day window; UK sightings are third-party monitoring, not a Google UK launch."
-    },
-    {
-      "id": "2026-10-30-google-ai-training-robots-control",
-      "found": "2026-11-08",
-      "event_date": "2026-10-30",
-      "headline": "Google shared AI-training control in robots.txt",
-      "status": "rejected",
-      "reason": "Outside 7-day window; possible evergreen topic later."
-    },
-    {
-      "id": "2026-11-03-google-ai-overviews-brands-right-column",
-      "found": "2026-11-08",
-      "event_date": "2026-11-03",
-      "headline": "Google AI Overviews for brand queries shown in the right-hand column",
-      "status": "rejected",
-      "reason": "Observation reported by SERoundtable (seroundtable.com/google-ai-overviews-brands-right-42440.html); no Google announcement, no UK scope, no clear action for business owners."
-    },
-    {
-      "id": "2026-11-03-google-robots-block-popups",
-      "found": "2026-11-08",
-      "event_date": "2026-11-03",
-      "headline": "Google comment on blocking popups via robots.txt",
-      "status": "rejected",
-      "reason": "Advice comment, not a launch; primary Google source not read this run (fetching unavailable). Possible evergreen topic later if confirmed in Search Central docs."
-    },
-    {
-      "id": "2026-11-06-bing-ai-visual-summary",
-      "found": "2026-11-08",
-      "event_date": "2026-11-06",
-      "headline": "Bing Search AI visual summary snippet",
-      "status": "rejected",
-      "reason": "Scope and availability not stated; no primary Microsoft source; low relevance."
-    },
-    {
-      "id": "2026-11-03-google-search-off-k12",
-      "found": "2026-11-08",
-      "event_date": "2026-11-03",
-      "headline": "Google turning off Search for K-12 school accounts",
-      "status": "rejected",
-      "reason": "Not relevant to UK businesses' websites or CRMs."
-    },
-    {
-      "id": "2026-11-09-scan",
-      "found": "2026-11-09",
-      "headline": "9 Nov 08:33 scan: no other new qualifying UK website/CRM story found in the last 7 days beyond NCSC Annual Review (searches of NCSC, Google Search Central, ICO, Meta/WhatsApp, Shopify/WordPress returned nothing new and dated)",
-      "status": "rejected",
-      "reason": "Scan note, not a story."
-    },
-    {
-      "id": "2026-11-09-1433-scan",
-      "found": "2026-11-09",
-      "headline": "9 Nov 14:33 scan: searches of Google Search Central, ICO, UK tech news, Nominet and Meta/WhatsApp Business returned nothing new, dated in the last 7 days and qualifying. One news post already published today (NCSC), so evergreen post from the rotation (domain names).",
-      "status": "rejected",
-      "reason": "Scan note, not a story. Watch: The UK Domain says Nominet Online Services stops managing .uk domains directly from 9 Feb 2027 (theukdomain.uk/uk-standardisation); announcement date not confirmed, so not used as news."
-    },
-    {
-      "id": "2026-11-09-1933-scan",
-      "found": "2026-11-09",
-      "headline": "9 Nov 19:33 scan: searches of Google Search Central blog, ICO/UK cookie news, Meta/WhatsApp Business and Search Engine Roundtable (Google Business Profile) returned nothing new, dated in the last 7 days and qualifying. One news post already today (NCSC), so evergreen web design Reel (contact forms).",
-      "status": "rejected",
-      "reason": "Scan note, not a story."
-    },
-    {
-      "id": "2026-11-10-0833-scan",
-      "found": "2026-11-10",
-      "headline": "10 Nov 08:33 scan: searches run (Google Search Central, ICO, UK tech news, Search Engine Roundtable, Meta/WhatsApp Business, WordPress/Shopify/Wix, NCSC) but source pages could not be opened this run (web fetching refused for ICO, NCSC, gov.uk, Nominet, Ofcom, BBC, The Register, Computer Weekly, Meta, WordPress, Shopify, Search Engine Roundtable, Search Engine Land, web.dev). Only the Google Search Central blog loaded: newest post is 'Search Central Live in Zurich is back!' (4 Nov 2026), an event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen CRM carousel instead.",
-      "status": "rejected",
-      "reason": "Scan note, not a story. Re-scan at the next run; the 3-10 Nov window has not been properly checked for ICO, NCSC, Meta and the UK press."
-    },
-    {
-      "id": "2026-11-10-1433-scan",
-      "found": "2026-11-10",
-      "headline": "10 Nov 14:33 scan: eight searches run (Google Search Central, ICO cookies/data protection, Search Engine Roundtable/Google Business Profile, Meta/WhatsApp Business, UK tech press, NCSC, WordPress/Shopify/Wix/Squarespace, Chrome/core update/AI Overviews). Source pages could not be opened again (web fetching needs a permission nobody is there to give in an unattended run: ICO, NCSC, The Register, BBC, Meta newsroom, WordPress, Search Engine Land, Search Engine Roundtable, Search Status Dashboard, legal500 all refused). Only the Google Search Central blog index loaded: nothing in November except the Zurich event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen hosting Reel instead.",
-      "status": "rejected",
-      "reason": "Scan note, not a story. To follow up when pages can be opened: (1) ICO storage and access technologies (cookies) guidance, including new exceptions for low-risk cookies, seen in law-firm headlines on mondaq/legal500; publish date and what is in force not confirmed. (2) CMA requirements on Google Search (publisher opt-out, choice screens); date not confirmed. The 3-10 Nov window has still not been properly checked for ICO, NCSC, Meta and the UK press."
-    },
-    {
-      "id": "2026-11-10-1933-scan",
-      "found": "2026-11-10",
-      "headline": "10 Nov 19:33 scan: eight searches run (Google Search Central, ICO cookies, Search Engine Roundtable/Google Business Profile, Meta/WhatsApp Business, NCSC/UK cyber, WordPress/Shopify/Wix/Squarespace, UK tech press, core update/AI Overviews/Chrome). Most source pages still could not be opened (ICO, NCSC, Meta newsroom, The Register, WordPress, Search Status Dashboard, Search Engine Roundtable homepage all refused: the permission prompt goes unanswered in an unattended run). Pages that did load: Google Search Central blog (nothing new in November except the Zurich event notice), one Search Engine Roundtable article with its 9 Nov sidebar, and two law-firm pages on the ICO cookie guidance. Nothing passed with a primary source plus an independent outlet, so no news post; evergreen web design carousel (page titles) instead.",
-      "status": "rejected",
-      "reason": "Scan note, not a story. Findings: (1) ICO storage and access technologies (cookies) guidance is NOT new: SCL dated its report 1 May 2026 and Womble Bond Dickinson says the rule changes came into force on 5 Feb 2026, so it is outside the 7-day window; possible evergreen cookies post once ico.org.uk can be opened. (2) Search Engine Roundtable 9 Nov headlines: 'Google Adding Booking Links To Business Profiles Automatically?' (seroundtable.com/google-business-profiles-adding-booking-links-42477.html), an unconfirmed observation with no Google announcement and no UK scope, worth a re-check; 'Google Search Ranking Volatility Status: Update November 8th/9th?' (unconfirmed, no Google statement); AI Mode multi-turn ads, Bing ads in AI Mode and AI summaries in Google Ads (advertising, scope unknown). The 3-10 Nov window is still unchecked for ICO, NCSC, Meta and the UK press."
-    },
-    {
-      "id": "2026-11-10-google-november-2026-core-update",
-      "found": "2026-11-11",
-      "event_date": "2026-11-10",
-      "headline": "Google releases the November 2026 core update (global, all languages, rollout may take up to 2 weeks)",
-      "status": "used",
-      "relevance": "Search: affects how every UK business website ranks in Google for up to a fortnight. Clear action from Google's own guidance: wait for it to finish, wait another full week, then compare in Search Console; small drops need no drastic action, large ones a deeper assessment; avoid quick fixes.",
-      "facts": [
-        {
-          "claim": "Incident began 2026-11-10 10:06 US/Pacific; 'Released the November 2026 core update, which applies globally and to all languages.' 'The rollout may take up to 2 weeks to complete.'",
-          "source": "https://status.search.google.com/incidents/WLxcJyC6jMWMfryxsKMc"
-        },
-        {
-          "claim": "Google's guidance on core updates (wait a full week after completion, position 2 to 4 vs 4 to 29, avoid quick fixes, deleting content is a last resort)",
-          "source": "https://developers.google.com/search/updates/core-updates (last updated 10 Dec 2025)"
-        }
-      ],
-      "second_sources": [
-        "https://www.seroundtable.com/google-november-2026-core-update-42504.html (10 Nov 2026)"
-      ],
-      "caveats": "Search Engine Land's article could not be opened (client error). Follow up when the dashboard shows the rollout has completed: a short 'it's finished, now check' Story or post would be a fair follow-up, not a repeat.",
-      "used_on": [
-        "instagram+facebook:2026-11-11-0845-google-core-update"
-      ]
-    },
-    {
-      "id": "2026-11-10-openai-businesses-in-chatgpt",
-      "found": "2026-11-11",
-      "event_date": "2026-11-10",
-      "headline": "OpenAI launches 'Businesses in ChatGPT' in beta: a Business Hub where a business can claim its profile and see mentions and website clicks",
-      "status": "rejected",
-      "reason": "Not yet verified: OpenAI's own page (openai.com/index/introducing-businesses-chatgpt/) could not be opened this run, so there is no primary source read in full, and UK availability and cost are unconfirmed. Strong candidate, re-check at the next run.",
-      "facts": [
-        {
-          "claim": "Search Engine Roundtable (10 Nov 2026): claim by text or call to the main business number or DNS verification; analytics show mentions, profile views and clicks; OpenAI calls it beta; Business Agents start with eligible ecommerce and online service businesses in the U.S.",
-          "source": "https://www.seroundtable.com/chatgpt-business-hub-42505.html"
-        },
-        {
-          "claim": "IT Brief UK (11 Nov 2026): 'Business Hub is launching globally for eligible businesses wherever ChatGPT is available'; Business Agents US only; insights only above volume thresholds",
-          "source": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies"
-        }
-      ],
-      "caveats": "UK not named anywhere. Try the OpenAI Developer Community announcement or OpenAI help centre as the primary source next time. Do not say 'now in the UK' unless OpenAI says so."
-    },
-    {
-      "id": "2026-11-11-0833-scan",
-      "found": "2026-11-11",
-      "headline": "11 Nov 08:33 scan: eleven searches run (Google Search Central and Search Status Dashboard, ICO, NCSC, Meta/WhatsApp Business, Search Engine Roundtable/Google Business Profile, UK tech press, WordPress/Shopify/Wix/Squarespace, core update/AI Overviews/Chrome, OpenAI). Pages opened fine this run after searching first (Google Search Status Dashboard, Google Search Central, Search Engine Roundtable, IT Brief UK). Could not open: searchengineland.com and openai.com (client errors). Used: Google November 2026 core update. Held: Businesses in ChatGPT (primary not opened).",
-      "status": "rejected",
-      "reason": "Scan note, not a story. Other results: ICO cookie guidance results are the same February to May 2026 guidance (not new); NCSC results were the Annual Review coverage already used and a critical-infrastructure AI ransomware warning (not relevant to most businesses; date not checked); Meta Business Agent dates from June 2026 (outside the window)."
+     "claim": "Brand Agents: eligible Shopify and WooCommerce merchants' products can appear in Copilot, Bing and MSN AI recommendations",
+     "source": "https://clarity.microsoft.com/blog/?p=10568"
     }
-  ]
+   ],
+   "second_sources": [
+    "https://ppc.land/microsoft-clarity-puts-shopify-and-woocommerce-products-in-copilot-and-bing/",
+    "https://www.seroundtable.com/microsoft-clarity-gains-agentic-analytics-and-ask-clarity-42449.html",
+    "https://www.mediapost.com/publications/article/419216/microsoft-clarity-analytics-connects-agents-recom.html"
+   ],
+   "caveats": "Global rollout per Microsoft, but coverage limited to supported agents. Treat stats as Microsoft's own. Re-open the blog post before publishing to confirm nothing changed. Clarity needs disclosing in a privacy policy and cookie consent in the UK, so mention that if recommending people install it (check ICO cookie guidance).",
+   "used_on": [
+    "linkedin:2026-11-08 urn:li:share:7525189478924132352",
+    "instagram+facebook:2026-11-08-1433-ai-visitors"
+   ],
+   "note_2026-11-08": "Used on LinkedIn only; still unused on Instagram/Facebook. Primary source re-checked 8 Nov: canonical URL https://clarity.microsoft.com/blog/clarity-connects-agents-LLMs-people/ (the ?p=10568 link errored). Ask Clarity is closed beta for retailers. Cookie consent: Clarity waits for a consent signal for UK/EEA/CH visitors since 31 Oct 2025 (learn.microsoft.com clarity consent-mode)."
+  },
+  {
+   "id": "2026-11-04-search-console-multi-device-filter",
+   "found": "2026-11-08",
+   "event_date": "2026-11-04",
+   "headline": "Search Console performance report lets you select several devices at once",
+   "status": "rejected",
+   "reason": "Too minor for a post, and reports disagree on exactly what changed on the device side (ppc.land says unconfirmed). Could be a one-line Story tip later if Google's help page confirms it."
+  },
+  {
+   "id": "2026-11-03-ncsc-annual-review-2026",
+   "found": "2026-11-08",
+   "event_date": "2026-11-03",
+   "headline": "NCSC Annual Review 2026: 80 nationally significant incidents; basics (patching, passkeys/MFA, supplier checks) urged",
+   "status": "used",
+   "facts": [
+    {
+     "claim": "1,831 attack reports, 337 needed incident support, 80 nationally significant (1 Sep 2025 to 31 Aug 2026)",
+     "source": "https://www.ncsc.gov.uk/collection/annual-review-2026",
+     "check": "figures confirmed by intelligentciso.com and ITV; on ncsc.gov.uk they are in the PDF, so open the PDF before using"
+    },
+    {
+     "claim": "Passkeys chapter: 'The majority of cyber attacks against individuals begin with the theft, compromise or abuse of passwords.'",
+     "source": "https://www.ncsc.gov.uk/collection/annual-review-2026/building-strong-foundations/passkeys-beyond-passwords"
+    }
+   ],
+   "second_sources": [
+    "https://www.intelligentciso.com/2026/11/03/ncsc-warns-uk-cyber-resilience-is-falling-behind-as-80-nationally-significant-incidents-recorded/",
+    "https://www.itv.com/news/2026-11-03/uk-meat-suppliers-fridges-heat-up-after-cyber-attacks-hit-europe"
+   ],
+   "angle": "Turn on passkeys or MFA for email, website admin and CRM logins; patch anything internet-facing.",
+   "caveats": "Verify the figures in the NCSC PDF itself before posting.",
+   "note_2026-11-08_1933": "Not used at 19:33: one news post already published today (Clarity), and the NCSC PDF couldn't be opened this run (web fetching unavailable). Candidate for 9 Nov.",
+   "used_on": [
+    "instagram+facebook:2026-11-09-0837-passkeys-ncsc"
+   ],
+   "note_2026-11-09": "Verified 9 Nov from ncsc.gov.uk chapter pages (incident management: 1,831 reports, 337 needing support, 80 nationally significant, 1 Sep 2025-31 Aug 2026; passkeys chapter quote) + techUK 4 Nov 2026. Advice from NCSC 23 Apr 2026 passkeys release (+ The Register). Independent fact-check PASS (round 2)."
+  },
+  {
+   "id": "2026-11-02-uk-food-firms-fridge-hacks",
+   "found": "2026-11-08",
+   "event_date": "2026-11-02",
+   "headline": "Hackers accessed internet-connected fridges at UK meat suppliers",
+   "status": "rejected",
+   "reason": "No primary source (no NCSC statement); possible sidebar to the NCSC review only."
+  },
+  {
+   "id": "2026-11-06-google-maps-message-button",
+   "found": "2026-11-08",
+   "event_date": "2026-11-06",
+   "headline": "Google Maps adds a Message button next to Call (WhatsApp/SMS) for Business Profiles",
+   "status": "rejected",
+   "reason": "UK availability unconfirmed (help page says 'select regions'); re-check later.",
+   "sources": [
+    "https://support.google.com/business/answer/15013580",
+    "https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html"
+   ],
+   "note_2026-11-08_1933": "Re-checked via SERoundtable Nov 6 recap: still no stated UK scope. Stays rejected until Google confirms UK."
+  },
+  {
+   "id": "2026-11-04-ai-mode-home-services-booking",
+   "found": "2026-11-08",
+   "event_date": "2026-11-04",
+   "headline": "Google AI Mode books home services",
+   "status": "rejected",
+   "reason": "US only ('available now in the U.S.'). Follow up if it reaches the UK."
+  },
+  {
+   "id": "2026-11-06-gbp-offers-help-doc",
+   "found": "2026-11-08",
+   "event_date": "2026-11-06",
+   "headline": "Google Business Profile offers help document",
+   "status": "rejected",
+   "reason": "Help doc, not a launch; 'select regions and languages'."
+  },
+  {
+   "id": "2026-11-04-site-reputation-abuse-eea-emails",
+   "found": "2026-11-08",
+   "event_date": "2026-11-04",
+   "headline": "Google site reputation abuse emails to EEA sites",
+   "status": "rejected",
+   "reason": "EEA only; UK not included."
+  },
+  {
+   "id": "2026-10-28-ads-in-ai-mode-uk",
+   "found": "2026-11-08",
+   "event_date": "2026-10-28",
+   "headline": "Ads in Google AI Mode expanding (UK sightings from 29 Oct)",
+   "status": "rejected",
+   "reason": "Outside 7-day window; UK sightings are third-party monitoring, not a Google UK launch."
+  },
+  {
+   "id": "2026-10-30-google-ai-training-robots-control",
+   "found": "2026-11-08",
+   "event_date": "2026-10-30",
+   "headline": "Google shared AI-training control in robots.txt",
+   "status": "rejected",
+   "reason": "Outside 7-day window; possible evergreen topic later."
+  },
+  {
+   "id": "2026-11-03-google-ai-overviews-brands-right-column",
+   "found": "2026-11-08",
+   "event_date": "2026-11-03",
+   "headline": "Google AI Overviews for brand queries shown in the right-hand column",
+   "status": "rejected",
+   "reason": "Observation reported by SERoundtable (seroundtable.com/google-ai-overviews-brands-right-42440.html); no Google announcement, no UK scope, no clear action for business owners."
+  },
+  {
+   "id": "2026-11-03-google-robots-block-popups",
+   "found": "2026-11-08",
+   "event_date": "2026-11-03",
+   "headline": "Google comment on blocking popups via robots.txt",
+   "status": "rejected",
+   "reason": "Advice comment, not a launch; primary Google source not read this run (fetching unavailable). Possible evergreen topic later if confirmed in Search Central docs."
+  },
+  {
+   "id": "2026-11-06-bing-ai-visual-summary",
+   "found": "2026-11-08",
+   "event_date": "2026-11-06",
+   "headline": "Bing Search AI visual summary snippet",
+   "status": "rejected",
+   "reason": "Scope and availability not stated; no primary Microsoft source; low relevance."
+  },
+  {
+   "id": "2026-11-03-google-search-off-k12",
+   "found": "2026-11-08",
+   "event_date": "2026-11-03",
+   "headline": "Google turning off Search for K-12 school accounts",
+   "status": "rejected",
+   "reason": "Not relevant to UK businesses' websites or CRMs."
+  },
+  {
+   "id": "2026-11-09-scan",
+   "found": "2026-11-09",
+   "headline": "9 Nov 08:33 scan: no other new qualifying UK website/CRM story found in the last 7 days beyond NCSC Annual Review (searches of NCSC, Google Search Central, ICO, Meta/WhatsApp, Shopify/WordPress returned nothing new and dated)",
+   "status": "rejected",
+   "reason": "Scan note, not a story."
+  },
+  {
+   "id": "2026-11-09-1433-scan",
+   "found": "2026-11-09",
+   "headline": "9 Nov 14:33 scan: searches of Google Search Central, ICO, UK tech news, Nominet and Meta/WhatsApp Business returned nothing new, dated in the last 7 days and qualifying. One news post already published today (NCSC), so evergreen post from the rotation (domain names).",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Watch: The UK Domain says Nominet Online Services stops managing .uk domains directly from 9 Feb 2027 (theukdomain.uk/uk-standardisation); announcement date not confirmed, so not used as news."
+  },
+  {
+   "id": "2026-11-09-1933-scan",
+   "found": "2026-11-09",
+   "headline": "9 Nov 19:33 scan: searches of Google Search Central blog, ICO/UK cookie news, Meta/WhatsApp Business and Search Engine Roundtable (Google Business Profile) returned nothing new, dated in the last 7 days and qualifying. One news post already today (NCSC), so evergreen web design Reel (contact forms).",
+   "status": "rejected",
+   "reason": "Scan note, not a story."
+  },
+  {
+   "id": "2026-11-10-0833-scan",
+   "found": "2026-11-10",
+   "headline": "10 Nov 08:33 scan: searches run (Google Search Central, ICO, UK tech news, Search Engine Roundtable, Meta/WhatsApp Business, WordPress/Shopify/Wix, NCSC) but source pages could not be opened this run (web fetching refused for ICO, NCSC, gov.uk, Nominet, Ofcom, BBC, The Register, Computer Weekly, Meta, WordPress, Shopify, Search Engine Roundtable, Search Engine Land, web.dev). Only the Google Search Central blog loaded: newest post is 'Search Central Live in Zurich is back!' (4 Nov 2026), an event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen CRM carousel instead.",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Re-scan at the next run; the 3-10 Nov window has not been properly checked for ICO, NCSC, Meta and the UK press."
+  },
+  {
+   "id": "2026-11-10-1433-scan",
+   "found": "2026-11-10",
+   "headline": "10 Nov 14:33 scan: eight searches run (Google Search Central, ICO cookies/data protection, Search Engine Roundtable/Google Business Profile, Meta/WhatsApp Business, UK tech press, NCSC, WordPress/Shopify/Wix/Squarespace, Chrome/core update/AI Overviews). Source pages could not be opened again (web fetching needs a permission nobody is there to give in an unattended run: ICO, NCSC, The Register, BBC, Meta newsroom, WordPress, Search Engine Land, Search Engine Roundtable, Search Status Dashboard, legal500 all refused). Only the Google Search Central blog index loaded: nothing in November except the Zurich event notice. Nothing could be verified with a primary source plus an independent outlet, so no news post; evergreen hosting Reel instead.",
+   "status": "rejected",
+   "reason": "Scan note, not a story. To follow up when pages can be opened: (1) ICO storage and access technologies (cookies) guidance, including new exceptions for low-risk cookies, seen in law-firm headlines on mondaq/legal500; publish date and what is in force not confirmed. (2) CMA requirements on Google Search (publisher opt-out, choice screens); date not confirmed. The 3-10 Nov window has still not been properly checked for ICO, NCSC, Meta and the UK press."
+  },
+  {
+   "id": "2026-11-10-1933-scan",
+   "found": "2026-11-10",
+   "headline": "10 Nov 19:33 scan: eight searches run (Google Search Central, ICO cookies, Search Engine Roundtable/Google Business Profile, Meta/WhatsApp Business, NCSC/UK cyber, WordPress/Shopify/Wix/Squarespace, UK tech press, core update/AI Overviews/Chrome). Most source pages still could not be opened (ICO, NCSC, Meta newsroom, The Register, WordPress, Search Status Dashboard, Search Engine Roundtable homepage all refused: the permission prompt goes unanswered in an unattended run). Pages that did load: Google Search Central blog (nothing new in November except the Zurich event notice), one Search Engine Roundtable article with its 9 Nov sidebar, and two law-firm pages on the ICO cookie guidance. Nothing passed with a primary source plus an independent outlet, so no news post; evergreen web design carousel (page titles) instead.",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Findings: (1) ICO storage and access technologies (cookies) guidance is NOT new: SCL dated its report 1 May 2026 and Womble Bond Dickinson says the rule changes came into force on 5 Feb 2026, so it is outside the 7-day window; possible evergreen cookies post once ico.org.uk can be opened. (2) Search Engine Roundtable 9 Nov headlines: 'Google Adding Booking Links To Business Profiles Automatically?' (seroundtable.com/google-business-profiles-adding-booking-links-42477.html), an unconfirmed observation with no Google announcement and no UK scope, worth a re-check; 'Google Search Ranking Volatility Status: Update November 8th/9th?' (unconfirmed, no Google statement); AI Mode multi-turn ads, Bing ads in AI Mode and AI summaries in Google Ads (advertising, scope unknown). The 3-10 Nov window is still unchecked for ICO, NCSC, Meta and the UK press."
+  },
+  {
+   "id": "2026-11-10-google-november-2026-core-update",
+   "found": "2026-11-11",
+   "event_date": "2026-11-10",
+   "headline": "Google releases the November 2026 core update (global, all languages, rollout may take up to 2 weeks)",
+   "status": "used",
+   "relevance": "Search: affects how every UK business website ranks in Google for up to a fortnight. Clear action from Google's own guidance: wait for it to finish, wait another full week, then compare in Search Console; small drops need no drastic action, large ones a deeper assessment; avoid quick fixes.",
+   "facts": [
+    {
+     "claim": "Incident began 2026-11-10 10:06 US/Pacific; 'Released the November 2026 core update, which applies globally and to all languages.' 'The rollout may take up to 2 weeks to complete.'",
+     "source": "https://status.search.google.com/incidents/WLxcJyC6jMWMfryxsKMc"
+    },
+    {
+     "claim": "Google's guidance on core updates (wait a full week after completion, position 2 to 4 vs 4 to 29, avoid quick fixes, deleting content is a last resort)",
+     "source": "https://developers.google.com/search/updates/core-updates (last updated 10 Dec 2025)"
+    }
+   ],
+   "second_sources": [
+    "https://www.seroundtable.com/google-november-2026-core-update-42504.html (10 Nov 2026)"
+   ],
+   "caveats": "Search Engine Land's article could not be opened (client error). Follow up when the dashboard shows the rollout has completed: a short 'it's finished, now check' Story or post would be a fair follow-up, not a repeat.",
+   "used_on": [
+    "instagram+facebook:2026-11-11-0845-google-core-update",
+    "instagram-story:stories/2026-11-11-1147-core-update-in-15-seconds"
+   ]
+  },
+  {
+   "id": "2026-11-10-openai-businesses-in-chatgpt",
+   "found": "2026-11-11",
+   "event_date": "2026-11-10",
+   "headline": "OpenAI launches 'Businesses in ChatGPT' in beta: a Business Hub where a business can claim its profile and see mentions and website clicks",
+   "status": "rejected",
+   "reason": "Not yet verified: OpenAI's own page (openai.com/index/introducing-businesses-chatgpt/) could not be opened this run, so there is no primary source read in full, and UK availability and cost are unconfirmed. Strong candidate, re-check at the next run.",
+   "facts": [
+    {
+     "claim": "Search Engine Roundtable (10 Nov 2026): claim by text or call to the main business number or DNS verification; analytics show mentions, profile views and clicks; OpenAI calls it beta; Business Agents start with eligible ecommerce and online service businesses in the U.S.",
+     "source": "https://www.seroundtable.com/chatgpt-business-hub-42505.html"
+    },
+    {
+     "claim": "IT Brief UK (11 Nov 2026): 'Business Hub is launching globally for eligible businesses wherever ChatGPT is available'; Business Agents US only; insights only above volume thresholds",
+     "source": "https://itbrief.co.uk/story/openai-launches-chatgpt-business-hub-for-companies"
+    }
+   ],
+   "caveats": "UK not named anywhere. Try the OpenAI Developer Community announcement or OpenAI help centre as the primary source next time. Do not say 'now in the UK' unless OpenAI says so."
+  },
+  {
+   "id": "2026-11-11-0833-scan",
+   "found": "2026-11-11",
+   "headline": "11 Nov 08:33 scan: eleven searches run (Google Search Central and Search Status Dashboard, ICO, NCSC, Meta/WhatsApp Business, Search Engine Roundtable/Google Business Profile, UK tech press, WordPress/Shopify/Wix/Squarespace, core update/AI Overviews/Chrome, OpenAI). Pages opened fine this run after searching first (Google Search Status Dashboard, Google Search Central, Search Engine Roundtable, IT Brief UK). Could not open: searchengineland.com and openai.com (client errors). Used: Google November 2026 core update. Held: Businesses in ChatGPT (primary not opened).",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Other results: ICO cookie guidance results are the same February to May 2026 guidance (not new); NCSC results were the Annual Review coverage already used and a critical-infrastructure AI ransomware warning (not relevant to most businesses; date not checked); Meta Business Agent dates from June 2026 (outside the window)."
+  }
+ ]
 }
