@@ -520,7 +520,69 @@
   "status": "published",
   "permalink": "https://www.instagram.com/p/DfkxqZuD2I-/",
   "instagram_media_id": "18483756877113338",
-  "facebook_post_id": "1484176674771345_122101744815544005", "published_via": "github-actions",
+  "facebook_post_id": "1484176674771345_122101744815544005",
+  "published_via": "github-actions",
   "note": "Posted on Lee's request. Meta returned 'Application request limit reached' but the post went live once; Facebook published on a second run after the Facebook check was fixed."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "08:33",
+  "time_slot": "morning",
+  "id": "2026-11-11-0845-google-core-update",
+  "format": "carousel",
+  "category": "Tech news (Google Search)",
+  "pillar": "News explained",
+  "angle": "why it matters + how to get it right",
+  "topic": "Google's November 2026 core update (released 10 Nov, global, all languages, rollout may take up to 2 weeks); Google's own guidance: wait for it to finish, wait another full week, compare in Search Console, judge small drop (position 2 to 4) vs large drop (4 to 29), avoid quick fixes",
+  "news_story_id": "2026-11-10-google-november-2026-core-update",
+  "style": "press",
+  "themes": [
+   "night",
+   "newsprint",
+   "red"
+  ],
+  "cover": "mockup",
+  "mockup": {
+   "business": "Stobbs & Dunn",
+   "trade": "joiner (timber frames, roofs, extensions)",
+   "layout": "split",
+   "font": "Oswald",
+   "accent": "#1747C9",
+   "bg": "#F7F7F4",
+   "device": "laptop",
+   "buttons": "square"
+  },
+  "screen": null,
+  "slides": 5,
+  "slide_types": [
+   "mockup",
+   "stat",
+   "quote",
+   "flow",
+   "list"
+  ],
+  "photo": "josh-olalde--joiner-framing-roof-against-blue.EWoU3snzadU.jpg",
+  "photo_shows": "joiner framing a timber roof against a blue sky (inside the mockup for the made-up joinery firm)",
+  "hooks_considered": [
+   "Your Google ranking may move this fortnight.",
+   "Google is reshuffling its search results.",
+   "Google's November core update has started."
+  ],
+  "fact_check": "pass",
+  "quality": {
+   "relevant": 5,
+   "true": 5,
+   "useful": 4,
+   "specific": 5,
+   "hook": 4,
+   "design": 4
+  },
+  "news_check": "Eleven searches; pages opened after searching first. Core update verified with Google Search Status Dashboard + Search Engine Roundtable; advice from Google Search Central. Not opened: searchengineland.com, openai.com. Businesses in ChatGPT held for the next run (primary source not opened).",
+  "instagram_media_id": "18637990507041100",
+  "permalink": "https://www.instagram.com/p/DfmFvlpl9eL/",
+  "facebook_post_id": "1484176674771345_122102137563544005",
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "Meta returned 'Application request limit reached' (403, 4/2207051) on media_publish again, but the carousel went live once; publish.py found the live copy and recorded it. Workflow run 42989943941."
  }
 ]
