@@ -645,5 +645,35 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "Workflow run 43041016858. reel.py: phone mockups are now 20% larger in Reels and no longer overlap the caption line."
+ },
+ {
+  "date": "2026-11-11",
+  "slot": "19:33",
+  "time_slot": "evening",
+  "id": "2026-11-11-1933-enquiry-in-nothing-lost",
+  "format": "carousel",
+  "category": "Websites + CRM",
+  "angle": "how a joined-up website and CRM handle an enquiry",
+  "topic": "Enquiry in, nothing lost: a website form that creates the CRM record, versus email, copy, paste, forget",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "type-over-tilted-3d-board",
+   "fading-word-stack",
+   "phone-to-record-on-colour-field",
+   "orbit-diagram-with-type"
+  ],
+  "palette": [
+   "#08080A",
+   "#ECEAE4",
+   "#C8F542"
+  ],
+  "display_font": "InterTight",
+  "slides": 4,
+  "status": "published",
+  "permalink": "https://www.instagram.com/p/DfnPbsumgm8/",
+  "facebook_post_id": "1484176674771345_122102645367544005",
+  "published_via": "github-actions",
+  "note": "First post at the new design standard (Lee, 11 Nov). Made in the main session, not by the scheduled run."
  }
 ]
