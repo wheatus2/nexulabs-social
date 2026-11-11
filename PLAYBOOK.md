@@ -1,5 +1,7 @@
 # Nexulabs Instagram — daily posting playbook
 
+> **GROWTH (Lee, 11 Nov 2026):** before choosing what to make, read `growth/brief.md`. It is this week's steer from the growth agent (what is earning reach, ideas, search phrases, hashtags, the call to action). Follow it for topic, hook, caption and hashtags. It never overrides `DESIGN.md`, the fact-checking rules or Lee's rules. See `GROWTH.md`.
+
 > **DESIGN STANDARD (Lee, 11 Nov 2026): read `DESIGN.md` before making any post, Reel or Story. It overrides every design instruction in this file.**
 > - Lee: the posts looked "very repetitive, very basic". The bar is what Google, Apple or Nvidia would post.
 > - Every post is now designed from scratch with `studio.py` (bespoke HTML and CSS per frame). `render.py`, `reel.py`, the five looks, the slide types and the `mockup` slide type are **retired**: do not use them for new posts. Where this file says to render with them, use `studio.py` instead.
