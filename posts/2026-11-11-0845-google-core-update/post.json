@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-11-0845-google-core-update",
+ "series": "News",
+ "style": "press",
+ "slides": [
+  {
+   "type": "mockup",
+   "theme": "night",
+   "device": "laptop",
+   "kicker": "News · 11 November",
+   "title": "Your Google ranking\nmay move this *fortnight*.",
+   "sub": "Google started a core update to Search on Tuesday.",
+   "caption": "Concept for a made-up business. Photo: Josh Olalde on Unsplash.",
+   "site": {
+    "layout": "split",
+    "brand": "Stobbs & Dunn",
+    "nav": [
+     "Roofs",
+     "Extensions",
+     "Our work",
+     "Contact"
+    ],
+    "cta": "Get a quote",
+    "cta2": "See our work",
+    "eyebrow": "Joiners · Washington, Tyne and Wear",
+    "headline": "Timber frames\nbuilt to last.",
+    "sub": "Roofs, extensions and oak frames. Fixed quotes, in writing, before we start.",
+    "image": "photo.jpg",
+    "focus": "40% 45%",
+    "accent": "#1747C9",
+    "on_accent": "#FFFFFF",
+    "bg": "#F7F7F4",
+    "ink": "#14171A",
+    "font": "Oswald",
+    "buttons": "square",
+    "cards": [
+     [
+      "Roof carpentry",
+      "New roofs and repairs"
+     ],
+     [
+      "Extensions",
+      "Timber frame and oak"
+     ],
+     [
+      "Loft conversions",
+      "Dormers and stairs"
+     ]
+    ],
+    "strip": [
+     "Fully insured",
+     "Free site visits",
+     "0191 000 0000"
+    ]
+   }
+  },
+  {
+   "type": "stat",
+   "theme": "newsprint",
+   "kicker": "The update",
+   "value": "2 weeks",
+   "size": 250,
+   "statement": "Google says it may take\n*up to* two weeks.",
+   "detail": "It began on 10 November and applies worldwide, in every language. So UK search results are part of it.",
+   "source": "Google Search Status Dashboard, 10 Nov 2026."
+  },
+  {
+   "type": "quote",
+   "theme": "red",
+   "text": "In general, most sites don't need to worry about core updates and may not even realize one has happened.",
+   "sub": "Google Search Central, on core updates",
+   "source": "developers.google.com, Google Search's core updates and your website.",
+   "size": 84
+  },
+  {
+   "type": "flow",
+   "theme": "newsprint",
+   "title": "What Google says to do",
+   "steps": [
+    [
+     "Wait for it to finish",
+     "Google's Search Status Dashboard shows the start and end dates."
+    ],
+    [
+     "Then wait another week",
+     "Google recommends at least a full week after it completes before analysing anything."
+    ],
+    [
+     "Compare two weeks in Search Console",
+     "A week after it finished against a week before it started."
+    ],
+    [
+     "Look at your top pages and searches",
+     "Have they slipped a little or a lot?"
+    ]
+   ],
+   "source": "Google Search Central: core updates."
+  },
+  {
+   "type": "list",
+   "theme": "night",
+   "title": "Then judge the\nsize of the drop",
+   "items": [
+    [
+     "From position 2 to 4",
+     "Google: no need for drastic action. Leave pages that are doing well alone."
+    ],
+    [
+     "From position 4 to 29",
+     "Google: do a deeper assessment of your whole site and the pages hit hardest."
+    ],
+    [
+     "No quick fixes",
+     "Deleting content is a last resort, Google says."
+    ]
+   ],
+   "source": "Examples are Google's own, from its core updates guidance."
+  }
+ ]
+}
