@@ -1,0 +1,18 @@
+{
+ "format": "reel",
+ "composition": [
+  "fourteen-letters-fourteen-typefaces-equal-cap-block",
+  "four-words-four-typefaces-each-filling-the-measure",
+  "giant-ampersand-shuffling-faces-under-two-line-headline",
+  "same-four-words-rolled-into-one-serif-over-rule-footer"
+ ],
+ "background": [
+  "#D7192A",
+  "#F6EDDC",
+  "#190A0C",
+  "#D7192A"
+ ],
+ "display_font": "Fraun",
+ "accent": "#D7192A",
+ "concept": "A type specimen that misbehaves, in red, cream and ink. The hook sets fourteen letters in fourteen typefaces at one cap height; four places a business shows its name each wear their own face; one ampersand shuffles through seven faces and stops on one; the same four words roll over into that one face."
+}
