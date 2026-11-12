@@ -1,6 +1,6 @@
 # Lee's ten minutes: Thu 12 Nov 2026
 
-Written at 03:35 UK from search results and the organisations' own websites. Instagram can't be read from the cloud, so no recent post was seen for any account below. Each comment fits the kind of post named; the Chrome pass rewrites it for the post actually on the page. Lee types or pastes and taps Post.
+Written at 03:35 UK (Prego removed at 07:14: it has closed) from search results and the organisations' own websites. Instagram can't be read from the cloud, so no recent post was seen for any account below. Each comment fits the kind of post named; the Chrome pass rewrites it for the post actually on the page. Lee types or pastes and taps Post.
 
 ## First, 30 seconds
 Open Instagram, Settings, Account Status (search "Account Status" in Settings if the menu has moved). Check it says the account can be recommended to people who don't follow it. If anything is flagged, tell me which post.
@@ -36,12 +36,6 @@ Open Instagram, Settings, Account Status (search "Account Status" in Settings if
 - Who: White's Market, Sunderland. Location confirmed from the name only; glance at the bio first.
 - Post to look for: the next market date or a trader spotlight.
 - Comment: Good line-up of traders. When is the next market, and is there a way for people to find the stallholders in between?
-
-### 6. @prego_sunderland
-- Link: https://www.instagram.com/prego_sunderland/
-- Who: Prego Bar & Eatery, Sunderland.
-- Post to look for: a new dish or Christmas bookings post.
-- Comment: That looks worth the trip into town. Are Christmas bookings open yet, and is it best to ring or book online?
 
 ## One bigger move
 **Say what we do and where in the name field and bio.** Instagram's own guidance says search reads the name and bio, and that a location in the bio helps local businesses be found. I can't see the current wording from here, so compare and change only if this is better:
