@@ -87,6 +87,7 @@ Techniques that lift the craft: film grain (`<!--grain:0.06-->`), layered shadow
 - Keep text inside the safe area (top 220px and bottom 380px are covered by Instagram's interface).
 - Motion with purpose: a card flying into a pipeline, a number counting up, a page assembling. Not just text fading in.
 - Look at `.reel-sheet.jpg`, and step through the video frames if anything animates across text.
+- Technical notes from the first studio Reel (`posts/2026-11-12-1433-count-your-fonts/art/reel.html`, 12 Nov 2026): `studio.py check` counts the text of every scene unless hidden scenes are `visibility:hidden`, so copy that reel's `.scene` rule (the `sv` keyframes, which run 0.02s past the scene's end so no black frame appears at a cut). Set `.scene{overflow:visible}` if a hero bleeds off the frame. A word split into one element per letter is counted as one word per letter: put `data-ui` on the wrapper and allow reading time for the real word count yourself.
 
 ## Stories
 
