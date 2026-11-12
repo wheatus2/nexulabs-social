@@ -1,6 +1,6 @@
 # Lee's ten minutes: Thu 12 Nov 2026
 
-Written at 03:35 UK (Prego removed at 07:14: it has closed) from search results and the organisations' own websites. Instagram can't be read from the cloud, so no recent post was seen for any account below. Each comment fits the kind of post named; the Chrome pass rewrites it for the post actually on the page. Lee types or pastes and taps Post.
+Written at 03:35 UK (Prego removed at 07:14: it has closed). Checked in Chrome Thu 12 Nov 2026, 18:07 UK: each comment below is written for the post now open in Lee's Chrome. Lee types or pastes and taps Post.
 
 ## First, 30 seconds
 Open Instagram, Settings, Account Status (search "Account Status" in Settings if the menu has moved). Check it says the account can be recommended to people who don't follow it. If anything is flagged, tell me which post.
@@ -10,32 +10,32 @@ Open Instagram, Settings, Account Status (search "Account Status" in Settings if
 ### 1. @sunderlandexperience
 - Link: https://www.instagram.com/sunderlandexperience/
 - Who: Sunderland BID, the city centre business improvement district (handle linked on sunderlandbid.co.uk).
-- Post to look for: this Saturday's Art, Craft and Graze Market (14 Nov), or the call for nominations for the UK's Favourite Local Business (BID news, 9 Nov).
-- Comment: Good to see the makers' market back this Saturday. Is it at the station again, and is there a list of the stallholders anywhere?
+- Post: 12 Nov 2026, seven new businesses join the Sunderland Gift Card (Mr Tillys, ARV Cafe, WildFire Deptford and City, Blacks Corner, Riverside Cafe, Pepe's), https://www.instagram.com/sunderlandexperience/p/DfpM-DUlw7b/
+- Comment: Seven new names is a good haul, and WildFire in both Deptford and the city centre. How many places take the Sunderland Gift Card now?
 
 ### 2. @nechamberuk
 - Link: https://www.instagram.com/nechamberuk/
 - Who: North East Chamber of Commerce (handle linked on necc.co.uk).
-- Post to look for: a member story or an event write-up from this week.
-- Comment: Useful to see what member firms are working on. Is there a write-up of this one for those who couldn't be in the room?
+- Post: 12 Nov 2026, International Trade Week reel: NatWest's Søren Nikolajsen on preparing to sell overseas, and the Chamber's Trade Helpdesk, https://www.instagram.com/nechamberuk/reel/Dfo1eIahKGG/
+- Comment: Good point from Søren that preparation matters as much as the product. For a firm weighing up its first export order, what does the Trade Helpdesk get asked most?
 
 ### 3. @northerninsightmagazine
 - Link: https://www.instagram.com/northerninsightmagazine/
 - Who: Northern Insight, the North East business magazine.
-- Post to look for: the November issue cover or a feature on a local firm.
-- Comment: Good to see a North East firm getting the space to tell the story properly. Is the full piece online as well as in print?
+- Post: 12 Nov 2026, RMT Technology (part of RMT Accountants) launches a cyber security division, 8 jobs in the next 12 months and about 50 in five years, https://www.instagram.com/northerninsightmagazine/p/DfpKJa5iMzm/
+- Comment: Fifty jobs over five years is a real boost for the region. Did RMT say whether the cyber service is mainly for their existing accountancy clients?
 
 ### 4. @flowercafesunderland
 - Link: https://www.instagram.com/flowercafesunderland/
 - Who: Flower Cafe in Keel Square, Sunderland, beneath the Holiday Inn.
-- Post to look for: a Christmas menu or festive decor post.
-- Comment: Keel Square is looking good with this, The Botanist and Culture House all in one corner. Is the Christmas menu on from now, or from December?
+- Post: 18 Oct 2026, @justterrik collab post on the cafe's design by Pulp Studios (latest non-pinned post in the grid), https://www.instagram.com/justterrik/p/Deo6d0xDFas/
+- Comment: None needed: @nexulabs_ already commented on this post on 11 Nov and it has 1 reply. Read the reply and answer it if it asks something. No new post from the cafe since 18 Oct.
 
 ### 5. @whitesmarketsunderland
 - Link: https://www.instagram.com/whitesmarketsunderland/
-- Who: White's Market, Sunderland. Location confirmed from the name only; glance at the bio first.
-- Post to look for: the next market date or a trader spotlight.
-- Comment: Good line-up of traders. When is the next market, and is there a way for people to find the stallholders in between?
+- Who: White's Market, Sunderland. Bio confirms: Jacky White's Market, independent traders in Sunderland city centre, open Mon-Sat.
+- Post: 12 Nov 2026, "Little things we love at Jacky's": counter chats, families, hot food, asks followers their favourite thing about a trip to Jacky's, https://www.instagram.com/whitesmarketsunderland/p/DfozkrWEUAb/
+- Comment: The chat over the counter is the bit you can't get online. Over 100 years in the city centre is some going too. Which stall has been there longest?
 
 ## One bigger move
 **Say what we do and where in the name field and bio.** Instagram's own guidance says search reads the name and bio, and that a location in the bio helps local businesses be found. I can't see the current wording from here, so compare and change only if this is better:

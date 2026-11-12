@@ -55,11 +55,13 @@
     "why": "Member firms across the North East follow it; its event and member-news posts are where local owners comment.",
     "status": "local",
     "evidence": "Linked from the footer of necc.co.uk (read 12 Nov 2026)",
-    "recent_post_seen": false,
+    "recent_post_seen": true,
     "found": "2026-11-11",
     "suggested": [
       "2026-11-12"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-12",
+    "last_post": "2026-11-12"
   },
   {
     "handle": "@durhambid",
@@ -85,11 +87,13 @@
     "why": "Features local firms; owners featured there reshare and reply. Also a possible feature opportunity (check it is free before proposing).",
     "status": "local",
     "evidence": "Instagram search result title, 11 Nov 2026; northern-insight.co.uk covers Sunderland business",
-    "recent_post_seen": false,
+    "recent_post_seen": true,
     "found": "2026-11-11",
     "suggested": [
       "2026-11-12"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-12",
+    "last_post": "2026-11-12"
   },
   {
     "handle": "@bipcnewcastle",
@@ -127,11 +131,13 @@
     "why": "Local independent with an engaged local following.",
     "status": "local",
     "evidence": "Instagram search result title, 11 Nov 2026",
-    "recent_post_seen": false,
+    "recent_post_seen": true,
     "found": "2026-11-11",
     "suggested": [
       "2026-11-12"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-12",
+    "last_post": "2026-10-18"
   },
   {
     "handle": "@prego_sunderland",
@@ -150,16 +156,18 @@
   {
     "handle": "@whitesmarketsunderland",
     "url": "https://www.instagram.com/whitesmarketsunderland/",
-    "name": "White's Market Sunderland",
-    "what": "Market in Sunderland",
+    "name": "Jacky White's Market Sunderland",
+    "what": "Market of independent traders in Sunderland city centre, open Mon-Sat (bio, checked in Chrome 12 Nov 2026)",
     "why": "A market account speaks to many traders at once; traders are website and booking prospects.",
     "status": "local",
     "evidence": "Instagram search result title, 11 Nov 2026",
-    "recent_post_seen": false,
+    "recent_post_seen": true,
     "found": "2026-11-11",
     "suggested": [
       "2026-11-12"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-12",
+    "last_post": "2026-11-12"
   },
   {
     "handle": "@durhammarkets",
@@ -289,11 +297,13 @@
     "why": "Speaks to every city centre business at once; its market and event posts are where local owners and their customers comment.",
     "status": "local",
     "evidence": "Linked in the header and footer of sunderlandbid.co.uk (read 12 Nov 2026)",
-    "recent_post_seen": false,
+    "recent_post_seen": true,
     "found": "2026-11-12",
     "suggested": [
       "2026-11-12"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-12",
+    "last_post": "2026-11-12"
   },
   {
     "handle": "@bradleyhallsunderland",

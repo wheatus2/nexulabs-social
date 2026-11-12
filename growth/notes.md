@@ -242,3 +242,26 @@ Sources
 3. Search results, 12 Nov 2026, incl. https://www.urbanriver.com/web-design-sunderland and https://xlmg.co.uk/web-design-newcastle (titles only)
 4. https://growthhub.northeast-ca.gov.uk/insights/digital-technology/top-tips-using-instagram-business (4 Nov 2020)
 5. https://mysunderland.co.uk/article/25963/Wear-Creatives-April-Creative-Hub-Meetup
+
+## 12 Nov 2026 (evening, 20:13 run): local events and networking
+
+Rotation: 2 of 5 (local accounts, groups and events). Next evening: what comparable studios post.
+
+**In the next fortnight, worth Lee being in the room (free or low cost, North East owners present)**
+- **Sunderland Networking Breakfast, Roker Hotel, Thu 19 Nov 2026, 8 to 10am.** TryBooking page: "Every other Thursday morning from 8am - 10am", run "Thursday 12 March 2026 - Thursday 19 November 2026", for "entrepreneurs and business leaders". Counting fortnights from 12 March, 19 Nov is a meeting date and the last of the run. Cost not stated; booking via "Contact Organiser" on the page. No Instagram handle on the page. [1]
+  Use: a Story from the room with the Roker Hotel location tag, then follow and comment on the people met that day while the name is fresh. Best single in-person lever this month.
+- **North East BIC Christmas Fair, Wed 25 Nov 2026**, North East BIC, Wearfield, Sunderland (Sunderland BID listing; time and cost not stated). A building full of young firms: prospects for sites and systems. [2]
+- **Makers & Bakers Market, Sat 5 Dec 2026, The Bridges**, "Entry is free" (BID listing). Same day as #SmallBizSatUK (earlier note): a post or Story shouting out traders there fits both. [2]
+- Also on the BID list: Christmas Light Switch On, Keel Square, 19 Nov; Christmas Market at Sheepfolds Stables, 25 Nov; Night Market at STACK, 3 Dec; Mackem Community Event, City Hall, 3 Dec. Good for a location-tagged Story, not for meeting owners. [2]
+
+**Checked and past (don't propose)**
+- North East Expo autumn 2026 was 4 Nov (Newcastle Racecourse); the page says it has ended. Watch for the spring date. [3]
+- Chamber Exchange Sunderland (13 Mar 2025), FSB and NetWORK NotWORK Sunderland launch (4 Mar 2025), IPC Networking at The Hollymere (Nov 2025), H3O saunas' monthly group at Roker Yacht Club (first meeting Oct 2025): all old pages. IPC and NetWORK NotWORK may still run Sunderland dates; search their Eventbrite organiser pages next time.
+
+**No new handles added.** None of these pages gave an Instagram handle, so nothing goes into accounts.json until a search shows one.
+
+Sources
+1. https://www.trybooking.com/uk/events/landing/100807 (read 12 Nov 2026)
+2. https://sunderlandbid.co.uk/events/ (read 12 Nov 2026)
+3. https://www.luminik.io/events/north-east-expo.md (read 12 Nov 2026)
+4. https://growthhub.northeast-ca.gov.uk/events/chamber-exchange-sunderland ; https://growthhub.northeast-ca.gov.uk/events/sunderland-networking-by-fsb-and-network-notwork ; https://www.eventbrite.co.uk/e/business-networking-sunderland-hollymere-with-ipc-tickets-1808583545069 ; https://mysunderland.co.uk/article/26954/New-Monthly-Networking-Group-Launching-in-Sunderland (all read 12 Nov 2026)

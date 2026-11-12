@@ -66,19 +66,19 @@
  },
  {
   "date": "2026-11-12",
-  "updated": "18:04 UK (evening run, started early at 18:03): numbers re-read. Morning figures were from 07:14.",
+  "updated": "20:13 UK (scheduled evening run): numbers re-read. Earlier reads 07:14 and 18:04.",
   "followers": 15,
   "following": 108,
   "change_since_yesterday": 7,
   "change_since_7_days_ago": null,
-  "change_note": "8 on 11 Nov to 15 at 18:04 on 12 Nov (12 at 07:14). Log started 11 Nov, so no figure from 7 days ago. Following 108.",
-  "reach_7d": 146,
-  "views_7d": 488,
-  "profile_views_7d": 42,
+  "change_note": "8 on 11 Nov to 15 at 20:13 on 12 Nov (12 at 07:14, 15 at 18:04, no change since). Log started 11 Nov, so no figure from 7 days ago. Following 108.",
+  "reach_7d": 148,
+  "views_7d": 518,
+  "profile_views_7d": 44,
   "website_taps_7d": 0,
-  "accounts_engaged_7d": 10,
+  "accounts_engaged_7d": 11,
   "interactions_7d": {
-   "likes": 14,
+   "likes": 16,
    "comments": 3,
    "saves": 1,
    "shares": 0
@@ -140,13 +140,21 @@
     "time": "15:10",
     "format": "reel",
     "topic": "Count your fonts",
-    "reach": 2,
-    "views": 4,
-    "avg_watch_seconds": 18.2,
-    "note": "3 hours old when read"
+    "reach": 3,
+    "views": 9,
+    "avg_watch_seconds": 13.6,
+    "note": "5 hours old when read at 20:13"
+   },
+   {
+    "time": "20:00",
+    "format": "photo",
+    "topic": "Who rang at 2pm (missed calls, CRM)",
+    "reach": null,
+    "views": null,
+    "note": "Not yet in the API's media list at 20:13"
    }
   ],
   "evening_note": "Followers up 3 more during the day (12 to 15) while today's two posts reached 1 and 2 accounts: still an early sign that growth follows Lee's commenting, not the posts. Profile views 7d 33 to 42.",
-  "evening_research": "Hashtags and search phrases, second pass: re-check of the unverified local tags, plus #SmallBizSatUK for 5 Dec (see growth/notes.md, 12 Nov evening)"
+  "evening_research": "Hashtags and search phrases, second pass: re-check of the unverified local tags, plus #SmallBizSatUK for 5 Dec (see growth/notes.md, 12 Nov evening); 20:13 run: local events and networking (see growth/notes.md, 12 Nov, second evening run)"
  }
 ]
