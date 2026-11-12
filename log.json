@@ -709,8 +709,8 @@
    6.5,
    7
   ],
-  "draft": "drafts/2026-11-12-0905-can-they-read-it",
-  "note": "Topic and design are not used up: nothing was posted, and it is not in design-log.json. The draft was reworked by the 09:00 run and now lives in drafts/2026-11-12-0905-can-they-read-it."
+  "draft": null,
+  "note": "Held by the 08:33 run. Reworked and published later the same morning as 2026-11-12-0930-can-they-read-it."
  },
  {
   "date": "2026-11-12",
@@ -744,7 +744,54 @@
    7,
    7.5
   ],
-  "draft": "drafts/2026-11-12-0905-can-they-read-it",
-  "note": "Second scheduled firing for the same morning slot. No news desk scan in this run (the 08:33 run scanned 25 minutes earlier and found nothing new). Not in design-log.json; topic, palette and typeface are not used up."
+  "draft": null,
+  "note": "Held by the second morning run. Reworked with Lee in the chat and published as 2026-11-12-0930-can-they-read-it."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "08:33",
+  "time_slot": "morning",
+  "id": "2026-11-12-0930-can-they-read-it",
+  "format": "carousel",
+  "category": "Web design",
+  "angle": "one-minute self-check",
+  "topic": "Text too faint to read: colour contrast. 'Can your customers read this?' in words at 1.5:1; WebAIM Million 2026 (83.9% of the world's top million home pages have low-contrast text) as a fading eye-test chart; the same words at 15.5:1; WCAG asks for at least 4.5:1 on body text; take your phone outside and check",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "giant-serif-question-over-measured-faint-line",
+   "eye-test-chart-fading-rows",
+   "two-word-lockup-filling-selection-box"
+  ],
+  "palette": [
+   "#2B0F26",
+   "#F6C8D8",
+   "#FBEEF2",
+   "#FF4D8D"
+  ],
+  "display_font": "Instrument",
+  "slides": 3,
+  "status": "published",
+  "media_id": "18111697958258848",
+  "permalink": "https://www.instagram.com/p/Dfow1QSlGev/",
+  "facebook_post_id": "1484176674771345_122103301551544005",
+  "published_via": "github-actions",
+  "published_at": "2026-11-12T09:44:27+00:00",
+  "fact_check": "pass",
+  "design_review": [
+   7,
+   7.5,
+   7,
+   7.5,
+   7,
+   7
+  ],
+  "sources": [
+   "WebAIM Million 2026",
+   "W3C WCAG 2.2 Understanding SC 1.4.3",
+   "W3C WAI Colors with Good Contrast",
+   "WebAIM Contrast Checker"
+  ],
+  "note": "Published on Lee's say-so in the chat (12 Nov): the independent reviews scored it 7 to 7.5 and the pass mark was 8. Lee approved it and lowered the pass mark to 7 from now on."
  }
 ]

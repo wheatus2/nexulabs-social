@@ -6,7 +6,8 @@
 > - Lee: the posts looked "very repetitive, very basic". The bar is what Google, Apple or Nvidia would post.
 > - Every post is now designed from scratch with `studio.py` (bespoke HTML and CSS per frame). `render.py`, `reel.py`, the five looks, the slide types and the `mockup` slide type are **retired**: do not use them for new posts. Where this file says to render with them, use `studio.py` instead.
 > - No repeats: layouts, colours and typefaces must differ from recent posts. `python3 studio.py check` enforces this and must pass.
-> - A post that can't reach the standard does not go out. Skip the slot and report it. This replaces "switch to an evergreen post" when the problem is the design.
+> - **Pass mark (Lee, 12 Nov 2026): the independent design review passes at 7 out of 10 or above** (it was 8). Under 7, or a frame plainly called basic, is held. The score goes in the summary and the log.
+> - A post that can't reach the pass mark does not go out. Skip the slot and report it. This replaces "switch to an evergreen post" when the problem is the design.
 > - After publishing: `python3 studio.py log posts/<id>` and commit `design-log.json`. In `log.json` record `"renderer": "studio"`.
 
 

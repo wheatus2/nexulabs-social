@@ -49,5 +49,22 @@
   "display_font": "none",
   "accent": "#FFF36B",
   "concept": "Highlight cover for Web + CRM: two rings linked, website and CRM joined. Sits inside the circle crop."
+ },
+ {
+  "id": "2026-11-12-0930-can-they-read-it",
+  "format": "feed",
+  "composition": [
+   "giant-serif-question-over-measured-faint-line",
+   "eye-test-chart-fading-rows",
+   "two-word-lockup-filling-selection-box"
+  ],
+  "background": [
+   "#2B0F26",
+   "#F6C8D8",
+   "#FBEEF2"
+  ],
+  "display_font": "Instrument",
+  "accent": "#FF4D8D",
+  "concept": "Contrast as the picture, in plum and blush. The cover asks the question in words too faint to read, tagged 1.5:1; the statistic is set as an eye-test chart that fades row by row; the last frame answers in the same words at full strength, tagged 15.5:1."
  }
 ]

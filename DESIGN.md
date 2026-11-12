@@ -6,7 +6,9 @@ Lee, 11 Nov 2026: the posts were "very repetitive, very basic", and "look like s
 
 He was right. Every post had the same skeleton: logo top left, label top right, a headline, a list of small text, and a lot of empty flat colour. Changing the font and colour did not hide it.
 
-**If a post can't reach this standard, it does not go out.** Skip the slot and say so in the summary. An empty slot is better than a weak post.
+**If a post can't reach the pass mark, it does not go out.** Skip the slot and say so in the summary.
+
+**Pass mark (Lee, 12 Nov 2026): 7 out of 10 or above from the independent second opinion.** It was 8. On 12 Nov the same carousel was reviewed eleven times and scored 6.5 to 7.5 whatever was changed, so Lee approved it himself and set the mark to 7. Under 7, or a frame the reviewer plainly calls basic, is still held. Always report the score.
 
 ## How posts are made now
 
@@ -19,7 +21,7 @@ Every post is designed from scratch, as its own HTML and CSS, with `studio.py`. 
 5. `python3 studio.py render posts/<id>` (or `reel`), then **open `.sheet.jpg` and every slide and look at them.**
 6. Critique against the checklist below. Fix. Render again. Expect at least two rounds.
 7. `python3 studio.py check posts/<id>` must pass. It fails on small text, clipped text, text outside the safe area, too many words, and repeats of recent posts.
-8. **Second opinion.** Give a fresh subagent only the rendered images and this question: "Would Apple, Google or Nvidia post this? Score 1 to 10 for craft, and name the weakest frame and why." Under 8, or any frame called basic, generic or template-like: redesign that frame. Two failed rounds: don't post.
+8. **Second opinion.** Give a fresh subagent only the rendered images and this question: "Would Apple, Google or Nvidia post this? Score 1 to 10 for craft, and name the weakest frame and why." **Pass mark: 7 or above** (Lee, 12 Nov 2026). Under 7, or a frame the reviewer plainly calls basic: redesign and ask again. Two failed rounds: don't post. When it passes, still fix the quick, specific faults the reviewer named before publishing, and put the score in the summary and in the log.
 9. Publish as before (`publish.yml`), then `python3 studio.py log posts/<id>` and commit `design-log.json`.
 
 `render.py`, `reel.py`, the looks and the `mockup` slide type are retired. Do not use them for new posts.
@@ -89,6 +91,33 @@ Techniques that lift the craft: film grain (`<!--grain:0.06-->`), layered shadow
 ## Stories
 
 1080×1920, 3 to 4 frames, top 250px and bottom 320px kept clear. Same standard, same no-repeat rules. A Story can be simpler than a feed post, but never plainer: one bold frame beats four dull ones.
+
+## What the reviews taught us (12 Nov 2026)
+
+One carousel (the colour-contrast post) went through eleven independent reviews in one morning. Read this before designing: it is what the reviewers actually reward and punish.
+
+**How the reviewer behaves**
+- Scores sat between 6.5 and 7.5 every time. Two reviewers can differ by a point or more on the same frame (the eye-chart frame got 8 three times, then 6 twice). Don't rebuild a frame because one reviewer disliked it; fix what is objective, and what two reviewers agree on.
+- Every reviewer says the same thing about the ceiling: type-led explainers read as "a good design studio" (Figma, Linear, Stripe, Google Design), and Apple and Nvidia post product and photography. An 8 needs a real product render or photograph, or a typographic idea with no loose ends at all.
+
+**What scored well**
+- Frames where the design does the thing it talks about (faint words measured as faint; the answer set in the same words at full strength).
+- One idea, one hero, and a callback between the first frame and the last.
+- Fewer frames. Three strong frames beat five with a weak one. Cut the weakest frame; don't patch it.
+
+**What scored badly, every time**
+- Devices drawn in CSS (a phone scored 5.5: "a real render or no device at all").
+- Infographic furniture: waffle grids, "Aa" scales, before and after sliders, inspector cards with many parts, three pills in a row.
+- A frame that states a fact and shows nothing. A gradient on hero type.
+- A frame on a different grid from its neighbours.
+
+**The craft list that came up in every review**
+- Measure, don't eyeball: `python3 tools/ink.py posts/<id>/slide-01.jpg` prints where the ink is, so gaps and padding can be made equal on purpose.
+- Nothing within about 40px of anything else unless it is meant to touch. Padding inside a box equal on all four sides (measured from the ink, not the CSS box). The gap above a block and the gap below it equal, or clearly different.
+- Letter-spacing no tighter than -.03em on serif display type; italics close to 0. Check for letters that touch at large sizes.
+- One tag or pill component, one footer (a bold line, a muted line, the logo on the right) and one margin across every frame of a post. Small labels at 32px or more.
+- Curly apostrophes, no orphan words, no footer that repeats the headline.
+- Read the frames in order as a stranger would: the last frame's line must follow from the first.
 
 ## The checklist (step 6)
 
