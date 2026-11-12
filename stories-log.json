@@ -563,5 +563,58 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "New-standard cobalt cover (globe mark) for the Domains highlight; to be added to the highlight and set as its cover by the weekly Highlights run."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "17:47",
+  "published_at": "18:12 UK",
+  "id": "stories/2026-11-12-1747-spot-the-gap",
+  "type": "this or that",
+  "category": "Hosting",
+  "topic": "99% uptime or 99.9%: a year drawn as one lit ring. At 99% the ring has a 1% gap (spot the gap); close up, that gap is 3.65 days a year with your site offline; one more nine (99.9%) cuts it to under nine hours a year. Ask your host which is yours",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "tilted-3d-year-ring-with-one-percent-gap-under-giant-number",
+   "macro-of-the-gap-as-two-lit-blocks-with-the-days-threaded-through",
+   "horizon-arc-with-hairline-cut-over-number-with-lit-decimal"
+  ],
+  "palette": [
+   "#101215",
+   "#A9DDFF",
+   "#F2F5F7"
+  ],
+  "display_font": "Geist",
+  "design_review_score": 7,
+  "design_review_note": "Two independent reviews. Round 1 (flat ring, flat wedge frame): 7.5/10 but frame 2 was called 'leaning basic', so frames 1 and 2 were redesigned (ring shown lying in 3D with thickness; frame 2 rebuilt as a close-up of the lit ring with the figure set through the gap). Round 2: 7/10, no frame called basic; frame 2 named weakest (the close-up is hard to read without the ring around it, and the right half is plain). The quick faults it named were fixed before publishing: ring made to bleed off both sides, 'uptime' aligned to the right margin, the number sizes matched on frames 1 and 3, '3.65 days' set as one figure, the orphan in the frame 2 headline removed ('There it is.'), more room round the decimal point, shorter frame 3 caption, the blue full stop put back on the frame 2 logo, softer haze in the gap. The published version was not re-scored.",
+  "source": "https://en.wikipedia.org/wiki/High_availability",
+  "sources": [
+   "https://en.wikipedia.org/wiki/High_availability",
+   "https://krystal.io/blog/post/understanding-bandwidth-storage-and-other-tech-specs-without-being-an-expert"
+  ],
+  "fact_check": "self-check pass against sources.md (arithmetic: 1% of 365 days = 3.65 days; 0.1% of 8,760 hours = 8.76 hours)",
+  "frames": 3,
+  "media_ids": [
+   "18128647120677317",
+   "18117571574466561",
+   "18011080221002558"
+  ],
+  "published_via": "github-actions",
+  "status": "published"
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "18:14",
+  "id": "stories/2026-11-12-highlight-cover-hosting",
+  "type": "highlight-cover",
+  "category": "Hosting",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "17915798889539265"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cobalt cover (two stacked servers) for the Hosting highlight; to be added to the highlight and set as its cover by the weekly Highlights run."
  }
 ]
