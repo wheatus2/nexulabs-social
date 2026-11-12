@@ -1,0 +1,16 @@
+{
+ "format": "story",
+ "composition": [
+  "spoken-address-wall-of-type",
+  "single-giant-numeral-inside-the-margins",
+  "justified-two-word-answer-over-one-line-spoken-address"
+ ],
+ "background": [
+  "#0F3D2E",
+  "#C9B8FF",
+  "#F3ECDD"
+ ],
+ "display_font": "Brico",
+ "accent": "#C9B8FF",
+ "concept": "A web address set the way it sounds down the phone: six lines of spoken words with every hyphen lit in lilac, one giant 4 nobody can hear, then the fix said once on a single line. Deep green, lilac and cream."
+}
