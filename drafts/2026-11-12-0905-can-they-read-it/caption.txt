@@ -6,8 +6,6 @@ The web standard, WCAG, asks for a contrast of at least 4.5 to 1 between body te
 
 Take your phone outside and open your website. If the words wash out in daylight, make them darker. WebAIM's contrast checker is free and gives you the ratio for any two colours.
 
-Hartwell Kitchens is made up for the example.
-
 Send this to whoever looks after your website. Follow for one website fix a day.
 
 #webdesignuk #websitedesign #northeastbusiness #northeastengland

@@ -1,0 +1,18 @@
+{
+ "format": "feed",
+ "composition": [
+  "giant-serif-question-with-selection-box-and-inspector",
+  "eye-test-chart-fading-rows",
+  "giant-ratio-over-serif-statement",
+  "full-contrast-answer-filling-selection-box"
+ ],
+ "background": [
+  "#2B0F26",
+  "#F6C8D8",
+  "#2B0F26",
+  "#FBEEF2"
+ ],
+ "display_font": "Instrument",
+ "accent": "#FF4D8D",
+ "concept": "Contrast as the picture: plum and blush. The cover asks the question in words too faint to read and measures them; an eye-test chart fades away; the last frame answers in the same words at full strength."
+}

@@ -709,7 +709,42 @@
    6.5,
    7
   ],
-  "draft": "drafts/2026-11-12-0833-can-they-read-it",
-  "note": "Topic and design are not used up: nothing was posted, and it is not in design-log.json."
+  "draft": "drafts/2026-11-12-0905-can-they-read-it",
+  "note": "Topic and design are not used up: nothing was posted, and it is not in design-log.json. The draft was reworked by the 09:00 run and now lives in drafts/2026-11-12-0905-can-they-read-it."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "08:33 (second firing, about 09:00)",
+  "time_slot": "morning",
+  "id": "2026-11-12-0905-can-they-read-it",
+  "format": "carousel",
+  "category": "Web design",
+  "angle": "one-minute self-check",
+  "topic": "Text too faint to read: colour contrast (WebAIM Million 2026: 83.9% of top million home pages have low-contrast text; WCAG 4.5:1 for body text). Reworked version of the 08:33 draft, cut to 4 frames.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "giant-serif-question-with-selection-box-and-inspector",
+   "eye-test-chart-fading-rows",
+   "giant-ratio-over-serif-statement",
+   "full-contrast-answer-filling-selection-box"
+  ],
+  "palette": [
+   "#2B0F26",
+   "#F6C8D8",
+   "#FBEEF2",
+   "#FF4D8D"
+  ],
+  "display_font": "Instrument",
+  "slides": 4,
+  "status": "not published",
+  "reason": "Held at the design review again: the independent second opinion scored the reworked carousel 7 then 7.5 out of 10 (8 needed). Frame 3 was called a stock stat-slide layout. Two failed rounds in this run, so nothing was published (DESIGN.md).",
+  "fact_check": "sources re-opened and matched; independent fact-check not run because the design review failed first",
+  "design_review": [
+   7,
+   7.5
+  ],
+  "draft": "drafts/2026-11-12-0905-can-they-read-it",
+  "note": "Second scheduled firing for the same morning slot. No news desk scan in this run (the 08:33 run scanned 25 minutes earlier and found nothing new). Not in design-log.json; topic, palette and typeface are not used up."
  }
 ]
