@@ -265,3 +265,24 @@ Sources
 2. https://sunderlandbid.co.uk/events/ (read 12 Nov 2026)
 3. https://www.luminik.io/events/north-east-expo.md (read 12 Nov 2026)
 4. https://growthhub.northeast-ca.gov.uk/events/chamber-exchange-sunderland ; https://growthhub.northeast-ca.gov.uk/events/sunderland-networking-by-fsb-and-network-notwork ; https://www.eventbrite.co.uk/e/business-networking-sunderland-hollymere-with-ipc-tickets-1808583545069 ; https://mysunderland.co.uk/article/26954/New-Monthly-Networking-Group-Launching-in-Sunderland (all read 12 Nov 2026)
+
+## 12 Nov 2026 (evening, 21:31 run): what comparable studios post
+
+Rotation: 3 of 5 (next evening: Instagram's own guidance on reach, Reels and search; check for anything new from 2026).
+
+**What could be seen.** Instagram still can't be read from the cloud, so no studio's actual posts were seen. Two guides were read in full and one more North East peer was confirmed.
+- New peer: **@cargocreative** (Cargo Creative, Newcastle; brand, UI/UX, web development, SEO, social). Handle linked from its own site. A peer to watch, not one for Lee's comment list. [3]
+- SocialPilot's design-agency guide (modified Jul 2026) names the formats agencies lean on: before-and-after, Reels and carousels, behind the scenes, design tips, client case studies. It claims before-and-after gets "2-3x more engagement than static visuals" from "our data", with no method shown. Treat as a claim. [1]
+- A dev.to piece lists carousel formats said to get saved (checklist, myth vs reality, mistake list, before/after, comparison, step by step). None of its figures are sourced and it sells templates. Ideas only. [2]
+
+**For the morning brief (ideas, never copies)**
+- **Before and after on a North East business's real situation** is the format both sources lead with and the one we have not tried. Only with permission or our own work: a redesigned first screen, a messy enquiry inbox turned into one pipeline. A mock "typical salon site" redesign is fine if it is labelled as an example and is original work (Instagram's originality rule: no screenshots of other people's sites).
+- **Mistake lists and checklists** fit our "check this on your phone" Reels and are the save-worthy version of them: "5 things to check on your website before Christmas" as a carousel.
+- Still the number to watch: sends. 0 shares across every post so far.
+
+**Not found:** any data on which agency posts earn follows. Still open; the Chrome pass could look at @cargocreative, @urbanriver and @unionroom's most-liked recent posts if Lee wants.
+
+Sources
+1. https://www.socialpilot.co/agency-success-guide/social-media-strategy-for-design-agency (read 12 Nov 2026)
+2. https://dev.to/wedgemethoddev/instagram-carousel-ideas-that-actually-get-saves-in-2026-5a97 (read 12 Nov 2026)
+3. https://cargocreative.co.uk/ (read 12 Nov 2026)
