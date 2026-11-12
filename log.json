@@ -675,5 +675,41 @@
   "facebook_post_id": "1484176674771345_122102645367544005",
   "published_via": "github-actions",
   "note": "First post at the new design standard (Lee, 11 Nov). Made in the main session, not by the scheduled run."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "08:33",
+  "time_slot": "morning",
+  "id": "2026-11-12-0833-can-they-read-it",
+  "format": "carousel",
+  "category": "Web design",
+  "angle": "one-minute self-check",
+  "topic": "Text too faint to read: colour contrast (WebAIM Million 2026: 83.9% of top million home pages have low-contrast text; WCAG 4.5:1 for body text), take your phone outside and check",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "giant-serif-question-with-selection-box-and-inspector",
+   "hundred-page-wall-under-numeral",
+   "type-specimen-scale-under-giant-ratio",
+   "phone-in-hard-sunlight-with-cast-shadow",
+   "split-site-card-with-drag-handle"
+  ],
+  "palette": [
+   "#2B0F26",
+   "#F6C8D8",
+   "#FBEEF2",
+   "#FF4D8D"
+  ],
+  "display_font": "Instrument",
+  "slides": 5,
+  "status": "not published",
+  "reason": "Held at the design review: the independent second opinion scored it 6.5 then 7 out of 10 (8 needed), and called frames 2 and 4 generic. Two failed rounds, so the slot was left empty (DESIGN.md).",
+  "fact_check": "pass",
+  "design_review": [
+   6.5,
+   7
+  ],
+  "draft": "drafts/2026-11-12-0833-can-they-read-it",
+  "note": "Topic and design are not used up: nothing was posted, and it is not in design-log.json."
  }
 ]

@@ -294,6 +294,13 @@
       "headline": "11 Nov 19:33 scan: ten searches run (Google Search Central, Search Engine Roundtable/Google Business Profile, ICO, NCSC, Meta/WhatsApp Business/Instagram, OpenAI Businesses in ChatGPT, UK tech press, WordPress/Shopify/Wix/Squarespace). Pages opened after searching first: Search Engine Roundtable daily recap for 11 Nov, Search Engine Roundtable on the ChatGPT Business Hub, IT Brief UK, WABetaInfo. Could not open: openai.com announcement and help.openai.com article (client errors). No new story passed. No post was made by this run: the 19:33 slot had already been filled by 2026-11-11-1933-enquiry-in-nothing-lost, published from a chat session one minute earlier.",
       "status": "rejected",
       "reason": "Scan note, not a story. Other results: Search Engine Roundtable's 11 Nov recap lists the November core update (already used), the ChatGPT Business Hub (held), Gemini 4 Carbon in Google AI Mode (subscribers only, does not change how businesses are listed), Yahoo Scout out of beta (not relevant to UK business websites), Google Ads and Merchant Center help changes (ads only), and an unconfirmed observation that Google Maps may auto-generate AI captions on Business Profile photos (no Google announcement). WABetaInfo's Meta Business Agent article is dated 5 June 2026 (outside the window; UK not named). ICO results: the 'changes from 10 AI developers' release is dated October 2026 and concerns AI developers, and the cookie guidance is from earlier in 2026. NCSC results were Annual Review coverage (already used) and the critical-infrastructure AI ransomware warning (3 Nov, not relevant to most businesses). No WordPress, Shopify, Wix or Squarespace announcement in the last 7 days surfaced. Follow-up still open: a short 'it's finished, now check' post when Google's dashboard shows the core update rollout has completed."
+    },
+    {
+      "id": "2026-11-12-0833-scan",
+      "found": "2026-11-12",
+      "headline": "12 Nov 08:33 scan: five news searches run (Google Search Central, ICO cookies, Search Engine Roundtable daily recaps, Meta/WhatsApp Business/Instagram, NCSC). Results only repeated stories already used or rejected: the November 2026 core update (used 11 Nov), the NCSC Annual Review (used 9 Nov), the ICO storage and access guidance (older), Meta Business Agent (June 2026). No new story passed, so the run made an evergreen web design carousel (colour contrast). That carousel was not published: see drafts/2026-11-12-0833-can-they-read-it/NOT-PUBLISHED.md.",
+      "status": "rejected",
+      "reason": "Scan note, not a story. No news source pages were opened this run because no new candidate appeared in the results."
     }
   ]
 }

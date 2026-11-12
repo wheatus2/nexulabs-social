@@ -1,0 +1,25 @@
+<style>
+.frame{background:#F6C8D8}
+.n{position:absolute;left:46px;top:40px;font:400 480px/.86 Instrument;letter-spacing:-.05em;color:#2B0F26}
+.n small{font-size:.5em;letter-spacing:-.02em;position:relative;top:-.5em;margin-left:.04em}
+.say{position:absolute;right:58px;top:236px;width:236px;font:500 38px/1.12 Geist;color:#2B0F26;letter-spacing:-.02em}
+.wall{position:absolute;left:58px;right:58px;top:498px;display:grid;grid-template-columns:repeat(10,1fr);gap:10px}
+.pg{height:60px;border-radius:8px;background:#FBEEF2;padding:10px 10px 0;position:relative;box-shadow:0 1px 0 rgba(43,15,38,.08)}
+.pg i{display:block;height:6px;border-radius:3px;background:#F1DDE4;margin-bottom:6px;width:78%}
+.pg i+i{width:52%}
+.pg u{display:block;width:28px;height:11px;border-radius:6px;background:#F1DDE4;margin-top:8px}
+.pg.ok{background:#2B0F26;box-shadow:0 8px 16px rgba(43,15,38,.28)}
+.pg.ok i{background:#FBEEF2}.pg.ok u{background:#FF4D8D}
+.src{position:absolute;left:58px;right:58px;bottom:60px;display:flex;justify-content:space-between;font:500 28px/1 Geist;color:#2B0F26}
+.src span:last-child{color:#624A5C}
+</style>
+<div class="n" data-bleed>83.9<small>%</small></div>
+<p class="say">of home pages have low-contrast text.</p>
+<div class="wall" data-ui id="w"></div>
+<div class="src"><span>WebAIM Million, February 2026</span><span>Top million home pages worldwide</span></div>
+<script>
+const ok=new Set([3,17,22,29,36,41,48,54,60,67,73,78,82,89,91,96]);let h='';
+for(let k=0;k<100;k++)h+=`<div class="pg${ok.has(k)?' ok':''}"><i></i><i></i><u></u></div>`;
+document.getElementById('w').innerHTML=h;
+</script>
+<!--grain:0.04-->

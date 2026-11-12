@@ -1,0 +1,33 @@
+<style>
+.frame{background:#FBEEF2}
+.n{position:absolute;left:50px;top:44px;font:400 750px/.86 Instrument;letter-spacing:-.055em;color:#2B0F26;white-space:nowrap}
+.n small{font-size:.8em;position:relative;top:-.06em;margin:0 .02em 0 .05em;color:#FF4D8D}
+.n u{text-decoration:none;margin:0 .012em 0 .022em}
+.say{position:absolute;left:58px;top:692px;font:500 46px/1.14 Geist;color:#2B0F26;letter-spacing:-.02em}
+.sp{position:absolute;left:58px;right:58px;top:810px;display:grid;grid-template-columns:repeat(6,1fr);column-gap:0}
+.sp div{font:400 150px/1 Instrument;letter-spacing:-.04em;text-align:center}
+.sp div:nth-child(-n+3){padding-right:22px}.sp div:nth-child(n+4){padding-left:22px}
+.tk{position:absolute;left:58px;right:58px;top:1012px;display:grid;grid-template-columns:repeat(6,1fr)}
+.tk div{font:500 32px/1 Geist;color:#2B0F26;text-align:center;font-variant-numeric:tabular-nums}
+.tk div:nth-child(-n+3){padding-right:22px;color:#7E6877}.tk div:nth-child(n+4){padding-left:22px}
+.br{position:absolute;top:986px;height:5px;border-radius:3px}
+.b1{left:58px;width:460px;background:#D2C3CA}
+.b2{left:562px;width:460px;background:#FF4D8D}
+.lb{position:absolute;top:1090px;font:600 32px/1 Geist}
+.l1{left:58px;width:460px;text-align:center;color:#7E6877;font-weight:500;padding-top:17px}
+.l2{left:562px;width:460px;display:flex;justify-content:center}
+.l2 span{background:#FF4D8D;color:#2B0F26;padding:17px 26px 18px;border-radius:40px}
+.src{position:absolute;left:58px;right:58px;bottom:60px;display:flex;justify-content:space-between;align-items:baseline;font:500 30px/1.2 Geist;color:#2B0F26}
+.src span:last-child{color:#624A5C}
+</style>
+<div class="n" data-bleed>4<u>.</u>5<small>:</small>1</div>
+<p class="say">The minimum contrast for body text.</p>
+<div class="sp" data-ui>
+  <div style="color:#D2C3CA">Aa</div><div style="color:#B9A8B2">Aa</div><div style="color:#9A8692">Aa</div>
+  <div style="color:#7E6877">Aa</div><div style="color:#624A5C">Aa</div><div style="color:#2B0F26">Aa</div>
+</div>
+<div class="br b1"></div><div class="br b2"></div>
+<div class="tk"><div>1.5</div><div>2</div><div>3</div><div>4.5</div><div>7</div><div>15.5</div></div>
+<div class="lb l1">Too faint</div><div class="lb l2"><span>Passes</span></div>
+<div class="src"><span>Big headings can go as low as 3:1.</span><span>W3C, WCAG 2.2</span></div>
+<!--grain:0.04-->
