@@ -515,5 +515,53 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "New-standard cover, set on the highlight the same evening."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "11:47",
+  "published_at": "12:01 UK",
+  "id": "stories/2026-11-12-1147-say-it-out-loud",
+  "type": "quick tip",
+  "category": "Domain names",
+  "topic": "Say your web address out loud: a made-up address with hyphens and a number (tyne-taps-4-u.co.uk) read down the phone takes six lines; four, for and 4 sound the same; the fix is a name you can say once (tynetaps dot co dot uk), no hyphens, no numbers",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "spoken-address-wall-of-type",
+   "single-giant-numeral-inside-the-margins",
+   "justified-two-word-answer-over-one-line-spoken-address"
+  ],
+  "palette": [
+   "#0F3D2E",
+   "#C9B8FF",
+   "#F3ECDD"
+  ],
+  "display_font": "Brico",
+  "design_review_score": 7,
+  "design_review_note": "One independent review, 7/10, no frame called basic (frame 3 named weakest). The faults it named were fixed after the review and before publishing: looser tracking and word spacing, the three 'hyphen' words aligned in a column, frame 3 reworked to one hero with the address on a single line and even spacing, shorter caption on frame 2, stronger caption contrast. The published version was not re-scored.",
+  "source": "https://theukdomain.uk/get-online/how-to-choose-a-domain-name/",
+  "frames": 3,
+  "media_ids": [
+   "17934968568161355",
+   "18086312465336984",
+   "17893571808685454"
+  ],
+  "published_via": "github-actions",
+  "status": "published"
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "12:03",
+  "id": "stories/2026-11-12-highlight-cover-domains",
+  "type": "highlight-cover",
+  "category": "Domain names",
+  "renderer": "studio",
+  "frames": 1,
+  "media_ids": [
+   "18085400864383012"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "note": "New-standard cobalt cover (globe mark) for the Domains highlight; to be added to the highlight and set as its cover by the weekly Highlights run."
  }
 ]
