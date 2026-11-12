@@ -53,11 +53,13 @@
   "name": "North East Chamber of Commerce",
   "what": "The region's chamber of commerce",
   "why": "Member firms across the North East follow it; its event and member-news posts are where local owners comment.",
-  "status": "check_bio_first",
-  "evidence": "Instagram search result title, 11 Nov 2026. The 'uk' handle suggests the right chamber, but a second account (@northeastchamber) also appeared and may be a different region.",
+  "status": "local",
+  "evidence": "Linked from the footer of necc.co.uk (read 12 Nov 2026)",
   "recent_post_seen": false,
   "found": "2026-11-11",
-  "suggested": []
+  "suggested": [
+   "2026-11-12"
+  ]
  },
  {
   "handle": "@durhambid",
@@ -85,7 +87,9 @@
   "evidence": "Instagram search result title, 11 Nov 2026; northern-insight.co.uk covers Sunderland business",
   "recent_post_seen": false,
   "found": "2026-11-11",
-  "suggested": []
+  "suggested": [
+   "2026-11-12"
+  ]
  },
  {
   "handle": "@bipcnewcastle",
@@ -119,13 +123,15 @@
   "handle": "@flowercafesunderland",
   "url": "https://www.instagram.com/flowercafesunderland/",
   "name": "Flower Cafe Sunderland",
-  "what": "Café in Sunderland",
+  "what": "Café in Keel Square, Sunderland (beneath the Holiday Inn); run by Sayturk Group",
   "why": "Local independent with an engaged local following.",
   "status": "local",
   "evidence": "Instagram search result title, 11 Nov 2026",
   "recent_post_seen": false,
   "found": "2026-11-11",
-  "suggested": []
+  "suggested": [
+   "2026-11-12"
+  ]
  },
  {
   "handle": "@prego_sunderland",
@@ -137,7 +143,9 @@
   "evidence": "Instagram search result title, 11 Nov 2026",
   "recent_post_seen": false,
   "found": "2026-11-11",
-  "suggested": []
+  "suggested": [
+   "2026-11-12"
+  ]
  },
  {
   "handle": "@whitesmarketsunderland",
@@ -149,7 +157,9 @@
   "evidence": "Instagram search result title, 11 Nov 2026",
   "recent_post_seen": false,
   "found": "2026-11-11",
-  "suggested": []
+  "suggested": [
+   "2026-11-12"
+  ]
  },
  {
   "handle": "@durhammarkets",
@@ -270,5 +280,19 @@
   "recent_post_seen": false,
   "found": "2026-11-11",
   "suggested": []
+ },
+ {
+  "handle": "@sunderlandexperience",
+  "url": "https://www.instagram.com/sunderlandexperience/",
+  "name": "Sunderland BID",
+  "what": "Sunderland city centre business improvement district",
+  "why": "Speaks to every city centre business at once; its market and event posts are where local owners and their customers comment.",
+  "status": "local",
+  "evidence": "Linked in the header and footer of sunderlandbid.co.uk (read 12 Nov 2026)",
+  "recent_post_seen": false,
+  "found": "2026-11-12",
+  "suggested": [
+   "2026-11-12"
+  ]
  }
 ]

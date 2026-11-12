@@ -145,3 +145,66 @@ Sources
 4. Instagram, "Original Content Guidelines" (undated): https://creators.instagram.com/original-content-guidelines/
 5. Adam Mosseri, "Breaking Down How Instagram Search Works", 25 Aug 2021: https://about.instagram.com/blog/announcements/break-down-how-instagram-search-works/
 6. Instagram Help, "Recommendation eligibility on Instagram" (opened, no text returned): https://help.instagram.com/653964212890722
+
+## 11 Nov 2026 (evening, fifth run): collaboration and feature opportunities
+
+Rotation: 5 of 5 (next evening: back to 1, hashtags and search phrases; re-check the unverified local tags). Written by the 22:32 scheduled run, which could not push; moved here from the project by the 12 Nov morning run without re-checking its sources.
+
+**What was read.** Nine pages opened and read [1] to [9]; one returned a "page not found" [10]. Two items come from search result titles only and are marked.
+
+**Awards (free reach when shortlisted: organisers and other entrants tag and reshare)**
+- **North East Business Awards.** Free to enter ("There is no charge to enter"). Open to any business based in the North East. Sunderland sits in the "Durham, Sunderland & South Tyneside" heat. Has a **Start-up Award** (2026 rule: "Started trading within the past two years (from January 2024)") and a category for firms of 50 employees or fewer. 2026 entries are closed; 2026 launched 25 Mar and closed 22 Jun. No 2027 dates published yet. **Diary note: look again in March 2027.** Whether Nexulabs fits the Start-up Award depends on when it started trading, which is not known. [1][2]
+- **Entrepreneurs' Forum awards.** "Open to the whole North East business community." The "Ones to Watch Index" needs a North East registered business, a significant financial stake and turnover under £10m. Cost and entry deadline are not on the pages. This year's gala is Thu 19 Nov 2026 (ticketed; not proposed, as it costs money). Worth a look when 2027 opens. [3]
+- **North East Chamber Business Awards.** Members only ("Only fully paid members ... can enter"), so it needs a paid Chamber membership. Ruled out under the no-spend rule. [4]
+
+**Local press and features**
+- **Bdaily** (North East business news, sister brand of North East Times) says businesses can contribute "through our self-publishing platform". The page does not say whether that is free. Not yet a recommendation: someone needs to see the sign-up page first. [5]
+- **Northern Insight** (business magazine, already in `accounts.json`): still not checked for a free route.
+- RTC North's "Northern Spotlights" page is gone (404). Dropped. [10]
+
+**Membership schemes (all cost money, so parked under the no-spend rule; listed so nobody re-researches them)**
+- **Sunderland BID affiliate scheme:** £250 + VAT a year inside the BID boundary, £500 + VAT outside. Benefits include "Opportunity to promote your business via Sunderland BIDs channels including social media, newsletters and digital screens". The one to revisit first if Lee ever opens a budget. [6]
+- **Sunderland Business Partnership:** Platinum, Gold or Silver membership, prices not shown. It says businesses can "try a taster session before signing up" and that it meets most months. Cost of the taster is not stated, so ask before going. [7]
+
+**Podcasts**
+- **The North East Edge** (Newcastle University Business School): a five-episode series with very senior regional guests. Not a realistic guest slot. [8]
+- Other North East business podcasts appeared in search titles only (PRsonal; Northumbria University's series on local firms). Neither was opened. Open question for a later run.
+
+**Free and in our own hands (the strongest findings)**
+- **Google Business Profile social links.** Google has a help page titled "Manage your social media links", so a profile can carry an Instagram link (search result title only; page not opened). For the Monday review, alongside the link on nexulabs.co.uk and in email signatures. [9]
+- **Third-party award entries.** The North East Business Awards accept entries "submitted by the business directly or by a third party (agent, client etc)". In 2027 Nexulabs could offer to write a client's entry.
+- **North East Growth Hub** has no self-listing directory on the pages read. [4]
+
+**What I could not check**
+- Any 2027 award dates (none published). Whether Bdaily's self-publishing is free. Guest policies of local podcasts. Whether Nexulabs has a Google Business Profile, and when it started trading.
+
+**For the morning brief and list**
+- Nothing here changes this week's content. The live local hook is still Entrepreneurship Week (to 20 Nov).
+- One question worth asking Lee once: when did Nexulabs start trading, and is there a Google Business Profile?
+
+Sources
+1. https://nebusinessawards.co.uk/northeastbusinessawards2026/en/page/how-to-enter (plus its FAQ and key dates pages)
+2. https://www.nebusinessawards.co.uk/northeastbusinessawards2026/en/page/categories
+3. https://entrepreneursforum.net/awards/awards-criteria/
+4. https://www.necc.co.uk/key-info-and-dates (2025 page) and https://growthhub.northeast-ca.gov.uk/events/north-east-chamber-of-commerce-business-awards (2024 listing)
+5. https://bdaily.co.uk/editorial-values
+6. https://sunderlandbid.co.uk/about-us/become-an-affiliate-member/ (page modified 4 Nov 2026)
+7. https://sunderlandbusinesspartnership.co.uk/?p=2935
+8. https://podcasts.ncl.ac.uk/fromnewcastle/introducing-the-north-east-edge/ (18 Jun 2026)
+9. Google Business Profile Help, "Manage your social media links" (title only): https://support.google.com/business/answer/13580646
+10. https://rtcnorth.co.uk/northern-spotlights/ (404)
+
+## 12 Nov 2026 (morning): handles confirmed for today's list
+
+- **@sunderlandexperience** is Sunderland BID's Instagram: linked in the header and footer of sunderlandbid.co.uk. Its news block has a 9 Nov item on nominations for a national "UK's Favourite Local Business" vote, and its events sidebar lists an Art, Craft and Graze Market on 14 Nov 2026 (the 14 Nov page itself was not opened; the October one was at Sunderland Train Station, 9am to 3pm, free). [1][2]
+- **@nechamberuk** is the North East Chamber of Commerce: linked from the footer of necc.co.uk. Moved from `check_bio_first` to `local`. [3]
+- North East BIC and Sunderland Business Partnership: no Instagram link on the pages read (the Partnership links LinkedIn, X and Facebook only). Not added. [4]
+- Flower Cafe Sunderland is in Keel Square, beneath the Holiday Inn, looking onto Culture House; opened July 2025; run by Sayturk Group. [5]
+- Search results gave titles and links only this morning, so no account's recent posts were seen.
+
+Sources
+1. https://sunderlandbid.co.uk/our-bids/
+2. https://sunderlandbid.co.uk/events/art-craft-and-graze-market-11/
+3. https://www.necc.co.uk/about-us
+4. https://sunderlandbusinesspartnership.co.uk/members/the-north-east-business-and-innovation-centre/
+5. https://sunderlandbusinesspartnership.co.uk/flower-cafe-sunderland-ready-to-blossom/
