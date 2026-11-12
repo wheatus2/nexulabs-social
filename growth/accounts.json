@@ -473,5 +473,17 @@
     "status": "local",
     "evidence": "Music and performance venue, Sunderland SR1 3HA (Chrome, 12 Nov 2026)",
     "commented": "2026-11-12"
+  },
+  {
+    "handle": "@cargocreative",
+    "url": "https://www.instagram.com/cargocreative/",
+    "name": "Cargo Creative",
+    "what": "Creative design and digital agency (brand, UI/UX, web development, SEO, social), Newcastle",
+    "why": "A peer, not a prospect: watch what they post. Not for the comment list.",
+    "status": "local_peer",
+    "evidence": "Instagram linked from cargocreative.co.uk (read 12 Nov 2026, 21:31 run)",
+    "recent_post_seen": false,
+    "found": "2026-11-12",
+    "suggested": []
   }
 ]
