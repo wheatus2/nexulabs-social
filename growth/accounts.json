@@ -329,5 +329,40 @@
     "status": "local",
     "evidence": "North East mortgage broker (post says \"North East girl through and through\"; seen in Chrome 12 Nov 2026)",
     "commented": "2026-11-12"
+  },
+  {
+    "handle": "@beautybyashleigh_gelnails",
+    "name": "Beauty By Ashleigh",
+    "status": "prospect",
+    "evidence": "New nail tech at Pretty B, Sunderland; books by DM, no website seen (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@luxesocialco._",
+    "name": "Luxe Social Co",
+    "status": "partner",
+    "evidence": "Sunderland content creator shooting for local businesses; books by DM (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@mogi.cafe",
+    "name": "Mogi Cafe",
+    "status": "prospect",
+    "evidence": "Independent Sunderland cafe, now open Sundays (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@ircplumbingandheating",
+    "name": "IRC Plumbing and Heating",
+    "status": "prospect",
+    "evidence": "New domestic plumber, launched late Oct 2026; enquiries by call or WhatsApp only (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@mrtillys",
+    "name": "Mr Tillys Barbershop",
+    "status": "prospect",
+    "evidence": "Barbershop with a Sunderland shop, hired a full-time barber Nov 2026 (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
   }
 ]
