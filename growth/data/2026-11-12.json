@@ -1,17 +1,17 @@
 {
  "date": "2026-11-12",
- "fetched": "2026-11-12T07:14:01+00:00",
+ "fetched": "2026-11-12T18:04:01+00:00",
  "account": {
   "id": "17841471856846758",
-  "followers_count": 12,
-  "follows_count": 106,
-  "media_count": 14,
+  "followers_count": 15,
+  "follows_count": 108,
+  "media_count": 16,
   "username": "nexulabs_"
  },
  "last_7_days": {
-  "reach": 144,
-  "views": 454,
-  "profile_views": 33,
+  "reach": 146,
+  "views": 488,
+  "profile_views": 42,
   "website_clicks": 0,
   "accounts_engaged": 10,
   "total_interactions": 18,
@@ -22,6 +22,37 @@
   "profile_links_taps": 0
  },
  "posts": [
+  {
+   "media_id": "18149289439577494",
+   "type": "REELS",
+   "permalink": "https://www.instagram.com/reel/DfpWJ7eHMCM/",
+   "timestamp": "2026-11-12T15:10:54+0000",
+   "caption": "Branding check for North East businesses: count your fonts.\n\nLook at your website, your va",
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "views": 4,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "ig_reels_avg_watch_time": 18157
+  },
+  {
+   "media_id": "18111697958258848",
+   "type": "FEED",
+   "permalink": "https://www.instagram.com/p/Dfow1QSlGev/",
+   "timestamp": "2026-11-12T09:44:23+0000",
+   "caption": "Web design check for North East businesses: is the text on your website too faint to read?",
+   "likes": 0,
+   "comments": 0,
+   "reach": 1,
+   "views": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "follows": 0,
+   "profile_visits": 0
+  },
   {
    "media_id": "17882388864553401",
    "type": "FEED",
@@ -51,7 +82,7 @@
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
-   "ig_reels_avg_watch_time": 13116
+   "ig_reels_avg_watch_time": 11237
   },
   {
    "media_id": "18637990507041100",
