@@ -793,5 +793,55 @@
    "WebAIM Contrast Checker"
   ],
   "note": "Published on Lee's say-so in the chat (12 Nov): the independent reviews scored it 7 to 7.5 and the pass mark was 8. Lee approved it and lowered the pass mark to 7 from now on."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "14:33",
+  "time_slot": "afternoon",
+  "id": "2026-11-12-1433-count-your-fonts",
+  "format": "reel",
+  "category": "Logos and branding",
+  "angle": "one-minute self-check + how to get it right",
+  "content_type": "educational",
+  "topic": "Count your fonts: a business that uses a different typeface on its website, van, invoice and socials is harder to recognise as one business; pick one or two typefaces and use them everywhere (Adobe Express guidance; Apple's Human Interface Guidelines say to minimise the number of typefaces)",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "fourteen-letters-fourteen-typefaces-equal-cap-block",
+   "four-words-four-typefaces-each-filling-the-measure",
+   "giant-ampersand-shuffling-faces-under-two-line-headline",
+   "same-four-words-rolled-into-one-serif-over-rule-footer"
+  ],
+  "palette": [
+   "#D7192A",
+   "#F6EDDC",
+   "#190A0C"
+  ],
+  "display_font": "Fraun",
+  "text_font": "Geist",
+  "scenes": 4,
+  "seconds": 16.8,
+  "hooks_considered": [
+   "Count your fonts.",
+   "How many fonts does your business use?",
+   "One business. How many fonts?"
+  ],
+  "status": "published",
+  "media_id": "18149289439577494",
+  "permalink": "https://www.instagram.com/reel/DfpWJ7eHMCM/",
+  "facebook_post_id": "1174969298431632",
+  "published_via": "github-actions",
+  "published_at": "2026-11-12T15:11:04+00:00",
+  "fact_check": "pass",
+  "design_review": [
+   6.5,
+   7
+  ],
+  "sources": [
+   "Adobe Express UK: typography examples (one or two fonts, used consistently across all materials)",
+   "Apple Human Interface Guidelines: Typography (minimise the number of typefaces)"
+  ],
+  "news_check": "Four searches (Google Search Central, UK ICO/NCSC news, Search Engine Roundtable recaps, Meta/Instagram/WhatsApp Business). Nothing new passed the relevance test; scan note added to newsdesk.json.",
+  "note": "First Reel made with studio.py. Round 1 of the design review scored 6.5 and called the last scene basic, so scenes 1, 3 and 4 were redesigned (equal cap-height hook, ampersand set inside the margins, last scene justified in one face with a roll transition). Round 2 scored 7 with scene 3 named weakest; its quick faults were fixed before publishing (headline locked to the right margin, larger font label, louder question in scene 2, VAN spacing, simpler footer). studio.py check counts every scene's text unless hidden scenes are visibility:hidden, so this reel's CSS hides inactive scenes that way: copy that pattern for future studio Reels."
  }
 ]
