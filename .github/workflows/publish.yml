@@ -1,4 +1,5 @@
 name: Publish to Instagram and Facebook
+run-name: "${{ inputs.mode }}${{ inputs.folder != '' && format(': {0}', inputs.folder) || '' }}"
 
 # Started by the Claude scheduled runs (GitHub "run workflow"), or by hand from the Actions tab.
 # Talks to Meta's Graph API directly, so no Zapier tasks are used.
