@@ -1,9 +1,9 @@
 {
  "date": "2026-11-12",
- "fetched": "2026-11-12T04:33:47+00:00",
+ "fetched": "2026-11-12T07:14:01+00:00",
  "account": {
   "id": "17841471856846758",
-  "followers_count": 11,
+  "followers_count": 12,
   "follows_count": 106,
   "media_count": 14,
   "username": "nexulabs_"
@@ -11,7 +11,7 @@
  "last_7_days": {
   "reach": 144,
   "views": 454,
-  "profile_views": 32,
+  "profile_views": 33,
   "website_clicks": 0,
   "accounts_engaged": 10,
   "total_interactions": 18,
