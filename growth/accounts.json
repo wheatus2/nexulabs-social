@@ -364,5 +364,40 @@
     "status": "prospect",
     "evidence": "Barbershop with a Sunderland shop, hired a full-time barber Nov 2026 (Chrome, 12 Nov 2026)",
     "commented": "2026-11-12"
+  },
+  {
+    "handle": "@featherbedbooks",
+    "name": "Featherbed Books",
+    "status": "prospect",
+    "evidence": "Independent bookshop in Houghton-le-Spring (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@mufasa_gourmet_seaham",
+    "name": "Mufasa Gourmet",
+    "status": "prospect",
+    "evidence": "Restaurant in Seaham, birthday bookings (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@silva.and.rain",
+    "name": "Silva & Rain",
+    "status": "prospect",
+    "evidence": "New handmade art and gift shop in Chester-le-Street, opened Oct 2026 (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@paticake.patisserie",
+    "name": "PatiCake Patisserie",
+    "status": "prospect",
+    "evidence": "Cake stall at Brydge, Sunderland, Saturdays (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@hin00n",
+    "name": "hin00n",
+    "status": "prospect",
+    "evidence": "Home baker with stalls at Sunderland station and the Bridges market (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
   }
 ]
