@@ -111,6 +111,7 @@ One carousel (the colour-contrast post) went through eleven independent reviews 
 - Infographic furniture: waffle grids, "Aa" scales, before and after sliders, inspector cards with many parts, three pills in a row.
 - A frame that states a fact and shows nothing. A gradient on hero type.
 - A frame on a different grid from its neighbours.
+- A chat or text-message bubble as the hero (12 Nov evening, held): called basic by two reviewers running, first as a flat bubble on a dark frame ("a stock trope"), then rebuilt as a raised object in the post's own material ("a green rounded rectangle with text in it"). The same post's two switch frames were called strong. Show the message another way, or cut the frame.
 
 **The craft list that came up in every review**
 - Measure, don't eyeball: `python3 tools/ink.py posts/<id>/slide-01.jpg` prints where the ink is, so gaps and padding can be made equal on purpose.

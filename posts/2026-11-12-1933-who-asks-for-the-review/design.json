@@ -1,0 +1,16 @@
+{
+ "format": "feed",
+ "composition": [
+  "question-over-macro-off-switch-bleeding-off-the-right-edge",
+  "raised-sent-message-slab-with-time-and-ticks-on-stone",
+  "whole-switch-on-above-two-word-answer-at-poster-scale"
+ ],
+ "background": [
+  "#E8E4DB",
+  "#E8E4DB",
+  "#17C671"
+ ],
+ "display_font": "Arch",
+ "accent": "#17C671",
+ "concept": "One switch, seen off and on, in stone and one green. The cover is a grey world with the review-request switch off and a question nobody answers; the middle frame is the message it sends, a raised green slab stamped 16:02; the last frame floods green with the same switch on and answers the question in two words."
+}

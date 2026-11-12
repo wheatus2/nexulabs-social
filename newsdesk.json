@@ -308,6 +308,13 @@
       "headline": "12 Nov 14:33 scan: four news searches run (Google Search Central blog, UK ICO/NCSC news this week, Search Engine Roundtable daily recaps, Meta/Instagram/WhatsApp Business). Results repeated stories already used or rejected (November 2026 core update, NCSC Annual Review, Meta Business Agent from June 2026). New in the results: NCSC warnings on 11 Nov about AI-enabled attacks on critical national infrastructure, which is about large operators, not how a business runs its website or CRM. No new story passed, so the run made an evergreen branding Reel (count your fonts).",
       "status": "rejected",
       "reason": "Scan note, not a story. No news source pages were opened this run because no candidate passed the relevance test on the search results."
+    },
+    {
+      "id": "2026-11-12-1933-scan",
+      "found": "2026-11-12",
+      "headline": "12 Nov 19:33 scan: four news searches run (Google Search Central blog, UK ICO/NCSC/CMA news this week, Search Engine Roundtable daily recaps, Instagram/WhatsApp Business features). Results repeated stories already used or rejected (November 2026 core update, NCSC Annual Review and its AI warnings, Meta Business Agent). New in the results: a Search Central Live Zurich event post and an NCSC testing scheme for critical organisations, neither of which changes how a business runs its website or CRM. No new story passed, so the run made an evergreen AI and automation carousel (automatic review requests), which was then held at the design review.",
+      "status": "rejected",
+      "reason": "Scan note, not a story. No news source pages were opened this run because no candidate passed the relevance test on the search results."
     }
   ]
 }
