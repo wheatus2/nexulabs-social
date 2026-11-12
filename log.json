@@ -889,5 +889,50 @@
   ],
   "news_check": "Four news searches (Google Search Central blog, UK ICO/NCSC/CMA news this week, Search Engine Roundtable daily recaps, Instagram/WhatsApp Business). Nothing new passed the relevance test; scan note added to newsdesk.json.",
   "note": "Round 1: frame 2 was a flat green bubble on a dark frame (called a stock trope). It was rebuilt as a raised green slab on stone with the time inside; round 2 still called it basic. Frames 1 and 3 (the switch off and on) were the strong ones. A chat bubble as a hero has now failed twice: use something else."
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "19:33 (published 20:06, made in a chat with Lee)",
+  "time_slot": "evening",
+  "id": "2026-11-12-2000-who-rang-at-2pm",
+  "format": "single image",
+  "category": "CRM",
+  "angle": "one-minute self-check",
+  "content_type": "educational",
+  "topic": "Missed calls: the phone rang at 2pm while you were on a job and nobody wrote it down. Check the call log tonight, ring back the numbers you missed, and keep one list with a name, what they wanted and a time to ring back.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "studio-photo-of-a-phone-on-its-own-yellow-under-a-two-line-question-locked-to-the-same-margins"
+  ],
+  "palette": [
+   "#FED440",
+   "#15130A"
+  ],
+  "display_font": "Arch",
+  "text_font": "Arch",
+  "slides": 1,
+  "photo": "-haAxbjiHds",
+  "photo_credit": "Photo: Mike Meyers on Unsplash",
+  "hooks_considered": [
+   "Who rang at 2pm?",
+   "Missed call. Then what?",
+   "How many calls did you miss today?"
+  ],
+  "status": "published",
+  "media_id": "18651223120038347",
+  "permalink": "https://www.instagram.com/p/Dfp4D1HlAfj/",
+  "facebook_post_id": "1484176674771345_122103785631544005",
+  "published_via": "github-actions",
+  "published_at": "2026-11-12T20:06:48+00:00",
+  "fact_check": "pass (no outside facts)",
+  "design_review": [
+   6.5
+  ],
+  "approved_by": "Lee, in chat, 12 Nov 2026 (under the pass mark of 7; he chose to publish it himself)",
+  "sources": [
+   "No outside facts: our own advice"
+  ],
+  "note": "First photo-led post under the studio standard, made after Lee asked for a post with an image and said posts should be mixed up and include images sometimes (rule added to DESIGN.md). The reviewer scored the first version 6.5 and called the structure basic (headline over a stock photo). Its named faults were fixed before publishing: the phone company's logo and number on the dial card painted out, headline leading opened, small line darkened, gaps evened. A second photo design the same evening (a data centre corridor with 'Your website lives here.' set in perspective on the ceiling and floor) scored 5.5 and was dropped; that photo (s0XabTAKvak) was not used and stays in the library."
  }
 ]

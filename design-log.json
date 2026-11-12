@@ -119,5 +119,18 @@
   "display_font": "Geist",
   "accent": "#A9DDFF",
   "concept": "A year built as one lit ring, seen three ways. Lying in space at 99% uptime, with a 1% gap to find. Then right up against that gap, the ring now two glowing blocks with 3.65 days set through the break. Then from inside at 99.9%, a horizon with a hairline cut. Graphite and ice blue."
+ },
+ {
+  "id": "2026-11-12-2000-who-rang-at-2pm",
+  "format": "feed",
+  "composition": [
+   "studio-photo-of-a-phone-on-its-own-yellow-under-a-two-line-question-locked-to-the-same-margins"
+  ],
+  "background": [
+   "#FED440"
+  ],
+  "display_font": "Arch",
+  "accent": "#FED440",
+  "concept": "One photograph, one question. A yellow rotary phone on a yellow field, set inside the same margins as the question it can't answer: who rang at 2pm. Yolk yellow and ink, nothing else."
  }
 ]
