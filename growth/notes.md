@@ -208,3 +208,37 @@ Sources
 3. https://www.necc.co.uk/about-us
 4. https://sunderlandbusinesspartnership.co.uk/members/the-north-east-business-and-innovation-centre/
 5. https://sunderlandbusinesspartnership.co.uk/flower-cafe-sunderland-ready-to-blossom/
+
+## 12 Nov 2026 (evening): hashtags and search phrases, second pass
+
+Rotation: 1 of 5 again (next evening: local accounts, groups and events). Started at 18:03 UK.
+
+**The unverified local tags: still unverified**
+- Searches for `#northeastbusiness`, `#sunderlandbusiness`, `#durhambusiness` and `#newcastlebusiness` returned no tracker page for any of them (results were for North East India, Northeastern University or `#nebiz`). No size or activity figure exists outside Instagram itself. Keep using them as labels, but the only real check is Lee typing each into Instagram search (ten seconds each). Still worth one line in a morning list.
+- `#sunderlandcreatives` / `#wearesunderlandcreatives` / `#northeastcreatives`: no tracker page found either. Same status.
+
+**One dated tag worth planning for: `#SmallBizSatUK`, Saturday 5 December 2026**
+- The campaign's own site shows "5th December 2026" ("the first Saturday in December") and links its Instagram, @smallbizsatuk. The site itself names no hashtag. [1]
+- The North East Growth Hub's 2025 piece told North East firms to "use the hashtag #SmallBizSatUK" and to tag the Growth Hub (on X and LinkedIn, not Instagram). [2]
+- The campaign also runs a "Nation's Favourite Businesses" showcase ("featured across our social media and PR campaigns"); the homepage gives no way to apply, no fee and no deadline. Sunderland BID's 9 Nov news item on the "UK's Favourite Local Business" vote (morning note) may be the same scheme; not confirmed. [1]
+- Use for us: the campaign's name contains the ruled-out phrase, so we never write it out. The tag is a hashtag label, so a 5 Dec post can carry `#SmallBizSatUK` as one of its 3 to 5 tags, with a caption about shouting out a local client or neighbour (a post people want to share). The feed run should check the tag spelling is the only place that wording appears.
+
+**Search phrases: what rivals put in plain words**
+- Search results for "web design Sunderland" / "web design Newcastle" are full of agency landing pages with those exact titles (Urban River has a "web design sunderland" page; XLMG, Thrive and several others target "web design Newcastle"). [3] That is Google, not Instagram, but it confirms these are the phrases people type. On Instagram the competition for them is far thinner, which is a reason to keep them in the first caption line and alt text.
+
+**Old advice to ignore**
+- The Growth Hub's "Top tips for using Instagram for business" (published 4 Nov 2020) still says "up to 30 hashtags ... at least five". Out of date since the 5-tag cap (Dec 2025, earlier note). Don't follow it. [4]
+
+**Also found (for the local-accounts evening)**
+- Wear Creatives CIC runs a free monthly creative meetup in Sunderland (April 2025 one: The 3 Stories, Library Room, 6:30 to 9:30pm, free Eventbrite tickets). No Instagram handle on the page; current dates not checked. [5]
+
+**For the morning brief**
+- Hashtags unchanged this week. Add `#SmallBizSatUK` to the brief from about 30 Nov for a 5 Dec post.
+- Morning list: one line asking Lee to type `#northeastbusiness` and `#sunderlandbusiness` into Instagram search and say the post counts.
+
+Sources
+1. https://smallbusinesssaturdayuk.com/ (read 12 Nov 2026)
+2. https://growthhub.northeast-ca.gov.uk/insights/leadership/small-business-saturday-shout-about-your-favourite-small-businesses-on-saturday-06-december (5 Dec 2025)
+3. Search results, 12 Nov 2026, incl. https://www.urbanriver.com/web-design-sunderland and https://xlmg.co.uk/web-design-newcastle (titles only)
+4. https://growthhub.northeast-ca.gov.uk/insights/digital-technology/top-tips-using-instagram-business (4 Nov 2020)
+5. https://mysunderland.co.uk/article/25963/Wear-Creatives-April-Creative-Hub-Meetup

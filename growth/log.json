@@ -66,15 +66,15 @@
  },
  {
   "date": "2026-11-12",
-  "updated": "07:14 UK (scheduled morning run): numbers re-read. Brief and list from the 03:31 run kept; Prego removed from the list (closed).",
-  "followers": 12,
-  "following": 106,
-  "change_since_yesterday": 4,
+  "updated": "18:04 UK (evening run, started early at 18:03): numbers re-read. Morning figures were from 07:14.",
+  "followers": 15,
+  "following": 108,
+  "change_since_yesterday": 7,
   "change_since_7_days_ago": null,
-  "change_note": "8 on 11 Nov to 12 at 07:14 on 12 Nov (11 at 04:33). Log started 11 Nov, so no figure from 7 days ago. Following 106.",
-  "reach_7d": 144,
-  "views_7d": 454,
-  "profile_views_7d": 33,
+  "change_note": "8 on 11 Nov to 15 at 18:04 on 12 Nov (12 at 07:14). Log started 11 Nov, so no figure from 7 days ago. Following 108.",
+  "reach_7d": 146,
+  "views_7d": 488,
+  "profile_views_7d": 42,
   "website_taps_7d": 0,
   "accounts_engaged_7d": 10,
   "interactions_7d": {
@@ -126,6 +126,27 @@
    "@flowercafesunderland",
    "@whitesmarketsunderland",
    "@prego_sunderland"
-  ]
+  ],
+  "posts_today": [
+   {
+    "time": "09:44",
+    "format": "carousel",
+    "topic": "Text too faint to read",
+    "reach": 1,
+    "views": 3,
+    "follows": 0
+   },
+   {
+    "time": "15:10",
+    "format": "reel",
+    "topic": "Count your fonts",
+    "reach": 2,
+    "views": 4,
+    "avg_watch_seconds": 18.2,
+    "note": "3 hours old when read"
+   }
+  ],
+  "evening_note": "Followers up 3 more during the day (12 to 15) while today's two posts reached 1 and 2 accounts: still an early sign that growth follows Lee's commenting, not the posts. Profile views 7d 33 to 42.",
+  "evening_research": "Hashtags and search phrases, second pass: re-check of the unverified local tags, plus #SmallBizSatUK for 5 Dec (see growth/notes.md, 12 Nov evening)"
  }
 ]
