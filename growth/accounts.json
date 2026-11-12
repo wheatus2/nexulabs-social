@@ -101,8 +101,8 @@
     "name": "BIPC Newcastle",
     "what": "Business and IP Centre, Newcastle",
     "why": "Free support for new and growing firms; its audience is owners at the stage where they need a first proper website.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026",
+    "status": "local",
+    "evidence": "Bio: business and IP advice, Newcastle; no posts yet (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -175,11 +175,12 @@
     "name": "Durham Markets",
     "what": "Market account for a Durham",
     "why": "Traders and stallholders, if it is Durham in County Durham.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026. Other results for the same search were Durham, North Carolina, so confirm the location first.",
+    "status": "local",
+    "evidence": "Durham Market Hall, Durham DH1 3NJ (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
-    "suggested": []
+    "suggested": [],
+    "commented": "2026-11-12"
   },
   {
     "handle": "@_businessnortheast_",
@@ -199,8 +200,8 @@
     "name": "Newcastle Business Club",
     "what": "Business club in a Newcastle",
     "why": "Networking audience, if it is Newcastle upon Tyne.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026. Location not confirmed.",
+    "status": "not_local",
+    "evidence": "Newcastle, New South Wales, Australia (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -211,8 +212,8 @@
     "name": "NE365",
     "what": "North East page",
     "why": "Possibly a local 'what's on' page.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026. Location and subject not confirmed.",
+    "status": "not_local",
+    "evidence": "News for Northeast India, posts in Assamese (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -223,8 +224,8 @@
     "name": "The QT",
     "what": "News page",
     "why": "Possibly North East news.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026. Location not confirmed.",
+    "status": "gone",
+    "evidence": "Instagram says the page is not available (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -235,8 +236,8 @@
     "name": "Propa Sunderland",
     "what": "Sunderland page",
     "why": "Unknown subject; may be a local guide.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026. Could not find out what it is.",
+    "status": "local",
+    "evidence": "Pie shop, food handmade in Sunderland; we commented on 11 Nov post, 1 reply (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -247,8 +248,8 @@
     "name": "City Of Sunderland",
     "what": "Sunderland page",
     "why": "May be a local guide or 'what's on' page; owner unknown.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026",
+    "status": "local_quiet",
+    "evidence": "Sunderland photography account, no posts since about 2022 (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -259,8 +260,8 @@
     "name": "Land Digital",
     "what": "Digital agency",
     "why": "A peer, not a prospect: useful for seeing what a comparable studio posts.",
-    "status": "check_bio_first",
-    "evidence": "Instagram search result title, 11 Nov 2026. Location not confirmed.",
+    "status": "local_peer",
+    "evidence": "Sunderland web agency, no posts since about mid-2025 (Chrome, 12 Nov 2026)",
     "recent_post_seen": false,
     "found": "2026-11-11",
     "suggested": []
@@ -408,6 +409,69 @@
     "name": "hin00n",
     "status": "prospect",
     "evidence": "Home baker with stalls at Sunderland station and the Bridges market (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@arvstudio__",
+    "name": "ARV Studios",
+    "status": "prospect",
+    "evidence": "Fitness studios and cafe, 112 High Street West, Sunderland; new on the Sunderland Gift Card (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@atw_treeandlandscaping",
+    "name": "Around The World (ATW) Tree and Landscaping",
+    "status": "prospect",
+    "evidence": "Tree surgery and landscaping, SR2; Checkatrade community award (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@mackies_corner",
+    "name": "Mackies Corner Sunderland",
+    "status": "local",
+    "evidence": "Home for independent traders, High Street West, Sunderland (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@fat.unicorn",
+    "name": "Fat Unicorn Delicatessen",
+    "status": "prospect",
+    "evidence": "Deli, 1A Bridge St, Sunderland, at Mackies Corner (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@ashbrookehome",
+    "name": "Ashbrooke Home",
+    "status": "prospect",
+    "evidence": "Home interiors and gifts, at Mackies Corner, Sunderland (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@crave.ne",
+    "name": "crave.",
+    "status": "prospect",
+    "evidence": "Sandwich and lunch spot, Mackies Corner and Sea Road, Sunderland (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@pablo.eggsgobao",
+    "name": "Pablo",
+    "status": "local",
+    "evidence": "Breakfast takeaway, sites in Whitley Bay, Newcastle, Sunderland and Edinburgh (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@wildfirecity",
+    "name": "Wild Fire City",
+    "status": "prospect",
+    "evidence": "Pizza, coffee and cocktails, 104 High Street West, Sunderland (Chrome, 12 Nov 2026)",
+    "commented": "2026-11-12"
+  },
+  {
+    "handle": "@firestationsun",
+    "name": "The Fire Station",
+    "status": "local",
+    "evidence": "Music and performance venue, Sunderland SR1 3HA (Chrome, 12 Nov 2026)",
     "commented": "2026-11-12"
   }
 ]

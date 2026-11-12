@@ -47,3 +47,62 @@ Open Instagram, Settings, Account Status (search "Account Status" in Settings if
 ## Replies needed on our posts
 - The 6 Nov introduction post has 1 comment; the text can't be read from here. Check it has a reply.
 - Still to do: that post's caption (read this morning) still uses the phrase ruled out for describing customers. Edit it to "for businesses of all kinds".
+
+## Evening batch (Lee asked for 10 more, 12 Nov 2026)
+Checked in Chrome Thu 12 Nov 2026, about 21:00 UK; comments typed into the boxes, not posted (Durham Markets already posted by Lee).
+
+### 6. @durhammarkets
+- Link: https://www.instagram.com/durhammarkets/
+- Post: 9 Nov 2026, Sunday openings and extra outdoor markets for Christmas, https://www.instagram.com/durhammarkets/p/DfhbadjCGTK/
+- Comment (posted by Lee): Six Sunday openings and a bonus Monday market on the 21st will suit last-minute shoppers. Are the Sunday outdoor traders the same as the Saturday regulars?
+
+### 7. @arvstudio__
+- Link: https://www.instagram.com/arvstudio__/
+- Post: 12 Nov 2026, berry cheesecake shake at the ARV cafe, open from 6am, https://www.instagram.com/arvstudio__/p/DfpbBJWN0Y0/
+- Comment: A cafe open from 6am suits the before-work crowd on High Street West. Can the new Sunderland Gift Card be spent in the cafe as well as on classes?
+
+### 8. @atw_treeandlandscaping
+- Link: https://www.instagram.com/atw_treeandlandscaping/
+- Post: 30 Oct 2026, Checkatrade community award covered by the Echo (picked over the newer football post), https://www.instagram.com/atw_treeandlandscaping/p/DfIHjTHtcNB/
+- Comment: A Checkatrade community hero award making the Echo is a proper result. Do most of your new jobs come through Checkatrade now, or word of mouth?
+
+### 9. @mackies_corner
+- Link: https://www.instagram.com/mackies_corner/
+- Post: 12 Nov 2026, Billy Elliot at the Empire, Mackies is 7 minutes' walk, https://www.instagram.com/mackies_corner/p/Dfpy2YSja-3/
+- Comment: Seven minutes from the Empire is handy with Billy Elliot on until the 28th. Do the traders see a lift on show nights?
+
+### 10. @fat.unicorn
+- Link: https://www.instagram.com/fat.unicorn/
+- Post: 12 Nov 2026, "stockpile the essentials" joke with olives and wine, https://www.instagram.com/fat.unicorn/p/DfpZWEWI_hn/
+- Comment: Preparedness level: Mediterranean is the right priority. With Drunk Monk back as well, what would you put in a stockpile hamper for Christmas?
+
+### 11. @ashbrookehome
+- Link: https://www.instagram.com/ashbrookehome/
+- Post: 11 Nov 2026, the shop at night, stocked for Christmas, https://www.instagram.com/ashbrookehome/p/DfnLrzljKU1/
+- Comment: The shop lit up at night does half the selling for you. Which stocking filler is flying out fastest so far this year?
+
+### 12. @crave.ne
+- Link: https://www.instagram.com/crave.ne/
+- Post: 11 Nov 2026, specials board back at Mackie's Corner, https://www.instagram.com/crave.ne/p/DfnE-_7hF4E/
+- Comment: Ham broth and dumplings is exactly what November needs. Are the specials Mackie's only, or will any make it onto the Sea Road menu too?
+
+### 13. @pablo.eggsgobao
+- Link: https://www.instagram.com/pablo.eggsgobao/
+- Post: 11 Nov 2026, crispy sides reel listing all six sites, https://www.instagram.com/pablo.eggsgobao/p/Dfl5QpGN3Pt/
+- Comment: Whitley Bae and Sunnyland is top naming. Six sites from Whitley Bay to Edinburgh is going some. Which spot gets the biggest breakfast queue?
+
+### 14. @wildfirecity
+- Link: https://www.instagram.com/wildfirecity/
+- Post: 9 Nov 2026, collab with GoOut2Dine: Wild Fire City listed, with a 360 tour, https://www.instagram.com/goout2dine/p/DfhTm7Qkt8x/
+- Comment: Pizza by the slice and cocktails in one spot is a good mix. Does the 360 tour bring in people who haven't been to Mackie's before?
+
+### 15. @firestationsun
+- Link: https://www.instagram.com/firestationsun/
+- Post: 12 Nov 2026, free monthly jazz in the Engine Room, Michael Young Trio this Sunday, https://www.instagram.com/firestationsun/p/Dfo9RsXzO40/
+- Comment: Free jazz with a Sunday lunch is a good shout. Is the monthly jazz always the Michael Young Trio, or do you rotate in other local players?
+
+### Checked, no comment
+- @sunsoftcity: Already commented (11 Nov, North East Tech Quarterly post); no reply yet.
+- @propa_sunderland: Already commented (11 Nov, pork and chorizo pie); 1 reply to read.
+- @bipcnewcastle: Skip: no posts. @sunderland.uk: Skip: quiet since about 2022. @wearelanddigital: Skip: quiet since about mid-2025.
+- @newcastlebusinessclub: not local (NSW, Australia). @north_east365: not local (Northeast India). @theqtonline: account gone.
