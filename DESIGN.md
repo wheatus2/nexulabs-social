@@ -10,6 +10,16 @@ He was right. Every post had the same skeleton: logo top left, label top right, 
 
 **Pass mark (Lee, 12 Nov 2026): 7 out of 10 or above from the independent second opinion.** It was 8. On 12 Nov the same carousel was reviewed eleven times and scored 6.5 to 7.5 whatever was changed, so Lee approved it himself and set the mark to 7. Under 7, or a frame the reviewer plainly calls basic, is still held. Always report the score.
 
+## Mix it up: photo posts too (Lee, 12 Nov 2026)
+
+Lee: "We should always mix up posts and include images sometimes." Type and interface posts are not the only kind.
+
+- Before designing, look at the `photo` field of the last five feed entries in `log.json`. If none of them used a library photo, make this post photo-led when a cleared photo literally shows the subject (`python3 photo.py list`, rules in PLAYBOOK "Photos from the library"). No fitting photo is not a reason to skip the slot: design it instead.
+- A photo post is still designed from scratch: the photo is the hero, with one line of very large type. It goes through the same check, design review and fact-check.
+- Remove any other company's logo, phone number or name that is readable in the photo.
+- Log `"photo": "<unsplash id>"` in `log.json`, credit the photographer in the caption, and `python3 photo.py retire` the photo after publishing.
+- Learned on the first one (the yellow phone, 12 Nov): the reviewer scored a headline stacked over a stock photo 6.5 ("a template"), and type warped onto a photo's floor and ceiling 5.5 ("pasted on"). Lee approved the phone post himself. Next time make the type and the photo interlock for real (the subject in front of the type), or let the photo fill the frame with very few words.
+
 ## How posts are made now
 
 Every post is designed from scratch, as its own HTML and CSS, with `studio.py`. There are no templates.
