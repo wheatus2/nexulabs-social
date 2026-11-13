@@ -1,0 +1,11 @@
+Web design check for North East businesses: how fast is your website?
+
+Google draws two lines. If the main part of a page is on screen within 2.5 seconds, it calls that good. Past 4 seconds, it calls it poor. And it wants the good time to hold for most of your visitors, on phones as well as desktops.
+
+You don't have to guess where yours sits. Go to pagespeed.web.dev, which is Google's own test, and type in your web address.
+
+If it comes back slow, send the result to whoever built the site and ask what's holding it up.
+
+Send this to whoever looks after your website. Follow for one website fix a day.
+
+#webdesignuk #websitedesign #northeastbusiness #northeastengland
