@@ -1,6 +1,6 @@
 A website lesson for North East businesses from the US flights news.
 
-On Friday the US aviation regulator, the FAA, ordered every departing flight in the country to stay on the ground, "for reasons of safety". The US transport secretary said a communication issue had hit all of its air route traffic control centres, and that FAA technicians were investigating. That's as reported by AP, Reuters and CBS News, and the story was still moving when we wrote this.
+On Friday the US aviation regulator, the FAA, ordered every departing flight in the country to stay on the ground, "for reasons of safety". The US transport secretary said a communication issue had hit all of its air route traffic control centres, and that FAA technicians were investigating. That's as reported by AP, Reuters, CBS News and Yahoo News, and the story was still moving when we wrote this.
 
 Communications failed and every departure was stopped. Your website has a line of communication too: the contact form. When that fails, nothing stops. The enquiry just never arrives.
 
