@@ -1141,5 +1141,57 @@
   ],
   "news_check": "Two searches (Search Engine Roundtable recap for 13 Nov, UK ICO/NCSC/Ofcom news this week). The recap page would not open. Nothing new was verified; one news post had already gone out today. Scan note added to newsdesk.json.",
   "note": "Four design rounds. 1 (6.5): a whole stopwatch on sky blue, then flat white macro scenes; the 2.5 scene was called basic (hand read as a red stripe, no material). 2 (7): macros rebuilt with applied ticks, a turned tick track, a lance hand and depth of field, scored about 8 each, but the whole-stopwatch opener and closer were called basic ('a polished app icon on a gradient') and a different world from the macros. 3 (6.5): all four scenes moved onto one sky-blue dial with the words printed on it, but the opener and closer were centred and shared a camera, and were called basic again. 4 (7, no frame called basic): opener and closer re-shot off centre like the macros (hand as a line down one side, type anchored against the dial), the hand's point made to meet the tick end, the hand kept sharp over the depth of field. Before publishing, the quick faults from round 4 were fixed: hub cropped properly by the foot of scene 1, more room between the question and the hand, no tick close to an edge in scene 2, one grade for the dial in every scene, the address lifted clear of the caption and its caret removed. Not fixed: 'Poor.' is smaller than 'Good.' (the dial leaves it less room). No Nexulabs logo appears on any frame: two reviewers called the logo orphaned or confusing beside Google's address, so it was taken off; say if it should always be on."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "19:33",
+  "time_slot": "evening",
+  "id": "2026-11-13-1933-who-reminds-them",
+  "format": "reel",
+  "category": "AI and automation",
+  "angle": "why it matters, with a one-minute self-check",
+  "content_type": "educational",
+  "topic": "Automatic appointment reminders: someone books in for three weeks' time and has forgotten by the day. A booking system or CRM can send a text or email the day before on its own, with a way to cancel or move the slot, so nobody has to remember to ring round. NHS England's guidance on missed hospital appointments says the same: send reminders and make it easy to cancel. Self-check: look at tomorrow's diary and ask who has heard from you since they booked.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "tear-off-calendar-seen-from-the-right-hanging-top-left-with-the-date-on-one-left-margin-over-a-two-line-question",
+   "nineteen-pages-peeling-toward-the-camera-then-the-pink-page-filling-the-frame-from-below-right-as-a-round-inked-date-stamp-lands-beside-the-numeral",
+   "the-day-itself-seen-from-the-left-hanging-top-right-answering-the-opener-over-a-two-line-payoff-with-the-wordmark-on-its-first-baseline"
+  ],
+  "palette": [
+   "#5A3020",
+   "#F4ECDD",
+   "#24130C",
+   "#FF8CB2"
+  ],
+  "display_font": "DMSerif",
+  "text_font": "Outfit",
+  "scenes": 3,
+  "seconds": 14.3,
+  "photo": null,
+  "logo_on_frames": "last scene only",
+  "hooks_considered": [
+   "Who reminds your customers?",
+   "They booked three weeks ago. Who reminds them?",
+   "Booked in. Then forgot."
+  ],
+  "status": "not published",
+  "reason": "Held at the design review. Five independent reviews, each of a reworked version, all scored it 6.5 out of 10 (pass mark 7). The first three each called a frame basic; the last said no frame was basic but the closer repeats the opener. The scheduled task prompt says to publish nothing when a run cannot reach the pass mark, so the 19:33 slot was left empty and Lee was asked.",
+  "fact_check": "pass (first round)",
+  "design_review": [
+   6.5,
+   6.5,
+   6.5,
+   6.5,
+   6.5
+  ],
+  "design_rule_followed": "The scheduled task prompt (publish nothing under the pass mark). DESIGN.md's 'Always post' (Lee, 13 Nov 2026) says the opposite for a feed slot. The run kept redesigning past two rounds, as the 14:33 run did, but never reached 7. With the two rules in conflict, nobody to ask and a public post that cannot be taken back, it did not publish and asked Lee to choose.",
+  "draft": "posts/2026-11-13-1933-who-reminds-them (finished and fact-checked; see HELD.md; not in design-log.json, so the palette and typeface are not used up)",
+  "sources": [
+   "NHS England: Reducing did not attends (DNAs) in outpatient services (publication reference PR2012, February 2023; guidance only, no figure used)"
+  ],
+  "news_check": "Two searches (Search Engine Roundtable recap for 13 Nov; UK ICO, NCSC and Ofcom news this week). Nothing new was opened or verified. Two posts with a news hook had already gone out today (the HTTPS post and the Microsoft 365 outage), which is the daily limit. Scan note added to newsdesk.json.",
+  "note": "The growth brief asks for Reels with a direct question and a self-check; AI and automation had not been published since 8 Nov. Each review's faults were fixed before the next: paper texture and visible stack edges, an inked stamp, a lifted page corner, smoother blur on falling pages, the weakest held scene cut, the closer redrawn twice. Opener and pink page reached 7 to 7.5; the closer never passed 6.5. Web pages opened without trouble."
  }
 ]
