@@ -1034,5 +1034,57 @@
   ],
   "news_check": "See the 13 Nov 08:33 scan in newsdesk.json. No 'This week in tech': fewer than 3 verified stories.",
   "note": "A new design of the held 08:33 post, same verified facts. Round 1 (three staggered rows of keys, a macro of the socket with its mechanism, a giant blue key) scored 6.5: the socket read as a safe icon and the cover was timid. Rebuilt as a 5, 2, 1 zoom with a true recess; round 2 scored 7, with frame 1 called basic for a small hero between two voids. Before publishing, frame 1 got a four-line 150px headline to fill the frame, the recess got a ghost of the s in place of a dot, leading was opened and the blues were unified. The published version was not reviewed a third time."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "extra post, 13:27 (asked for by Lee in the chat)",
+  "time_slot": "midday",
+  "id": "2026-11-13-1311-off-and-on-again",
+  "format": "carousel",
+  "category": "Tech news (email outage)",
+  "angle": "humour + one-minute self-check",
+  "content_type": "entertaining",
+  "topic": "Microsoft 365 outage (from Thursday 12 Nov 2026, still being fixed on Friday): 'Have you tried turning it off and on again?' Microsoft's own status updates said it was restarting the affected servers; some then went down again. Takeaway: have a plan B for when your email is down, starting with a phone number that is easy to find on your website.",
+  "news_story_id": "2026-11-12-microsoft-365-outage",
+  "renderer": "studio",
+  "composition": [
+   "question-over-one-big-round-power-button-with-its-light-off",
+   "macro-of-the-pressed-button-bleeding-off-the-top-with-the-light-on-green",
+   "the-same-button-larger-bleeding-off-the-right-edge-with-its-light-off-again"
+  ],
+  "palette": [
+   "#DAD1BE",
+   "#27231C",
+   "#33E07A"
+  ],
+  "display_font": "Brico",
+  "text_font": "Geist",
+  "slides": 3,
+  "photo": null,
+  "hooks_considered": [
+   "Have you tried turning it off and on again?",
+   "Microsoft tried turning it off and on again.",
+   "Even Microsoft has a bad day."
+  ],
+  "status": "published",
+  "media_id": "18054493706601234",
+  "permalink": "https://www.instagram.com/p/DfrvGSOFz56/",
+  "facebook_post_id": "1484176674771345_122104394295544005",
+  "published_via": "github-actions",
+  "published_at": "2026-11-13T13:27:16+00:00",
+  "fact_check": "pass (second round; the first round caught an overstated line about contact forms, which was changed)",
+  "design_review": [
+   6.5,
+   7
+  ],
+  "approved_by": "Lee, in chat, 13 Nov 2026: asked for a humorous post about the Microsoft outage ('have they tried to turn it off then on again'); always-post rule",
+  "sources": [
+   "SecurityWeek (12 Nov 2026)",
+   "WLKY / Hearst (12 Nov 2026), quoting Microsoft's 4:40pm EST update",
+   "Cyber Security News (13 Nov 2026), quoting the Microsoft 365 Status account",
+   "Evening Standard live blog via AOL UK (13 Nov 2026)"
+  ],
+  "caveats": "Microsoft's own status page and X posts could not be opened, so its words are quoted as reported by the outlets. The outage was still being fixed when this went out, and UK public services were among those affected, so the joke was kept gentle and aimed at the fix, not the people caught up in it.",
+  "note": "Round 1 scored 6.5 (soft-gradient buttons, a square 'B' key that read as an app icon). Rebuilt with a dished cap, a dark clearance ring and a glass light, and a last frame of two buttons (Email off, Phone on): round 2 scored 7, with that last frame called basic and the real punchline ('Some then went down again') buried in a footer. Before publishing, the last frame was replaced with the same button, larger, light off again, with the punchline as its headline and the plan B line as the footer. The published version was not reviewed a third time."
  }
 ]

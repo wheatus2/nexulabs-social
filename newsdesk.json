@@ -321,8 +321,8 @@
       "found": "2026-11-13",
       "event_date": "2026-11-12",
       "headline": "Microsoft 365 outage: Exchange Online mailboxes (Outlook) unreachable from Thursday 12 Nov, with Teams, SharePoint, Copilot and other services affected; not resolved in any page read on the morning of 13 Nov",
-      "status": "rejected",
-      "reason": "Held, not verified to the playbook standard on 13 Nov 08:33. Microsoft's own pages (status.cloud.microsoft and the Microsoft 365 Status posts on X) would not open: the permission prompt went unanswered. CNN and Yorkshire Live also failed. Four outlets were read (SecurityWeek, TechRadar live blog, Business Standard, IT-Connect) plus azureblog.co.uk; they agree on the facts below but none names the UK, and none says it is fixed. A developing story with no first-hand source is not safe to post. Re-check at the next run: if Microsoft's status page or post-incident report opens, a 'when your email goes down, where do website enquiries go?' post would be relevant (do not repeat the 11 Nov 'Enquiry in. Nothing lost.' carousel).",
+      "status": "used",
+      "reason": "Held at 08:33 (no first-hand Microsoft source, UK not named). Used at 13:27 the same day at Lee's request as a light-hearted post: by then the Evening Standard live blog had named UK organisations affected, and WLKY and Cyber Security News carried Microsoft's own words on restarting servers. Microsoft's status page and X posts still could not be opened. Follow up only if Microsoft publishes a post-incident report with something a business owner can act on.",
       "relevance": "Email is how most businesses receive website enquiries; clear action available (know the status page, make sure website forms also save enquiries somewhere other than the inbox).",
       "facts": [
         {
@@ -342,7 +342,10 @@
           "source": "https://www.it-connect.tech/microsoft-365-outage-hits-outlook-teams-and-copilot-for-11-hours/"
         }
       ],
-      "caveats": "All Microsoft quotes are second-hand. Figures differ between outlets (131,000 vs 138,058 Downdetector peak). UK impact not stated anywhere that was read."
+      "caveats": "All Microsoft quotes are second-hand. Figures differ between outlets (131,000 vs 138,058 Downdetector peak). UK impact not stated anywhere that was read.",
+      "used_on": [
+        "instagram+facebook:2026-11-13-1311-off-and-on-again"
+      ]
     },
     {
       "id": "2026-10-21-chrome-warns-before-http",

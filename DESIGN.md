@@ -141,6 +141,9 @@ One carousel (the colour-contrast post) went through eleven independent reviews 
 
 - A drawn paper object can pass (13 Nov, the business card Story, 7 first time): one card for a made-up firm, lying, then in close-up, then standing, with a painted edge, paper grain and focus falling off behind the line that matters. For a close-up, build the object at its real size with CSS `zoom`, not `transform: scale()`: a scaled layer is enlarged after it is drawn, so type and filter edges go soft and blocky. Keep a pale surface out of the top 250px of a Story (Instagram's white name and bars sit there): shade it.
 
+- Put the punchline in the headline, not the footer (13 Nov, the Microsoft outage post): the twist of a three-frame joke was set as small footer text and the reviewer called it buried. A last frame of two small labelled buttons was called "a settings screen"; the same hero object, bigger, in a new state, was the fix.
+- Drawn objects need real form to pass (13 Nov): a dished cap, a dark clearance gap between the part and its surround, a tight contact shadow and a glass highlight on a light. Soft gradients on their own were called "2020 Dribbble neumorphism".
+
 **The craft list that came up in every review**
 - Measure, don't eyeball: `python3 tools/ink.py posts/<id>/slide-01.jpg` prints where the ink is, so gaps and padding can be made equal on purpose.
 - Nothing within about 40px of anything else unless it is meant to touch. Padding inside a box equal on all four sides (measured from the ink, not the CSS box). The gap above a block and the gap below it equal, or clearly different.
