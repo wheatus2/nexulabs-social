@@ -123,6 +123,10 @@ One carousel (the colour-contrast post) went through eleven independent reviews 
 - A frame on a different grid from its neighbours.
 - A chat or text-message bubble as the hero (12 Nov evening, held): called basic by two reviewers running, first as a flat bubble on a dark frame ("a stock trope"), then rebuilt as a raised object in the post's own material ("a green rounded rectangle with text in it"). The same post's two switch frames were called strong. Show the message another way, or cut the frame.
 
+- A drawn browser window with skeleton bars (13 Nov, held at 6.5): "a generic skeleton mock-up of the kind every SaaS template ships with". The same frame rebuilt as two giant words plus a statement also scored 6.5: "only words on a flat colour", two headlines competing. A middle frame has to show the thing, made properly, or be cut.
+- Display type left at its default letter fit (13 Nov). Reviewers now zoom in and measure the gaps between letters in words set at 250px and over. Kern big words by hand so the gaps are equal by eye, and watch for crossbars that merge (tt) and letters that nearly touch.
+- A crop that only shaves a letter. Bleed it boldly off the edge or keep it inside the margin.
+
 **The craft list that came up in every review**
 - Measure, don't eyeball: `python3 tools/ink.py posts/<id>/slide-01.jpg` prints where the ink is, so gaps and padding can be made equal on purpose.
 - Nothing within about 40px of anything else unless it is meant to touch. Padding inside a box equal on all four sides (measured from the ink, not the CSS box). The gap above a block and the gap below it equal, or clearly different.

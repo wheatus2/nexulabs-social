@@ -934,5 +934,53 @@
    "No outside facts: our own advice"
   ],
   "note": "First photo-led post under the studio standard, made after Lee asked for a post with an image and said posts should be mixed up and include images sometimes (rule added to DESIGN.md). The reviewer scored the first version 6.5 and called the structure basic (headline over a stock photo). Its named faults were fixed before publishing: the phone company's logo and number on the dial card painted out, headline leading opened, small line darkened, gaps evened. A second photo design the same evening (a data centre corridor with 'Your website lives here.' set in perspective on the ceiling and floor) scored 5.5 and was dropped; that photo (s0XabTAKvak) was not used and stays in the library."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "08:33",
+  "time_slot": "morning",
+  "id": "2026-11-13-0833-missing-s",
+  "format": "carousel",
+  "category": "Hosting",
+  "angle": "one-minute self-check",
+  "content_type": "educational",
+  "topic": "HTTPS: a web address that starts http is missing its s. Chrome labels such a site 'Not secure' (no private connection), and Google said on 21 Oct 2026 that Chrome now asks for permission before opening a site without HTTPS, on by default. Ask whoever hosts the site to switch on HTTPS; Let's Encrypt issues certificates free.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "one-word-filling-the-measure-with-hollow-last-letter",
+   "solid-word-over-hollow-word-above-three-line-statement",
+   "small-word-then-one-monumental-solid-letter-bleeding-off-the-edge"
+  ],
+  "palette": [
+   "#B9DCFF",
+   "#0C23A8",
+   "#0A0F2C"
+  ],
+  "display_font": "Grotesk",
+  "text_font": "Geist",
+  "slides": 3,
+  "photo": null,
+  "hooks_considered": [
+   "Is your web address missing a letter?",
+   "Chrome now asks before it opens your site.",
+   "One letter between you and \"Not secure\"."
+  ],
+  "status": "not published",
+  "reason": "Held at the design review. The independent second opinion scored it 6.5 then 6.5 out of 10 (pass mark 7), and both reviewers plainly called frame 2 basic: first as a drawn browser window ('a SaaS template mock-up'), then rebuilt in type ('only words on a flat colour'). Two failed rounds means nothing goes out (DESIGN.md), so the 08:33 slot was left empty.",
+  "fact_check": "pass (second round; the first round found the 21 Oct 2026 Google post, which replaced an out-of-date 'will' with 'now')",
+  "design_review": [
+   6.5,
+   6.5
+  ],
+  "draft": "posts/2026-11-13-0833-missing-s (see HELD.md; not in design-log.json, so the palette and typeface are not used up)",
+  "sources": [
+   "Google Chrome Help: Check if a site's connection is secure",
+   "Google: Chrome Now Warns Before Insecure HTTP Connections (21 Oct 2026)",
+   "Help Net Security (22 Oct 2026)",
+   "Let's Encrypt: About"
+  ],
+  "news_check": "Friday 'This week in tech' not made: fewer than 3 verified stories this week. Only the Google core update (already used 11 Nov) is fully verified. Microsoft 365 outage (12 Nov) held: Microsoft's own status pages could not be opened and no page read names the UK; still unresolved when checked. Businesses in ChatGPT still held. Scan note added to newsdesk.json.",
+  "note": "Frame 3 (the big solid s) scored about 7.5 both times and frame 1 was 'plain but not basic'. The middle frame failed twice in two different forms. Type-led carousels keep landing at 6.5 to 7; the reviewers now measure letter gaps in display type, so big words need hand kerning."
  }
 ]

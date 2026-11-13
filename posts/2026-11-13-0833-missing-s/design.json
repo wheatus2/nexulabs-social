@@ -1,0 +1,16 @@
+{
+ "format": "feed",
+ "composition": [
+  "one-word-filling-the-measure-with-hollow-last-letter",
+  "solid-word-over-hollow-word-above-three-line-statement",
+  "small-word-then-one-monumental-solid-letter-bleeding-off-the-edge"
+ ],
+ "background": [
+  "#B9DCFF",
+  "#0C23A8",
+  "#B9DCFF"
+ ],
+ "display_font": "Grotesk",
+ "accent": "#0C23A8",
+ "concept": "Hollow means missing. The cover sets http across the full measure and draws the s as an empty outline; the middle frame sets Chrome's label with Not solid and secure hollow; the last frame fills the gap with one monumental solid s. Sky blue, Nexulabs blue and ink, Space Grotesk throughout."
+}

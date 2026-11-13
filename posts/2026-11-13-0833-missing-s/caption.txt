@@ -1,0 +1,11 @@
+Website check for North East businesses: does your web address start with http or https?
+
+Open your site in Chrome. If the address starts http and the bar says "Not secure", the s is missing. Chrome's help page says that means the site doesn't use a private connection, and what's sent through it could be viewed or changed.
+
+Google said on 21 October that Chrome now also asks people for permission the first time they visit a site without HTTPS.
+
+Only the site owner can fix it. Ask whoever hosts your site to switch on HTTPS. Let's Encrypt issues certificates free.
+
+Send this to whoever looks after your website. Follow for one website fix a day.
+
+#webdesignuk #websitehosting #northeastbusiness #sunderlandbusiness
