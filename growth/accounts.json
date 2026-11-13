@@ -45,7 +45,8 @@
       "2026-11-11"
     ],
     "last_post": "2026-11-10",
-    "checked_in_chrome": "2026-11-11"
+    "checked_in_chrome": "2026-11-13",
+    "commented": "yes (seen 13 Nov 2026)"
   },
   {
     "handle": "@nechamberuk",
@@ -77,7 +78,8 @@
       "2026-11-11"
     ],
     "last_post": "2026-11-11",
-    "checked_in_chrome": "2026-11-11"
+    "checked_in_chrome": "2026-11-13",
+    "commented": "yes (seen 13 Nov 2026)"
   },
   {
     "handle": "@northerninsightmagazine",
@@ -485,5 +487,145 @@
     "recent_post_seen": false,
     "found": "2026-11-12",
     "suggested": []
+  },
+  {
+    "handle": "@kaleidoscope_byamylou",
+    "url": "https://www.instagram.com/kaleidoscope_byamylou/",
+    "name": "Kaleidoscope by Amy Lou",
+    "status": "prospect",
+    "evidence": "Bag and jewellery designer, North East England; Linktree only; runs workshops (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13",
+    "commented": "2026-11-13 (typed, Lee to post)"
+  },
+  {
+    "handle": "@theposypod",
+    "url": "https://www.instagram.com/theposypod/",
+    "name": "The Posy Pod",
+    "status": "prospect",
+    "evidence": "Florist and resin artist, Sunderland; no own website, tickets via Skiddle (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13",
+    "commented": "2026-11-13 (typed, Lee to post)"
+  },
+  {
+    "handle": "@throwntogetherstudio",
+    "url": "https://www.instagram.com/throwntogetherstudio/",
+    "name": "Thrown Together Pottery",
+    "status": "prospect",
+    "evidence": "Pottery studio, 27 Fawcett Street, Sunderland; commissions by DM or Gmail (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13",
+    "commented": "2026-11-13 (typed, Lee to post)"
+  },
+  {
+    "handle": "@shaftowaittceramics",
+    "url": "https://www.instagram.com/shaftowaittceramics/",
+    "name": "Shafto Waitt Ceramics",
+    "status": "prospect",
+    "evidence": "Potter setting up Mud on the Tyne workshop, Ouseburn, Newcastle; no website (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13",
+    "commented": "2026-11-13 (typed, Lee to post)"
+  },
+  {
+    "handle": "@sandhavenvillage",
+    "url": "https://www.instagram.com/sandhavenvillage/",
+    "name": "Sandhaven Village",
+    "status": "local",
+    "evidence": "New retail and food pods, Sandhaven beach, South Shields, opening spring 2027 (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13",
+    "commented": "2026-11-13 (typed, Lee to post)"
+  },
+  {
+    "handle": "@bessys_sweet_bakes",
+    "url": "https://www.instagram.com/bessys_sweet_bakes/",
+    "name": "Bessy's Sweet Bakes",
+    "status": "prospect",
+    "evidence": "Bakery, Henry Robson Way and South Shields seafront van; bare myshopify link; comments limited (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@wildnorth.studio",
+    "url": "https://www.instagram.com/wildnorth.studio/",
+    "name": "Wild North",
+    "status": "local",
+    "evidence": "Printmaker, workshops at Sheepfolds; has own website (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@rodneyandco_",
+    "url": "https://www.instagram.com/rodneyandco_/",
+    "name": "Rodney & Co.",
+    "status": "local",
+    "evidence": "Dog treats, Northumberland; has website (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@pablospawfectionary",
+    "url": "https://www.instagram.com/pablospawfectionary/",
+    "name": "Pablo's Pawfectionary",
+    "status": "local",
+    "evidence": "Dog shop, Whitley Bay; online shop; Sandhaven tenant (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@f.c._roast",
+    "url": "https://www.instagram.com/f.c._roast/",
+    "name": "FC Roast",
+    "status": "local",
+    "evidence": "Coffee roastery, Sunderland SR5; has website, posts rarely (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@geordiebangers",
+    "url": "https://www.instagram.com/geordiebangers/",
+    "name": "Geordie Banger Co",
+    "status": "local",
+    "evidence": "Sausage maker, North Shields; has website (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@thecracklingguy",
+    "url": "https://www.instagram.com/thecracklingguy/",
+    "name": "The Crackling Guy",
+    "status": "local_quiet",
+    "evidence": "Quiet since about Jan 2026 (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@flowersbylisa.uk",
+    "url": "https://www.instagram.com/flowersbylisa.uk/",
+    "name": "Flowers by Lisa",
+    "status": "local_quiet",
+    "evidence": "5 posts, quiet since spring 2026 (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@verityvelourvintage",
+    "url": "https://www.instagram.com/verityvelourvintage/",
+    "name": "Verity Velour Vintage",
+    "status": "local_quiet",
+    "evidence": "Vintage jewellery, Ouseburn; quiet since about Mar 2026 (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@komono_handmade",
+    "url": "https://www.instagram.com/komono_handmade/",
+    "name": "komono_handmade",
+    "status": "not_local",
+    "evidence": "Hobby account in Japan (Chrome, 13 Nov 2026)",
+    "found": "2026-11-13",
+    "checked_in_chrome": "2026-11-13"
   }
 ]

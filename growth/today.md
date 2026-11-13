@@ -106,3 +106,44 @@ Checked in Chrome Thu 12 Nov 2026, about 21:00 UK; comments typed into the boxes
 - @propa_sunderland: Already commented (11 Nov, pork and chorizo pie); 1 reply to read.
 - @bipcnewcastle: Skip: no posts. @sunderland.uk: Skip: quiet since about 2022. @wearelanddigital: Skip: quiet since about mid-2025.
 - @newcastlebusinessclub: not local (NSW, Australia). @north_east365: not local (Northeast India). @theqtonline: account gone.
+
+## Prospects batch (Lee asked for 10 more, 13 Nov 2026)
+Checked in Chrome Fri 13 Nov 2026, 06:08 UK; comments typed into the boxes, not posted. Lee asked for accounts that could use our services, so these were picked from the traders tagged on Sheepfolds Stables' Christmas market post, and kept only where the bio shows a weak web setup (no site, Linktree, or booking by DM or email).
+
+### 16. @kaleidoscope_byamylou
+- Link: https://www.instagram.com/kaleidoscope_byamylou/
+- Who: Amy Trainor, bag and jewellery designer, North East England; runs workshops; bio links only to a Linktree.
+- Post: 12 Nov 2026, Mushroom Works collab: her vegan leather Japanese knot bags, on sale at Ouseburn Open Studios 27-29 Nov, https://www.instagram.com/mushroomworks/p/Dfo2eDFjq2K/
+- Comment: Vegan leather Japanese knot bags sound like a great gift. Will you be making anything live in the studio during Ouseburn Open Studios, or is it shop only?
+
+### 17. @theposypod
+- Link: https://www.instagram.com/theposypod/
+- Who: Bethany, florist and resin artist, Sunderland. No website of her own; workshop tickets sold through a Skiddle link.
+- Post: 8 Nov 2026, Christmas wreath making at Vaux Social, Sat 21 Nov, https://www.instagram.com/theposypod/p/DfcAp5oiTx8/
+- Comment: A fresh wreath plus a drink at Vaux Social is a good way to start Christmas. Do people pick their own ribbons and colours, or is it a set design?
+
+### 18. @throwntogetherstudio
+- Link: https://www.instagram.com/throwntogetherstudio/
+- Who: Liam, Thrown Together Pottery, 27 Fawcett Street, Sunderland. Workshops booked online; commissions by DM or a Gmail address.
+- Post: 1 Nov 2026, January to March workshop schedule, plus a multi-week hand-building course coming, https://www.instagram.com/throwntogetherstudio/p/DfNf9lvlQhF/
+- Comment: Mug Face Making in February sounds like the one to book first. Will the multi-week hand-building course run in the evenings, so people who work days can do it?
+
+### 19. @shaftowaittceramics
+- Link: https://www.instagram.com/shaftowaittceramics/
+- Who: Jonny, potter, setting up a pottery workshop (Mud on the Tyne) in the Ouseburn Valley, Newcastle. No website in the bio.
+- Post: 6 Nov 2026, kiln unloading at @mudonthetynepottery, https://www.instagram.com/shaftowaittceramics/reel/DfXsXCxu4v3/
+- Comment: Good to see Mud on the Tyne coming together. When it opens, will it be classes and taster sessions, or studio space for potters who want to rent a wheel?
+
+### 20. @sandhavenvillage
+- Link: https://www.instagram.com/sandhavenvillage/
+- Who: New retail and food pods on Sandhaven beach promenade, South Shields, opening spring 2027 (found on @geordiebangers' grid). Every tenant is a new business that will need a website and bookings.
+- Post: 12 Nov 2026, build progress, traders' banners going up, 2 retail pods left, https://www.instagram.com/sandhavenvillage/reel/DfpmWThov4H/
+- Comment: A whole promenade of new pods on Sandhaven beach is a big boost for South Shields. Will there be a list of confirmed traders before the spring opening?
+
+### Checked, no comment
+- @sheepfoldsstables: Already commented (Christmas market reel, 10 Nov); no reply to ours.
+- @durhambid: Already commented (Christmas Sparkle post, 12 Nov); no reply yet.
+- @wildnorth.studio: latest post is the Sheepfolds Sip and Send collab, already commented, 1 reply to read (tab left open). Has its own website.
+- @bessys_sweet_bakes: South Shields bakery and beach van, only a bare myshopify link; comments limited on its posts, so nothing typed. A good prospect to follow instead.
+- @rodneyandco_ (has a website; latest post is a giveaway), @pablospawfectionary (online shop; latest post is the Sandhaven reel), @f.c._roast (has a website, posts rarely): skipped, not a weak-web fit.
+- @thecracklingguy, @flowersbylisa.uk, @verityvelourvintage: Skip: quiet for months. @komono_handmade: not local (hobby account in Japan; the Sheepfolds tag points elsewhere).
