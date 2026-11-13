@@ -654,5 +654,45 @@
   "published_via": "github-actions",
   "status": "published",
   "highlight_cover": "none needed: the Domains cover went out on 12 Nov"
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "17:47",
+  "id": "stories/2026-11-13-1747-squares-or-curves",
+  "type": "this or that",
+  "category": "Logos and branding",
+  "highlight": "branding",
+  "topic": "Zoom in on your logo: squares or curves? Squares means a JPG or a PNG, which is only a picture, so a bigger picture means bigger squares. Curves means a vector file (SVG, AI or EPS), sharp on a pen and on the side of a van. Ask whoever made your logo for it.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-headline-top-left-over-a-giant-solid-letter-mark-bleeding-off-three-edges-with-a-frame-shaped-selection-box-on-its-notch-and-the-question-bottom-right",
+   "the-selected-notch-as-nine-by-sixteen-pixels-full-bleed-with-two-lines-in-the-violet-above-the-staircase-and-one-word-on-the-bone-below-it",
+   "symmetrical-arch-of-the-mark-as-a-path-with-two-anchor-points-and-their-handles-headline-on-the-fill-and-sign-off-inside-the-counter"
+  ],
+  "palette": [
+   "#5A2BE6",
+   "#F4EEE1"
+  ],
+  "display_font": "Syne",
+  "text_font": "Outfit",
+  "frames": 3,
+  "status": "not published",
+  "design_review_score": 6.5,
+  "design_review": [
+   6.5,
+   6.5
+  ],
+  "reason": "Held at the design review. Two independent second opinions each scored it 6.5 out of 10 (pass mark 7). Both named frame 2, the pixel frame, weakest: round 1 'the lower 40% is basic' (a headline and a paragraph on a hairline grid, tiles that looked dirty), round 2 'borderline basic' (the copy, the staircase and the word read as three unrelated bands). Two failed rounds, so nothing was published (the task rule).",
+  "design_review_note": "Round 1 (6.5; frames 6.5, 6, 7): a real small JPG of the mark blown up, with a hairline grid; a small selection box; ink outlines and handles. Faults named: grid lines through the type, type off the grid, muddy tiles, selection box too small, a 64px strip beside the stem, handles that followed three different rules, the wordmark crammed under the last line. Round 2 (6.5; frames 7.5, 5.5, 7) was rebuilt: two colours only with every line counterchanged, a selection box three times the size and the shape of the frame, the stem bled off the edge, clean averaged tiles with no grid, a symmetrical arch with two complete handles and the wordmark on its own. Faults named: frame 2's copy far from its headline and in the opposite order to frame 3, the stem reading as a stripe, the palest tiles nearly invisible, 'Squares.' and 'Curves.' set at different sizes because each was fitted to the measure, selection handles that did not match top and bottom, the counter nearly tangent to the bottom edge, r and v tight in 'Curves.'. After round 2 the quick ones were fixed in the draft (matching handles, tiles in clear quarter steps, the r and v, the wordmark's baseline) and it was not re-scored.",
+  "design_rule_followed": "The task rule: two failed rounds, publish nothing. DESIGN.md's 'Always post' (13 Nov) is written for feed slots, so it was not applied to a Story.",
+  "draft": "posts/stories/2026-11-13-1747-squares-or-curves",
+  "sources": [
+   "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html",
+   "https://developer.mozilla.org/en-US/docs/Web/SVG"
+  ],
+  "fact_check": "self-check pass against sources.md (no statistics; both pages opened in this run)",
+  "highlight_cover": "none needed: the Branding cover is already published",
+  "note": "The draft is rendered and passes studio.py check. It is not in design-log.json because it did not go out, so its palette and typeface are not used up. If Lee approves it, publish with mode story and this folder, then run studio.py log."
  }
 ]
