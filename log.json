@@ -1144,7 +1144,7 @@
  },
  {
   "date": "2026-11-13",
-  "slot": "19:33",
+  "slot": "19:33 (held by the scheduled run at 6.5; published 23:42 on Lee's say-so in the chat)",
   "time_slot": "evening",
   "id": "2026-11-13-1933-who-reminds-them",
   "format": "reel",
@@ -1176,8 +1176,7 @@
    "They booked three weeks ago. Who reminds them?",
    "Booked in. Then forgot."
   ],
-  "status": "not published",
-  "reason": "Held at the design review. Five independent reviews, each of a reworked version, all scored it 6.5 out of 10 (pass mark 7). The first three each called a frame basic; the last said no frame was basic but the closer repeats the opener. The scheduled task prompt says to publish nothing when a run cannot reach the pass mark, so the 19:33 slot was left empty and Lee was asked.",
+  "status": "published",
   "fact_check": "pass (first round)",
   "design_review": [
    6.5,
@@ -1186,12 +1185,16 @@
    6.5,
    6.5
   ],
-  "design_rule_followed": "The scheduled task prompt (publish nothing under the pass mark). DESIGN.md's 'Always post' (Lee, 13 Nov 2026) says the opposite for a feed slot. The run kept redesigning past two rounds, as the 14:33 run did, but never reached 7. With the two rules in conflict, nobody to ask and a public post that cannot be taken back, it did not publish and asked Lee to choose.",
-  "draft": "posts/2026-11-13-1933-who-reminds-them (finished and fact-checked; see HELD.md; not in design-log.json, so the palette and typeface are not used up)",
+  "design_rule_followed": "Held by the scheduled run (task prompt: publish nothing under the pass mark; five reviews at 6.5). Lee was asked in the chat the same evening and chose to publish it.",
   "sources": [
    "NHS England: Reducing did not attends (DNAs) in outpatient services (publication reference PR2012, February 2023; guidance only, no figure used)"
   ],
   "news_check": "Two searches (Search Engine Roundtable recap for 13 Nov; UK ICO, NCSC and Ofcom news this week). Nothing new was opened or verified. Two posts with a news hook had already gone out today (the HTTPS post and the Microsoft 365 outage), which is the daily limit. Scan note added to newsdesk.json.",
-  "note": "The growth brief asks for Reels with a direct question and a self-check; AI and automation had not been published since 8 Nov. Each review's faults were fixed before the next: paper texture and visible stack edges, an inked stamp, a lifted page corner, smoother blur on falling pages, the weakest held scene cut, the closer redrawn twice. Opener and pink page reached 7 to 7.5; the closer never passed 6.5. Web pages opened without trouble."
+  "note": "The growth brief asks for Reels with a direct question and a self-check; AI and automation had not been published since 8 Nov. Each review's faults were fixed before the next: paper texture and visible stack edges, an inked stamp, a lifted page corner, smoother blur on falling pages, the weakest held scene cut, the closer redrawn twice. Opener and pink page reached 7 to 7.5; the closer never passed 6.5. Web pages opened without trouble. Published later the same evening after Lee picked it over a new photo post (the OPEN sign, 6 out of 10).",
+  "media_id": "18142827844623605",
+  "permalink": "https://www.instagram.com/reel/Dfs1fk8iYsS/",
+  "facebook_post_id": "2573603973147706",
+  "published_via": "github-actions",
+  "published_at": "2026-11-13T23:42:32+00:00"
  }
 ]

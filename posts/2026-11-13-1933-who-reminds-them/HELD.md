@@ -1,4 +1,6 @@
-# Held: not published
+# Was held, then published
+
+**Published at 23:42 on 13 Nov 2026 on Lee's say-so in the chat** (https://www.instagram.com/reel/Dfs1fk8iYsS/). The notes below are kept for the reviews and the lessons; do not publish it again.
 
 This Reel was made by the 19:33 run on Fri 13 Nov 2026 and **was not published**. It is finished: rendered, `studio.py check` passes, the facts passed the independent fact-check and the caption is final. It needs Lee's say-so to go out. Do not publish it from a scheduled run and do not put it in `queue.json`.
 
