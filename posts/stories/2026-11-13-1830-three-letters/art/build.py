@@ -45,13 +45,13 @@ def face_css(q):
     return f"""
 html,body{{background:transparent}}
 .fin{{position:absolute;left:0;top:0;border-radius:{p(7)};overflow:hidden;
-  background:
-   linear-gradient(104deg,rgba(255,252,236,0) 0 var(--s0,58%),rgba(255,252,236,.78) calc(var(--s0,58%) + .6%),rgba(255,252,236,.62) calc(var(--s0,58%) + 4.2%),rgba(255,252,236,0) calc(var(--s0,58%) + 4.8%),rgba(255,252,236,0) calc(var(--s0,58%) + 5.6%),rgba(255,252,236,.5) calc(var(--s0,58%) + 6%),rgba(255,252,236,.4) calc(var(--s0,58%) + 7.6%),rgba(255,252,236,0) calc(var(--s0,58%) + 8%) 100%),
+  background:var(--gloss,linear-gradient(#0000,#0000)),
    linear-gradient(104deg,rgba(64,44,6,0) 0 var(--d0,10%),rgba(64,44,6,.34) calc(var(--d0,10%) + 14%),rgba(64,44,6,.05) calc(var(--d0,10%) + 30%),rgba(64,44,6,0) calc(var(--d0,10%) + 40%) 100%),
    linear-gradient(180deg,#F3DF98 0%,#E0C56C 12%,#CFAF52 44%,#C2A248 62%,#A98A37 100%);
   box-shadow:inset 0 {p(2.2)} 0 rgba(255,250,224,.95),inset {p(2.2)} 0 0 rgba(255,246,206,.7),
    inset 0 {p(-2.4)} 0 rgba(78,56,10,.8),inset {p(-2.2)} 0 0 rgba(78,56,10,.55),inset 0 0 {p(40)} rgba(92,66,12,.28)}}
 .fin .tex{{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:overlay;opacity:.3}}
+.fin .pat{{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:multiply;opacity:.07}}
 .fin .cham{{position:absolute;inset:{p(9)};border-radius:{p(4)};box-shadow:0 0 0 {p(.8)} rgba(84,60,10,.55),{p(.9)} {p(1.2)} 0 {p(.8)} rgba(255,250,222,.6)}}
 .eng{{position:absolute;font-family:News;font-weight:700;color:#000;text-transform:uppercase;white-space:nowrap}}
 .screw{{position:absolute;width:{p(40)};height:{p(40)};border-radius:50%;
@@ -60,6 +60,23 @@ html,body{{background:transparent}}
 .screw:before{{content:"";position:absolute;left:5%;right:5%;top:50%;height:16%;margin-top:-8%;border-radius:{p(1)};
   background:linear-gradient(180deg,#0E0902 0%,#2A1E06 55%,#6B531A 100%);box-shadow:0 {p(1.3)} 0 rgba(255,246,206,.8);transform:rotate(var(--r,24deg))}}
 """
+
+
+def gloss(kind, s0):
+    """What the polished face reflects. Each view gets its own, and it is kept off the three letters."""
+    if kind == "window":   # two panes of a window and the bar between them
+        return (f"linear-gradient(104deg,rgba(255,252,236,0) 0 {s0}%,rgba(255,252,236,.78) {s0+.6}%,rgba(255,252,236,.62) {s0+4.2}%,rgba(255,252,236,0) {s0+4.8}%,"
+                f"rgba(255,252,236,0) {s0+5.6}%,rgba(255,252,236,.5) {s0+6}%,rgba(255,252,236,.4) {s0+7.6}%,rgba(255,252,236,0) {s0+8}% 100%)")
+    if kind == "soft":     # one broad, soft band of sky
+        return f"linear-gradient(98deg,rgba(255,252,236,0) 0 {s0}%,rgba(255,252,236,.5) {s0+7}%,rgba(255,252,236,.42) {s0+10}%,rgba(255,252,236,0) {s0+20}% 100%)"
+    if kind == "sky":      # a strip of sky along the top, above the letters
+        return "linear-gradient(180deg,rgba(255,252,236,0) 5%,rgba(255,252,236,.5) 9%,rgba(255,252,236,.34) 20%,rgba(255,252,236,0) 29%)"
+    if kind == "edge":     # light catching one end only
+        return f"linear-gradient(90deg,rgba(255,252,236,0) 0 {s0}%,rgba(255,252,236,.42) 100%)"
+    return "linear-gradient(#0000,#0000)"
+
+
+TEX = '<svg class="tex"><rect width="100%" height="100%" filter="url(#grainb)"/></svg><svg class="pat"><rect width="100%" height="100%" filter="url(#patina)"/></svg><div class="cham"></div>'
 
 
 def screws(q, W, H, ends="lr"):
@@ -71,23 +88,26 @@ def screws(q, W, H, ends="lr"):
 
 
 NAME = (1840, 204)     # the name plate, in plate units
-LIST = (930, 456)      # the small-print plate
+LIST = (2400, 690)      # the small-print plate
 
 
-def name_face(q, s0="58%", d0="10%"):
+def name_face(q, gl=("window", 91), d0="30%"):
     W, H = NAME[0] * q, NAME[1] * q
-    return W, H, f"""<div class="fin" style="width:{W:.1f}px;height:{H:.1f}px;--s0:{s0};--d0:{d0}">
-<svg class="tex"><rect width="100%" height="100%" filter="url(#grainb)"/></svg><div class="cham"></div>{screws(q, W, H)}
-<div class="eng" style="right:{180*q:.1f}px;top:{56*q:.1f}px;font-size:{100*q:.1f}px;line-height:1;letter-spacing:.1em;filter:url(#eng)">Kittiwake &amp; Quay <span style="letter-spacing:.025em">L</span><span style="letter-spacing:.085em">T</span>D</div>
+    return W, H, f"""<div class="fin" style="width:{W:.1f}px;height:{H:.1f}px;--gloss:{gloss(*gl)};--d0:{d0}">
+{TEX}{screws(q, W, H)}
+<div class="eng" style="right:{180*q:.1f}px;top:{56*q:.1f}px;font-size:{100*q:.1f}px;line-height:1;letter-spacing:.1em;word-spacing:.3em;filter:url(#eng)">Kittiwake &amp; Quay <span style="letter-spacing:.07em">L</span><span style="letter-spacing:.1em">T</span>D</div>
 </div>""", [engrave("eng", 1.25 * q)]
 
 
-def list_face(q, s0="12%", d0="52%"):
+def list_face(q, gl=("sky", 0), d0="56%"):
+    """The second plate: the four things, one to a line. A long plate with its fixings top and bottom at the middle."""
     W, H = LIST[0] * q, LIST[1] * q
-    rows = [("Registered in", 94), ("England and Wales", 149), ("Company No. 24601357", 226), ("Registered office", 303), ("12 Quay Row, Sunderland", 358)]
-    txt = "".join(f'<div class="eng" style="left:0;width:100%;text-align:center;top:{(y-27)*q:.1f}px;font-size:{43*q:.1f}px;line-height:1;letter-spacing:.07em;filter:url(#eng2)">{t}</div>' for t, y in rows)
-    return W, H, f"""<div class="fin" style="width:{W:.1f}px;height:{H:.1f}px;--s0:{s0};--d0:{d0}">
-<svg class="tex"><rect width="100%" height="100%" filter="url(#grainb)"/></svg><div class="cham"></div>{screws(q, W, H)}{txt}</div>""", [engrave("eng2", .62 * q)]
+    rows = [("Kittiwake &amp; Quay Ltd", 86, 158, "eng", ".1em"), ("Registered in England and Wales", 56, 297, "eng2", ".07em"),
+            ("Registered office: 12 Quay Row", 56, 388, "eng2", ".07em"), ("Company No. 24601357", 56, 479, "eng2", ".07em")]
+    txt = "".join(f'<div class="eng" style="left:0;width:100%;text-align:center;top:{y*q:.1f}px;font-size:{f*q:.1f}px;line-height:1;letter-spacing:{ls};filter:url(#{fid})">{t}</div>' for t, f, y, fid, ls in rows)
+    sc = "".join(f'<i class="screw" style="left:{(LIST[0]/2-20)*q:.1f}px;{e}:{34*q:.1f}px;--r:{r}deg"></i>' for e, r in (("top", -14), ("bottom", 52)))
+    return W, H, f"""<div class="fin" style="width:{W:.1f}px;height:{H:.1f}px;--gloss:{gloss(*gl)};--d0:{d0}">
+{TEX}{sc}{txt}</div>""", [engrave("eng", 1.15 * q), engrave("eng2", .95 * q)]
 
 
 def shoot(jobs):
@@ -104,7 +124,9 @@ def shoot(jobs):
                    f"html,body{{-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}}{face_css(q)}</style></head><body>"
                    f"<svg width='0' height='0' style='position:absolute'><defs>{''.join(filters)}"
                    f"<filter id='grainb' x='0' y='0' width='100%' height='100%'><feTurbulence type='fractalNoise' baseFrequency='{0.012/q*2.5:.4f} {0.85/q*2.5:.3f}' numOctaves='2' seed='7'/>"
-                   f"<feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.3 -.3'/></filter></defs></svg><div style='position:absolute;left:{-cx}px;top:0'>{html}</div></body></html>")
+                   f"<feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.3 -.3'/></filter>"
+                   f"<filter id='patina' x='0' y='0' width='100%' height='100%'><feTurbulence type='fractalNoise' baseFrequency='{0.0035/q:.5f} {0.006/q:.5f}' numOctaves='3' seed='11'/>"
+                   f"<feColorMatrix values='0 0 0 0 .42  0 0 0 0 .32  0 0 0 0 .1  0 0 0 2.2 -.95'/></filter></defs></svg><div style='position:absolute;left:{-cx}px;top:0'>{html}</div></body></html>")
             tmp = ART / f".{name}.html"; tmp.write_text(doc)
             pg = b.new_page(viewport={"width": int(W) - cx + 2, "height": int(H) + 2}, device_scale_factor=1)
             pg.goto(tmp.as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(250)
@@ -216,7 +238,7 @@ def render(name, cam, door, parts):
     fxw = cv2.warpPerspective(fx, M, (FW * SS, FH * SS), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
     canvas = paint(light)
     canvas = canvas + (hexc("#D8B25A") - canvas) * fxw[..., 0:1]
-    canvas = canvas * (1 - fxw[..., 1:2]) + hexc("#150003") * fxw[..., 1:2]
+    canvas = canvas * (1 - fxw[..., 1:2]) + hexc("#24040A") * fxw[..., 1:2]
     side = {"t": ("#FFF3C4", "#D9BC62"), "l": ("#F6E6A6", "#C9AA50"), "b": ("#7B6220", "#3E2F0B"), "r": ("#9A7C2E", "#4A390F")}
     for tex, x, y, w, h in parts:
         quads = {"t": [(x, y, T), (x + w, y, T), (x + w, y, 0), (x, y, 0)], "b": [(x, y + h, T), (x + w, y + h, T), (x + w, y + h, 0), (x, y + h, 0)],
@@ -238,45 +260,46 @@ def render(name, cam, door, parts):
 HEAD = f"""
 .frame{{background:#3A0710;color:{CREAM};font-family:Outfit}}
 .bg{{position:absolute;left:0;top:0;width:1080px;height:1920px}}
-.h{{position:absolute;left:64px;font:700 132px/1 Outfit;letter-spacing:-.035em;color:{CREAM}}}
+.h{{position:absolute;left:64px;font:700 124px/1.02 Outfit;letter-spacing:-.02em;color:{CREAM}}}
 .h b{{font-weight:700;color:{BRASS}}}
 """
 
 
-def frame1(tex, n="bg-01", k=3.2, at=(505, 1180), ry=-60, rx=2, rz=0, d=1100, vp=(604, 1190), pivx=368):
+def frame1(tex, n="bg-01", k=2.4, at=(48, 1250), ry=62, rx=0, rz=0, d=2400, vp=(900, 950), crop=1000):
+    """The right-hand end of the plate from the left: QUAY LTD, the end and its two screws. Frame 2 is the same view, closer."""
     nm = NAME
-    cam = Cam(k=k, piv=(nm[0] - pivx, nm[1] / 2), at=at, ry=ry, rx=rx, rz=rz, d=d, vp=vp)
-    door = door_texture([(0, 0, *nm)], light=(300, 60, 1500, 2000), span=(-5200, -3600, 4400, 3600), q=0.4)
-    render(n, cam, door, [(tex["name"], 0, 0, *nm)])
+    x0 = nm[0] - crop
+    cam = Cam(k=k, piv=(1030, nm[1] / 2), at=at, ry=ry, rx=rx, rz=rz, d=d, vp=vp)
+    door = door_texture([(x0 - 600, 0, crop + 600, nm[1])], light=(300, 60, 1500, 2000), span=(nm[0] - 3200, -2600, nm[0] + 2600, 2800), q=0.4)
+    render(n, cam, door, [(tex["name_macro"], x0, 0, crop, nm[1])])
     return f"""<style>{HEAD}</style><img class="bg" src="{{{{post}}}}/art/{n}.jpg">
 <div class="h" style="top:292px">Limited<br>company?</div>
 <!--grain:0.04-->"""
 
 
-def frame2(tex, n="bg-02", k=4.0, at=(54, 610), ry=57, rx=-7, rz=0, d=2600, vp=(900, 600), crop=760):
+def frame2(tex, n="bg-02", k=3.7, at=(62, 676), ry=57, rx=0, rz=0, d=2600, vp=(900, 366), crop=1000):
     nm = NAME
     x0 = nm[0] - crop
     cam = Cam(k=k, piv=(nm[0] - 417, nm[1] / 2), at=at, ry=ry, rx=rx, rz=rz, d=d, vp=vp)
     door = door_texture([(x0 - 400, 0, crop + 400, nm[1])], light=(330, -60, 1500, 2000), span=(nm[0] - 2200, -2000, nm[0] + 2600, 2400))
     render(n, cam, door, [(tex["name_macro"], x0, 0, crop, nm[1])])
     return f"""<style>{HEAD}</style><img class="bg" src="{{{{post}}}}/art/{n}.jpg">
-<div class="h" style="top:1178px">Those three<br>letters come<br>with <b>a list.</b></div>
+<div class="h" style="top:1196px">Those three<br>letters come<br>with <b>a list.</b></div>
 <!--grain:0.04-->"""
 
 
-def frame3(tex, n="bg-03", k=0.95, at=(1013, 846), ry=-12, rx=-6, rz=0, d=2400, vp=(540, 1000), gap=44):
-    nm, ls = NAME, LIST
-    lx, ly = nm[0] - ls[0], nm[1] + gap
-    cam = Cam(k=k, piv=(nm[0], nm[1] / 2), at=at, ry=ry, rx=rx, rz=rz, d=d, vp=vp)
-    door = door_texture([(0, 0, *nm), (lx, ly, *ls)], light=(320, 240, 1500, 2000), span=(nm[0] - 2600, -2200, nm[0] + 1400, 2600))
-    render(n, cam, door, [(tex["name"], 0, 0, *nm), (tex["list"], lx, ly, *ls)])
+def frame3(tex, n="bg-03", k=0.77, at=(528, 1030), ry=-20, rx=9, rz=-8, d=2200, vp=(540, 1030)):
+    ls = LIST
+    cam = Cam(k=k, piv=(ls[0] / 2, ls[1] / 2), at=at, ry=ry, rx=rx, rz=rz, d=d, vp=vp)
+    door = door_texture([(0, 0, *ls)], light=(320, 240, 1500, 2000), span=(-1600, -2600, ls[0] + 1600, 3200), q=0.4)
+    render(n, cam, door, [(tex["list"], 0, 0, *ls)])
     return f"""<style>{HEAD}
-.foot{{position:absolute;left:64px;right:64px;top:1494px;height:106px}}
-.foot p{{position:absolute;left:0;font:700 50px/1 Outfit;letter-spacing:-.02em;color:{CREAM};top:0}}
-.foot p+p{{font:500 32px/1 Outfit;letter-spacing:0;color:rgba(245,233,214,.74);top:68px}}
-.foot .nx-logo{{position:absolute;right:0;top:9px;height:36px}}
+.foot{{position:absolute;left:64px;right:64px;top:1468px;height:110px}}
+.foot p{{position:absolute;left:0;top:0;font:700 46px/1 Outfit;letter-spacing:-.01em;color:{CREAM};white-space:nowrap}}
+.foot p+p{{top:66px;font:500 36px/1 Outfit;letter-spacing:0;color:rgba(245,233,214,.84)}}
+.foot .nx-logo{{position:absolute;right:0;top:7px;height:34px}}
 </style><img class="bg" src="{{{{post}}}}/art/{n}.jpg">
-<div class="h" style="top:292px">Your website<br>has to show<br><b>all four.</b></div>
+<div class="h" style="top:292px">Your website has<br>to show <b>all four.</b></div>
 <div class="foot"><p>Check your footer tonight.</p><p>Source: gov.uk, Running a limited company</p><!--logo:{CREAM},{BRASS}--></div>
 <!--grain:0.04-->"""
 
@@ -286,8 +309,7 @@ def frames(tex):
 
 
 def main(only=None):
-    tex = shoot({"name": (5.0, name_face, {"s0": "80%", "d0": "30%"}),
-                 "name_macro": (9.0, name_face, {"s0": "84%", "d0": "34%", "crop": 760}),
+    tex = shoot({"name_macro": (9.0, name_face, {"gl": ("sky", 0), "d0": "40%", "crop": 1000}),
                  "list": (3.0, list_face, {})})
     for i, html in enumerate(frames(tex), 1):
         (ART / f"slide-{i:02d}.html").write_text(html)
