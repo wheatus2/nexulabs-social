@@ -1,0 +1,16 @@
+{
+ "format": "feed",
+ "composition": [
+  "question-over-one-big-round-power-button-with-its-light-off",
+  "macro-of-the-pressed-button-bleeding-off-the-top-with-the-light-on-green",
+  "the-same-button-larger-bleeding-off-the-right-edge-with-its-light-off-again"
+ ],
+ "background": [
+  "#DAD1BE",
+  "#DAD1BE",
+  "#DAD1BE"
+ ],
+ "display_font": "Brico",
+ "accent": "#33E07A",
+ "concept": "The front panel of an old beige office computer, and one button in three beats. Light off under the oldest question in IT; right up against it, pressed, light on green; then larger and running off the frame, light off again. Putty plastic, dark ink and one green light."
+}

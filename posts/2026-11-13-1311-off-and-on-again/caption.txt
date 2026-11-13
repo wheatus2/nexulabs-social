@@ -1,0 +1,9 @@
+Have you tried turning it off and on again?
+
+Microsoft 365 went down on Thursday and took Outlook and Teams with it. In fairness, restarting things was on the list: its status updates said it was "actively restarting and validating the affected servers". Some then fell over again, and it was still being put right on Friday.
+
+If it can happen to Microsoft, spare a minute for your own plan B. If your email went down tomorrow, could a customer still reach you? A phone number that's easy to find on your website is a good start. So is a contact form that saves each enquiry as well as emailing it.
+
+Send this to whoever looks after your IT.
+
+#microsoft365 #outlook #northeastbusiness #webdesignuk
