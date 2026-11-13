@@ -694,5 +694,45 @@
   "fact_check": "self-check pass against sources.md (no statistics; both pages opened in this run)",
   "highlight_cover": "none needed: the Branding cover is already published",
   "note": "The draft is rendered and passes studio.py check. It is not in design-log.json because it did not go out, so its palette and typeface are not used up. If Lee approves it, publish with mode story and this folder, then run studio.py log."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "17:47 (second firing, started about 18:27 UK)",
+  "id": "stories/2026-11-13-1830-three-letters",
+  "type": "did you know (UK source)",
+  "category": "Web design",
+  "highlight": "websites",
+  "topic": "Limited company? Those three letters come with a list. A limited company's website has to show four things: the registered number, the registered office address, where the company is registered, and the fact that it is a limited company (GOV.UK, Running a limited company). Shown as a brass nameplate for a made-up company, Kittiwake & Quay Ltd, with a second plate of small print under it. Check your footer tonight.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "two-line-question-over-a-brass-nameplate-running-towards-us-along-the-door-the-last-three-letters-largest",
+   "macro-of-three-engraved-letters-and-the-plate-end-with-its-two-screws-over-a-three-line-statement",
+   "three-line-headline-over-the-nameplate-end-and-a-second-smaller-plate-of-small-print-beneath-it-over-a-footer"
+  ],
+  "palette": [
+   "#5B0F1C",
+   "#E6CB72",
+   "#F5E9D6"
+  ],
+  "display_font": "Outfit",
+  "text_font": "Outfit (headlines and footer); Newsreader capitals engraved on the plates",
+  "frames": 3,
+  "status": "not published",
+  "design_review_score": 6.5,
+  "design_review": [
+   6.5,
+   6.5
+  ],
+  "reason": "Held at the design review. Two independent second opinions each scored it 6.5 out of 10 (pass mark 7). Round 2 scored frames 1 and 2 at 7 each and frame 3 at 5.5, and called frame 3's layout basic ('headline, two stacked boxes, footer'). Two failed rounds, so nothing was published (the task rule).",
+  "design_review_note": "Round 1 (6.5; frames 6.5, 5.5, 7): the plate drawn in CSS with blur and bevel filters, Anton headlines. Faults named: 'a faux-3D effect, not a photograph or a proper render', the close-up of LTD soft like an upscale with clipped letters above it, the condensed headline face reading as a template, two question marks stacked, headlines at two sizes, a plate that changed between frames, a company number of all zeros, background streaks. Round 2 (6.5; frames 7, 7, 5.5) was rebuilt from nothing: each plate face drawn flat and placed by a small camera in Python (true perspective, sides, shadows), letters cut with a lighting filter in an engraver's serif, Outfit headlines at one size, no blur, a flat gloss door. Frame 1 was called the boldest and frame 2 the cleanest. Frame 3's faults: name cropped mid-word, the two plates in slightly different perspective, the gloss stripe through LTD, plates 40px apart, the lower plate's edge lining up with nothing, the last engraved line near the screws, small engraving that looks printed, 'all four' not shown as four. Across the set: the same two-stripe gloss on every plate reads as an effect, the brass is too even, 'Kittiwake' unreadable at the far end of frame 1, tight headline tracking. Not re-scored and not patched after round 2.",
+  "design_rule_followed": "The task rule: two failed rounds, publish nothing. DESIGN.md's 'Always post' (13 Nov) is written for feed slots, so it was not applied to a Story.",
+  "draft": "posts/stories/2026-11-13-1830-three-letters",
+  "sources": [
+   "https://www.gov.uk/running-a-limited-company/signs-stationery-and-promotional-material"
+  ],
+  "fact_check": "self-check pass against sources.md (one claim, from GOV.UK; the page was found by search and opened in this run)",
+  "highlight_cover": "none needed: the Websites cover is already published, and nothing went out in this run",
+  "note": "This was a second firing of the 17:47 task on the same evening: the first run's Story (squares or curves) had already been held at 18:20, so the 17:47 slot on 13 Nov stayed empty. The draft is rendered and passes studio.py check. It is not in design-log.json because it did not go out, so its palette and typeface are not used up. If Lee approves it, publish with mode story and this folder, then run studio.py log. See HELD.md in the folder."
  }
 ]
