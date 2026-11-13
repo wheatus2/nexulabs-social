@@ -6,9 +6,19 @@ Lee, 11 Nov 2026: the posts were "very repetitive, very basic", and "look like s
 
 He was right. Every post had the same skeleton: logo top left, label top right, a headline, a list of small text, and a lot of empty flat colour. Changing the font and colour did not hide it.
 
-**If a post can't reach the pass mark, it does not go out.** Skip the slot and say so in the summary.
+**Aim for the pass mark every time.** Until 13 Nov 2026 a post under the mark was held. Since then it still goes out after a second, different design: see "Always post" below.
 
 **Pass mark (Lee, 12 Nov 2026): 7 out of 10 or above from the independent second opinion.** It was 8. On 12 Nov the same carousel was reviewed eleven times and scored 6.5 to 7.5 whatever was changed, so Lee approved it himself and set the mark to 7. Under 7, or a frame the reviewer plainly calls basic, is still held. Always report the score.
+
+## Always post (Lee, 13 Nov 2026)
+
+Lee, after the 08:33 carousel was held on 13 Nov: "try again with a new post, dont just skip always post".
+
+- A feed slot is not left empty because of the design score. The review is still run and the pass mark is still the aim.
+- If the first design misses the mark, make a **new design with a different visual idea**. Don't patch the same one. (The flat type version of the HTTPS post scored 6.5 twice; the keyboard version of the same facts scored 6.5, then 7.)
+- After the second review, fix what the reviewer named and publish the stronger version, with the score stated plainly in the summary and the log.
+- Facts are different: a claim that can't be verified is still cut. Post advice that needs no outside facts if it comes to that.
+- The scheduled task prompts were written before this and still say "publish nothing" after two failed rounds. Until Lee changes them, say in the summary which rule the run followed.
 
 ## Mix it up: photo posts too (Lee, 12 Nov 2026)
 
@@ -126,6 +136,8 @@ One carousel (the colour-contrast post) went through eleven independent reviews 
 - A drawn browser window with skeleton bars (13 Nov, held at 6.5): "a generic skeleton mock-up of the kind every SaaS template ships with". The same frame rebuilt as two giant words plus a statement also scored 6.5: "only words on a flat colour", two headlines competing. A middle frame has to show the thing, made properly, or be cut.
 - Display type left at its default letter fit (13 Nov). Reviewers now zoom in and measure the gaps between letters in words set at 250px and over. Kern big words by hand so the gaps are equal by eye, and watch for crossbars that merge (tt) and letters that nearly touch.
 - A crop that only shaves a letter. Bleed it boldly off the edge or keep it inside the margin.
+
+- What lifted the same post from 6.5 to 7 (13 Nov): swapping flat type for an object with light and depth (keys on a deck), a zoom from frame to frame (five keys, two, one), a true recess for the missing key (no raised rim, inner shadow, a ghost of the letter) and a cover headline big enough to fill the frame. A small hero floating between two equal voids was called basic.
 
 **The craft list that came up in every review**
 - Measure, don't eyeball: `python3 tools/ink.py posts/<id>/slide-01.jpg` prints where the ink is, so gaps and padding can be made equal on purpose.

@@ -349,8 +349,8 @@
       "found": "2026-11-13",
       "event_date": "2026-10-21",
       "headline": "Chrome now asks for permission before opening a site without HTTPS, on by default for all users (Google, 21 Oct 2026)",
-      "status": "verified-unused",
-      "relevance": "Hosting: a business site still on http now gets a permission prompt in Chrome the first time someone visits. Clear action: ask the host to switch on HTTPS. Outside the 7-day news window, so use it as a fact in a hosting post, not as news. It was used in the held carousel posts/2026-11-13-0833-missing-s (not published), so it is still free to use.",
+      "status": "used",
+      "relevance": "Hosting: a business site still on http now gets a permission prompt in Chrome the first time someone visits. Clear action: ask the host to switch on HTTPS. Outside the 7-day news window, so use it as a fact in a hosting post, not as news.",
       "facts": [
         {
           "claim": "'we have now rolled out a change where Chrome explicitly asks users for permission before making an insecure HTTP connection.' 'now we extended this protection to all users by default.' 'Chrome will ask the user to approve the use of HTTP the first time they visit the site.' 'Chrome will not warn again until the user has not visited the site for at least two weeks.' Not shown on sites that cannot get a publicly-trusted certificate (local addresses).",
@@ -364,7 +364,10 @@
       "second_sources": [
         "Help Net Security, 'Chrome puts insecure sites behind a permission prompt' (22 Oct 2026)"
       ],
-      "caveats": "Global, not UK-specific. Google's 2025 announcement said 'Chrome 154 in October 2026'; do not quote a version or month beyond what the 21 Oct 2026 post says."
+      "caveats": "Global, not UK-specific. Google's 2025 announcement said 'Chrome 154 in October 2026'; do not quote a version or month beyond what the 21 Oct 2026 post says.",
+      "used_on": [
+        "instagram+facebook:2026-11-13-0925-missing-key"
+      ]
     },
     {
       "id": "2026-11-13-0833-scan",

@@ -132,5 +132,22 @@
   "display_font": "Arch",
   "accent": "#FED440",
   "concept": "One photograph, one question. A yellow rotary phone on a yellow field, set inside the same margins as the question it can't answer: who rang at 2pm. Yolk yellow and ink, nothing else."
+ },
+ {
+  "id": "2026-11-13-0925-missing-key",
+  "format": "feed",
+  "composition": [
+   "four-line-question-over-five-keys-across-the-measure-with-the-fifth-an-empty-recess",
+   "two-keys-across-the-measure-the-p-and-the-empty-recess",
+   "one-giant-blue-key-between-two-cropped-neighbours"
+  ],
+  "background": [
+   "#DFE2E6",
+   "#DFE2E6",
+   "#DFE2E6"
+  ],
+  "display_font": "InterTight",
+  "accent": "#1C35C8",
+  "concept": "A keyboard with one key missing, zooming in: five keys across the frame spell http and the fifth is an empty recess with a ghost of the s; then two, the p and the hole; then one, the s back in place in blue. Silver deck, white keys, one blue key."
  }
 ]

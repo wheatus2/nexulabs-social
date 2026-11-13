@@ -981,6 +981,58 @@
    "Let's Encrypt: About"
   ],
   "news_check": "Friday 'This week in tech' not made: fewer than 3 verified stories this week. Only the Google core update (already used 11 Nov) is fully verified. Microsoft 365 outage (12 Nov) held: Microsoft's own status pages could not be opened and no page read names the UK; still unresolved when checked. Businesses in ChatGPT still held. Scan note added to newsdesk.json.",
-  "note": "Frame 3 (the big solid s) scored about 7.5 both times and frame 1 was 'plain but not basic'. The middle frame failed twice in two different forms. Type-led carousels keep landing at 6.5 to 7; the reviewers now measure letter gaps in display type, so big words need hand kerning."
+  "note": "Frame 3 (the big solid s) scored about 7.5 both times and frame 1 was 'plain but not basic'. The middle frame failed twice in two different forms. Type-led carousels keep landing at 6.5 to 7; the reviewers now measure letter gaps in display type, so big words need hand kerning. Superseded the same morning: Lee asked for a new post ('dont just skip always post'), and the same facts were redesigned and published as 2026-11-13-0925-missing-key."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "08:33 (remade and published 09:35, after Lee asked in the chat for a new post)",
+  "time_slot": "morning",
+  "id": "2026-11-13-0925-missing-key",
+  "format": "carousel",
+  "category": "Hosting",
+  "angle": "one-minute self-check",
+  "content_type": "educational",
+  "topic": "HTTPS: a web address that starts http is missing its s. Chrome calls such a site 'Not secure' (no private connection), and Google said on 21 Oct 2026 that Chrome now asks for permission before opening a site without HTTPS. Ask whoever hosts the site to switch on HTTPS; Let's Encrypt issues certificates free.",
+  "news_story_id": "2026-10-21-chrome-warns-before-http",
+  "renderer": "studio",
+  "composition": [
+   "four-line-question-over-five-keys-across-the-measure-with-the-fifth-an-empty-recess",
+   "two-keys-across-the-measure-the-p-and-the-empty-recess",
+   "one-giant-blue-key-between-two-cropped-neighbours"
+  ],
+  "palette": [
+   "#DFE2E6",
+   "#14161A",
+   "#1C35C8"
+  ],
+  "display_font": "InterTight",
+  "text_font": "Geist",
+  "slides": 3,
+  "photo": null,
+  "hooks_considered": [
+   "Is your web address missing a letter?",
+   "Chrome now asks before it opens your site.",
+   "One key short of secure."
+  ],
+  "status": "published",
+  "media_id": "18108638819571933",
+  "permalink": "https://www.instagram.com/p/DfrUm2tGTGu/",
+  "facebook_post_id": "1484176674771345_122104237155544005",
+  "published_via": "github-actions",
+  "published_at": "2026-11-13T09:35:28+00:00",
+  "fact_check": "pass",
+  "design_review": [
+   6.5,
+   7
+  ],
+  "approved_by": "Lee, in chat, 13 Nov 2026: 'try again with a new post, dont just skip always post'",
+  "sources": [
+   "Google Chrome Help: Check if a site's connection is secure",
+   "Google: Chrome Now Warns Before Insecure HTTP Connections (21 Oct 2026)",
+   "Help Net Security (22 Oct 2026)",
+   "Let's Encrypt: About"
+  ],
+  "news_check": "See the 13 Nov 08:33 scan in newsdesk.json. No 'This week in tech': fewer than 3 verified stories.",
+  "note": "A new design of the held 08:33 post, same verified facts. Round 1 (three staggered rows of keys, a macro of the socket with its mechanism, a giant blue key) scored 6.5: the socket read as a safe icon and the cover was timid. Rebuilt as a 5, 2, 1 zoom with a true recess; round 2 scored 7, with frame 1 called basic for a small hero between two voids. Before publishing, frame 1 got a four-line 150px headline to fill the frame, the recess got a ghost of the s in place of a dot, leading was opened and the blues were unified. The published version was not reviewed a third time."
  }
 ]

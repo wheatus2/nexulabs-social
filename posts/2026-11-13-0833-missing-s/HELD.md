@@ -1,4 +1,6 @@
-# Held: not published
+# Held: not published (superseded)
+
+**Superseded the same morning.** Lee asked for a new post, and the same facts were redesigned as a keyboard with a missing key and published as `posts/2026-11-13-0925-missing-key` (review 6.5, then 7). Do not publish this version as well.
 
 This carousel was made by the 08:33 run on Fri 13 Nov 2026 and **was not published**. Do not publish it from a scheduled run. It needs Lee's say-so, or a rework and a fresh design review that passes.
 
