@@ -1,0 +1,12 @@
+{
+ "format": "feed",
+ "composition": [
+  "whole-split-flap-departures-board-ten-letters-wide-spelling-the-news-over-a-two-line-footnote",
+  "the-same-board-closer-and-running-off-both-sides-three-short-rows-over-a-quoted-cause",
+  "statement-above-the-board-asking-a-three-row-question-over-one-instruction"
+ ],
+ "background": ["#0B0C0E", "#0B0C0E", "#0B0C0E"],
+ "display_font": "Oswald",
+ "accent": "#FFE14A",
+ "concept": "One split-flap departures board, seen at three distances, and it does the talking. Wide: every departure in America, stopped. Closer, running off the frame: one comms fault. Then the board turns to the reader: is your own line open? Black board, off-white letters, one yellow row a frame."
+}
