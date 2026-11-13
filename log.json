@@ -1086,5 +1086,60 @@
   ],
   "caveats": "Microsoft's own status page and X posts could not be opened, so its words are quoted as reported by the outlets. The outage was still being fixed when this went out, and UK public services were among those affected, so the joke was kept gentle and aimed at the fix, not the people caught up in it.",
   "note": "Round 1 scored 6.5 (soft-gradient buttons, a square 'B' key that read as an app icon). Rebuilt with a dished cap, a dark clearance ring and a glass light, and a last frame of two buttons (Email off, Phone on): round 2 scored 7, with that last frame called basic and the real punchline ('Some then went down again') buried in a footer. Before publishing, the last frame was replaced with the same button, larger, light off again, with the punchline as its headline and the plan B line as the footer. The published version was not reviewed a third time."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "14:33 (run started 15:35 UTC, published 16:50)",
+  "time_slot": "afternoon",
+  "id": "2026-11-13-1433-how-fast-is-your-website",
+  "format": "reel",
+  "category": "Web design",
+  "angle": "one-minute self-check",
+  "content_type": "educational",
+  "topic": "Page speed: how fast is your website? Google's two lines for the main content of a page being on screen (Largest Contentful Paint): 2.5 seconds or less is good, over 4 seconds is poor, judged across most visits on phones and desktops. Check your own at pagespeed.web.dev (PageSpeed Insights, Google's own test) and send a slow result to whoever built the site.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-question-low-left-under-the-head-of-the-dial-with-the-hand-standing-on-zero-down-the-right",
+   "macro-of-the-dial-foot-with-the-hand-down-the-left-stopped-on-the-printed-two-and-a-half-and-the-verdict-high-right",
+   "macro-of-the-dial-shoulder-where-the-flange-turns-red-with-the-hand-coming-across-to-four",
+   "pulled-back-to-the-hub-with-the-hand-flown-back-to-zero-and-a-two-word-order-over-a-web-address-inside-the-ring"
+  ],
+  "palette": [
+   "#A7D0F4",
+   "#081A36",
+   "#E4212B"
+  ],
+  "display_font": "Grotesk",
+  "text_font": "Geist",
+  "scenes": 4,
+  "seconds": 16.4,
+  "photo": null,
+  "logo_on_frames": false,
+  "hooks_considered": [
+   "How fast is your website?",
+   "Your website has 2.5 seconds.",
+   "Time your website."
+  ],
+  "status": "published",
+  "media_id": "17897779521426847",
+  "permalink": "https://www.instagram.com/reel/DfsGXmLgoPm/",
+  "facebook_post_id": "1622745062309995",
+  "published_via": "github-actions",
+  "published_at": "2026-11-13T16:50:44+00:00",
+  "fact_check": "pass (first round)",
+  "design_review": [
+   6.5,
+   7,
+   6.5,
+   7
+  ],
+  "design_rule_followed": "Always post (DESIGN.md, Lee 13 Nov 2026). The scheduled prompt still says to publish nothing after two failed rounds; this run kept redesigning instead and published once a review reached the pass mark of 7 with no frame called basic (the fourth review).",
+  "sources": [
+   "web.dev (Google): Largest Contentful Paint (LCP), last updated 4 Sep 2025 (2.5 seconds or less is good; over 4.0 seconds is poor; 75th percentile of page loads across mobile and desktop)",
+   "Google for Developers: About PageSpeed Insights (LCP thresholds table; what the test reports)"
+  ],
+  "news_check": "Two searches (Search Engine Roundtable recap for 13 Nov, UK ICO/NCSC/Ofcom news this week). The recap page would not open. Nothing new was verified; one news post had already gone out today. Scan note added to newsdesk.json.",
+  "note": "Four design rounds. 1 (6.5): a whole stopwatch on sky blue, then flat white macro scenes; the 2.5 scene was called basic (hand read as a red stripe, no material). 2 (7): macros rebuilt with applied ticks, a turned tick track, a lance hand and depth of field, scored about 8 each, but the whole-stopwatch opener and closer were called basic ('a polished app icon on a gradient') and a different world from the macros. 3 (6.5): all four scenes moved onto one sky-blue dial with the words printed on it, but the opener and closer were centred and shared a camera, and were called basic again. 4 (7, no frame called basic): opener and closer re-shot off centre like the macros (hand as a line down one side, type anchored against the dial), the hand's point made to meet the tick end, the hand kept sharp over the depth of field. Before publishing, the quick faults from round 4 were fixed: hub cropped properly by the foot of scene 1, more room between the question and the hand, no tick close to an edge in scene 2, one grade for the dial in every scene, the address lifted clear of the caption and its caret removed. Not fixed: 'Poor.' is smaller than 'Good.' (the dial leaves it less room). No Nexulabs logo appears on any frame: two reviewers called the logo orphaned or confusing beside Google's address, so it was taken off; say if it should always be on."
  }
 ]
