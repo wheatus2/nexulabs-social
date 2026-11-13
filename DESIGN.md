@@ -139,6 +139,8 @@ One carousel (the colour-contrast post) went through eleven independent reviews 
 
 - What lifted the same post from 6.5 to 7 (13 Nov): swapping flat type for an object with light and depth (keys on a deck), a zoom from frame to frame (five keys, two, one), a true recess for the missing key (no raised rim, inner shadow, a ghost of the letter) and a cover headline big enough to fill the frame. A small hero floating between two equal voids was called basic.
 
+- A drawn paper object can pass (13 Nov, the business card Story, 7 first time): one card for a made-up firm, lying, then in close-up, then standing, with a painted edge, paper grain and focus falling off behind the line that matters. For a close-up, build the object at its real size with CSS `zoom`, not `transform: scale()`: a scaled layer is enlarged after it is drawn, so type and filter edges go soft and blocky. Keep a pale surface out of the top 250px of a Story (Instagram's white name and bars sit there): shade it.
+
 **The craft list that came up in every review**
 - Measure, don't eyeball: `python3 tools/ink.py posts/<id>/slide-01.jpg` prints where the ink is, so gaps and padding can be made equal on purpose.
 - Nothing within about 40px of anything else unless it is meant to touch. Padding inside a box equal on all four sides (measured from the ink, not the CSS box). The gap above a block and the gap below it equal, or clearly different.
