@@ -392,6 +392,28 @@
    "headline": "13 Nov 19:33 scan: two news searches run (Search Engine Roundtable daily recap for 13 Nov; UK ICO, NCSC and Ofcom news for 12 and 13 Nov). Search results only, nothing opened: the 13 Nov recap and weekly video (the November core update and the ChatGPT Business Hub, both already on the desk), a Lewis Silkin note on the ICO becoming the Information Commission (dated 29 Sep, not new). Two posts with a news hook had already gone out today, so this slot made an evergreen AI and automation Reel on appointment reminders instead (held at the design review).",
    "status": "rejected",
    "reason": "Scan note, not a story. Nothing new was verified from two sources, and the daily limit of two news posts had been reached."
+  },
+  {
+   "id": "2026-11-13-faa-ground-stop",
+   "found": "2026-11-13",
+   "headline": "FAA orders a nationwide ground stop of all departing US flights 'due to extraordinary circumstances and for reasons of safety' (Fri 13 Nov 2026, from 3:53pm ET)",
+   "status": "used",
+   "post": "2026-11-14-0015-every-departure-stopped",
+   "facts": [
+    {
+     "fact": "National ground stop of all departing flights; planes in the air could land",
+     "source": "https://www.rte.ie/news/world/2026/1113/1599187-us-flights/ (Reuters)"
+    },
+    {
+     "fact": "FAA notice: 'due to extraordinary circumstances and for reasons of safety'",
+     "source": "https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems (AP)"
+    },
+    {
+     "fact": "Transportation Secretary Sean Duffy: 'a communication issue impacting all Air Route Traffic Control Centers. FAA technicians are investigating the issue.'",
+     "source": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/"
+    }
+   ],
+   "caveats": "Developing. Not reported lifted and no official cause when posted (about 23:55 UTC on 13 Nov). Not a website or CRM story in itself; used at Lee's request with a contact-form lesson. If followed up, check what the FAA finally gave as the cause."
   }
  ]
 }

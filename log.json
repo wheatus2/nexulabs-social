@@ -1196,5 +1196,102 @@
   "facebook_post_id": "2573603973147706",
   "published_via": "github-actions",
   "published_at": "2026-11-13T23:42:32+00:00"
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "extra post, about 21:40 to 23:30 (asked for by Lee in the chat: 'do another premium post')",
+  "time_slot": "evening",
+  "id": "2026-11-13-2140-does-google-agree",
+  "format": "single image",
+  "category": "Web design (being found: opening hours on Google)",
+  "angle": "one-minute self-check",
+  "content_type": "educational",
+  "topic": "Opening hours on Google: your door says open, does Google agree? Search your business name and read the hours Google shows; if you've claimed your Business Profile that's where you set and edit them; Google lets you set special hours for days like Christmas Day without changing your normal week, and suggests confirming hours for official holidays even when they're unchanged. Then make the hours on your own website match.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "hanging-open-sign-photograph-levelled-and-filling-the-frame-with-a-two-line-question-under-it-as-the-sign's-next-lines-cut-to-its-width"
+  ],
+  "palette": [
+   "#2B1D1A",
+   "#E4E3CF",
+   "#7AD4E5"
+  ],
+  "display_font": "Cond",
+  "text_font": "Geist",
+  "slides": 1,
+  "photo": null,
+  "photo_prepared_not_used": "c9FQyqIECds (Mike Petrucci on Unsplash; not retired, because nothing was published)",
+  "hooks_considered": [
+   "Does Google agree?",
+   "Your door says open. Does Google?",
+   "Search your business name. Check the hours."
+  ],
+  "status": "not published",
+  "reason": "Three independent design reviews scored it 6, 5.5 and 6 out of 10 (pass mark 7); the idea was rated about 8 and the execution called a template. Lee was shown it with its score and chose to publish the reminder Reel instead.",
+  "fact_check": "pass (second round; the first asked for 'They come from your Business Profile' to be softened to what Google's page says)",
+  "design_review": [
+   6,
+   5.5,
+   6
+  ],
+  "draft": "posts/2026-11-13-2140-does-google-agree (see HELD.md; not in design-log.json)",
+  "sources": [
+   "Google Business Profile Help: Edit your opening hours",
+   "Google Business Profile Help: How to set special hours"
+  ],
+  "note": "First photo-led attempt since the yellow phone. Lesson added to DESIGN.md."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "extra post, published 23:56 (asked for by Lee in the chat: a post on the US flights issue)",
+  "time_slot": "evening",
+  "id": "2026-11-14-0015-every-departure-stopped",
+  "format": "carousel",
+  "category": "Tech news (US flights ground stop) with a web design lesson",
+  "angle": "news explained, then a one-minute self-check",
+  "content_type": "educational",
+  "topic": "US flights: on Friday 13 Nov 2026 the FAA ordered every departing flight in the US to stay on the ground 'for reasons of safety'; the US transport secretary called it 'a communication issue' at all air route traffic control centres and said FAA technicians were investigating. Lesson: when communications fail there, every departure stops; when a website's contact form fails, nothing stops and the enquiry never arrives. Send your own website an enquiry tonight.",
+  "news_story_id": "2026-11-13-faa-ground-stop",
+  "renderer": "studio",
+  "composition": [
+   "whole-split-flap-departures-board-ten-letters-wide-spelling-the-news-over-a-two-line-footnote",
+   "the-same-board-closer-and-running-off-both-sides-three-short-rows-over-a-quoted-cause",
+   "statement-above-the-board-asking-a-three-row-question-over-one-instruction"
+  ],
+  "palette": [
+   "#0B0C0E",
+   "#F1EFE6",
+   "#FFE14A"
+  ],
+  "display_font": "Oswald",
+  "text_font": "Geist",
+  "slides": 3,
+  "photo": null,
+  "logo_on_frames": "last frame only",
+  "hooks_considered": [
+   "Every departure in America, stopped.",
+   "The comms failed.",
+   "Is your own line open?"
+  ],
+  "status": "published",
+  "media_id": "18113022320355917",
+  "permalink": "https://www.instagram.com/p/Dfs3FlnDUYK/",
+  "facebook_post_id": "1484176674771345_122104785309544005",
+  "published_via": "github-actions",
+  "published_at": "2026-11-13T23:56:06+00:00",
+  "fact_check": "pass (second round; the first took out 'one' fault and 'one line failed', 'everything stopped' and a FlightAware day total that was already out of date)",
+  "design_review": [
+   7
+  ],
+  "sources": [
+   "Reuters, carried by RTE (13 Nov 2026)",
+   "Associated Press, carried by PBS News (13 Nov 2026)",
+   "CBS News (13 Nov 2026)",
+   "ABC News (13 Nov 2026)",
+   "Yahoo News (13 Nov 2026)"
+  ],
+  "news_check": "Breaking story, still developing at posting: the ground stop had not been reported lifted and no cause had been given. The FAA's own notice and the transport secretary's post could not be opened; both are quoted identically by AP, Reuters, CBS and ABC. The post does not say whether the stop has ended.",
+  "note": "Design passed first time at 7 (frames 7.5, 6.5, 7; no frame called basic). The reviewer's named faults were fixed before publishing: one side margin for type and board, frame 2 centred with a source line, letters seated on the axle, lighter shadow under the seam, half-fallen leaves removed. Third news-led post of the day, at Lee's request."
  }
 ]

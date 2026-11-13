@@ -236,5 +236,22 @@
   "display_font": "DMSerif",
   "accent": "#FF8CB2",
   "concept": "One tear-off wall calendar on a chocolate-brown wall, shot three ways. From the right on Friday 13 November, the day the booking is made, over the question. Then right up against the pad from below as nineteen pages peel toward the camera and it stops on a pink one, Thursday 3 December, where a round inked date stamp lands beside the 3: reminder sent, 09:00. Then from the other side on Friday 4 December, the opener answered: the same pad, the payoff under it and the wordmark. Chocolate, cream paper, espresso ink and one pink page."
+ },
+ {
+  "id": "2026-11-14-0015-every-departure-stopped",
+  "format": "feed",
+  "composition": [
+   "whole-split-flap-departures-board-ten-letters-wide-spelling-the-news-over-a-two-line-footnote",
+   "the-same-board-closer-and-running-off-both-sides-three-short-rows-over-a-quoted-cause",
+   "statement-above-the-board-asking-a-three-row-question-over-one-instruction"
+  ],
+  "background": [
+   "#0B0C0E",
+   "#0B0C0E",
+   "#0B0C0E"
+  ],
+  "display_font": "Oswald",
+  "accent": "#FFE14A",
+  "concept": "One split-flap departures board, seen at three distances, and it does the talking. Wide: every departure in America, stopped. Closer, running off the frame: one comms fault. Then the board turns to the reader: is your own line open? Black board, off-white letters, one yellow row a frame."
  }
 ]
