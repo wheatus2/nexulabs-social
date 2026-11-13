@@ -149,5 +149,22 @@
   "display_font": "InterTight",
   "accent": "#1C35C8",
   "concept": "A keyboard with one key missing, zooming in: five keys across the frame spell http and the fifth is an empty recess with a ghost of the s; then two, the p and the hole; then one, the s back in place in blue. Silver deck, white keys, one blue key."
+ },
+ {
+  "id": "2026-11-13-1147-nice-card",
+  "format": "story",
+  "composition": [
+   "whole-business-card-lying-in-space-under-two-line-headline",
+   "macro-of-the-card-corner-with-highlighted-address-over-four-line-statement",
+   "card-standing-facing-us-with-two-matching-lines-highlighted"
+  ],
+  "background": [
+   "#0B5D63",
+   "#0B5D63",
+   "#0B5D63"
+  ],
+  "display_font": "Playfair",
+  "accent": "#7FEBDD",
+  "concept": "One business card for a made-up joiner, seen three ways. Lying in space, with a dry line about its last line. Then right up against that line, out of focus above it, with @gmail.com run over in highlighter. Then standing and facing us with the email moved to the firm's own address, so the two lines match letter for letter under one stroke of the same highlighter. Petrol teal, cotton white and aqua."
  }
 ]

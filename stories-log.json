@@ -616,5 +616,43 @@
   "published_via": "github-actions",
   "status": "published",
   "note": "New-standard cobalt cover (two stacked servers) for the Hosting highlight; to be added to the highlight and set as its cover by the weekly Highlights run."
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "11:47",
+  "published_at": "12:08 UK",
+  "id": "stories/2026-11-13-1147-nice-card",
+  "type": "quick tip",
+  "category": "Domain names",
+  "topic": "Nice card, shame about the last line: a business card for a made-up joiner (Coble & Keel, Sunderland) carries the firm's name and web address, but the email is a Gmail one (cobleandkeel2014@gmail.com). The fix: put the email on the same web address (hello@cobleandkeel.co.uk), so the name matches all the way down. Ask whoever set up your website.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "whole-business-card-lying-in-space-under-two-line-headline",
+   "macro-of-the-card-corner-with-highlighted-address-over-four-line-statement",
+   "card-standing-facing-us-with-two-matching-lines-highlighted"
+  ],
+  "palette": [
+   "#0B5D63",
+   "#F3EEE3",
+   "#7FEBDD"
+  ],
+  "display_font": "Playfair",
+  "design_review_score": 7,
+  "design_review_note": "One independent review: 7/10, no frame called basic, so it passed first time. Frame 2 (the close-up) was named weakest: the lettering and the highlighter looked like an enlarged image, the highlight started on the 4 instead of the @, and the pale top would sit under Instagram's white name and bars. Its other point, that the card reads as a flat graphic turned in 3D and not a photograph, is the ceiling for a drawn object and was not fixable in the run. Fixed before publishing: frame 2 rebuilt at real size so the print and the highlighter edge are sharp, the highlight moved to start at the @, the top of the card put in shadow, softer paper grain, looser headline leading; frame 3's single slab of highlight replaced by one stroke per line starting cleanly at the c, clear of the phone number and the @, looser headline leading, logo set on the footer's baseline; frame 1's card brought inside the type margins and the line under the wordmark moved clear of the ampersand; headlines start at the same height on frames 1 and 3. The reviewer also thought the card's typeface changed between frames; it is the same face (Outfit) throughout, checked in close-up. The published version was not re-scored. Followed the task rule (7 or above, nothing published otherwise); the 'always post' rule in DESIGN.md was not needed.",
+  "source": "https://startups.co.uk/websites/how-to-set-up-a-business-email/",
+  "sources": [
+   "https://startups.co.uk/websites/how-to-set-up-a-business-email/"
+  ],
+  "fact_check": "self-check pass against sources.md (no statistics or claims on the frames; the advice matches the Startups.co.uk guide, opened in this run)",
+  "frames": 3,
+  "media_ids": [
+   "18114256388127138",
+   "18108432040986061",
+   "18125857349030853"
+  ],
+  "published_via": "github-actions",
+  "status": "published",
+  "highlight_cover": "none needed: the Domains cover went out on 12 Nov"
  }
 ]
