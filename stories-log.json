@@ -742,5 +742,44 @@
    "18086186354343203"
   ],
   "workflow_run": 43496656199
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "11:47 (published 14:00 UK: the 3D renders took most of the run)",
+  "id": "stories/2026-11-14-1147-bottom-of-the-pile",
+  "type": "quick tip",
+  "category": "CRM",
+  "highlight": "crm",
+  "topic": "Who's at the bottom of the pile? A bill spike with a made-up week of printed enquiry dockets: the newest (Friday 16:42) goes on top and gets answered first, and the oldest (Monday 09:05) is underneath, still waiting. Turn the pile over: oldest enquiry first.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "two-line-question-top-left-over-a-whole-bill-spike-right-of-centre-with-a-tower-of-dockets-and-one-foot-sticking-out-underneath",
+   "macro-of-the-foot-of-the-tower-running-off-the-top-with-the-bottom-docket-in-focus-over-a-one-line-verdict-set-on-the-print-margin",
+   "high-close-view-of-the-top-docket-on-a-squared-stack-with-the-spike-at-its-corner-under-a-two-line-instruction-set-on-the-docket-title"
+  ],
+  "palette": [
+   "#108058",
+   "#F7F4EA",
+   "#17171D"
+  ],
+  "display_font": "Instrument",
+  "text_font": "Instrument Serif (headlines, one italic word a frame); Geist Mono (the line under the last headline, and the print on the dockets)",
+  "frames": 3,
+  "status": "published",
+  "design_review_score": 7,
+  "design_review": [
+   7,
+   7
+  ],
+  "design_review_note": "Rendered in Blender (art/build.py; the dockets are printed by art/dockets.py). Review 1 (7; frames 7.5, 8, 6.5): no frame called basic; frame 2, the close-up of MON 09:05 under the tower, called 'the one image that looks like it came from a top-tier brand account'. Faults named and fixed before publishing: frame 1's pile moved up and made a little smaller so MON 09:05 clears Instagram's bottom bar and the spike's tip clears the headline; the spike no longer hides letters on the top docket (it goes through the margin); W and h opened; frame 2's headline put exactly on the print's left edge and a scrap of spike at the top edge closed off; frame 3 re-rendered with the spike clear of the dashed rule, the dockets under the top one squared up so no second 'MON' shows, the foot of the top docket lifted, a softer dark side on the spike, the wordmark moved up from the bottom bar, and the headline set on the E of ENQUIRY. Review 2, a fresh reviewer on the fixed frames (7; frames 7, 7.5, 6.5): again no frame basic, frame 3 again the weakest. Not fixed: in frame 3 the spike looks wider and flatter than in frame 1 and shows no hole where it goes through; the headline's left edge is different on each frame; the green is darker on frame 1 than on the others; in frame 2 the date line sits close to the docket's edge.",
+  "facts": "No outside claims: a plain tip. The dockets are props (made-up jobs, numbers from 07700 900xxx). See sources.md.",
+  "media_ids": [
+   "18468148723143990",
+   "18124061821951403",
+   "18120135356006712"
+  ],
+  "highlight_cover": "none needed: the CRM cover is already published",
+  "note": "Followed the task prompt's rule (7 or above publishes). Passed first time, so the 'always post' question did not arise."
  }
 ]
