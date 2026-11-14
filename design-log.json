@@ -287,5 +287,22 @@
   "display_font": "Instrument",
   "accent": "#F7F4EA",
   "concept": "One bill spike on a jade counter with a week of printed enquiry dockets on it, rendered in 3D (Blender) and shot three ways. Wide: the whole tower, Friday 16:42 on top, and the foot of Monday 09:05 sticking out underneath. Then right up against that foot, the tower running off the top. Then from above, the pile turned over, Monday on top. Jade, till-roll white, polished steel and a white serif with one italic word a frame."
+ },
+ {
+  "id": "2026-11-14-1747-best-before",
+  "format": "story",
+  "composition": [
+   "three-line-question-stacked-top-left-over-two-stamped-eggs-in-glazed-cups-low-in-the-frame",
+   "macro-of-the-2019-stamp-on-the-shell-with-the-egg-filling-the-frame-and-the-line-set-on-the-black-glaze-of-the-cup",
+   "the-2026-egg-alone-upper-right-in-its-cup-with-a-two-line-instruction-and-wordmark-on-the-table-below"
+  ],
+  "background": [
+   "#B9AEE6",
+   "#B9AEE6",
+   "#B9AEE6"
+  ],
+  "display_font": "Unbounded",
+  "accent": "#9E1328",
+  "concept": "Two white eggs in glazed ink-black egg cups on a lilac sweep, rendered in 3D (Blender). Each shell carries a red ink stamp the way UK eggs carry a date, but the stamp is a website footer: one says (c) 2019, the other (c) 2026. Which one's fresh? Then right up against the 2019 stamp: your footer says 2019. Then the 2026 egg on its own: change one number, or set it to change itself. Lilac, eggshell white, ink-black glaze and one red ink."
  }
 ]

@@ -781,5 +781,42 @@
   ],
   "highlight_cover": "none needed: the CRM cover is already published",
   "note": "Followed the task prompt's rule (7 or above publishes). Passed first time, so the 'always post' question did not arise."
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "17:47 (published 18:55 UK: 3D renders)",
+  "id": "stories/2026-11-14-1747-best-before",
+  "type": "this or that",
+  "category": "Web design",
+  "highlight": "websites",
+  "topic": "Which one's fresh? Two eggs stamped like UK eggs, but with a website footer year: (c) 2019 and (c) 2026. Close up: your website says 2019. Then the fresh one alone: change one number, or set it to change itself.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-question-stacked-top-left-over-two-stamped-eggs-in-glazed-cups-low-in-the-frame",
+   "macro-of-the-2019-stamp-on-the-shell-with-the-egg-filling-the-frame-and-the-line-set-on-the-black-glaze-of-the-cup",
+   "the-2026-egg-alone-upper-right-in-its-cup-with-a-two-line-instruction-and-wordmark-on-the-table-below"
+  ],
+  "palette": [
+   "#B9AEE6",
+   "#1B1530",
+   "#F4F0FF",
+   "#9E1328"
+  ],
+  "display_font": "Unbounded",
+  "text_font": "Geist (the line under the last headline); Geist Mono (the ink stamps on the eggs)",
+  "frames": 3,
+  "status": "published",
+  "design_review_score": 8,
+  "design_review": [
+   8
+  ],
+  "design_review_note": "Rendered in Blender (art/build.py; stamps by art/stamp.py). One review, 8, no frame called basic; weakest frame 3 (same kind of egg-cup shot as frame 1, egg tip under the top band, sign-off close to the reply bar). Fixed before publishing: word spacing opened on the two-word headline lines, frame 2 line moved down into the dark glaze, frame 3 type block raised clear of the reply bar. Not changed: frame 3's cup a little closer to the right edge than the left margin.",
+  "sources": "none needed (plain advice); see sources.md",
+  "media_ids": [
+   "18199814377393186",
+   "17898051399613764",
+   "18130078291855330"
+  ]
  }
 ]
