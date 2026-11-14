@@ -1352,5 +1352,57 @@
   ],
   "news_check": "Three searches (Search Engine Roundtable recap for 13 Nov; UK tech, ICO, NCSC and Ofcom news; Instagram, WhatsApp Business and Google Business Profile). Nothing new was verified and the previous feed post was a news post, so this slot is an evergreen domain names post. Scan note in newsdesk.json.",
   "note": "Two design rounds. 1 (6.5; frames 7.5, 5, 6.5): three different cameras on the same sign; the close-up of the unlit letters was called basic (clay-grey material, letters colliding, 'uk' lost in the blur, a dead right-hand side), the ghost frame too faint, and the reviewer asked for one locked-off camera so the swipe reads as a switch being flipped. 2 (7; frames 7.5, 6, 7; the unlit frame called 'borderline basic', no frame plainly basic): one camera for all three frames, more space between the letters, the ghost made a cleaner, brighter patch of paint with a dirt outline and runs, studs with washers. Fixed after round 2 and before publishing: shallower letters so their sides stop closing the gaps, a darker dead-acrylic face with dark returns and a soft sky reflection that lights the sign only (so the wall is identical in frames 2 and 3), the stray cable removed, studs made plain and placed one to a corner, the F-o pair and the word spaces in the headlines evened out, and '.uk domain' changed to '.co.uk name' to match the sign. Deliberate exception to 'every frame composed differently': the picture is the same shot three times, because the sequence is the idea; the type and the state of the sign change. The headline is kerned letter by letter and marked data-ui for the checker; its ink was measured at 84px from the top and left. Photo rule: none of the last five feed posts used a library photo, but domain posts are designed, not photo posts (PLAYBOOK), and no cleared photo shows the subject."
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "14:33 (run started 14:34 UK time, held about 17:45)",
+  "time_slot": "afternoon",
+  "id": "2026-11-14-1434-which-purple",
+  "format": "reel",
+  "category": "Logos and branding",
+  "angle": "direct question, then what to ask for",
+  "content_type": "educational",
+  "topic": "Know your colour codes: asked what colour the logo is, most people have one word, like 'purple', and the signwriter, the printer and the web designer can each land on a different purple. A code takes the guessing out: a hex code on a website (a # and six characters), CMYK or a Pantone number in print. The NHS lists its blue as Pantone 300, hex #005EB8. Ask whoever made your logo for your codes and keep them handy.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-question-over-a-shut-colour-fan-deck-seen-close-and-low-with-the-answer-printed-on-its-top-leaf",
+   "five-leaf-colour-fan-opening-on-its-rivet-from-above-the-same-word-on-every-band-over-a-two-word-question",
+   "close-on-the-open-fan-as-focus-comes-forward-to-the-top-leaf-with-its-hex-code-and-the-answer-printed-across-its-own-colour-then-the-wordmark-under-it"
+  ],
+  "palette": [
+   "#2A1740",
+   "#5B2A86",
+   "#F4EFE6",
+   "#CBB2FF"
+  ],
+  "display_font": "News",
+  "text_font": "GeistMono",
+  "scenes": 3,
+  "seconds": 12.0,
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (posts/2026-11-14-1434-which-purple/art/build.py, cards.py): a five-leaf colour fan deck on a steel rivet, on plum paper. Not a photograph, not a real product or business.",
+  "logo_on_frames": "last scene only",
+  "hooks_considered": [
+   "What colour is your logo?",
+   "'Purple' is not a colour.",
+   "Which purple is yours?"
+  ],
+  "status": "not published",
+  "reason": "Two independent design reviews scored it 6 and 6 out of 10 (pass mark 7), and the second plainly called the end card basic. The scheduled task says to publish nothing after two failed rounds, so the run held it and told Lee, as the 13 Nov 19:33 run did. DESIGN.md's 'Always post' (Lee, 13 Nov) would have published it; the run followed the task prompt because that is where the permission to publish without asking is set out.",
+  "fact_check": "pass (second round; the first asked for 'usually written as a hex code' and 'when the match has to be exact' to be softened, and both were)",
+  "design_review": [
+   6,
+   6
+  ],
+  "design_rule_followed": "The scheduled prompt's rule: pass mark 7, publish nothing after two failed rounds. Round 1 (five loose cards) scored 6. Round 2 was a new object (the riveted fan deck) and scored 6 again, with the fan frame alone given 7.5. After round 2 the end card was cut and the wordmark moved into scene 3; that version has not been reviewed.",
+  "draft": "posts/2026-11-14-1434-which-purple (see HELD.md; not in design-log.json)",
+  "sources": [
+   "MDN Web Docs: <hex-color> CSS type (last modified 20 Apr 2026)",
+   "LCC Printmaking, Book Arts and Letterpress blog (UAL): CMYK RGB HEX PMS? Colour Spaces and Printmaking (29 Mar 2021)",
+   "NHS England, NHS identity guidelines: Colours"
+  ],
+  "news_check": "Two news searches run and the Search Engine Roundtable recap for 13 Nov read in full. Nothing new qualified (see newsdesk.json, 2026-11-14-1433-scan). Lee asked in the chat during the run whether there was tech news to report and was told the same.",
+  "note": "Branding had not been posted since 12 Nov and today's other two posts were news and domain names. Web pages opened without trouble. The Reel, caption and sources are final and committed, so it can be published as it stands if Lee says so (publish.yml, mode post, this folder), or reworked as HELD.md describes."
  }
 ]

@@ -1,0 +1,56 @@
+<style>
+/* A colour fan deck for one made-up logo, rendered in 3D (art/build.py) on plum paper and shot four ways.
+   The pictures are 10% larger than the frame, so the camera can move in on them without going soft.
+   Scene 3 has no type of its own: its line is printed on the top leaf, in the picture (2 words, and the code).
+   There is no separate end card: the wordmark arrives under the deck at the end of scene 3. */
+.frame{background:#2A1740}
+.scene{--paper:#F6F1E7;--lilac:#CBB2FF;overflow:hidden;visibility:hidden;color:var(--paper);
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+
+.cam{position:absolute;left:-54px;top:-96px;width:1188px;height:2112px;transform-origin:50% 50%;
+  animation:push var(--len) cubic-bezier(.3,0,.5,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a))}to{transform:scale(var(--b))}}
+.pic{position:absolute;inset:0;background-size:100% 100%}
+.pic.late{opacity:0;animation:nxIn var(--fade,.07s) linear calc(var(--t0) + var(--at)) both}
+
+.h{position:absolute;left:72px;font:700 136px/1 News;letter-spacing:-.022em;white-space:nowrap}
+.h span{display:block}
+.h i{font-style:italic;letter-spacing:-.01em;color:var(--lilac);margin-left:.05em}
+.mark{position:absolute;left:72px;height:54px}
+.mark .nx-logo{height:54px}
+</style>
+
+<!-- 1  the deck shut, close and low at the end away from the rivet. The question is in type; the top leaf answers it. -->
+<section class="scene s1" data-dur="3.2">
+  <div class="cam" style="--len:3.3s;--a:.909;--b:.948"><div class="pic" style="background-image:url({{post}}/art/render-shut.jpg)"></div></div>
+  <div class="h" style="top:276px">
+    <span class="up" style="--d:0s">What colour</span>
+    <span class="up" style="--d:.09s">is your</span>
+    <span class="up" style="--d:.18s">logo?</span>
+  </div>
+</section>
+
+<!-- 2  from above, the deck fans open: the same word on five different purples. -->
+<section class="scene" data-dur="3.8">
+  <div class="cam" style="--len:3.9s;--a:.975;--b:1;left:-16px">
+    <div class="pic" style="background-image:url({{post}}/art/render-fan0.jpg)"></div>
+    <div class="pic late" style="--at:.30s;background-image:url({{post}}/art/render-fan1.jpg)"></div>
+    <div class="pic late" style="--at:.40s;background-image:url({{post}}/art/render-fan2.jpg)"></div>
+    <div class="pic late" style="--at:.50s;background-image:url({{post}}/art/render-fan3.jpg)"></div>
+    <div class="pic late" style="--at:.60s;background-image:url({{post}}/art/render-fan4.jpg)"></div>
+    <div class="pic late" style="--at:.70s;--fade:.10s;background-image:url({{post}}/art/render-fan5.jpg)"></div>
+  </div>
+  <div class="h up" style="top:1388px;--d:1.25s">Which <i>purple?</i></div>
+</section>
+
+<!-- 3  close on the open fan. Focus starts on the leaves behind and comes forward to the top leaf: its code, and
+        "This purple." printed across the colour itself. -->
+<section class="scene" data-dur="5.0">
+  <div class="cam" style="--len:5.1s;--a:.93;--b:.96;left:-50.5px;transform-origin:590.5px 982px">
+    <div class="pic" style="background-image:url({{post}}/art/render-far.jpg)"></div>
+    <div class="pic late" style="--at:.45s;--fade:.55s;background-image:url({{post}}/art/render-near.jpg)"></div>
+  </div>
+  <div class="mark fadein" style="top:1396px;--d:2.6s"><!--logo:#F6F1E7,#CBB2FF--></div>
+</section>

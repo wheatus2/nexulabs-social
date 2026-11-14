@@ -1,0 +1,33 @@
+{
+ "w": 165,
+ "h": 70,
+ "band": 25,
+ "rad": 3.2,
+ "cards": [
+  {
+   "k": 0,
+   "colour": "#5B2A86",
+   "where": "LOGO"
+  },
+  {
+   "k": 1,
+   "colour": "#6D3BB0",
+   "where": "VAN"
+  },
+  {
+   "k": 2,
+   "colour": "#43297F",
+   "where": "SIGN"
+  },
+  {
+   "k": 3,
+   "colour": "#8046A0",
+   "where": "WEBSITE"
+  },
+  {
+   "k": 4,
+   "colour": "#55215F",
+   "where": "UNIFORM"
+  }
+ ]
+}

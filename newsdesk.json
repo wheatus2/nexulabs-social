@@ -447,6 +447,13 @@
    ],
    "caveats": "Not a story from the last 7 days (the date was announced earlier in 2026), so it is not 'news'; it is a dated change worth its own post in January 2027. Only the date and 'the overall timeline gets shorter' were used, in the caption of 2026-11-14-0837-lights-out. Any post that states day counts for an expired .uk name must use the right set of rules for its date. After 9 Feb 2027, registrants can no longer update names directly with Nominet (The UK Domain page): worth checking then.",
    "reason": null
+  },
+  {
+   "id": "2026-11-14-1433-scan",
+   "found": "2026-11-14",
+   "headline": "14 Nov 14:33 scan: two news searches run (Search Engine Roundtable daily recap for 13 Nov; UK tech news for businesses, ICO, NCSC and Ofcom for 13 Nov). The Roundtable recap for 13 Nov was opened and read: Google says a Search model upgrade (Gemini 4 Hydrogen) is live; a Search Console generative AI report logging bug for 9 to 11 Nov; a new Google help page on spotting Google Search visits in analytics; Merchant Center promotion title and deal annotation changes; ChatGPT Ads bidding changes. The UK search repeated stories already on the desk (NCSC Annual Review, the ICO and AI developers).",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Nothing in it gives a UK business owner a clear thing to do or check: the Search model upgrade changes how Google answers but asks nothing of a website, and the rest only matters to advertisers or people who read Search Console's AI report. Today's first feed post was already a news post, so this slot made an evergreen branding Reel (know your colour codes)."
   }
  ]
 }

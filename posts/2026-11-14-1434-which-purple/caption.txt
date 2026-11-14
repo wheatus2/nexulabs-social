@@ -1,0 +1,9 @@
+What colour is your logo? Brand colours, for North East businesses.
+
+If the answer is one word, like "purple", everyone else has to guess. The signwriter, the printer and the web designer can each land on a different purple, and the van stops matching the website.
+
+A code takes the guessing out. On a website a colour is often written as a hex code, a # and six characters. Printers mostly work in CMYK, or a Pantone number when the colour has to stay the same from job to job. The NHS lists its blue as Pantone 300, hex #005EB8.
+
+Ask whoever made your logo for your codes and keep them handy. The colour deck is made up.
+
+#branding #logodesign #brandcolours #northeastbusiness #webdesignuk
