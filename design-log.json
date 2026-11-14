@@ -304,5 +304,18 @@
   "display_font": "Unbounded",
   "accent": "#9E1328",
   "concept": "Two white eggs in glazed ink-black egg cups on a lilac sweep, rendered in 3D (Blender). Each shell carries a red ink stamp the way UK eggs carry a date, but the stamp is a website footer: one says (c) 2019, the other (c) 2026. Which one's fresh? Then right up against the 2019 stamp: your footer says 2019. Then the 2026 egg on its own: change one number, or set it to change itself. Lilac, eggshell white, ink-black glaze and one red ink."
+ },
+ {
+  "id": "2026-11-14-1933-missing-presumed-moved",
+  "format": "feed",
+  "composition": [
+   "empty-gilt-frame-bleeding-off-the-left-receding-along-a-plum-gallery-wall-with-the-wall-label-in-focus-low-right-and-all-type-hung-from-the-label-text-margin"
+  ],
+  "background": [
+   "#1A0A13"
+  ],
+  "display_font": "Fraun",
+  "accent": "#E6CF94",
+  "concept": "A broken link as a museum piece, rendered in 3D (Blender). One empty gilt frame with a bone mount and nothing in it, on a plum gallery wall under one track spot, shot along the wall so the frame recedes and bleeds off the left. In focus beside it, the wall label: Untitled (404), Page not found, Still linked from the homepage. Headline: Missing, presumed moved. Plum, gold leaf, bone white."
  }
 ]

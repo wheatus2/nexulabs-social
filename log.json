@@ -1404,5 +1404,47 @@
   ],
   "news_check": "Two news searches run and the Search Engine Roundtable recap for 13 Nov read in full. Nothing new qualified (see newsdesk.json, 2026-11-14-1433-scan). Lee asked in the chat during the run whether there was tech news to report and was told the same.",
   "note": "Branding had not been posted since 12 Nov and today's other two posts were news and domain names. Web pages opened without trouble. The Reel, caption and sources are final and committed, so it can be published as it stands if Lee says so (publish.yml, mode post, this folder), or reworked as HELD.md describes."
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "19:33 (run started 19:33 UK time, published 19:55)",
+  "time_slot": "evening",
+  "id": "2026-11-14-1933-missing-presumed-moved",
+  "format": "single image",
+  "category": "Web design",
+  "angle": "labelled concept (a joke that carries the advice), then one thing to check tonight",
+  "content_type": "educational",
+  "topic": "Broken links after a rebuild: a page that has moved leaves its old address leading to 'Page not found'. Google's help: if the content has moved, add a redirect from the old address to the page that replaced it; for a move that's for good Google recommends a permanent server-side redirect, the best way to get people and Google Search to the right page. Tonight, click every link on your homepage and send any 404 to whoever looks after the website.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "empty-gilt-frame-bleeding-off-the-left-receding-along-a-plum-gallery-wall-with-the-wall-label-in-focus-low-right-and-all-type-hung-from-the-label-text-margin"
+  ],
+  "palette": [
+   "#1A0A13",
+   "#3A1830",
+   "#E6CF94",
+   "#F2EDE4"
+  ],
+  "display_font": "Fraun",
+  "text_font": "Geist",
+  "photo": null,
+  "picture": "3D render made for this post with Blender's Python module (posts/2026-11-14-1933-missing-presumed-moved/art/build.py, label.py): an empty gilt frame with a bone mount on a plum gallery wall, and a printed wall label in focus.",
+  "concept": "A broken link as a museum piece, rendered in 3D (Blender). One empty gilt frame with a bone mount and nothing in it, on a plum gallery wall under one track spot, shot along the wall so the frame recedes and bleeds off the left. In focus beside it, the wall label: Untitled (404), Page not found, Still linked from the homepage. Headline: Missing, presumed moved. Plum, gold leaf, bone white.",
+  "design_review": {
+   "score": 7,
+   "rounds": 1,
+   "weakest": "the wall label: its small third line carried the punchline, uneven line gaps, empty lower right of the card",
+   "fixed_before_publishing": "label lines re-spaced evenly, punchline darkened, text centred on the card and re-rendered; headline pulled in from the right edge; italic optically aligned; statement and wordmark spaced evenly between headline and label"
+  },
+  "fact_check": "pass",
+  "sources": [
+   "https://support.google.com/webmasters/answer/2445990?hl=en",
+   "https://developers.google.com/search/docs/crawling-indexing/301-redirects"
+  ],
+  "status": "published",
+  "instagram_media_id": "18059801279569315",
+  "permalink": "https://www.instagram.com/p/DfvAaMMgN_b/",
+  "facebook_post_id": "1484176674771345_122105502831544005"
  }
 ]
