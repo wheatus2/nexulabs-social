@@ -1,0 +1,11 @@
+Missing, presumed moved. That's a page after a rebuild, when its old address leads nowhere.
+
+Someone clicks a link on your homepage, or an old one they saved, and gets "Page not found".
+
+Google's own help pages are plain about it: if the content has moved, add a redirect from the old address to the page that replaced it. When the move is for good, Google recommends a permanent server-side redirect, and says it's the best way to get both people and Google Search to the right page.
+
+Tonight, click every link on your homepage. If one ends in a 404, send it to whoever looks after your website.
+
+The gallery and the label are made up for this post.
+
+#webdesign #websitedesign #northeastbusiness #webdesignuk

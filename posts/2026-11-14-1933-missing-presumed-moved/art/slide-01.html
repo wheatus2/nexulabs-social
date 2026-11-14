@@ -1,0 +1,17 @@
+<style>
+/* One gallery wall, one empty gilt frame, one wall label in focus. Picture: art/build.py (Blender), label print: art/label.py.
+   All type hangs from one left line, the left edge of the label's own text. */
+.frame{background:#1A0A13}
+.pic{position:absolute;inset:0;background:url({{post}}/art/render-01.jpg) center/cover}
+.h{position:absolute;left:var(--m);top:84px;font:600 90px/1 Fraun;letter-spacing:-.012em;color:#F2EDE4;white-space:nowrap}
+.h i{display:inline-block;font:italic 400 96px/1 Fraun;letter-spacing:0;margin-left:-3px;color:#E6CF94}
+.st{position:absolute;left:var(--m);top:var(--st);width:430px;font:500 36px/1.28 Geist;letter-spacing:-.005em;color:#F2EDE4}
+.lg{position:absolute;left:calc(var(--m) + 2px);top:var(--lg);height:34px}
+.lg .nx-logo{height:34px}
+:root{--m:576px;--st:520px;--lg:716px}
+</style>
+<div class="pic"></div>
+<div class="h">Missing,<br>presumed<br><i>moved.</i></div>
+<p class="st">When a page moves, redirect the old address to the new one.</p>
+<div class="lg"><!--logo:#F2EDE4,#E6CF94--></div>
+<!--grain:0.04-->

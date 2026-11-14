@@ -454,6 +454,13 @@
    "headline": "14 Nov 14:33 scan: two news searches run (Search Engine Roundtable daily recap for 13 Nov; UK tech news for businesses, ICO, NCSC and Ofcom for 13 Nov). The Roundtable recap for 13 Nov was opened and read: Google says a Search model upgrade (Gemini 4 Hydrogen) is live; a Search Console generative AI report logging bug for 9 to 11 Nov; a new Google help page on spotting Google Search visits in analytics; Merchant Center promotion title and deal annotation changes; ChatGPT Ads bidding changes. The UK search repeated stories already on the desk (NCSC Annual Review, the ICO and AI developers).",
    "status": "rejected",
    "reason": "Scan note, not a story. Nothing in it gives a UK business owner a clear thing to do or check: the Search model upgrade changes how Google answers but asks nothing of a website, and the rest only matters to advertisers or people who read Search Console's AI report. Today's first feed post was already a news post, so this slot made an evergreen branding Reel (know your colour codes)."
+  },
+  {
+   "id": "2026-11-14-1933-scan",
+   "found": "2026-11-14",
+   "headline": "14 Nov 19:33 scan (Saturday evening): one extended search for UK tech news for businesses on 14 Nov returned only site home pages (Enterprise Times, Silicon UK, UKTech News and similar), with no dated story. The 08:33 and 14:33 scans today had already covered the 13 Nov Search Engine Roundtable recap and UK regulator news.",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Nothing new and verifiable that gives a UK business owner something to do; the slot went to an evergreen web design post (broken links and redirects)."
   }
  ]
 }
