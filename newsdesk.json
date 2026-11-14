@@ -414,6 +414,13 @@
     }
    ],
    "caveats": "Developing. Not reported lifted and no official cause when posted (about 23:55 UTC on 13 Nov). Not a website or CRM story in itself; used at Lee's request with a contact-form lesson. If followed up, check what the FAA finally gave as the cause."
+  },
+  {
+   "id": "2026-11-14-0833-scan",
+   "found": "2026-11-14",
+   "headline": "14 Nov 08:33 scan: three news searches run (Search Engine Roundtable daily recap for 13 Nov; UK tech news for businesses, ICO, NCSC and Ofcom for 13 Nov; Instagram, WhatsApp Business and Google Business Profile features for November). Search results only, nothing opened. They repeated stories already on the desk (the November core update, the ChatGPT Business Hub, the Microsoft 365 outage). One possible follow-up seen in the results and not verified: a report that the NCSC warned UK businesses about scams after the Microsoft outage (single trade site, no NCSC page found).",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Nothing new was verified from two sources, and the last feed post was already a news post, so this slot made an evergreen domain names carousel (what happens when a .uk renewal is missed)."
   }
  ]
 }

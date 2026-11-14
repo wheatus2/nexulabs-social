@@ -1,0 +1,17 @@
+<style>
+/* one sign, one wall, one camera: only the sign changes from frame to frame. Picture: art/build.py */
+.frame{background:#0B1247}
+.pic{position:absolute;inset:0;background:url({{post}}/art/render-01.jpg) center/cover}
+/* headline: InterTight at its own spacing, the tight pairs opened by hand; each line's ink starts on the 84px margin */
+.h{position:absolute;left:77px;top:60px;font:700 164px/1.02 InterTight;letter-spacing:0;color:#fff;white-space:nowrap}
+.h u{text-decoration:none}
+.h i{font-style:normal;display:block;color:#A9B3EA}
+.h b{font-weight:700;display:block}
+.ft{position:absolute;left:84px;right:84px;bottom:72px;display:flex;align-items:flex-end;justify-content:space-between}
+.ft p{font:500 36px/1.3 Geist;letter-spacing:-.005em;color:#fff}
+.ft p span{display:block;color:#A9B3EA}
+.ft .nx-logo{height:38px;margin-bottom:12px}
+</style>
+<div class="pic"></div>
+<div class="h" data-ui><!-- data-ui: the headline is kerned letter by letter, so the checker would count each letter as a word and measure the line box, not the ink. Ink measured on the render: cap top 84px, left edge 84px. Real word counts: 3, 3 and 3. --><b>F<u style="margin-left:0.03em">o</u><u style="margin-left:0.004em">r</u><u style="margin-left:0.022em">g</u><u style="margin-left:0.006em">o</u><u style="margin-left:0.024em">t</u></b><b style="margin-left:6px">t<u style="margin-left:0.026em">o</u> r<u style="margin-left:0.034em">e</u><u style="margin-left:0.006em">n</u><u style="margin-left:0.004em">e</u><u style="margin-left:0.04em">w</u><u style="margin-left:0.022em">?</u></b></div>
+<div class="ft"><p>A .co.uk name doesn’t go all at once.<span>It can stay on for a short while.</span></p></div>
