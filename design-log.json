@@ -253,5 +253,22 @@
   "display_font": "Oswald",
   "accent": "#FFE14A",
   "concept": "One split-flap departures board, seen at three distances, and it does the talking. Wide: every departure in America, stopped. Closer, running off the frame: one comms fault. Then the board turns to the reader: is your own line open? Black board, off-white letters, one yellow row a frame."
+ },
+ {
+  "id": "2026-11-14-0837-lights-out",
+  "format": "feed",
+  "composition": [
+   "lit-sign-letters-low-in-the-frame-seen-from-below-left-under-a-two-line-question-with-the-full-stop-on-the-type-margin",
+   "locked-camera-second-state-the-same-letters-switched-off-under-a-muted-word-and-a-two-word-verdict",
+   "locked-camera-third-state-the-bare-wall-with-clean-paint-dirt-lines-studs-and-a-cable-tail-where-the-letters-were-over-the-wordmark"
+  ],
+  "background": [
+   "#0B1247",
+   "#0B1247",
+   "#0B1247"
+  ],
+  "display_font": "InterTight",
+  "accent": "#FFF4E0",
+  "concept": "One illuminated sign on one cobalt painted brick wall, rendered in 3D (Blender), and one camera that never moves, so swiping is like flicking a switch. Lit: a lapsed .uk name can stay on for a short while. Switched off: then the website and email stop. Taken down: finally it is deleted, and all that is left is the clean paint the letters kept the weather off, the dirt that ran down from them, the studs and one cable tail. Cobalt, white light, steel."
  }
 ]

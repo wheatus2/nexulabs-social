@@ -1293,5 +1293,64 @@
   ],
   "news_check": "Breaking story, still developing at posting: the ground stop had not been reported lifted and no cause had been given. The FAA's own notice and the transport secretary's post could not be opened; both are quoted identically by AP, Reuters, CBS and ABC. The post does not say whether the stop has ended.",
   "note": "Design passed first time at 7 (frames 7.5, 6.5, 7; no frame called basic). The reviewer's named faults were fixed before publishing: one side margin for type and board, frame 2 centred with a source line, letters seated on the axle, lighter shadow under the seam, half-fallen leaves removed. Third news-led post of the day, at Lee's request."
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "08:33 (run started 08:37 UTC, published 10:36)",
+  "time_slot": "morning",
+  "id": "2026-11-14-0837-lights-out",
+  "format": "carousel",
+  "category": "Domain names",
+  "angle": "what happens if (the stages a lapsed .co.uk goes through), then a one-minute check",
+  "content_type": "educational",
+  "topic": "A missed .co.uk renewal: the name doesn't go all at once. It can stay on for a short while, then the website and email stop, then for a while it can still be renewed, then it is deleted and anyone can register it. How long each stage lasts is down to Nominet and the registrar, and Nominet moves .uk to a new registry platform on 9 February 2027 with a shorter overall timeline. Find out your expiry date and whose inbox the reminders go to.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "lit-sign-letters-low-in-the-frame-seen-from-below-left-under-a-two-line-question-with-the-full-stop-on-the-type-margin",
+   "locked-camera-second-state-the-same-letters-switched-off-under-a-muted-word-and-a-two-word-verdict",
+   "locked-camera-third-state-the-bare-wall-with-clean-paint-dirt-lines-studs-and-a-cable-tail-where-the-letters-were-over-the-wordmark"
+  ],
+  "palette": [
+   "#0B1247",
+   "#FFFFFF",
+   "#A9B3EA",
+   "#FFF4E0"
+  ],
+  "display_font": "InterTight",
+  "text_font": "Geist",
+  "slides": 3,
+  "photo": null,
+  "picture": "3D render made for this post with Blender's Python module (posts/2026-11-14-0837-lights-out/art/build.py): illuminated letters spelling .co.uk on a cobalt painted brick wall, lit, switched off, and taken down. Not a photograph, not a real business.",
+  "logo_on_frames": "last frame only",
+  "hooks_considered": [
+   "Forgot to renew?",
+   "Your domain has an expiry date.",
+   "What happens when your .co.uk runs out?"
+  ],
+  "status": "published",
+  "media_id": "18121045891791180",
+  "permalink": "https://www.instagram.com/p/DfuAWO1l1Dl/",
+  "facebook_post_id": "1484176674771345_122105151291544005",
+  "published_via": "github-actions",
+  "published_at": "2026-11-14T10:36:13+00:00",
+  "fact_check": "pass (third round). Round 1 found that the day counts in the first draft (30, 90 and 95 days, Nominet's rules today) will not hold for names expiring from now on, because Nominet moves .uk to a new platform on 9 February 2027 and shortens the lifecycle: every day count was taken off the frames and caption. Round 2 corrected 'first the website stops' (the first stage is a short period in which the name can still work) and 'shortening the timings' (it is the overall timeline that gets shorter). Round 3 passed with nothing to fix.",
+  "design_review": [
+   6.5,
+   7
+  ],
+  "design_rule_followed": "The scheduled prompt's rule: pass mark 7. Round 1 failed at 6.5 and the post was redesigned; round 2 reached 7 and the named faults were fixed before publishing. No third review was run on the fixed version.",
+  "sources": [
+   "Nominet, Registrar Resources: Domain expiry process and introduction of drop lists for .UK (modified 11 Aug 2026)",
+   "Nominet (The UK Domain): What happens if I don't renew my domain name by the expiry date?",
+   "Nominet: Who We Are",
+   "Nominet blog: Date set for .UK Standardisation (9 February 2027)",
+   "Nominet: .UK Standardisation",
+   "Nominet (The UK Domain): Changes to .UK domain processes",
+   "Nominet, Registrar Resources: Legacy .UK to new .UK transition (modified 21 Jul 2026)",
+   "Nominet: .UK Registry-Registrar Lifecycle Policy 2026-03 (effective 9 Feb 2027)"
+  ],
+  "news_check": "Three searches (Search Engine Roundtable recap for 13 Nov; UK tech, ICO, NCSC and Ofcom news; Instagram, WhatsApp Business and Google Business Profile). Nothing new was verified and the previous feed post was a news post, so this slot is an evergreen domain names post. Scan note in newsdesk.json.",
+  "note": "Two design rounds. 1 (6.5; frames 7.5, 5, 6.5): three different cameras on the same sign; the close-up of the unlit letters was called basic (clay-grey material, letters colliding, 'uk' lost in the blur, a dead right-hand side), the ghost frame too faint, and the reviewer asked for one locked-off camera so the swipe reads as a switch being flipped. 2 (7; frames 7.5, 6, 7; the unlit frame called 'borderline basic', no frame plainly basic): one camera for all three frames, more space between the letters, the ghost made a cleaner, brighter patch of paint with a dirt outline and runs, studs with washers. Fixed after round 2 and before publishing: shallower letters so their sides stop closing the gaps, a darker dead-acrylic face with dark returns and a soft sky reflection that lights the sign only (so the wall is identical in frames 2 and 3), the stray cable removed, studs made plain and placed one to a corner, the F-o pair and the word spaces in the headlines evened out, and '.uk domain' changed to '.co.uk name' to match the sign. Deliberate exception to 'every frame composed differently': the picture is the same shot three times, because the sequence is the idea; the type and the state of the sign change. The headline is kerned letter by letter and marked data-ui for the checker; its ink was measured at 84px from the top and left. Photo rule: none of the last five feed posts used a library photo, but domain posts are designed, not photo posts (PLAYBOOK), and no cleared photo shows the subject."
  }
 ]

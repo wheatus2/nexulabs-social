@@ -421,6 +421,32 @@
    "headline": "14 Nov 08:33 scan: three news searches run (Search Engine Roundtable daily recap for 13 Nov; UK tech news for businesses, ICO, NCSC and Ofcom for 13 Nov; Instagram, WhatsApp Business and Google Business Profile features for November). Search results only, nothing opened. They repeated stories already on the desk (the November core update, the ChatGPT Business Hub, the Microsoft 365 outage). One possible follow-up seen in the results and not verified: a report that the NCSC warned UK businesses about scams after the Microsoft outage (single trade site, no NCSC page found).",
    "status": "rejected",
    "reason": "Scan note, not a story. Nothing new was verified from two sources, and the last feed post was already a news post, so this slot made an evergreen domain names carousel (what happens when a .uk renewal is missed)."
+  },
+  {
+   "id": "2026-11-14-nominet-uk-standardisation",
+   "found": "2026-11-14",
+   "headline": "Nominet moves every .uk domain to a new registry platform on Tuesday 9 February 2027 (\".UK Standardisation\"), with a shorter lifecycle for names that are not renewed",
+   "status": "verified-unused",
+   "facts": [
+    {
+     "fact": "The transition date is confirmed as 9 February 2027.",
+     "source": "https://nominet.uk/blog/date-set-for-uk-standardisation/"
+    },
+    {
+     "fact": "Until the transition date, current processes remain the same.",
+     "source": "https://theukdomain.uk/uk-standardisation/"
+    },
+    {
+     "fact": "New policy (effective 9 Feb 2027): auto-renew grace period 45 days, redemption grace period 30 days, pending delete 5 days; registrars must notify registrants about a month before expiry, about a week before, and within 5 days after.",
+     "source": "https://nominet.uk/wp-content/uploads/2026/07/UK-Registry-Registrar-Lifecycle-Policy-2026-03.pdf"
+    },
+    {
+     "fact": "At the transition, names more than 75 days past expiry go straight to a 5-day pending delete and cannot be restored; Nominet calls it 'a shortening of the lifecycle'.",
+     "source": "https://registrars.nominet.uk/registry/dot-uk/transition/"
+    }
+   ],
+   "caveats": "Not a story from the last 7 days (the date was announced earlier in 2026), so it is not 'news'; it is a dated change worth its own post in January 2027. Only the date and 'the overall timeline gets shorter' were used, in the caption of 2026-11-14-0837-lights-out. Any post that states day counts for an expired .uk name must use the right set of rules for its date. After 9 Feb 2027, registrants can no longer update names directly with Nominet (The UK Domain page): worth checking then.",
+   "reason": null
   }
  ]
 }
