@@ -818,5 +818,43 @@
    "17898051399613764",
    "18130078291855330"
   ]
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "11:47 (published 13:21 UK: 3D renders)",
+  "id": "stories/2026-11-15-1147-how-did-they-find-you",
+  "type": "quick tip",
+  "category": "Websites + CRM",
+  "highlight": "web-crm",
+  "topic": "How did they find you? A chrome tally counter reading 0047: you know how many enquiries, not where from. Ask every one 'How did you find us?' with one question on your form, and keep the answer in your CRM (the counter then carries a GOOGLE label).",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-question-top-left-over-a-whole-chrome-tally-counter-low-right-with-its-finger-ring-towards-us",
+   "macro-across-the-number-window-with-four-and-seven-sharp-and-the-face-falling-out-of-focus-between-two-paired-lines",
+   "high-close-view-of-the-counter-face-now-carrying-a-green-embossed-label-under-a-one-line-instruction"
+  ],
+  "palette": [
+   "#E6C3BE",
+   "#2A1216",
+   "#185842",
+   "chrome"
+  ],
+  "display_font": "News",
+  "text_font": "Geist (frame 3 line)",
+  "frames": 3,
+  "status": "published",
+  "design_review_score": 7,
+  "design_review": [
+   6,
+   7
+  ],
+  "design_review_note": "Rendered in Blender (art/build.py, textures art/tex.py). Round 1: 6 (frame 2 soft macro with split text, peeking digits on the wheels, soft label). Reworked: shorter window, deep-focus macro with one text block, label in focus, consistent headline sizes. Round 2: 7, weakest frame 2 (mostly blur under the type). Fixed before publishing: frame 3 knob no longer clipped, label green darkened to the brand green, frame 1 headline eased clear of the counter, frame 3 line set larger.",
+  "fact_check": "no outside facts (sources.md)",
+  "media_ids": [
+   "17914567674476498",
+   "17915627631552824",
+   "18131670053483469"
+  ]
  }
 ]
