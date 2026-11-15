@@ -1446,5 +1446,47 @@
   "instagram_media_id": "18059801279569315",
   "permalink": "https://www.instagram.com/p/DfvAaMMgN_b/",
   "facebook_post_id": "1484176674771345_122105502831544005"
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "08:33 (run started 08:34 UK time, published 09:24)",
+  "time_slot": "morning",
+  "id": "2026-11-15-0833-where-is-the-copy",
+  "format": "carousel",
+  "slides": 3,
+  "category": "Hosting",
+  "angle": "why it matters, then two things to ask and check",
+  "content_type": "educational",
+  "topic": "Website backups: where is the copy of your website, when was it last copied, and has anyone tried putting it back? NCSC's small organisations guide lists your website among the data to back up, suggests two backups (online and a storage device), and says to know how to restore a backup and check it contains everything. Ask whoever hosts the site how often it is copied and where the copy is kept.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "low-raking-view-of-a-whole-floppy-disk-receding-in-the-lower-half-under-a-three-line-question",
+   "macro-of-the-label-corner-with-the-empty-date-line-and-the-write-protect-window-over-a-two-line-question-on-the-table",
+   "high-close-view-of-the-label-bleeding-off-the-top-with-the-date-filled-in-and-a-red-tick-over-a-two-line-instruction-and-wordmark"
+  ],
+  "palette": [
+   "#E3DDD0",
+   "#15161A",
+   "#C8202E",
+   "#A8A9AD"
+  ],
+  "display_font": "Geist",
+  "text_font": "Geist",
+  "photo": null,
+  "picture": "3D render made for this post with Blender's Python module (art/build.py, label print art/label.py): a black 3.5-inch floppy disk with a hand-written label on a bone table. Handwriting font: Permanent Marker (OFL).",
+  "concept": "The only copy of a website as one black 3.5-inch floppy disk on a bone table, rendered in 3D (Blender) and shot from the same side three ways. Low and whole: its label says Website. Right up against the label: the DATE line is empty. From above, later: DATE filled in and a red tick, because a backup you've put back is the one that counts. Bone, black plastic, brushed steel and one red.",
+  "design_review": {
+   "score": 7,
+   "rounds": 1,
+   "weakest": "slide 2 (headline squeezed under the disk edge); fixed by moving the disk up before publishing, plus the tick lifted off the DATE rule on slide 3"
+  },
+  "fact_check": "pass",
+  "sources": "posts/2026-11-15-0833-where-is-the-copy/sources.md",
+  "status": "published",
+  "instagram_media_id": "17969529684192527",
+  "permalink": "https://www.instagram.com/p/Dfwc9w7IBka/",
+  "facebook_post_id": "1484176674771345_122105950005544005",
+  "workflow_run": 43699062497
  }
 ]

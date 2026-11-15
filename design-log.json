@@ -317,5 +317,22 @@
   "display_font": "Fraun",
   "accent": "#E6CF94",
   "concept": "A broken link as a museum piece, rendered in 3D (Blender). One empty gilt frame with a bone mount and nothing in it, on a plum gallery wall under one track spot, shot along the wall so the frame recedes and bleeds off the left. In focus beside it, the wall label: Untitled (404), Page not found, Still linked from the homepage. Headline: Missing, presumed moved. Plum, gold leaf, bone white."
+ },
+ {
+  "id": "2026-11-15-0833-where-is-the-copy",
+  "format": "feed",
+  "composition": [
+   "low-raking-view-of-a-whole-floppy-disk-receding-in-the-lower-half-under-a-three-line-question",
+   "macro-of-the-label-corner-with-the-empty-date-line-and-the-write-protect-window-over-a-two-line-question-on-the-table",
+   "high-close-view-of-the-label-bleeding-off-the-top-with-the-date-filled-in-and-a-red-tick-over-a-two-line-instruction-and-wordmark"
+  ],
+  "background": [
+   "#E3DDD0",
+   "#E3DDD0",
+   "#E3DDD0"
+  ],
+  "display_font": "Geist",
+  "accent": "#C8202E",
+  "concept": "The only copy of a website as one black 3.5-inch floppy disk on a bone table, rendered in 3D (Blender) and shot from the same side three ways. Low and whole: its label says Website. Right up against the label: the DATE line is empty. From above, later: DATE filled in and a red tick, because a backup you've put back is the one that counts. Bone, black plastic, brushed steel and one red."
  }
 ]
