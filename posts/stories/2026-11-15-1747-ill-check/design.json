@@ -1,0 +1,12 @@
+{
+ "format": "story",
+ "composition": [
+  "three-line-question-top-left-over-a-standing-fortune-cookie-right-of-centre-with-its-slip-lying-in-front-across-the-table",
+  "macro-across-the-slip-reading-on-sundays-with-the-cookie-a-blur-above-and-a-paired-line-on-the-table-below",
+  "high-close-view-with-the-cookie-running-off-the-top-right-and-a-new-slip-across-the-middle-over-the-paired-line-and-wordmark"
+ ],
+ "background": ["#C6D2BC", "#C6D2BC", "#C6D2BC"],
+ "display_font": "Arch",
+ "accent": "#2634B2",
+ "concept": "A website chatbot's answers as a fortune cookie, rendered in 3D (Blender). One golden cookie standing on a sage table and the slip that came out of it: Yes, we're open on Sundays. Right up against the slip: sounds sure, but you're shut on Sundays. Nearer and higher, the same cookie with a new slip: I'll check with the team. Sounds honest. Sage, baked gold, paper white and one ultramarine ink."
+}
