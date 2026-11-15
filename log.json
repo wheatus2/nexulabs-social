@@ -1533,5 +1533,51 @@
    6
   ],
   "design_rule_followed": "The scheduled prompt's rule: pass mark 7, publish nothing after two failed rounds."
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "19:33 (run started 19:34 UK time, held about 21:55)",
+  "time_slot": "evening",
+  "id": "2026-11-15-1933-they-pressed-send",
+  "format": "reel",
+  "category": "Web design",
+  "angle": "relatable mistake (a form that just clears), then the fix",
+  "content_type": "educational",
+  "topic": "What happens after someone presses Send on a contact form: if the form just clears, the customer is left wondering whether it went. Say you've got the message and say when you'll reply. GOV.UK Design System's confirmation page pattern (for government services) says a confirmation page must include what happens next and when, and a reference number if there is one.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-statement-top-left-over-a-whole-chrome-counter-bell-low-right-with-its-shadow-running-left-and-the-button-going-down-twice",
+   "macro-of-the-bell-button-and-the-crown-of-the-dome-running-off-the-bottom-under-a-huge-two-line-question",
+   "till-slip-lying-in-front-of-the-bell-with-the-bell-bleeding-off-the-right-under-a-three-line-instruction",
+   "macro-along-the-slip-with-its-reply-time-sharp-and-everything-behind-out-of-focus-under-wordmark-and-a-two-word-payoff"
+  ],
+  "palette": [
+   "#27C3D6",
+   "#06222B",
+   "#FBFAF5",
+   "#C9CDD2"
+  ],
+  "display_font": "Syne",
+  "text_font": "Syne",
+  "scenes": 4,
+  "seconds": 15.4,
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py, slip.py): a chrome counter bell and a till slip on a lagoon-blue counter. Not a photograph, not a real business.",
+  "logo_on_frames": "last scene only",
+  "hooks_considered": [
+   "They pressed Send.",
+   "Did it go?",
+   "Does your website answer?"
+  ],
+  "status": "not published",
+  "reason": "Two independent design reviews scored it 5 and 6 out of 10 (pass mark 7); the second called scene 1 basic. The scheduled task says to publish nothing after two failed rounds, so the run held it (see HELD.md). DESIGN.md's 'Always post' would have published it.",
+  "fact_check": "pass (first round)",
+  "design_review": [
+   5,
+   6
+  ],
+  "design_rule_followed": "The scheduled prompt's rule: pass mark 7, publish nothing after two failed rounds.",
+  "sources": "posts/2026-11-15-1933-they-pressed-send/sources.md"
  }
 ]

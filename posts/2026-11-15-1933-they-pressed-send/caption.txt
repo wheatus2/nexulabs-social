@@ -1,0 +1,13 @@
+Web design tip from the North East: what does your website do after someone presses Send?
+
+If the answer is nothing, and the boxes just clear, your customer is left wondering whether it went.
+
+Two lines fix that. Say you've got their message, and say when you'll reply. The guidance GOV.UK writes for government services says a confirmation page must give details of what happens next and when, and a reference number if there is one.
+
+Fill in your own contact form today and see what you get back.
+
+The bell and the slip are made up, drawn in 3D for this post.
+
+Send this to whoever looks after your website.
+
+#webdesignuk #websitedesign #northeastbusiness #sunderlandbusiness

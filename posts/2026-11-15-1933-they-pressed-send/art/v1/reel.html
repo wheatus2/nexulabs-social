@@ -1,0 +1,44 @@
+<style>
+/* One chrome counter bell on a lagoon-blue counter, rendered in 3D (Blender, art/build.py; slip print art/slip.py),
+   shot from the same side four ways. Scene 1 holds one camera while the button goes down twice (render-1b).
+   Pictures are 1188x2112, shown at 1080x1920 and pushed in to 1.1 at most, so they never go soft. */
+.scene{--ink:#06222B;overflow:hidden;visibility:hidden;color:var(--ink);
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px;
+  animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.05))}}
+.h{position:absolute;left:76px;top:268px;font-family:Syne;font-weight:800;letter-spacing:-.035em;line-height:.93;white-space:nowrap}
+.t{position:absolute;left:84px;font:600 50px/1.2 Syne;letter-spacing:-.01em}
+/* 1: the button goes down twice; the picture shivers after each */
+.s1 .pic{transform-origin:700px 1300px;--len:3.6s;--b:1.05}
+.s1 .a{background-image:url({{post}}/art/render-1.jpg)}
+.s1 .b{background-image:url({{post}}/art/render-1b.jpg);opacity:0;
+  animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both,dn 3.6s linear var(--t0) both}
+@keyframes dn{0%,29.9%{opacity:0}30%,35.5%{opacity:1}35.6%,54.9%{opacity:0}55%,60.5%{opacity:1}60.6%,100%{opacity:0}}
+.s1 .ring{position:absolute;inset:0;animation:shiver 3.6s linear var(--t0) both}
+@keyframes shiver{0%,30%{transform:none}31%{transform:translate(0,5px)}33%{transform:translate(0,-3px)}35%{transform:translate(0,2px)}37%{transform:translate(0,-1px)}39%,55%{transform:none}
+  56%{transform:translate(0,5px)}58%{transform:translate(0,-3px)}60%{transform:translate(0,2px)}62%{transform:translate(0,-1px)}64%,100%{transform:none}}
+.s1 .h{font-size:152px}
+.s2 .pic{background-image:url({{post}}/art/render-2.jpg);transform-origin:620px 1250px;--len:3.2s;--b:1.07}
+.s2 .h{font-size:232px}
+.s2 .t{top:736px}
+.s3 .pic{background-image:url({{post}}/art/render-3.jpg);transform-origin:500px 1300px;--len:3.6s;--b:1.05}
+.s3 .h{font-size:128px}
+.s4 .pic{background-image:url({{post}}/art/render-4.jpg);transform-origin:540px 1300px;--len:5s;--b:1.03}
+.s4 .h{font-size:150px;top:294px}
+.s4 .lg{position:absolute;left:84px;top:232px;height:46px}
+.s4 .lg .nx-logo{height:46px}
+</style>
+<section class="scene s1" data-dur="3.6"><div class="ring"><div class="pic a"></div><div class="pic b"></div></div>
+  <div class="h">They<br>pressed<br>Send.</div></section>
+<section class="scene s2" data-dur="3.2"><div class="pic"></div>
+  <div class="h up" style="--d:.1s">Did it<br>go?</div>
+  <div class="t up" style="--d:.5s">The form just cleared.</div></section>
+<section class="scene s3" data-dur="3.6"><div class="pic"></div>
+  <div class="h up" style="--d:.1s">Tell them<br>you&rsquo;ve<br>got it.</div></section>
+<section class="scene s4" data-dur="5"><div class="pic"></div>
+  <div class="h up" style="--d:.1s">Say<br>when.</div>
+  <div class="lg fadein" style="--d:1s"><!--logo:#06222B,#06222B--></div></section>
+<!--grain:0.03-->
