@@ -1488,5 +1488,50 @@
   "permalink": "https://www.instagram.com/p/Dfwc9w7IBka/",
   "facebook_post_id": "1484176674771345_122105950005544005",
   "workflow_run": 43699062497
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "14:33 (run started 14:33 UK time, held about 16:50)",
+  "time_slot": "afternoon",
+  "id": "2026-11-15-1433-who-gets-table-4",
+  "format": "reel",
+  "category": "Websites + CRM",
+  "angle": "relatable mistake (a double booking), then the fix",
+  "content_type": "educational",
+  "topic": "Double bookings: one booking comes through the website, another by phone, for the same table at the same time, because the online booking page and the phone diary are separate. The fix is one diary that website and phone bookings both go into, so a taken table disappears online and the second caller is offered another time. Restaurants need it to track each table.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "two-line-question-high-left-over-two-black-tent-cards-standing-apart-low-on-a-butter-table-with-long-raking-shadows",
+   "close-eye-level-view-of-the-website-card-alone-whole-and-sharp-under-a-two-line-statement",
+   "high-close-view-of-the-phone-card-alone-lying-back-low-in-the-frame-under-a-matching-statement",
+   "locked-camera-second-state-the-same-card-now-reading-20-00-under-a-two-word-payoff-one-line-and-the-wordmark"
+  ],
+  "palette": [
+   "#D9B23C",
+   "#111113",
+   "#F7F2E6",
+   "#1F3BD6"
+  ],
+  "display_font": "Arch",
+  "text_font": "Arch",
+  "scenes": 4,
+  "seconds": 15.6,
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (posts/2026-11-15-1433-who-gets-table-4/art/build.py, cards.py): two black tent cards on a butter-yellow sweep. Not a photograph, not a real business.",
+  "logo_on_frames": "last scene only",
+  "hooks_considered": [
+   "Who gets table 4?",
+   "Two bookings. One table.",
+   "Booked twice for 7.30."
+  ],
+  "status": "not published",
+  "reason": "Two independent design reviews scored it 6 and 6 out of 10 (pass mark 7); the second called scene 3 basic. The scheduled task says to publish nothing after two failed rounds, so the run held it (see HELD.md). DESIGN.md's 'Always post' would have published it.",
+  "fact_check": "pass (second round; the Google Calendar booking-page example was removed as misleading for restaurants and because multi-calendar checks are paid)",
+  "design_review": [
+   6,
+   6
+  ],
+  "design_rule_followed": "The scheduled prompt's rule: pass mark 7, publish nothing after two failed rounds."
  }
 ]

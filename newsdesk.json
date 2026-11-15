@@ -468,6 +468,13 @@
    "headline": "15 Nov 08:33 scan (Sunday morning): one news search for UK tech news for businesses on 14 Nov (Google, ICO, NCSC). Results were only site and tag index pages (Silicon UK, Computer Weekly, SCL round-up, DIGIT), with no new dated story to open.",
    "status": "rejected",
    "reason": "Scan note, not a story. Nothing new and verifiable; the slot went to an evergreen hosting post (website backups, NCSC guidance)."
+  },
+  {
+   "id": "2026-11-15-1433-scan",
+   "found": "2026-11-15",
+   "headline": "15 Nov 14:33 scan (Sunday afternoon): one news search for UK tech news for businesses (Google, ICO, NCSC) returned only round-up and index pages (SCL tech-law round-up, Silicon UK November index, DIGIT, Computer Weekly), with no new dated story to open.",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Nothing new and verifiable; the slot went to an evergreen websites + CRM Reel (double bookings), which was then held on design score."
   }
  ]
 }

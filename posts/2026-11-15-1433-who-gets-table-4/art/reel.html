@@ -1,0 +1,36 @@
+<style>
+/* Two black tent cards on one butter-yellow table, both for table 4 at 19:30 (made-up bookings), rendered in 3D
+   (Blender, art/build.py; card print art/cards.py) and shot from the same side. Scenes 3 and 4 share one locked camera
+   on purpose: the card flips from 19:30 to 20:00 at the cut. Pictures are 1188x2112, shown at 1080x1920 and pushed in
+   to 1.1 at most, so they never go soft. */
+.scene{--ink:#17140D;--blue:#1F3BD6;overflow:hidden;visibility:hidden;color:var(--ink);
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px;
+  animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.05))}}
+.h{position:absolute;left:80px;top:330px;font-family:Arch;font-weight:800;letter-spacing:-.03em;word-spacing:.07em;line-height:.98;white-space:nowrap}
+.h em{font-style:normal;color:var(--blue)}
+.s1 .pic{background-image:url({{post}}/art/render-01.jpg);transform-origin:540px 1150px;--len:3.4s;--b:1.04}
+.s1 .h{font-size:200px}
+.s2 .pic{background-image:url({{post}}/art/render-02.jpg);transform-origin:500px 1150px;--len:3.4s;--b:1.06}
+.s2 .h,.s3 .h{font-size:150px}
+.s3 .pic,.s4 .pic{background-image:url({{post}}/art/render-03.jpg);transform-origin:540px 1450px;--len:3.4s;--b:1.04}
+.s4 .pic{background-image:url({{post}}/art/render-04.jpg);--len:5.4s;--a:1.04;--b:1.09}
+.s4 .h{font-size:190px}
+.s4 .t{position:absolute;left:84px;top:560px;width:900px;font:600 54px/1.2 Arch;letter-spacing:-.015em}
+.s4 .lg{position:absolute;left:84px;top:740px;height:50px}
+.s4 .lg .nx-logo{height:50px}
+</style>
+<section class="scene s1" data-dur="3.4"><div class="pic"></div>
+  <div class="h">Who gets<br>table 4?</div></section>
+<section class="scene s2" data-dur="3.4"><div class="pic"></div>
+  <div class="h up" style="--d:.15s">Ellis booked<br><em>online.</em></div></section>
+<section class="scene s3" data-dur="3.4"><div class="pic"></div>
+  <div class="h up" style="--d:.15s">Patel booked<br><em>by phone.</em></div></section>
+<section class="scene s4" data-dur="5.4"><div class="pic"></div>
+  <div class="h up" style="--d:.1s">One diary.</div>
+  <div class="t up" style="--d:.45s">Website and phone bookings in one diary. Patel gets 20:00.</div>
+  <div class="lg fadein" style="--d:.9s"><!--logo:#17140D,#1F3BD6--></div></section>
+<!--grain:0.03-->

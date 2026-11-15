@@ -1,0 +1,11 @@
+Two bookings for table 4 at 7.30, and only one table 4.
+
+One came through the website, the other rang up. The online booking page and the diary by the phone didn't know about each other, so the website still showed 7.30 as free.
+
+The fix is one diary. Phone bookings go into the same system the website books from, so a taken table disappears online and whoever rings second is offered 8.00 instead.
+
+Restaurants need it to track each table; salons, garages and anyone else with a diary need it just the same. (Ellis, Patel and the table are made up.)
+
+Send this to whoever takes your bookings. Follow for one website fix a day.
+
+#webdesignuk #customcrm #northeastbusiness #sunderlandbusiness
