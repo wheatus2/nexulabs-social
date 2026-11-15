@@ -856,5 +856,43 @@
    "17915627631552824",
    "18131670053483469"
   ]
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "17:47 (published 20:06 UK: 3D renders and a second design round)",
+  "id": "stories/2026-11-15-1747-ill-check",
+  "type": "this or that",
+  "category": "AI and automation",
+  "highlight": "ai-automation",
+  "topic": "Where does your chatbot get its answers? A fortune cookie stands in for a website chatbot: its slip says 'Yes, we're open on Sundays.' Close up: sounds sure, but you're shut on Sundays. Then a new slip, 'I'll check with the team.': sounds honest. Give it your real hours and pass the rest to a person.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-question-top-left-over-a-standing-fortune-cookie-right-of-centre-with-its-slip-lying-in-front-across-the-table",
+   "macro-across-the-slip-reading-on-sundays-with-the-cookie-a-blur-above-and-a-paired-line-on-the-table-below",
+   "high-close-view-with-the-cookie-running-off-the-top-right-and-a-new-slip-across-the-middle-over-the-paired-line-and-wordmark"
+  ],
+  "palette": [
+   "#C6D2BC",
+   "#13221A",
+   "#2634B2",
+   "baked gold"
+  ],
+  "display_font": "Arch",
+  "text_font": "Geist (lines), Newsreader italic (printed slips)",
+  "frames": 3,
+  "status": "published",
+  "design_review_score": 7,
+  "design_review": [
+   7,
+   7
+  ],
+  "design_review_note": "Rendered in Blender (art/build.py, slips art/tex.py). Round 1: 7, but frame 2 (blurred macro of the slip) called basic, so it was reworked: closer macro on 'Sundays.' with no cropped word, accent on 'sure.', darker and sharper slip ink, frame 1 cookie pulled inside the frame and the slip raised. Round 2: 7, no frame basic in imagery (type layout called template-plain), weakest frame 3 (text near the reply bar). Fixed before publishing: text blocks on frames 2 and 3 raised 40px, wordmark snapped to the body baseline, frame 1 headline leading and word spacing opened.",
+  "fact_check": "self-check against sources.md (ICO generative AI accuracy call for evidence); no statistics",
+  "media_ids": [
+   "18153313630549962",
+   "17887677993652712",
+   "18098401907478012"
+  ]
  }
 ]
