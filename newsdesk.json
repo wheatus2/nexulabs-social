@@ -461,6 +461,13 @@
    "headline": "14 Nov 19:33 scan (Saturday evening): one extended search for UK tech news for businesses on 14 Nov returned only site home pages (Enterprise Times, Silicon UK, UKTech News and similar), with no dated story. The 08:33 and 14:33 scans today had already covered the 13 Nov Search Engine Roundtable recap and UK regulator news.",
    "status": "rejected",
    "reason": "Scan note, not a story. Nothing new and verifiable that gives a UK business owner something to do; the slot went to an evergreen web design post (broken links and redirects)."
+  },
+  {
+   "id": "2026-11-15-0833-scan",
+   "found": "2026-11-15",
+   "headline": "15 Nov 08:33 scan (Sunday morning): one news search for UK tech news for businesses on 14 Nov (Google, ICO, NCSC). Results were only site and tag index pages (Silicon UK, Computer Weekly, SCL round-up, DIGIT), with no new dated story to open.",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Nothing new and verifiable; the slot went to an evergreen hosting post (website backups, NCSC guidance)."
   }
  ]
 }

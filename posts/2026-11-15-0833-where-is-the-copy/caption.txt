@@ -1,0 +1,13 @@
+If your website vanished tonight, could you put it back?
+
+The NCSC's guide to backing up names your website alongside your emails, invoices and customer details as things your business needs a copy of. It also suggests keeping two copies, one online and one on a separate device, in case one is lost or fails.
+
+The step people skip is putting a copy back. The NCSC says to make sure you know how to restore a backup, and to check it holds everything.
+
+So ask whoever hosts your site: how often is it copied, where does the copy live, and when did anyone last try restoring it?
+
+(The floppy disk is just a prop.)
+
+Send this to whoever looks after your website. Follow for one website fix a day.
+
+#webdesignuk #websitedesign #northeastbusiness #sunderlandbusiness
