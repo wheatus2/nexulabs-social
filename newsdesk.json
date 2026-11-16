@@ -482,6 +482,13 @@
    "headline": "16 Nov 08:33 scan (Monday morning): one extended search for UK tech news for businesses (Google, NCSC, ICO) returned nothing new that passes the relevance test",
    "status": "rejected",
    "reason": "Only the November core update and NCSC Annual Review (both already used) and NCSC critical infrastructure warnings (not about owner-run firms' websites or CRMs). Evergreen CRM post made instead."
+  },
+  {
+   "id": null,
+   "found": null,
+   "headline": "16 Nov 14:33 scan (Monday afternoon): one extended search for UK tech news for businesses (Google Search, ICO, NCSC, Meta/WhatsApp Business) returned the November core update, Ofcom's fine for Meta over WhatsApp Business information and marketing round-ups",
+   "status": "rejected",
+   "reason": "Scan note, not a story. Nothing new that gives a UK business owner a clear thing to do; the slot went to an evergreen Reel."
   }
  ]
 }
