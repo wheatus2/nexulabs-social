@@ -5,11 +5,20 @@
 > - **The mix.** Two feed posts in every three sell Nexulabs directly: what we build, how it works, what you get, why have it built for you. The third starts from a problem a business owner has and ends on Nexulabs as the fix. Check the last three entries in `log.json` (`content_type`) before choosing. Stories follow the same mix.
 > - **No more stand-alone tips.** No do-it-yourself advice, no tips about other companies' products (Google, Meta and so on), no "check this tonight" posts. A problem post shows the problem, then what Nexulabs builds to solve it. Tech news is used only when it leads straight to something we sell, at most twice a week; the Friday "This week in tech" carousel is dropped.
 > - **What to sell (rotate all four, never the same one two posts running):** websites; custom CRM systems (enquiries, quotes, jobs, bookings); website and CRM built as one system; hosting, domains and email, and branding.
-> - **Material we can use:** concept work for a made-up business, labelled as a concept; real screens of our own website and product with made-up details in them (say so); how a project with us works; what is included. **Prices and offers only when Lee has given them: none so far (ask him; never invent a price, a package, a discount or a turnaround time).** Still no invented clients, reviews, results or statistics.
+> - **Material we can use:** concept work for a made-up business, labelled as a concept; real screens of our own website and product with made-up details in them (say so); how a project with us works; what is included. **Prices and offers: only the four in "Offers Lee has approved" just below. Never invent another price, package, discount or turnaround time.** Still no invented clients, reviews, results or statistics.
 > - **Claims about Nexulabs** (what we build, what is included, how booking a call works) come from nexulabs.co.uk, opened in the run (search first), or from this file. Record them in `sources.md` like any other fact. Do not call the call "free" unless the website does.
 > - **Call to action on every post, alternating:** one post ends "Book a call at nexulabs.co.uk", the next "See what we build at nexulabs.co.uk". It goes on the last frame, large enough to read, and in the last line of the caption before the hashtags. Not "Follow for one website fix a day".
 > - **Log it:** `"content_type": "promotional"` or `"problem-solution"`, `"service"` (websites, crm, web-crm, hosting-domains, branding) and `"cta"` (`call` or `site`).
 > - The design standard, the pass mark, the wording rules and the fact-check are unchanged. Selling is no excuse for a plainer post: show the product beautifully.
+
+> **Offers Lee has approved (16 Nov 2026). Use these words; add nothing to them.**
+> 1. **Free homepage concept.** Book a call and we mock up what your new homepage could look like before you commit to anything.
+> 2. **Free website review.** We look at your current website and send back three things we'd change.
+> 3. **Website and CRM together.** Have both built as one system and the first year's hosting is included. (No price given for this one: do not state one.)
+> 4. **Starter website, £599, first year's hosting included.** A basic website: a homepage, a contact page and the essentials. Lee's words: "a basic website with homepage, contact etc". Do not state a number of pages, a turnaround time, or what hosting costs after the first year, and do not say what else is included beyond this. Write the price as "£599".
+> - At most one offer in a post, and not every post: about one post in three carries an offer. Rotate them, and log which in `"offer"` (`concept`, `review`, `web-crm-hosting`, `starter-599` or `none`).
+> - An offer post still ends on "Book a call at nexulabs.co.uk" or "See what we build at nexulabs.co.uk".
+> - These offers are sourced from this file: cite "PLAYBOOK.md, offers approved by the owner, 16 Nov 2026" in `sources.md`. No "limited time", "only X left" or end dates: Lee has set none.
 
 > **GROWTH (Lee, 11 Nov 2026):** before choosing what to make, read `growth/brief.md`. It is this week's steer from the growth agent (what is earning reach, ideas, search phrases, hashtags, the call to action). Follow it for topic, hook, caption and hashtags. It never overrides `DESIGN.md`, the fact-checking rules or Lee's rules. See `GROWTH.md`.
 
