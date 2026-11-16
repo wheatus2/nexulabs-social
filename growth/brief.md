@@ -21,4 +21,4 @@
 
 **Hashtags (3 or 4, never over 5):** #northeastengland, #sunderland, #newcastleupontyne; #northeastbusiness, #sunderlandbusiness, #durhambusiness; #webdesignuk, #websitedesign, #customcrm; #northeastcreatives.
 
-**End on:** "Send this to whoever looks after your website. Follow for one website fix a day."
+**End on (Lee, 16 Nov 2026):** alternate "Book a call at nexulabs.co.uk" and "See what we build at nexulabs.co.uk". Posts now promote Nexulabs: see "Promote Nexulabs" at the top of PLAYBOOK.md, which overrides the ideas above where they are stand-alone tips.
