@@ -5,8 +5,16 @@
   "the-stamp-lying-on-its-side-die-towards-the-camera-filling-the-middle-under-a-two-word-headline-and-two-short-lines",
   "low-close-view-of-the-print-sharp-with-the-stamp-put-back-behind-it-bleeding-off-the-top-over-a-three-line-instruction-and-wordmark"
  ],
- "background": ["#8EA3B3", "#8EA3B3", "#E9E7E1"],
+ "background": [
+  "#8EA3B3",
+  "#8EA3B3",
+  "#E9E7E1"
+ ],
  "display_font": "Brico",
  "accent": "#3B1C6E",
- "concept": "A made-up bakery's logo (Halfloaf Bakehouse) as a round rubber stamp, rendered in 3D (Blender). Wide: the beech stamp standing on a white paper bag beside the one-ink violet print it left: could your logo be a stamp? Then the stamp on its side, die towards us, the logo as raised rubber with one ink on it. Then low and close on the print, the stamp put back behind it out of focus: ask for the one-colour version. Steel-blue table, white paper, beech, red rubber and one violet ink."
+ "concept": "A made-up bakery's logo (Halfloaf Bakehouse) as a round rubber stamp, rendered in 3D (Blender). Wide: the beech stamp standing on a white paper bag beside the one-ink violet print it left: could your logo be a stamp? Then the stamp on its side, die towards us, the logo as raised rubber with one ink on it. Then low and close on the print, the stamp put back behind it out of focus: ask for the one-colour version. Steel-blue table, white paper, beech, red rubber and one violet ink.",
+ "design_review": {
+  "score": 7,
+  "rounds": 1
+ }
 }

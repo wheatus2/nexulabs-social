@@ -894,5 +894,44 @@
    "17887677993652712",
    "18098401907478012"
   ]
+ },
+ {
+  "date": "2026-11-16",
+  "slot": "11:47 (published 13:05 UK: 3D renders)",
+  "id": "stories/2026-11-16-1147-one-ink",
+  "type": "quick tip",
+  "category": "Logos and branding",
+  "highlight": "branding",
+  "topic": "Could your logo be a stamp? A made-up bakery's round logo (Halfloaf Bakehouse) as a beech rubber stamp and its one-ink violet print on a white paper bag. Then the die close up: one ink, no shading in the logo, still clearly yours. Then the print with the stamp behind: ask for the one-colour version of your logo.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "three-line-question-top-left-over-a-white-paper-bag-running-off-the-bottom-left-with-a-violet-stamp-print-and-the-wooden-stamp-standing-on-it-right",
+   "the-stamp-lying-on-its-side-die-towards-the-camera-filling-the-middle-under-a-two-word-headline-and-two-short-lines",
+   "low-close-view-of-the-print-sharp-with-the-stamp-put-back-behind-it-bleeding-off-the-top-over-a-three-line-instruction-and-wordmark"
+  ],
+  "palette": [
+   "#8EA3B3",
+   "#16131D",
+   "#3B1C6E",
+   "white paper",
+   "beech",
+   "red rubber"
+  ],
+  "display_font": "Brico",
+  "text_font": "Geist (lines), Archivo 800 (the made-up logo)",
+  "frames": 3,
+  "status": "published",
+  "design_review_score": 7,
+  "design_review": [
+   7
+  ],
+  "design_review_note": "Rendered in Blender (art/build.py, logo and print art/tex.py). Round 1: 7, no frame basic; weakest frame 2 (die rubber colour muddy, copy 'No shading. No gradient.' over a shaded render). Fixed before publishing: frame 1 stamp moved fully onto the paper and clear of the headline, frame 2 line rewritten to 'No shading in the logo, and it's still clearly yours.', frame 3 footer cut and wordmark set on the headline margin, headline leading opened. Not fixed: wood grain stripes (reviewer's CG tell) and the die slots looking steeper than the foreshortened print.",
+  "fact_check": "self-check against sources.md; no outside facts",
+  "media_ids": [
+   "17934409530421807",
+   "18121454548985285",
+   "18023280293731768"
+  ]
  }
 ]
