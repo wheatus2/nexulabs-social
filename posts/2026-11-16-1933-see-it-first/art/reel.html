@@ -1,0 +1,29 @@
+<style>
+/* A printed homepage concept for a made-up joinery firm on a charcoal table, with a blue swing tag on it, rendered
+   in 3D (Blender, art/build.py; print art/prints.py) and shot from the same side four ways.
+   Pictures are 1134x2016, shown at 1080x1920 and pushed in to 1.05 at most. InterTight 800 at 160px, one margin. */
+.scene{--w:#F4F5F7;overflow:hidden;visibility:hidden;color:var(--w);
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.cam{position:absolute;inset:0;animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.05))}}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
+.h{position:absolute;left:76px;top:262px;font-family:InterTight;font-weight:800;font-size:160px;letter-spacing:-.028em;word-spacing:.1em;line-height:.96;white-space:nowrap}
+.t{position:absolute;left:82px;top:598px;font:700 62px/1 InterTight;letter-spacing:-.015em;white-space:nowrap;color:#8FA0FF}
+.lg{position:absolute;left:83px;top:792px;height:50px}.lg .nx-logo{height:50px}
+.s1 .cam{transform-origin:640px 1250px;--len:3.4s;--b:1.05}
+.s2 .cam{transform-origin:400px 1350px;--len:3.2s;--b:1.045}
+.s3 .cam{transform-origin:560px 1150px;--len:3.4s;--b:1.05}
+.s4 .cam{transform-origin:540px 1150px;--len:4.6s;--b:1.035}
+</style>
+<section class="scene s1" data-dur="3.4"><div class="cam"><div class="pic" style="background-image:url({{post}}/art/r-one.jpg)"></div></div>
+  <div class="h">Your new<br>homepage.</div></section>
+<section class="scene s2" data-dur="3.2"><div class="cam"><div class="pic" style="background-image:url({{post}}/art/r-two.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Designed<br>for you.</div></section>
+<section class="scene s3" data-dur="3.4"><div class="cam"><div class="pic" style="background-image:url({{post}}/art/r-three.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Before you<br>commit.</div></section>
+<section class="scene s4" data-dur="4.6"><div class="cam"><div class="pic" style="background-image:url({{post}}/art/r-four.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Book<br>a call.</div>
+  <div class="t up" style="--d:.6s">nexulabs.co.uk</div></section>
+<!--grain:0.03-->

@@ -1,0 +1,13 @@
+{
+ "format": "reel",
+ "composition": [
+  "two-line-statement-top-left-over-a-whole-printed-homepage-lying-in-the-lower-half-with-a-small-blue-swing-tag-at-its-far-corner",
+  "low-across-the-printed-hero-headline-sharp-in-the-lower-half-with-the-blue-tag-and-its-string-out-of-focus-at-the-far-corner",
+  "the-blue-swing-tag-filling-the-middle-on-the-corner-of-the-sheet-with-its-string-looping-away-across-the-dark-table",
+  "from-above-the-tag-upright-on-the-left-with-the-string-running-off-to-the-right-under-a-two-line-instruction-a-web-address-and-the-wordmark"
+ ],
+ "background": ["#2A2C33", "#2A2C33", "#2A2C33", "#2A2C33"],
+ "display_font": "InterTight",
+ "accent": "#0C23A8",
+ "concept": "The free homepage concept as an object, rendered in 3D (Blender). A printed homepage design for a made-up joinery firm lying on a charcoal table, with a blue swing tag tied to it: Homepage concept. Yours. Free when you book a call. Whole, then low across its headline, then the tag, then from above with the call to action. Charcoal, paper white, one Nexulabs blue tag and cotton string."
+}
