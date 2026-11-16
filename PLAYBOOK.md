@@ -20,6 +20,8 @@
 > - An offer post still ends on "Book a call at nexulabs.co.uk" or "See what we build at nexulabs.co.uk".
 > - These offers are sourced from this file: cite "PLAYBOOK.md, offers approved by the owner, 16 Nov 2026" in `sources.md`. No "limited time", "only X left" or end dates: Lee has set none.
 
+> **Slot already taken.** If `log.json` has an entry for today's slot with `"status": "in progress"` (a post being made in a chat with Lee), the scheduled run makes nothing for that slot: say so in one line and stop, with no notification.
+
 > **GROWTH (Lee, 11 Nov 2026):** before choosing what to make, read `growth/brief.md`. It is this week's steer from the growth agent (what is earning reach, ideas, search phrases, hashtags, the call to action). Follow it for topic, hook, caption and hashtags. It never overrides `DESIGN.md`, the fact-checking rules or Lee's rules. See `GROWTH.md`.
 
 > **DESIGN STANDARD (Lee, 11 Nov 2026): read `DESIGN.md` before making any post, Reel or Story. It overrides every design instruction in this file.**
