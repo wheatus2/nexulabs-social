@@ -477,8 +477,8 @@
    "reason": "Scan note, not a story. Nothing new and verifiable; the slot went to an evergreen websites + CRM Reel (double bookings), which was then held on design score."
   },
   {
-   "id": null,
-   "found": null,
+   "id": "2026-11-16-0833-scan",
+   "found": "2026-11-16",
    "headline": "16 Nov 08:33 scan (Monday morning): one extended search for UK tech news for businesses (Google, NCSC, ICO) returned nothing new that passes the relevance test",
    "status": "rejected",
    "reason": "Only the November core update and NCSC Annual Review (both already used) and NCSC critical infrastructure warnings (not about owner-run firms' websites or CRMs). Evergreen CRM post made instead."
