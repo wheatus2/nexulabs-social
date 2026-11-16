@@ -1,0 +1,46 @@
+<style>
+/* One made-up "Christmas opening hours" door calendar on a crimson table, rendered in 3D (Blender, art/build.py;
+   print art/prints.py), shot from the same side four ways. The doors open in the picture: each state is its own render.
+   Pictures are 1134x2016, shown at 1080x1920 and pushed in to 1.05 at most, so they never go soft.
+   Fraunces 600 at 150px, one size and one left margin in every scene. */
+.scene{--cream:#F5ECD8;overflow:hidden;visibility:hidden;color:var(--cream);
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.cam{position:absolute;inset:0;animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.05))}}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
+.pic.on{opacity:0;animation:on .01s linear calc(var(--t0) + var(--at)) both}
+@keyframes on{from{opacity:0}to{opacity:1}}
+.h{position:absolute;left:76px;top:262px;font-family:Fraun;font-weight:600;font-size:150px;letter-spacing:-.028em;line-height:.98;white-space:nowrap}
+.t{position:absolute;left:84px;top:598px;font:600 40px/1.2 Geist;letter-spacing:.005em;white-space:nowrap}
+.t i{font-style:normal;opacity:.6;padding:0 .28em}
+.lg{position:absolute;left:84px;top:690px;height:46px}.lg .nx-logo{height:46px}
+.s1 .cam{transform-origin:560px 1150px;--len:3.8s;--b:1.045}
+.s2 .cam{transform-origin:330px 1150px;--len:3.4s;--b:1.045}
+.s3 .cam{transform-origin:640px 1300px;--len:3.2s;--b:1.05}
+.s4 .cam{transform-origin:600px 1200px;--len:4.8s;--b:1.035}
+</style>
+<section class="scene s1" data-dur="3.8"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-1a.jpg)"></div>
+  <div class="pic on" style="--at:1.30s;background-image:url({{post}}/art/r-1b.jpg)"></div>
+  <div class="pic on" style="--at:1.40s;background-image:url({{post}}/art/r-1c.jpg)"></div>
+  <div class="pic on" style="--at:1.50s;background-image:url({{post}}/art/r-1d.jpg)"></div>
+  <div class="pic on" style="--at:1.60s;background-image:url({{post}}/art/r-1e.jpg)"></div></div>
+  <div class="h">Shut on<br>the 25th?</div></section>
+<section class="scene s2" data-dur="3.4"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-2a.jpg)"></div>
+  <div class="pic on" style="--at:.90s;background-image:url({{post}}/art/r-2b.jpg)"></div>
+  <div class="pic on" style="--at:1.00s;background-image:url({{post}}/art/r-2c.jpg)"></div>
+  <div class="pic on" style="--at:1.10s;background-image:url({{post}}/art/r-2d.jpg)"></div>
+  <div class="pic on" style="--at:1.20s;background-image:url({{post}}/art/r-2e.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Half day<br>on the 24th?</div></section>
+<section class="scene s3" data-dur="3.2"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-3.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Does Google<br>know?</div></section>
+<section class="scene s4" data-dur="4.8"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-4.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Set special<br>hours.</div>
+  <div class="t up" style="--d:.6s">Google Business Profile<i>›</i>Edit profile<i>›</i>Hours</div>
+  <div class="lg fadein" style="--d:1.3s"><!--logo:#F5ECD8,#F5ECD8--></div></section>
+<!--grain:0.03-->
