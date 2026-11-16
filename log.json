@@ -1579,5 +1579,51 @@
   ],
   "design_rule_followed": "The scheduled prompt's rule: pass mark 7, publish nothing after two failed rounds.",
   "sources": "posts/2026-11-15-1933-they-pressed-send/sources.md"
+ },
+ {
+  "date": "2026-11-16",
+  "slot": "08:33 (run started 08:34 UK time, published 09:59)",
+  "time_slot": "morning",
+  "id": "2026-11-16-0833-somewhere-to-land",
+  "format": "carousel",
+  "slides": 3,
+  "category": "CRM",
+  "angle": "what not to do, then one habit",
+  "content_type": "educational",
+  "topic": "Quote follow-ups: you sent the quote, but will anyone chase it? A quote can say it's valid for 30 days and still sit unanswered because nobody booked a follow-up. Pick the follow-up day when the quote goes out and write it down (a paper diary will do; a CRM that shows it on the day is better). Made-up example: Sprucewick Fencing, quote 0412 for Mrs J. Hall, diary entry on Thursday 19 November.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "two-line-statement-top-left-over-a-whole-paper-dart-seen-from-its-nose-with-the-quote-printed-across-both-wings",
+   "low-view-of-the-same-dart-in-focus-with-a-field-of-earlier-darts-falling-out-of-focus-behind-over-a-two-line-question",
+   "open-diary-running-off-the-top-left-with-the-dart-nose-down-on-thursdays-entry-and-a-ribbon-over-a-three-line-instruction-and-wordmark"
+  ],
+  "palette": [
+   "#E1C552",
+   "#16150F",
+   "#F4F2EC",
+   "#0B5A63"
+  ],
+  "display_font": "Playfair",
+  "text_font": "Playfair",
+  "photo": null,
+  "picture": "3D render made for this post with Blender's Python module (art/build.py; printed quote and diary pages art/sheet.py): a paper dart folded from a printed quote, a field of earlier darts, and an open diary. Handwriting font: Caveat (OFL).",
+  "concept": "A quote you've sent as a paper dart, folded from the printed quote itself, on a butter-yellow table, rendered in 3D (Blender) and shot from the same side three ways. Whole, from above: QUOTE on one wing, VALID FOR 30 DAYS on the other. Low: the same dart in focus and, behind it, every earlier quote where it came down, going soft. Then from higher: it has come down on an open diary, nose on Thursday's entry, Ring Mrs Hall, fence quote. Butter yellow, paper white, black serif and one petrol teal.",
+  "design_review": {
+   "score": 7,
+   "rounds": 2,
+   "scores": [
+    6.5,
+    7
+   ],
+   "weakest": "round 1: frame 2 (a blurred close-up of the 30 DAYS box, called basic), so it was remade as a low shot of the dart with every earlier quote behind it. Round 2: frame 3 (dart cropped hard, nose tangent to the page edge, handwriting off the rules).",
+   "fixed_before_publishing": "frame 3 re-rendered with the nose clearly on the page and the handwriting sitting on the ruled lines; a cut-off word cropped out of its corner"
+  },
+  "fact_check": "pass",
+  "sources": "posts/2026-11-16-0833-somewhere-to-land/sources.md",
+  "status": "published",
+  "instagram_media_id": "17881399116564335",
+  "permalink": "https://www.instagram.com/p/DfzFslBl3vf/",
+  "facebook_post_id": "1484176674771345_122106954957544005"
  }
 ]
