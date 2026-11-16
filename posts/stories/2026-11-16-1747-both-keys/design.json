@@ -1,0 +1,25 @@
+{
+ "format": "story",
+ "composition": [
+  "two-brass-keys-with-manila-tags-lying-side-by-side-high-in-the-frame-seen-from-above-over-a-two-line-question-low-on-the-slab",
+  "low-macro-across-the-co-uk-tag-with-its-stamp-sharp-and-the-ring-key-and-second-tag-soft-behind-over-a-one-line-answer-and-two-short-lines",
+  "both-keys-on-one-split-ring-with-both-tags-fanned-whole-high-in-the-frame-over-a-two-word-instruction-a-line-and-the-wordmark-right"
+ ],
+ "background": [
+  "#1E1F22",
+  "#1E1F22",
+  "#1E1F22"
+ ],
+ "display_font": "Cond",
+ "accent": "#A9D7F2",
+ "concept": "A web address as a key with a manila key tag, rendered in 3D (Blender). A made-up florist has two keys: one tag stamped wrenfield.com, the other wrenfield.co.uk. Which one? Low and close on the .co.uk tag: it says UK. Then both keys threaded on one ring: get both, and point the .com at the .co.uk so no one else can have it. Graphite slab, manila card, brass, a steel ring, blue-black stamp ink and one ice blue in the type.",
+ "design_review": {
+  "score": 6,
+  "rounds": 2,
+  "scores": [
+   6,
+   6
+  ],
+  "status": "held"
+ }
+}

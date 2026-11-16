@@ -933,5 +933,40 @@
    "18121454548985285",
    "18023280293731768"
   ]
+ },
+ {
+  "date": "2026-11-16",
+  "slot": "17:47",
+  "id": "stories/2026-11-16-1747-both-keys",
+  "type": "this or that",
+  "category": "Domain names",
+  "highlight": "domains",
+  "topic": ".co.uk or .com? Two brass keys for a made-up florist (Wrenfield) with manila key tags stamped wrenfield.co.uk and wrenfield.com. The .co.uk says UK: visitors can tell they're dealing with a British business. Get both and point the .com at the .co.uk, so no one else can have it (names.co.uk guide).",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "two-brass-keys-with-manila-tags-lying-side-by-side-high-in-the-frame-seen-from-above-over-a-two-line-question-low-on-the-slab",
+   "low-macro-across-the-co-uk-tag-with-its-stamp-sharp-and-the-ring-key-and-second-tag-soft-behind-over-a-one-line-answer-and-two-short-lines",
+   "both-keys-on-one-split-ring-with-both-tags-fanned-whole-high-in-the-frame-over-a-two-word-instruction-a-line-and-the-wordmark-right"
+  ],
+  "palette": [
+   "#1E1F22",
+   "#C9A86A",
+   "#A9D7F2",
+   "#F2EFE8"
+  ],
+  "display_font": "Cond",
+  "text_font": "Geist",
+  "frames": 3,
+  "status": "not published",
+  "design_review_score": 6,
+  "design_review": [
+   6,
+   6
+  ],
+  "reason": "Held at the design review. Two independent second opinions each scored it 6 out of 10 (pass mark 7), both naming frame 2 (the .co.uk tag close-up) weakest. Round 1: tag lettering read as a flat decal, dots in .co.uk read as underscores. Round 2 after re-stamping the tags letter by letter and re-shooting frame 2: the lettering read as an AI texture and pasted on (sharp print on a soft card), a blown ring cropped at the top of frame 2, keys inconsistent between frames. Two failed rounds, so nothing was published (the task rule). See HELD.md.",
+  "sources": "posts/stories/2026-11-16-1747-both-keys/sources.md",
+  "highlight_cover": "not needed (domains cover already published 12 Nov)",
+  "media_ids": []
  }
 ]
