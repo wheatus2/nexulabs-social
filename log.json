@@ -1680,11 +1680,22 @@
   "time_slot": "evening",
   "id": "2026-11-16-1933-see-it-first",
   "format": "reel",
-  "status": "in progress",
+  "status": "not published",
   "content_type": "promotional",
   "service": "websites",
   "cta": "call",
   "offer": "concept",
-  "note": "Placeholder so the 19:33 scheduled run does not make a second post for this slot. Filled in when published."
+  "note": "Made in a chat with Lee. Held after two failed reviews; Lee: 'That looks terrible, I'm pleased you didn't publish that.' Do not reuse this design.",
+  "renderer": "studio",
+  "topic": "Free homepage concept: a printed homepage for a made-up joinery firm with a blue swing tag on it, ending on Book a call.",
+  "design_review": {
+   "scores": [
+    6,
+    5
+   ],
+   "rounds": 2,
+   "weakest": "round 2: scene 2 (tag cut by the frame edge); scenes 3 and 4 called basic (tag on a blank sheet); the render called flat and computer-made"
+  },
+  "fact_check": "pass (playbook wording only; nexulabs.co.uk could not be opened)"
  }
 ]
