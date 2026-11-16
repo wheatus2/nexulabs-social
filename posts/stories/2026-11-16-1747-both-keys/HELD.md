@@ -20,3 +20,5 @@ Sources: `sources.md` (names.co.uk guide, opened during the run).
 - Tag lettering: print it evenly (one clean impression, or a typed label) and keep the print inside the depth of field of the card around it, or give the whole tag the same focus.
 - Frame 2: crop the ring fully out (or fully in), fill the empty lower half (show the .com tag behind, out of focus), and raise the text block 60 to 80px.
 - Keep the same brass and light on both keys in every frame; move frame 1's headline down or the tags up.
+
+**Also out of date.** While this run was working, PLAYBOOK.md gained "Promote Nexulabs" (Lee, 16 Nov 2026): Stories follow the same mix, with no stand-alone tips and a call to action on the last frame. This draft is a stand-alone tip with no call to action, so it should not be published as it is even with a passing score. A rework would end on what Nexulabs does (we register and set up both names for you) and "Book a call at nexulabs.co.uk" or "See what we build at nexulabs.co.uk".
