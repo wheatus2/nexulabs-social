@@ -739,7 +739,9 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-07"
   },
   {
     "handle": "@steamandbeancoffeehouse",
@@ -752,7 +754,9 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-16"
   },
   {
     "handle": "@bakerstreetkitchen",
@@ -765,7 +769,10 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-16",
+    "chrome_note": "Bio now links www.bakerstreetkitchen.com (new website launched), so no longer a no-website prospect."
   },
   {
     "handle": "@10greenbottles_hexhamvintage",
@@ -778,7 +785,9 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-10-30"
   },
   {
     "handle": "@lollamac_",
@@ -791,7 +800,10 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-15",
+    "chrome_note": "Bio links www.lollamac.co.uk, so it does have a website."
   },
   {
     "handle": "@mrwolfhexham",
@@ -804,7 +816,10 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-13",
+    "chrome_note": "Bio links www.mrwolf.uk.com, so it does have a website."
   },
   {
     "handle": "@thegratefulbreadbakery",
@@ -817,7 +832,10 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-16",
+    "chrome_note": "Bio links www.gratefulbread.co.uk and takes orders online, so it does have a website."
   },
   {
     "handle": "@pure.plants",
@@ -830,7 +848,10 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-12",
+    "chrome_note": "Bio links www.pure-plants.co.uk, so it does have a website."
   },
   {
     "handle": "@graceandpurposehexham",
@@ -843,7 +864,9 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-10-31"
   },
   {
     "handle": "@ilovenorthshields",
@@ -856,6 +879,8 @@
     "found": "2026-11-17",
     "suggested": [
       "2026-11-17"
-    ]
+    ],
+    "checked_in_chrome": "2026-11-17",
+    "last_post": "2026-11-16"
   }
 ]
