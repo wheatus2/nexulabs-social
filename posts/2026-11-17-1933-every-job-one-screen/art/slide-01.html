@@ -1,0 +1,51 @@
+<style>
+.frame{background:#101319;color:#F3F5F8;font-family:Geist}
+.h{font-family:InterTight;font-weight:700;letter-spacing:-.028em;line-height:.94;color:#F6F8FB;font-size:160px}
+.h em{font-style:normal;color:#9BD5FF}
+.sub{font:500 34px/1.28 Geist;letter-spacing:-.01em;color:#F3F5F8}
+.sub span{color:#8D95A3}
+/* ---------- the app (interface: exempt from the small-text check) ---------- */
+.app{display:flex;background:#F4F5F7;color:#0F1217;border-radius:30px;overflow:hidden;font-family:Geist}
+.side{width:272px;flex:none;background:#E9EBEF;border-right:1px solid #DCDFE5;padding:36px 24px}
+.brand{display:flex;align-items:center;gap:14px;margin:0 6px 46px}
+.mark{width:46px;height:46px;border-radius:13px;background:#0F1217;display:grid;place-items:center}
+.mark svg{width:26px;height:26px}
+.brand b{display:block;font:600 22px/1.05 Geist;letter-spacing:-.02em}
+.brand i{display:block;font:500 16px/1.3 Geist;font-style:normal;color:#7B828E}
+.nav a{display:flex;justify-content:space-between;align-items:center;font:500 21px/1 Geist;color:#515865;padding:15px 16px;border-radius:13px;margin-bottom:4px;letter-spacing:-.01em}
+.nav a u{text-decoration:none;font:500 16px/1 GeistMono;color:#6F7683}
+.nav a.on{background:#fff;color:#0F1217;font-weight:600;box-shadow:0 1px 2px rgba(15,18,23,.08)}
+.main{flex:1;padding:38px 40px 0}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.top h3{font:600 46px/1 Geist;letter-spacing:-.035em}
+.top .r{display:flex;gap:14px;align-items:center}
+.find{width:270px;height:52px;border-radius:14px;background:#E9EBEF;display:flex;align-items:center;padding:0 18px;font:500 18px Geist;color:#8B92A0}
+.new{height:52px;border-radius:14px;background:#0F1217;color:#fff;font:600 19px/52px Geist;padding:0 24px;letter-spacing:-.01em}
+.cols{display:flex;gap:22px}
+.col{flex:1;min-width:0}
+.col h4{color:#515865;display:flex;justify-content:space-between;font:600 19px/1 Geist;color:#515865;margin:0 6px 18px;letter-spacing:-.005em}
+.col h4 u{text-decoration:none;font:500 16px/1.2 GeistMono;color:#6F7683}
+.card{color:#0F1217;background:#fff;border-radius:18px;padding:22px 22px 20px;margin-bottom:16px;box-shadow:0 1px 1px rgba(15,18,23,.05),0 6px 16px rgba(15,18,23,.05)}
+.card b{display:block;font:600 24px/1.12 Geist;letter-spacing:-.025em;margin-bottom:8px}
+.card p{font:500 18px/1.25 Geist;color:#737A87;margin-bottom:20px}
+.card .f{display:flex;justify-content:space-between;align-items:center;font:500 18px/1 Geist;color:#515865}
+.pill{font:600 15px/1 Geist;padding:8px 12px;border-radius:99px;background:#ECEEF1;color:#515865;letter-spacing:0}
+.card.lit{background:#9BD5FF;box-shadow:0 2px 2px rgba(15,18,23,.1),0 18px 40px rgba(44,120,180,.35)}
+.card.lit p{color:#274A66}.card.lit .f{color:#14324A}.card.lit .pill{background:#0F1217;color:#fff}
+.slot{height:158px;border-radius:18px;border:2.5px dashed #B9C0CB;margin-bottom:16px}
+
+.h1{position:absolute;left:68px;top:88px}
+.s1{position:absolute;left:72px;top:416px;width:960px}
+.glow{position:absolute;left:-100px;top:480px;width:1300px;height:1000px;background:radial-gradient(closest-side,rgba(110,190,255,.30),rgba(110,190,255,0) 100%);filter:blur(10px)}
+.stage{position:absolute;left:72px;top:620px;perspective:2300px;perspective-origin:0% 20%}
+.app{width:1900px;height:1300px;transform-origin:0 0;transform:rotateY(24deg) rotateX(5deg);
+  box-shadow:0 0 0 1px rgba(255,255,255,.5) inset,-34px 50px 90px rgba(0,0,0,.6),-8px 14px 26px rgba(0,0,0,.45)}
+.app .cols{gap:70px}.app .col{flex:none;width:276px}
+</style>
+<div class="glow"></div>
+<div class="h h1" data-ui>Every job.<br><em>One screen.</em></div>
+<div class="sub s1">A custom CRM, built around how you work.<br><span>Concept for a made-up firm.</span></div>
+<div class="stage" data-ui data-bleed><div class="app"><div class="side"><div class="brand"><div class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14Z" fill="#9BD5FF"/><path d="M5 19 13 11" stroke="#0F1217" stroke-width="1.8" stroke-linecap="round"/></svg></div><div><b>Hollowbeck</b><i>Landscapes</i></div></div><div class="nav"><a class="">Enquiries<u>4</u></a><a class="">Quotes<u>3</u></a><a class="on">Jobs<u>13</u></a><a class="">Bookings<u>3</u></a><a class="">Customers<u>86</u></a><a class="">Calendar<u></u></a></div></div><div class="main"><div class="top"><h3>Jobs</h3><div class="r"><div class="find">Search jobs and customers</div><div class="new">New enquiry</div></div></div><div class="cols">
+<div class="col"><h4>Enquiry<u>3</u></h4><div class="card "><b>Front garden</b><p>Mr Okafor, Pelton</p><div class="f"><span class="pill">Website</span><span>Tue 08:52</span></div></div><div class="card "><b>Fence, 14 panels</b><p>J. Whitfield, Durham</p><div class="f"><span class="pill">Phone</span><span>Mon 15:20</span></div></div><div class="card "><b>Artificial lawn</b><p>Mr Tindale, Sacriston</p><div class="f"><span class="pill">Website</span><span>Mon 09:14</span></div></div></div><div class="col"><h4>Quoted<u>3</u></h4><div class="card lit"><b>Patio and steps</b><p>Mrs Hallam, Lanchester</p><div class="f"><span class="pill">Quote sent</span><span>£4,200</span></div></div><div class="card "><b>Block-paved drive</b><p>D. Carr, Consett</p><div class="f"><span class="pill">Quote sent</span><span>£6,850</span></div></div><div class="card "><b>Raised beds, six</b><p>Mrs Akhtar, Esh Winning</p><div class="f"><span class="pill">Follow up Thu</span><span>£1,900</span></div></div></div><div class="col"><h4>Booked<u>3</u></h4><div class="card "><b>Raised decking</b><p>S. Iqbal, Stanley</p><div class="f"><span class="pill">Thu 26 Nov</span><span>2 days</span></div></div><div class="card "><b>New turf, back lawn</b><p>A. Robson, Burnhope</p><div class="f"><span class="pill">Mon 30 Nov</span><span>1 day</span></div></div><div class="card "><b>Retaining wall</b><p>Mr Lyle, Witton Gilbert</p><div class="f"><span class="pill">Wed 2 Dec</span><span>3 days</span></div></div></div><div class="col"><h4>Done<u>3</u></h4><div class="card "><b>Hedge and border tidy</b><p>K. Bains, Durham</p><div class="f"><span class="pill">Done</span><span>Fri 13 Nov</span></div></div><div class="card "><b>Pergola</b><p>T. Coulson, Esh</p><div class="f"><span class="pill">Done</span><span>Wed 11 Nov</span></div></div><div class="card "><b>Garden clearance</b><p>R. Maddison, Annfield Plain</p><div class="f"><span class="pill">Done</span><span>Mon 9 Nov</span></div></div></div>
+</div></div></div></div>
+<!--grain:0.05-->

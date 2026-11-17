@@ -1,0 +1,12 @@
+{
+ "format": "feed",
+ "composition": [
+  "two-line-headline-top-left-over-a-whole-light-crm-board-turned-away-to-the-right-bleeding-off-the-right-and-bottom-with-one-ice-blue-card",
+  "three-line-headline-top-left-over-the-board-laid-flat-and-close-running-off-every-edge-with-one-ice-blue-card-lifted-between-two-columns-above-its-shadow",
+  "wordmark-two-line-call-to-action-and-web-address-over-one-job-record-square-on-at-full-width-running-off-the-bottom"
+ ],
+ "background": ["#101319", "#101319", "#101319"],
+ "display_font": "InterTight",
+ "accent": "#9BD5FF",
+ "concept": "One concept CRM for a made-up landscaping firm (Hollowbeck Landscapes), designed as a real interface and shot three ways on graphite. Whole and turned away: every job on one board, one ice-blue card. Flat and close: that card lifted between Quoted and Booked. Square on: the same job's record, enquiry to booking, under the call to action. Graphite, a paper-white interface and one ice blue."
+}

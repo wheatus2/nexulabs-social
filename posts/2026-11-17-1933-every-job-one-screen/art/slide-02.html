@@ -1,0 +1,62 @@
+<style>
+.frame{background:#101319;color:#F3F5F8;font-family:Geist}
+.h{font-family:InterTight;font-weight:700;letter-spacing:-.028em;line-height:.94;color:#F6F8FB;font-size:160px}
+.h em{font-style:normal;color:#9BD5FF}
+.sub{font:500 34px/1.28 Geist;letter-spacing:-.01em;color:#F3F5F8}
+.sub span{color:#8D95A3}
+/* ---------- the app (interface: exempt from the small-text check) ---------- */
+.app{display:flex;background:#F4F5F7;color:#0F1217;border-radius:30px;overflow:hidden;font-family:Geist}
+.side{width:272px;flex:none;background:#E9EBEF;border-right:1px solid #DCDFE5;padding:36px 24px}
+.brand{display:flex;align-items:center;gap:14px;margin:0 6px 46px}
+.mark{width:46px;height:46px;border-radius:13px;background:#0F1217;display:grid;place-items:center}
+.mark svg{width:26px;height:26px}
+.brand b{display:block;font:600 22px/1.05 Geist;letter-spacing:-.02em}
+.brand i{display:block;font:500 16px/1.3 Geist;font-style:normal;color:#7B828E}
+.nav a{display:flex;justify-content:space-between;align-items:center;font:500 21px/1 Geist;color:#515865;padding:15px 16px;border-radius:13px;margin-bottom:4px;letter-spacing:-.01em}
+.nav a u{text-decoration:none;font:500 16px/1 GeistMono;color:#6F7683}
+.nav a.on{background:#fff;color:#0F1217;font-weight:600;box-shadow:0 1px 2px rgba(15,18,23,.08)}
+.main{flex:1;padding:38px 40px 0}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.top h3{font:600 46px/1 Geist;letter-spacing:-.035em}
+.top .r{display:flex;gap:14px;align-items:center}
+.find{width:270px;height:52px;border-radius:14px;background:#E9EBEF;display:flex;align-items:center;padding:0 18px;font:500 18px Geist;color:#8B92A0}
+.new{height:52px;border-radius:14px;background:#0F1217;color:#fff;font:600 19px/52px Geist;padding:0 24px;letter-spacing:-.01em}
+.cols{display:flex;gap:22px}
+.col{flex:1;min-width:0}
+.col h4{color:#515865;display:flex;justify-content:space-between;font:600 19px/1 Geist;color:#515865;margin:0 6px 18px;letter-spacing:-.005em}
+.col h4 u{text-decoration:none;font:500 16px/1.2 GeistMono;color:#6F7683}
+.card{color:#0F1217;background:#fff;border-radius:18px;padding:22px 22px 20px;margin-bottom:16px;box-shadow:0 1px 1px rgba(15,18,23,.05),0 6px 16px rgba(15,18,23,.05)}
+.card b{display:block;font:600 24px/1.12 Geist;letter-spacing:-.025em;margin-bottom:8px}
+.card p{font:500 18px/1.25 Geist;color:#737A87;margin-bottom:20px}
+.card .f{display:flex;justify-content:space-between;align-items:center;font:500 18px/1 Geist;color:#515865}
+.pill{font:600 15px/1 Geist;padding:8px 12px;border-radius:99px;background:#ECEEF1;color:#515865;letter-spacing:0}
+.card.lit{background:#9BD5FF;box-shadow:0 2px 2px rgba(15,18,23,.1),0 18px 40px rgba(44,120,180,.35)}
+.card.lit p{color:#274A66}.card.lit .f{color:#14324A}.card.lit .pill{background:#0F1217;color:#fff}
+.slot{height:158px;border-radius:18px;border:2.5px dashed #B9C0CB;margin-bottom:16px}
+
+.h2{position:absolute;left:68px;top:88px;z-index:9}
+.world{position:absolute;left:0;top:0;width:1080px;height:1350px;perspective:1700px;perspective-origin:50% 38%}
+.plane{position:absolute;left:-250px;top:770px;width:1700px;transform-origin:50% 40%;transform:rotateX(48deg) rotateZ(-22deg) scale(1.34)}
+.plane .cols{gap:26px;position:relative}
+.plane .col h4{visibility:hidden}
+.plane .col.gone{visibility:hidden}
+.plane .card{box-shadow:0 1px 1px rgba(15,18,23,.08),0 10px 22px rgba(15,18,23,.10)}
+.bed{position:absolute;inset:-90px -200px -600px;background:#E6E9EE;border-radius:34px}
+.shadow{position:absolute;left:612px;top:96px;width:360px;height:150px;border-radius:26px;background:rgba(15,25,40,.30);filter:blur(16px);transform:rotateZ(5deg)}
+.fly{position:absolute;left:585px;top:36px;width:383px;transform:rotateZ(5deg)}
+.plane.lift{transform:rotateX(48deg) rotateZ(-22deg) scale(1.34) translateZ(70px)}
+.fly .card{margin:0;box-shadow:0 0 0 1px rgba(255,255,255,.4) inset}
+.slot{border-color:#AEB6C2}
+.slot.to{border-color:#4FA2DE;background:rgba(155,213,255,.28)}
+.topfade{position:absolute;left:0;top:0;width:1080px;height:640px;background:linear-gradient(180deg,#101319 0,#101319 66%,rgba(16,19,25,0) 100%);z-index:5}
+.vig{position:absolute;left:0;top:1010px;width:1080px;height:340px;background:linear-gradient(180deg,rgba(16,19,25,0),#101319 92%);z-index:4}
+</style>
+<div class="world" data-ui data-bleed>
+ <div class="plane"><div class="bed"></div><div class="cols">
+<div class="col gone"></div><div class="col"><h4>Quoted<u>3</u></h4><div class="slot"></div><div class="card "><b>Block-paved drive</b><p>D. Carr, Consett</p><div class="f"><span class="pill">Quote sent</span><span>£6,850</span></div></div><div class="card "><b>Raised beds, six</b><p>Mrs Akhtar, Esh Winning</p><div class="f"><span class="pill">Follow up Thu</span><span>£1,900</span></div></div></div><div class="col"><h4>Booked<u>4</u></h4><div class="slot to"></div><div class="card "><b>Raised decking</b><p>S. Iqbal, Stanley</p><div class="f"><span class="pill">Thu 26 Nov</span><span></span></div></div><div class="card "><b>New turf, back lawn</b><p>A. Robson, Burnhope</p><div class="f"><span class="pill">Mon 30 Nov</span><span></span></div></div><div class="card "><b>Retaining wall</b><p>Mr Lyle, Witton Gilbert</p><div class="f"><span class="pill">Wed 2 Dec</span><span></span></div></div></div><div class="col gone"></div>
+ </div><div class="shadow"></div></div>
+ <div class="plane lift"><div class="fly"><div class="card lit"><b>Patio and steps</b><p>Mrs Hallam, Lanchester</p><div class="f"><span class="pill">Booked</span><span>Thu 3 Dec</span></div></div></div><div class="cols" style="visibility:hidden"><div class="col"><h4>Enquiry<u>4</u></h4><div class="card "><b>Front garden</b><p>Mr Okafor, Pelton</p><div class="f"><span class="pill">Website</span><span>Tue 08:52</span></div></div><div class="card "><b>Fence, 14 panels</b><p>J. Whitfield, Durham</p><div class="f"><span class="pill">Phone</span><span>Mon 15:20</span></div></div><div class="card "><b>Artificial lawn</b><p>Mr Tindale, Sacriston</p><div class="f"><span class="pill">Website</span><span>Mon 09:14</span></div></div><div class="card "><b>Gravel path</b><p>P. Nowak, Langley Park</p><div class="f"><span class="pill">Website</span><span>Fri 17:03</span></div></div></div></div></div>
+</div>
+<div class="vig"></div><div class="topfade"></div>
+<div class="h h2" data-ui>See where<br><em>every job</em><br>is up to.</div>
+<!--grain:0.05-->

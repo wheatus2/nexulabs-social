@@ -1697,5 +1697,44 @@
    "weakest": "round 2: scene 2 (tag cut by the frame edge); scenes 3 and 4 called basic (tag on a blank sheet); the render called flat and computer-made"
   },
   "fact_check": "pass (playbook wording only; nexulabs.co.uk could not be opened)"
+ },
+ {
+  "date": "2026-11-17",
+  "slot": "19:33 (run started 21:01 UK time, held about 21:50)",
+  "time_slot": "evening",
+  "id": "2026-11-17-1933-every-job-one-screen",
+  "format": "carousel",
+  "slides": 3,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "crm",
+  "cta": "site",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Custom CRM: every job on one screen. A concept CRM for a made-up landscaping firm (Hollowbeck Landscapes): the jobs board, one card lifted from Quoted to Booked, the job's record, ending on See what we build at nexulabs.co.uk.",
+  "composition": [
+   "two-line-headline-top-left-over-a-whole-light-crm-board-turned-away-to-the-right-bleeding-off-the-right-and-bottom-with-one-ice-blue-card",
+   "three-line-headline-top-left-over-the-board-laid-flat-and-close-running-off-every-edge-with-one-ice-blue-card-lifted-between-two-columns-above-its-shadow",
+   "wordmark-two-line-call-to-action-and-web-address-over-one-job-record-square-on-at-full-width-running-off-the-bottom"
+  ],
+  "palette": [
+   "#101319",
+   "#F4F5F7",
+   "#0F1217",
+   "#9BD5FF"
+  ],
+  "display_font": "InterTight",
+  "text_font": "Geist",
+  "photo": null,
+  "design_review": {
+   "scores": [
+    6.5,
+    6.5
+   ],
+   "rounds": 2,
+   "weakest": "frame 3 (the job record under the call to action), called basic both times: a headline over a plain white card"
+  },
+  "fact_check": "pass (PLAYBOOK.md wording only; nexulabs.co.uk could not be opened from the session)",
+  "note": "Held by the scheduled run after two failed design reviews (task prompt rule: publish nothing). See HELD.md. Do not reuse this design."
  }
 ]
