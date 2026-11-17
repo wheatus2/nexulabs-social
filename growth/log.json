@@ -156,5 +156,37 @@
   ],
   "evening_note": "Followers up 3 more during the day (12 to 15) while today's two posts reached 1 and 2 accounts: still an early sign that growth follows Lee's commenting, not the posts. Profile views 7d 33 to 42.",
   "evening_research": "Hashtags and search phrases, second pass: re-check of the unverified local tags, plus #SmallBizSatUK for 5 Dec (see growth/notes.md, 12 Nov evening); 20:13 run: local events and networking (see growth/notes.md, 12 Nov, second evening run)"
+ },
+ {
+  "date": "2026-11-17",
+  "run": "morning (03:10 and 03:17 runs, pushed from Lee's laptop)",
+  "followers": null,
+  "missing": [
+   "all numbers: the cloud runs had no GitHub access, so publish.yml (mode growth) could not be started; brief.md unchanged"
+  ],
+  "list_sent": [
+   "@cafe.etch",
+   "@steamandbeancoffeehouse",
+   "@bakerstreetkitchen",
+   "@10greenbottles_hexhamvintage",
+   "@lollamac_",
+   "@mrwolfhexham",
+   "@thegratefulbreadbakery",
+   "@pure.plants",
+   "@graceandpurposehexham",
+   "@ilovenorthshields"
+  ],
+  "found_not_sent": [
+   "@ricekitchen_ncl",
+   "@theforestboost",
+   "@manhuacha",
+   "@yummieyogurts",
+   "@1b.books",
+   "@olivers_bookshop_whitley_bay",
+   "@upcycleme_durham",
+   "@newcastlene1",
+   "@living_north",
+   "@visitteesvalley"
+  ]
  }
 ]

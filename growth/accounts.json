@@ -627,5 +627,235 @@
     "evidence": "Hobby account in Japan (Chrome, 13 Nov 2026)",
     "found": "2026-11-13",
     "checked_in_chrome": "2026-11-13"
+  },
+  {
+    "handle": "@ricekitchen_ncl",
+    "url": "https://www.instagram.com/ricekitchen_ncl/",
+    "name": "The Rice Kitchen",
+    "what": "Onigiri and matcha stall, Grainger Market, Newcastle",
+    "why": "Prospect: Instagram is its only link.",
+    "status": "prospect",
+    "evidence": "getintonewcastle.co.uk Grainger Market trader feature, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@theforestboost",
+    "url": "https://www.instagram.com/theforestboost/",
+    "name": "The Forest Boost",
+    "what": "Acai bowls and juices, Grainger Market, Newcastle",
+    "why": "Prospect: Instagram is its only link.",
+    "status": "prospect",
+    "evidence": "getintonewcastle.co.uk Grainger Market trader feature, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@manhuacha",
+    "url": "https://www.instagram.com/manhuacha/",
+    "name": "Manhua Cha",
+    "what": "Grainger Market trader, Unit 62, Newcastle",
+    "why": "Prospect: only an Instagram link given.",
+    "status": "prospect",
+    "evidence": "getintonewcastle.co.uk Grainger Market trader feature, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@yummieyogurts",
+    "url": "https://www.instagram.com/yummieyogurts/",
+    "name": "Yummie Yogurts",
+    "what": "Frozen yogurt, Grainger Market, Newcastle",
+    "why": "Prospect: Instagram only; listing dated Sep 2024, check still active.",
+    "status": "prospect",
+    "evidence": "getintonewcastle.co.uk Grainger Market trader feature, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@1b.books",
+    "url": "https://www.instagram.com/1b.books/",
+    "name": "1b Books",
+    "what": "Independent bookshop, Bolingbroke Street, Newcastle",
+    "why": "Prospect: Instagram but no website listed.",
+    "status": "prospect",
+    "evidence": "livingnorth.com independent bookshops feature, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@olivers_bookshop_whitley_bay",
+    "url": "https://www.instagram.com/olivers_bookshop_whitley_bay/",
+    "name": "Oliver's Bookshop",
+    "what": "Independent bookshop, Whitley Road, Whitley Bay",
+    "why": "Prospect: Instagram but no website listed.",
+    "status": "prospect",
+    "evidence": "livingnorth.com independent bookshops feature, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@upcycleme_durham",
+    "url": "https://www.instagram.com/upcycleme_durham/",
+    "name": "Upcycle Me",
+    "what": "Upcycled furniture stall, Durham Market Hall",
+    "why": "Prospect: Facebook and Instagram only; page from 2022, check still active.",
+    "status": "prospect",
+    "evidence": "talkingnortheast.substack.com, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@newcastlene1",
+    "url": "https://www.instagram.com/newcastlene1/",
+    "name": "NE1 Newcastle",
+    "what": "Newcastle city centre BID",
+    "why": "Local network: city-centre traders.",
+    "status": "local",
+    "evidence": "Footer of getintonewcastle.co.uk, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@living_north",
+    "url": "https://www.instagram.com/living_north/",
+    "name": "Living North",
+    "what": "North East and Yorkshire lifestyle magazine",
+    "why": "Local network: openings coverage.",
+    "status": "local",
+    "evidence": "livingnorth.com, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@visitteesvalley",
+    "url": "https://www.instagram.com/visitteesvalley/",
+    "name": "Visit Tees Valley",
+    "what": "Tees Valley Combined Authority visitor account",
+    "why": "Local network: features Teesside independents.",
+    "status": "local",
+    "evidence": "teesvalley-ca.gov.uk visit pages, read 17 Nov 2026",
+    "found": "2026-11-17"
+  },
+  {
+    "handle": "@cafe.etch",
+    "url": "https://www.instagram.com/cafe.etch/",
+    "name": "Cafe Etch",
+    "what": "Cafe with live music, comedy and art, Gilkes Street, Middlesbrough",
+    "why": "Prospect: website button goes to Facebook.",
+    "status": "prospect",
+    "evidence": "wearemiddlesbrough.com/news/coffee-shops/ (Middlesbrough Council), read 17 Nov 2026; teesvalley-ca.gov.uk listing",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@steamandbeancoffeehouse",
+    "url": "https://www.instagram.com/steamandbeancoffeehouse/",
+    "name": "Steam and Bean",
+    "what": "Family-run cafe, Corporation Road, Middlesbrough",
+    "why": "Prospect: Instagram only in the council round-up.",
+    "status": "prospect",
+    "evidence": "wearemiddlesbrough.com/news/coffee-shops/ (Middlesbrough Council), read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@bakerstreetkitchen",
+    "url": "https://www.instagram.com/bakerstreetkitchen/",
+    "name": "Baker Street Kitchen",
+    "what": "Brunch and burgers, Baker Street, Middlesbrough",
+    "why": "Prospect: Instagram only in the council round-up.",
+    "status": "prospect",
+    "evidence": "wearemiddlesbrough.com/news/coffee-shops/ (Middlesbrough Council), read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@10greenbottles_hexhamvintage",
+    "url": "https://www.instagram.com/10greenbottles_hexhamvintage/",
+    "name": "Ten Green Bottles Vintage",
+    "what": "Vintage and gramophone conversions, Hallgate, Hexham; Saturdays only",
+    "why": "Prospect: Instagram only, no website.",
+    "status": "prospect",
+    "evidence": "visitnorthumberland.com 'Top indie shops in Hexham', read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@lollamac_",
+    "url": "https://www.instagram.com/lollamac_/",
+    "name": "Lolla Mac",
+    "what": "Handmade jewellery and workshops, St Mary's Chare, Hexham",
+    "why": "Prospect: Instagram only, workshops need booking.",
+    "status": "prospect",
+    "evidence": "visitnorthumberland.com 'Top indie shops in Hexham', read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@mrwolfhexham",
+    "url": "https://www.instagram.com/mrwolfhexham/",
+    "name": "Mr Wolf",
+    "what": "Independent toy shop, Market Street, Hexham",
+    "why": "Prospect: Instagram only, no website.",
+    "status": "prospect",
+    "evidence": "visitnorthumberland.com 'Top indie shops in Hexham', read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@thegratefulbreadbakery",
+    "url": "https://www.instagram.com/thegratefulbreadbakery/",
+    "name": "The Grateful Bread",
+    "what": "Artisan bakery, Market Street, Hexham",
+    "why": "Prospect: Instagram only, no website.",
+    "status": "prospect",
+    "evidence": "visitnorthumberland.com 'Top indie shops in Hexham', read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@pure.plants",
+    "url": "https://www.instagram.com/pure.plants/",
+    "name": "Pure Plants",
+    "what": "Peat-free houseplants, Hexham Market Place",
+    "why": "Prospect: Instagram only, no website.",
+    "status": "prospect",
+    "evidence": "visitnorthumberland.com 'Top indie shops in Hexham', read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@graceandpurposehexham",
+    "url": "https://www.instagram.com/graceandpurposehexham/",
+    "name": "Grace & Purpose",
+    "what": "Homeware and gifts, Battle Hill, Hexham",
+    "why": "Prospect: Instagram only, no website.",
+    "status": "prospect",
+    "evidence": "visitnorthumberland.com 'Top indie shops in Hexham', read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
+  },
+  {
+    "handle": "@ilovenorthshields",
+    "url": "https://www.instagram.com/ilovenorthshields/",
+    "name": "I Love North Shields",
+    "what": "Runs North Shields markets and events",
+    "why": "Local network: North Shields traders.",
+    "status": "local",
+    "evidence": "ilovenorthshields.com/vintagemarket/, read 17 Nov 2026",
+    "found": "2026-11-17",
+    "suggested": [
+      "2026-11-17"
+    ]
   }
 ]
