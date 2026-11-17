@@ -1,11 +1,15 @@
 name: Publish to Instagram and Facebook
-run-name: "${{ inputs.mode }}${{ inputs.folder != '' && format(': {0}', inputs.folder) || '' }}"
+run-name: "${{ inputs.mode || 'comments (daily)' }}${{ inputs.folder != '' && format(': {0}', inputs.folder) || '' }}"
 
 # Started by the Claude scheduled runs (GitHub "run workflow"), or by hand from the Actions tab.
 # Talks to Meta's Graph API directly, so no Zapier tasks are used.
 # Needs the repository secret META_PAGE_TOKEN (see SETUP-META.md). Never put the token in a file.
 
 on:
+  # Daily comments read (Lee, 17 Nov 2026): saves comments/latest.json so the Claude summary task
+  # only has to read a file. 16:41 UTC = 16:41 GMT / 17:41 BST, before the 18:23 UK summary.
+  schedule:
+    - cron: "41 16 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -36,7 +40,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: publish-${{ inputs.folder || inputs.mode }}
+  group: publish-${{ inputs.folder || inputs.mode || 'comments' }}
   cancel-in-progress: false
 
 jobs:
@@ -50,7 +54,7 @@ jobs:
         id: pub
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
-          MODE: ${{ inputs.mode }}
+          MODE: ${{ inputs.mode || 'comments' }}
           FOLDER: ${{ inputs.folder }}
           PLATFORMS: ${{ inputs.platforms }}
           FORCE: ${{ inputs.force }}
@@ -63,8 +67,8 @@ jobs:
           if [ "$MODE" = "insights" ] && [ -n "$MONTH" ]; then args+=(--month "$MONTH"); fi
           if [ "$MODE" = "post" ] || [ "$MODE" = "story" ]; then args+=("$FOLDER" --platforms "$PLATFORMS"); fi
           if [ "$FORCE" = "true" ]; then args+=(--force); fi
-          python3 publish.py "${args[@]}"
-          code=$?
+          python3 publish.py "${args[@]}" | tee "$RUNNER_TEMP/out.txt"
+          code=${PIPESTATUS[0]}
           echo "code=$code" >> "$GITHUB_OUTPUT"
           exit 0
 
@@ -100,6 +104,33 @@ jobs:
             sleep 5
           done
           echo "Could not push insights"; exit 1
+
+      - name: Save comments to the repo
+        if: (inputs.mode || 'comments') == 'comments'
+        run: |
+          mkdir -p comments
+          python3 - "$RUNNER_TEMP/out.txt" <<'PY'
+          import json, sys, datetime, pathlib
+          txt = open(sys.argv[1], encoding="utf-8").read()
+          a, b = "===COMMENTS-JSON===", "===END-COMMENTS-JSON==="
+          now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          if a in txt and b in txt:
+              data = json.loads(txt.split(a, 1)[1].split(b, 1)[0])
+          else:
+              data = {"instagram": [], "facebook": [], "errors": {"run": txt.strip()[-500:] or "no output"}}
+          data["fetched_at"] = now
+          pathlib.Path("comments/latest.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+          PY
+          git config user.name "nexulabs-publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add comments/latest.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Comments read $(date -u +%F)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          echo "Could not push comments"; exit 1
 
       - name: Result
         run: |
