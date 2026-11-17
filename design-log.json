@@ -421,5 +421,22 @@
   "display_font": "Fraun",
   "accent": "#123F30",
   "concept": "Christmas opening hours as a door calendar, rendered in 3D (Blender). One made-up pine-green card calendar with a door for each day from 24 to 31 December, the 25th in cream with a red numeral, lying on a crimson table and shot from the same side four ways. The door marked 25 lifts: Closed. Lower and nearer, the 24 lifts beside it: Open to 1pm. From above, the 25th filling the frame: does Google know? Then three open doors in a row, all readable: set special hours. Crimson, pine green, cream card and one red."
+ },
+ {
+  "id": "2026-11-17-1933-every-job-one-screen",
+  "format": "feed",
+  "composition": [
+   "two-line-headline-top-left-over-a-whole-light-crm-board-turned-away-to-the-right-bleeding-off-the-right-and-bottom-with-one-ice-blue-card",
+   "three-line-headline-top-left-over-the-board-laid-flat-and-close-running-off-every-edge-with-one-ice-blue-card-lifted-between-two-columns-above-its-shadow",
+   "wordmark-two-line-call-to-action-and-web-address-over-one-job-record-square-on-at-full-width-running-off-the-bottom"
+  ],
+  "background": [
+   "#101319",
+   "#101319",
+   "#101319"
+  ],
+  "display_font": "InterTight",
+  "accent": "#9BD5FF",
+  "concept": "One concept CRM for a made-up landscaping firm (Hollowbeck Landscapes), designed as a real interface and shot three ways on graphite. Whole and turned away: every job on one board, one ice-blue card. Flat and close: that card lifted between Quoted and Booked. Square on: the same job's record, enquiry to booking, under the call to action. Graphite, a paper-white interface and one ice blue."
  }
 ]

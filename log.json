@@ -1700,12 +1700,12 @@
  },
  {
   "date": "2026-11-17",
-  "slot": "19:33 (run started 21:01 UK time, held about 21:50)",
+  "slot": "19:33 (run started 21:01 UK time; held at 6.5, then published 21:14 UTC on the owner's say-so in the chat)",
   "time_slot": "evening",
   "id": "2026-11-17-1933-every-job-one-screen",
   "format": "carousel",
   "slides": 3,
-  "status": "not published",
+  "status": "published",
   "content_type": "promotional",
   "service": "crm",
   "cta": "site",
@@ -1732,9 +1732,14 @@
     6.5
    ],
    "rounds": 2,
-   "weakest": "frame 3 (the job record under the call to action), called basic both times: a headline over a plain white card"
+   "weakest": "frame 3 (the job record under the call to action), called basic both times: a headline over a plain white card",
+   "score": 6.5
   },
   "fact_check": "pass (PLAYBOOK.md wording only; nexulabs.co.uk could not be opened from the session)",
-  "note": "Held by the scheduled run after two failed design reviews (task prompt rule: publish nothing). See HELD.md. Do not reuse this design."
+  "note": "Held by the scheduled run after two design reviews at 6.5; the owner then said in the chat 'Post it, i like it', so it was published as it stood.",
+  "published_at": "2026-11-17T21:14:22+00:00",
+  "instagram_media_id": "18350517823280051",
+  "permalink": "https://www.instagram.com/p/Df23xUhF_a9/",
+  "facebook_post_id": "1484176674771345_122108321859544005"
  }
 ]

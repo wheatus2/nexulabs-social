@@ -1,4 +1,4 @@
-# Held: 2026-11-17-1933-every-job-one-screen (not published)
+# Review notes: 2026-11-17-1933-every-job-one-screen (held at 6.5 twice, then published on the owner's say-so, 17 Nov 2026)
 
 Scheduled 19:33 slot, Tuesday 17 Nov 2026 (run started 21:01 UK time). Promotional, custom CRM, call to action "See what we build at nexulabs.co.uk".
 
