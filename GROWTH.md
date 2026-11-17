@@ -33,7 +33,7 @@ These protect the account. Breaking them gets accounts restricted or banned, and
    - the call to action to end on (for example "Follow for one fix a day")
    The brief can steer topics, hooks, captions, hashtags and calls to action. It cannot lower the design standard, change the posting times or volume, or break any of Lee's rules.
 5. **Lee's ten minutes.** Write `growth/today.md`: the few things only Lee can do today that will move followers most. Keep it to what fits in ten minutes on his phone:
-   - **5 to 8 real local accounts worth engaging with today**, found by searching (North East business groups, chambers, networking events, local trades, cafés, venues, creatives, local news and "what's on" pages). For each: the handle, who they are, one recent post, and a comment written for that post. Comments must be specific and useful, never "Great post!", never a pitch. Don't repeat an account within 14 days (`growth/accounts.json`).
+   - **10 new real local accounts worth engaging with today (Lee, 17 Nov 2026)**, found by searching the web (North East business groups, chambers, networking events, local trades, cafés, venues, creatives, local news and "what's on" pages; a business's own website or a trusted listing that links its Instagram handle). At least 6 of the 10 are prospects: local businesses whose web setup looks weak (no website, a Linktree, a bare shop link, or booking by DM or email). **Never repeat an account: any handle already in `growth/accounts.json`, whatever its status, is left out.** Add every new account to `growth/accounts.json` with `found` set to today. For each: the handle, the Link, who they are, a "Post to look for" line, and a drafted comment (the Chrome pass rewrites it for the actual post). Comments must be specific and useful, never "Great post!", never a pitch.
    - **One bigger move** when there is one: a collaboration or shared post to propose (with the message drafted), a local event to post from, a customer to ask for a tag, a profile change (exact wording).
    - Any comment or message on our own posts that needs a reply, with the reply drafted.
 6. **Tell Lee.** Finish with a short summary: followers now and the change, the one thing that worked, and today's list from `growth/today.md` in full so he can act from the notification.
@@ -43,7 +43,7 @@ A separate scheduled task, "Nexulabs growth: Chrome pass", runs on Lee's compute
 - Opens each account in `growth/today.md` in Lee's Chrome, reads the bio and the latest post, and rewrites that account's comment in `growth/today.md` for the actual post.
 - Leaves one tab open per account, on the post, so Lee sees the post and the drafted comment side by side. Lee types or pastes the comment and taps Post himself.
 - May check up to 3 `check_bio_first` accounts in `growth/accounts.json` and set them to `local` or `not_local`.
-- It never clicks Follow, Like, Post, Send or Save, never types into Instagram, and opens at most 10 Instagram pages a run. If Instagram shows a login page, a CAPTCHA or a warning, it stops and tells Lee.
+- It never clicks Follow, Like, Post, Send or Save, never types into Instagram, and opens at most 22 Instagram pages a run (two per account, Lee, 17 Nov 2026). If Instagram shows a login page, a CAPTCHA or a warning, it stops and tells Lee.
 - `growth/today.md` keeps one `### N. @handle` block per account with `Link`, `Who`, `Post to look for` (or `Post`) and `Comment` lines, so the Chrome pass can find them.
 
 ### Every evening (about 20:12)
