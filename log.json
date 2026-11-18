@@ -1823,5 +1823,48 @@
   },
   "fact_check": "pass (PLAYBOOK.md wording only; nexulabs.co.uk was not returned by web search, so it could not be opened)",
   "note": "Held by the scheduled run: two design reviews at 6.5, under the pass mark of 7, and scene 1 called basic. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "19:33 (run started 19:33 UK time, held about 23:15)",
+  "time_slot": "evening",
+  "id": "2026-11-18-1933-three-flags",
+  "format": "reel",
+  "scenes": 4,
+  "seconds": 16.2,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "websites",
+  "cta": "call",
+  "offer": "review",
+  "renderer": "studio",
+  "topic": "Free website review: three pink page flags numbered 1, 2, 3 on a phone showing a made-up firm's website (Ashgarth Kitchens). What would we change? We'll look at your website. And send back three things. Free website review. Ends on Book a call at nexulabs.co.uk.",
+  "composition": [
+   "two-line-question-top-left-over-a-low-view-along-the-phones-right-edge-as-pink-flag-three-lands-sharp-in-front-of-flags-two-and-one-going-out-of-focus",
+   "the-top-of-the-phone-turned-slightly-and-running-off-the-bottom-with-flag-one-pointing-at-the-sites-whole-headline-under-a-two-line-statement",
+   "three-whole-flags-stepping-down-the-phones-right-edge-with-their-tails-curling-over-the-table-all-three-numerals-sharp-under-a-two-line-statement",
+   "from-the-left-and-close-flag-three-pointing-at-the-read-more-button-which-runs-off-the-left-with-the-other-flags-soft-behind-under-the-offer-and-a-call-to-action-line"
+  ],
+  "palette": [
+   "#E4E5E7",
+   "#131316",
+   "#F0156B",
+   "#1F2B4D"
+  ],
+  "display_font": "Brico",
+  "text_font": "Brico",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py; screen and flag prints art/print.py). Not photographs, not a real business.",
+  "design_review": {
+   "scores": [
+    5,
+    5.5
+   ],
+   "rounds": 2,
+   "score": 5.5,
+   "weakest": "round 1: scene 2 (clipped numeral, smeared screen text), scene 1 called basic; round 2: scene 4 (call to action over the blurred phone, no end card), scenes 1 and 4 called basic"
+  },
+  "fact_check": "pass on round 2 (PLAYBOOK.md wording only; nexulabs.co.uk was not returned by web search, so it could not be opened)",
+  "note": "Held by the scheduled run: two design reviews at 5 and 5.5, under the pass mark of 7. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
  }
 ]

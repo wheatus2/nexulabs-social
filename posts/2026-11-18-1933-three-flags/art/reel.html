@@ -1,0 +1,41 @@
+<style>
+/* One phone on a pale grey sweep showing a made-up firm's website (Ashgarth Kitchens, invented), and three pink
+   page flags stuck on its glass, numbered in marker. Rendered in 3D (Blender, art/build.py; prints art/print.py),
+   shot from the same side four ways, all close. Flag 3 lands in the first scene: each position is its own render.
+   Pictures are 1134x2016, shown at 1080x1920 and pushed in to 1.05 at most.
+   Bricolage Grotesque 800 at 136px, one size and one left margin in every scene. */
+.scene{--ink:#131316;--pink:#F0156B;overflow:hidden;visibility:hidden;color:var(--ink);background:#E4E5E7;
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.cam{position:absolute;inset:0;animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.05))}}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
+.pic.on{opacity:0;animation:on .06s linear calc(var(--t0) + var(--at)) both}
+@keyframes on{from{opacity:0}to{opacity:1}}
+.h{position:absolute;left:76px;top:262px;font-family:Brico;font-weight:800;font-size:136px;letter-spacing:-.03em;line-height:.97;white-space:nowrap}
+.h em{font-style:normal;color:var(--pink)}
+.t{position:absolute;left:80px;top:584px;font:800 56px/1 Brico;letter-spacing:-.012em;white-space:nowrap}
+.n{position:absolute;left:82px;top:556px;font:600 34px/1 Brico;letter-spacing:0;color:#5A5B61;white-space:nowrap}
+.s1 .cam{transform-origin:640px 1350px;--len:3.6s;--b:1.05}
+.s2 .cam{transform-origin:760px 1050px;--len:4.4s;--b:1.045}
+.s3 .cam{transform-origin:560px 1150px;--len:3.4s;--b:1.045}
+.s4 .cam{transform-origin:700px 1200px;--len:4.8s;--b:1.035}
+</style>
+<section class="scene s1" data-dur="3.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-1a.jpg)"></div>
+  <div class="pic on" style="--at:.50s;background-image:url({{post}}/art/r-1b.jpg)"></div>
+  <div class="pic on" style="--at:.62s;background-image:url({{post}}/art/r-1c.jpg)"></div></div>
+  <div class="h">What would<br>we change?</div></section>
+<section class="scene s2" data-dur="4.4"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-2.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">We’ll look at<br>your website.</div>
+  <div class="n fadein" style="--d:.7s">Made-up website, shown as an example</div></section>
+<section class="scene s3" data-dur="3.4"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-3.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">And send back<br><em>three</em> things.</div></section>
+<section class="scene s4" data-dur="4.8"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-4.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Free website<br>review.</div>
+  <div class="t up" style="--d:.6s">Book a call at nexulabs.co.uk</div></section>
+<!--grain:0.03-->
