@@ -455,5 +455,22 @@
   "display_font": "DMSerif",
   "accent": "#8E1238",
   "concept": "Product photography for a made-up chocolatier (Ottermoor), rendered in 3D (Blender), so the concept homepage has something real to show. A loose line of hand-finished chocolates on a duck-egg sweep, one ruby: if you made chocolates, we'd build this. Then the concept homepage itself, full frame, the Story frame as the phone screen: Nine in a box, over the box of nine. Then right up against the ruby one: see yours first, the free homepage concept. Duck egg, chocolate brown, cream and one ruby."
+ },
+ {
+  "id": "2026-11-18-1747-already-in-your-crm",
+  "format": "story",
+  "composition": [
+   "four-line-question-top-left-over-a-whole-duplicate-book-low-in-the-frame-with-the-foot-of-its-white-top-sheet-rolled-back-off-the-yellow-copy",
+   "the-top-sheet-flipped-back-over-the-binding-off-the-top-right-and-the-whole-yellow-copy-in-the-upper-half-over-a-three-line-answer-on-the-table-below",
+   "three-line-statement-and-a-call-to-action-row-over-the-torn-out-white-sheet-laid-across-the-yellow-copy-running-off-the-bottom-with-the-same-red-number-on-both"
+  ],
+  "background": [
+   "#2140CF",
+   "#2140CF",
+   "#2140CF"
+  ],
+  "display_font": "Grotesk",
+  "accent": "#F4E158",
+  "concept": "Website and CRM built as one, as a duplicate book, rendered in 3D (Blender). One made-up enquiry written once on the white top sheet (Website enquiry, No 0218) and come through in carbon on the yellow sheet under it (CRM copy, No 0218). The foot of the top sheet rolled back: they filled in your form, who types it up? The top sheet flipped over the binding and the whole copy in view: nobody, it's already in your CRM. Then the top sheet torn out and laid across the copy, the same red number on both: website and CRM, built as one. Cobalt table, white paper, canary-yellow copy, biro blue and one red number."
  }
 ]

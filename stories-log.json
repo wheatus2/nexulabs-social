@@ -1015,7 +1015,7 @@
  },
  {
   "date": "2026-11-18",
-  "slot": "17:47 (run started 17:48 UK time, held about 19:45)",
+  "slot": "17:47 (held about 19:45 at 6.5 twice, then published 18:52 UTC on the owner's say-so in the chat)",
   "id": "stories/2026-11-18-1747-already-in-your-crm",
   "type": "problem and what we build",
   "category": "Websites + CRM",
@@ -1044,15 +1044,19 @@
   "display_font": "Grotesk",
   "text_font": "Grotesk",
   "frames": 3,
-  "status": "not published",
+  "status": "published",
   "design_review_score": 6.5,
   "design_review": [
    6.5,
    6.5
   ],
-  "reason": "Independent design review 6.5 twice (pass mark 7); two failed rounds means nothing goes out. Weakest both times: frame 2. See HELD.md in the folder.",
+  "reason": "Independent design review 6.5 twice (pass mark 7), so the run held it. The owner then said 'Post it' in the chat and it was published as it stood.",
   "sources": "PLAYBOOK.md only (nexulabs.co.uk did not come back from two web searches)",
   "highlight_cover": null,
-  "media_ids": []
+  "media_ids": [
+   "18148807933587255",
+   "18361337455175481",
+   "18401886856205130"
+  ]
  }
 ]

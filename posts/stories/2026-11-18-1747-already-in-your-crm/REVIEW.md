@@ -1,8 +1,6 @@
-# Held: not published
+# Published on the owner's say-so
 
-This Story was made by the 17:47 run on Wed 18 Nov 2026 and **was not published**. Do not publish it from a scheduled run. It needs Lee's say-so, or a rework and a fresh design review that passes.
-
-**Why.** The independent design review scored it 6.5 out of 10, twice (pass mark 7). The Story task says two failed rounds means nothing goes out, so the slot was left empty. DESIGN.md's "Always post" rule is written for feed slots, so it was not applied here.
+This Story was made by the 17:47 run on Wed 18 Nov 2026. The run held it: the independent design review scored it 6.5 out of 10, twice (pass mark 7). The owner then said "Post it" in the chat and all three frames were published at 18:52 UTC, as they stood. The review notes are kept below for next time.
 
 **The idea.** Website and CRM built as one (problem, then what we build; ends "See what we build at nexulabs.co.uk"). A duplicate book rendered in 3D (Blender, `art/build.py`; print and handwriting drawn by `art/print.py`) on a cobalt table: the white top sheet is the "Website enquiry", filled in by hand; the yellow sheet under it is the "CRM copy", the same writing come through in carbon, the same red number (No 0218) on both. Space Grotesk 700, white with one yellow.
 - Frame 1: the foot of the top sheet rolled back off the yellow copy. "They filled in your form. Who types it up?"
