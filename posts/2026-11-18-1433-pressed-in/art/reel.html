@@ -1,0 +1,47 @@
+<style>
+/* Branding for a made-up soap maker (Tidewrack Soap Co.): bottle-green bars on a sand sweep, rendered in 3D (Blender, art/build.py;
+   the die and the band print come from art/prints.py). The name presses into the bar in the picture: each depth is its own render.
+   Pictures are 1134x2016, shown at 1080x1920 and pushed in to 1.045 at most, so they never go soft.
+   Space Grotesk 700 at 136px, one size and one left margin in every scene.
+   Scenes 1 and 2 are one locked shot on purpose: the blank bar, then the name going in. */
+.scene{--ink:#11261C;overflow:hidden;visibility:hidden;color:var(--ink);
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.cam{position:absolute;inset:0;animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.045))}}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
+.pic.on{opacity:0;animation:on .01s linear calc(var(--t0) + var(--at)) both}
+@keyframes on{from{opacity:0}to{opacity:1}}
+.h{position:absolute;left:76px;top:306px;font-family:Grotesk;font-weight:700;font-size:136px;letter-spacing:-.035em;line-height:.98;white-space:nowrap}
+.n{position:absolute;left:80px;top:624px;font:500 38px/1 Grotesk;letter-spacing:-.01em;white-space:nowrap;opacity:.8}
+.t{position:absolute;left:80px;top:626px;font:700 60px/1.12 Grotesk;letter-spacing:-.025em;white-space:nowrap}
+.s1 .cam{transform-origin:520px 1100px;--len:3s;--a:1;--b:1.02}
+.s2 .cam{transform-origin:520px 1100px;--len:4.4s;--a:1.02;--b:1.05}
+.s3 .cam{transform-origin:420px 1000px;--len:3.2s;--b:1.04}
+.s4 .cam{transform-origin:560px 1250px;--len:5s;--b:1.03}
+</style>
+<section class="scene s1" data-dur="3"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-2a.jpg)"></div></div>
+  <div class="h">Good soap.<br>No name.</div></section>
+<section class="scene s2" data-dur="4.4"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-2a.jpg)"></div>
+  <div class="pic on" style="--at:.90s;background-image:url({{post}}/art/r-2b.jpg)"></div>
+  <div class="pic on" style="--at:.97s;background-image:url({{post}}/art/r-2c.jpg)"></div>
+  <div class="pic on" style="--at:1.04s;background-image:url({{post}}/art/r-2d.jpg)"></div>
+  <div class="pic on" style="--at:1.11s;background-image:url({{post}}/art/r-2e.jpg)"></div>
+  <div class="pic on" style="--at:1.18s;background-image:url({{post}}/art/r-2f.jpg)"></div>
+  <div class="pic on" style="--at:1.27s;background-image:url({{post}}/art/r-2g.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">So we gave<br>it one.</div>
+  <div class="n fadein" style="--d:1.7s">Concept for a made-up soap maker</div></section>
+<section class="scene s3" data-dur="3.2"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-3a.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Now it&rsquo;s<br>a brand.</div></section>
+<section class="scene s4" data-dur="5"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-4a.jpg)"></div>
+  <div class="pic on" style="--at:.45s;background-image:url({{post}}/art/r-4b.jpg)"></div>
+  <div class="pic on" style="--at:.75s;background-image:url({{post}}/art/r-4c.jpg)"></div>
+  <div class="pic on" style="--at:1.05s;background-image:url({{post}}/art/r-4d.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Let&rsquo;s brand<br>yours.</div>
+  <div class="t up" style="--d:1.2s">See what we build at<br>nexulabs.co.uk</div></section>
+<!--grain:0.03-->

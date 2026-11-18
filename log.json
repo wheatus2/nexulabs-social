@@ -1780,5 +1780,48 @@
   },
   "fact_check": "pass (PLAYBOOK.md wording only; nexulabs.co.uk could not be opened from the session)",
   "note": "Held by the scheduled run: two design reviews at 6, under the pass mark of 7. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "14:33 (run started 14:33 UK time, held about 16:50)",
+  "time_slot": "afternoon",
+  "id": "2026-11-18-1433-pressed-in",
+  "format": "reel",
+  "scenes": 4,
+  "seconds": 15.6,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "branding",
+  "cta": "site",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Branding: a made-up soap maker (Tidewrack Soap Co.). Good soap, no name; the name presses into the bar; the bar in its paper band, now it's a brand; a row of banded bars, let's brand yours. Ends on See what we build at nexulabs.co.uk.",
+  "composition": [
+   "two-line-statement-top-left-over-a-macro-of-one-blank-soap-bar-leaning-on-a-stack-its-face-filling-the-width",
+   "locked-camera-second-state-the-name-pressing-into-the-same-bars-face-under-a-two-line-statement-and-a-concept-label",
+   "further-right-the-same-bar-in-a-cream-paper-band-whole-with-the-stack-running-off-the-right-under-a-two-line-statement",
+   "banded-bars-standing-in-a-row-receding-up-right-and-arriving-one-at-a-time-under-a-two-line-invitation-and-a-two-line-call-to-action"
+  ],
+  "palette": [
+   "#E6D3A9",
+   "#1E5C45",
+   "#EBE2CC",
+   "#11261C"
+  ],
+  "display_font": "Grotesk",
+  "text_font": "Grotesk",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py; die and band print art/prints.py). Not photographs, not a real business.",
+  "design_review": {
+   "scores": [
+    6.5,
+    6.5
+   ],
+   "rounds": 2,
+   "score": 6.5,
+   "weakest": "round 1: scene 3 (render faults on the pressed bars); round 2: scene 4 (product smallest at the call to action), and scene 1 called basic (a blank bar under a headline)"
+  },
+  "fact_check": "pass (PLAYBOOK.md wording only; nexulabs.co.uk was not returned by web search, so it could not be opened)",
+  "note": "Held by the scheduled run: two design reviews at 6.5, under the pass mark of 7, and scene 1 called basic. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
  }
 ]
