@@ -968,5 +968,49 @@
   "sources": "posts/stories/2026-11-16-1747-both-keys/sources.md",
   "highlight_cover": "not needed (domains cover already published 12 Nov)",
   "media_ids": []
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "11:47 (published 12:59 UK: 3D renders)",
+  "id": "stories/2026-11-18-1147-wed-build-this",
+  "type": "concept site",
+  "category": "Web design",
+  "highlight": "websites",
+  "content_type": "promotional",
+  "service": "websites",
+  "cta": "call",
+  "offer": "concept",
+  "topic": "If you made chocolates, we'd build this. A concept homepage for a made-up chocolatier (Ottermoor, Tynemouth): product shots of hand-finished chocolates, one ruby, then the homepage itself full frame (Nine in a box), then the free homepage concept offer: see yours first. Book a call at nexulabs.co.uk.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "four-line-statement-stacked-top-left-over-a-loose-line-of-chocolates-receding-from-a-ruby-one-sharp-at-the-front",
+   "the-concept-homepage-full-frame-as-the-phone-screen-with-its-nav-headline-and-two-buttons-over-a-box-of-nine-bleeding-off-the-right-and-bottom",
+   "macro-of-the-ruby-chocolate-upper-right-bleeding-off-the-edge-with-the-offer-and-call-to-action-on-the-table-below"
+  ],
+  "palette": [
+   "#8FD3CB",
+   "#24120C",
+   "#8E1238",
+   "cream card",
+   "gold leaf"
+  ],
+  "display_font": "DMSerif",
+  "text_font": "Outfit",
+  "frames": 3,
+  "status": "published",
+  "design_review_score": 7,
+  "design_review": [
+   7
+  ],
+  "design_review_note": "Rendered in Blender (art/build.py). Round 1: 7 (frames 7.5, 7.5, 6), no frame called basic; weakest frame 3 (call to action too low, lower half a plain stack, the picture a re-crop of frame 1's chocolate). Fixed before publishing: frame 3 call to action and wordmark moved up to y 1450 on one line, body set on two lines, headline leading opened on frames 1 and 3, frame 1 headline edge matched to the others, frame 2 buttons spaced out and the side label lightened. Not fixed: frame 3 has no new object; the ruby chocolate sits partly in the bottom band on frame 1; no device around the concept site.",
+  "fact_check": "self-check against sources.md; claims about Nexulabs rest on PLAYBOOK.md (nexulabs.co.uk not returned by web search)",
+  "sources": "posts/stories/2026-11-18-1147-wed-build-this/sources.md",
+  "highlight_cover": "not needed (websites cover already published 11 Nov)",
+  "media_ids": [
+   "18100756604448144",
+   "18175529785462297",
+   "18106825160568728"
+  ]
  }
 ]
