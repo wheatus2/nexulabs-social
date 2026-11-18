@@ -1,0 +1,16 @@
+{
+ "format": "feed",
+ "composition": [
+  "two-line-headline-top-left-over-a-pile-of-three-printed-window-envelopes-fanned-down-the-lower-half-each-showing-its-sender-and-subject",
+  "three-line-question-top-left-over-three-envelopes-seen-from-straight-above-fanned-like-a-hand-of-cards-from-one-shared-corner-with-the-front-one-running-off-the-bottom",
+  "one-envelope-carrying-the-wordmark-lying-across-the-upper-half-over-a-three-word-headline-and-a-call-to-action-line-bottom-left"
+ ],
+ "background": [
+  "#1F6272",
+  "#1F6272",
+  "#1F6272"
+ ],
+ "display_font": "Outfit",
+ "accent": "#F6F3EA",
+ "concept": "Hosting, domain and email with three different companies, as the post they send: three white window envelopes from three made-up firms (Quillby Domains, Northmoss Hosting, Tarnbeck Mail) on a petrol-blue table, rendered in 3D (Blender) The pile as it landed: one website, three bills. From straight above, the same three fanned like a hand of cards: it's down, who do you ring? Then one envelope on its own with the Nexulabs wordmark on it, about your website, hosting, domain and email: or just us. Petrol blue, envelope white, black print."
+}

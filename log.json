@@ -1741,5 +1741,44 @@
   "instagram_media_id": "18350517823280051",
   "permalink": "https://www.instagram.com/p/Df23xUhF_a9/",
   "facebook_post_id": "1484176674771345_122108321859544005"
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "08:33 (run started 08:34 UK time, held about 10:40)",
+  "time_slot": "morning",
+  "id": "2026-11-18-0833-or-just-us",
+  "format": "carousel",
+  "slides": 3,
+  "status": "not published",
+  "content_type": "problem-solution",
+  "service": "hosting-domains",
+  "cta": "call",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Hosting, domain and email with three different companies: one website, three bills; it's down, who do you ring? Or just us. Three envelopes from made-up companies (Quillby Domains, Northmoss Hosting, Tarnbeck Mail), then one from Nexulabs, ending on Book a call at nexulabs.co.uk.",
+  "composition": [
+   "two-line-headline-top-left-over-a-pile-of-three-printed-window-envelopes-fanned-down-the-lower-half-each-showing-its-sender-and-subject",
+   "three-line-question-top-left-over-three-envelopes-seen-from-straight-above-fanned-like-a-hand-of-cards-from-one-shared-corner-with-the-front-one-running-off-the-bottom",
+   "one-envelope-carrying-the-wordmark-lying-across-the-upper-half-over-a-three-word-headline-and-a-call-to-action-line-bottom-left"
+  ],
+  "palette": [
+   "#1F6272",
+   "#F6F3EA",
+   "#17191C"
+  ],
+  "display_font": "Outfit",
+  "text_font": "Outfit",
+  "photo": null,
+  "design_review": {
+   "scores": [
+    6,
+    6
+   ],
+   "rounds": 2,
+   "score": 6,
+   "weakest": "frame 2 both times (5): first the same pile re-shot lower, then a fan of envelopes that read as wedges"
+  },
+  "fact_check": "pass (PLAYBOOK.md wording only; nexulabs.co.uk could not be opened from the session)",
+  "note": "Held by the scheduled run: two design reviews at 6, under the pass mark of 7. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
  }
 ]
