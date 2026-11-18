@@ -1012,5 +1012,47 @@
    "18175529785462297",
    "18106825160568728"
   ]
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "17:47 (run started 17:48 UK time, held about 19:45)",
+  "id": "stories/2026-11-18-1747-already-in-your-crm",
+  "type": "problem and what we build",
+  "category": "Websites + CRM",
+  "highlight": "web-crm",
+  "content_type": "problem-solution",
+  "service": "web-crm",
+  "cta": "site",
+  "offer": "none",
+  "topic": "They filled in your form. Who types it up? Nobody. It's already in your CRM. Website and CRM, built as one. A duplicate book with one made-up enquiry: the white top sheet is the website enquiry, the yellow sheet under it the CRM copy, the same number on both. Ends on See what we build at nexulabs.co.uk.",
+  "news_story_id": null,
+  "renderer": "studio",
+  "composition": [
+   "four-line-question-top-left-over-a-whole-duplicate-book-low-in-the-frame-with-the-foot-of-its-white-top-sheet-rolled-back-off-the-yellow-copy",
+   "the-top-sheet-flipped-back-over-the-binding-off-the-top-right-and-the-whole-yellow-copy-in-the-upper-half-over-a-three-line-answer-on-the-table-below",
+   "three-line-statement-and-a-call-to-action-row-over-the-torn-out-white-sheet-laid-across-the-yellow-copy-running-off-the-bottom-with-the-same-red-number-on-both"
+  ],
+  "palette": [
+   "#2140CF",
+   "#FFFFFF",
+   "#F4E158",
+   "white paper",
+   "canary-yellow copy",
+   "biro blue",
+   "one red number"
+  ],
+  "display_font": "Grotesk",
+  "text_font": "Grotesk",
+  "frames": 3,
+  "status": "not published",
+  "design_review_score": 6.5,
+  "design_review": [
+   6.5,
+   6.5
+  ],
+  "reason": "Independent design review 6.5 twice (pass mark 7); two failed rounds means nothing goes out. Weakest both times: frame 2. See HELD.md in the folder.",
+  "sources": "PLAYBOOK.md only (nexulabs.co.uk did not come back from two web searches)",
+  "highlight_cover": null,
+  "media_ids": []
  }
 ]
