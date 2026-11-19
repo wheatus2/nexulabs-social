@@ -1098,5 +1098,55 @@
   "media_ids": [],
   "status": "not published",
   "highlight_cover": "none needed (hosting and domains covers already published)"
+ },
+ {
+  "id": "2026-11-19-1747-on-the-phone",
+  "date": "2026-11-19",
+  "slot": "17:47 (run started 17:48 UK time, published 18:37: 3D renders)",
+  "type": "problem and what we build",
+  "category": "CRM",
+  "content_type": "problem-solution",
+  "service": "crm",
+  "cta": "call",
+  "offer": "none",
+  "topic": "Mrs Dunn is on the phone. What did you quote her? A CRM would know. A rotary card file open at one typed customer card (a name, an address, a number and a pencil note: fence quote?? ask Dave), then the wheel turned to one pink Nexulabs card, Custom CRM systems. Ends on Book a call at nexulabs.co.uk. Everything on the cards is made up.",
+  "renderer": "studio",
+  "compositions": [
+   "two-line-statement-top-left-over-a-whole-rotary-card-file-seen-from-its-left-front-open-at-one-typed-customer-card-with-the-index-tabs-fanning-down-the-front",
+   "two-line-question-top-left-over-the-open-card-right-up-close-running-off-the-right-with-a-pencil-note-under-the-number-and-the-next-index-tab-behind",
+   "two-line-answer-and-a-call-to-action-line-top-left-over-the-same-file-from-higher-with-the-wheel-turned-to-one-pink-card-carrying-the-wordmark"
+  ],
+  "palette": [
+   "#17454F",
+   "#F4EFE1",
+   "#C9186B",
+   "ivory card",
+   "buff index tabs",
+   "satin black"
+  ],
+  "typeface": "Outfit",
+  "design_review": {
+   "score": 7,
+   "rounds": [
+    7
+   ],
+   "frames": [
+    7.5,
+    6.5,
+    7
+   ],
+   "pass_mark": 7,
+   "result": "passed",
+   "notes": "No frame called basic. Weakest: frame 2 (the close-up: tab near the right edge, dark lower quarter, headline floating). Fixed after the review and not re-scored: headline moved down 40px on every frame, the file moved down in frame 1 and up in frames 2 and 3 so the gaps are closer, frame 2 pulled back a little, the question mark kerned in, the call to action set bolder and larger and on the headline margin."
+  },
+  "sources": "PLAYBOOK.md only (nexulabs.co.uk did not come back from a web search)",
+  "frames": 3,
+  "media_ids": [
+   "18153392086479577",
+   "18650228200010727",
+   "18398181949203651"
+  ],
+  "status": "published",
+  "highlight_cover": "none needed (CRM cover already published)"
  }
 ]
