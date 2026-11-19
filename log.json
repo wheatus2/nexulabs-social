@@ -2010,5 +2010,56 @@
   },
   "fact_check": "pass (independent subagent; PLAYBOOK.md wording only: nexulabs.co.uk was not returned by web search, so it could not be opened)",
   "note": "Held by the scheduled run: design reviews at 6 and 6.5, under the pass mark of 7, last scene called basic both times. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
+ },
+ {
+  "date": "2026-11-19",
+  "slot": "19:33 (run started 19:33 UK time, held after two design reviews)",
+  "time_slot": "evening",
+  "id": "2026-11-19-1933-doesnt-exist",
+  "format": "carousel",
+  "frames": 3,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "branding",
+  "cta": "site",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Branding: a roll of woven labels for a made-up knitwear maker (Thrumwick). Thrumwick doesn't exist. / We branded it anyway. / Your business does. Ends on See what we build at nexulabs.co.uk.",
+  "concept": "Branding for a business that doesn't exist. One roll of woven labels for a made-up knitwear maker (Thrumwick), rendered in 3D (Blender) on sand linen and shot three ways: folded into eight rows, navy with the name in ivory on the front and the other way round on the back; right up against two rows, where the letters step thread by thread; then the roll itself with its cut tail drawn out. Thrumwick doesn't exist. We branded it anyway. Your business does. Sand, navy and ivory.",
+  "composition": [
+   "two-line-statement-top-left-over-a-woven-label-ribbon-on-its-edge-folded-into-eight-rows-there-and-back-navy-and-ivory-by-turns-running-off-the-right-and-the-bottom",
+   "two-line-statement-top-left-over-two-rows-of-the-ribbon-seen-low-from-the-left-end-rising-across-the-frame-with-one-woven-name-sharp-and-the-rest-going-soft",
+   "two-line-statement-top-left-over-the-roll-of-labels-on-the-right-with-its-cut-tail-drawn-out-to-the-left-margin-and-a-call-to-action-row-with-the-wordmark-along-the-foot"
+  ],
+  "palette": [
+   "#CDB892",
+   "#141B4D",
+   "#EEE5D0"
+  ],
+  "typeface": "Brico",
+  "display_font": "Brico",
+  "text_font": "Geist",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py, art/print.py, art/geom.py). Not photographs; Thrumwick and its labels are made up.",
+  "design_review": {
+   "scores": [
+    6.5,
+    6
+   ],
+   "rounds": 2,
+   "score": 6,
+   "frames": [
+    6.5,
+    4.5,
+    7
+   ],
+   "weakest": "frame 2, called basic in both reviews",
+   "pass_mark": 7,
+   "result": "held"
+  },
+  "fact_check": "pass",
+  "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
+  "rule_followed": "scheduled task prompt: two failed design reviews, publish nothing",
+  "note": "Complete and can be published as it stands if the owner says so. See HELD.md."
  }
 ]

@@ -1,0 +1,12 @@
+{
+ "format": "feed",
+ "composition": [
+  "two-line-statement-top-left-over-a-woven-label-ribbon-on-its-edge-folded-into-eight-rows-there-and-back-navy-and-ivory-by-turns-running-off-the-right-and-the-bottom",
+  "two-line-statement-top-left-over-two-rows-of-the-ribbon-seen-low-from-the-left-end-rising-across-the-frame-with-one-woven-name-sharp-and-the-rest-going-soft",
+  "two-line-statement-top-left-over-the-roll-of-labels-on-the-right-with-its-cut-tail-drawn-out-to-the-left-margin-and-a-call-to-action-row-with-the-wordmark-along-the-foot"
+ ],
+ "background": ["#CDB892", "#CDB892", "#CDB892"],
+ "display_font": "Brico",
+ "accent": "#141B4D",
+ "concept": "Branding for a business that doesn't exist. One roll of woven labels for a made-up knitwear maker (Thrumwick), rendered in 3D (Blender) on sand linen and shot three ways: folded into eight rows, navy with the name in ivory on the front and the other way round on the back; right up against two rows, where the letters step thread by thread; then the roll itself with its cut tail drawn out. Thrumwick doesn't exist. We branded it anyway. Your business does. Sand, navy and ivory."
+}
