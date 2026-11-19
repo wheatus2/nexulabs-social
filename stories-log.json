@@ -1058,5 +1058,45 @@
    "18361337455175481",
    "18401886856205130"
   ]
+ },
+ {
+  "date": "2026-11-19",
+  "slot": "11:47 (run started 11:48 UK time, held about 12:45)",
+  "id": "stories/2026-11-19-1147-on-the-side",
+  "type": "what we build",
+  "category": "Hosting",
+  "content_type": "promotional",
+  "service": "hosting-domains",
+  "cta": "call",
+  "offer": "none",
+  "topic": "Hosting, domains and email as the sides on a cafe menu board. On the menu: your new website / Sides: hosting, domains, email, same kitchen / To order: book a call at nexulabs.co.uk. One plum felt letter board with push-in letters, rendered in 3D.",
+  "renderer": "studio",
+  "compositions": [
+   "felt-letter-board-filling-the-frame-seen-from-low-on-the-left-three-stacked-words-under-a-small-pink-label-the-slats-falling-away-to-the-right",
+   "the-same-board-from-the-left-at-mid-height-three-full-width-words-between-two-small-pink-rows-nothing-but-felt-behind",
+   "the-foot-of-the-board-from-low-on-the-left-two-words-and-a-pink-address-row-over-the-oak-rail-carrying-the-wordmark-and-a-strip-of-pink-counter"
+  ],
+  "palette": [
+   "#4A1F4E",
+   "#EFE6D6",
+   "#F29DB0",
+   "oak",
+   "pale pink counter"
+  ],
+  "typeface": "Oswald",
+  "design_review": {
+   "score": 6,
+   "rounds": [
+    6,
+    6
+   ],
+   "pass_mark": 7,
+   "result": "held",
+   "notes": "Frame 2 (the three-word list) called basic in both rounds; typeface read as Impact; even lighting. See HELD.md in the folder."
+  },
+  "frames": 3,
+  "media_ids": [],
+  "status": "not published",
+  "highlight_cover": "none needed (hosting and domains covers already published)"
  }
 ]
