@@ -472,5 +472,22 @@
   "display_font": "Grotesk",
   "accent": "#F4E158",
   "concept": "Website and CRM built as one, as a duplicate book, rendered in 3D (Blender). One made-up enquiry written once on the white top sheet (Website enquiry, No 0218) and come through in carbon on the yellow sheet under it (CRM copy, No 0218). The foot of the top sheet rolled back: they filled in your form, who types it up? The top sheet flipped over the binding and the whole copy in view: nobody, it's already in your CRM. Then the top sheet torn out and laid across the copy, the same red number on both: website and CRM, built as one. Cobalt table, white paper, canary-yellow copy, biro blue and one red number."
+ },
+ {
+  "id": "2026-11-19-0510-still-online",
+  "format": "feed",
+  "composition": [
+   "arcade-cabinet-from-the-players-side-screen-filling-the-frame-reading-the-headline-in-dots-over-a-full-loading-bar-stick-and-three-buttons-below",
+   "same-locked-camera-second-screen-state-four-line-headline-over-eight-little-players-four-gone-dim",
+   "same-locked-camera-third-screen-state-headline-over-a-three-block-enquiries-bar-with-the-wordmark-badge-under-the-screen"
+  ],
+  "background": [
+   "#05060F",
+   "#05060F",
+   "#05060F"
+  ],
+  "display_font": "Dots5x7 (drawn for this post)",
+  "accent": "#46FF8C",
+  "concept": "GTA 6 launch day as an arcade cabinet of our own, rendered in 3D (Blender): one locked camera, three states of the screen, so the carousel plays like a three-step animation (the one case where frames share a composition, see DESIGN.md). The screen carries every word in our own 5x7 dot lettering: GTA 6 is out today, loading 100%. So is half your team, out of office, eight little players and four gone dim. Your website isn't, still online, enquiries +3. A different button is lit each frame; the Nexulabs wordmark is the maker's badge under the screen. Near-black cabinet, warm white dots, one arcade green."
  }
 ]
