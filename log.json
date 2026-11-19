@@ -1909,5 +1909,55 @@
   "instagram_media_id": "18151151134571624",
   "permalink": "https://www.instagram.com/p/Df6VPSyE-Kc/",
   "facebook_post_id": "1484176674771345_122109657543544005"
+ },
+ {
+  "date": "2026-11-19",
+  "slot": "08:33 (run started 08:33 UK time, published 09:36)",
+  "time_slot": "08:33",
+  "id": "2026-11-19-0833-leans-on-it",
+  "format": "carousel",
+  "slides": 3,
+  "status": "published",
+  "content_type": "problem-solution",
+  "service": "crm",
+  "cta": "call",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Custom CRM: a made-up heating firm's week on a whiteboard. The whole week is on this board / Then someone leans on it (a smear dragged through Monday to Wednesday) / We'd build you a CRM instead; the board can keep the tea rota. Ends on Book a call at nexulabs.co.uk.",
+  "concept": "A made-up heating firm's jobs board as one real whiteboard on a bottle-green wall, rendered in 3D (Blender) and shot from the same side three ways, the board changing each time. Whole: the week in marker capitals, one job underlined in red. Nearer and lower, along the board: somebody has leant on it and dragged Monday's and Tuesday's jobs into Wednesday. Then the foot of the board and its pen tray: wiped, the old week a ghost, and TEA ROTA in red. Bottle green, enamel white, brushed aluminium, black marker and one red.",
+  "compositions": [
+   "two-line-statement-top-left-on-a-shaded-green-wall-over-a-whole-whiteboard-seen-from-its-left-end-receding-to-the-right-with-its-pen-tray",
+   "two-line-statement-top-left-on-the-wall-over-the-board-seen-low-from-its-left-end-its-top-rail-falling-away-to-the-right-with-a-sagging-smear-dragged-through-three-columns",
+   "the-foot-of-the-wiped-board-running-off-the-top-and-right-with-a-red-tea-rota-and-the-pen-tray-over-a-two-line-offer-call-to-action-and-wordmark-on-the-wall-below"
+  ],
+  "palette": [
+   "#0C3F2F",
+   "#F4EFE3",
+   "#E9EAE8",
+   "#D3202B"
+  ],
+  "typeface": "Instrument",
+  "display_font": "Instrument",
+  "text_font": "Geist",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py; marker writing art/print.py). Not photographs.",
+  "design_review": {
+   "scores": [
+    6.5,
+    7.5
+   ],
+   "rounds": 2,
+   "score": 7.5,
+   "frames": [
+    8,
+    6.5,
+    7.5
+   ],
+   "weakest": "frame 2 both times. Round 1 (6.5): called basic, a flat square-on crop with a smear that read as a blur filter. Rebuilt: the smear as a sagging wipe path that lifts the ink and drags it, shot low along the board with the whole width in frame, handwriting varied letter by letter. Round 2 (7.5): no frame called basic. Fixed after it and not re-scored: ghost writing removed from the wiped board, wall sheen removed so the green matches across frames, board rail on the type margin, logo on the footer baseline."
+  },
+  "fact_check": "pass (independent subagent). nexulabs.co.uk could not be opened (two searches did not return the site); claims about Nexulabs rest on PLAYBOOK.md.",
+  "instagram_media_id": "18577380589073717",
+  "permalink": "https://www.instagram.com/p/Df6xfbzDYTt/",
+  "facebook_post_id": "1484176674771345_122109842529544005"
  }
 ]
