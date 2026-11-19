@@ -1,0 +1,53 @@
+<style>
+/* One made-up tailor's tape measure standing on its edge on a lilac cloth, rendered in 3D (Blender, art/build.py;
+   both sides of the print art/print.py), shot from the same side four ways. The tape moves in the picture:
+   each position is its own render. Pictures are 1134x2016, shown at 1080x1920 and pushed in to 1.045 at most.
+   Newsreader 700 at 118px, one size in every scene. The wordmark is printed on the tape itself (the real SVG). */
+.scene{--ink:#17122B;overflow:hidden;visibility:hidden;color:var(--ink);background:#C4BAE6;
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.cam{position:absolute;inset:0;animation:push var(--len) cubic-bezier(.33,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.045))}}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
+.pic.on{opacity:0;animation:on .01s linear calc(var(--t0) + var(--at)) both}
+@keyframes on{from{opacity:0}to{opacity:1}}
+.h{position:absolute;left:76px;top:262px;font-family:News;font-weight:700;font-size:118px;letter-spacing:-.022em;line-height:1.0;white-space:nowrap}
+.s3 .h{top:960px}
+.s1 .cam{transform-origin:560px 1150px;--len:3.6s}
+.s2 .cam{transform-origin:300px 1400px;--len:3.6s}
+.s3 .cam{transform-origin:560px 480px;--len:3.6s;--b:1.035}
+.s4 .cam{transform-origin:480px 1340px;--len:4.4s;--b:1.04}
+</style>
+<section class="scene s1" data-dur="3.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-1a.jpg)"></div>
+  <div class="pic on" style="--at:.70s;background-image:url({{post}}/art/r-1b.jpg)"></div>
+  <div class="pic on" style="--at:.80s;background-image:url({{post}}/art/r-1c.jpg)"></div>
+  <div class="pic on" style="--at:.90s;background-image:url({{post}}/art/r-1d.jpg)"></div>
+  <div class="pic on" style="--at:1.00s;background-image:url({{post}}/art/r-1e.jpg)"></div>
+  <div class="pic on" style="--at:1.10s;background-image:url({{post}}/art/r-1f.jpg)"></div></div>
+  <div class="h">Is your business<br>a standard size?</div></section>
+<section class="scene s2" data-dur="3.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-2a.jpg)"></div>
+  <div class="pic on" style="--at:.30s;background-image:url({{post}}/art/r-2b.jpg)"></div>
+  <div class="pic on" style="--at:.40s;background-image:url({{post}}/art/r-2c.jpg)"></div>
+  <div class="pic on" style="--at:.50s;background-image:url({{post}}/art/r-2d.jpg)"></div>
+  <div class="pic on" style="--at:.60s;background-image:url({{post}}/art/r-2e.jpg)"></div>
+  <div class="pic on" style="--at:.70s;background-image:url({{post}}/art/r-2f.jpg)"></div>
+  <div class="pic on" style="--at:.80s;background-image:url({{post}}/art/r-2g.jpg)"></div>
+  <div class="pic on" style="--at:.90s;background-image:url({{post}}/art/r-2h.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">We build websites<br>made to measure.</div></section>
+<section class="scene s3" data-dur="3.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-3a.jpg)"></div>
+  <div class="pic on" style="--at:.30s;background-image:url({{post}}/art/r-3b.jpg)"></div>
+  <div class="pic on" style="--at:.40s;background-image:url({{post}}/art/r-3c.jpg)"></div>
+  <div class="pic on" style="--at:.50s;background-image:url({{post}}/art/r-3d.jpg)"></div>
+  <div class="pic on" style="--at:.60s;background-image:url({{post}}/art/r-3e.jpg)"></div>
+  <div class="pic on" style="--at:.70s;background-image:url({{post}}/art/r-3f.jpg)"></div>
+  <div class="pic on" style="--at:.80s;background-image:url({{post}}/art/r-3g.jpg)"></div>
+  <div class="pic on" style="--at:.90s;background-image:url({{post}}/art/r-3h.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Whatever<br>business<br>you’re in.</div></section>
+<section class="scene s4" data-dur="4.4"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-4a.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">See what we build<br>at nexulabs.co.uk</div></section>
+<!--grain:0.025-->

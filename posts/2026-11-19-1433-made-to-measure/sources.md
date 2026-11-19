@@ -6,9 +6,9 @@ nexulabs.co.uk could not be opened in this run: two web searches ("nexulabs.co.u
 
 ## On-screen words
 - Scene 1: "Is your business a standard size?" over a coiled tape measure.
-- Scene 2: "We build websites made to measure." over the same tape, numerals 39 to 50 in view.
-- Scene 3: "Whatever business you're in." over the back of the tape, which is printed with kinds of business (GARAGES, FLORISTS, BUILDERS go by).
-- Scene 4: "See what we build at nexulabs.co.uk" over the brass end of the tape, which carries the Nexulabs wordmark.
+- Scene 2: "We build websites made to measure." set inside one loop of the same tape; the back of the tape reads BAKERS.
+- Scene 3: "Whatever business you're in." over the tape folded into rows; the back of the tape reads DENTISTS, FLORISTS, BUILDERS.
+- Scene 4: "See what we build at nexulabs.co.uk" under the brass end of the tape, which carries the Nexulabs wordmark.
 
 ## Claim 1: Nexulabs builds websites
 - Used on: scene 2 and the caption ("We design and build websites", "web design").
@@ -17,7 +17,7 @@ nexulabs.co.uk could not be opened in this run: two web searches ("nexulabs.co.u
 ## Claim 2: for businesses of every kind
 - Used on: scene 3 ("Whatever business you're in.") and the caption ("for businesses of every kind").
 - Source: PLAYBOOK.md, "Brand": "'Websites and CRM systems for all types of businesses' (nexulabs.co.uk; the site says 'businesses of every kind')."
-- The kinds of business printed on the tape and named in the caption (garages, florists, dentists, builders, bakers and so on) are examples of "every kind". They are not a client list and no client is claimed.
+- The kinds of business printed on the tape and named in the caption (bakers, dentists, florists and builders on the tape; a garage, a florist, a dentist, a builder and a bakery in the caption) are examples of "every kind". They are not a client list and no client is claimed.
 
 ## Claim 3: the website is made for the business it is for ("made to measure", "made to fit the business it's for", "build yours around what your customers come looking for")
 - Used on: scene 2 and the caption.

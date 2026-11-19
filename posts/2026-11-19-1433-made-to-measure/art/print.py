@@ -82,7 +82,12 @@ def front():
     im.save(HERE / ".tape-front.png")
 
 
-def back():
+# where the words sit on the back, per scene: (centimetres from the brass end, word). Scenes 1 and 4 show
+# only the coil's inside, so the back is left as plain ticks there.
+BACKS = {1: [], 4: [], 2: [(72.6, '.'), (80.0, 'BAKERS'), (87.4, '.')], 3: [(43.5, 'BUILDERS'), (73.2, 'FLORISTS'), (102.9, 'DENTISTS')]}
+
+
+def back(scene, marks):
     im = Image.new("RGB", (TOTAL * PX, WID * PX), VIOLET); d = ImageDraw.Draw(im)
     f = ImageFont.truetype(ttf("inter-tight-latin-800-normal"), int(8.6 * PX))
     for mm in range(0, TOTAL, 1):
@@ -90,16 +95,17 @@ def back():
         h, w = (4.6, 0.30) if mm % 10 == 0 else ((3.2, 0.24) if mm % 5 == 0 else (0, 0))
         if h:
             d.rectangle([x - w * PX / 2, 0, x + w * PX / 2, h * PX], fill=IVORY)
-    x = 12 * PX; i = 0
-    gap = 30 * PX
-    while x < (TOTAL - 60) * PX:
-        w = sum(d.textlength(ch, font=f) for ch in TRADES[i % len(TRADES)]) + 0.7 * PX * (len(TRADES[i % len(TRADES)]) - 1)
-        spaced(d, x + w / 2, int(14.6 * PX), TRADES[i % len(TRADES)], f, IVORY, 0.7 * PX)
-        dx = x + w + gap; r = 1.1 * PX
-        d.ellipse([dx - r, 11.3 * PX - r, dx + r, 11.3 * PX + r], fill=IVORY)
-        x = dx + gap; i += 1
-    im.save(HERE / ".tape-back.png")
+    for c, word in marks:
+        x = (TOTAL - c * 10) * PX            # the back is read from the other side: it runs the other way
+        if word == ".":
+            r = 1.1 * PX; d.ellipse([x - r, 11.3 * PX - r, x + r, 11.3 * PX + r], fill=IVORY)
+        else:
+            spaced(d, x, int(14.6 * PX), word, f, IVORY, 0.7 * PX)
+    im.save(HERE / f".tape-back-{scene}.png")
 
 
 if __name__ == "__main__":
-    front(); back(); print("wrote tape prints", TOTAL * PX, WID * PX)
+    front()
+    for sc, marks in BACKS.items():
+        back(sc, marks)
+    print("wrote tape prints", TOTAL * PX, WID * PX)

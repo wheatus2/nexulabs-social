@@ -1959,5 +1959,56 @@
   "instagram_media_id": "18577380589073717",
   "permalink": "https://www.instagram.com/p/Df6xfbzDYTt/",
   "facebook_post_id": "1484176674771345_122109842529544005"
+ },
+ {
+  "date": "2026-11-19",
+  "slot": "14:33 (run started 14:33 UK time, held after two design reviews)",
+  "time_slot": "afternoon",
+  "id": "2026-11-19-1433-made-to-measure",
+  "format": "reel",
+  "scenes": 4,
+  "seconds": 15.4,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "websites",
+  "cta": "site",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Websites made to measure: a made-up tailor's tape measure with the Nexulabs wordmark as its maker's mark. Is your business a standard size? / We build websites made to measure. / Whatever business you're in (dentists, florists, builders on the back of the tape). Ends on See what we build at nexulabs.co.uk.",
+  "concept": "Websites made to measure, as a tailor's tape, rendered in 3D (Blender). One made-up tape measure standing on its edge on a lilac cloth: ivory with a numeral at every centimetre on the front, violet with kinds of business on the back, a brass end and the Nexulabs wordmark as the maker's mark. Shot from the same side four ways and moving in the picture: the tape is drawn out of its coil; one big loop goes round the headline; the tape folded into five rows, dentists, florists and builders sliding into place; then the brass end and the wordmark over the call to action. Lilac, ivory, ink, brass and one violet.",
+  "composition": [
+   "two-line-question-top-left-over-a-coiled-tape-measure-on-its-edge-right-of-centre-with-its-first-thirty-centimetres-swept-across-the-foot-of-the-frame-as-the-tape-is-drawn-out-of-the-coil",
+   "one-big-loop-of-tape-running-off-the-left-and-bottom-with-the-violet-back-across-the-top-and-the-ivory-numerals-rising-from-the-bottom-left-and-a-three-line-statement-set-inside-the-loop",
+   "two-line-statement-top-left-over-the-tape-folded-into-five-rows-there-and-back-three-violet-rows-each-carrying-one-trade-and-two-ivory-rows-of-numerals-sliding-opposite-ways",
+   "the-coil-whole-above-the-brass-end-of-the-tape-with-the-wordmark-printed-on-it-on-the-type-margin-and-a-two-line-call-to-action-set-under-the-tape"
+  ],
+  "palette": [
+   "#C4BAE6",
+   "#F0E9D6",
+   "#17122B",
+   "#3E24BE"
+  ],
+  "typeface": "News",
+  "display_font": "News",
+  "text_font": "News",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py; tape print art/print.py). Not photographs; there is no such tape measure.",
+  "design_review": {
+   "scores": [
+    6,
+    6.5
+   ],
+   "rounds": 2,
+   "score": 6.5,
+   "frames": [
+    6.5,
+    6,
+    7.5,
+    6
+   ],
+   "weakest": "round 1 (6): scene 2, trade words out of focus, and scene 4 called basic (a standard end card). Redesigned: loop round the headline, the tape folded into five rows carrying three trades, a stacked last scene. Round 2 (6.5): scene 4 called basic again (holds still, a logo over a line of text); the larger tens touch the numeral before them; scene 3 scored 7.5."
+  },
+  "fact_check": "pass (independent subagent; PLAYBOOK.md wording only: nexulabs.co.uk was not returned by web search, so it could not be opened)",
+  "note": "Held by the scheduled run: design reviews at 6 and 6.5, under the pass mark of 7, last scene called basic both times. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
  }
 ]

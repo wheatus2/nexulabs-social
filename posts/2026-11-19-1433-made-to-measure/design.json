@@ -1,13 +1,18 @@
 {
  "format": "reel",
  "composition": [
-  "two-line-question-top-left-over-a-coiled-tape-measure-on-its-edge-right-of-centre-with-its-first-thirty-centimetres-swept-across-the-foot-of-the-frame-as-the-coil-springs-open",
-  "two-line-statement-top-left-over-one-loop-of-tape-seen-from-outside-the-ivory-numerals-sharp-and-rising-from-the-bottom-left-the-violet-back-soft-across-the-middle-as-the-tape-is-drawn-through",
-  "the-violet-back-of-the-tape-arching-across-the-upper-frame-with-one-trade-sharp-as-the-tape-is-drawn-through-and-a-two-line-statement-set-inside-the-bay-below-it",
-  "two-line-call-to-action-top-left-over-the-brass-end-of-the-tape-and-the-wordmark-printed-on-it-crossing-the-lower-frame-with-the-coil-soft-and-bleeding-off-the-right"
+  "two-line-question-top-left-over-a-coiled-tape-measure-on-its-edge-right-of-centre-with-its-first-thirty-centimetres-swept-across-the-foot-of-the-frame-as-the-tape-is-drawn-out-of-the-coil",
+  "one-big-loop-of-tape-running-off-the-left-and-bottom-with-the-violet-back-across-the-top-and-the-ivory-numerals-rising-from-the-bottom-left-and-a-three-line-statement-set-inside-the-loop",
+  "two-line-statement-top-left-over-the-tape-folded-into-five-rows-there-and-back-three-violet-rows-each-carrying-one-trade-and-two-ivory-rows-of-numerals-sliding-opposite-ways",
+  "the-coil-whole-above-the-brass-end-of-the-tape-with-the-wordmark-printed-on-it-on-the-type-margin-and-a-two-line-call-to-action-set-under-the-tape"
  ],
- "background": ["#C4BAE6", "#C4BAE6", "#C4BAE6", "#C4BAE6"],
+ "background": [
+  "#C4BAE6",
+  "#C4BAE6",
+  "#C4BAE6",
+  "#C4BAE6"
+ ],
  "display_font": "News",
  "accent": "#3E24BE",
- "concept": "Websites made to measure, as a tailor's tape, rendered in 3D (Blender). One made-up tape measure standing on its edge on a lilac cloth: ivory with a numeral at every centimetre on the front, violet with kinds of business on the back, a brass end and the Nexulabs wordmark as the maker's mark. Shot from the same side four ways and moving in the picture: the coil springs open, the tape is drawn through, the back goes by (garages, florists), then the brass end close up. Lilac, ivory, ink, brass and one violet."
+ "concept": "Websites made to measure, as a tailor's tape, rendered in 3D (Blender). One made-up tape measure standing on its edge on a lilac cloth: ivory with a numeral at every centimetre on the front, violet with kinds of business on the back, a brass end and the Nexulabs wordmark as the maker's mark. Shot from the same side four ways and moving in the picture: the tape is drawn out of its coil; one big loop goes round the headline; the tape folded into five rows, dentists, florists and builders sliding into place; then the brass end and the wordmark over the call to action. Lilac, ivory, ink, brass and one violet."
 }

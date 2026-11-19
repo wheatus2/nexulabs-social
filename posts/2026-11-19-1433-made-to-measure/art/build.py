@@ -32,17 +32,17 @@ EXPOSURE = 1.0
 # state letter -> parameter. Scene 1: how far the coil has sprung open (0 to 1).
 # Scenes 2 and 3: how far the tape has been drawn through, in cm.
 STATES = {
-    1: dict(a=0.0, b=0.30, c=0.58, d=0.78, e=0.91, f=1.0),
+    1: dict(a=0.0, b=1.2, c=3.2, d=5.8, e=8.2, f=10.0, g=11.2, h=12.0),
     2: dict(a=0.0, b=1.3, c=3.0, d=4.9, e=6.6, f=7.9, g=8.7, h=9.0),
-    3: dict(a=-9.0, b=-7.2, c=-4.9, d=-2.3, e=0.0, f=1.7, g=2.8, h=3.2),
+    3: dict(a=-7.0, b=-6.0, c=-4.5, d=-2.9, e=-1.6, f=-0.7, g=-0.2, h=0.0),
     4: dict(a=0.0),
 }
 
 SHOTS = {
-    1: dict(loc=(3, -27, 21), aim=(3, 1, 0), lens=50, f=0.10, focus=(-2, -3.5, 1.0), shift=(0, 0.15)),
-    2: dict(loc=(-4, -27, 23), aim=(-1, 1, 0), lens=50, f=0.08, focus=(-5, -5, 1.0), shift=(0, 0.13)),
-    3: dict(loc=(-2.5, -13, 17), aim=(-2.5, 11, 0), lens=50, f=0.08, focus=(-2.5, 12.5, 1.0), shift=(0, -0.12)),
-    4: dict(loc=(2.85, -27, 15), aim=(2.85, 0, 0), lens=60, f=0.07, focus=(1, -1, 1.0), shift=(0, 0.20)),
+    1: dict(loc=(3.5, -27, 21), aim=(3.5, 1, 0), lens=50, f=0.10, focus=(-2, -3.5, 1.0), shift=(0, 0.12)),
+    2: dict(loc=(-3, -24, 27), aim=(-1.5, 1, 0), lens=50, f=0.22, focus=(-4, 2, 1.0), shift=(0, 0.07)),
+    3: dict(loc=(0, -25, 27), aim=(0, 3.2, 0), lens=50, f=0.16, focus=(0, 1, 1.0), shift=(0, 0.07)),
+    4: dict(loc=(4.95, -33, 19), aim=(4.95, 0, 0), lens=50, f=0.09, focus=(1, -1, 1.0), shift=(0, -0.07)),
 }
 
 
@@ -104,20 +104,27 @@ def spiral(pts, hd, length, r_in, pitch, lead_in=7.0):
 def layout(scene, p):
     """Returns (points, headings, tape coordinate of the first point in cm, +1 if the coordinate rises along the path)."""
     if scene == 1:
+        # the tape is drawn out of the coil, to the left: p is how many centimetres have come out
         pts, hd = run([(14, 0.0, 0.035), (16, 0.035, 0.06), (6, 0.06, 0.02)], start=(-21, -6.5), heading=math.radians(-4))
-        pitch = 0.27 + 0.30 * p
-        pts, hd = spiral(pts, hd, 110.0, 1.5, pitch)
-        return pts, hd, 4.0, 1
+        pts, hd = spiral(pts, hd, 110.0 - p * 2.2, 1.5, 0.52)
+        return pts, hd, 4.0 + p, 1
     if scene == 2:
         pts, hd = run([(18, 0.0, 0.03), (20, 0.03, 0.10), (22, 0.10, 0.10), (16, 0.10, 0.04)], start=(-24, -10), heading=math.radians(8))
         return pts, hd, 22.0 + p, 1
     if scene == 3:
-        # the same kind of loop, seen from higher and focused on its far side: the back of the tape
-        pts, hd = run([(14, 0.0, 0.04), (16, 0.04, 0.095), (40, 0.095, 0.085), (16, 0.085, 0.03)], start=(-22, -9), heading=math.radians(2))
-        return pts, hd, 70.0 - p, 1
+        # five rows, there and back: every other row shows the back of the tape
+        R, LR, RP = 1.7, 9.0, 0.5
+        k = 1 / R; arc = (math.pi - k * RP) / k
+        pieces = [(18.0, 0, 0)]
+        for i in range(4):
+            sg = -1 if i % 2 == 0 else 1
+            pieces += [(RP, 0, sg * k), (arc, sg * k, sg * k), (RP, sg * k, 0), (LR, 0, 0)]
+        pieces += [(14.0, 0, 0)]
+        pts, hd = run(pieces, start=(4.5 + 18.0 - LR, -4.0), heading=math.pi)
+        return pts, hd, 30.0 + p, 1
     if scene == 4:
-        pts, hd = run([(7, 0.0, 0.03), (5, 0.03, 0.12)], start=(-1.4, -1.0), heading=math.radians(3))
-        pts, hd = spiral(pts, hd, 96.0, 1.5, 0.5)
+        pts, hd = run([(5.4, 0.0, 0.02), (3, 0.02, 0.1)], start=(-1.4, -1.0), heading=math.radians(2))
+        pts, hd = spiral(pts, hd, 70.0, 1.5, 0.45, lead_in=5.0)
         return pts, hd, 0.0, 1
 
 
@@ -160,7 +167,7 @@ def tape(scene, p):
             uv.data[li].uv = fu[j]
     ob = link(bpy.data.objects.new("tape", me))
     ob.data.materials.append(print_mat("front", ".tape-front.png"))
-    ob.data.materials.append(print_mat("back", ".tape-back.png"))
+    ob.data.materials.append(print_mat("back", f".tape-back-{scene}.png"))
     m, nt, pr = mat("edge"); pr.inputs["Base Color"].default_value = (0.74, 0.70, 0.60, 1); pr.inputs["Roughness"].default_value = 0.6
     ob.data.materials.append(m)
     if c[0] < 0.2:
@@ -185,7 +192,7 @@ def print_mat(name, file):
     L.new(mp.outputs["Vector"], wx.inputs["Vector"]); L.new(mp.outputs["Vector"], wy.inputs["Vector"])
     mx = N.new("ShaderNodeMath"); mx.operation = "MAXIMUM"
     L.new(wx.outputs["Fac"], mx.inputs[0]); L.new(wy.outputs["Fac"], mx.inputs[1])
-    bump = N.new("ShaderNodeBump"); bump.inputs["Strength"].default_value = 0.16; bump.inputs["Distance"].default_value = 0.004
+    bump = N.new("ShaderNodeBump"); bump.inputs["Strength"].default_value = 0.5; bump.inputs["Distance"].default_value = 0.006
     L.new(mx.outputs["Value"], bump.inputs["Height"]); L.new(bump.outputs["Normal"], p.inputs["Normal"])
     return m
 
