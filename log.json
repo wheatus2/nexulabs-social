@@ -1866,5 +1866,45 @@
   },
   "fact_check": "pass on round 2 (PLAYBOOK.md wording only; nexulabs.co.uk was not returned by web search, so it could not be opened)",
   "note": "Held by the scheduled run: two design reviews at 5 and 5.5, under the pass mark of 7. The run followed the scheduled task's rule (publish nothing after two failed rounds), not DESIGN.md's 'Always post'. Draft and HELD.md are in the post folder."
+ },
+ {
+  "date": "2026-11-19",
+  "slot": "extra post asked for by Lee in chat (about 04:30 UK time), published about 05:30",
+  "time_slot": "extra",
+  "id": "2026-11-19-0510-still-online",
+  "format": "carousel",
+  "slides": 3,
+  "status": "publishing",
+  "content_type": "promotional",
+  "service": "website + CRM",
+  "cta": "site",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "GTA 6 launch day (19 Nov 2026) on an arcade cabinet of our own: GTA 6 is out today / So is half your team / Your website isn't (still online, enquiries +3). Ends on See what we build at nexulabs.co.uk.",
+  "palette": [
+   "#05060F",
+   "#FFF6E4",
+   "#46FF8C",
+   "#5C60BC"
+  ],
+  "display_font": "Dots5x7 (drawn for this post)",
+  "text_font": "none (all words are on the screen)",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py; screen art/screen.py). Not photographs. No Rockstar artwork, logo or lettering; the game is named in plain text only.",
+  "design_review": {
+   "scores": [
+    7
+   ],
+   "rounds": 1,
+   "score": 7,
+   "frames": [
+    7.5,
+    6.5,
+    7.5
+   ],
+   "weakest": "frame 2 (ragged four-line headline, cramped player row); no frame called basic. The named faults were fixed after the review and the fixed version was not re-scored."
+  },
+  "fact_check": "launch date and '13 years' checked against Rockstar Newswire, CBS News and Detroit News (sources.md); no independent fact-check subagent was run",
+  "note": "Lee first asked for GTA 6's own graphic style; declined (Rockstar's artwork) and he chose an original gaming look instead. An earlier holiday-request-slip version was dropped unscored. Lee approved publishing in chat."
  }
 ]
