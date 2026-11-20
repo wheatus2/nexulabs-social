@@ -1148,5 +1148,50 @@
   ],
   "status": "published",
   "highlight_cover": "none needed (CRM cover already published)"
+ },
+ {
+  "date": "2026-11-20",
+  "slot": "11:47 (run started 11:48 UK time, held about 12:50)",
+  "id": "2026-11-20-1147-down-to-the-matches",
+  "type": "concept branding",
+  "category": "Logos and branding",
+  "content_type": "promotional",
+  "service": "branding",
+  "cta": "site",
+  "offer": "none",
+  "topic": "Branding for a made-up restaurant (Oxlip): a Reserved card, coasters and a lilac matchbox with one flower mark. More than a logo. / Down to the matches. / Yours next. See what we build at nexulabs.co.uk.",
+  "renderer": "studio",
+  "composition": [
+   "two-line-statement-and-a-label-top-left-over-a-table-card-a-stack-of-round-coasters-and-a-lilac-matchbox-leaning-on-the-stack-stepping-down-the-frame",
+   "two-line-statement-top-left-over-the-matchbox-close-and-open-its-black-tray-of-lilac-headed-matches-pulled-towards-us-with-the-coasters-soft-behind",
+   "one-line-statement-and-a-call-to-action-line-top-left-over-a-blank-white-matchbox-standing-in-front-of-the-lilac-one"
+  ],
+  "palette": [
+   "#4C501A",
+   "#F6F1E2",
+   "#B9A2F5",
+   "cream card",
+   "black ink"
+  ],
+  "typeface": "Geist",
+  "design_review": {
+   "score": 7,
+   "rounds": [
+    6.5,
+    7
+   ],
+   "frames": [
+    7,
+    7.5,
+    6
+   ],
+   "pass_mark": 7,
+   "result": "held",
+   "notes": "Frame 3 called basic in both rounds (second time 'yes, borderline'). See HELD.md in the folder."
+  },
+  "frames": 3,
+  "media_ids": [],
+  "status": "not published",
+  "fact_check": "self-check against sources.md"
  }
 ]
