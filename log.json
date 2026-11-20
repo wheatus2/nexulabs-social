@@ -2061,5 +2061,58 @@
   "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
   "rule_followed": "scheduled task prompt: two failed design reviews, publish nothing",
   "note": "Complete and can be published as it stands if the owner says so. See HELD.md."
+ },
+ {
+  "date": "2026-11-20",
+  "slot": "08:33 (run started 08:33 UK time, published 09:14)",
+  "time_slot": "morning",
+  "id": "2026-11-20-0833-something-tripped",
+  "format": "carousel",
+  "frames": 3,
+  "status": "published",
+  "content_type": "problem-solution",
+  "service": "hosting-domains",
+  "cta": "call",
+  "offer": "none",
+  "renderer": "studio",
+  "topic": "Hosting, domains and email: a made-up breaker box with four breakers labelled WEBSITE, EMAIL, DOMAIN, HOSTING. Something's tripped. / Who do you ring? (a chart inside the door: Kev's lad, 2019; came with the wifi?; Sue, Sue's left; no idea) / One name. Ends on Book a call at nexulabs.co.uk.",
+  "concept": "Website, email, domain and hosting as four breakers in one made-up breaker box on a plum wall, rendered in 3D (Blender) and shot from the same side three ways, the box changing. Whole, door open: the yellow lever over EMAIL is down. Right up against the chart inside the door, Who to ring: Kev's lad, 2019; came with the wifi?; Sue (Sue's left); no idea. Then close from below: all four levers up under a yellow Nexulabs sticker. Plum, white plastic, charcoal and one lemon yellow.",
+  "composition": [
+   "two-line-statement-top-left-over-a-whole-breaker-box-seen-from-its-right-with-its-door-swung-open-to-the-left-margin-a-hand-filled-chart-inside-it-and-one-yellow-lever-down",
+   "two-line-question-top-left-over-the-open-door-square-on-and-close-its-chart-of-four-handwritten-answers-running-off-the-bottom-and-the-box-out-of-focus-off-the-right",
+   "one-line-answer-and-a-call-to-action-line-top-left-over-the-box-seen-close-from-below-its-top-falling-away-to-the-left-with-a-yellow-wordmark-sticker-over-four-levers-up-and-four-upright-labels"
+  ],
+  "palette": [
+   "#3D1447",
+   "#F7F2F8",
+   "#E9E8E4",
+   "#F3E11C"
+  ],
+  "typeface": "Arch",
+  "display_font": "Arch",
+  "text_font": "Arch",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py, art/print.py). Not photographs; the box, its labels and its chart are made up.",
+  "design_review": {
+   "scores": [
+    7
+   ],
+   "rounds": 1,
+   "score": 7,
+   "frames": [
+    7,
+    7.5,
+    6.5
+   ],
+   "weakest": "frame 3 (washed-out wordmark, a sliver of door, crowding); not called basic",
+   "pass_mark": 7,
+   "result": "pass",
+   "fixed_after": "wordmark sticker made matt so it prints black; the door left out of frame 3 and the box moved to the type margin; frame 1 raised to close the gap under the headline; frame 2 re-framed so the door meets the margin, the dark sliver at the right edge is gone and the chart's last rule is off the frame. Frame 3's headline also changed after the review (Ring us. to One name.) for the fact-check; the changed frames were not reviewed again."
+  },
+  "fact_check": "pass (round 2; round 1 faulted 'Ring us.' as a support promise and 'businesses across the North East')",
+  "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
+  "instagram_media_id": "18087065855380319",
+  "permalink": "https://www.instagram.com/p/Df9Ty1VFwB_/",
+  "facebook_post_id": "1484176674771345_122110564509544005"
  }
 ]
