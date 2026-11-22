@@ -32,7 +32,7 @@ TH1 = -30.0                         # page 1 keeps this heading while the rest o
 
 # 1: 49 px to the cm at 1080 wide. 2: the long picture the Reel tracks along, 70 px to the cm, no perspective.
 SHOTS = {
-    1: dict(loc=(9.47, -110, 24), aim=(9.47, 0, 8.3), lens=101, f=0.10, focus=(4, -2, 8)),
+    1: dict(loc=(10.55, -110, 24), aim=(10.55, 0, 8.3), lens=92, f=0.10, focus=(4, -2, 8)),
     2: dict(loc=(33.0, -200, 37.3), aim=(33.0, 0, 9.2), ortho=27.43),
     3: dict(loc=(9.3, -44.5, 73), aim=(9.75, -1.5, 6.7), lens=190, f=0.30, focus=(7.8, -4.5, 9)),
 }
