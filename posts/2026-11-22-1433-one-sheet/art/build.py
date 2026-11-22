@@ -26,15 +26,19 @@ EXPOSURE = 1.0
 
 # state letter -> half angle of the zigzag in degrees (90 is shut)
 OPEN1 = dict(a=87.0, b=84.0, c=76.0, d=64.0, e=52.0, f=43.0, g=37.5, h=35.0)
-STATES = {1: OPEN1, 2: dict(a=35.0), 3: dict(a=41.5, b=40.6, c=39.0, d=37.4, e=36.2, f=35.4, g=35.0)}
-SIZE = {1: (1134, 2016), 2: (3948, 2016), 3: (1134, 2016)}
-TH1 = -30.0                         # page 1 keeps this heading while the rest opens behind it
+STATES = {1: OPEN1, 2: dict(a=35.0), 3: dict(a=40.0, b=38.6, c=37.0, d=35.8, e=35.0),
+          4: dict(a=35.0, b=24.0, c=6.0, d=-18.0, e=-45.0, f=-68.0, g=-82.0, h=-87.0)}
+SIZE = {1: (1134, 2016), 2: (2394, 2016), 3: (1134, 2016), 4: (1134, 2016)}
+TH1 = -30.0                         # the odd pages keep this heading while the rest opens behind them
+ANCHOR = {1: 0, 2: 0, 3: 0, 4: 6}   # which fold stays where it is (0: the start of page 1, 6: the start of page 7)
 
-# 1: 49 px to the cm at 1080 wide. 2: the long picture the Reel tracks along, 70 px to the cm, no perspective.
+# 1: 45.6 px to the cm at 1080 wide. 2: the long picture the Reel tracks along, 66 px to the cm, no perspective.
+# 3: the first fold from above. 4: page 7 as the sheet straightens and shuts the other way, behind it, 62 px to the cm.
 SHOTS = {
-    1: dict(loc=(10.55, -110, 24), aim=(10.55, 0, 8.3), lens=92, f=0.10, focus=(4, -2, 8)),
-    2: dict(loc=(33.0, -200, 37.3), aim=(33.0, 0, 9.2), ortho=27.43),
-    3: dict(loc=(9.3, -44.5, 73), aim=(9.75, -1.5, 6.7), lens=190, f=0.30, focus=(7.8, -4.5, 9)),
+    1: dict(loc=(10.13, -110, 24), aim=(10.13, 0, 7.1), lens=92, f=0.10, focus=(4, -2, 8)),
+    2: dict(loc=(21.65, -200, 82.0), aim=(21.65, 0, 9.2), ortho=29.09),
+    3: dict(loc=(6.9, -60.3, 89.9), aim=(6.9, -1.5, 9.0), lens=128, f=0.30, focus=(7.8, -4.5, 8)),
+    4: dict(loc=(7.15, -110, 24), aim=(7.15, 0, 9.2), lens=127.9, f=0.10, focus=(4, -2, 8)),
 }
 
 
@@ -55,7 +59,7 @@ def link(ob):
     bpy.context.scene.collection.objects.link(ob); return ob
 
 
-def plan(phi):
+def plan(phi, anchor=0):
     """The fold lines in plan: page 1 runs at TH1, every other page at TH1 + 2*phi."""
     pts = [(0.0, 0.0)]; hd = []
     for i in range(NP):
@@ -64,11 +68,12 @@ def plan(phi):
             th = math.radians(TH1 + 2 * phi)
         hd.append(th)
         pts.append((pts[-1][0] + PW * math.cos(th), pts[-1][1] + PW * math.sin(th)))
-    return pts, hd
+    ox, oy = pts[anchor]
+    return [(x - ox, y - oy) for x, y in pts], hd
 
 
-def leaflet(phi):
-    pts, hd = plan(phi)
+def leaflet(phi, anchor=0):
+    pts, hd = plan(phi, anchor)
     rng = np.random.default_rng(7)
     NS = 28
     P, U = [], []
@@ -76,7 +81,7 @@ def leaflet(phi):
     for i in range(NP):
         a, b = np.array(pts[i]), np.array(pts[i + 1])
         d = (b - a) / PW; n = np.array([-d[1], d[0]])
-        bow = (0.10 + 0.05 * rng.random()) * (1 if i % 2 == 0 else -1) * min(1.0, (90 - phi) / 30 + 0.15)
+        bow = (0.10 + 0.05 * rng.random()) * (1 if i % 2 == 0 else -1) * min(1.0, (90 - abs(phi)) / 30 + 0.15)
         for k in range(NS + 1):
             t = k / NS
             if (k == 0 and i > 0):
@@ -161,8 +166,8 @@ def build(scene, quality, letter):
     sc = bpy.context.scene
     sc.render.engine = "CYCLES"
     final = quality == "final"
-    hero = letter == sorted(STATES[scene])[-1]
-    sc.cycles.samples = (120 if hero else 48) if final else 24
+    hero = letter == sorted(STATES[scene])[-1] or (scene == 4 and letter == 'a')
+    sc.cycles.samples = (110 if hero else 40) if final else 24
     sc.cycles.use_denoising = True
     sc.cycles.max_bounces = 8
     sc.cycles.sample_clamp_indirect = 6.0
@@ -179,12 +184,12 @@ def build(scene, quality, letter):
     bg.inputs["Color"].default_value = (1.0, 0.96, 0.94, 1); bg.inputs["Strength"].default_value = 0.14
 
     sweep()
-    leaflet(STATES[scene][letter])
+    leaflet(STATES[scene][letter], ANCHOR[scene])
     shot = SHOTS[scene]
 
     key = bpy.data.lights.new("key", "AREA"); key.shape = "RECTANGLE"; key.size = 70; key.size_y = 110
     key.energy = 10.0e6; key.color = (1.0, 0.97, 0.93)
-    ko = link(bpy.data.objects.new("key", key)); ko.location = (-560, -260, 300); aim(ko, (20, 0, 0))
+    ko = link(bpy.data.objects.new("key", key)); ko.location = (-470, -395, 300); aim(ko, (20, 0, 0))
     fl = bpy.data.lights.new("fill", "AREA"); fl.size = 500; fl.energy = 0.45e6; fl.color = (1.0, 0.97, 0.96)
     fo = link(bpy.data.objects.new("fill", fl)); fo.location = (480, -520, 300); aim(fo, (20, 0, 0))
 

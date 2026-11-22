@@ -2,12 +2,17 @@
  "format": "reel",
  "composition": [
   "two-line-statement-top-left-over-a-standing-concertina-leaflet-opening-from-behind-page-one-on-the-type-margin-with-page-three-running-off-the-right-edge",
-  "two-line-statement-top-left-over-the-leaflet-filling-the-width-square-on-as-the-frame-tracks-along-it-from-pages-two-and-three-to-four-and-five",
-  "two-line-statement-top-left-on-the-floor-over-the-first-fold-seen-from-above-as-a-corner-coming-at-the-camera-with-the-red-line-wrapping-it-and-a-foreshortened-two",
-  "two-line-call-to-action-top-left-over-the-track-running-on-to-the-end-of-the-sheet-with-the-wordmark-page-and-its-long-shadow-on-open-floor"
+  "two-line-statement-top-left-over-the-leaflet-filling-the-width-seen-from-a-little-above-as-the-frame-tracks-along-it-from-pages-two-and-three-to-four-and-five",
+  "two-line-statement-top-left-on-the-floor-over-pages-one-and-two-seen-from-high-above-as-a-chevron-with-its-corner-coming-at-the-camera-and-the-red-line-going-round-it",
+  "two-line-call-to-action-top-left-over-the-sheet-straightening-and-shutting-behind-its-last-page-which-carries-the-wordmark-with-a-long-shadow-on-open-floor"
  ],
- "background": ["#D8232D", "#D8232D", "#D8232D", "#D8232D"],
+ "background": [
+  "#D8232D",
+  "#D8232D",
+  "#D8232D",
+  "#D8232D"
+ ],
  "display_font": "InterTight",
  "accent": "#D0202B",
- "concept": "Website and CRM as one sheet. One made-up concertina leaflet standing on a red paper sweep, rendered in 3D (Blender): white card, seven pages, a black numeral and a name on each (Website, Enquiries, Quotes, Bookings, Jobs, Hosting, then the Nexulabs wordmark) and one red line running through every fold. It opens from behind page 1; the frame tracks along pages two to five; the first fold from above, the line going round it unbroken; then on to the end of the sheet. Signal red, card white and black."
+ "concept": "Website and CRM as one sheet. One made-up concertina leaflet standing on a red paper sweep, rendered in 3D (Blender): white card, seven pages, a black numeral and a name on each (Website, Enquiries, Quotes, Bookings, Jobs, Hosting, then the Nexulabs wordmark) and one red line running through every fold. It opens from behind page 1; the frame tracks along pages two to five; pages 1 and 2 from high above, the line going round the fold unbroken; then the sheet straightens and shuts the other way, behind the wordmark page. Signal red, card white and black."
 }

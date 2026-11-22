@@ -27,7 +27,7 @@ def css():
 
 def page(i, name):
     logo = (ROOT / "brand" / "nexulabs-logo-white.svg").read_text().replace('fill="#FFFFFF"', f'fill="{INK}"').replace('fill="#667DFF"', f'fill="{RED}"')
-    logo = re.sub(r'width="[\d.]+" height="[\d.]+"', 'height="118"', logo, count=1)
+    logo = re.sub(r'width="[\d.]+" height="[\d.]+"', 'height="136"', logo, count=1)
     x0 = NODE_X if i == 0 else 0
     x1 = NODE_X if name is None else W
     ring = (f'<div style="position:absolute;left:{NODE_X - NODE_D / 2}px;top:{LINE_Y - NODE_D / 2}px;width:{NODE_D}px;height:{NODE_D}px;border-radius:50%;box-sizing:border-box;'
@@ -37,7 +37,9 @@ def page(i, name):
         body += f'<div style="position:absolute;left:58px;top:20px;font:800 600px/1 IT;letter-spacing:-.04em;color:{INK}">{i + 1}</div>'
         body += f'<div style="position:absolute;left:66px;top:1190px;font:700 152px/1 IT;letter-spacing:-.025em;color:{INK};white-space:nowrap">{name}</div>'
     else:
-        body += f'<div style="position:absolute;left:68px;top:1210px">{logo}</div>'
+        body += f'<div style="position:absolute;left:66px;top:96px">{logo}</div>'
+        body += f'<div style="position:absolute;left:62px;top:292px;font:800 121px/1.04 IT;letter-spacing:-.03em;color:{INK};white-space:nowrap">Websites and<br>CRM systems.</div>'
+        body += f'<div style="position:absolute;left:66px;top:1190px;font:700 108px/1 IT;letter-spacing:-.02em;color:{INK};white-space:nowrap;margin-top:34px">nexulabs.co.uk</div>'
     return f'<style>{css()}*{{margin:0}}body{{width:{W}px;height:{H}px;background:{PAPER};position:relative;overflow:hidden}}</style>{body}'
 
 

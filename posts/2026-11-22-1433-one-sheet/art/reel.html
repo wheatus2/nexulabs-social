@@ -1,8 +1,9 @@
 <style>
 /* One made-up concertina leaflet on a red paper sweep, rendered in 3D (Blender, art/build.py; the print art/print.py):
    one sheet of white card, seven pages, a numeral and a name on each and one red line through every fold.
-   Scene 1: it opens from behind page 1 (eight renders, one camera). Scenes 2 and 4: one long picture of the whole
-   leaflet (r-2a.jpg, 3760x1920 here) that the frame tracks along. Scene 3: the first fold from above, opening (seven renders).
+   Scene 1: it opens from behind page 1 (eight renders, one camera). Scene 2: one long picture of pages 1 to 5
+   (r-2a.jpg, 2280x1920 here) that the frame tracks along. Scene 3: the first fold from above, settling (five renders).
+   Scene 4: the sheet straightens and shuts the other way behind page 7 (eight renders). The first design, reviewed at 6, is in art/v1.
    Inter Tight 800 at 104px, one size and one margin (76px) in every scene. The wordmark is printed on page 7 (the real SVG). */
 .scene{overflow:hidden;visibility:hidden;color:#fff;background:#D8232D;
   animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
@@ -13,12 +14,13 @@
 .pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
 .pic.on{opacity:0;animation:on .01s linear calc(var(--t0) + var(--at)) both}
 @keyframes on{from{opacity:0}to{opacity:1}}
-.track{position:absolute;left:0;top:0;width:3760px;height:1920px;background-size:3760px 1920px;
+.track{position:absolute;left:0;top:0;width:2280px;height:1920px;background-size:2280px 1920px;
   animation:go var(--mv) cubic-bezier(.45,0,.15,1) calc(var(--t0) + var(--w)) both}
 @keyframes go{from{transform:translateX(var(--x0))}to{transform:translateX(var(--x1))}}
-.h{position:absolute;left:76px;top:262px;font-family:InterTight;font-weight:800;font-size:104px;letter-spacing:-.022em;line-height:1.06;white-space:nowrap}
-.s1 .cam{transform-origin:76px 1000px;--len:3.6s;--b:1.02}
-.s3 .cam{transform-origin:420px 1100px;--len:3.4s}
+.h{position:absolute;left:78px;top:262px;font-family:InterTight;font-weight:800;font-size:104px;letter-spacing:-.022em;word-spacing:.04em;line-height:1.06;white-space:nowrap}
+.s1 .cam{transform-origin:78px 1000px;--len:3.6s;--b:1.02}
+.s3 .cam{transform-origin:540px 1200px;--len:3.2s;--b:1.025}
+.s4 .cam{transform-origin:78px 1000px;--len:4.6s;--b:1.025}
 </style>
 <section class="scene s1" data-dur="3.6"><div class="cam">
   <div class="pic" style="background-image:url({{post}}/art/r-1a.jpg)"></div>
@@ -31,18 +33,23 @@
   <div class="pic on" style="--at:1.20s;background-image:url({{post}}/art/r-1h.jpg)"></div></div>
   <div class="h">Your website<br>is page one.</div></section>
 <section class="scene s2" data-dur="3.8">
-  <div class="track" style="--x0:-3px;--x1:-1032px;--w:.7s;--mv:1.5s;background-image:url({{post}}/art/r-2a.jpg)"></div>
+  <div class="track" style="--x0:-67px;--x1:-1036px;--w:.7s;--mv:1.5s;background-image:url({{post}}/art/r-2a.jpg)"></div>
   <div class="h up" style="--d:.1s">The CRM is pages<br>two to five.</div></section>
-<section class="scene s3" data-dur="3.4"><div class="cam">
+<section class="scene s3" data-dur="3.2"><div class="cam">
   <div class="pic" style="background-image:url({{post}}/art/r-3a.jpg)"></div>
   <div class="pic on" style="--at:0.30s;background-image:url({{post}}/art/r-3b.jpg)"></div>
   <div class="pic on" style="--at:0.40s;background-image:url({{post}}/art/r-3c.jpg)"></div>
   <div class="pic on" style="--at:0.50s;background-image:url({{post}}/art/r-3d.jpg)"></div>
-  <div class="pic on" style="--at:0.60s;background-image:url({{post}}/art/r-3e.jpg)"></div>
-  <div class="pic on" style="--at:0.70s;background-image:url({{post}}/art/r-3f.jpg)"></div>
-  <div class="pic on" style="--at:0.80s;background-image:url({{post}}/art/r-3g.jpg)"></div></div>
+  <div class="pic on" style="--at:0.60s;background-image:url({{post}}/art/r-3e.jpg)"></div></div>
   <div class="h up" style="--d:.1s">Both built<br>as one.</div></section>
-<section class="scene s4" data-dur="4.4">
-  <div class="track" style="--x0:-1032px;--x1:-2500px;--w:0s;--mv:2.6s;background-image:url({{post}}/art/r-2a.jpg)"></div>
-  <div class="h up" style="--d:.5s">See what we build<br>at nexulabs.co.uk</div></section>
+<section class="scene s4" data-dur="4.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-4a.jpg)"></div>
+  <div class="pic on" style="--at:1.20s;background-image:url({{post}}/art/r-4b.jpg)"></div>
+  <div class="pic on" style="--at:1.30s;background-image:url({{post}}/art/r-4c.jpg)"></div>
+  <div class="pic on" style="--at:1.40s;background-image:url({{post}}/art/r-4d.jpg)"></div>
+  <div class="pic on" style="--at:1.50s;background-image:url({{post}}/art/r-4e.jpg)"></div>
+  <div class="pic on" style="--at:1.60s;background-image:url({{post}}/art/r-4f.jpg)"></div>
+  <div class="pic on" style="--at:1.70s;background-image:url({{post}}/art/r-4g.jpg)"></div>
+  <div class="pic on" style="--at:1.80s;background-image:url({{post}}/art/r-4h.jpg)"></div></div>
+  <div class="h up" style="--d:.2s">See what we build<br>at nexulabs.co.uk</div></section>
 <!--grain:0.02-->
