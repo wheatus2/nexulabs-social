@@ -8,7 +8,7 @@ nexulabs.co.uk could not be opened in this run: two web searches (22 Nov 2026) d
 |---|---|---|
 | Nexulabs builds websites. | PLAYBOOK.md, "Brand" | "Websites and CRM systems for all types of businesses ... Custom CRMs for enquiries, quotes, jobs and bookings; websites; hosting; domains/email; branding." |
 | Nexulabs builds custom CRM systems that cover enquiries, quotes, bookings and jobs (frames: pages 2 to 5 of the leaflet, "The CRM is pages two to five"; caption). | PLAYBOOK.md, "Brand" and "Promote Nexulabs: What to sell" | "custom CRM systems (enquiries, quotes, jobs, bookings)" |
-| Nexulabs builds the website and the CRM as one system (frame: "We build both as one system"; caption). | PLAYBOOK.md, "Promote Nexulabs: What to sell" | "website and CRM built as one system" |
+| Nexulabs builds the website and the CRM as one system (frame: "Both built as one"; caption). | PLAYBOOK.md, "Promote Nexulabs: What to sell" | "website and CRM built as one system" |
 | Hosting is something Nexulabs provides (frame: page 6 of the leaflet, "Hosting"). | PLAYBOOK.md, "Brand" | "... websites; hosting; domains/email; branding." |
 | "Have both built as one system and the first year's hosting is included." (caption) | PLAYBOOK.md, offers approved by the owner, 16 Nov 2026, offer 3 | "Website and CRM together. Have both built as one system and the first year's hosting is included." |
 | "for businesses of every kind" (caption) | PLAYBOOK.md, "Brand" | "the site says 'businesses of every kind'" |
