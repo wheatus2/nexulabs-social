@@ -2114,5 +2114,58 @@
   "instagram_media_id": "18087065855380319",
   "permalink": "https://www.instagram.com/p/Df9Ty1VFwB_/",
   "facebook_post_id": "1484176674771345_122110564509544005"
+ },
+ {
+  "date": "2026-11-22",
+  "slot": "14:33 (run started 14:33 UK time, held after two design reviews)",
+  "time_slot": "afternoon",
+  "id": "2026-11-22-1433-one-sheet",
+  "format": "reel",
+  "scenes": 4,
+  "seconds": 15.2,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "web-crm",
+  "cta": "site",
+  "offer": "web-crm-hosting",
+  "renderer": "studio",
+  "topic": "Website and CRM built as one system: a made-up concertina leaflet, one sheet, seven pages (Website, Enquiries, Quotes, Bookings, Jobs, Hosting, the wordmark) and one red line through every fold. Your website is page one. / The CRM is pages two to five. / Both built as one. Ends on See what we build at nexulabs.co.uk.",
+  "concept": "Website and CRM as one sheet. One made-up concertina leaflet standing on a red paper sweep, rendered in 3D (Blender): white card, seven pages, a black numeral and a name on each (Website, Enquiries, Quotes, Bookings, Jobs, Hosting, then the Nexulabs wordmark) and one red line running through every fold. It opens from behind page 1; the frame tracks along pages two to five; pages 1 and 2 from high above, the line going round the fold unbroken; then the sheet straightens and shuts the other way, behind the wordmark page. Signal red, card white and black.",
+  "composition": [
+   "two-line-statement-top-left-over-a-standing-concertina-leaflet-opening-from-behind-page-one-on-the-type-margin-with-page-three-running-off-the-right-edge",
+   "two-line-statement-top-left-over-the-leaflet-filling-the-width-seen-from-a-little-above-as-the-frame-tracks-along-it-from-pages-two-and-three-to-four-and-five",
+   "two-line-statement-top-left-on-the-floor-over-pages-one-and-two-seen-from-high-above-as-a-chevron-with-its-corner-coming-at-the-camera-and-the-red-line-going-round-it",
+   "two-line-call-to-action-top-left-over-the-sheet-straightening-and-shutting-behind-its-last-page-which-carries-the-wordmark-with-a-long-shadow-on-open-floor"
+  ],
+  "palette": [
+   "#D8232D",
+   "#FBFAF6",
+   "#141416"
+  ],
+  "typeface": "InterTight",
+  "display_font": "InterTight",
+  "text_font": "InterTight",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py, art/print.py). Not photographs; the leaflet is made up.",
+  "design_review": {
+   "scores": [
+    6,
+    6
+   ],
+   "rounds": 2,
+   "score": 6,
+   "frames": [
+    7,
+    6,
+    6.5,
+    5.5
+   ],
+   "pass_mark": 7,
+   "result": "held",
+   "weakest": "round 1: scene 4 (an empty last page, the wordmark cut by a shadow edge), scene 2 called basic. Round 2: scene 4 part-way shut (half a 5 and 'Job' beside the wordmark, panel tops into the headline), scene 2 called basic again."
+  },
+  "fact_check": "pass (round 1)",
+  "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
+  "notes": "Held: see HELD.md in the post folder. Followed the scheduled task's rule (publish nothing after two failed reviews), not DESIGN.md 'Always post'."
  }
 ]
