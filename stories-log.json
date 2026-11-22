@@ -1193,5 +1193,48 @@
   "media_ids": [],
   "status": "not published",
   "fact_check": "self-check against sources.md"
+ },
+ {
+  "date": "2026-11-22",
+  "slot": "11:47 (run started 11:48 UK time, held about 14:15)",
+  "id": "2026-11-22-1147-some-assembly",
+  "type": "what we build",
+  "category": "Web design",
+  "content_type": "promotional",
+  "service": "websites",
+  "cta": "call",
+  "offer": "none",
+  "topic": "A website as a plastic model kit: one ivory sprue of web page parts (address bar, Home, About, Contact, picture frame, text lines, Book now button, pointer, form field) with the Nexulabs wordmark moulded in. Some assembly required. / Not by you. / We build it. Book a call at nexulabs.co.uk.",
+  "renderer": "studio",
+  "compositions": [
+   "three-line-statement-top-left-over-a-whole-model-kit-sprue-of-website-parts-lying-on-a-violet-table-seen-from-its-foot-with-the-wordmark-moulded-into-the-top-row",
+   "two-line-statement-top-left-over-one-button-part-cut-free-and-set-down-beyond-the-top-rail-with-the-top-rows-of-the-sprue-running-off-three-edges-and-going-soft-towards-the-camera",
+   "two-line-statement-and-a-call-to-action-line-top-left-over-the-finished-page-lying-on-its-own-empty-sprue-seen-from-higher-with-a-pointer-part-resting-on-the-button-and-the-sprue-running-off-the-bottom"
+  ],
+  "palette": [
+   "#45248F",
+   "#F5F0E3",
+   "ivory plastic"
+  ],
+  "typeface": "Unbounded",
+  "design_review": {
+   "score": 6.5,
+   "rounds": [
+    6.5,
+    6.5
+   ],
+   "frames": [
+    7,
+    5.5,
+    6.5
+   ],
+   "pass_mark": 7,
+   "result": "held",
+   "notes": "Frame 2 (close-up of the cut button) weakest both rounds and called basic in round 2: a crop with no change of state. One-material clay look. See HELD.md in the folder."
+  },
+  "frames": 3,
+  "media_ids": [],
+  "status": "not published",
+  "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by two searches)"
  }
 ]

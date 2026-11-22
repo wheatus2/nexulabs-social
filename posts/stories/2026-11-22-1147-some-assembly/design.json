@@ -1,0 +1,12 @@
+{
+ "format": "story",
+ "composition": [
+  "three-line-statement-top-left-over-a-whole-model-kit-sprue-of-website-parts-lying-on-a-violet-table-seen-from-its-foot-with-the-wordmark-moulded-into-the-top-row",
+  "two-line-statement-top-left-over-one-button-part-cut-free-and-set-down-beyond-the-top-rail-with-the-top-rows-of-the-sprue-running-off-three-edges-and-going-soft-towards-the-camera",
+  "two-line-statement-and-a-call-to-action-line-top-left-over-the-finished-page-lying-on-its-own-empty-sprue-seen-from-higher-with-a-pointer-part-resting-on-the-button-and-the-sprue-running-off-the-bottom"
+ ],
+ "background": ["#45248F", "#45248F", "#45248F"],
+ "display_font": "Unbounded",
+ "accent": "#F2ECDD",
+ "concept": "A website as a plastic model kit, rendered in 3D (Blender). One sprue of ivory plastic on a violet table: an address bar, Home, About and Contact, a picture frame, lines of text, a Book now button, a pointer and a form field, all still on their runners, with the Nexulabs wordmark moulded into the maker's tab. Whole: some assembly required. Close on the top rail, the Book now button cut free and set down: not by you. Then from higher, the page put together and lying on its own empty sprue, the pointer on Book now: we build it. Violet, one ivory plastic, nothing else."
+}
