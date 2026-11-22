@@ -1,4 +1,6 @@
-# Held: not published
+# Held by the run, then published on the owner's say-so (22 Nov 2026, 17:30 UTC)
+
+https://www.instagram.com/reel/DgDWBtUiupy/
 
 14:33 slot, Sunday 22 Nov 2026. Reel, 4 scenes, 15.2 seconds. Promotional, website and CRM as one system, "See what we build at nexulabs.co.uk", offer 3 (first year's hosting) in the caption only.
 

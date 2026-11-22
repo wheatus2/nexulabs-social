@@ -2117,13 +2117,13 @@
  },
  {
   "date": "2026-11-22",
-  "slot": "14:33 (run started 14:33 UK time, held after two design reviews)",
+  "slot": "14:33 (run started 14:33 UK time; held at 6 twice, then published 17:30 UTC on the owner's say-so in the chat)",
   "time_slot": "afternoon",
   "id": "2026-11-22-1433-one-sheet",
   "format": "reel",
   "scenes": 4,
   "seconds": 15.2,
-  "status": "not published",
+  "status": "published",
   "content_type": "promotional",
   "service": "web-crm",
   "cta": "site",
@@ -2161,11 +2161,14 @@
     5.5
    ],
    "pass_mark": 7,
-   "result": "held",
+   "result": "held by the run, then published on the owner's say-so",
    "weakest": "round 1: scene 4 (an empty last page, the wordmark cut by a shadow edge), scene 2 called basic. Round 2: scene 4 part-way shut (half a 5 and 'Job' beside the wordmark, panel tops into the headline), scene 2 called basic again."
   },
   "fact_check": "pass (round 1)",
   "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
-  "notes": "Held: see HELD.md in the post folder. Followed the scheduled task's rule (publish nothing after two failed reviews), not DESIGN.md 'Always post'."
+  "notes": "The scheduled run held it (design review 6 twice). The owner then said to post it. See HELD.md for the review notes.",
+  "instagram_media_id": "18118982000097747",
+  "permalink": "https://www.instagram.com/reel/DgDWBtUiupy/",
+  "facebook_post_id": "1105774729128970"
  }
 ]
