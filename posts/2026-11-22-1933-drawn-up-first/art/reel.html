@@ -4,7 +4,7 @@
    Each scene is one camera and twelve renders of the roll further on (r-Na.jpg to r-Nl.jpg), swapped 0.08s apart, then a slow push.
    Scene 1 wide and high from the right, scene 2 low along the roll from its open end, scene 3 low and from the front: the title block and the wordmark.
    The first design (four scenes, one from directly above, reviewed at 6 and that scene called basic) is in art/v1.
-   The headline sits on the bare table the roll is coming towards, in the blue of the sheet: Geist Bold 106px, one size and one margin (76px). */
+   The headline sits on the bare table the roll is coming towards, in the blue of the sheet: Geist Bold 104px, one size and one margin (76px). */
 .scene{overflow:hidden;visibility:hidden;color:#2C4F97;background:#E6BFB3;
   animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
 @keyframes sv{0%,100%{visibility:visible}}
@@ -14,7 +14,7 @@
 .pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
 .pic.on{opacity:0;animation:on .01s linear calc(var(--t0) + var(--at)) both}
 @keyframes on{from{opacity:0}to{opacity:1}}
-.h{position:absolute;left:76px;top:1236px;font-family:Geist;font-weight:700;font-size:106px;letter-spacing:-.03em;word-spacing:.05em;line-height:1.06;white-space:nowrap}
+.h{position:absolute;left:76px;top:1236px;font-family:Geist;font-weight:700;font-size:104px;letter-spacing:-.03em;word-spacing:.05em;line-height:1.06;white-space:nowrap}
 .s1 .cam{transform-origin:76px 1340px;--len:4s;--b:1.025}
 .s2 .cam{transform-origin:76px 1340px;--len:3.8s;--b:1.03}
 .s3 .cam{transform-origin:540px 1340px;--len:4.6s;--b:1.03}

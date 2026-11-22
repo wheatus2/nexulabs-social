@@ -2,3 +2,21 @@
   world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
 /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
   m = bpy.data.materials.new(name); m.use_nodes = True
+02:53.292  render           | Saved: '/tmp/nx-plan-1l.exr'
+wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-1l.jpg
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:210: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True
+03:01.163  render           | Saved: '/tmp/nx-plan-2l.exr'
+wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-2l.jpg
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:210: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True
+02:49.953  render           | Saved: '/tmp/nx-plan-3l.exr'
+wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-3l.jpg
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:210: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True
