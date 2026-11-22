@@ -559,5 +559,22 @@
   "display_font": "InterTight",
   "accent": "#D0202B",
   "concept": "Website and CRM as one sheet. One made-up concertina leaflet standing on a red paper sweep, rendered in 3D (Blender): white card, seven pages, a black numeral and a name on each (Website, Enquiries, Quotes, Bookings, Jobs, Hosting, then the Nexulabs wordmark) and one red line running through every fold. It opens from behind page 1; the frame tracks along pages two to five; pages 1 and 2 from high above, the line going round the fold unbroken; then the sheet straightens and shuts the other way, behind the wordmark page. Signal red, card white and black."
+ },
+ {
+  "id": "2026-11-22-1747-the-kind-that-sticks",
+  "format": "story",
+  "composition": [
+   "three-line-statement-top-left-on-a-bare-wall-over-a-grid-of-handwritten-sticky-notes-seen-from-the-left-with-upright-verticals-running-off-the-right-and-bottom",
+   "from-low-under-the-bottom-row-one-note-in-mid-air-below-the-gap-it-left-with-the-rows-running-off-the-top-and-a-three-line-statement-bottom-left-on-the-wall",
+   "three-line-statement-and-a-call-to-action-line-top-left-over-one-blue-note-carrying-the-wordmark-alone-on-the-wall-seen-from-the-floor-across-a-soft-heap-of-fallen-notes"
+  ],
+  "background": [
+   "#6B655F",
+   "#6B655F",
+   "#6B655F"
+  ],
+  "display_font": "News",
+  "accent": "#0C23A8",
+  "concept": "Custom CRM as the sticky note that doesn't fall off. One wall of a made-up firm's yellow sticky notes in handwriting (quotes, bookings, an invoice, a number), rendered in 3D (Blender) under raking light and shot from the left three ways. The wall of notes: this is a CRM, technically. Low under the bottom row: one has let go and is in mid-air, Ring Mrs Ridley back TODAY, its place on the wall empty. Then from the floor, across the heap of every yellow note: one blue Nexulabs note still on the wall. Warm grey plaster, note yellow, black ink and one brand blue; Newsreader bold with the last line in italic."
  }
 ]

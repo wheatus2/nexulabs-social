@@ -1236,5 +1236,56 @@
   "media_ids": [],
   "status": "not published",
   "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by two searches)"
+ },
+ {
+  "date": "2026-11-22",
+  "slot": "17:47 (run started 17:48 UK time, published 18:49: 3D renders and a second design round)",
+  "id": "2026-11-22-1747-the-kind-that-sticks",
+  "type": "problem and what we build",
+  "category": "CRM",
+  "content_type": "problem-solution",
+  "service": "crm",
+  "cta": "site",
+  "offer": "none",
+  "topic": "This is a CRM. Technically. / Until the glue goes. / We make the kind that sticks. A wall of a made-up firm's handwritten yellow sticky notes (quotes, bookings, an invoice, a number); one, RING MRS RIDLEY BACK TODAY, lets go and falls; then every yellow note in a heap on the floor and one blue Nexulabs note, Custom CRM systems, still on the wall. Ends on See what we build at nexulabs.co.uk. Everything on the notes is made up.",
+  "renderer": "studio",
+  "compositions": [
+   "three-line-statement-top-left-on-a-bare-wall-over-a-grid-of-handwritten-sticky-notes-seen-from-the-left-with-upright-verticals-running-off-the-right-and-bottom",
+   "from-low-under-the-bottom-row-one-note-in-mid-air-below-the-gap-it-left-with-the-rows-running-off-the-top-and-a-three-line-statement-bottom-left-on-the-wall",
+   "three-line-statement-and-a-call-to-action-line-top-left-over-one-blue-note-carrying-the-wordmark-alone-on-the-wall-seen-from-the-floor-across-a-soft-heap-of-fallen-notes"
+  ],
+  "palette": [
+   "#6B655F",
+   "#F6E36A",
+   "#0C23A8",
+   "#F6F2E9",
+   "warm grey plaster",
+   "black, blue and red ink"
+  ],
+  "typeface": "News",
+  "design_review": {
+   "score": 7,
+   "rounds": [
+    6,
+    7
+   ],
+   "frames": [
+    7.5,
+    6,
+    7
+   ],
+   "pass_mark": 7,
+   "result": "passed",
+   "notes": "Round 1 (6): frame 2's note did not read as falling, handwriting was one script font, the grid was neither tidy nor loose. Reworked: three hands and four pens, a looser wall, motion blur and a cast shadow on the falling note, the blue note on the headline margin. Round 2 (7), no frame called basic; weakest frame 2 (shadow detached from the note, blur too soft to read, a red fragment at the left edge). Fixed after the review and not re-scored: the note moved nearer the wall so its shadow joins it, less blur, blank notes where the left edge cut writing, frame 3's three left edges on one line and its spacing evened. Still true: words cut by the right edge in frame 1, and the heap sits mostly under the reply box."
+  },
+  "frames": 3,
+  "media_ids": [
+   "18123208258982212",
+   "18085778978383449",
+   "18102590603407146"
+  ],
+  "status": "published",
+  "highlight_cover": "none needed (crm cover already published)",
+  "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by two searches)"
  }
 ]
