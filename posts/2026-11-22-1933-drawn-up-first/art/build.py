@@ -2,11 +2,11 @@
 
 One blueprint of a homepage (art/print.py) unrolling towards the camera on a plaster-pink table: a sheet 30 x 100 cm,
 blue with white line on the front, plain white on the back, so the roll is white. A pencil lies beside it.
-Four shots from the right, the roll further on in each:
+Three shots, the roll further on in each:
   1  wide and high: the first screen of the plan comes into view
-  2  from above: the enquiry form
-  3  low and close, along the roll from its open end
-  4  the title block, with the wordmark, as the roll comes to rest
+  2  low and close, along the roll from its open end
+  3  low and from the front: the title block, with the wordmark, as the roll moves off it
+(The first design, reviewed at 6, had a fourth shot from directly above, called basic: it is in art/v1.)
 python3.13 build.py <shot> <state letter|all> [draft|mid|final|probe]   -> art/r-<shot><letter>.jpg (drafts: .d-...)
 Units are centimetres. The type is set over the pictures in reel.html.
 """
@@ -36,10 +36,9 @@ def ease(n, a, b):
 
 
 SHOTS = {
-    1: dict(loc=(26, -90, 122), aim=(0, 12, 0), lens=58, f=0.22, focus=(0, 14, 0), pin=((0, Y0 - 53.5, 0), (446, 1060)), states=ease(NS, 27.0, 53.5)),
-    2: dict(loc=(0, -14, 150), aim=(0, -6, 0), lens=71, f=0.4, focus=(0, -6, 0), pin=((0, Y0 - 64.0, 0), (540, 1040)), states=ease(NS, 50.0, 64.0)),
-    3: dict(loc=(60, -76.5, 46), aim=(6, -16.5, 2), lens=64, f=0.09, focus=(9, -17.5, 1), pin=((15, Y0 - 70.5, 2.3), (728, 1040)), states=ease(NS, 61.0, 70.5), pencil=(-21.0, 1.5, 80)),
-    4: dict(loc=(11, -104, 70), aim=(0, -28, 0), lens=47, f=0.14, focus=(0, -27, 0), pin=((0, Y0 - 86.0, 0), (530, 1040)), states=ease(NS, 70.0, 86.0)),
+    1: dict(loc=(26, -90, 122), aim=(0, 12, 0), lens=58, f=0.22, focus=(0, 14, 0), pin=((0, Y0 - 55.2, 0), (430, 1020)), states=ease(NS, 36.0, 55.2)),
+    2: dict(loc=(60, -76.5, 46), aim=(6, -16.5, 2), lens=64, f=0.09, focus=(9, -17.5, 1), pin=((15, Y0 - 70.5, 2.3), (700, 1010)), states=ease(NS, 61.0, 70.5), pencil=(-22.5, 6.0, 80)),
+    3: dict(loc=(6, -122, 52), aim=(0, -26, 0), lens=47, f=0.07, focus=(0, -24.5, 0), pin=((0, Y0 - 88.0, 0), (548, 1000)), states=ease(NS, 73.5, 88.0)),
 }
 
 
@@ -69,7 +68,7 @@ def sheet_mesh(yc, ds=0.2, m=30):
     R = roll_r(yc)
     n = int(round(SL / ds))
     vs, uvs = [], []
-    RF, CF = 16.0, 7.0                      # the top end still wants to curl: the last 7 cm lift
+    RF, CF = 30.0, 6.0                      # the top end still wants to curl: the last 7 cm lift
     for i in range(n + 1):
         s = i * ds
         if s <= yc:
@@ -86,10 +85,12 @@ def sheet_mesh(yc, ds=0.2, m=30):
             phi = (R - math.sqrt(max(R * R - 2 * A * w, 0.0))) / A
             r = R - A * phi
             y = Y0 - yc - r * math.sin(phi); z = 0.035 + R - r * math.cos(phi)
-            dx = 0.55 * (R - r) / max(R - RIN, 1e-6) + 0.03 * math.sin(phi * 0.83)
+            dx = 0.22 * (R - r) / max(R - RIN, 1e-6)
         for j in range(m + 1):
             u = j / m
-            wob = 0.0 if s > yc else 0.03 * math.sin(u * 5.1 + s * 0.11) * min(1.0, max(0.0, (yc - s) / 6.0))
+            # the long edges of a sheet that has been rolled lift a little off the table, more in some places than others
+            edge = math.exp(-min(u, 1 - u) * SW / 1.3)
+            wob = 0.0 if s > yc else (0.03 * math.sin(u * 5.1 + s * 0.11) + 0.22 * edge * (0.55 + 0.45 * math.sin(s * 0.23 + (2.0 if u > 0.5 else 0.0)))) * min(1.0, max(0.0, (yc - s) / 6.0))
             vs.append(((u - 0.5) * SW + dx, y, z + wob)); uvs.append((u, 1 - s / SL))
     fs = []
     for i in range(n):
@@ -208,16 +209,16 @@ def build(shot_n, letter, quality):
 
     world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
     bg = world.node_tree.nodes["Background"]
-    bg.inputs["Color"].default_value = (1.0, 0.95, 0.93, 1); bg.inputs["Strength"].default_value = 0.20
+    bg.inputs["Color"].default_value = (1.0, 0.95, 0.93, 1); bg.inputs["Strength"].default_value = 0.30
 
     shot = SHOTS[shot_n]
     yc = shot["states"][ord(letter) - 97]
     scene(yc, shot.get("pencil"))
     # key: a window a long way off to the left and behind, low, so the roll and the pencil throw long shadows forward
-    key = bpy.data.lights.new("key", "AREA"); key.shape = "RECTANGLE"; key.size = 70; key.size_y = 110
+    key = bpy.data.lights.new("key", "AREA"); key.shape = "RECTANGLE"; key.size = 130; key.size_y = 170
     key.energy = 1.05e7; key.color = (1.0, 0.95, 0.88)
     ko = link(bpy.data.objects.new("key", key)); ko.location = (600, 240, 320); aim(ko, (0, 0, 0))
-    fl = bpy.data.lights.new("fill", "AREA"); fl.size = 500; fl.energy = 1.4e6; fl.color = (0.92, 0.95, 1.0)
+    fl = bpy.data.lights.new("fill", "AREA"); fl.size = 500; fl.energy = 1.1e6; fl.color = (0.92, 0.95, 1.0)
     fo = link(bpy.data.objects.new("fill", fl)); fo.location = (-260, -520, 420); aim(fo, (0, 0, 0))
 
     cam = bpy.data.cameras.new("cam"); co = link(bpy.data.objects.new("cam", cam)); sc.camera = co

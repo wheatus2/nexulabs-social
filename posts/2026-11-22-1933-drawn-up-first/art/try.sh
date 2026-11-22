@@ -9,7 +9,7 @@ ims=[Image.open(f".d-{s}{l}.jpg").resize((540,960)) for l in ls]
 out=Image.new("RGB",(540*len(ims),960))
 for i,im in enumerate(ims):
     d=ImageDraw.Draw(im); d.line([(0,110),(540,110)],fill=(255,255,0)); d.line([(0,770),(540,770)],fill=(255,255,0)); d.line([(38,0),(38,960)],fill=(255,255,0))
-    d.rectangle([38,625,400,750],outline=(0,255,0))
+    d.rectangle([38,620,400,737],outline=(0,255,0))
     out.paste(im,(540*i,0))
 out.save(".try.jpg",quality=85)
 P

@@ -1,30 +1,4 @@
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:209: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:210: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
   world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
   m = bpy.data.materials.new(name); m.use_nodes = True
-02:50.214  render           | Saved: '/tmp/nx-plan-1l.exr'
-wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-1l.jpg
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:209: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
-  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
-  m = bpy.data.materials.new(name); m.use_nodes = True
-02:59.958  render           | Saved: '/tmp/nx-plan-2l.exr'
-wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-2l.jpg
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:209: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
-  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
-  m = bpy.data.materials.new(name); m.use_nodes = True
-03:05.730  render           | Saved: '/tmp/nx-plan-3l.exr'
-wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-3l.jpg
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:209: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
-  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
-  m = bpy.data.materials.new(name); m.use_nodes = True
-02:58.331  render           | Saved: '/tmp/nx-plan-4l.exr'
-wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-4l.jpg
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:209: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
-  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
-/home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/build.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
-  m = bpy.data.materials.new(name); m.use_nodes = True
-00:37.854  render           | Saved: '/tmp/nx-plan-1a.exr'
-wrote /home/user/nexulabs-social/posts/2026-11-22-1933-drawn-up-first/art/r-1a.jpg

@@ -1,0 +1,78 @@
+<style>
+/* One blueprint of a homepage unrolling towards the camera on a plaster-pink table, rendered in 3D (Blender, art/build.py;
+   the print is art/print.py): blue with white line on the front, plain white on the back, so the roll is white. A pencil lies beside it.
+   Each scene is one camera and twelve renders of the roll further on (r-Na.jpg to r-Nl.jpg), swapped 0.08s apart, then a slow push.
+   Scene 1 wide and high, scene 2 from above, scene 3 low along the roll from its open end, scene 4 the title block with the wordmark.
+   The headline sits on the bare table the roll is coming towards: Geist Bold 112px, one size and one margin (76px) in every scene. */
+.scene{overflow:hidden;visibility:hidden;color:#14327C;background:#E6BFB3;
+  animation:nxIn .01s linear var(--t0) both,nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+@keyframes sv{0%,100%{visibility:visible}}
+.scene.s1{opacity:1;animation:nxOut .01s linear var(--t1) forwards,sv calc(var(--t1) - var(--t0) + .02s) linear var(--t0)}
+.cam{position:absolute;inset:0;animation:push var(--len) cubic-bezier(.3,0,.4,1) var(--t0) both}
+@keyframes push{from{transform:scale(var(--a,1))}to{transform:scale(var(--b,1.03))}}
+.pic{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:1080px 1920px}
+.pic.on{opacity:0;animation:on .01s linear calc(var(--t0) + var(--at)) both}
+@keyframes on{from{opacity:0}to{opacity:1}}
+.h{position:absolute;left:76px;top:1270px;font-family:Geist;font-weight:700;font-size:112px;letter-spacing:-.035em;line-height:1.04;white-space:nowrap}
+.s1 .cam{transform-origin:76px 1380px;--len:3.6s;--b:1.03}
+.s2 .cam{transform-origin:540px 1380px;--len:3.2s;--a:1.0;--b:1.035}
+.s3 .cam{transform-origin:76px 1380px;--len:3.2s;--b:1.03}
+.s4 .cam{transform-origin:540px 1380px;--len:4.6s;--b:1.035}
+</style>
+<section class="scene s1" data-dur="3.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-1a.jpg)"></div>
+  <div class="pic on" style="--at:0.30s;background-image:url({{post}}/art/r-1b.jpg)"></div>
+  <div class="pic on" style="--at:0.38s;background-image:url({{post}}/art/r-1c.jpg)"></div>
+  <div class="pic on" style="--at:0.46s;background-image:url({{post}}/art/r-1d.jpg)"></div>
+  <div class="pic on" style="--at:0.54s;background-image:url({{post}}/art/r-1e.jpg)"></div>
+  <div class="pic on" style="--at:0.62s;background-image:url({{post}}/art/r-1f.jpg)"></div>
+  <div class="pic on" style="--at:0.70s;background-image:url({{post}}/art/r-1g.jpg)"></div>
+  <div class="pic on" style="--at:0.78s;background-image:url({{post}}/art/r-1h.jpg)"></div>
+  <div class="pic on" style="--at:0.86s;background-image:url({{post}}/art/r-1i.jpg)"></div>
+  <div class="pic on" style="--at:0.94s;background-image:url({{post}}/art/r-1j.jpg)"></div>
+  <div class="pic on" style="--at:1.02s;background-image:url({{post}}/art/r-1k.jpg)"></div>
+  <div class="pic on" style="--at:1.10s;background-image:url({{post}}/art/r-1l.jpg)"></div></div>
+  <div class="h">Your new<br>homepage.</div></section>
+<section class="scene s2" data-dur="3.2"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-2a.jpg)"></div>
+  <div class="pic on" style="--at:0.25s;background-image:url({{post}}/art/r-2b.jpg)"></div>
+  <div class="pic on" style="--at:0.33s;background-image:url({{post}}/art/r-2c.jpg)"></div>
+  <div class="pic on" style="--at:0.41s;background-image:url({{post}}/art/r-2d.jpg)"></div>
+  <div class="pic on" style="--at:0.49s;background-image:url({{post}}/art/r-2e.jpg)"></div>
+  <div class="pic on" style="--at:0.57s;background-image:url({{post}}/art/r-2f.jpg)"></div>
+  <div class="pic on" style="--at:0.65s;background-image:url({{post}}/art/r-2g.jpg)"></div>
+  <div class="pic on" style="--at:0.73s;background-image:url({{post}}/art/r-2h.jpg)"></div>
+  <div class="pic on" style="--at:0.81s;background-image:url({{post}}/art/r-2i.jpg)"></div>
+  <div class="pic on" style="--at:0.89s;background-image:url({{post}}/art/r-2j.jpg)"></div>
+  <div class="pic on" style="--at:0.97s;background-image:url({{post}}/art/r-2k.jpg)"></div>
+  <div class="pic on" style="--at:1.05s;background-image:url({{post}}/art/r-2l.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Mocked up<br>for you first.</div></section>
+<section class="scene s3" data-dur="3.2"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-3a.jpg)"></div>
+  <div class="pic on" style="--at:0.25s;background-image:url({{post}}/art/r-3b.jpg)"></div>
+  <div class="pic on" style="--at:0.33s;background-image:url({{post}}/art/r-3c.jpg)"></div>
+  <div class="pic on" style="--at:0.41s;background-image:url({{post}}/art/r-3d.jpg)"></div>
+  <div class="pic on" style="--at:0.49s;background-image:url({{post}}/art/r-3e.jpg)"></div>
+  <div class="pic on" style="--at:0.57s;background-image:url({{post}}/art/r-3f.jpg)"></div>
+  <div class="pic on" style="--at:0.65s;background-image:url({{post}}/art/r-3g.jpg)"></div>
+  <div class="pic on" style="--at:0.73s;background-image:url({{post}}/art/r-3h.jpg)"></div>
+  <div class="pic on" style="--at:0.81s;background-image:url({{post}}/art/r-3i.jpg)"></div>
+  <div class="pic on" style="--at:0.89s;background-image:url({{post}}/art/r-3j.jpg)"></div>
+  <div class="pic on" style="--at:0.97s;background-image:url({{post}}/art/r-3k.jpg)"></div>
+  <div class="pic on" style="--at:1.05s;background-image:url({{post}}/art/r-3l.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Free, before<br>you commit.</div></section>
+<section class="scene s4" data-dur="4.6"><div class="cam">
+  <div class="pic" style="background-image:url({{post}}/art/r-4a.jpg)"></div>
+  <div class="pic on" style="--at:0.30s;background-image:url({{post}}/art/r-4b.jpg)"></div>
+  <div class="pic on" style="--at:0.38s;background-image:url({{post}}/art/r-4c.jpg)"></div>
+  <div class="pic on" style="--at:0.46s;background-image:url({{post}}/art/r-4d.jpg)"></div>
+  <div class="pic on" style="--at:0.54s;background-image:url({{post}}/art/r-4e.jpg)"></div>
+  <div class="pic on" style="--at:0.62s;background-image:url({{post}}/art/r-4f.jpg)"></div>
+  <div class="pic on" style="--at:0.70s;background-image:url({{post}}/art/r-4g.jpg)"></div>
+  <div class="pic on" style="--at:0.78s;background-image:url({{post}}/art/r-4h.jpg)"></div>
+  <div class="pic on" style="--at:0.86s;background-image:url({{post}}/art/r-4i.jpg)"></div>
+  <div class="pic on" style="--at:0.94s;background-image:url({{post}}/art/r-4j.jpg)"></div>
+  <div class="pic on" style="--at:1.02s;background-image:url({{post}}/art/r-4k.jpg)"></div>
+  <div class="pic on" style="--at:1.10s;background-image:url({{post}}/art/r-4l.jpg)"></div></div>
+  <div class="h up" style="--d:.1s">Book a call at<br>nexulabs.co.uk</div></section>
+<!--grain:0.02-->

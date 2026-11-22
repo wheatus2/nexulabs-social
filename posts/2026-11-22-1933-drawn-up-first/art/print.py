@@ -40,16 +40,13 @@ def html():
         line(1.0, 1.0 + j * 2.5, 29.0, 1.0 + j * 2.5, 0.02, .16)
     # sheet border
     rect(1.0, 1.0, 28.0, 78.0, 0.12)
-    # width dimension over the page
-    line(5, 3.6, 25, 3.6, 0.035); arrow(5, 3.6, -1, 0); arrow(25, 3.6, 1, 0)
+    # width dimension over the page (the line is broken round the word)
+    line(5, 3.6, 11.2, 3.6, 0.035); line(18.8, 3.6, 25, 3.6, 0.035); arrow(5, 3.6, -1, 0); arrow(25, 3.6, 1, 0)
     line(5, 2.9, 5, 5.4, 0.03); line(25, 2.9, 25, 5.4, 0.03)
-    A(f'<rect x="{11.4*C}" y="{3.0*C}" width="{7.2*C}" height="{1.2*C}" fill="{BLUE}" stroke="none"/>')
     text(15, 3.92, "HOMEPAGE", 0.62, "middle", ls=0.22)
     # height dimension of the first screen, left
     line(3.3, 6, 3.3, 37.6, 0.035); arrow(3.3, 6, 0, -1); arrow(3.3, 37.6, 0, 1)
-    line(2.6, 6, 4.6, 6, 0.03); line(2.6, 37.6, 4.6, 37.6, 0.03)
-    A(f'<rect x="{2.7*C}" y="{17.0*C}" width="{1.2*C}" height="{9.6*C}" fill="{BLUE}" stroke="none"/>')
-    text(0, 0, "FIRST SCREEN", 0.62, "middle", ls=0.22, extra=f'transform="translate({3.61*C:.0f},{21.8*C:.0f}) rotate(-90)"')
+    line(2.6, 6, 4.0, 6, 0.03); line(2.6, 37.6, 4.0, 37.6, 0.03)
     # the page
     rect(5, 6, 20, 57, 0.10)
     # nav
@@ -69,9 +66,10 @@ def html():
     # button, the one solid thing on the drawing
     rect(6.5, 22.2, 9.6, 2.5, 0.06, r=1.25, fill=LINE)
     text(11.3, 23.87, "BOOK A CALL", 0.74, "middle", fill=BLUE, weight=500, ls=0.14)
-    # photo
-    rect(6.5, 26.6, 17, 9.6, 0.06); cross(6.5, 26.6, 17, 9.6)
-    A(f'<rect x="{12.6*C}" y="{30.6*C}" width="{4.8*C}" height="{1.6*C}" fill="{BLUE}" stroke="none"/>')
+    # photo: the diagonals stop short of the word
+    rect(6.5, 26.6, 17, 9.6, 0.06)
+    for sx, sy in ((1, 1), (-1, 1), (1, -1), (-1, -1)):
+        line(15 + sx * 8.5, 31.4 + sy * 4.8, 15 + sx * 3.1, 31.4 + sy * 1.75, 0.035, .8)
     text(15, 31.78, "PHOTO", 0.72, "middle", ls=0.22)
     line(5, 37.6, 25, 37.6, 0.03, .8, dash="30 18")
     # services
@@ -87,20 +85,13 @@ def html():
     text(7.1, 54.36, "NAME", 0.5, ls=0.18); text(15.9, 54.36, "PHONE", 0.5, ls=0.18)
     rect(6.5, 55.7, 17, 3.3, 0.06, r=0.2); text(7.1, 56.96, "MESSAGE", 0.5, ls=0.18)
     rect(6.5, 59.6, 5.6, 2.0, 0.06, r=1.0, fill=LINE); text(9.3, 60.87, "SEND", 0.62, "middle", fill=BLUE, ls=0.2)
-    # balloons on leaders, right
-    for y, t in ((16.0, "A"), (45.1, "B"), (57.3, "C")):
-        line(25, y, 26.3, y, 0.035)
-        A(f'<circle cx="{27.3*C}" cy="{y*C}" r="{1.0*C}" stroke-width="{0.06*C}" fill="none"/>')
-        text(27.33, y + 0.36, t, 0.72, "middle", ls=0)
-    # title block: the offer, who it is drawn for, and the maker's name across the full width
+    # title block: the offer across the full width, then the maker's name
     T0, T1 = 66.0, 79.0
     line(1.0, T0, 29.0, T0, 0.12)
-    line(1.0, 69.6, 29.0, 69.6, 0.05)
-    text(2.3, 68.33, "FREE HOMEPAGE CONCEPT", 0.86, ls=0.14, weight=500)
-    line(21.9, T0, 21.9, 69.6, 0.05)
-    text(22.7, 67.2, "DRAWN FOR", 0.36, ls=0.2); text(22.7, 68.75, "YOU", 0.78, ls=0.14)
+    line(1.0, 70.3, 29.0, 70.3, 0.05)
+    text(2.3, 68.78, "FREE HOMEPAGE CONCEPT", 1.25, ls=0.105, weight=500)
     lw = 23.4 * C; lh = lw * 722 / 4021
-    logo = f'<div style="position:absolute;left:{2.3*C - lw*0.0}px;top:{(69.6 + (T1 - 69.6) / 2) * C - lh * 0.5 - 20:.0f}px;width:{lw}px">{LOGO}</div>'
+    logo = f'<div style="position:absolute;left:{2.3*C}px;top:{(70.3 + (T1 - 70.3) / 2) * C - lh * 0.5 - 20:.0f}px;width:{lw}px">{LOGO}</div>'
     body = "".join(s)
     return f'''<html><body style="margin:0"><style>
 @font-face{{font-family:G;font-weight:700;src:url({fonts}/Geist-Bold.woff2)}}
