@@ -1,0 +1,18 @@
+{
+ "format": "reel",
+ "composition": [
+  "whole-blueprint-seen-from-high-on-its-right-unrolling-down-the-frame-towards-a-two-line-statement-on-bare-table-bottom-left-with-a-pencil-beside-it",
+  "blueprint-square-on-from-directly-above-at-full-width-the-white-roll-a-horizontal-bar-coming-down-over-an-enquiry-form-to-a-two-line-statement-below",
+  "low-along-the-roll-from-its-open-end-the-spiral-of-paper-sharp-at-the-right-and-the-plan-going-soft-behind-over-a-two-line-statement-bottom-left",
+  "title-block-of-the-blueprint-from-the-front-the-roll-moving-off-the-wordmark-printed-across-the-sheet-above-a-two-line-call-to-action"
+ ],
+ "background": [
+  "#E6BFB3",
+  "#E6BFB3",
+  "#E6BFB3",
+  "#E6BFB3"
+ ],
+ "display_font": "Geist",
+ "accent": "#1C4A9C",
+ "concept": "The free homepage concept as a blueprint. One made-up drawing of a homepage (white line on blue: nav, Your headline, a Book a call button, a photo box, What you do, an enquiry form, and a title block that reads Free homepage concept over the Nexulabs wordmark), rendered in 3D (Blender) on a plaster-pink table with a black pencil beside it. The sheet is white on the back, so it unrolls as a white roll towards the headline: wide from high on the right, square on from above, low along the roll from its open end, then the title block as the roll moves off the wordmark. Plaster pink, blueprint blue, paper white; Geist Bold."
+}
