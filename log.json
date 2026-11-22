@@ -2170,5 +2170,57 @@
   "instagram_media_id": "18118982000097747",
   "permalink": "https://www.instagram.com/reel/DgDWBtUiupy/",
   "facebook_post_id": "1105774729128970"
+ },
+ {
+  "date": "2026-11-22",
+  "slot": "19:33 (run started 19:33 UK time, held after two design reviews, about 22:40)",
+  "time_slot": "evening",
+  "id": "2026-11-22-1933-drawn-up-first",
+  "format": "reel",
+  "scenes": 3,
+  "seconds": 12.4,
+  "status": "not published",
+  "content_type": "promotional",
+  "service": "websites",
+  "cta": "call",
+  "offer": "concept",
+  "renderer": "studio",
+  "topic": "Free homepage concept: a made-up blueprint of a homepage unrolling on a plaster-pink table, its title block reading Free homepage concept over the Nexulabs wordmark. Your new homepage. / Mocked up free, before you commit. Ends on Book a call at nexulabs.co.uk.",
+  "concept": "The free homepage concept as a blueprint. One made-up drawing of a homepage (white line on blue: nav, Your headline, a Book a call button, a photo box, What you do, an enquiry form, and a title block that reads Free homepage concept over the Nexulabs wordmark), rendered in 3D (Blender) on a plaster-pink table with a black pencil beside it. The sheet is white on the back, so it unrolls as a white roll towards the headline: wide from high on the right, low along the roll from its open end with the plan going soft behind, then low and from the front as the roll moves off the title block and the wordmark. Plaster pink, blueprint blue, paper white; Geist Bold in the blue of the sheet.",
+  "composition": [
+   "whole-blueprint-seen-from-high-on-its-right-unrolling-down-the-frame-towards-a-two-line-statement-on-bare-table-bottom-left-with-a-pencil-beside-it",
+   "low-along-the-roll-from-its-open-end-the-spiral-of-paper-sharp-at-the-right-and-the-plan-going-soft-behind-over-a-two-line-statement-bottom-left",
+   "low-and-square-on-from-the-front-the-sheet-running-away-up-the-frame-out-of-focus-as-the-roll-moves-off-the-title-block-and-wordmark-above-a-two-line-call-to-action"
+  ],
+  "palette": [
+   "#E6BFB3",
+   "#2C4F97",
+   "#F2F1EC",
+   "#141416"
+  ],
+  "typeface": "Geist",
+  "display_font": "Geist",
+  "text_font": "Geist",
+  "photo": null,
+  "picture": "3D renders made for this post with Blender's Python module (art/build.py, art/print.py). Not photographs; the blueprint is made up.",
+  "design_review": {
+   "scores": [
+    6,
+    6
+   ],
+   "rounds": 2,
+   "score": 6,
+   "frames": [
+    6.5,
+    7,
+    5.5
+   ],
+   "pass_mark": 7,
+   "result": "held",
+   "weakest": "round 1 (four scenes: 6.5, 5, 7, 6.5): the overhead scene, called basic. Round 2 (three scenes): scene 3, the title block from the front, called basic (a centred object on a flat backdrop, the far print smeared)."
+  },
+  "fact_check": "pass (round 1)",
+  "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
+  "notes": "Held by the scheduled run: design review 6 twice. The run followed the task prompt (publish nothing after two failed rounds), not DESIGN.md 'Always post'. See HELD.md in the post folder; the Reel is complete and can be published on the owner's say-so."
  }
 ]
