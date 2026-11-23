@@ -2251,5 +2251,37 @@
   "design_review": "6.5, then 6.5 (pass mark 7); frame 2 called basic in round 1",
   "fact_check": "pass",
   "reason": "Held: two design reviews under the pass mark. See HELD.md in the post folder."
+ },
+ {
+  "id": "2026-11-23-1433-bites",
+  "date": "2026-11-23",
+  "slot": "14:33 (run started 14:34 UK time, held after two design reviews, about 15:15)",
+  "format": "reel",
+  "status": "not published",
+  "renderer": "studio",
+  "content_type": "promotional",
+  "service": "crm",
+  "cta": "call",
+  "offer": "none",
+  "photo": null,
+  "topic": "Custom CRM as the questions only one trade asks: a dog groomer's CRM asks Bites? (No, Sometimes, Yes); a cake maker's asks Tiers? (a stepper to 3); a removal firm's asks Piano? (a switch); every business has its own, Yours? (a picker stopping on an empty field); We build yours. Ends on Book a call at nexulabs.co.uk. Businesses and screens made up.",
+  "concept": "A custom CRM as the questions only one trade asks. Each scene is a small line, one giant serif question and one form control at enormous scale, and the control works: a dog groomer's three-way choice (Bites? No, Sometimes, Yes), a cake maker's stepper (Tiers? 1, 2, 3), a removal firm's switch (Piano? Yes), then a picker wheel of other trades' questions that stops on an empty field (Yours?), and one ink button: We build yours. Book a call at nexulabs.co.uk. Butter yellow, ink and raised white; Fraunces for the questions, Geist for the interface.",
+  "compositions": [
+   "small-line-and-one-giant-serif-question-over-a-three-row-choice-tray-filling-the-width-its-raised-white-thumb-dropping-from-the-first-row-to-the-second",
+   "small-line-and-one-giant-serif-question-over-a-square-tray-with-a-huge-numeral-rolling-up-above-a-minus-key-and-a-plus-key",
+   "small-line-and-one-giant-serif-question-over-one-enormous-switch-its-white-knob-crossing-to-the-right-as-the-tray-turns-ink",
+   "small-line-and-one-giant-serif-question-over-a-picker-wheel-of-other-trades-questions-rolling-through-one-raised-white-bar-and-stopping-on-an-empty-field-with-a-caret",
+   "wordmark-and-two-line-serif-payoff-over-one-enormous-ink-button-carrying-the-call-to-action-and-an-arrow-disc-that-presses-in"
+  ],
+  "palette": [
+   "#F4CF3F",
+   "#17150F",
+   "#FFFDF4",
+   "#DDB42A"
+  ],
+  "typeface": "Fraun",
+  "design_review": "6.5, then 7 (pass mark 7); the end card called basic in round 1, the stepper scene called basic in round 2",
+  "fact_check": "pass",
+  "reason": "Held: round 1 under the pass mark, round 2 at the mark with one scene plainly called basic, which the task counts as a failed round. See HELD.md in the post folder."
  }
 ]
