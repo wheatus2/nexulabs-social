@@ -1338,5 +1338,53 @@
   "status": "published",
   "highlight_cover": "none needed (hosting cover already published)",
   "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by two searches)"
+ },
+ {
+  "date": "2026-11-23",
+  "slot": "17:47 (run started 17:48 UK time, held about 19:00)",
+  "type": "what we build",
+  "category": "Websites + CRM",
+  "content_type": "promotional",
+  "service": "web-crm",
+  "cta": "site",
+  "offer": "none",
+  "topic": "Website and CRM built as one, as a red-and-blue checking pencil: This end is your website. (the red point, 'enquiry' written in red) / This end is your CRM. (the blue point, quoted, booked, done, each ticked) / One pencil. Website and CRM, built as one. See what we build at nexulabs.co.uk. The handwriting is made up.",
+  "renderer": "studio",
+  "folder": "posts/stories/2026-11-23-1747-same-pencil",
+  "composition": [
+   "two-line-statement-top-left-over-the-red-point-of-a-two-colour-pencil-low-left-its-body-running-off-the-right-edge-with-two-words-of-red-handwriting-on-the-paper-behind-it",
+   "two-line-statement-top-left-over-the-blue-point-of-the-same-pencil-at-the-right-its-body-running-off-the-bottom-left-with-three-ticked-words-of-blue-handwriting-behind-it",
+   "one-line-headline-a-two-line-statement-and-a-call-to-action-top-left-over-the-join-of-the-pencil-crossing-the-whole-frame-red-into-blue-under-a-foil-wordmark-with-one-red-word-and-a-blue-tick-behind-it"
+  ],
+  "palette": [
+   "#DDD5C0",
+   "#15161B",
+   "#B80F1A",
+   "#16309E",
+   "bone paper",
+   "pencil red",
+   "pencil blue",
+   "cedar"
+  ],
+  "typeface": "Geist",
+  "design_review": {
+   "score": 6.5,
+   "rounds": [
+    6.5,
+    6.5
+   ],
+   "frames": [
+    7,
+    6.5,
+    5.5
+   ],
+   "pass_mark": 7,
+   "result": "held",
+   "notes": "No frame called basic. Last frame weakest both rounds: first only the join (neither point in frame), then the whole pencil with a tiny far point, an unreadable wordmark and washed-out lacquer. Handwriting read as a script font with a grain filter. See HELD.md in the folder."
+  },
+  "frames": 3,
+  "media_ids": [],
+  "status": "not published",
+  "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by search)"
  }
 ]

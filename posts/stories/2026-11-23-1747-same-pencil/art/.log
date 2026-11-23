@@ -1,0 +1,10 @@
+/home/user/nexulabs-social/posts/stories/2026-11-23-1747-same-pencil/art/build.py:207: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world = bpy.data.worlds.new("room"); world.use_nodes = True; sc.world = world
+/home/user/nexulabs-social/posts/stories/2026-11-23-1747-same-pencil/art/build.py:48: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True
+01:51.920  render           | Saved: '/tmp/nx-pencil-1.exr'
+wrote /home/user/nexulabs-social/posts/stories/2026-11-23-1747-same-pencil/art/render-01.jpg
+03:45.537  render           | Saved: '/tmp/nx-pencil-2.exr'
+wrote /home/user/nexulabs-social/posts/stories/2026-11-23-1747-same-pencil/art/render-02.jpg
+05:38.592  render           | Saved: '/tmp/nx-pencil-3.exr'
+wrote /home/user/nexulabs-social/posts/stories/2026-11-23-1747-same-pencil/art/render-03.jpg
