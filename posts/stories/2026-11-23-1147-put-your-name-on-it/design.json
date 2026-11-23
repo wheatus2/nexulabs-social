@@ -1,0 +1,12 @@
+{
+ "format": "story",
+ "composition": [
+  "two-line-statement-top-left-over-a-black-embossing-tape-running-up-the-frame-from-its-cut-end-bottom-left-to-its-standing-roll-upper-right-the-web-address-pressed-into-it",
+  "from-higher-two-black-labels-stacked-on-the-shared-name-the-longer-email-label-lifting-at-its-left-end-with-its-backing-paper-curled-below-and-the-first-tape-leaving-off-the-right-under-a-two-line-statement",
+  "two-line-statement-and-a-call-to-action-line-top-left-over-a-wide-white-tape-printed-with-the-wordmark-laid-in-front-of-both-labels-its-roll-standing-beside-the-black-roll-on-the-right"
+ ],
+ "background": ["#6FA6E0", "#6FA6E0", "#6FA6E0"],
+ "display_font": "Brico",
+ "accent": "#F6F4EE",
+ "concept": "Hosting, domains and email as label tape, rendered in 3D (Blender). One roll of gloss black embossing tape on a sky-blue table, the letters really pressed up out of it, shot from the front left three ways. The tape off its roll, pressed YOURNAME.CO.UK: put your name on it. From higher, a second label going down under the first, HELLO@YOURNAME.CO.UK, the two lined up on the name, one end still lifted and its backing paper beside it: then on your email. Then a wider white tape printed with the Nexulabs wordmark laid in front, its roll beside the black one: we'll host it too. Sky blue, gloss black, pressed white and one white tape; Bricolage Grotesque."
+}
