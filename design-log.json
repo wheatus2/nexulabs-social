@@ -576,5 +576,22 @@
   "display_font": "News",
   "accent": "#0C23A8",
   "concept": "Custom CRM as the sticky note that doesn't fall off. One wall of a made-up firm's yellow sticky notes in handwriting (quotes, bookings, an invoice, a number), rendered in 3D (Blender) under raking light and shot from the left three ways. The wall of notes: this is a CRM, technically. Low under the bottom row: one has let go and is in mid-air, Ring Mrs Ridley back TODAY, its place on the wall empty. Then from the floor, across the heap of every yellow note: one blue Nexulabs note still on the wall. Warm grey plaster, note yellow, black ink and one brand blue; Newsreader bold with the last line in italic."
+ },
+ {
+  "id": "2026-11-23-1147-put-your-name-on-it",
+  "format": "story",
+  "composition": [
+   "two-line-statement-top-left-over-a-black-embossing-tape-running-up-the-frame-from-its-cut-end-bottom-left-to-its-standing-roll-upper-right-the-web-address-pressed-into-it",
+   "from-higher-two-black-labels-stacked-on-the-shared-name-the-longer-email-label-lifting-at-its-left-end-with-its-backing-paper-curled-below-and-the-first-tape-leaving-off-the-right-under-a-two-line-statement",
+   "two-line-statement-and-a-call-to-action-line-top-left-over-a-wide-white-tape-printed-with-the-wordmark-laid-in-front-of-both-labels-its-roll-standing-beside-the-black-roll-on-the-right"
+  ],
+  "background": [
+   "#6FA6E0",
+   "#6FA6E0",
+   "#6FA6E0"
+  ],
+  "display_font": "Brico",
+  "accent": "#F6F4EE",
+  "concept": "Hosting, domains and email as label tape, rendered in 3D (Blender). One roll of gloss black embossing tape on a sky-blue table, the letters really pressed up out of it, shot from the front left three ways. The tape off its roll, pressed YOURNAME.CO.UK: put your name on it. From higher, a second label going down under the first, HELLO@YOURNAME.CO.UK, the two lined up on the name, one end still lifted and its backing paper beside it: then on your email. Then a wider white tape printed with the Nexulabs wordmark laid in front, its roll beside the black one: we'll host it too. Sky blue, gloss black, pressed white and one white tape; Bricolage Grotesque."
  }
 ]

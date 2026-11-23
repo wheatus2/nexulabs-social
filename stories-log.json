@@ -1287,5 +1287,56 @@
   "status": "published",
   "highlight_cover": "none needed (crm cover already published)",
   "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by two searches)"
+ },
+ {
+  "date": "2026-11-23",
+  "slot": "11:47 (run started 11:48 UK time, published 12:36: 3D renders)",
+  "id": "2026-11-23-1147-put-your-name-on-it",
+  "type": "what we build",
+  "category": "Hosting",
+  "content_type": "promotional",
+  "service": "hosting-domains",
+  "cta": "call",
+  "offer": "none",
+  "topic": "Put your name on it. / Then on your email. / We'll host it too. Book a call at nexulabs.co.uk. Hosting, domains and email as embossing label tape: a black tape pressed YOURNAME.CO.UK off its roll; a second label, HELLO@YOURNAME.CO.UK, lined up on the name; then a white tape printed with the Nexulabs wordmark and its roll beside the black one. The addresses are placeholders.",
+  "renderer": "studio",
+  "compositions": [
+   "two-line-statement-top-left-over-a-black-embossing-tape-running-up-the-frame-from-its-cut-end-bottom-left-to-its-standing-roll-upper-right-the-web-address-pressed-into-it",
+   "from-higher-two-black-labels-stacked-on-the-shared-name-the-longer-email-label-lifting-at-its-left-end-with-its-backing-paper-curled-below-and-the-first-tape-leaving-off-the-right-under-a-two-line-statement",
+   "two-line-statement-and-a-call-to-action-line-top-left-over-a-wide-white-tape-printed-with-the-wordmark-laid-in-front-of-both-labels-its-roll-standing-beside-the-black-roll-on-the-right"
+  ],
+  "palette": [
+   "#6FA6E0",
+   "#0B0D12",
+   "#F6F4EE",
+   "sky-blue table",
+   "gloss black tape",
+   "pressed white letters",
+   "one white tape"
+  ],
+  "typeface": "Brico",
+  "design_review": {
+   "score": 7,
+   "rounds": [
+    7
+   ],
+   "frames": [
+    7.5,
+    6.5,
+    7
+   ],
+   "pass_mark": 7,
+   "result": "passed",
+   "notes": "No frame called basic (frame 2 'no, but borderline'). Weakest: frame 2 (two strips with no anchor object, a shadow spike under the lifted end, a hard highlight at the right edge, a flatter strip angle than frames 1 and 3). Fixed after the review and not re-scored: the lifted end lowered so the spike is gone, a softer reflection card, frame 1's headline moved 6px to match the others and its tape end lifted clear of the reply box, frame 3's white roll made smaller and brought wholly into frame, the white toned down, the three strips evenly spaced. Still true: frame 2 has no roll in it, and the backdrop is a plain blue field."
+  },
+  "frames": 3,
+  "media_ids": [
+   "17894296485456581",
+   "18101443112097254",
+   "17972065941197458"
+  ],
+  "status": "published",
+  "highlight_cover": "none needed (hosting cover already published)",
+  "sources": "PLAYBOOK.md only (nexulabs.co.uk not returned by two searches)"
  }
 ]
