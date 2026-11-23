@@ -1,0 +1,14 @@
+{
+ "format": "reel",
+ "composition": [
+  "small-line-and-one-giant-serif-question-over-a-three-row-choice-tray-filling-the-width-its-raised-white-thumb-dropping-from-the-first-row-to-the-second",
+  "small-line-and-one-giant-serif-question-over-a-pill-stepper-with-a-huge-numeral-rolling-up-between-a-minus-and-a-plus-button",
+  "small-line-and-one-giant-serif-question-over-one-enormous-switch-its-white-knob-crossing-to-the-right-as-the-tray-turns-ink",
+  "two-line-serif-statement-over-a-picker-wheel-of-questions-rolling-through-one-raised-white-bar-and-stopping-on-yours",
+  "wordmark-and-three-line-serif-payoff-over-one-enormous-ink-button-carrying-the-call-to-action-that-presses-in"
+ ],
+ "background": ["#F4CF3F", "#F4CF3F", "#F4CF3F", "#F4CF3F", "#F4CF3F"],
+ "display_font": "Fraun",
+ "accent": "#17150F",
+ "concept": "A custom CRM as the questions only one trade asks. Each scene is one form control at enormous scale, and it works: a dog groomer's three-way choice (Bites? No, Sometimes, Yes), a cake maker's stepper (Tiers? 1, 2, 3), a removal firm's switch (Piano? Yes), then a picker wheel of other trades' questions that stops on Yours?, and one ink button: Book a call at nexulabs.co.uk. Butter yellow, ink and raised white; Fraunces for the questions, Geist for the interface."
+}
