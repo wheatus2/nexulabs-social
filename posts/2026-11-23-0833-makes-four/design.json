@@ -1,0 +1,12 @@
+{
+ "format": "feed",
+ "composition": [
+  "two-line-statement-top-left-over-a-whole-stack-of-three-card-boxes-seen-from-high-on-the-right-each-front-carrying-a-different-logo-with-the-shadow-running-off-the-right",
+  "two-line-statement-top-left-over-a-stamped-paper-bag-large-in-the-right-foreground-seen-from-table-height-with-the-stack-of-three-small-behind-it-on-the-left",
+  "two-line-answer-and-a-call-to-action-line-top-left-over-the-bag-and-the-stack-side-by-side-in-one-brand-seen-from-above-with-a-monogram-lid-and-the-wordmark-bottom-left"
+ ],
+ "background": ["#E79DB6", "#E79DB6", "#E79DB6"],
+ "display_font": "Brico",
+ "accent": "#6E1423",
+ "concept": "Branding for a made-up bakery (Brindlow), rendered in 3D (Blender) on a pink paper sweep and shot from the same side three ways, the packaging changing. From high on the right: three white card boxes in a stack, each with a different logo (a blue script in an oval, green capitals between wheat ears, black lowercase beside a yellow dot). From table height: a paper bag in front with a fourth, a brown rubber stamp. Then from above: the same boxes and bag in one brand, an oxblood serif wordmark and a B monogram on cream. Pink, card white and one oxblood."
+}
