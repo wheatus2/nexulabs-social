@@ -2222,5 +2222,34 @@
   "fact_check": "pass (round 1)",
   "sources": "PLAYBOOK.md only; nexulabs.co.uk could not be opened (two searches did not return the site)",
   "notes": "Held by the scheduled run: design review 6 twice. The run followed the task prompt (publish nothing after two failed rounds), not DESIGN.md 'Always post'. See HELD.md in the post folder; the Reel is complete and can be published on the owner's say-so."
+ },
+ {
+  "id": "2026-11-23-0833-makes-four",
+  "date": "2026-11-23",
+  "slot": "08:33 (run started 08:34 UK time, held after two design reviews, about 09:35)",
+  "format": "carousel",
+  "status": "not published",
+  "renderer": "studio",
+  "content_type": "problem-solution",
+  "service": "branding",
+  "cta": "site",
+  "offer": "none",
+  "photo": null,
+  "topic": "Branding: packaging for a made-up bakery (Brindlow). One bakery. Three logos. (three card boxes, three different logos) / The bag makes four. (a rubber-stamped paper bag) / We'd make it one. (the same boxes and bag in one oxblood and cream brand). Ends on See what we build at nexulabs.co.uk.",
+  "concept": "Branding for a made-up bakery, rendered in 3D (Blender) on pink paper and shot from the same side three ways, the packaging changing. Pink, card white and one oxblood; Bricolage Grotesque.",
+  "compositions": [
+   "two-line-statement-top-left-over-a-whole-stack-of-three-card-boxes-seen-from-high-on-the-right-each-front-carrying-a-different-logo-with-the-shadow-running-off-the-right",
+   "two-line-statement-top-left-over-a-stamped-paper-bag-large-in-the-right-foreground-seen-from-table-height-with-the-stack-of-three-small-behind-it-on-the-left",
+   "two-line-answer-and-a-call-to-action-line-top-left-over-the-bag-and-the-stack-side-by-side-in-one-brand-seen-from-above-with-a-monogram-lid-and-the-wordmark-bottom-left"
+  ],
+  "palette": [
+   "#E79DB6",
+   "#F3EEE3",
+   "#6E1423"
+  ],
+  "typeface": "Brico",
+  "design_review": "6.5, then 6.5 (pass mark 7); frame 2 called basic in round 1",
+  "fact_check": "pass",
+  "reason": "Held: two design reviews under the pass mark. See HELD.md in the post folder."
  }
 ]

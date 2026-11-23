@@ -1,6 +1,6 @@
 """Renders the pictures for this carousel with Blender's Python module (pip install bpy; run with python3.13).
 
-A made-up bakery's packaging on a pink paper sweep: three card boxes stacked, then a paper bag beside them.
+A made-up bakery's packaging on pink paper: three card boxes stacked, then a paper bag beside them.
 Before, every piece carries a different logo (prints: art/print.py). After, one brand on all of them.
 Shot from the same side three ways:
   1  the whole stack of three, three logos
@@ -18,18 +18,19 @@ from mathutils import Vector, Matrix
 HERE = Path(__file__).resolve().parent
 W, H = 1080, 1350
 TMP = Path(tempfile.gettempdir())
-EXPOSURE = 1.3
+EXPOSURE = 1.0
+SUN = 3.2
 PINK = "#F2A0BC"
 CARD, CREAM, OX = "#F3EEE3", "#F6EBDD", "#6E1423"
 
 # name: (width, depth, height), position x, y, yaw in degrees
-STACK = [("1", (30, 30, 11), (0.0, 0.0), 5), ("2", (24.5, 24.5, 10), (-1.2, 0.8), -7), ("3", (19, 19, 9), (0.9, -0.6), 13)]
+STACK = [("1", (30, 30, 11), (0.0, 0.0), 5), ("2", (24.5, 24.5, 10), (-1.2, 0.8), -7), ("3", (19, 19, 9), (0.6, 0.2), 8)]
 BW, BD, BH = 17.0, 9.5, 33.0
 
 SHOTS = {
-    1: dict(loc=(66, -102, 50), aim=(0, 0, 14), lens=62, f=0.6, focus=(4, -14, 16), shift=(-0.001, 0.10), state="a", bag=None),
-    2: dict(loc=(75, -115, 14), aim=(29.4, -26, 14), lens=38.6, f=0.3, focus=(50, -45, 14), shift=(0.0045, 0.175), state="a", bag=(50.0, -41.0, -8)),
-    3: dict(loc=(78, -122, 118), aim=(-10, -6, 12), lens=60, f=0.6, focus=(-4, -14, 16), shift=(0.0115, 0.13), state="b", bag=(-28.0, -16.0, 16)),
+    1: dict(loc=(68, -105, 66), aim=(0, 0, 13), lens=59.5, f=0.8, focus=(4, -14, 16), shift=(0.035, 0.116), state="a", bag=None),
+    2: dict(loc=(52, -118, 62), aim=(8, -8, 14), lens=46, f=0.8, focus=(10, -18, 16), shift=(0.067, 0.11), state="a", bag=(31.0, -20.0, 20)),
+    3: dict(loc=(78, -122, 118), aim=(-10, -6, 12), lens=52, f=0.8, focus=(-4, -14, 16), shift=(-0.0025, 0.130), state="b", bag=(-33.0, -16.0, 16)),
 }
 
 
@@ -216,20 +217,8 @@ def bag(pos, front, body, flap):
 def scene(frame):
     shot = SHOTS[frame]
     # the paper sweep: a floor running up into a wall
-    prof = [(-900, 0)] + [(330, 0)]
-    R = 170
-    for i in range(1, 25):
-        a = i / 24 * math.pi / 2
-        prof.append((330 + R * math.sin(a), R - R * math.cos(a)))
-    prof.append((330 + R, 1400))
-    V, F = [], []
-    for i, (y, z) in enumerate(prof):
-        V += [(-2400, y, z), (2400, y, z)]
-        if i:
-            F.append((2 * i - 2, 2 * i - 1, 2 * i + 1, 2 * i))
+    V, F = [(-9000, -9000, 0), (9000, -9000, 0), (9000, 9000, 0), (-9000, 9000, 0)], [(0, 1, 2, 3)]
     me = bpy.data.meshes.new("sweep"); me.from_pydata(V, [], F)
-    for p in me.polygons:
-        p.use_smooth = True
     sw = link(bpy.data.objects.new("sweep", me))
     m, nt, p = mat("sweep"); p.inputs["Base Color"].default_value = (*lin(PINK), 1); p.inputs["Roughness"].default_value = 0.9; p.inputs["Specular IOR Level"].default_value = 0.1
     paper_bump(nt, p, strength=0.05, scale=40)
@@ -277,17 +266,16 @@ def build(frame, quality):
     shot = SHOTS[frame]
     T = (0, 0, 14)
     # key: a small window high on the left and a little in front, so every box and the bag throw a shadow to the right
-    key = bpy.data.lights.new("key", "AREA"); key.shape = "RECTANGLE"; key.size = 46; key.size_y = 60
-    key.energy = 2.6e6; key.color = (1.0, 0.965, 0.92)
-    ko = link(bpy.data.objects.new("key", key)); ko.location = (-330, -300, 420); aim(ko, T)
-    fl = bpy.data.lights.new("fill", "AREA"); fl.size = 500; fl.energy = 3.4e5; fl.color = (1.0, 0.95, 0.97)
-    fo = link(bpy.data.objects.new("fill", fl)); fo.location = (420, -520, 160); aim(fo, T)
+    key = bpy.data.lights.new("key", "SUN"); key.energy = SUN; key.angle = math.radians(5); key.color = (1.0, 0.965, 0.92)
+    ko = link(bpy.data.objects.new("key", key)); ko.location = (-200, -380, 500); aim(ko, (0, 0, 0))
+    fl = bpy.data.lights.new("fill", "SUN"); fl.energy = SUN * 0.16; fl.angle = math.radians(60); fl.color = (1.0, 0.95, 0.97)
+    fo = link(bpy.data.objects.new("fill", fl)); fo.location = (420, -420, 200); aim(fo, (0, 0, 0))
 
     cam = bpy.data.cameras.new("cam"); co = link(bpy.data.objects.new("cam", cam)); sc.camera = co
     cam.sensor_fit = "VERTICAL"; cam.sensor_height = 30
     co.location = shot["loc"]; aim(co, shot["aim"])
     cam.lens = shot["lens"]; cam.shift_x, cam.shift_y = shot["shift"]
-    cam.clip_start = 1; cam.clip_end = 6000
+    cam.clip_start = 1; cam.clip_end = 30000
     cam.dof.use_dof = True
     cam.dof.focus_distance = (Vector(shot["focus"]) - co.location).dot((Vector(shot["aim"]) - co.location).normalized())
     cam.dof.aperture_fstop = shot["f"]

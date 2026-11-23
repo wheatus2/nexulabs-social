@@ -61,10 +61,10 @@ def a1():
 def a2():
     w, h = BOXES["2"]
     g = "#145C36"
-    return page(w, h, CARD, f'''<div class="c"><div class="r">{wheat(g, 520)}<div><div class="n">BRINDLOW</div><div class="t">&amp; SON &nbsp;BAKERS</div></div>{wheat(g, 520)}</div></div>''', f'''
+    return page(w, h, CARD, f'''<div class="c"><div class="r">{wheat(g, 450)}<div><div class="n">BRINDLOW</div><div class="t">&amp; SON &nbsp;BAKERS</div></div>{wheat(g, 450)}</div></div>''', f'''
 .r{{display:flex;align-items:center;gap:90px;color:{g}}}
-.n{{font:400 400px/.9 Anton;letter-spacing:.015em}}
-.t{{font:400 132px/1 Anton;letter-spacing:.27em;margin-top:34px;text-align:center;margin-right:-.27em}}''')
+.n{{font:400 345px/.9 Anton;letter-spacing:.015em}}
+.t{{font:400 114px/1 Anton;letter-spacing:.27em;margin-top:30px;text-align:center;margin-right:-.27em}}''')
 
 
 def a3():
@@ -79,14 +79,14 @@ def stamp():
     """A round rubber stamp, a little off square, the ink uneven."""
     w, h = BAG
     W_, H_ = int(w * S), int(h * S)
-    ink = "#4B3524"
+    ink = "#2B1A10"
     rng = random.Random(11)
-    blots = "".join(f'<circle cx="{rng.uniform(-560, 560):.0f}" cy="{rng.uniform(-560, 560):.0f}" r="{rng.uniform(4, 15):.0f}"/>' for _ in range(70))
+    blots = "".join(f'<circle cx="{rng.uniform(-560, 560):.0f}" cy="{rng.uniform(-560, 560):.0f}" r="{rng.uniform(4, 15):.0f}"/>' for _ in range(34))
     return page(w, h, CARD, f'''<svg width="{W_}" height="{H_}" viewBox="0 0 {W_} {H_}">
 <defs><path id="ct" d="M -415 0 A 415 415 0 1 1 415 0"/><path id="cb" d="M -468 0 A 468 468 0 0 0 468 0"/>
 <filter id="rough" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
 <mask id="m"><rect x="-700" y="-700" width="1400" height="1400" fill="#fff"/><g fill="#000">{blots}</g><rect x="-700" y="210" width="1400" height="60" fill="#000" opacity=".35" transform="rotate(-18)"/></mask></defs>
-<g transform="translate({W_ / 2:.0f} 1880) rotate(-7)" filter="url(#rough)"><g mask="url(#m)" fill="{ink}" opacity=".9">
+<g transform="translate({W_ / 2:.0f} 1880) rotate(-7) scale(1.12)" filter="url(#rough)"><g mask="url(#m)" fill="{ink}" opacity=".97">
 <circle r="575" fill="none" stroke="{ink}" stroke-width="20"/><circle r="535" fill="none" stroke="{ink}" stroke-width="7"/>
 <circle r="268" fill="none" stroke="{ink}" stroke-width="9"/>
 <text font-family="Oswald" font-weight="700" font-size="128" letter-spacing="8" text-anchor="middle"><textPath href="#ct" startOffset="50%">BRINDLOWS BAKERY</textPath></text>
@@ -100,7 +100,7 @@ def stamp():
 def word(size, col, sub=True, subcol=None):
     s = f'<div style="font:600 {size}px/1 Fraun;letter-spacing:-.025em;color:{col}">Brindlow</div>'
     if sub:
-        s += f'<div style="font:400 {size * .135:.0f}px/1 Mono;letter-spacing:.42em;margin-right:-.42em;color:{subcol or col};margin-top:{size * .16:.0f}px">BAKEHOUSE &middot; SINCE 1987</div>'
+        s += f'<div style="font:400 {size * .17:.0f}px/1 Mono;letter-spacing:.3em;margin-right:-.3em;color:{subcol or col};margin-top:{size * .2:.0f}px">BAKEHOUSE &middot; SINCE 1987</div>'
     return s
 
 
@@ -110,17 +110,17 @@ def mono(d, fg, bg):
 
 def b1():
     w, h = BOXES["1"]
-    return page(w, h, CREAM, f'<div class="c">{word(560, OX)}</div>')
+    return page(w, h, CREAM, f'<div class="c">{word(470, OX)}</div>')
 
 
 def b2():
     w, h = BOXES["2"]
-    return page(w, h, OX, f'<div class="c">{word(440, CREAM)}</div>')
+    return page(w, h, OX, f'<div class="c">{word(380, CREAM)}</div>')
 
 
 def b3():
     w, h = BOXES["3"]
-    return page(w, h, CREAM, f'<div class="c" style="flex-direction:row;gap:90px">{mono(430, CREAM, OX)}<div>{word(270, OX, sub=False)}<div style="font:400 40px/1 Mono;letter-spacing:.4em;color:{OX};margin-top:40px">BAKEHOUSE</div></div></div>')
+    return page(w, h, CREAM, f'<div class="c" style="flex-direction:row;gap:80px">{mono(400, CREAM, OX)}{word(250, OX, sub=False)}</div>')
 
 
 def btop():
@@ -130,7 +130,7 @@ def btop():
 
 def bbag():
     w, h = BAG
-    return page(w, h, CREAM, f'<div class="c" style="justify-content:flex-start;padding-top:1520px">{mono(900, CREAM, OX)}<div style="height:150px"></div>{word(300, OX)}</div>')
+    return page(w, h, CREAM, f'<div class="c" style="justify-content:flex-start;padding-top:1520px">{mono(900, CREAM, OX)}<div style="height:150px"></div>{word(300, OX, sub=False)}</div>')
 
 
 def plain(w, h, col):
